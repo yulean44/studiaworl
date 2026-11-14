@@ -45,7 +45,7 @@ Site estático, sem build: HTML + JS em módulos ES, three.js 0.160 via importma
 
 ## Conteúdo novo de matéria
 
-Novo arquivo em `content/<id>.json`, no mesmo formato dos existentes, e registro onde as outras matérias são carregadas em `app.js`. Seções agrupadas por `grupo` (ex.: "Guia de estudo", "Resumo completo").
+Novo arquivo em `content/<id>.json`, no mesmo formato dos existentes, e o id adicionado à lista `CONTEUDOS` em `app.js`. Seções agrupadas por `grupo` (ex.: "Guia de estudo", "Resumo completo").
 
 ## Commits
 
