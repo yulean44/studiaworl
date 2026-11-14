@@ -4,8 +4,11 @@ import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 const bancos = [['mfc',33],['antibioticos',24],['psiquiatria',25],['cirurgia',28],['saude-mulher',46]];
 test('DPI da professora permanece integralmente preservado',async()=>{
- const bytes=await readFile(new URL('../content/imagem.json',import.meta.url));
- assert.equal(createHash('sha256').update(bytes).digest('hex'),'2b2566be99fc3d0b73a959655fad07df07a63c337b35c0ccdb52cfc7608f3c9b');
+ // Protege tudo da matéria (Kahoot, cards, seções, casos) exceto o banco de questões,
+ // que é separado e validado por tests/questoes.mjs.
+ const d=JSON.parse(await readFile(new URL('../content/imagem.json',import.meta.url),'utf8'));
+ delete d.questoes;
+ assert.equal(createHash('sha256').update(JSON.stringify(d)).digest('hex'),'5c5465efe80cbecc1ac2412ce39b72dbb352c49fadb295257f297c9af054d155');
 });
 test('os cinco Kahoots mantêm numeração e gabaritos válidos para o jogador',async()=>{
  for(const [mat,total] of bancos){

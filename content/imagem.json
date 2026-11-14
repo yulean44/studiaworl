@@ -1795,5 +1795,2326 @@
   "Bonatti et al. Gallbladder adenomyomatosis: imaging findings, tricks and pitfalls. <em>Insights into Imaging</em>, 2017. Fig. 7. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-017-0544-7\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-017-0544-7</a>",
   "Pouli et al. Gastrointestinal perforation: clinical and MDCT clues for identification of aetiology. <em>Insights into Imaging</em>, 2020. Fig. 6. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-019-0823-6\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-019-0823-6</a>",
   "Coutureau et al. CT of acute abdomen in the elderly. <em>Insights into Imaging</em>, 2025. Fig. 5. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-025-01955-1\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-025-01955-1</a>"
+ ],
+ "questoes": [
+  {
+   "id": "q-r1-01",
+   "secao": "r1",
+   "tags": [
+    "princípios"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual método forma a imagem a partir do eco de ondas sonoras, sem usar radiação?",
+   "alternativas": [
+    {
+     "t": "Radiografia",
+     "certa": false,
+     "porque": "Usa radiação ionizante que atravessa o corpo."
+    },
+    {
+     "t": "Tomografia computadorizada",
+     "certa": false,
+     "porque": "Também usa radiação ionizante, reconstruindo cortes."
+    },
+    {
+     "t": "Ultrassonografia",
+     "certa": true,
+     "porque": "É o princípio do ultrassom: eco de ondas sonoras, sem radiação."
+    },
+    {
+     "t": "Ressonância magnética",
+     "certa": false,
+     "porque": "Usa campo magnético e radiofrequência, não som."
+    }
+   ],
+   "explica": "Radiografia e tomografia usam radiação ionizante; ressonância usa campo magnético e radiofrequência; o ultrassom usa o eco de ondas sonoras.",
+   "dica": "Pense no exame que se faz com gel e transdutor.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "A ultrassonografia forma imagens a partir do eco de ondas sonoras, sem radiação."
+   }
+  },
+  {
+   "id": "q-r1-02",
+   "secao": "r1",
+   "tags": [
+    "UH",
+    "TC"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Na escala de Hounsfield (UH), quanto valem a água e o ar?",
+   "alternativas": [
+    {
+     "t": "Água 0 UH; ar −1000 UH",
+     "certa": true,
+     "porque": "A escala é definida com a água em zero e o ar em menos mil."
+    },
+    {
+     "t": "Água −1000 UH; ar 0 UH",
+     "certa": false,
+     "porque": "Inverte os valores da escala."
+    },
+    {
+     "t": "Água −100 UH; ar −1000 UH",
+     "certa": false,
+     "porque": "−100 UH é a faixa da gordura, não da água."
+    },
+    {
+     "t": "Água 0 UH; ar +1000 UH",
+     "certa": false,
+     "porque": "+1000 UH é o osso cortical, que aparece branco."
+    }
+   ],
+   "explica": "A escala de Hounsfield fixa a água em 0 e o ar em −1000. Quanto maior a atenuação, mais clara a estrutura.",
+   "pegadinha": "Gordura é negativa (cerca de −100), mas não chega a −1000.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "uma escala em que a água vale zero e o ar, menos mil"
+   }
+  },
+  {
+   "id": "q-r1-03",
+   "secao": "r1",
+   "tags": [
+    "UH",
+    "hemorragia"
+   ],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o sangue agudo é hiperdenso na TC e, com os dias, fica iso e depois hipodenso?",
+   "alternativas": [
+    {
+     "t": "O hematoma acumula contraste nos primeiros dias",
+     "certa": false,
+     "porque": "O sangue agudo é avaliado sem contraste; o brilho é dele mesmo."
+    },
+    {
+     "t": "A proteína da hemoglobina aumenta a atenuação e, com o tempo, a hemoglobina se degrada",
+     "certa": true,
+     "porque": "É a explicação do material: rico em hemoglobina, 50–80 UH; depois degrada."
+    },
+    {
+     "t": "O hematoma calcifica e por isso escurece",
+     "certa": false,
+     "porque": "Calcificação deixaria a lesão mais branca, não mais escura."
+    },
+    {
+     "t": "O liquor dilui o sangue logo na primeira hora",
+     "certa": false,
+     "porque": "O material atribui a mudança à degradação da hemoglobina ao longo dos dias."
+    }
+   ],
+   "explica": "Sangue agudo tem 50 a 80 UH por causa da proteína da hemoglobina e fica mais claro que o cérebro. Conforme a hemoglobina se degrada, o hematoma passa a iso e depois a hipodenso.",
+   "pegadinha": "Hematoma escuro não significa ausência de sangue: pode ser sangue antigo.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "com os dias, a hemoglobina degrada-se e o hematoma torna-se iso e depois hipodenso"
+   }
+  },
+  {
+   "id": "q-r1-04",
+   "secao": "r1",
+   "tags": [
+    "vocabulário"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "facil",
+   "enunciado": "Um laudo descreve uma lesão com “hipersinal”. Esse termo é típico de qual método?",
+   "alternativas": [
+    {
+     "t": "Tomografia computadorizada",
+     "certa": false,
+     "porque": "Na TC o termo é densidade: hipodenso, hiperdenso."
+    },
+    {
+     "t": "Ultrassonografia",
+     "certa": false,
+     "porque": "No ultrassom o termo é ecogenicidade: anecoico, hiperecogênico."
+    },
+    {
+     "t": "Radiografia",
+     "certa": false,
+     "porque": "Na radiografia fala-se em radiopaco e radiotransparente."
+    },
+    {
+     "t": "Ressonância magnética",
+     "certa": true,
+     "porque": "Na ressonância fala-se em sinal: hipossinal e hipersinal."
+    }
+   ],
+   "explica": "Cada método tem seu vocabulário: densidade na TC, ecogenicidade no US, radiopaco/radiotransparente no RX e sinal na RM.",
+   "dica": "Cada exame tem uma palavra própria para brilho.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "na ressonância em sinal (hipossinal, hipersinal)"
+   }
+  },
+  {
+   "id": "q-r1-05",
+   "secao": "r1",
+   "tags": [
+    "contraste"
+   ],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que sangue intracraniano e cálculo urinário são pesquisados em TC <strong>sem</strong> contraste?",
+   "alternativas": [
+    {
+     "t": "Os dois já são hiperdensos, e o contraste, também branco, esconderia o achado",
+     "certa": true,
+     "porque": "O material diz que o contraste deve ser evitado quando esconderia o que se procura."
+    },
+    {
+     "t": "Porque o contraste é contraindicado em quem tem dor intensa",
+     "certa": false,
+     "porque": "Dor não é contraindicação citada no material."
+    },
+    {
+     "t": "Porque sem contraste a TC usa menos radiação ionizante",
+     "certa": false,
+     "porque": "O motivo dado no material é o contraste ocultar o achado."
+    },
+    {
+     "t": "Porque o contraste só realça vasos do tórax",
+     "certa": false,
+     "porque": "O contraste realça aorta, cava, porta, rins, inflamação e tumores."
+    }
+   ],
+   "explica": "Sangue agudo e cálculos já aparecem brancos. Como o contraste também fica branco, ele confundiria ou ocultaria o achado.",
+   "pegadinha": "O contraste não é sempre melhor: às vezes atrapalha.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Deve ser evitado quando ele mesmo esconderia o achado procurado"
+   }
+  },
+  {
+   "id": "q-r1-06",
+   "secao": "r1",
+   "tags": [
+    "contraste",
+    "TEP"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Suspeita de tromboembolismo pulmonar. Como a TC deve ser solicitada?",
+   "alternativas": [
+    {
+     "t": "Sem contraste, para ver melhor o vidro fosco",
+     "certa": false,
+     "porque": "Sem contraste é para pneumonia e vidro fosco, não para TEP."
+    },
+    {
+     "t": "Sem contraste, como na pesquisa de sangue intracraniano",
+     "certa": false,
+     "porque": "Essa regra vale para sangramento e cálculo, não para TEP."
+    },
+    {
+     "t": "Com contraste iodado intravenoso",
+     "certa": true,
+     "porque": "O contraste é obrigatório na suspeita de tromboembolismo pulmonar."
+    },
+    {
+     "t": "Tanto faz, o contraste é opcional no tórax",
+     "certa": false,
+     "porque": "O material lista o TEP entre as indicações obrigatórias."
+    }
+   ],
+   "explica": "No TEP o trombo aparece como falha de enchimento do vaso, que só é vista com o contraste dentro da artéria.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "É obrigatório na suspeita de tromboembolismo pulmonar, dissecção e aneurisma de aorta, tumores, abdome agudo inflamatório e trauma estável."
+   }
+  },
+  {
+   "id": "q-r1-07",
+   "secao": "r1",
+   "tags": [
+    "RM"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Em qual sequência de ressonância o líquido aparece branco?",
+   "alternativas": [
+    {
+     "t": "T1",
+     "certa": false,
+     "porque": "No T1 o líquido é escuro e a anatomia é bem definida."
+    },
+    {
+     "t": "FLAIR",
+     "certa": false,
+     "porque": "O FLAIR é um T2 com o sinal do liquor suprimido."
+    },
+    {
+     "t": "Difusão (DWI)",
+     "certa": false,
+     "porque": "A DWI mostra restrição da água no AVC isquêmico agudo."
+    },
+    {
+     "t": "T2",
+     "certa": true,
+     "porque": "No T2 o líquido é branco."
+    }
+   ],
+   "explica": "T1: líquido escuro. T2: líquido branco. FLAIR: T2 com liquor apagado. DWI: restrição no AVC agudo.",
+   "pegadinha": "O FLAIR também é ponderado em T2, mas apaga o liquor.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "em T2 o líquido é branco"
+   }
+  },
+  {
+   "id": "q-r1-08",
+   "secao": "r1",
+   "tags": [
+    "RM",
+    "FLAIR"
+   ],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Qual é a utilidade do FLAIR na ressonância de crânio?",
+   "alternativas": [
+    {
+     "t": "É um T1 com supressão de gordura para ver contraste",
+     "certa": false,
+     "porque": "O material define o FLAIR como T2 com liquor suprimido."
+    },
+    {
+     "t": "É um T2 que suprime o liquor e realça edema e lesões perto dos ventrículos",
+     "certa": true,
+     "porque": "Definição do material para o FLAIR."
+    },
+    {
+     "t": "Mostra a restrição da água no AVC isquêmico agudo",
+     "certa": false,
+     "porque": "Essa é a função da difusão (DWI)."
+    },
+    {
+     "t": "Substitui a angiotomografia na busca de aneurisma",
+     "certa": false,
+     "porque": "Para o aneurisma o material indica angiotomografia ou arteriografia."
+    }
+   ],
+   "explica": "Com o liquor apagado, o edema e as lesões vizinhas aos ventrículos ficam brancos e se destacam.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "o FLAIR é um T2 com o sinal do liquor suprimido, ótimo para edema e lesões próximas aos ventrículos"
+   }
+  },
+  {
+   "id": "q-r1-09",
+   "secao": "r1",
+   "tags": [
+    "RM",
+    "abdome agudo"
+   ],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "A ressonância tem o melhor contraste de partes moles. Por que, então, quase não se aplica ao abdome agudo?",
+   "alternativas": [
+    {
+     "t": "Porque usa radiação ionizante em dose alta",
+     "certa": false,
+     "porque": "A ressonância não usa radiação."
+    },
+    {
+     "t": "Porque não mostra os órgãos abdominais",
+     "certa": false,
+     "porque": "Ela mostra bem partes moles; o limite é logístico."
+    },
+    {
+     "t": "Porque exige sempre contraste iodado",
+     "certa": false,
+     "porque": "O contraste iodado é o da tomografia."
+    },
+    {
+     "t": "Porque é demorada, cara e pouco disponível",
+     "certa": true,
+     "porque": "É o motivo dado no material."
+    }
+   ],
+   "explica": "Na urgência pesam tempo e disponibilidade; por isso a TC é o exame que mais define a causa do abdome agudo.",
+   "pegadinha": "Melhor imagem não é sinônimo de melhor exame na emergência.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "é demorada, cara e pouco disponível, e por isso quase não se aplica ao abdome agudo"
+   }
+  },
+  {
+   "id": "q-r1-10",
+   "secao": "r1",
+   "tags": [
+    "US"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "dificil",
+   "enunciado": "Em qual destas situações o ultrassom tem maior chance de falhar?",
+   "alternativas": [
+    {
+     "t": "Avaliar o pâncreas em paciente obeso e com muito gás intestinal",
+     "certa": true,
+     "porque": "O US é prejudicado pelo gás e pela obesidade e avalia mal o pâncreas."
+    },
+    {
+     "t": "Avaliar a vesícula em suspeita de colecistite",
+     "certa": false,
+     "porque": "Vesícula é indicação clássica do ultrassom."
+    },
+    {
+     "t": "Procurar líquido livre no trauma (FAST)",
+     "certa": false,
+     "porque": "O FAST é feito com ultrassom à beira do leito."
+    },
+    {
+     "t": "Investigar apendicite em criança magra",
+     "certa": false,
+     "porque": "Em criança o US é o exame inicial."
+    }
+   ],
+   "explica": "O ultrassom depende do operador, é atrapalhado pelo gás e pela gordura e vê mal o pâncreas, que é retroperitoneal.",
+   "dica": "Junte as três limitações do ultrassom na mesma situação.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "depende do operador, é prejudicada pelo gás intestinal e pela obesidade e avalia mal o pâncreas"
+   }
+  },
+  {
+   "id": "q-r2-01",
+   "secao": "r2",
+   "tags": [
+    "meninges"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual é a ordem das meninges, de fora (osso) para dentro (córtex)?",
+   "img": "content/img/imagem/ref/meninges_gray.jpg",
+   "alternativas": [
+    {
+     "t": "Pia-máter, aracnoide, dura-máter",
+     "certa": false,
+     "porque": "Ordem invertida."
+    },
+    {
+     "t": "Dura-máter, aracnoide, pia-máter",
+     "certa": true,
+     "porque": "A dura está aderida ao osso e a pia, colada ao córtex."
+    },
+    {
+     "t": "Aracnoide, dura-máter, pia-máter",
+     "certa": false,
+     "porque": "A dura é a mais externa."
+    },
+    {
+     "t": "Dura-máter, pia-máter, aracnoide",
+     "certa": false,
+     "porque": "A pia é a mais interna, colada ao córtex."
+    }
+   ],
+   "explica": "Dura (aderida ao osso) → aracnoide → pia (colada ao córtex).",
+   "dica": "“Dura” fica junto ao osso duro.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "a dura-máter, aderida ao osso; a aracnoide; e a pia-máter, colada ao córtex"
+   }
+  },
+  {
+   "id": "q-r2-02",
+   "secao": "r2",
+   "tags": [
+    "meninges"
+   ],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Dos três espaços meníngeos, qual é real (não virtual) e contém liquor e as grandes artérias?",
+   "alternativas": [
+    {
+     "t": "Epidural",
+     "certa": false,
+     "porque": "É virtual: só se abre quando o sangue arterial descola a dura."
+    },
+    {
+     "t": "Subdural",
+     "certa": false,
+     "porque": "Também é virtual e é atravessado pelas veias ponte."
+    },
+    {
+     "t": "Subaracnoide",
+     "certa": true,
+     "porque": "É real e contém o liquor e as artérias do polígono de Willis."
+    },
+    {
+     "t": "Intraparenquimatoso",
+     "certa": false,
+     "porque": "Não é um espaço meníngeo."
+    }
+   ],
+   "explica": "Epidural e subdural são virtuais. O subaracnoide é real, com liquor e artérias; por isso o aneurisma roto sangra ali.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "O espaço subaracnoide, entre a aracnoide e a pia, é real, contém o liquor"
+   }
+  },
+  {
+   "id": "q-r2-03",
+   "secao": "r2",
+   "tags": [
+    "HED"
+   ],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o hematoma epidural tem forma de lente e não cruza as suturas?",
+   "alternativas": [
+    {
+     "t": "O sangue venoso se espalha devagar pela convexidade",
+     "certa": false,
+     "porque": "Isso descreve o subdural, em crescente."
+    },
+    {
+     "t": "A pia-máter limita a coleção nas bordas",
+     "certa": false,
+     "porque": "A pia fica colada ao córtex, longe do espaço epidural."
+    },
+    {
+     "t": "O liquor dilui o sangue nas extremidades",
+     "certa": false,
+     "porque": "O espaço epidural não contém liquor."
+    },
+    {
+     "t": "A dura está presa às suturas, e o sangue arterial só a descola entre elas",
+     "certa": true,
+     "porque": "É a explicação do material para a forma biconvexa."
+    }
+   ],
+   "explica": "A dura firmemente presa às suturas funciona como borda: o sangue sob pressão arterial forma uma lente entre duas suturas.",
+   "pegadinha": "“Não cruza sutura” é do epidural; “cruza sutura” é do subdural.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A dura está firmemente presa às suturas cranianas, e o sangue sob pressão arterial descola-a apenas entre elas"
+   }
+  },
+  {
+   "id": "q-r2-04",
+   "secao": "r2",
+   "tags": [
+    "HED",
+    "imagem"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Na TC de um hematoma epidural agudo, as setas retas apontam áreas hipodensas dentro da coleção. O que elas indicam?",
+   "img": "content/img/imagem/ref/hed_tc.jpg",
+   "alternativas": [
+    {
+     "t": "Sangramento ativo (sinal do redemoinho)",
+     "certa": true,
+     "porque": "Áreas hipodensas dentro do hematoma indicam sangramento ativo."
+    },
+    {
+     "t": "Hematoma crônico, já reabsorvendo",
+     "certa": false,
+     "porque": "Seria a coleção toda mais escura, não áreas dentro de um hematoma agudo."
+    },
+    {
+     "t": "Calcificação dentro do hematoma",
+     "certa": false,
+     "porque": "Calcificação seria mais branca, não hipodensa."
+    },
+    {
+     "t": "Artefato do contraste",
+     "certa": false,
+     "porque": "O sangramento é pesquisado sem contraste."
+    }
+   ],
+   "explica": "O sangue que ainda está saindo não coagulou e é menos denso: aparece como áreas escuras dentro do hematoma, o sinal do redemoinho.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Áreas hipodensas dentro do hematoma, o sinal do redemoinho, indicam sangramento ativo."
+   }
+  },
+  {
+   "id": "q-r2-05",
+   "secao": "r2",
+   "tags": [
+    "HSD"
+   ],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o hematoma subdural forma um crescente que acompanha a convexidade?",
+   "alternativas": [
+    {
+     "t": "A dura presa às suturas segura o sangue arterial",
+     "certa": false,
+     "porque": "Isso explica a lente do epidural."
+    },
+    {
+     "t": "O sangue fica dentro dos sulcos e das cisternas",
+     "certa": false,
+     "porque": "Isso descreve a hemorragia subaracnoide."
+    },
+    {
+     "t": "O sangue venoso se espalha livremente por um espaço que não é limitado pelas suturas",
+     "certa": true,
+     "porque": "É a explicação do material."
+    },
+    {
+     "t": "A pressão arterial empurra o cérebro em um ponto só",
+     "certa": false,
+     "porque": "O subdural é venoso, de baixa pressão."
+    }
+   ],
+   "explica": "Sem a barreira das suturas, o sangue das veias ponte desliza pela convexidade e forma um crescente.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "O sangue venoso espalha-se livremente pelo espaço subdural, que não é limitado pelas suturas"
+   }
+  },
+  {
+   "id": "q-r2-06",
+   "secao": "r2",
+   "tags": [
+    "HED",
+    "caso"
+   ],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Jovem cai de moto, perde a consciência por alguns minutos, recupera-se e conversa normalmente. Duas horas depois está sonolento e com pupila dilatada do lado do trauma. Qual exame e qual achado são esperados?",
+   "alternativas": [
+    {
+     "t": "TC sem contraste com coleção em crescente na convexidade",
+     "certa": false,
+     "porque": "Crescente é do subdural, típico do idoso, de piora lenta."
+    },
+    {
+     "t": "TC sem contraste com coleção biconvexa temporal",
+     "certa": true,
+     "porque": "Intervalo lúcido sugere hematoma epidural, emergência neurocirúrgica."
+    },
+    {
+     "t": "Ressonância com sangue nas cisternas da base",
+     "certa": false,
+     "porque": "Sangue nas cisternas é HSA; e a TC sem contraste vem primeiro."
+    },
+    {
+     "t": "TC com contraste com edema vasogênico",
+     "certa": false,
+     "porque": "Sangramento agudo é pesquisado sem contraste; edema vasogênico é de tumor."
+    }
+   ],
+   "explica": "Perda de consciência, recuperação e piora: o intervalo lúcido. A TC sem contraste mostra a lente hiperdensa temporal.",
+   "pegadinha": "A melhora inicial engana: o hematoma continua crescendo.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "O intervalo lúcido sugere hematoma epidural, e a tomografia sem contraste mostrará coleção biconvexa temporal"
+   }
+  },
+  {
+   "id": "q-r2-07",
+   "secao": "r2",
+   "tags": [
+    "HSD",
+    "caso"
+   ],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Senhora de 82 anos, anticoagulada, está confusa há três semanas; a família acha que é demência. Qual achado na TC sem contraste explicaria o quadro?",
+   "alternativas": [
+    {
+     "t": "Coleção biconvexa hiperdensa com fratura temporal",
+     "certa": false,
+     "porque": "Quadro de epidural agudo em jovem com trauma."
+    },
+    {
+     "t": "Coleção em crescente na convexidade, mais escura que o cérebro",
+     "certa": true,
+     "porque": "Subdural crônico: sangue antigo, hipodenso, em idosa anticoagulada."
+    },
+    {
+     "t": "Sangue hiperdenso nas cisternas da base",
+     "certa": false,
+     "porque": "Seria HSA, com cefaleia súbita."
+    },
+    {
+     "t": "Hipodensidade de cinzenta e branca em território arterial",
+     "certa": false,
+     "porque": "Seria AVC isquêmico com edema citotóxico, de início súbito."
+    }
+   ],
+   "explica": "Piora lenta com confusão que imita demência, em idosa anticoagulada, é o subdural crônico. O sangue antigo fica mais escuro que o cérebro.",
+   "pegadinha": "Hipodenso não é “sem sangue”: é sangue antigo.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "no hematoma crônico, o sangue antigo fica mais escuro que o cérebro"
+   }
+  },
+  {
+   "id": "q-r2-08",
+   "secao": "r2",
+   "tags": [
+    "HSA"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "A TC sem contraste confirmou hemorragia subaracnoide. Qual o próximo exame para procurar a causa?",
+   "img": "content/img/imagem/ref/hsa_angio.jpg",
+   "alternativas": [
+    {
+     "t": "Repetir a TC sem contraste em 24 horas",
+     "certa": false,
+     "porque": "Não procura o aneurisma."
+    },
+    {
+     "t": "Ressonância com sequência T1",
+     "certa": false,
+     "porque": "O material indica angiotomografia ou arteriografia."
+    },
+    {
+     "t": "Angiotomografia (ou arteriografia)",
+     "certa": true,
+     "porque": "Procuram o aneurisma, causa mais comum da HSA não traumática."
+    },
+    {
+     "t": "Ultrassonografia transcraniana",
+     "certa": false,
+     "porque": "O material indica angiotomografia ou arteriografia."
+    }
+   ],
+   "explica": "Confirmado o sangue, é preciso achar o aneurisma roto: a angiotomografia ou a arteriografia mostram o vaso.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Confirmada a hemorragia subaracnoide, a angiotomografia ou a arteriografia procuram o aneurisma"
+   }
+  },
+  {
+   "id": "q-r2-09",
+   "secao": "r2",
+   "tags": [
+    "edema",
+    "AVC"
+   ],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Nas primeiras horas do AVC isquêmico, a TC sem contraste pode estar quase normal. Por que a difusão (DWI) já mostra a lesão?",
+   "img": "content/img/imagem/ref/avc_dwi.jpg",
+   "alternativas": [
+    {
+     "t": "O edema citotóxico restringe a difusão da água e aparece cedo na DWI",
+     "certa": true,
+     "porque": "Explicação do material para a DWI precoce."
+    },
+    {
+     "t": "A DWI usa radiação mais sensível que a TC",
+     "certa": false,
+     "porque": "A ressonância não usa radiação."
+    },
+    {
+     "t": "O edema vasogênico surge antes e só a RM o vê",
+     "certa": false,
+     "porque": "O edema do AVC é o citotóxico."
+    },
+    {
+     "t": "O sangue do infarto é hiperdenso só na RM",
+     "certa": false,
+     "porque": "No AVC isquêmico não há sangue; o achado é o edema."
+    }
+   ],
+   "explica": "A célula isquêmica incha por falta de energia; a água fica presa e a DWI mostra essa restrição antes que a TC enxergue a hipodensidade.",
+   "pegadinha": "TC normal não exclui AVC isquêmico nas primeiras horas.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Restringe a difusão da água, aparece precocemente na sequência DWI da ressonância e geralmente é irreversível."
+   }
+  },
+  {
+   "id": "q-r2-10",
+   "secao": "r2",
+   "tags": [
+    "edema"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual é o mecanismo do edema vasogênico?",
+   "alternativas": [
+    {
+     "t": "Falência da bomba de sódio e potássio",
+     "certa": false,
+     "porque": "Esse é o mecanismo do edema citotóxico."
+    },
+    {
+     "t": "Obstrução da saída do liquor",
+     "certa": false,
+     "porque": "Não é o mecanismo descrito para o edema vasogênico."
+    },
+    {
+     "t": "Sangramento das veias ponte",
+     "certa": false,
+     "porque": "Isso causa o hematoma subdural."
+    },
+    {
+     "t": "Ruptura da barreira hematoencefálica",
+     "certa": true,
+     "porque": "O líquido extravasa para o interstício."
+    }
+   ],
+   "explica": "Vasogênico: barreira rota, líquido no interstício, predomina na substância branca. Citotóxico: bomba de sódio e potássio falha, célula incha.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "O edema vasogênico resulta da ruptura da barreira hematoencefálica"
+   }
+  },
+  {
+   "id": "q-r2-11",
+   "secao": "r2",
+   "tags": [
+    "edema"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Paciente com metástase cerebral tem edema ao redor da lesão. Qual a combinação esperada?",
+   "img": "content/img/guia/edema-vasogenico.jpg",
+   "alternativas": [
+    {
+     "t": "Citotóxico, em cinzenta e branca, irreversível",
+     "certa": false,
+     "porque": "Esse é o padrão do AVC isquêmico."
+    },
+    {
+     "t": "Citotóxico, só no córtex, reversível",
+     "certa": false,
+     "porque": "O citotóxico pega cinzenta e branca e geralmente é irreversível."
+    },
+    {
+     "t": "Vasogênico, só no córtex, irreversível",
+     "certa": false,
+     "porque": "O vasogênico predomina na substância branca e é reversível."
+    },
+    {
+     "t": "Vasogênico, na substância branca, reversível",
+     "certa": true,
+     "porque": "Forma digitações ao redor de tumores e metástases e é reversível."
+    }
+   ],
+   "explica": "Tumores rompem a barreira hematoencefálica; o líquido corre pela substância branca em dedos de luva e pode regredir.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "predomina na substância branca, forma digitações ao redor de tumores, metástases e abscessos e é reversível"
+   }
+  },
+  {
+   "id": "q-r3-01",
+   "secao": "r3",
+   "tags": [
+    "classificação"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual é o tipo de abdome agudo mais comum?",
+   "alternativas": [
+    {
+     "t": "Obstrutivo",
+     "certa": false,
+     "porque": "É frequente, mas não o mais comum segundo o material."
+    },
+    {
+     "t": "Inflamatório",
+     "certa": true,
+     "porque": "A tabela da aula marca o inflamatório como o mais comum."
+    },
+    {
+     "t": "Perfurativo",
+     "certa": false,
+     "porque": "Não é o mais comum segundo o material."
+    },
+    {
+     "t": "Vascular",
+     "certa": false,
+     "porque": "É grave, mas menos frequente."
+    }
+   ],
+   "explica": "Apendicite, colecistite, diverticulite, pancreatite, pielonefrite e urolitíase entram no abdome agudo inflamatório.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Inflamatório (o mais comum)"
+   }
+  },
+  {
+   "id": "q-r3-02",
+   "secao": "r3",
+   "tags": [
+    "epidemiologia"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Nos idosos, quais causas de abdome agudo ganham importância?",
+   "alternativas": [
+    {
+     "t": "Obstrução intestinal, isquemia mesentérica e diverticulite",
+     "certa": true,
+     "porque": "É a lista do material para idosos."
+    },
+    {
+     "t": "Apendicite, gravidez ectópica e torção de ovário",
+     "certa": false,
+     "porque": "Apendicite predomina nos jovens; as outras não estão no material."
+    },
+    {
+     "t": "Pancreatite, hepatite e gastrite",
+     "certa": false,
+     "porque": "Não é a lista do material para idosos."
+    },
+    {
+     "t": "Apendicite, adenite mesentérica e intussuscepção",
+     "certa": false,
+     "porque": "Apendicite predomina nos jovens."
+    }
+   ],
+   "explica": "Nos jovens predomina a apendicite; nos idosos, obstrução, isquemia mesentérica e diverticulite.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "nos idosos ganham importância a obstrução intestinal, a isquemia mesentérica e a diverticulite"
+   }
+  },
+  {
+   "id": "q-r3-03",
+   "secao": "r3",
+   "tags": [
+    "escolha do exame"
+   ],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Segundo a aula, a ultrassonografia é a investigação inicial da maioria das dores abdominais, <strong>EXCETO</strong>:",
+   "alternativas": [
+    {
+     "t": "Colecistite aguda",
+     "certa": false,
+     "porque": "O US é o método de escolha para a vesícula."
+    },
+    {
+     "t": "Apendicite em criança",
+     "certa": false,
+     "porque": "O US é o exame inicial na fossa ilíaca direita."
+    },
+    {
+     "t": "Obstrução intestinal",
+     "certa": true,
+     "porque": "O gás das alças atrapalha o ultrassom; na obstrução começa-se pela radiografia."
+    },
+    {
+     "t": "Dor pélvica em gestante",
+     "certa": false,
+     "porque": "O US é o método inicial em gestantes."
+    }
+   ],
+   "explica": "O ultrassom é o primeiro exame na maioria das dores abdominais, mas não na obstrução, em que a radiografia vem primeiro e a TC define nível e causa.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A ultrassonografia é a investigação inicial da maioria das dores abdominais, exceto a obstrução"
+   }
+  },
+  {
+   "id": "q-r3-04",
+   "secao": "r3",
+   "tags": [
+    "apendicite"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "facil",
+   "enunciado": "No ultrassom da fossa ilíaca direita, o apêndice mede 9 mm e não se comprime com o transdutor. Qual a interpretação?",
+   "img": "content/img/imagem/ref/apend_us.jpg",
+   "alternativas": [
+    {
+     "t": "Apêndice normal",
+     "certa": false,
+     "porque": "O normal é compressível e mede cerca de 3 mm."
+    },
+    {
+     "t": "Apendicite aguda",
+     "certa": true,
+     "porque": "Apêndice não compressível e acima de 6 mm."
+    },
+    {
+     "t": "Íleo paralítico",
+     "certa": false,
+     "porque": "Não se diagnostica pela medida do apêndice."
+    },
+    {
+     "t": "Exame inconclusivo, pedir RX",
+     "certa": false,
+     "porque": "O achado já é diagnóstico ao US."
+    }
+   ],
+   "explica": "O apêndice inflamado não é compressível, mede mais de 6 mm e pode ter sinal do alvo e líquido ao redor.",
+   "dica": "Compare com o apêndice normal: cerca de 3 mm.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "o inflamado não é compressível, mede mais de 6 mm"
+   }
+  },
+  {
+   "id": "q-r3-05",
+   "secao": "r3",
+   "tags": [
+    "apendicite"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Homem obeso, com dor intensa em fossa ilíaca direita; o ultrassom não visualizou o apêndice. Próximo exame?",
+   "alternativas": [
+    {
+     "t": "Repetir o ultrassom no dia seguinte",
+     "certa": false,
+     "porque": "Atrasa o diagnóstico; o material indica a TC nessas situações."
+    },
+    {
+     "t": "Radiografia simples de abdome",
+     "certa": false,
+     "porque": "Só sugere o diagnóstico se houver apendicolito."
+    },
+    {
+     "t": "Tomografia",
+     "certa": true,
+     "porque": "Em obesos e na dor intensa o US é limitado e a TC mostra o apêndice."
+    },
+    {
+     "t": "Ressonância sem gadolínio",
+     "certa": false,
+     "porque": "É a opção da gestante; aqui o material indica a TC."
+    }
+   ],
+   "explica": "Obesidade, dor intensa e apêndice retrocecal limitam o US; a TC mostra o apêndice acima de 6 mm com inflamação da gordura vizinha.",
+   "pegadinha": "Gestante é diferente: depois do US vem a RM.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "situações em que a tomografia mostra o apêndice acima de 6 mm com inflamação da gordura vizinha"
+   }
+  },
+  {
+   "id": "q-r3-06",
+   "secao": "r3",
+   "tags": [
+    "apendicite"
+   ],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que achar um apendicolito na apendicite é importante?",
+   "img": "content/img/imagem/ref/apendicolito.jpg",
+   "alternativas": [
+    {
+     "t": "Porque descarta a apendicite",
+     "certa": false,
+     "porque": "Ele é achado da apendicite, não a exclui."
+    },
+    {
+     "t": "Porque indica que o tratamento é só clínico",
+     "certa": false,
+     "porque": "O material associa-o a complicações."
+    },
+    {
+     "t": "Porque só aparece em crianças",
+     "certa": false,
+     "porque": "O material não restringe por idade."
+    },
+    {
+     "t": "Porque se associa a perfuração e abscesso",
+     "certa": true,
+     "porque": "É o que o material diz sobre o apendicolito."
+    }
+   ],
+   "explica": "O apendicolito é uma calcificação no lúmen do apêndice e marca maior risco de perfuração e abscesso.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "O apendicolito, calcificação no lúmen, associa-se a perfuração e abscesso"
+   }
+  },
+  {
+   "id": "q-r3-07",
+   "secao": "r3",
+   "tags": [
+    "colecistite"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "No ultrassom da vesícula, qual espessura da parede sugere colecistite aguda?",
+   "alternativas": [
+    {
+     "t": "Acima de 3 mm",
+     "certa": true,
+     "porque": "Parede acima de 3 mm, com líquido perivesicular e Murphy ultrassonográfico."
+    },
+    {
+     "t": "Acima de 6 mm",
+     "certa": false,
+     "porque": "6 mm é o corte do apêndice."
+    },
+    {
+     "t": "Acima de 5 mm",
+     "certa": false,
+     "porque": "5 mm é o corte da parede do cólon na diverticulite."
+    },
+    {
+     "t": "Acima de 10 mm",
+     "certa": false,
+     "porque": "Não é o valor do material."
+    }
+   ],
+   "explica": "Colecistite ao US: parede acima de 3 mm, líquido perivesicular e Murphy ultrassonográfico.",
+   "pegadinha": "Não troque os números: vesícula 3 mm, cólon 5 mm, apêndice 6 mm.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "a ultrassonografia mostra parede da vesícula acima de 3 mm"
+   }
+  },
+  {
+   "id": "q-r3-08",
+   "secao": "r3",
+   "tags": [
+    "vesícula",
+    "imagem"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Ao mudar o paciente de posição, uma imagem hiperecogênica na vesícula se desloca e projeta sombra acústica (seta). O que é?",
+   "img": "content/img/guia/calculo-vesicula.jpg",
+   "alternativas": [
+    {
+     "t": "Pólipo de colesterol",
+     "certa": false,
+     "porque": "O pólipo é fixo e não faz sombra acústica."
+    },
+    {
+     "t": "Colecistite gangrenosa",
+     "certa": false,
+     "porque": "É vista na TC como parede irregular com falha de realce."
+    },
+    {
+     "t": "Cálculo",
+     "certa": true,
+     "porque": "Cálculo é móvel e produz sombra acústica."
+    },
+    {
+     "t": "Ar livre",
+     "certa": false,
+     "porque": "O ar livre é visto na radiografia sob o diafragma."
+    }
+   ],
+   "explica": "Móvel e com sombra = cálculo. Fixo e sem sombra = pólipo.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "diferenciam-se do cálculo, que é móvel e produz sombra"
+   }
+  },
+  {
+   "id": "q-r3-09",
+   "secao": "r3",
+   "tags": [
+    "pancreatite"
+   ],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Na pancreatite aguda, quando a tomografia com contraste é indicada?",
+   "img": "content/img/imagem/ref/pancr_tc.jpg",
+   "alternativas": [
+    {
+     "t": "Após 72 horas ou na dúvida diagnóstica",
+     "certa": true,
+     "porque": "O diagnóstico é clínico e laboratorial; a TC vem depois ou na dúvida."
+    },
+    {
+     "t": "Na admissão, para todos os casos",
+     "certa": false,
+     "porque": "O material indica a TC após 72 horas ou na dúvida."
+    },
+    {
+     "t": "Nunca, o ultrassom basta",
+     "certa": false,
+     "porque": "O US avalia mal o pâncreas."
+    },
+    {
+     "t": "Só se a lipase for normal",
+     "certa": false,
+     "porque": "O critério do material é o tempo ou a dúvida."
+    }
+   ],
+   "explica": "Feita após 72 horas ou na dúvida, a TC mostra pâncreas aumentado, densificação da gordura peripancreática, realce heterogêneo e coleções.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "a tomografia com contraste, feita após 72 horas ou na dúvida"
+   }
+  },
+  {
+   "id": "q-r3-10",
+   "secao": "r3",
+   "tags": [
+    "diverticulite"
+   ],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Na tomografia, qual combinação de achados define diverticulite?",
+   "img": "content/img/imagem/ref/divert_tc.jpg",
+   "alternativas": [
+    {
+     "t": "Apêndice acima de 6 mm e não compressível",
+     "certa": false,
+     "porque": "É o critério da apendicite."
+    },
+    {
+     "t": "Parede do cólon acima de 5 mm e densificação da gordura pericólica",
+     "certa": true,
+     "porque": "Critérios do material para diverticulite."
+    },
+    {
+     "t": "Parede da vesícula acima de 3 mm e líquido perivesicular",
+     "certa": false,
+     "porque": "É o critério da colecistite."
+    },
+    {
+     "t": "Pâncreas aumentado com realce heterogêneo",
+     "certa": false,
+     "porque": "É o achado da pancreatite."
+    }
+   ],
+   "explica": "Na diverticulite a TC é a escolha: parede do cólon acima de 5 mm, gordura pericólica densificada e, nos graves, abscessos e líquido.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "parede do cólon acima de 5 mm, densificação da gordura pericólica"
+   }
+  },
+  {
+   "id": "q-r3-11",
+   "secao": "r3",
+   "tags": [
+    "obstrução"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Quais achados na radiografia sugerem obstrução intestinal?",
+   "alternativas": [
+    {
+     "t": "Ar livre sob o diafragma",
+     "certa": false,
+     "porque": "Sugere perfuração."
+    },
+    {
+     "t": "Gás na parede das alças",
+     "certa": false,
+     "porque": "É a pneumatose do infarto intestinal."
+    },
+    {
+     "t": "Calcificação no lúmen do apêndice",
+     "certa": false,
+     "porque": "É o apendicolito."
+    },
+    {
+     "t": "Alças dilatadas, níveis hidroaéreos e ausência de gás no reto",
+     "certa": true,
+     "porque": "É a tríade do material."
+    }
+   ],
+   "explica": "Na obstrução o conteúdo para: alças distendidas com níveis de líquido e ar, e o reto fica sem gás.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "a radiografia mostra alças dilatadas, níveis hidroaéreos e ausência de gás no reto"
+   }
+  },
+  {
+   "id": "q-r3-12",
+   "secao": "r3",
+   "tags": [
+    "obstrução",
+    "imagem"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Idoso com distensão importante e parada de eliminação de gases. A radiografia mostra uma alça colônica muito distendida, em forma de grão de café. Qual o diagnóstico?",
+   "img": "content/img/guia/volvo-sigmoide.jpg",
+   "alternativas": [
+    {
+     "t": "Obstrução alta do delgado",
+     "certa": false,
+     "porque": "Na obstrução alta aparece o empilhamento de moedas."
+    },
+    {
+     "t": "Íleo paralítico",
+     "certa": false,
+     "porque": "É difuso, pós-operatório ou por distúrbio hidroeletrolítico."
+    },
+    {
+     "t": "Úlcera perfurada",
+     "certa": false,
+     "porque": "Daria ar livre sob o diafragma."
+    },
+    {
+     "t": "Volvo de sigmoide",
+     "certa": true,
+     "porque": "A alça torcida e distendida forma o sinal do grão de café."
+    }
+   ],
+   "explica": "No volvo de sigmoide a alça torcida forma o grão de café na radiografia; na TC, o sinal do bico marca o ponto de torção.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "no volvo de sigmoide, a alça torcida e distendida forma o sinal do grão de café"
+   }
+  },
+  {
+   "id": "q-r3-13",
+   "secao": "r3",
+   "tags": [
+    "obstrução"
+   ],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Qual é o principal diagnóstico diferencial da obstrução intestinal, e como ele evolui?",
+   "alternativas": [
+    {
+     "t": "Isquemia mesentérica: autolimitada",
+     "certa": false,
+     "porque": "A isquemia é grave e investigada por angiotomografia."
+    },
+    {
+     "t": "Íleo paralítico: pós-operatório ou distúrbio hidroeletrolítico, autolimitado",
+     "certa": true,
+     "porque": "Definição do material."
+    },
+    {
+     "t": "Volvo de sigmoide: resolve sozinho",
+     "certa": false,
+     "porque": "O volvo é causa de obstrução mecânica."
+    },
+    {
+     "t": "Diverticulite: sempre cirúrgica",
+     "certa": false,
+     "porque": "Não é o diferencial apontado no material."
+    }
+   ],
+   "explica": "O íleo paralítico não tem obstáculo mecânico: aparece no pós-operatório e nos distúrbios hidroeletrolíticos e costuma resolver sozinho.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "O principal diagnóstico diferencial é o íleo paralítico, que ocorre no pós-operatório e nos distúrbios hidroeletrolíticos e é autolimitado."
+   }
+  },
+  {
+   "id": "q-r3-14",
+   "secao": "r3",
+   "tags": [
+    "obstrução"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "A radiografia sugeriu obstrução intestinal. O que a tomografia acrescenta?",
+   "img": "content/img/imagem/ref/obst_tc.jpg",
+   "alternativas": [
+    {
+     "t": "Confirma que há gás no reto",
+     "certa": false,
+     "porque": "A ausência de gás no reto já é vista no RX."
+    },
+    {
+     "t": "Substitui a radiografia como exame inicial",
+     "certa": false,
+     "porque": "O RX continua sendo o exame inicial."
+    },
+    {
+     "t": "Localiza a zona de transição e define a causa",
+     "certa": true,
+     "porque": "É o papel da TC na obstrução."
+    },
+    {
+     "t": "Mede a espessura da parede da vesícula",
+     "certa": false,
+     "porque": "Não tem relação com a obstrução."
+    }
+   ],
+   "explica": "A TC mostra onde o calibre muda (zona de transição) e por quê: tumor, brida, hérnia, volvo.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A tomografia localiza a zona de transição e define a causa"
+   }
+  },
+  {
+   "id": "q-r3-15",
+   "secao": "r3",
+   "tags": [
+    "isquemia",
+    "caso"
+   ],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Homem de 78 anos com fibrilação atrial tem dor abdominal súbita e muito intensa; o abdome está pouco doloroso à palpação. Qual exame pedir?",
+   "alternativas": [
+    {
+     "t": "Angiotomografia nas fases arterial e venosa",
+     "certa": true,
+     "porque": "Isquemia mesentérica: dor desproporcional ao exame físico."
+    },
+    {
+     "t": "Radiografia simples de abdome",
+     "certa": false,
+     "porque": "Mostra obstrução ou ar livre, mas não o trombo."
+    },
+    {
+     "t": "Ultrassonografia de abdome",
+     "certa": false,
+     "porque": "Para a isquemia o material indica a angiotomografia."
+    },
+    {
+     "t": "Tomografia sem contraste",
+     "certa": false,
+     "porque": "Sem contraste não se vê a falha de enchimento do vaso."
+    }
+   ],
+   "explica": "Dor desproporcional ao exame em idoso com fibrilação atrial sugere êmbolo na mesentérica superior. A angiotomografia mostra a falha de enchimento.",
+   "pegadinha": "O exame físico “bonzinho” não tranquiliza aqui.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "O exame de escolha é a angiotomografia nas fases arterial e venosa"
+   }
+  },
+  {
+   "id": "q-r3-16",
+   "secao": "r3",
+   "tags": [
+    "isquemia",
+    "imagem"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "dificil",
+   "enunciado": "Na angiotomografia de um paciente com isquemia mesentérica há gás dentro da parede das alças (seta). O que isso indica?",
+   "img": "content/img/imagem/ref/isq_pneumatose.jpg",
+   "alternativas": [
+    {
+     "t": "Perfuração com ar livre na cavidade",
+     "certa": false,
+     "porque": "Ar livre fica fora das alças, não na parede."
+    },
+    {
+     "t": "Infarto intestinal (pneumatose intestinal)",
+     "certa": true,
+     "porque": "No infarto aparece gás na parede das alças."
+    },
+    {
+     "t": "Obstrução simples",
+     "certa": false,
+     "porque": "Mostra alças dilatadas e níveis hidroaéreos."
+    },
+    {
+     "t": "Achado normal",
+     "certa": false,
+     "porque": "Gás na parede não é normal."
+    }
+   ],
+   "explica": "A pneumatose intestinal (gás na parede) e o gás no sistema porta indicam infarto, fase grave da isquemia.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "no infarto, gás na parede das alças, a pneumatose intestinal"
+   }
+  },
+  {
+   "id": "q-r3-17",
+   "secao": "r3",
+   "tags": [
+    "perfuração",
+    "caso"
+   ],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Paciente com uso de anti-inflamatório tem dor epigástrica súbita; a radiografia mostra ar sob o diafragma. O que a tomografia acrescenta?",
+   "img": "content/img/imagem/ref/ulcera_perf.jpg",
+   "alternativas": [
+    {
+     "t": "Confirma o ar livre, que a radiografia não mostra",
+     "certa": false,
+     "porque": "O ar livre já foi visto no RX."
+    },
+    {
+     "t": "Mede a lipase",
+     "certa": false,
+     "porque": "Lipase é exame de sangue."
+    },
+    {
+     "t": "Localiza a perfuração pelo gás extraluminal, extravasamento de contraste e espessamento da parede",
+     "certa": true,
+     "porque": "Papel da TC no abdome agudo perfurativo."
+    },
+    {
+     "t": "Mostra o sinal do grão de café",
+     "certa": false,
+     "porque": "É sinal do volvo de sigmoide."
+    }
+   ],
+   "explica": "O RX mostra que há perfuração; a TC mostra onde, como na úlcera duodenal perfurada.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "a tomografia localiza a perfuração pelo gás extraluminal, pelo extravasamento de contraste e pelo espessamento da parede"
+   }
+  },
+  {
+   "id": "q-r4-01",
+   "secao": "r4",
+   "tags": [
+    "FAST"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "No trauma, o que o FAST procura?",
+   "img": "content/img/guia/fast-hepatorrenal.jpg",
+   "alternativas": [
+    {
+     "t": "Líquido livre nos espaços hepatorrenal, esplenorrenal e pélvico e no pericárdio",
+     "certa": true,
+     "porque": "Definição do FAST no material."
+    },
+    {
+     "t": "Ar livre sob o diafragma",
+     "certa": false,
+     "porque": "É achado da radiografia na perfuração."
+    },
+    {
+     "t": "Fraturas de costela",
+     "certa": false,
+     "porque": "Fraturas são vistas na radiografia."
+    },
+    {
+     "t": "Extravasamento de contraste no baço",
+     "certa": false,
+     "porque": "É achado da TC com contraste."
+    }
+   ],
+   "explica": "O FAST é um ultrassom rápido na sala de emergência que procura sangue (líquido livre) nas regiões que acumulam líquido.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "ultrassonografia que procura líquido livre nos espaços hepatorrenal, esplenorrenal e pélvico e no pericárdio"
+   }
+  },
+  {
+   "id": "q-r4-02",
+   "secao": "r4",
+   "tags": [
+    "trauma",
+    "imagem"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Na TC com contraste de um paciente estável após trauma, o contraste extravasa junto ao baço e aumenta da fase precoce para a tardia. O que isso indica?",
+   "img": "content/img/imagem/ref/baco_sangra.jpg",
+   "alternativas": [
+    {
+     "t": "Hematoma antigo",
+     "certa": false,
+     "porque": "Hematoma não mostra contraste aumentando entre as fases."
+    },
+    {
+     "t": "Infarto esplênico",
+     "certa": false,
+     "porque": "Infarto é área sem realce, não contraste extravasado."
+    },
+    {
+     "t": "Achado normal da fase tardia",
+     "certa": false,
+     "porque": "Contraste fora do vaso não é normal."
+    },
+    {
+     "t": "Sangramento ativo",
+     "certa": true,
+     "porque": "Extravasamento de contraste é sinal de sangramento ativo."
+    }
+   ],
+   "explica": "Contraste saindo do vaso e se acumulando entre as fases = sangue saindo naquele momento.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "sangramento ativo pelo extravasamento de contraste"
+   }
+  },
+  {
+   "id": "q-r4-03",
+   "secao": "r4",
+   "tags": [
+    "urolitíase"
+   ],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a pesquisa de cálculo urinário é feita em TC <strong>sem</strong> contraste?",
+   "alternativas": [
+    {
+     "t": "Porque o contraste dissolve os cálculos",
+     "certa": false,
+     "porque": "Não é o que o material diz."
+    },
+    {
+     "t": "Quase todos os cálculos são hiperdensos e o contraste excretado pelos rins poderia escondê-los",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque com contraste o exame não mostra os rins",
+     "certa": false,
+     "porque": "Com contraste os rins realçam bem."
+    },
+    {
+     "t": "Porque o cálculo só aparece na ressonância",
+     "certa": false,
+     "porque": "O padrão-ouro é a TC sem contraste."
+    }
+   ],
+   "explica": "Cálculo e urina com contraste ficam igualmente brancos; por isso o exame é feito sem contraste.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "praticamente todos os cálculos são hiperdensos e o contraste excretado pelos rins poderia ocultá-los"
+   }
+  },
+  {
+   "id": "q-r4-04",
+   "secao": "r4",
+   "tags": [
+    "urolitíase"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "O que é o cálculo coraliforme?",
+   "alternativas": [
+    {
+     "t": "Cálculo pequeno no ureter distal",
+     "certa": false,
+     "porque": "É a ureterolitíase distal."
+    },
+    {
+     "t": "Cálculo que se move na bexiga",
+     "certa": false,
+     "porque": "Não é a definição de coraliforme."
+    },
+    {
+     "t": "Cálculo grande que molda os cálices e a pelve renal",
+     "certa": true,
+     "porque": "Definição do material."
+    },
+    {
+     "t": "Calcificação no apêndice",
+     "certa": false,
+     "porque": "É o apendicolito."
+    }
+   ],
+   "explica": "O coraliforme ocupa a pelve e os cálices, lembrando um coral.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "O cálculo coraliforme é grande e molda os cálices e a pelve renal."
+   }
+  },
+  {
+   "id": "q-r4-05",
+   "secao": "r4",
+   "tags": [
+    "urolitíase",
+    "imagem"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Na TC sem contraste de cólica renal, além do cálculo, o que se espera ver acima de uma obstrução?",
+   "img": "content/img/guia/calculo-ureteral.jpg",
+   "alternativas": [
+    {
+     "t": "Pneumoperitônio",
+     "certa": false,
+     "porque": "É achado de perfuração."
+    },
+    {
+     "t": "Níveis hidroaéreos",
+     "certa": false,
+     "porque": "São achados de obstrução intestinal."
+    },
+    {
+     "t": "Edema vasogênico",
+     "certa": false,
+     "porque": "É achado cerebral."
+    },
+    {
+     "t": "Hidronefrose",
+     "certa": true,
+     "porque": "O exame mostra o cálculo e a hidronefrose acima dele."
+    }
+   ],
+   "explica": "A urina para acima do cálculo e dilata o sistema coletor: hidronefrose.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "O exame mostra o cálculo e a hidronefrose acima dele"
+   }
+  },
+  {
+   "id": "q-r4-06",
+   "secao": "r4",
+   "tags": [
+    "fratura"
+   ],
+   "tipo": "compreensao",
+   "nivel": "facil",
+   "enunciado": "Por que a radiografia na suspeita de fratura é feita em pelo menos duas incidências?",
+   "alternativas": [
+    {
+     "t": "Porque uma linha de fratura pode ser invisível numa única projeção",
+     "certa": true,
+     "porque": "Motivo dado no material."
+    },
+    {
+     "t": "Para reduzir a dose de radiação",
+     "certa": false,
+     "porque": "Duas incidências não reduzem a dose."
+    },
+    {
+     "t": "Porque uma incidência só mostra partes moles",
+     "certa": false,
+     "porque": "Ambas mostram o osso."
+    },
+    {
+     "t": "Para substituir a tomografia",
+     "certa": false,
+     "porque": "O material não diz isso."
+    }
+   ],
+   "explica": "Uma fratura pode ficar escondida pela sobreposição em um ângulo e aparecer no outro.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "sempre em pelo menos duas incidências, porque uma linha de fratura pode ser invisível numa única projeção"
+   }
+  },
+  {
+   "id": "q-r4-07",
+   "secao": "r4",
+   "tags": [
+    "osso",
+    "imagem"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Radiografia de criança mostra lesão óssea com margens escleróticas bem definidas e aspecto geográfico. O que esse padrão sugere?",
+   "img": "content/img/imagem/ref/cisto_osseo.jpg",
+   "alternativas": [
+    {
+     "t": "Lesão agressiva, como o osteossarcoma",
+     "certa": false,
+     "porque": "Agressividade: destruição cortical, margens mal definidas e reação periosteal."
+    },
+    {
+     "t": "Fratura recente",
+     "certa": false,
+     "porque": "Fratura é uma linha radiotransparente cruzando a cortical."
+    },
+    {
+     "t": "Lesão benigna, como o cisto ósseo simples",
+     "certa": true,
+     "porque": "Margens escleróticas e aspecto geográfico sugerem benignidade."
+    },
+    {
+     "t": "Osso normal",
+     "certa": false,
+     "porque": "Há uma lesão descrita."
+    }
+   ],
+   "explica": "Borda bem desenhada e esclerótica indica crescimento lento, típico de lesão benigna.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Margens escleróticas bem definidas e aspecto geográfico sugerem benignidade, como no cisto ósseo simples"
+   }
+  },
+  {
+   "id": "q-r4-08",
+   "secao": "r4",
+   "tags": [
+    "osso"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "No raio X, como a lesão óssea blástica altera o osso?",
+   "alternativas": [
+    {
+     "t": "Deixa o osso mais escuro",
+     "certa": false,
+     "porque": "Isso é a lesão lítica."
+    },
+    {
+     "t": "Não altera a densidade",
+     "certa": false,
+     "porque": "O material descreve mudança de densidade."
+    },
+    {
+     "t": "Cria uma linha preta cruzando a cortical",
+     "certa": false,
+     "porque": "Isso é a fratura."
+    },
+    {
+     "t": "Deixa o osso mais branco",
+     "certa": true,
+     "porque": "A blástica forma osso e o torna mais branco."
+    }
+   ],
+   "explica": "Lítica destrói osso (escurece); blástica forma osso (embranquece).",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "A lesão lítica escurece o osso, e a blástica o torna mais branco."
+   }
+  },
+  {
+   "id": "q-r4-09",
+   "secao": "r4",
+   "tags": [
+    "músculo"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Na lesão muscular, depois do ultrassom inicial, para que serve a ressonância?",
+   "img": "content/img/imagem/ref/musculo_soleo.jpg",
+   "alternativas": [
+    {
+     "t": "Detalhar a extensão, mostrando edema e descontinuidade das fibras",
+     "certa": true,
+     "porque": "Papel da RM nas lesões musculares segundo o material."
+    },
+    {
+     "t": "Substituir o ultrassom como exame inicial",
+     "certa": false,
+     "porque": "O US é o exame inicial."
+    },
+    {
+     "t": "Procurar fratura cortical",
+     "certa": false,
+     "porque": "Para fratura o primeiro exame é a radiografia."
+    },
+    {
+     "t": "Medir a densidade em UH do músculo",
+     "certa": false,
+     "porque": "UH é medida da tomografia."
+    }
+   ],
+   "explica": "O US abre a investigação; a RM, em sequências sensíveis a líquido, mostra a extensão da lesão.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "a ressonância detalha a extensão, mostrando edema e descontinuidade das fibras nas sequências sensíveis a líquido"
+   }
+  },
+  {
+   "id": "q-r5-01",
+   "secao": "r5",
+   "tags": [
+    "RX tórax"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Como é feita a radiografia de tórax padrão?",
+   "alternativas": [
+    {
+     "t": "Anteroposterior, deitado, em expiração",
+     "certa": false,
+     "porque": "AP no leito amplia o coração; não é a incidência padrão."
+    },
+    {
+     "t": "Posteroanterior, em pé, em inspiração profunda, a cerca de 1,8 m da fonte",
+     "certa": true,
+     "porque": "Técnica padrão descrita no material."
+    },
+    {
+     "t": "Posteroanterior, deitado, a 50 cm",
+     "certa": false,
+     "porque": "Não é a técnica descrita."
+    },
+    {
+     "t": "Perfil em expiração forçada",
+     "certa": false,
+     "porque": "Não é a incidência padrão."
+    }
+   ],
+   "explica": "PA em pé, inspiração profunda e cerca de 1,8 m da fonte deixam o coração próximo ao filme e pouco ampliado.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A radiografia de tórax padrão é feita em incidência posteroanterior, com o paciente em pé, em inspiração profunda e a cerca de 1,8 m da fonte."
+   }
+  },
+  {
+   "id": "q-r5-02",
+   "secao": "r5",
+   "tags": [
+    "RX tórax"
+   ],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o coração parece maior na radiografia AP feita no leito do que na PA?",
+   "alternativas": [
+    {
+     "t": "Porque no AP o paciente está em inspiração profunda",
+     "certa": false,
+     "porque": "Inspiração profunda não amplia o coração."
+    },
+    {
+     "t": "Na PA o coração fica perto do filme e é pouco ampliado; no AP fica mais longe e amplia",
+     "certa": true,
+     "porque": "É o que o material descreve."
+    },
+    {
+     "t": "Porque o AP usa ondas sonoras",
+     "certa": false,
+     "porque": "Radiografia usa radiação ionizante."
+    },
+    {
+     "t": "Porque no AP há cardiomegalia sempre",
+     "certa": false,
+     "porque": "O aumento é técnico, não doença."
+    }
+   ],
+   "explica": "Quanto mais longe do filme, mais a sombra se amplia; por isso só a PA permite julgar o tamanho do coração.",
+   "pegadinha": "Coração “grande” no AP de leito pode ser só técnica.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Nessa incidência o coração fica próximo ao filme e é pouco ampliado"
+   }
+  },
+  {
+   "id": "q-r5-03",
+   "secao": "r5",
+   "tags": [
+    "RX tórax"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Numa radiografia PA, o hemidiafragma direito está na altura do quarto arco costal anterior. Como fica a avaliação da técnica?",
+   "img": "content/img/guia/torax-normal.jpg",
+   "alternativas": [
+    {
+     "t": "Inspiração adequada",
+     "certa": false,
+     "porque": "O diafragma está acima da sexta costela anterior."
+    },
+    {
+     "t": "Paciente rodado",
+     "certa": false,
+     "porque": "Rotação é avaliada pelos processos espinhosos e clavículas."
+    },
+    {
+     "t": "Incidência em perfil",
+     "certa": false,
+     "porque": "O enunciado descreve uma PA."
+    },
+    {
+     "t": "Inspiração inadequada",
+     "certa": true,
+     "porque": "A inspiração é adequada com o diafragma na sexta costela anterior ou abaixo."
+    }
+   ],
+   "explica": "Diafragma alto (quarta costela) indica pouca inspiração: as bases ficam mal expandidas e podem simular doença.",
+   "dica": "Qual costela anterior o diafragma precisa alcançar?",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A inspiração é adequada quando o hemidiafragma está na altura ou abaixo da sexta costela anterior"
+   }
+  },
+  {
+   "id": "q-r5-04",
+   "secao": "r5",
+   "tags": [
+    "RX tórax"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Na radiografia PA, os processos espinhosos estão bem mais próximos da extremidade medial da clavícula direita do que da esquerda. O que isso indica?",
+   "alternativas": [
+    {
+     "t": "Rotação do paciente",
+     "certa": true,
+     "porque": "Sem rotação, os processos ficam equidistantes das clavículas."
+    },
+    {
+     "t": "Inspiração inadequada",
+     "certa": false,
+     "porque": "Inspiração é avaliada pelo diafragma e costelas."
+    },
+    {
+     "t": "Técnica perfeita",
+     "certa": false,
+     "porque": "A assimetria indica rotação."
+    },
+    {
+     "t": "Pneumoperitônio",
+     "certa": false,
+     "porque": "É ar sob o diafragma, outro achado."
+    }
+   ],
+   "explica": "Equidistância entre os processos espinhosos e as clavículas confirma ausência de rotação; assimetria indica paciente rodado.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A ausência de rotação é confirmada quando os processos espinhosos estão equidistantes das extremidades mediais das clavículas."
+   }
+  },
+  {
+   "id": "q-r5-05",
+   "secao": "r5",
+   "tags": [
+    "RX tórax",
+    "caso"
+   ],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Paciente com dor abdominal faz radiografia de tórax. Na leitura ABCDE, em qual letra entra o achado de ar sob o diafragma?",
+   "alternativas": [
+    {
+     "t": "A · Vias aéreas",
+     "certa": false,
+     "porque": "Avalia traqueia e brônquios."
+    },
+    {
+     "t": "B · Respiração",
+     "certa": false,
+     "porque": "Avalia pulmões, transparência e opacidades."
+    },
+    {
+     "t": "E · Todo o resto",
+     "certa": true,
+     "porque": "A última letra inclui achados fora dos pulmões, como o pneumoperitônio."
+    },
+    {
+     "t": "D · Ossos",
+     "certa": false,
+     "porque": "Avalia fraturas, costelas e cintura escapular."
+    }
+   ],
+   "explica": "A letra E é a mais esquecida e pode trazer o achado decisivo: pneumoperitônio, enfisema subcutâneo, sondas e corpos estranhos.",
+   "pegadinha": "O RX de tórax também é exame de abdome agudo.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A última letra é a mais esquecida e inclui achados fora dos pulmões que podem ser decisivos, como o pneumoperitônio sob o diafragma num paciente com dor abdominal."
+   }
+  },
+  {
+   "id": "q-k1-01",
+   "secao": "k1",
+   "tags": [
+    "anatomia seccional"
+   ],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "No corte axial de TC do abdome, de que lado do paciente ficam a aorta e a veia cava inferior?",
+   "alternativas": [
+    {
+     "t": "Aorta à direita, cava à esquerda",
+     "certa": false,
+     "porque": "Inverte a regra."
+    },
+    {
+     "t": "As duas na linha média, uma atrás da outra",
+     "certa": false,
+     "porque": "Ficam lado a lado, à frente da coluna."
+    },
+    {
+     "t": "Aorta à esquerda, cava à direita",
+     "certa": true,
+     "porque": "Regra de bolso do material."
+    },
+    {
+     "t": "Aorta à esquerda, cava atrás da coluna",
+     "certa": false,
+     "porque": "A cava fica à direita, encostada no fígado."
+    }
+   ],
+   "explica": "A aorta fica colada à frente do corpo vertebral, um pouco à esquerda; a cava, à direita, encostada no fígado.",
+   "pegadinha": "Na imagem, o lado esquerdo do paciente aparece à direita da tela.",
+   "fonte": {
+    "secao": "k1",
+    "trecho": "Regra: aorta à esquerda, cava à direita."
+   }
+  },
+  {
+   "id": "q-k1-02",
+   "secao": "k1",
+   "tags": [
+    "anatomia seccional"
+   ],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Em um corte axial, qual vaso corre logo atrás do pâncreas?",
+   "alternativas": [
+    {
+     "t": "Veia esplênica",
+     "certa": true,
+     "porque": "O material descreve a veia esplênica logo atrás do pâncreas."
+    },
+    {
+     "t": "Veia cava superior",
+     "certa": false,
+     "porque": "Não aparece em corte de abdome."
+    },
+    {
+     "t": "Artéria meníngea média",
+     "certa": false,
+     "porque": "Fica no crânio."
+    },
+    {
+     "t": "Veia porta, à esquerda do baço",
+     "certa": false,
+     "porque": "A porta entra no hilo do fígado."
+    }
+   ],
+   "explica": "A veia esplênica acompanha o pâncreas por trás, do baço até a confluência com a mesentérica superior.",
+   "fonte": {
+    "secao": "k1",
+    "trecho": "A veia esplênica corre logo atrás dele."
+   }
+  },
+  {
+   "id": "q-k1-03",
+   "secao": "k1",
+   "tags": [
+    "anatomia seccional"
+   ],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Como diferenciar intestino grosso de intestino delgado em uma imagem do abdome?",
+   "alternativas": [
+    {
+     "t": "Cólon no centro, delgado na periferia",
+     "certa": false,
+     "porque": "Inverte a regra."
+    },
+    {
+     "t": "Só pelo calibre: o delgado é sempre mais largo",
+     "certa": false,
+     "porque": "O cólon costuma ter calibre maior."
+    },
+    {
+     "t": "O delgado tem fezes; o cólon tem só líquido",
+     "certa": false,
+     "porque": "As fezes ficam no cólon."
+    },
+    {
+     "t": "Cólon na periferia, com fezes e gás; delgado no centro, com pregas em penas",
+     "certa": true,
+     "porque": "Regra do material: cólon = moldura, delgado = centro."
+    }
+   ],
+   "explica": "O cólon forma uma moldura na periferia, com fezes misturadas a gás; o delgado ocupa o centro e tem válvulas coniventes.",
+   "fonte": {
+    "secao": "k1",
+    "trecho": "O cólon fica na periferia (moldura) e tem conteúdo fecal com gás misturado"
+   }
+  },
+  {
+   "id": "q-k1-04",
+   "secao": "k1",
+   "tags": [
+    "UH"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "facil",
+   "enunciado": "Uma região da TC mede cerca de −100 UH. Qual tecido é mais provável?",
+   "alternativas": [
+    {
+     "t": "Água",
+     "certa": false,
+     "porque": "Água vale 0 UH."
+    },
+    {
+     "t": "Gordura",
+     "certa": true,
+     "porque": "Gordura é negativa, cerca de −100 UH."
+    },
+    {
+     "t": "Ar",
+     "certa": false,
+     "porque": "Ar vale −1000 UH."
+    },
+    {
+     "t": "Osso cortical",
+     "certa": false,
+     "porque": "Osso cortical é muito positivo, perto de +1000."
+    }
+   ],
+   "explica": "Valores negativos pequenos (−100 a −50) indicam gordura; −1000 é ar; 0 é água.",
+   "fonte": {
+    "secao": "k1",
+    "trecho": "Gordura é negativa"
+   }
+  },
+  {
+   "id": "q-k2-01",
+   "secao": "k2",
+   "tags": [
+    "HED"
+   ],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Em qual hematoma a fratura de crânio associada é muito frequente (80–90%)?",
+   "alternativas": [
+    {
+     "t": "Subdural",
+     "certa": false,
+     "porque": "No subdural a fratura é menos frequente."
+    },
+    {
+     "t": "Hemorragia subaracnoide aneurismática",
+     "certa": false,
+     "porque": "Não é traumática."
+    },
+    {
+     "t": "Hematoma intraparenquimatoso hipertensivo",
+     "certa": false,
+     "porque": "Não é traumático."
+    },
+    {
+     "t": "Epidural",
+     "certa": true,
+     "porque": "A tabela da aula traz fratura associada muito frequente no epidural."
+    }
+   ],
+   "explica": "O epidural vem da fratura temporal que lesa a artéria meníngea média.",
+   "fonte": {
+    "secao": "k2",
+    "trecho": "Muito frequente (80–90%)"
+   }
+  },
+  {
+   "id": "q-k2-02",
+   "secao": "k2",
+   "tags": [
+    "HSD"
+   ],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "O hematoma subdural cruza a linha média?",
+   "alternativas": [
+    {
+     "t": "Não, é limitado pela foice e pela tenda",
+     "certa": true,
+     "porque": "É o que diz a tabela da aula."
+    },
+    {
+     "t": "Sim, porque não respeita as suturas",
+     "certa": false,
+     "porque": "Cruza suturas, mas não a linha média."
+    },
+    {
+     "t": "Sim, sempre que é crônico",
+     "certa": false,
+     "porque": "O limite é anatômico, não temporal."
+    },
+    {
+     "t": "Só se houver fratura temporal",
+     "certa": false,
+     "porque": "Fratura não muda esse limite."
+    }
+   ],
+   "explica": "O subdural cruza suturas, mas a foice e a tenda impedem que atravesse a linha média.",
+   "pegadinha": "Não confunda: “cruza sutura” ≠ “cruza linha média”.",
+   "fonte": {
+    "secao": "k2",
+    "trecho": "Não (limitado pela foice e pela tenda)"
+   }
+  },
+  {
+   "id": "q-k3-01",
+   "secao": "k3",
+   "tags": [
+    "pancreatite",
+    "US"
+   ],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o ultrassom vê mal o pâncreas?",
+   "alternativas": [
+    {
+     "t": "Porque o pâncreas é calcificado",
+     "certa": false,
+     "porque": "Calcificação é da pancreatite crônica, não o motivo."
+    },
+    {
+     "t": "Porque é retroperitoneal e fica atrás do estômago com gás",
+     "certa": true,
+     "porque": "É a explicação do material."
+    },
+    {
+     "t": "Porque o US usa radiação",
+     "certa": false,
+     "porque": "O US não usa radiação."
+    },
+    {
+     "t": "Porque o pâncreas só aparece com contraste iodado",
+     "certa": false,
+     "porque": "O problema do US é o gás e a posição."
+    }
+   ],
+   "explica": "O gás do estômago bloqueia o som, e o pâncreas fica atrás dele, no retroperitônio.",
+   "fonte": {
+    "secao": "k3",
+    "trecho": "O US vê mal o pâncreas (retroperitoneal, atrás do estômago com gás)."
+   }
+  },
+  {
+   "id": "q-k3-02",
+   "secao": "k3",
+   "tags": [
+    "gestante",
+    "apendicite"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Gestante com suspeita de apendicite tem ultrassom inconclusivo. Qual o próximo exame?",
+   "alternativas": [
+    {
+     "t": "Tomografia com contraste",
+     "certa": false,
+     "porque": "A TC usa radiação; na gestante o material indica RM."
+    },
+    {
+     "t": "Radiografia simples",
+     "certa": false,
+     "porque": "Não está indicada para apendicite na gestante."
+    },
+    {
+     "t": "Ressonância sem gadolínio",
+     "certa": true,
+     "porque": "Na gestante, depois do US vem a RM, sem radiação."
+    },
+    {
+     "t": "Repetir o FAST",
+     "certa": false,
+     "porque": "O FAST é do trauma."
+    }
+   ],
+   "explica": "Na gestante evita-se radiação: ultrassom primeiro; se inconclusivo, ressonância sem gadolínio.",
+   "fonte": {
+    "secao": "k3",
+    "trecho": "US primeiro; se inconclusivo, a RM (sem gadolínio)."
+   }
+  },
+  {
+   "id": "q-k4-01",
+   "secao": "k4",
+   "tags": [
+    "urolitíase"
+   ],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Na TC de cólica renal, qual destes é um achado <strong>INDIRETO</strong> de litíase?",
+   "alternativas": [
+    {
+     "t": "Cálculo hiperdenso no ureter",
+     "certa": false,
+     "porque": "É achado direto."
+    },
+    {
+     "t": "Estriação da gordura perirrenal",
+     "certa": true,
+     "porque": "Faz parte dos achados indiretos da tabela da aula."
+    },
+    {
+     "t": "Tamanho do cálculo em mm",
+     "certa": false,
+     "porque": "É achado direto."
+    },
+    {
+     "t": "Localização exata do cálculo",
+     "certa": false,
+     "porque": "É achado direto."
+    }
+   ],
+   "explica": "Diretos: o cálculo, sua localização, tamanho e densidade. Indiretos: hidronefrose, estriação da gordura perirrenal, nefrograma retardado e edema periureteral.",
+   "fonte": {
+    "secao": "k4",
+    "trecho": "Estriações da gordura perirrenal"
+   }
+  }
  ]
 }
