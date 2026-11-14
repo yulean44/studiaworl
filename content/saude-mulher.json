@@ -1,0 +1,2037 @@
+{
+ "id": "saude-mulher",
+ "nome": "Práticas Médicas II · Saúde da Mulher",
+ "sigla": "GIN",
+ "sub": "2ª Unidade · Aulas 7 a 12 · Turma 41",
+ "cor": "#7aa38f",
+ "emoji": "",
+ "icone": "coracao",
+ "secoes": [
+  {
+   "id": "r0",
+   "grupo": "Resumo de referência",
+   "titulo": "Comece por aqui",
+   "par": "g0",
+   "html": "<p>A <strong>AV2 de Saúde da Mulher</strong> (Práticas Médicas II, semana de 23 a 28/11) cobra as <strong>aulas 7 a 12</strong> do <em>Plano de ensino de Ginecologia do 4º semestre</em>:</p><table><thead><tr><th>Aula</th><th>Tema</th><th>Material no Drive</th></tr></thead><tbody><tr><td>7</td><td>Vulvovaginites e cervicites</td><td>Slides <em>Vulvovaginites e cervicites</em></td></tr><tr><td>8</td><td>IST (sífilis, HIV, HPV e outras)</td><td><em>DIP e IST</em> + <em>Manejo clínico das IST</em> (Profa. Luiza Athayde)</td></tr><tr><td>9</td><td>Doença inflamatória pélvica</td><td><em>DIP e IST</em> + <em>DIP – abordagem clínica</em> (Profa. Luiza)</td></tr><tr><td>10</td><td>Planejamento reprodutivo e contracepção</td><td>Dois arquivos: aula teórica + <strong>4 casos comentados da Profa. Luiza</strong></td></tr><tr><td>11</td><td>Rastreamento do câncer de colo uterino</td><td>Slides <em>Rastreamento do câncer de colo uterino</em> (já com o DNA-HPV de 2025)</td></tr><tr><td>12</td><td>Doenças benignas da mama e rastreamento do câncer de mama</td><td><strong>Sem slides no Drive</strong>: feito pelo plano de ensino e pela diretriz do Ministério da Saúde (set/2025)</td></tr></tbody></table><p>Leia primeiro o <strong>resumo</strong> de cada aula e depois a parte do <strong>guia prioritário</strong> ao lado. No guia há um <strong>plano de estudo dia a dia</strong> até a prova.</p><p>Os <strong>casos clínicos</strong> desta matéria incluem os <strong>4 casos que a Profa. Luiza resolveu em aula</strong> (Marina, Paula, Luciana e Jéssica) e as três situações de DIP que ela marcou como \"treinamento para provas\". São prioridade.</p><blockquote><strong>Cai na prova:</strong> Os slides trazem várias tabelas como imagem (tratamento das cervicites, tratamento da sífilis, quadro comparativo dos corrimentos, critérios da pílula). Elas foram completadas com o PCDT-IST do Ministério da Saúde e os critérios da OMS, que são a base da aula.</blockquote>"
+  },
+  {
+   "id": "r1",
+   "grupo": "Resumo de referência",
+   "titulo": "1. Vulvovaginites e cervicites (Aula 7)",
+   "par": "g1",
+   "html": "<p>Corrimento é a <strong>queixa ginecológica nº 1 na APS</strong> e porta de entrada para IST silenciosas. Tratar bem previne DIP, infertilidade, ectópica e transmissão vertical.</p><h3>Termos</h3><ul><li><strong>Vulvite</strong>: só a vulva. <strong>Vaginite</strong>: mucosa vaginal inflamada (candidíase, tricomoníase). <strong>Vulvovaginite</strong>: as duas (típica da candidíase).</li><li><strong>Vaginose</strong>: desequilíbrio da flora <strong>sem inflamação</strong> (vaginose bacteriana).</li><li><strong>Cervicite</strong>: inflamação da endocérvice, em geral IST (clamídia, gonococo).</li></ul><h3>Ecossistema normal</h3><p>Estrogênio → glicogênio no epitélio → <strong>lactobacilos (Döderlein)</strong> fazem ácido lático → <strong>pH 3,8–4,5</strong>. Também produzem H₂O₂ e bacteriocinas. Secreção fisiológica: inodora, clara ou esbranquiçada, sem prurido.</p><h3>Avaliação</h3><ul><li>Anamnese: cor, odor (piora após coito ou menstruação), prurido, ardor, dispareunia, disúria, sinusorragia; história sexual; DIU/ACO, duchas, antibiótico recente, DM, gravidez.</li><li>Exame: inspeção vulvar; <strong>especular</strong> (aspecto do conteúdo e do colo: mucopus, friabilidade); <strong>toque bimanual obrigatório</strong> (dor à mobilização do colo ou anexial = pensar em DIP).</li><li>Na consulta: <strong>pH vaginal</strong>, <strong>teste das aminas</strong> (KOH 10%) e exame a fresco.</li></ul><h3>Quadro comparativo</h3><table><thead><tr><th></th><th>Candidíase</th><th>Vaginose bacteriana</th><th>Tricomoníase</th></tr></thead><tbody><tr><td>É IST?</td><td>Não (endógena)</td><td>Não (endógena)</td><td><strong>Sim</strong></td></tr><tr><td>Agente</td><td><em>Candida albicans</em> (80–92%)</td><td>Queda de lactobacilos + anaeróbios (<em>Gardnerella</em>, <em>Prevotella</em>, <em>Mobiluncus</em>)</td><td><em>Trichomonas vaginalis</em> (protozoário flagelado)</td></tr><tr><td>Corrimento</td><td>Branco, <strong>grumoso</strong>, \"nata de leite\", placas aderidas</td><td>Branco-acinzentado, <strong>homogêneo</strong>, fluido</td><td><strong>Amarelo-esverdeado, bolhoso</strong>, abundante</td></tr><tr><td>Sintoma-chave</td><td><strong>Prurido intenso</strong>, eritema, edema, fissuras, lesões satélites</td><td><strong>Odor de peixe</strong>, pior após coito e menstruação; sem inflamação</td><td>Odor fétido, inflamação intensa, <strong>colo em morango/framboesa</strong></td></tr><tr><td>pH</td><td><strong>&lt; 4,5</strong> (normal)</td><td><strong>&gt; 4,5</strong></td><td><strong>&gt; 4,5</strong></td></tr><tr><td>Aminas (whiff)</td><td>Negativo</td><td><strong>Positivo</strong></td><td>Pode ser positivo</td></tr><tr><td>Microscopia</td><td>Pseudo-hifas e esporos (KOH/soro)</td><td><strong>Clue cells</strong>, poucos leucócitos</td><td>Protozoário <strong>móvel</strong> + muitos leucócitos</td></tr><tr><td>Tratar parceria?</td><td>Não</td><td>Não</td><td><strong>Sempre</strong></td></tr></tbody></table><h3>Candidíase vulvovaginal</h3><ul><li>Fatores: <strong>gravidez</strong>, <strong>DM descompensado</strong>, antibiótico, corticoide/imunossupressão, ACO, roupas úmidas, HIV.</li><li><strong>Não complicada</strong>: leve/moderada, esporádica, <em>C. albicans</em>, sem comorbidade. <strong>Complicada</strong>: sintomas intensos, <strong>≥ 4 episódios/ano</strong>, não-albicans (<em>glabrata</em>, <em>krusei</em>), DM, HIV ou gestação.</li><li>Diagnóstico: exame a fresco (soro ou <strong>KOH 10%</strong>) ou Gram; <strong>cultura</strong> nos recorrentes (identificar espécie).</li><li>Tratamento (PCDT): <strong>miconazol creme 2%</strong> intravaginal 7 noites ou nistatina 14 noites; alternativa <strong>fluconazol 150 mg VO dose única</strong>. <strong>Gestante: só tópico</strong>. Recorrente: fluconazol 150 mg nos dias 1, 4 e 7 e depois semanal por 6 meses.</li></ul><h3>Vaginose bacteriana</h3><ul><li>Causa <strong>mais frequente</strong> de corrimento na idade reprodutiva. Aminas voláteis (putrescina, cadaverina) dão o odor.</li><li>Não é IST, mas <strong>aumenta o risco de IST/HIV</strong>, de DIP após procedimentos (DIU, curetagem) e complicações obstétricas.</li><li><strong>Critérios de Amsel (≥ 3 de 4)</strong>: pH &gt; 4,5; corrimento acinzentado homogêneo; teste das aminas positivo; <strong>clue cells</strong>. <strong>Escore de Nugent</strong> (Gram) é o padrão-ouro.</li><li>Tratamento: <strong>metronidazol 500 mg VO 12/12 h por 7 dias</strong> (ou gel vaginal 0,75% por 5 noites); alternativa clindamicina. Parceria <strong>não</strong> é tratada.</li></ul><h3>Tricomoníase</h3><ul><li>IST obrigatória. Colo com pontilhado hemorrágico (\"<strong>colo em morango</strong>\").</li><li>Tratamento (PCDT): <strong>metronidazol 500 mg 12/12 h por 7 dias</strong>; alternativa tinidazol 2 g dose única. Gestante: metronidazol oral é permitido em qualquer trimestre.</li><li><strong>Parceria: tratar sempre</strong> (metronidazol 2 g dose única), mesmo assintomática. Abstinência até 7 dias após o fim do tratamento. Testar sífilis, HIV, hepatites B e C.</li></ul><h3>Cervicites</h3><ul><li>Agentes: <strong><em>Chlamydia trachomatis</em></strong> e <strong><em>Neisseria gonorrhoeae</em></strong>; também trichomonas, <em>M. genitalium</em>, herpes.</li><li><strong>70–80% assintomáticas</strong>. Quando há sintoma: corrimento, sangramento intermenstrual ou pós-coito, dispareunia, disúria.</li><li>Risco: &lt; 25–30 anos, parceria nova ou múltipla, parceria com IST, IST prévia, preservativo irregular. Adolescentes: <strong>ectopia</strong> deixa epitélio colunar exposto.</li><li>Exame: <strong>mucopus endocervical</strong> e <strong>friabilidade</strong> (sangra ao toque do cotonete).</li><li>Diagnóstico de escolha: <strong>biologia molecular (NAAT)</strong> para clamídia e gonococo.</li><li><strong>Regra prática</strong>: mucopus OU friabilidade OU fator de risco → <strong>tratar empiricamente gonococo + clamídia sem esperar o resultado</strong>.</li><li>Tratamento (PCDT): <strong>ceftriaxona 500 mg IM dose única + azitromicina 1 g VO dose única</strong>. Tratar parcerias, oferecer HIV/sífilis/hepatites, retorno se persistir em 3–5 dias.</li></ul><h3>Parcerias e prevenção</h3><ul><li>\"Uma pessoa com IST nunca é só uma pessoa.\" Tratar parceria: <strong>tricomoníase, clamídia e gonorreia sempre</strong>; candidíase e vaginose não.</li><li>Comunicação: <strong>cartão de comunicação</strong> (2 vias); sem retorno em 15 dias → contato por telefone/mensagem; busca ativa só no fim. Sigilo e sem coerção.</li><li><strong>Prevenção combinada</strong>: preservativo, testagem regular, vacinas (HBV, HPV, HAV), PrEP, PEP, TARV (I=I), rastreio de colo, educação sexual.</li></ul>"
+  },
+  {
+   "id": "r2",
+   "grupo": "Resumo de referência",
+   "titulo": "2. IST: sífilis, HIV, HPV e úlceras (Aula 8)",
+   "par": "g2",
+   "html": "<p>Na mulher as IST são <strong>mais silenciosas</strong> (colo e trato superior não são visíveis), têm maior área de mucosa exposta e diagnóstico mais tardio. Impactos: infertilidade tubária, ectópica, aborto, prematuridade, transmissão vertical, câncer de colo e maior risco de HIV. <strong>Toda consulta é oportunidade de rastrear.</strong></p><h3>Sífilis</h3><ul><li><em>Treponema pallidum</em>. Mais transmissível nas fases <strong>recentes</strong> (com lesões).</li><li><strong>Recente</strong> (até 1 ano): primária, secundária, latente recente. <strong>Tardia</strong> (&gt; 1 ano): latente tardia e terciária. <strong>Duração ignorada → tratar como tardia.</strong></li><li><strong>Notificação compulsória</strong>: adquirida, em gestante e congênita.</li></ul><table><thead><tr><th>Fase</th><th>Quando</th><th>Clínica</th></tr></thead><tbody><tr><td>Primária</td><td>~3 semanas (10–90 dias)</td><td><strong>Cancro duro</strong>: úlcera única, <strong>indolor</strong>, base endurecida, fundo limpo + adenopatia regional; some sozinha</td></tr><tr><td>Secundária</td><td>6 semanas a 6 meses</td><td>Roséola, lesões <strong>palmoplantares</strong>, condiloma plano, placas mucosas, alopecia em clareira, poliadenopatia</td></tr><tr><td>Latente</td><td>—</td><td>Sem sinais; só sorologia</td></tr><tr><td>Terciária</td><td>1 a 40 anos</td><td>Gomas, aortite, neurossífilis</td></tr></tbody></table><p>Neurossífilis, sífilis ocular e otológica podem surgir em <strong>qualquer fase</strong>.</p><p><strong>Fluxograma</strong>: 1º teste <strong>treponêmico</strong> (teste rápido) reagente → <strong>não treponêmico quantitativo</strong> (VDRL). VDRL reagente = sífilis: classificar, tratar, notificar e seguir pelo título. VDRL não reagente → 2º treponêmico de outra metodologia: reagente = sífilis ou <strong>cicatriz sorológica</strong> (ver história); não reagente = falso-reagente.</p><table><thead><tr><th>Estágio</th><th>Tratamento (penicilina G benzatina IM)</th></tr></thead><tbody><tr><td>Recente (primária, secundária, latente recente)</td><td><strong>2,4 milhões UI, dose única</strong> (1,2 milhão em cada glúteo)</td></tr><tr><td>Tardia (latente tardia, terciária, duração ignorada)</td><td><strong>2,4 milhões UI semanal × 3</strong> (total 7,2 milhões)</td></tr><tr><td>Neurossífilis</td><td>Penicilina <strong>cristalina</strong> IV 18–24 milhões UI/dia por 14 dias</td></tr></tbody></table><ul><li><strong>Jarisch-Herxheimer</strong>: febre e mialgia nas primeiras 24 h; é reação ao tratamento, <strong>não alergia</strong>. Tratar sintomas.</li><li><strong>Gestante</strong>: rastrear no <strong>1º e 3º trimestres, no parto/aborto</strong> e se exposição. <strong>Só a penicilina</strong> trata o feto; alergia → <strong>dessensibilização</strong>. Tratamento concluído até <strong>30 dias antes do parto</strong>.</li><li><strong>Parcerias</strong> dos últimos <strong>90 dias</strong>: tratamento presuntivo com benzatina 2,4 milhões UI dose única, mesmo com teste negativo.</li><li><strong>Seguimento</strong>: VDRL aos 3, 6, 9 e 12 meses (<strong>mensal na gestante</strong>). Resposta: queda de <strong>2 diluições</strong> (ex.: 1:32 → 1:8) em 6 meses (recente) ou 12 meses (tardia). <strong>Subir 2 diluições</strong> ou não cair → retratar/investigar.</li></ul><h3>HIV</h3><ul><li>Infecção aguda (mononucleose-like: febre, faringite, adenopatia, exantema; viremia alta) → latência de anos → AIDS (oportunistas, Kaposi, linfoma, <strong>câncer de colo invasivo</strong>).</li><li>Na mulher: <strong>candidíase vaginal recorrente</strong>, neoplasia cervical agressiva.</li><li>Diagnóstico na APS: <strong>TR1 + TR2 reagentes = HIV</strong>; discordantes → teste molecular. <strong>Janela imunológica</strong>: exposição recente exige repetir.</li><li>Conduta: acolher, carga viral e CD4, notificar, vincular ao SAE, pesquisar outras IST. <strong>TARV imediata, independente do CD4</strong>: <strong>TDF + 3TC + DTG</strong>. Gestante: TARV imediata e carga viral seriada.</li><li><strong>I = I</strong>: carga viral indetectável sustentada não transmite por via sexual.</li><li><strong>PrEP</strong>: antes da exposição, TDF/FTC oral (diária ou sob demanda conforme PCDT); exige TR HIV negativo e função renal.</li><li><strong>PEP</strong>: até <strong>72 h</strong>, <strong>28 dias</strong> de TDF + 3TC + DTG; depois avaliar PrEP.</li></ul><h3>HPV</h3><ul><li>Contato pele-mucosa (não exige penetração); preservativo reduz mas não elimina. Maioria das infecções é <strong>transitória</strong>.</li><li>Baixo risco (<strong>6 e 11</strong>) → <strong>condiloma acuminado</strong>; alto risco (16, 18 e outros) → lesão precursora e câncer.</li><li>Condiloma: diagnóstico clínico; <strong>biopsiar</strong> se dúvida, lesão atípica, pigmentada, endurecida, ulcerada, refratária ou imunossuprimida. Tratamento: <strong>ácido tricloroacético</strong>, podofilina, imiquimode (autoaplicado), crioterapia, eletrocauterização, exérese. <strong>Gestante: ATA, crio ou exérese</strong> (podofilina e imiquimode não).</li><li>Vacina (quadrivalente 6, 11, 16, 18): <strong>dose única 9–14 anos</strong>; resgate 15–19 anos até 31/12/2026; <strong>3 doses</strong> em imunossuprimidos, PVHIV, vítimas de violência sexual (até 45 anos); <strong>contraindicada na gestação</strong>.</li></ul><h3>Úlceras genitais</h3><table><thead><tr><th>Doença</th><th>Agente</th><th>Úlcera</th><th>Tratamento</th></tr></thead><tbody><tr><td>Sífilis primária</td><td><em>T. pallidum</em></td><td>Única, <strong>indolor</strong>, borda endurecida, fundo limpo</td><td>Benzatina</td></tr><tr><td><strong>Herpes</strong></td><td>HSV-1/2</td><td><strong>Vesículas agrupadas</strong> → úlceras rasas <strong>dolorosas</strong>; 1º episódio com febre e adenopatia</td><td><strong>Aciclovir 400 mg 8/8 h por 7–10 dias</strong> (1º episódio); gestante: encaminhar</td></tr><tr><td>Cancroide</td><td><em>H. ducreyi</em></td><td>Múltiplas, <strong>muito dolorosas</strong>, fundo purulento</td><td>Azitromicina 1 g dose única ou ceftriaxona</td></tr><tr><td>Linfogranuloma venéreo</td><td><em>C. trachomatis</em> L1–L3</td><td>Úlcera fugaz → <strong>bubão inguinal</strong> que fistuliza</td><td>Doxiciclina 100 mg 12/12 h por <strong>21 dias</strong>; aspirar bubão, nunca incisar</td></tr><tr><td>Donovanose</td><td><em>K. granulomatis</em></td><td>Crônica, indolor, vermelho-vivo, bordas elevadas, sem adenopatia</td><td>Azitromicina 1 g/semana até cicatrizar</td></tr></tbody></table><h3>Hepatites e transmissão vertical</h3><ul><li>Hepatite B é a de maior transmissão sexual. <strong>HBsAg</strong> = infecção presente; <strong>anti-HBs</strong> = imunidade; <strong>anti-HBc</strong> = contato prévio.</li><li>Prevenção vertical: sífilis → penicilina; HIV → TARV; HBV → vacina + imunoglobulina no RN; herpes primário perto do parto → cesárea; clamídia/gonococo → evita conjuntivite e pneumonia neonatal.</li></ul><h3>Violência sexual (primeiro atendimento)</h3><p>Acolher; não exigir boletim de ocorrência; coletar vestígios sem atrasar profilaxias; <strong>contracepção de emergência</strong>; profilaxia de gonorreia, clamídia, sífilis e tricomoníase; <strong>PEP HIV em até 72 h</strong>; hepatite B; seguimento; apoio psicológico; <strong>notificação compulsória</strong>.</p>"
+  },
+  {
+   "id": "r3",
+   "grupo": "Resumo de referência",
+   "titulo": "3. Doença inflamatória pélvica (Aula 9)",
+   "par": "g3",
+   "html": "<p>Infecção <strong>ascendente</strong> do trato genital superior: endometrite → <strong>salpingite</strong> (principal sítio de dano) → ooforite → <strong>abscesso tubo-ovariano (ATO)</strong> → pelviperitonite. É <strong>polimicrobiana</strong>: clamídia e gonococo + flora vaginal (anaeróbios, <em>G. vaginalis</em>, enterobactérias), <em>M. genitalium</em>.</p><ul><li>Perfil: mulher <strong>jovem (15–25)</strong>, parceria nova (&lt; 3 meses) ou múltipla, sem preservativo, IST prévia. \"O melhor preditor de DIP hoje é uma DIP ontem.\"</li><li><strong>DIU</strong>: o risco se limita às <strong>primeiras 3 semanas (~20 dias) após a inserção</strong>; o DIU não causa DIP depois disso.</li><li>Outros: procedimentos uterinos (curetagem, histeroscopia), duchas, tabagismo.</li><li><strong>Clamídia</strong>: insidiosa, cicatriza em silêncio (infertilidade oculta). <strong>Gonococo</strong>: quadro exuberante. <strong>Anaeróbios</strong>: abscesso.</li></ul><h3>Quadro clínico</h3><ul><li><strong>Dor pélvica/hipogástrica</strong> (&gt; 90%), corrimento (75%), dispareunia de profundidade, sangramento anormal, disúria.</li><li><strong>Febre em menos de 30%</strong>: ausência de febre <strong>não exclui</strong> DIP.</li><li>Exame: <strong>dor à mobilização do colo</strong>, dor uterina e <strong>anexial</strong>, mucopus no colo; massa nas formas complicadas; \"grito de Douglas\" (pus no fundo de saco).</li></ul><h3>Critérios diagnósticos (PCDT/MS – aula)</h3><table><thead><tr><th>Maiores</th><th>Menores</th><th>Elaborados</th></tr></thead><tbody><tr><td>Dor no hipogástrio<br>Dor à palpação dos anexos<br>Dor à mobilização do colo</td><td>Febre &gt; 37,5 °C axilar<br>Secreção vaginal/endocervical anormal<br>Massa pélvica<br>Leucócitos na secreção, leucocitose, PCR/VHS altos<br>Gonococo ou clamídia comprovados</td><td>Endometrite na histologia<br>ATO ou abscesso de fundo de saco na imagem<br>Laparoscopia com DIP</td></tr></tbody></table><p><strong>Diagnóstico: 3 maiores + 1 menor OU 1 elaborado.</strong> A Profa. Luiza também mostrou os <strong>critérios mínimos</strong> (CDC/FEBRASGO): dor hipogástrica + dor à mobilização do colo + dor anexial em mulher de risco já justificam <strong>tratar</strong>. O diagnóstico é <strong>clínico</strong>.</p><h3>Exames</h3><ul><li><strong>β-hCG sempre</strong> (\"toda mulher em idade fértil com dor pélvica tem ectópica até prova em contrário\").</li><li>NAAT para gonococo e clamídia; sífilis, HIV, hepatites; hemograma, PCR, VHS; EAS e urocultura.</li><li><strong>USG transvaginal</strong>: não é obrigatória; serve para <strong>buscar ATO</strong> (massa complexa, multiloculada), dúvida, massa palpável, falha em 72 h. <strong>USG normal não exclui DIP.</strong></li><li><strong>Laparoscopia</strong>: padrão-ouro, invasiva, só em dúvida, gravidade ou falha.</li><li>Gram sem diplococos não exclui gonorreia; clamídia não cora no Gram.</li></ul><h3>Diferenciais</h3><table><thead><tr><th>Doença</th><th>Pista</th></tr></thead><tbody><tr><td><strong>Gravidez ectópica</strong></td><td>Atraso, dor súbita unilateral, choque, <strong>β-hCG positivo</strong></td></tr><tr><td>Apendicite</td><td>Dor migratória umbigo → FID, náusea/vômito, Blumberg</td></tr><tr><td>Torção ovariana</td><td>Dor excruciante, massa anexial sem fluxo ao Doppler</td></tr><tr><td>ITU/pielonefrite</td><td>Disúria intensa, nitrito, Giordano</td></tr></tbody></table><h3>Estadiamento (aula)</h3><p>I: salpingite/endometrite sem peritonite (leve). II: com pelviperitonite. III/IV: ATO íntegro ou roto/peritonite difusa. <strong>Massa anexial muda o estádio e a urgência.</strong></p><h3>Tratamento: iniciar sem esperar exames, cobrindo gonococo, clamídia e anaeróbios por 14 dias</h3><table><thead><tr><th></th><th>Esquema</th></tr></thead><tbody><tr><td><strong>Ambulatorial</strong> (leve/moderada)</td><td><strong>Ceftriaxona 500 mg IM dose única + doxiciclina 100 mg VO 12/12 h 14 dias + metronidazol 500 mg VO 12/12 h 14 dias</strong>. <strong>Reavaliar em 72 h.</strong></td></tr><tr><td><strong>Hospitalar</strong></td><td>Ceftriaxona 1 g IV/dia + doxiciclina 100 mg 12/12 h + metronidazol 400 mg IV 12/12 h, 14 dias no total</td></tr><tr><td>Alternativas IV (Profa. Luiza)</td><td><strong>Clindamicina 900 mg 8/8 h + gentamicina</strong> (preferida no <strong>ATO</strong> e na <strong>gestante</strong>, em que a doxiciclina é contraindicada); ampicilina-sulbactam + doxiciclina</td></tr></tbody></table><p>Passar de IV para VO após <strong>24 h afebril</strong>, com melhora da dor e queda de PCR/leucócitos. <strong>Manter o DIU</strong> e reavaliar; retirar se não houver melhora.</p><h3>Critérios de internação</h3><ol><li>Doença grave: febre alta, náuseas e vômitos, peritonite, sepse</li><li><strong>Abscesso tubo-ovariano</strong></li><li><strong>Gestação</strong></li><li>Intolerância à via oral ou má adesão provável</li><li><strong>Sem melhora em 72 h</strong> de tratamento ambulatorial</li><li>Uso de DIU (listado no slide da aula)</li><li>HIV/imunossupressão</li><li>Dúvida com emergência cirúrgica (apendicite, ectópica)</li></ol><h3>ATO e cirurgia</h3><ul><li>ATO: massa, febre persistente, leucocitose → internar + ATB IV. Estável e pequeno: observar resposta; falha → <strong>drenagem percutânea</strong>. <strong>Ruptura/sepse → cirurgia de emergência</strong>.</li><li>Sem resposta em 48–72 h de ATB IV ou abscesso crescendo → abordagem cirúrgica (videolaparoscopia se estável; laparotomia se choque/peritonite difusa).</li></ul><h3>Complicações</h3><ul><li><strong>Infertilidade tubária</strong> (perda ciliar irreversível; o risco dobra a cada episódio), <strong>gravidez ectópica</strong> (até 10×), dor pélvica crônica (~20%), aderências, recorrência.</li><li><strong>Fitz-Hugh-Curtis</strong>: peri-hepatite (cápsula de Glisson), mais por clamídia: <strong>dor no hipocôndrio direito</strong> irradiada ao ombro, pior à inspiração; USG de vias biliares normal; aderências em \"corda de violino\". Mesmo tratamento da DIP.</li></ul><h3>Seguimento e parcerias</h3><ul><li>Revisão em <strong>72 h</strong>: melhorou → completar 14 dias; não melhorou → internar e investigar ATO.</li><li>Tratar <strong>parcerias dos últimos 60 dias</strong> para gonococo e clamídia (ceftriaxona 500 mg IM + azitromicina 1 g VO), mesmo assintomáticas. Abstinência até concluir o tratamento de ambos.</li><li>Testar HIV, sífilis, hepatites. Rastreio anual de clamídia em sexualmente ativas &lt; 25 anos.</li></ul>"
+  },
+  {
+   "id": "r4",
+   "grupo": "Resumo de referência",
+   "titulo": "4. Planejamento reprodutivo e contracepção (Aula 10)",
+   "par": "g4",
+   "html": "<p>Planejamento reprodutivo é <strong>direito</strong> (Constituição art. 226 §7º e <strong>Lei 9.263/96</strong>). Cerca de <strong>55%</strong> das gestações no Brasil não são planejadas. A escolha é da mulher; o profissional facilita, sem coerção. Sempre falar de <strong>dupla proteção</strong> (preservativo + outro método).</p><h3>Métodos e eficácia (falha no uso típico, 1º ano)</h3><table><thead><tr><th>Método</th><th>Falha</th></tr></thead><tbody><tr><td>Preservativo feminino / masculino</td><td>21% / 13%</td></tr><tr><td>Pílula combinada</td><td>7%</td></tr><tr><td>Injetável trimestral</td><td>4%</td></tr><tr><td>DIU de cobre</td><td>0,8%</td></tr><tr><td>Laqueadura</td><td>0,5%</td></tr><tr><td>SIU-LNG</td><td>0,2%</td></tr><tr><td><strong>Implante</strong></td><td><strong>0,05%</strong> (o mais eficaz)</td></tr></tbody></table><p><strong>LARCs</strong> (DIU e implante) falham &lt; 1% porque não dependem de adesão. No SUS: preservativos, pílula combinada e minipílula, injetáveis mensal e trimestral, DIU de cobre, levonorgestrel de emergência, laqueadura, vasectomia e, desde 2025, <strong>implante de etonogestrel</strong> (18–49 anos e adolescentes 14–17).</p><h3>Hormonais combinados (CHC)</h3><ul><li>Mecanismo: <strong>inibem a ovulação</strong>, espessam o muco, atrofiam o endométrio.</li><li>Uso: 21 ou 24 comprimidos com pausa de 7 ou 4 dias, ou contínuo. Começar até o <strong>5º dia do ciclo</strong>, sem método de apoio.</li><li>Benefícios não contraceptivos: ↓ fluxo e dismenorreia (↓ anemia), ↓ TPM (regimes 24/4 ou contínuos), <strong>↓ acne</strong>, ↓ cistos funcionais, <strong>↓ câncer de ovário e endométrio</strong>, ajuda na endometriose.</li><li>Risco principal: <strong>tromboembolismo venoso</strong>.</li></ul><h3>Só progestagênio</h3><ul><li><strong>Minipílula</strong>: contínua, sem pausa; janela curta de atraso (<strong>3 h</strong> na noretisterona; 12 h no desogestrel). Boa na <strong>lactação</strong>.</li><li><strong>Injetável trimestral (DMPA)</strong>: amenorreia frequente, <strong>retorno da fertilidade demorado</strong>, perda óssea reversível, ganho de peso.</li><li><strong>Implante</strong> de etonogestrel 68 mg, <strong>3 anos</strong>; principal motivo de retirada: <strong>sangramento irregular</strong>.</li></ul><h3>Dispositivos intrauterinos</h3><table><thead><tr><th></th><th>DIU de cobre (T380A)</th><th>SIU-LNG (hormonal)</th></tr></thead><tbody><tr><td>Mecanismo</td><td>Ação espermicida local + inflamação estéril</td><td>Muco espesso + endométrio fino (± anovulação)</td></tr><tr><td>Fluxo e cólica</td><td>Pode <strong>aumentar</strong> (sobretudo nos 3 primeiros meses)</td><td><strong>Reduz</strong>; amenorreia comum; spotting no início</td></tr><tr><td>Duração</td><td><strong>Até 10 anos</strong></td><td><strong>5 a 8 anos</strong></td></tr><tr><td>Extras</td><td>Sem hormônio; <strong>contracepção de emergência até 5 dias</strong> (a mais eficaz)</td><td>Trata sangramento aumentado e dismenorreia; útil em quem usa anticoagulante</td></tr></tbody></table><ul><li>Inserção: qualquer dia com gravidez excluída; <strong>pós-parto até 48 h</strong> ou após <strong>4 semanas</strong> (entre 48 h e 4 semanas: categoria 3, mais expulsão e perfuração). Aleitamento <strong>não</strong> contraindica. USG não é obrigatória.</li><li><strong>Nuliparidade e adolescência não contraindicam.</strong> AINE não contraindica. Mioma só contraindica se <strong>distorcer a cavidade</strong>. Doença de Wilson/alergia ao cobre: evitar cobre.</li></ul><h3>Critérios médicos de elegibilidade (OMS)</h3><table><thead><tr><th>Cat.</th><th>Significado</th></tr></thead><tbody><tr><td>1</td><td>Sem restrição</td></tr><tr><td>2</td><td>Vantagens superam riscos (geralmente usar)</td></tr><tr><td>3</td><td>Riscos superam vantagens (não recomendado, salvo exceção)</td></tr><tr><td><strong>4</strong></td><td><strong>Risco inaceitável: não usar</strong></td></tr></tbody></table><p><strong>CHC categoria 4</strong>: <strong>TEV atual ou prévio</strong>, trombofilia, <strong>enxaqueca com aura</strong> (qualquer idade), <strong>HAS ≥ 160/100</strong> ou com doença vascular, <strong>fumante ≥ 35 anos com ≥ 15 cigarros/dia</strong>, cardiopatia isquêmica/AVC, valvopatia complicada, DM com vasculopatia, LES com antifosfolípide, <strong>câncer de mama atual</strong>, cirrose descompensada/tumor hepático, <strong>pós-parto &lt; 21 dias</strong>, lactação &lt; 6 semanas, cirurgia grande com imobilização prolongada.</p><p><strong>DIU categoria 4</strong>: <strong>gravidez</strong>, <strong>DIP atual</strong>, <strong>cervicite purulenta</strong>/gonococo ou clamídia atual, <strong>sangramento vaginal inexplicado</strong> (antes de investigar), distorção da cavidade, câncer de colo ou endométrio aguardando tratamento, sepse puerperal/pós-aborto séptico. Câncer de mama atual: cobre sim, SIU-LNG não.</p><h3>Adequação ao perfil</h3><ul><li><strong>Adolescente</strong>: LARC como 1ª linha, com sigilo e dupla proteção.</li><li><strong>Puerpério/lactação</strong>: progestagênio ou DIU; <strong>evitar estrogênio &lt; 6 semanas</strong>. <strong>LAM</strong>: amamentação exclusiva + amenorreia + bebê &lt; 6 meses → ~98%.</li><li><strong>Perimenopausa</strong>: manter método até 1 ano de amenorreia se ≥ 50 anos.</li><li><strong>HAS, TEV, enxaqueca com aura</strong>: sem estrogênio.</li><li><strong>Anticonvulsivante indutor</strong> (carbamazepina, fenitoína, fenobarbital): <strong>DIU ou DMPA</strong>.</li></ul><h3>Contracepção de emergência (por eficácia)</h3><ol><li><strong>DIU de cobre</strong> até <strong>120 h (5 dias)</strong>: o mais eficaz, independe do IMC e já fica como método.</li><li><strong>Ulipristal 30 mg</strong> VO até 120 h: melhor que LNG perto da ovulação e com IMC alto; esperar 5 dias para iniciar hormônio.</li><li><strong>Levonorgestrel 1,5 mg dose única</strong>, ideal <strong>≤ 72 h</strong> (até 120 h com eficácia menor). Repetir se vomitar em &lt; 3 h. Pode iniciar método hormonal no mesmo dia.</li></ol><p>Mecanismo: <strong>retarda/impede a ovulação</strong>. <strong>Não é abortiva</strong> e não protege contra IST. Teste de gravidez em 3–4 semanas.</p><h3>Esterilização (Lei 14.443/2022)</h3><ul><li><strong>≥ 21 anos OU ≥ 2 filhos vivos</strong>, capacidade civil plena.</li><li><strong>≥ 60 dias</strong> entre a manifestação de vontade e a cirurgia, com aconselhamento.</li><li><strong>Sem consentimento do cônjuge.</strong> Pode ser feita no parto se a solicitação foi feita ≥ 60 dias antes.</li><li>Irreversível; mais arrependimento antes dos 25 anos. Falha ~0,5% e, se falhar, mais <strong>ectópica</strong>.</li><li><strong>Vasectomia</strong>: ambulatorial; homem segue fértil por ~<strong>3 meses</strong> → outro método até espermograma.</li></ul><h3>Sinais de alerta</h3><ul><li>DIU: dor pélvica intensa, febre e corrimento fétido (DIP), fio não palpável.</li><li>Hormonais: dor/edema de panturrilha, dor torácica/dispneia súbitas, <strong>cefaleia com aura</strong>.</li><li>Implante: não palpável, infecção local.</li></ul>"
+  },
+  {
+   "id": "r5",
+   "grupo": "Resumo de referência",
+   "titulo": "5. Rastreamento do câncer de colo (Aula 11)",
+   "par": "g5",
+   "html": "<p><strong>3º câncer mais incidente</strong> nas brasileiras (~17 mil casos/ano) e 4ª causa de morte por câncer. <strong>&gt; 99%</strong> associados a HPV oncogênico persistente. Progressão lenta (<strong>10–20 anos</strong>) = janela para rastrear.</p><h3>HPV e carcinogênese</h3><ul><li>Vírus DNA; infecta células <strong>basais</strong> na <strong>zona de transformação (ZT)</strong>, onde ocorre metaplasia; quase todas as lesões precursoras nascem ali.</li><li>Oncogênicos: 16, 18, 31, 33, 35, 39, 45, 51, 52, 56, 58, 59. <strong>16 e 18 ≈ 70%</strong> dos cânceres.</li><li><strong>80–90% das infecções regridem</strong> em 12–24 meses (sobretudo &lt; 25–30 anos). <strong>HPV não é sinônimo de câncer.</strong></li><li>Persistência &gt; 2 anos → integração ao genoma → <strong>E6 degrada p53</strong>, <strong>E7 inativa pRb</strong>.</li><li>Cofatores: imunossupressão/HIV, <strong>tabagismo</strong>, outras IST, sexarca precoce, múltiplos parceiros, falta de rastreio.</li></ul><h3>Lesões</h3><table><thead><tr><th>Histologia</th><th>Citologia (Bethesda)</th><th>Comportamento</th></tr></thead><tbody><tr><td>NIC 1</td><td>LSIL</td><td>Baixo grau; &gt; 60% regridem → seguimento</td></tr><tr><td>NIC 2</td><td>HSIL</td><td>Alto grau</td></tr><tr><td>NIC 3 (inclui CIS)</td><td>HSIL</td><td><strong>Verdadeira precursora</strong>: alvo do rastreio</td></tr><tr><td>Adenocarcinoma in situ</td><td>AGC / AIS</td><td>Precursor glandular</td></tr><tr><td>Carcinoma invasor</td><td>—</td><td>Rompe a membrana basal</td></tr></tbody></table><h3>Protocolo vigente: DNA-HPV (Portaria nº 13/2025)</h3><table><thead><tr><th></th><th>Antigo (2016)</th><th><strong>Vigente</strong></th></tr></thead><tbody><tr><td>Exame primário</td><td>Citologia</td><td><strong>DNA-HPV oncogênico</strong></td></tr><tr><td>Faixa</td><td>25–64 anos</td><td><strong>25–64 anos</strong></td></tr><tr><td>Intervalo se normal</td><td>3 anos após 2 anuais normais</td><td><strong>5 anos</strong></td></tr><tr><td>Modelo</td><td>Oportunístico</td><td><strong>Organizado</strong>, com convocação</td></tr><tr><td>Citologia</td><td>Primária</td><td>Só <strong>reflexa</strong> (HPV não 16/18)</td></tr></tbody></table><p>DNA-HPV: <strong>mais sensível</strong>, menos específico (positivo precisa de triagem), objetivo e permite <strong>autocoleta</strong> (mas autocoleta não permite citologia reflexa).</p><h3>Fluxo após o DNA-HPV</h3><ul><li><strong>Não detectado</strong> → repetir em <strong>5 anos</strong>.</li><li><strong>HPV 16 e/ou 18</strong> → <strong>colposcopia direta</strong>.</li><li><strong>Outros oncogênicos</strong> → <strong>citologia reflexa</strong> na mesma amostra: <strong>ASC-US ou pior, ou insatisfatória → colposcopia</strong>; <strong>normal → repetir DNA-HPV em 12 meses</strong>. Persistência por <strong>24 meses → colposcopia</strong> mesmo com citologia normal.</li></ul><h3>Laudo citológico</h3><ul><li><strong>ASC-US</strong>: indeterminado, risco baixo (~5–10% NIC 3). <strong>LSIL</strong>: efeito do HPV (coilocitose) = NIC 1.</li><li><strong>ASC-H</strong>: não exclui alto grau (20–40% NIC 2/3). <strong>HSIL</strong>: NIC 2/3.</li><li>ASC-H, HSIL e <strong>AGC</strong> → <strong>colposcopia prioritária</strong>. AGC: avaliar canal endocervical; ≥ 35 anos ou sangramento → investigar endométrio.</li><li>Suspeita de invasão (lesão visível, colo friável/vegetante) → encaminhamento com <strong>prioridade máxima</strong>.</li><li>Antes (protocolo 2016): ASC-US/LSIL → repetir citologia em 6–12 meses conforme idade.</li></ul><h3>Regras e situações especiais</h3><ul><li><strong>&lt; 25 anos: não rastrear</strong> (infecções transitórias); vacinar.</li><li><strong>Vacinadas também rastreiam.</strong> Quem nunca teve relação sexual: sem indicação.</li><li>Encerrar aos <strong>64 anos</strong> com exames prévios negativos (no modelo antigo: 2 citologias negativas consecutivas nos últimos 5 anos). &gt; 64 nunca rastreada: 2 citologias com 1 ano de intervalo ou DNA-HPV único.</li><li><strong>Histerectomia total por causa benigna</strong> (sem NIC 2/3 prévia): <strong>dispensada</strong>. Subtotal (mantém colo): rastreia normal.</li><li><strong>Gestante</strong>: rastrear no pré-natal; colposcopia segura; tratar só se suspeita de invasão.</li><li><strong>Imunossuprimidas/PVHIV</strong>: iniciar <strong>após a 1ª relação</strong>, qualquer idade, por tempo indeterminado.</li><li><strong>Sintomática</strong> (sinusorragia, sangramento anormal, colo suspeito): não é rastreio, é investigação imediata. Prazos: confirmação em até <strong>30 dias</strong> (Lei 13.896/2019); tratamento em até <strong>60 dias</strong> (Lei 12.732/2012).</li></ul><h3>Colposcopia e tratamento</h3><ul><li><strong>Ácido acético 3–5%</strong>: áreas com muito núcleo ficam <strong>acetobrancas</strong>. <strong>Lugol (Schiller)</strong>: epitélio normal com glicogênio fica castanho; área que não cora = <strong>Schiller positivo</strong> (suspeita).</li><li>Achados maiores: acetobranco denso com bordas nítidas, <strong>pontilhado e mosaico grosseiros</strong>, <strong>vasos atípicos</strong> (alerta de invasão). Biópsia dirigida confirma.</li><li><strong>NIC 1</strong>: seguimento. <strong>NIC 2/3 e AIS</strong>: <strong>excisão da ZT (EZT/CAF/LEEP)</strong>; permite ver as margens. \"<strong>Ver e tratar</strong>\": HSIL com colposcopia de alto grau → excisão na mesma consulta. <strong>Conização a frio</strong>: suspeita de microinvasão, ZT tipo 3, lesão glandular.</li><li>Pós-tratamento: <strong>DNA-HPV em 12 meses</strong> (teste de cura).</li></ul><h3>Vacina e rede</h3><ul><li>Vacina: dose única 9–14 anos; 15–19 sem dose até 31/12/2026; 3 doses em imunocomprometidos/PVHIV. Não trata infecção existente nem dispensa rastreio.</li><li>Metas OMS 2030 <strong>90-70-90</strong>: 90% vacinadas até 15 anos; 70% rastreadas com teste de alta performance aos 35 e 45; 90% das lesões tratadas.</li><li>Rede: UBS (coleta, lista nominal, busca ativa por ACS, entrega do resultado) → laboratório/SISCAN → atenção secundária (colposcopia, CAF) → CACON/UNACON (câncer invasor). <strong>Encaminhar não é transferir o cuidado.</strong></li></ul>"
+  },
+  {
+   "id": "r6",
+   "grupo": "Resumo de referência",
+   "titulo": "6. Mama: doenças benignas e rastreamento (Aula 12)",
+   "par": "g6",
+   "html": "<p><strong>Atenção:</strong> não há slides desta aula no Drive. O conteúdo segue o plano de ensino (rastreio, exame clínico, nódulo, mamografia, encaminhamento) e a <strong>diretriz do Ministério da Saúde de setembro de 2025</strong>. Confira com o que a professora deu.</p><h3>Epidemiologia e risco</h3><ul><li>Câncer mais incidente na mulher brasileira (excluindo pele não melanoma) e principal causa de morte por câncer feminino.</li><li>Fatores de risco: <strong>idade</strong> (principal), história familiar (1º grau, sobretudo &lt; 50 anos), mutação <strong>BRCA1/2</strong>, menarca precoce, menopausa tardia, nuliparidade ou 1ª gestação após 30 anos, terapia hormonal da menopausa, obesidade pós-menopausa, álcool, sedentarismo, radiação torácica prévia, mama densa, lesão atípica prévia.</li><li>Proteção: amamentação, atividade física, peso adequado.</li></ul><h3>Rastreamento no SUS (Ministério da Saúde, set/2025)</h3><table><thead><tr><th>Idade</th><th>Recomendação</th></tr></thead><tbody><tr><td>&lt; 40 anos</td><td>Sem rastreio populacional (exceto alto risco, com especialista)</td></tr><tr><td><strong>40–49 anos</strong></td><td>Mamografia <strong>sob demanda</strong>, por <strong>decisão compartilhada</strong> após orientação sobre riscos e benefícios</td></tr><tr><td><strong>50–74 anos</strong></td><td><strong>Rastreamento ativo: mamografia a cada 2 anos</strong> (antes ia até 69)</td></tr><tr><td>&gt; 74 anos</td><td>Individualizar: comorbidades e expectativa de vida</td></tr></tbody></table><p>A Sociedade Brasileira de Mastologia recomenda mamografia <strong>anual a partir dos 40</strong>. Na prova, siga o que a questão pede (SUS × sociedade). Autoexame não é método de rastreio; estimula-se a <strong>conscientização</strong> (conhecer as próprias mamas).</p><h3>Exame clínico das mamas</h3><ol><li><strong>Inspeção estática</strong> (sentada, braços ao lado): assimetria, retração, abaulamento, alteração de pele e mamilo.</li><li><strong>Inspeção dinâmica</strong> (mãos na cintura contraindo o peitoral, braços elevados): evidencia retrações.</li><li><strong>Palpação das cadeias linfonodais</strong>: axilares, supra e infraclaviculares (sentada).</li><li><strong>Palpação das mamas</strong> deitada, mão atrás da cabeça: todos os quadrantes e o prolongamento axilar.</li><li><strong>Expressão mamilar</strong>.</li></ol><p><strong>Sinais suspeitos</strong>: nódulo <strong>endurecido, fixo, irregular, indolor</strong>; pele em <strong>casca de laranja</strong>; <strong>retração</strong> de pele ou mamilo; lesão eczematosa do mamilo que não melhora (Paget); <strong>descarga espontânea, unilateral, uniductal, sanguinolenta ou cristalina</strong>; linfonodo axilar endurecido; nódulo em homem.</p><h3>Mamografia: BI-RADS</h3><table><thead><tr><th>Categoria</th><th>Significado</th><th>Conduta</th></tr></thead><tbody><tr><td>0</td><td>Inconclusivo</td><td>Exame complementar (USG, incidências adicionais, comparação)</td></tr><tr><td>1</td><td>Negativo</td><td>Rastreio de rotina</td></tr><tr><td>2</td><td>Achado benigno</td><td>Rastreio de rotina</td></tr><tr><td><strong>3</strong></td><td>Provavelmente benigno (≤ 2% de malignidade)</td><td><strong>Controle em 6 meses</strong> (seguimento por 2–3 anos)</td></tr><tr><td><strong>4</strong></td><td>Suspeito (A, B, C)</td><td><strong>Biópsia</strong></td></tr><tr><td><strong>5</strong></td><td>Altamente suspeito (≥ 95%)</td><td><strong>Biópsia</strong></td></tr><tr><td>6</td><td>Malignidade comprovada por biópsia</td><td>Tratamento</td></tr></tbody></table><h3>Abordagem do nódulo palpável</h3><ul><li>Mulher <strong>jovem (&lt; 30–35 anos)</strong>: <strong>USG primeiro</strong> (mama densa).</li><li>Mulher <strong>≥ 35–40 anos</strong>: <strong>mamografia + USG</strong>.</li><li>Achado suspeito → <strong>biópsia percutânea por agulha grossa (core)</strong> guiada por imagem; PAAF serve para cisto.</li><li>Exame normal não afasta câncer se o nódulo for clinicamente suspeito: encaminhar à mastologia.</li></ul><h3>Doenças benignas mais cobradas</h3><table><thead><tr><th>Doença</th><th>Perfil</th><th>Conduta</th></tr></thead><tbody><tr><td><strong>Fibroadenoma</strong></td><td>Tumor benigno mais comum na <strong>jovem (15–35)</strong>; nódulo <strong>móvel, elástico, bem delimitado</strong>, indolor</td><td>USG; seguimento; exérese se crescer, &gt; 2–3 cm, dúvida ou desejo</td></tr><tr><td><strong>Cisto</strong></td><td>Perimenopausa (35–50); pode doer e variar com o ciclo</td><td>Simples: tranquilizar; <strong>punção</strong> se doloroso. Complexo/conteúdo sanguinolento/recidiva: investigar</td></tr><tr><td><strong>Mastalgia cíclica</strong> (alteração funcional benigna)</td><td>Bilateral, pré-menstrual</td><td><strong>Orientar e tranquilizar</strong>, sutiã adequado, analgésico; raramente remédio específico</td></tr><tr><td><strong>Descarga papilar</strong></td><td>Fisiológica: bilateral, multiductal, à expressão. Suspeita: espontânea, uni, sanguinolenta/cristalina</td><td>Suspeita → imagem e mastologia. <strong>Papiloma intraductal</strong> é a causa mais comum de descarga sanguinolenta</td></tr><tr><td><strong>Mastite lactacional</strong></td><td>Puérpera, mama vermelha, quente, dolorosa, febre; <em>S. aureus</em></td><td><strong>Manter amamentação</strong>/esvaziar a mama; cefalexina; analgésico. <strong>Abscesso</strong> → punção/drenagem</td></tr><tr><td>Galactorreia</td><td>Bilateral, leitosa, fora da lactação</td><td>β-hCG, <strong>prolactina</strong>, TSH; medicamentos</td></tr></tbody></table><h3>Rede</h3><p>APS solicita e acompanha a mamografia, examina, encaminha <strong>BI-RADS 4/5 e achados suspeitos</strong> à mastologia (prioridade) e segue a mulher (contrarreferência). Mesmos prazos legais: confirmação em 30 dias e tratamento em 60 dias.</p>"
+  },
+  {
+   "id": "g0",
+   "grupo": "Guia prioritário",
+   "titulo": "Como usar (comece por aqui)",
+   "par": "r0",
+   "html": "<p>Esta é a <strong>parte prioritária</strong>: regras curtas do que mais cai, pareadas com o resumo. Ordem sugerida:</p><ol><li>Leia a parte do resumo.</li><li>Leia aqui a parte correspondente.</li><li>Faça os <strong>flashcards</strong> da seção.</li><li>Resolva os <strong>casos da Profa. Luiza</strong> e os demais casos.</li><li>Termine com o <strong>quiz de revisão</strong>.</li></ol><p>Peso provável na prova (pela quantidade de material e pelos casos e questões que as professoras trouxeram): <strong>DIP</strong> e <strong>contracepção</strong> (têm questões comentadas em aula) &gt; <strong>corrimentos/cervicites</strong> e <strong>sífilis</strong> &gt; <strong>rastreio de colo</strong> (DNA-HPV é novidade, ótimo para questão) &gt; HIV/HPV/úlceras &gt; mama.</p><p>O <strong>plano de estudo dia a dia</strong> está na última parte deste guia.</p>"
+  },
+  {
+   "id": "g1",
+   "grupo": "Guia prioritário",
+   "titulo": "Corrimentos e cervicites: o que decide a questão",
+   "par": "r1",
+   "html": "<ul><li>pH <strong>&lt; 4,5 + prurido + grumoso</strong> = <strong>candidíase</strong>.</li><li>pH <strong>&gt; 4,5 + odor de peixe + acinzentado homogêneo, sem inflamação</strong> = <strong>vaginose</strong>.</li><li>pH <strong>&gt; 4,5 + amarelo-esverdeado bolhoso + colo em morango</strong> = <strong>tricomoníase</strong> (IST).</li><li><strong>Amsel ≥ 3 de 4</strong>: pH &gt; 4,5, acinzentado homogêneo, aminas +, <strong>clue cells</strong>. Nugent = padrão-ouro.</li><li>Candidíase complicada: ≥ 4/ano, não-albicans, DM, HIV, gestação. <strong>Gestante: só azol tópico.</strong></li><li>Vaginose e trico: <strong>metronidazol 500 mg 12/12 h 7 dias</strong>.</li><li>Parceria: <strong>trico, clamídia e gonococo sempre</strong>; candidíase e vaginose <strong>não</strong>.</li><li>Cervicite: <strong>70–80% assintomática</strong>; mucopus/friabilidade → <strong>ceftriaxona 500 mg IM + azitromicina 1 g VO</strong>, sem esperar NAAT.</li><li>Toque bimanual sempre: dor à mobilização do colo = pensar DIP.</li><li>Comunicação de parceria: cartão; sem retorno em 15 dias → contato.</li></ul><blockquote><strong>Pegadinha:</strong> Vaginose bacteriana não é IST e não se trata a parceria, mas aumenta o risco de IST/HIV e de DIP após DIU ou curetagem.</blockquote><blockquote><strong>Pegadinha:</strong> O nome é vaginose, não vaginite, justamente porque não há inflamação (sem leucócitos, sem prurido importante).</blockquote>"
+  },
+  {
+   "id": "g2",
+   "grupo": "Guia prioritário",
+   "titulo": "IST: números e condutas",
+   "par": "r2",
+   "html": "<ul><li>Sífilis recente (≤ 1 ano) = <strong>benzatina 2,4 mi UI dose única</strong>. Tardia ou <strong>ignorada</strong> = <strong>2,4 mi semanal × 3</strong>.</li><li>Fluxo: <strong>treponêmico (TR) → VDRL</strong>. VDRL − com TR + → 2º treponêmico.</li><li>Cura sorológica: <strong>queda de 2 diluições</strong> em 6 m (recente) / 12 m (tardia). <strong>Subir 2 diluições</strong> = reinfecção/falha.</li><li>VDRL aos 3, 6, 9, 12 meses; <strong>mensal na gestante</strong>.</li><li>Parceria dos últimos <strong>90 dias</strong>: benzatina presuntiva.</li><li>Gestante: <strong>só penicilina</strong>; alergia = <strong>dessensibilização</strong>; terminar ≥ 30 dias antes do parto; rastrear 1º e 3º tri e parto.</li><li>Jarisch-Herxheimer ≠ alergia.</li><li>HIV: <strong>TR1 + TR2</strong>; TARV imediata <strong>TDF + 3TC + DTG</strong>; <strong>I = I</strong>.</li><li><strong>PEP ≤ 72 h, 28 dias</strong>. PrEP: TDF/FTC, exige HIV negativo e função renal.</li><li>Herpes: vesículas agrupadas dolorosas → <strong>aciclovir 400 mg 8/8 h 7–10 d</strong>.</li><li>Cancro duro <strong>indolor</strong>; cancroide <strong>doloroso purulento</strong>; LGV = <strong>bubão</strong> (doxi 21 d); donovanose = indolor sem adenopatia.</li><li>Condiloma em gestante: <strong>ATA, crio ou exérese</strong>.</li><li>Vacina HPV: <strong>dose única 9–14</strong>; 3 doses em imunossuprimidos/PVHIV; <strong>não na gestação</strong>.</li><li>Notificar: sífilis (adquirida, gestante, congênita), HIV, hepatites, violência sexual.</li></ul><blockquote><strong>Pegadinha:</strong> Latente de duração ignorada é tratada como tardia (3 doses), não como recente.</blockquote>"
+  },
+  {
+   "id": "g3",
+   "grupo": "Guia prioritário",
+   "titulo": "DIP: as regras da Profa. Luiza",
+   "par": "r3",
+   "html": "<ul><li>Infecção <strong>ascendente polimicrobiana</strong> (gonococo, clamídia + anaeróbios): o esquema <strong>sempre cobre os três</strong>.</li><li>Diagnóstico <strong>clínico</strong>: <strong>3 maiores + 1 menor ou 1 elaborado</strong>. Maiores: dor hipogástrica, dor anexial, dor à mobilização do colo.</li><li><strong>Febre em &lt; 30%</strong>: não exigir febre.</li><li><strong>β-hCG sempre</strong> (ectópica).</li><li><strong>Iniciar ATB sem esperar cultura/NAAT/USG.</strong></li><li>Ambulatorial: <strong>ceftriaxona 500 mg IM + doxiciclina 100 mg 12/12 h 14 d + metronidazol 500 mg 12/12 h 14 d</strong>; <strong>reavaliar em 72 h</strong>.</li><li><strong>Internar</strong>: grave/peritonite, <strong>ATO</strong>, <strong>gestante</strong>, sem VO, <strong>falha em 72 h</strong>, imunossupressão, dúvida cirúrgica.</li><li>Gestante e ATO: <strong>clindamicina + gentamicina IV</strong> (doxiciclina contraindicada na gestação).</li><li>USG: para achar <strong>ATO</strong>; normal não exclui.</li><li>DIU: risco só nas <strong>primeiras ~3 semanas</strong>; <strong>manter</strong> o DIU e reavaliar.</li><li>ATO roto/sepse → cirurgia de emergência.</li><li><strong>Fitz-Hugh-Curtis</strong>: dor em <strong>hipocôndrio direito</strong>, vias biliares normais, cordas de violino.</li><li>Parcerias dos últimos <strong>60 dias</strong>: ceftriaxona + azitromicina.</li><li>Sequelas: infertilidade (dobra a cada episódio), ectópica, dor crônica.</li></ul><blockquote><strong>Da aula:</strong> \"As bancas colocam alternativas sugerindo esperar a cultura. O erro é achar que a DIP precisa de confirmação microbiológica. A regra: tratamento empírico imediatamente após a suspeita.\"</blockquote><blockquote><strong>Pegadinha:</strong> Bacterioscopia sem diplococos não exclui gonorreia, e clamídia não cora pelo Gram.</blockquote>"
+  },
+  {
+   "id": "g4",
+   "grupo": "Guia prioritário",
+   "titulo": "Contracepção: o que a professora cobrou nos casos",
+   "par": "r4",
+   "html": "<ul><li>Mais eficaz: <strong>implante</strong> (0,05%); LARC &lt; 1%.</li><li>CHC: começar até o 5º dia; inibe ovulação; ↓ acne, fluxo, cólica, câncer de ovário/endométrio; risco <strong>TEV</strong>.</li><li><strong>CHC proibido (cat. 4)</strong>: TEV prévio, <strong>enxaqueca com aura</strong>, HAS ≥ 160/100, <strong>≥ 35 anos fumando ≥ 15/dia</strong>, câncer de mama, pós-parto &lt; 21 dias, trombofilia, cardiopatia isquêmica/AVC.</li><li>Fumante &lt; 35 anos <strong>não</strong> é cat. 4.</li><li>Surgiu <strong>aura</strong> com CHC → <strong>suspender</strong> e trocar por método sem estrogênio.</li><li><strong>DIU cat. 4</strong>: gravidez, <strong>DIP/cervicite ativa</strong>, sangramento inexplicado, cavidade distorcida.</li><li>Nuliparidade, adolescência, AINE, mioma sem distorção, aleitamento: <strong>não</strong> contraindicam DIU.</li><li>DIU pós-parto: <strong>até 48 h ou ≥ 4 semanas</strong>.</li><li>Cobre: 10 anos, ↑ fluxo, sem hormônio, CE até 5 dias. SIU-LNG: 5–8 anos, ↓ fluxo, amenorreia.</li><li>Minipílula: atraso de 3 h (noretisterona); lactação. DMPA: fertilidade volta devagar, perda óssea.</li><li>Lactação: <strong>sem estrogênio &lt; 6 semanas</strong>; LAM até 6 meses.</li><li>Indutor enzimático → <strong>DIU ou DMPA</strong>.</li><li>CE: <strong>DIU cobre 5 dias</strong> &gt; ulipristal 120 h &gt; <strong>LNG 1,5 mg ≤ 72 h</strong>. <strong>Não é abortiva.</strong></li><li>Laqueadura: <strong>21 anos OU 2 filhos vivos</strong>, <strong>60 dias</strong>, <strong>sem cônjuge</strong>.</li><li>Vasectomia: fértil por ~3 meses.</li></ul><blockquote><strong>Da aula:</strong> Caso 3 (Luciana, 30 dias pós-cesárea pedindo laqueadura): se não pediu ≥ 60 dias antes, agendar conforme a lei e <strong>oferecer LARC agora</strong>.</blockquote>"
+  },
+  {
+   "id": "g5",
+   "grupo": "Guia prioritário",
+   "titulo": "Rastreio de colo: o fluxo que cai",
+   "par": "r5",
+   "html": "<ul><li><strong>25–64 anos</strong>, <strong>DNA-HPV a cada 5 anos</strong> (Portaria 13/2025); citologia vira <strong>reflexa</strong>.</li><li>Negativo → 5 anos. <strong>16/18 → colposcopia direta</strong>. <strong>Outros → citologia reflexa</strong>: alterada/insatisfatória → colposcopia; normal → DNA-HPV em 12 meses; persistiu 24 meses → colposcopia.</li><li>Antigo: citologia a cada 3 anos após 2 anuais normais.</li><li><strong>&lt; 25: não rastrear.</strong> Vacinada: rastreia igual.</li><li><strong>Histerectomia total benigna</strong>: para. Subtotal: continua.</li><li>PVHIV/imunossuprimida: <strong>desde a 1ª relação</strong>, sem parar.</li><li>ASC-H, HSIL, AGC → colposcopia prioritária. AGC ≥ 35 anos → endométrio também.</li><li>NIC 1 → seguir. <strong>NIC 2/3 → EZT/CAF</strong>. Ver e tratar.</li><li>Acetobranco, mosaico, pontilhado, <strong>vasos atípicos</strong> (invasão). Schiller positivo = não cora.</li><li>E6 → p53; E7 → pRb. 16 e 18 ≈ 70%.</li><li>Sintomática não espera rastreio. Leis: <strong>30 dias</strong> para confirmar, <strong>60 dias</strong> para tratar.</li></ul><blockquote><strong>Pegadinha:</strong> Teste de rastreio normal recente não exclui câncer em mulher com sangramento pós-coito: é investigação, não rastreio.</blockquote>"
+  },
+  {
+   "id": "g6",
+   "grupo": "Guia prioritário",
+   "titulo": "Mama em uma tela",
+   "par": "r6",
+   "html": "<ul><li>SUS (set/2025): <strong>50–74 anos, mamografia bienal</strong>; <strong>40–49 sob demanda</strong> com decisão compartilhada; &gt; 74 individualizar.</li><li>SBM: anual a partir dos 40.</li><li>Exame: inspeção estática → dinâmica → linfonodos → palpação deitada → expressão.</li><li>Suspeito: nódulo duro, fixo, irregular; casca de laranja; retração; descarga espontânea uniductal sanguinolenta.</li><li>BI-RADS <strong>0</strong> complementar; <strong>1–2</strong> rotina; <strong>3</strong> controle em 6 meses; <strong>4–5</strong> biópsia; 6 câncer.</li><li>Nódulo em jovem → <strong>USG</strong>; ≥ 35–40 → <strong>mamografia + USG</strong>; suspeito → <strong>core biopsy</strong>.</li><li><strong>Fibroadenoma</strong>: jovem, móvel, elástico. <strong>Cisto</strong>: perimenopausa, punção se dói.</li><li>Descarga sanguinolenta: <strong>papiloma intraductal</strong>.</li><li>Mastite: <strong>manter amamentação</strong> + cefalexina; abscesso → drenar.</li></ul>"
+  },
+  {
+   "id": "g7",
+   "grupo": "Guia prioritário",
+   "titulo": "Plano de estudo até a AV2",
+   "par": "r0",
+   "html": "<p>Prova na <strong>semana de 23 a 28/11</strong>. Plano de 8 dias (cerca de 1h30 a 2h por dia), do que tem mais material e questão comentada para o que tem menos. Os dois últimos dias são de revisão.</p><table><thead><tr><th>Dia</th><th>Assunto (aula)</th><th>O que fazer</th></tr></thead><tbody><tr><td><strong>Dom 15/11</strong></td><td>Vulvovaginites e cervicites (7)</td><td>Resumo 1 + guia; montar de cabeça o quadro comparativo (pH, aspecto, microscopia, parceria); flashcards da seção; caso da Bruna</td></tr><tr><td><strong>Seg 16/11</strong></td><td>IST: sífilis e HIV (8)</td><td>Resumo 2 até HIV; decorar fluxograma do VDRL, esquemas de benzatina, seguimento, PrEP/PEP; caso da Taís (sífilis na gestação)</td></tr><tr><td><strong>Ter 17/11</strong></td><td>HPV, úlceras, hepatites (8) + DIP (9) parte 1</td><td>Tabela de úlceras; critérios da DIP (3+1 ou 1); flashcards</td></tr><tr><td><strong>Qua 18/11</strong></td><td>DIP (9) parte 2</td><td>Esquemas, internação, ATO, Fitz-Hugh-Curtis; casos da Camila e as 3 situações de prova da Profa. Luiza</td></tr><tr><td><strong>Qui 19/11</strong></td><td>Contracepção (10)</td><td>Resumo 4 + guia; <strong>os 4 casos da Profa. Luiza</strong> (Marina, Paula, Luciana, Jéssica); critérios cat. 4 de CHC e DIU</td></tr><tr><td><strong>Sex 20/11</strong></td><td>Rastreio de colo (11) + mama (12)</td><td>Fluxo do DNA-HPV; situações especiais; BI-RADS; caso da Rosa</td></tr><tr><td><strong>Sáb 21/11</strong></td><td>Revisão 1</td><td>Só o <strong>guia prioritário</strong> inteiro + flashcards errados + quiz completo</td></tr><tr><td><strong>Dom 22/11</strong></td><td>Revisão 2</td><td>Refazer todos os casos; quiz no modo aleatório; reler pegadinhas</td></tr></tbody></table><p>Se sobrar tempo, leia o <em>Tratado de Ginecologia Febrasgo 2025</em> que está na pasta só nos capítulos de DIP e contracepção.</p>"
+  }
+ ],
+ "cards": [
+  {
+   "id": "sm000",
+   "secao": "g1",
+   "tag": "Corrimento",
+   "frente": "pH vaginal normal e quem o mantém.",
+   "verso": "<b>3,8–4,5</b>; lactobacilos transformam glicogênio (estimulado por estrogênio) em ácido lático."
+  },
+  {
+   "id": "sm001",
+   "secao": "g1",
+   "tag": "Corrimento",
+   "frente": "Vulvovaginite × vaginose.",
+   "verso": "Vaginite: <b>inflamação</b>. Vaginose: desequilíbrio da flora <b>sem inflamação</b> (vaginose bacteriana)."
+  },
+  {
+   "id": "sm002",
+   "secao": "g1",
+   "tag": "Candidíase",
+   "frente": "Corrimento e sintoma-chave da candidíase.",
+   "verso": "Branco <b>grumoso</b> (nata de leite) + <b>prurido intenso</b>; pH &lt; 4,5."
+  },
+  {
+   "id": "sm003",
+   "secao": "g1",
+   "tag": "Candidíase",
+   "frente": "Fatores predisponentes da candidíase.",
+   "verso": "Gravidez, <b>DM descompensado</b>, antibiótico, corticoide/imunossupressão, ACO, umidade, HIV."
+  },
+  {
+   "id": "sm004",
+   "secao": "g1",
+   "tag": "Candidíase",
+   "frente": "O que define candidíase complicada?",
+   "verso": "Sintomas intensos, <b>≥ 4 episódios/ano</b>, não-albicans, DM, HIV ou gestação."
+  },
+  {
+   "id": "sm005",
+   "secao": "g1",
+   "tag": "Candidíase",
+   "frente": "Tratamento da candidíase e cuidado na gestante.",
+   "verso": "Miconazol creme 2% 7 noites (ou nistatina 14) ou fluconazol 150 mg DU. <b>Gestante: só tópico.</b>"
+  },
+  {
+   "id": "sm006",
+   "secao": "g1",
+   "tag": "Vaginose",
+   "frente": "Critérios de Amsel.",
+   "verso": "≥ 3 de 4: <b>pH &gt; 4,5</b>, corrimento acinzentado homogêneo, <b>aminas +</b>, <b>clue cells</b>."
+  },
+  {
+   "id": "sm007",
+   "secao": "g1",
+   "tag": "Vaginose",
+   "frente": "Padrão-ouro da vaginose bacteriana.",
+   "verso": "<b>Escore de Nugent</b> (Gram)."
+  },
+  {
+   "id": "sm008",
+   "secao": "g1",
+   "tag": "Vaginose",
+   "frente": "Tratamento da vaginose e parceria.",
+   "verso": "<b>Metronidazol 500 mg 12/12 h 7 dias</b> (ou gel 5 noites). Parceria <b>não</b> é tratada."
+  },
+  {
+   "id": "sm009",
+   "secao": "g1",
+   "tag": "Vaginose",
+   "frente": "Por que o odor piora após o coito?",
+   "verso": "O sêmen <b>alcaliniza</b> e libera <b>aminas voláteis</b> (putrescina, cadaverina)."
+  },
+  {
+   "id": "sm010",
+   "secao": "g1",
+   "tag": "Tricomoníase",
+   "frente": "Achados da tricomoníase.",
+   "verso": "Corrimento <b>amarelo-esverdeado bolhoso</b>, fétido, inflamação, <b>colo em morango</b>, protozoário móvel, pH &gt; 4,5."
+  },
+  {
+   "id": "sm011",
+   "secao": "g1",
+   "tag": "Tricomoníase",
+   "frente": "Tratamento da trico e da parceria.",
+   "verso": "Paciente: metronidazol 500 mg 12/12 h 7 dias. Parceria: <b>metronidazol 2 g DU</b>, sempre."
+  },
+  {
+   "id": "sm012",
+   "secao": "g1",
+   "tag": "Cervicite",
+   "frente": "Agentes e % assintomáticas da cervicite.",
+   "verso": "<b>Clamídia e gonococo</b>; <b>70–80%</b> assintomáticas."
+  },
+  {
+   "id": "sm013",
+   "secao": "g1",
+   "tag": "Cervicite",
+   "frente": "Sinais de cervicite ao especular.",
+   "verso": "<b>Mucopus</b> endocervical e <b>friabilidade</b> (sangra ao cotonete)."
+  },
+  {
+   "id": "sm014",
+   "secao": "g1",
+   "tag": "Cervicite",
+   "frente": "Exame de escolha para clamídia/gonococo.",
+   "verso": "<b>Biologia molecular (NAAT)</b>."
+  },
+  {
+   "id": "sm015",
+   "secao": "g1",
+   "tag": "Cervicite",
+   "frente": "Tratamento da cervicite.",
+   "verso": "<b>Ceftriaxona 500 mg IM + azitromicina 1 g VO</b>, dose única, sem esperar resultado."
+  },
+  {
+   "id": "sm016",
+   "secao": "g1",
+   "tag": "Parcerias",
+   "frente": "Quais infecções exigem tratar a parceria?",
+   "verso": "<b>Tricomoníase, clamídia, gonorreia</b> (e sífilis). Candidíase e vaginose não."
+  },
+  {
+   "id": "sm017",
+   "secao": "g1",
+   "tag": "Parcerias",
+   "frente": "Como comunicar a parceria?",
+   "verso": "<b>Cartão de comunicação</b>; sem retorno em 15 dias → telefone/mensagem; busca ativa por último."
+  },
+  {
+   "id": "sm018",
+   "secao": "g2",
+   "tag": "Sífilis",
+   "frente": "Recente × tardia.",
+   "verso": "Recente: <b>até 1 ano</b> (primária, secundária, latente recente). Tardia: &gt; 1 ano. Ignorada = tardia."
+  },
+  {
+   "id": "sm019",
+   "secao": "g2",
+   "tag": "Sífilis",
+   "frente": "Cancro duro.",
+   "verso": "Úlcera <b>única, indolor</b>, base endurecida, fundo limpo + adenopatia; ~3 semanas após contato."
+  },
+  {
+   "id": "sm020",
+   "secao": "g2",
+   "tag": "Sífilis",
+   "frente": "Sinais da sífilis secundária.",
+   "verso": "Roséola, lesões <b>palmoplantares</b>, condiloma plano, placas mucosas, alopecia em clareira."
+  },
+  {
+   "id": "sm021",
+   "secao": "g2",
+   "tag": "Sífilis",
+   "frente": "Fluxograma diagnóstico da sífilis.",
+   "verso": "<b>Treponêmico</b> (TR) reagente → <b>VDRL</b>. VDRL − → 2º treponêmico (cicatriz × falso-reagente)."
+  },
+  {
+   "id": "sm022",
+   "secao": "g2",
+   "tag": "Sífilis",
+   "frente": "Tratamento da sífilis recente e da tardia.",
+   "verso": "Recente: <b>benzatina 2,4 mi UI DU</b>. Tardia/ignorada: <b>2,4 mi semanal × 3</b>."
+  },
+  {
+   "id": "sm023",
+   "secao": "g2",
+   "tag": "Sífilis",
+   "frente": "Tratamento da neurossífilis.",
+   "verso": "Penicilina <b>cristalina</b> IV 18–24 mi UI/dia por 14 dias."
+  },
+  {
+   "id": "sm024",
+   "secao": "g2",
+   "tag": "Sífilis",
+   "frente": "Resposta adequada ao tratamento.",
+   "verso": "Queda de <b>2 diluições</b> do VDRL em 6 meses (recente) ou 12 meses (tardia)."
+  },
+  {
+   "id": "sm025",
+   "secao": "g2",
+   "tag": "Sífilis",
+   "frente": "Seguimento sorológico.",
+   "verso": "VDRL aos 3, 6, 9 e 12 meses; <b>mensal na gestante</b>."
+  },
+  {
+   "id": "sm026",
+   "secao": "g2",
+   "tag": "Sífilis",
+   "frente": "Parcerias na sífilis.",
+   "verso": "Expostos nos últimos <b>90 dias</b>: benzatina 2,4 mi DU presuntiva."
+  },
+  {
+   "id": "sm027",
+   "secao": "g2",
+   "tag": "Sífilis",
+   "frente": "Gestante alérgica à penicilina.",
+   "verso": "<b>Dessensibilização</b>: só a penicilina trata o feto."
+  },
+  {
+   "id": "sm028",
+   "secao": "g2",
+   "tag": "Sífilis",
+   "frente": "Reação de Jarisch-Herxheimer.",
+   "verso": "Febre e mialgia nas primeiras 24 h; <b>não é alergia</b>; tratar sintomas."
+  },
+  {
+   "id": "sm029",
+   "secao": "g2",
+   "tag": "HIV",
+   "frente": "Diagnóstico de HIV na APS.",
+   "verso": "<b>TR1 + TR2</b> reagentes; discordantes → teste molecular."
+  },
+  {
+   "id": "sm030",
+   "secao": "g2",
+   "tag": "HIV",
+   "frente": "Esquema inicial de TARV.",
+   "verso": "<b>TDF + 3TC + DTG</b>, iniciar logo, independente do CD4."
+  },
+  {
+   "id": "sm031",
+   "secao": "g2",
+   "tag": "HIV",
+   "frente": "PEP: prazo e duração.",
+   "verso": "Até <b>72 h</b>; <b>28 dias</b> de TDF + 3TC + DTG."
+  },
+  {
+   "id": "sm032",
+   "secao": "g2",
+   "tag": "HIV",
+   "frente": "O que é I = I?",
+   "verso": "Carga viral <b>indetectável</b> sustentada = <b>intransmissível</b> por via sexual."
+  },
+  {
+   "id": "sm033",
+   "secao": "g2",
+   "tag": "HPV",
+   "frente": "Tipos de HPV das verrugas e do câncer.",
+   "verso": "Verrugas: <b>6 e 11</b>. Câncer: <b>16 e 18</b> (~70%) e outros."
+  },
+  {
+   "id": "sm034",
+   "secao": "g2",
+   "tag": "HPV",
+   "frente": "Tratamento de condiloma permitido na gestação.",
+   "verso": "<b>Ácido tricloroacético</b>, crioterapia ou exérese."
+  },
+  {
+   "id": "sm035",
+   "secao": "g2",
+   "tag": "HPV",
+   "frente": "Esquema da vacina HPV no SUS.",
+   "verso": "<b>Dose única 9–14 anos</b>; 3 doses em imunossuprimidos/PVHIV; contraindicada na gestação."
+  },
+  {
+   "id": "sm036",
+   "secao": "g2",
+   "tag": "Úlceras",
+   "frente": "Herpes: lesão e tratamento.",
+   "verso": "<b>Vesículas agrupadas</b> → úlceras dolorosas. <b>Aciclovir 400 mg 8/8 h 7–10 dias</b>."
+  },
+  {
+   "id": "sm037",
+   "secao": "g2",
+   "tag": "Úlceras",
+   "frente": "Úlcera dolorosa, purulenta, múltipla.",
+   "verso": "<b>Cancroide</b> (<i>H. ducreyi</i>): azitromicina 1 g DU ou ceftriaxona."
+  },
+  {
+   "id": "sm038",
+   "secao": "g2",
+   "tag": "Úlceras",
+   "frente": "Bubão inguinal que fistuliza.",
+   "verso": "<b>Linfogranuloma venéreo</b>: doxiciclina 21 dias; aspirar, nunca incisar."
+  },
+  {
+   "id": "sm039",
+   "secao": "g2",
+   "tag": "Hepatite B",
+   "frente": "HBsAg, anti-HBs, anti-HBc.",
+   "verso": "HBsAg: infecção atual. Anti-HBs: imunidade. Anti-HBc: contato prévio."
+  },
+  {
+   "id": "sm040",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "Agentes da DIP.",
+   "verso": "<b>Polimicrobiana</b>: gonococo, clamídia + anaeróbios/flora vaginal, <i>M. genitalium</i>."
+  },
+  {
+   "id": "sm041",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "Critérios maiores da DIP.",
+   "verso": "Dor <b>hipogástrica</b>, dor <b>anexial</b>, dor à <b>mobilização do colo</b>."
+  },
+  {
+   "id": "sm042",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "Regra diagnóstica da DIP.",
+   "verso": "<b>3 maiores + 1 menor</b> OU <b>1 elaborado</b>."
+  },
+  {
+   "id": "sm043",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "Critérios elaborados.",
+   "verso": "Endometrite na histologia; <b>ATO</b> na imagem; laparoscopia com DIP."
+  },
+  {
+   "id": "sm044",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "Febre é obrigatória na DIP?",
+   "verso": "<b>Não</b>; aparece em menos de 30%."
+  },
+  {
+   "id": "sm045",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "Exame obrigatório na dor pélvica em idade fértil.",
+   "verso": "<b>β-hCG</b> (excluir ectópica)."
+  },
+  {
+   "id": "sm046",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "Esquema ambulatorial da DIP.",
+   "verso": "<b>Ceftriaxona 500 mg IM DU + doxiciclina 100 mg 12/12 h + metronidazol 500 mg 12/12 h por 14 dias</b>."
+  },
+  {
+   "id": "sm047",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "Quando reavaliar a DIP ambulatorial?",
+   "verso": "Em <b>72 h</b>; sem melhora → internar e procurar ATO."
+  },
+  {
+   "id": "sm048",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "Critérios de internação na DIP.",
+   "verso": "Grave/peritonite, <b>ATO</b>, <b>gestação</b>, sem VO, <b>falha em 72 h</b>, imunossupressão, dúvida cirúrgica."
+  },
+  {
+   "id": "sm049",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "Esquema na gestante e no ATO (aula).",
+   "verso": "<b>Clindamicina + gentamicina IV</b> (doxiciclina contraindicada na gestação)."
+  },
+  {
+   "id": "sm050",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "DIU e DIP.",
+   "verso": "Risco só nas <b>primeiras ~3 semanas</b> após inserção; <b>manter</b> o DIU e reavaliar."
+  },
+  {
+   "id": "sm051",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "Síndrome de Fitz-Hugh-Curtis.",
+   "verso": "Peri-hepatite (clamídia): <b>dor em hipocôndrio direito</b>, vias biliares normais, aderências em corda de violino."
+  },
+  {
+   "id": "sm052",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "Parcerias na DIP.",
+   "verso": "Últimos <b>60 dias</b>: ceftriaxona 500 mg IM + azitromicina 1 g, mesmo assintomáticos."
+  },
+  {
+   "id": "sm053",
+   "secao": "g3",
+   "tag": "DIP",
+   "frente": "Sequelas da DIP.",
+   "verso": "Infertilidade tubária, <b>ectópica</b> (até 10×), dor pélvica crônica, aderências."
+  },
+  {
+   "id": "sm054",
+   "secao": "g4",
+   "tag": "Contracepção",
+   "frente": "Método reversível mais eficaz.",
+   "verso": "<b>Implante de etonogestrel</b> (falha ~0,05%)."
+  },
+  {
+   "id": "sm055",
+   "secao": "g4",
+   "tag": "Contracepção",
+   "frente": "Até que dia do ciclo iniciar CHC sem método de apoio?",
+   "verso": "Até o <b>5º dia</b>."
+  },
+  {
+   "id": "sm056",
+   "secao": "g4",
+   "tag": "Contracepção",
+   "frente": "Benefícios não contraceptivos do CHC.",
+   "verso": "↓ fluxo, cólica, TPM, <b>acne</b>, cistos funcionais, <b>câncer de ovário e endométrio</b>."
+  },
+  {
+   "id": "sm057",
+   "secao": "g4",
+   "tag": "Contracepção",
+   "frente": "Cinco contraindicações absolutas ao CHC.",
+   "verso": "TEV prévio, <b>enxaqueca com aura</b>, HAS ≥ 160/100, <b>≥ 35 anos fumando ≥ 15/dia</b>, câncer de mama (também pós-parto &lt; 21 d)."
+  },
+  {
+   "id": "sm058",
+   "secao": "g4",
+   "tag": "Contracepção",
+   "frente": "Usuária de CHC passa a ter enxaqueca com aura.",
+   "verso": "<b>Suspender</b> (risco de AVC) e trocar por método sem estrogênio."
+  },
+  {
+   "id": "sm059",
+   "secao": "g4",
+   "tag": "Contracepção",
+   "frente": "Contraindicações absolutas ao DIU.",
+   "verso": "Gravidez, <b>DIP/cervicite ativa</b>, sangramento inexplicado, cavidade distorcida."
+  },
+  {
+   "id": "sm060",
+   "secao": "g4",
+   "tag": "Contracepção",
+   "frente": "Nuliparidade contraindica DIU?",
+   "verso": "<b>Não.</b> Nem adolescência, nem AINE, nem mioma sem distorção."
+  },
+  {
+   "id": "sm061",
+   "secao": "g4",
+   "tag": "Contracepção",
+   "frente": "Janela para DIU pós-parto.",
+   "verso": "Até <b>48 h</b> ou após <b>4 semanas</b>."
+  },
+  {
+   "id": "sm062",
+   "secao": "g4",
+   "tag": "Contracepção",
+   "frente": "DIU de cobre × SIU-LNG: duração e fluxo.",
+   "verso": "Cobre: 10 anos, <b>↑ fluxo</b>. SIU-LNG: 5–8 anos, <b>↓ fluxo</b>/amenorreia."
+  },
+  {
+   "id": "sm063",
+   "secao": "g4",
+   "tag": "Contracepção",
+   "frente": "Atraso permitido na minipílula de noretisterona.",
+   "verso": "<b>3 horas</b>."
+  },
+  {
+   "id": "sm064",
+   "secao": "g4",
+   "tag": "Contracepção",
+   "frente": "Desvantagens do injetável trimestral.",
+   "verso": "Retorno <b>lento da fertilidade</b>, perda óssea reversível, ganho de peso, sangramento irregular/amenorreia."
+  },
+  {
+   "id": "sm065",
+   "secao": "g4",
+   "tag": "Contracepção",
+   "frente": "Usuária de carbamazepina: método.",
+   "verso": "<b>DIU</b> (cobre ou LNG) ou <b>DMPA</b>."
+  },
+  {
+   "id": "sm066",
+   "secao": "g4",
+   "tag": "Contracepção",
+   "frente": "Critérios da LAM.",
+   "verso": "Amamentação exclusiva + <b>amenorreia</b> + bebê &lt; <b>6 meses</b>."
+  },
+  {
+   "id": "sm067",
+   "secao": "g4",
+   "tag": "Emergência",
+   "frente": "Contracepção de emergência mais eficaz.",
+   "verso": "<b>DIU de cobre até 5 dias</b>."
+  },
+  {
+   "id": "sm068",
+   "secao": "g4",
+   "tag": "Emergência",
+   "frente": "Levonorgestrel de emergência: dose e prazo.",
+   "verso": "<b>1,5 mg DU</b>, ideal ≤ <b>72 h</b> (até 120 h com menor eficácia)."
+  },
+  {
+   "id": "sm069",
+   "secao": "g4",
+   "tag": "Emergência",
+   "frente": "A pílula do dia seguinte é abortiva?",
+   "verso": "<b>Não</b>: retarda/impede a ovulação."
+  },
+  {
+   "id": "sm070",
+   "secao": "g4",
+   "tag": "Esterilização",
+   "frente": "Requisitos legais da laqueadura.",
+   "verso": "<b>≥ 21 anos OU ≥ 2 filhos vivos</b>; <b>60 dias</b>; sem consentimento do cônjuge (Lei 14.443/2022)."
+  },
+  {
+   "id": "sm071",
+   "secao": "g4",
+   "tag": "Esterilização",
+   "frente": "Por quanto tempo o homem segue fértil após vasectomia?",
+   "verso": "Cerca de <b>3 meses</b>: usar outro método até espermograma."
+  },
+  {
+   "id": "sm072",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "Faixa e intervalo do rastreio com DNA-HPV.",
+   "verso": "<b>25–64 anos</b>, a cada <b>5 anos</b> se negativo."
+  },
+  {
+   "id": "sm073",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "DNA-HPV positivo para 16/18.",
+   "verso": "<b>Colposcopia direta</b>."
+  },
+  {
+   "id": "sm074",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "DNA-HPV positivo para outros tipos.",
+   "verso": "<b>Citologia reflexa</b>: alterada → colposcopia; normal → DNA-HPV em 12 meses."
+  },
+  {
+   "id": "sm075",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "Persistência de HPV não 16/18 por 24 meses.",
+   "verso": "<b>Colposcopia</b>, mesmo com citologia normal."
+  },
+  {
+   "id": "sm076",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "Protocolo antigo (2016).",
+   "verso": "Citologia 25–64 anos, a cada <b>3 anos</b> após <b>2 anuais normais</b>."
+  },
+  {
+   "id": "sm077",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "Rastrear mulher de 22 anos?",
+   "verso": "<b>Não</b>: &lt; 25 anos não rastreia."
+  },
+  {
+   "id": "sm078",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "Histerectomia total por mioma.",
+   "verso": "<b>Dispensa</b> rastreio (sem NIC 2/3 prévia)."
+  },
+  {
+   "id": "sm079",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "Rastreio na PVHIV.",
+   "verso": "Desde a <b>1ª relação</b>, qualquer idade, sem idade para parar."
+  },
+  {
+   "id": "sm080",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "Proteínas do HPV e alvos.",
+   "verso": "<b>E6 → p53</b>; <b>E7 → pRb</b>."
+  },
+  {
+   "id": "sm081",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "ASC-H significa…",
+   "verso": "Atipia escamosa em que <b>não se exclui alto grau</b> → colposcopia."
+  },
+  {
+   "id": "sm082",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "Conduta em NIC 1 e NIC 2/3.",
+   "verso": "NIC 1: <b>seguimento</b>. NIC 2/3: <b>excisão da ZT (CAF/EZT)</b>."
+  },
+  {
+   "id": "sm083",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "Teste de Schiller positivo.",
+   "verso": "Área que <b>não cora</b> com lugol (sem glicogênio) → suspeita."
+  },
+  {
+   "id": "sm084",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "Achado colposcópico que alerta para invasão.",
+   "verso": "<b>Vasos atípicos</b>."
+  },
+  {
+   "id": "sm085",
+   "secao": "g5",
+   "tag": "Colo",
+   "frente": "Prazos legais no câncer.",
+   "verso": "Confirmação em <b>30 dias</b>; tratamento em <b>60 dias</b>."
+  },
+  {
+   "id": "sm086",
+   "secao": "g6",
+   "tag": "Mama",
+   "frente": "Rastreio de mama no SUS (2025).",
+   "verso": "<b>50–74 anos, bienal</b>; 40–49 sob demanda (decisão compartilhada)."
+  },
+  {
+   "id": "sm087",
+   "secao": "g6",
+   "tag": "Mama",
+   "frente": "BI-RADS 3: conduta.",
+   "verso": "Provavelmente benigno: <b>controle em 6 meses</b>."
+  },
+  {
+   "id": "sm088",
+   "secao": "g6",
+   "tag": "Mama",
+   "frente": "BI-RADS que indicam biópsia.",
+   "verso": "<b>4 e 5</b>."
+  },
+  {
+   "id": "sm089",
+   "secao": "g6",
+   "tag": "Mama",
+   "frente": "Nódulo mamário em mulher de 24 anos: 1º exame.",
+   "verso": "<b>Ultrassonografia</b>."
+  },
+  {
+   "id": "sm090",
+   "secao": "g6",
+   "tag": "Mama",
+   "frente": "Fibroadenoma: perfil.",
+   "verso": "Jovem (15–35), nódulo <b>móvel, elástico, bem delimitado</b>, indolor."
+  },
+  {
+   "id": "sm091",
+   "secao": "g6",
+   "tag": "Mama",
+   "frente": "Causa mais comum de descarga papilar sanguinolenta.",
+   "verso": "<b>Papiloma intraductal</b>."
+  },
+  {
+   "id": "sm092",
+   "secao": "g6",
+   "tag": "Mama",
+   "frente": "Mastite lactacional: conduta.",
+   "verso": "<b>Manter amamentação</b>, esvaziar a mama, cefalexina; abscesso → drenagem."
+  }
+ ],
+ "kahoot": [
+  {
+   "tipo": "q",
+   "n": 1,
+   "pergunta": "Mulher de 28 anos com prurido vulvar intenso e corrimento branco grumoso; pH 4,0. Diagnóstico?",
+   "opcoes": [
+    "Cervicite",
+    "Candidíase vulvovaginal",
+    "Vaginose bacteriana",
+    "Tricomoníase"
+   ],
+   "certa": 1,
+   "explica": "Prurido + grumoso + pH normal.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 2,
+   "pergunta": "Corrimento acinzentado, homogêneo, com odor de peixe pior após a relação, sem prurido; pH 5,0 e clue cells. Tratamento?",
+   "opcoes": [
+    "Metronidazol 500 mg 12/12 h por 7 dias",
+    "Ceftriaxona + azitromicina",
+    "Nistatina 14 dias",
+    "Fluconazol 150 mg"
+   ],
+   "certa": 0,
+   "explica": "Vaginose bacteriana.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 3,
+   "pergunta": "Na vaginose bacteriana, a parceria deve ser:",
+   "opcoes": [
+    "Tratada só se sintomática",
+    "Tratada sempre",
+    "Tratada com fluconazol",
+    "Não tratada rotineiramente"
+   ],
+   "certa": 3,
+   "explica": "Vaginose não é IST.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 4,
+   "pergunta": "Corrimento amarelo-esverdeado, bolhoso, com colo em morango. Conduta com a parceria?",
+   "opcoes": [
+    "Fluconazol",
+    "Só se tiver sintomas",
+    "Não tratar",
+    "Tratar com metronidazol 2 g dose única, mesmo assintomática"
+   ],
+   "certa": 3,
+   "explica": "Tricomoníase é IST: parceria sempre.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 5,
+   "pergunta": "Quantos critérios de Amsel são necessários para vaginose bacteriana?",
+   "opcoes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "certa": 2,
+   "explica": "≥ 3 de 4.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 6,
+   "pergunta": "Gestante com candidíase vulvovaginal. Tratamento indicado:",
+   "opcoes": [
+    "Metronidazol",
+    "Fluconazol oral",
+    "Azólico tópico intravaginal",
+    "Não tratar"
+   ],
+   "certa": 2,
+   "explica": "Na gestação, só tópico.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 7,
+   "pergunta": "Ao especular: mucopus endocervical e colo que sangra ao toque do cotonete. Conduta?",
+   "opcoes": [
+    "Metronidazol 7 dias",
+    "Fluconazol",
+    "Aguardar NAAT",
+    "Ceftriaxona 500 mg IM + azitromicina 1 g VO agora"
+   ],
+   "certa": 3,
+   "explica": "Tratar cervicite empiricamente.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 8,
+   "pergunta": "Qual percentual aproximado das cervicites é assintomático?",
+   "opcoes": [
+    "10–20%",
+    "30–40%",
+    "50%",
+    "70–80%"
+   ],
+   "certa": 3,
+   "explica": "Por isso o rastreio em jovens.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 9,
+   "pergunta": "Teste rápido treponêmico reagente e VDRL 1:16 em paciente sem tratamento prévio e sem saber quando se infectou. Tratamento?",
+   "opcoes": [
+    "Benzatina 2,4 mi semanal por 3 semanas",
+    "Doxiciclina 15 dias",
+    "Cristalina IV 14 dias",
+    "Benzatina 2,4 mi dose única"
+   ],
+   "certa": 0,
+   "explica": "Duração ignorada = tardia.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 10,
+   "pergunta": "Úlcera genital única, indolor, de base endurecida. Hipótese?",
+   "opcoes": [
+    "Donovanose",
+    "Herpes",
+    "Sífilis primária",
+    "Cancroide"
+   ],
+   "certa": 2,
+   "explica": "Cancro duro.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 11,
+   "pergunta": "Febre e mialgia 6 h após a benzatina. O que é?",
+   "opcoes": [
+    "Reação de Jarisch-Herxheimer",
+    "Neurossífilis",
+    "Alergia à penicilina",
+    "Falha terapêutica"
+   ],
+   "certa": 0,
+   "explica": "Reação ao tratamento, não alergia.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 12,
+   "pergunta": "Resposta adequada após tratar sífilis recente:",
+   "opcoes": [
+    "Queda de 2 diluições em até 6 meses",
+    "Qualquer queda",
+    "Treponêmico negativo",
+    "VDRL negativo em 1 mês"
+   ],
+   "certa": 0,
+   "explica": "Ex.: 1:32 → 1:8.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 13,
+   "pergunta": "Gestante com sífilis e alergia comprovada à penicilina:",
+   "opcoes": [
+    "Azitromicina",
+    "Ceftriaxona",
+    "Doxiciclina",
+    "Dessensibilização e penicilina"
+   ],
+   "certa": 3,
+   "explica": "Só a penicilina trata o feto.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 14,
+   "pergunta": "Parceria de paciente com sífilis, exposta há 30 dias, com teste rápido não reagente:",
+   "opcoes": [
+    "Doxiciclina",
+    "Tratamento presuntivo com benzatina 2,4 mi dose única",
+    "Nada",
+    "Repetir o teste em 90 dias apenas"
+   ],
+   "certa": 1,
+   "explica": "Expostos nos últimos 90 dias: presuntivo.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 15,
+   "pergunta": "Esquema da PEP após exposição sexual de risco:",
+   "opcoes": [
+    "AZT por 6 semanas",
+    "Iniciar só após teste confirmado",
+    "TDF/FTC por 7 dias",
+    "TDF + 3TC + DTG por 28 dias, até 72 h"
+   ],
+   "certa": 3,
+   "explica": "Iniciar o quanto antes, máximo 72 h.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 16,
+   "pergunta": "Vesículas agrupadas que viraram úlceras rasas e muito dolorosas, com febre. Tratamento?",
+   "opcoes": [
+    "Aciclovir 400 mg 8/8 h por 7–10 dias",
+    "Doxiciclina 21 dias",
+    "Benzatina",
+    "Azitromicina 1 g"
+   ],
+   "certa": 0,
+   "explica": "Primeiro episódio de herpes.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 17,
+   "pergunta": "Condiloma acuminado em gestante. Tratamento permitido:",
+   "opcoes": [
+    "Imiquimode",
+    "Nenhum",
+    "Ácido tricloroacético",
+    "Podofilina"
+   ],
+   "certa": 2,
+   "explica": "ATA, crio ou exérese.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 18,
+   "pergunta": "Vacina HPV no SUS para menina de 11 anos:",
+   "opcoes": [
+    "3 doses",
+    "2 doses",
+    "Dose única",
+    "Não indicada"
+   ],
+   "certa": 2,
+   "explica": "Dose única 9–14 anos.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 19,
+   "pergunta": "Jovem com dor hipogástrica, dor à mobilização do colo e dor anexial, sem febre. O que fazer?",
+   "opcoes": [
+    "Esperar febre",
+    "Antibiótico só após NAAT",
+    "Pedir β-hCG e iniciar tratamento de DIP sem esperar cultura",
+    "Só USG"
+   ],
+   "certa": 2,
+   "explica": "Febre em < 30%; tratar empiricamente.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 20,
+   "pergunta": "Esquema ambulatorial de DIP:",
+   "opcoes": [
+    "Metronidazol isolado",
+    "Ceftriaxona IM + doxiciclina 14 d + metronidazol 14 d",
+    "Azitromicina dose única",
+    "Amoxicilina 7 dias"
+   ],
+   "certa": 1,
+   "explica": "Cobrir gonococo, clamídia e anaeróbios por 14 dias.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 21,
+   "pergunta": "DIP tratada há 72 h sem melhora da dor e da febre. Conduta?",
+   "opcoes": [
+    "Alta",
+    "Manter e esperar mais 7 dias",
+    "Trocar por amoxicilina",
+    "Internar, ATB IV e USG para procurar abscesso"
+   ],
+   "certa": 3,
+   "explica": "Falha em 72 h é critério de internação.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 22,
+   "pergunta": "Gestante de 14 semanas com DIP:",
+   "opcoes": [
+    "Observar",
+    "Internação e clindamicina + gentamicina IV",
+    "Só metronidazol",
+    "Tratamento ambulatorial com doxiciclina"
+   ],
+   "certa": 1,
+   "explica": "Gestação é critério de internação; doxiciclina contraindicada.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 23,
+   "pergunta": "Paciente com DIP usa DIU de cobre há 3 anos. Sobre o DIU:",
+   "opcoes": [
+    "Retirar imediatamente sempre",
+    "O DIU causou a DIP",
+    "Manter e reavaliar; retirar se não houver melhora",
+    "Trocar por SIU-LNG"
+   ],
+   "certa": 2,
+   "explica": "O risco de DIP pelo DIU está nas primeiras semanas.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 24,
+   "pergunta": "Dor em hipocôndrio direito pior à inspiração, após quadro de DIP, com USG de vias biliares normal:",
+   "opcoes": [
+    "Fitz-Hugh-Curtis",
+    "Colecistite",
+    "Pielonefrite",
+    "Hepatite"
+   ],
+   "certa": 0,
+   "explica": "Peri-hepatite.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 25,
+   "pergunta": "Parcerias de paciente com DIP devem ser tratadas se o contato foi nos últimos:",
+   "opcoes": [
+    "15 dias",
+    "30 dias",
+    "60 dias",
+    "1 ano"
+   ],
+   "certa": 2,
+   "explica": "60 dias, mesmo assintomáticos.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 26,
+   "pergunta": "Contraindicação absoluta ao DIU de cobre:",
+   "opcoes": [
+    "Mioma assintomático sem distorção",
+    "Uso de AINE",
+    "Cervicite purulenta não tratada",
+    "Nuliparidade"
+   ],
+   "certa": 2,
+   "explica": "Caso 1 da Profa. Luiza.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 27,
+   "pergunta": "DIU de cobre no pós-parto pode ser inserido:",
+   "opcoes": [
+    "Contraindicado no aleitamento",
+    "Só na menstruação",
+    "Só guiado por USG",
+    "Até 48 h ou após 4 semanas"
+   ],
+   "certa": 3,
+   "explica": "Entre 48 h e 4 semanas: mais expulsão e perfuração.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 28,
+   "pergunta": "Contraindicação absoluta (cat. 4) ao contraceptivo hormonal combinado:",
+   "opcoes": [
+    "TEV prévio",
+    "Fumante de 30 anos, 4 cigarros/dia",
+    "Lactação há 4 meses",
+    "Mioma de 4 cm assintomático"
+   ],
+   "certa": 0,
+   "explica": "Caso 2 da Profa. Luiza.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 29,
+   "pergunta": "Usuária de pílula combinada passa a ter enxaqueca com aura. Conduta:",
+   "opcoes": [
+    "Associar triptano",
+    "Reduzir a dose de estrogênio",
+    "Suspender e trocar por método sem estrogênio",
+    "Manter"
+   ],
+   "certa": 2,
+   "explica": "Aura + estrogênio aumenta AVC.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 30,
+   "pergunta": "Benefício não contraceptivo do CHC:",
+   "opcoes": [
+    "Aumento do câncer de ovário",
+    "Melhora da acne",
+    "Aumento de DIP",
+    "Piora de cistos funcionais"
+   ],
+   "certa": 1,
+   "explica": "Também ↓ câncer de ovário e endométrio.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 31,
+   "pergunta": "Laqueadura no Brasil (Lei 14.443/2022):",
+   "opcoes": [
+    "> 35 anos e 3 filhos",
+    "Qualquer idade com assinatura do cônjuge",
+    "≥ 21 anos ou ≥ 2 filhos vivos, 60 dias entre pedido e cirurgia, sem cônjuge",
+    "Só com risco de morte"
+   ],
+   "certa": 2,
+   "explica": "Caso 3 da Profa. Luiza.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 32,
+   "pergunta": "Após vasectomia, o homem:",
+   "opcoes": [
+    "Precisa de internação de 48 h",
+    "Permanece fértil por cerca de 3 meses",
+    "Precisa do consentimento da parceira",
+    "Fica estéril no mesmo dia"
+   ],
+   "certa": 1,
+   "explica": "Usar outro método até o espermograma.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 33,
+   "pergunta": "Levonorgestrel de emergência:",
+   "opcoes": [
+    "Interrompe gravidez em curso",
+    "Duas doses por 7 dias",
+    "Preferir nas primeiras 72 h; eficácia cai com o tempo",
+    "Aumenta a fertilidade"
+   ],
+   "certa": 2,
+   "explica": "Caso 4 da Profa. Luiza.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 34,
+   "pergunta": "Método de emergência mais eficaz:",
+   "opcoes": [
+    "Pílula combinada (Yuzpe)",
+    "Ulipristal",
+    "DIU de cobre até 5 dias",
+    "Levonorgestrel 1,5 mg"
+   ],
+   "certa": 2,
+   "explica": "Independe do IMC e já fica como método.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 35,
+   "pergunta": "Puérpera de 3 semanas amamentando quer pílula. Melhor opção:",
+   "opcoes": [
+    "Pílula combinada",
+    "Anel vaginal",
+    "Minipílula (só progestagênio)",
+    "Adesivo"
+   ],
+   "certa": 2,
+   "explica": "Sem estrogênio antes de 6 semanas na lactação.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 36,
+   "pergunta": "Rastreio de colo vigente no SUS (Portaria 13/2025):",
+   "opcoes": [
+    "Citologia a cada 3 anos desde os 21",
+    "DNA-HPV de 25 a 64 anos a cada 5 anos",
+    "Citologia anual a partir da sexarca",
+    "DNA-HPV a partir dos 18 anos"
+   ],
+   "certa": 1,
+   "explica": "DNA-HPV primário.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 37,
+   "pergunta": "DNA-HPV positivo para HPV 16:",
+   "opcoes": [
+    "Citologia reflexa",
+    "Repetir em 5 anos",
+    "Repetir em 12 meses",
+    "Colposcopia direta"
+   ],
+   "certa": 3,
+   "explica": "16/18 vão direto à colposcopia.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 38,
+   "pergunta": "DNA-HPV positivo para HPV não 16/18 com citologia reflexa normal:",
+   "opcoes": [
+    "Repetir DNA-HPV em 12 meses",
+    "Repetir em 5 anos",
+    "Colposcopia",
+    "Conização"
+   ],
+   "certa": 0,
+   "explica": "Persistindo 24 meses: colposcopia.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 39,
+   "pergunta": "Mulher de 22 anos pede preventivo:",
+   "opcoes": [
+    "Coletar citologia",
+    "Colposcopia",
+    "Coletar DNA-HPV",
+    "Não rastrear antes dos 25 anos; vacinar"
+   ],
+   "certa": 3,
+   "explica": "Infecções transitórias.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 40,
+   "pergunta": "Histerectomia total por mioma, sem lesão prévia de colo:",
+   "opcoes": [
+    "Rastrear cúpula a cada 3 anos",
+    "Rastrear até 74 anos",
+    "Dispensa rastreio",
+    "DNA-HPV anual"
+   ],
+   "certa": 2,
+   "explica": "Não há colo.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 41,
+   "pergunta": "Biópsia de colo com NIC 3:",
+   "opcoes": [
+    "Histerectomia radical",
+    "Excisão da zona de transformação (CAF/EZT)",
+    "Repetir citologia em 6 meses",
+    "Seguimento"
+   ],
+   "certa": 1,
+   "explica": "Alto grau = tratar.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 42,
+   "pergunta": "Oncoproteína do HPV que degrada a p53:",
+   "opcoes": [
+    "E2",
+    "E6",
+    "E7",
+    "L1"
+   ],
+   "certa": 1,
+   "explica": "E7 inativa pRb.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 43,
+   "pergunta": "Rastreamento de câncer de mama no SUS para mulher de 55 anos:",
+   "opcoes": [
+    "Mamografia anual",
+    "USG anual",
+    "Não rastrear",
+    "Mamografia a cada 2 anos"
+   ],
+   "certa": 3,
+   "explica": "50–74 anos, bienal.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 44,
+   "pergunta": "Mamografia BI-RADS 3:",
+   "opcoes": [
+    "Biópsia",
+    "Rotina em 2 anos",
+    "Controle em 6 meses",
+    "Mastectomia"
+   ],
+   "certa": 2,
+   "explica": "Provavelmente benigno.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 45,
+   "pergunta": "Nódulo móvel, elástico, bem delimitado em mulher de 20 anos. Primeiro exame e hipótese:",
+   "opcoes": [
+    "Biópsia; papiloma",
+    "Ressonância; cisto",
+    "Mamografia; carcinoma",
+    "USG; fibroadenoma"
+   ],
+   "certa": 3,
+   "explica": "Jovem: USG primeiro.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 46,
+   "pergunta": "Puérpera com mama vermelha, quente e dolorosa, febre, sem flutuação:",
+   "opcoes": [
+    "Mamografia urgente",
+    "Drenagem cirúrgica",
+    "Suspender amamentação",
+    "Manter amamentação + cefalexina"
+   ],
+   "certa": 3,
+   "explica": "Mastite lactacional.",
+   "tempo": 20
+  }
+ ],
+ "kahootInfo": {
+  "titulo": "Quiz de revisão · Saúde da Mulher AV2",
+  "capa": "{n} perguntas de revisão das aulas 7 a 12 (corrimentos, IST, DIP, contracepção, colo e mama), incluindo as questões dos casos da Profa. Luiza. Não é um Kahoot de professor. Quanto mais cedo acertar, mais pontos.",
+  "botao": "Começar o quiz"
+ },
+ "casos": [
+  {
+   "id": "m1",
+   "nivel": "Caso da aula",
+   "titulo": "Marina e o método \"para esquecer\" (caso 1, Profa. Luiza)",
+   "resumo": "Escolha e contraindicações do DIU.",
+   "tags": [
+    "Contracepção",
+    "DIU"
+   ],
+   "secoes": [
+    "g4",
+    "r4"
+   ],
+   "abertura": "<p><strong>Marina, 19 anos</strong>, universitária, nulípara, ciclos regulares, fluxo moderado. Não quer engravidar nos próximos anos e prefere um método \"para poder se esquecer que usa algo\". Sem doenças, não fuma, usa analgésico às vezes para cólica. Exame ginecológico normal.</p>",
+   "etapas": [
+    {
+     "titulo": "Antes de inserir",
+     "pergunta": "O que é indispensável checar antes de inserir um DIU?",
+     "opcoes": [
+      "USG obrigatória",
+      "Consentimento dos pais",
+      "Ter filhos e idade > 25 anos",
+      "Excluir gravidez e IST/DIP/cervicite ativas; avaliar fluxo, dor e anatomia da cavidade"
+     ],
+     "certa": 3,
+     "explica": "Gravidez, cervicite/DIP, sangramento e dor (orientam cobre × hormonal) e distorção da cavidade."
+    },
+    {
+     "titulo": "Contraindicação",
+     "pergunta": "Qual é contraindicação ABSOLUTA ao DIU de cobre?",
+     "opcoes": [
+      "Adolescência e nuliparidade",
+      "Infecção pélvica ativa ou cervicite não tratada",
+      "Mioma assintomático",
+      "Uso de AINE"
+     ],
+     "certa": 1,
+     "explica": "Nuliparidade não contraindica; AINE até ajuda na cólica; mioma só se distorcer a cavidade."
+    },
+    {
+     "titulo": "Cobre × hormonal",
+     "pergunta": "Qual afirmação compara corretamente os DIUs?",
+     "opcoes": [
+      "Ambos inibem a ovulação sempre",
+      "Cobre pode aumentar fluxo e cólica e dura até 10 anos; SIU-LNG reduz fluxo, pode dar amenorreia e dura 5–8 anos",
+      "SIU-LNG serve de contracepção de emergência",
+      "Cobre reduz o fluxo; SIU-LNG aumenta"
+     ],
+     "certa": 1,
+     "explica": "O cobre é que serve de emergência até 5 dias."
+    },
+    {
+     "titulo": "Pós-parto",
+     "pergunta": "Se fosse puérpera, quando inserir o DIU de cobre?",
+     "opcoes": [
+      "Só na menstruação",
+      "Até 48 h ou após 4 semanas",
+      "Sempre guiado por USG",
+      "Contraindicado no aleitamento"
+     ],
+     "certa": 1,
+     "explica": "Entre 48 h e 4 semanas há mais expulsão e perfuração."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Adolescente: LARC é 1ª linha.</li><li>Nuliparidade não contraindica DIU.</li><li>Cat. 4: gravidez, DIP/cervicite ativa, sangramento inexplicado, cavidade distorcida.</li></ul>"
+  },
+  {
+   "id": "m2",
+   "nivel": "Caso da aula",
+   "titulo": "Paula e a TPM (caso 2, Profa. Luiza)",
+   "resumo": "Benefícios e contraindicações do contraceptivo combinado.",
+   "tags": [
+    "Contracepção",
+    "CHC"
+   ],
+   "secoes": [
+    "g4",
+    "r4"
+   ],
+   "abertura": "<p><strong>Paula, 32 anos</strong>, bancária, com TPM, acne leve e fluxo intenso. Não fuma, sem trombose ou enxaqueca. Já usou pílula combinada com boa adesão e quer um método que melhore os sintomas menstruais.</p>",
+   "etapas": [
+    {
+     "titulo": "Benefícios",
+     "pergunta": "Que benefícios do CHC são relevantes para ela?",
+     "opcoes": [
+      "Nenhum",
+      "Aumento do fluxo",
+      "Aumento da oleosidade",
+      "↓ fluxo e cólica, ↓ TPM em regime 24/4 ou contínuo, ↓ acne"
+     ],
+     "certa": 3,
+     "explica": "Se a prioridade for reduzir muito o sangramento, o SIU-LNG costuma ser superior."
+    },
+    {
+     "titulo": "Contraindicação",
+     "pergunta": "Qual é contraindicação ABSOLUTA ao CHC (OMS)?",
+     "opcoes": [
+      "Tabagismo social aos 30 anos",
+      "Lactação exclusiva há 4 meses",
+      "História de TEV",
+      "Mioma de 4 cm assintomático"
+     ],
+     "certa": 2,
+     "explica": "Fumante < 35 anos não é cat. 4; mioma não contraindica."
+    },
+    {
+     "titulo": "Aura",
+     "pergunta": "Meses depois surge enxaqueca com aura. O que fazer?",
+     "opcoes": [
+      "Manter",
+      "Trocar por outra pílula combinada",
+      "Suspender o CHC e oferecer método sem estrogênio (SIU-LNG, implante, minipílula, DIU de cobre)",
+      "Associar AAS"
+     ],
+     "certa": 2,
+     "explica": "Aura + estrogênio aumenta o risco de AVC."
+    },
+    {
+     "titulo": "Outro benefício",
+     "pergunta": "Benefício não contraceptivo do CHC:",
+     "opcoes": [
+      "Aumento de DIP",
+      "Piora de cistos funcionais",
+      "Melhora da acne e da oleosidade",
+      "Aumento do câncer de ovário"
+     ],
+     "certa": 2,
+     "explica": "Também reduz câncer de ovário e endométrio."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>CHC melhora fluxo, cólica, TPM e acne.</li><li>Cat. 4: TEV, aura, HAS grave, ≥ 35 anos fumante pesada.</li><li>Aura nova → suspender.</li></ul>"
+  },
+  {
+   "id": "m3",
+   "nivel": "Caso da aula",
+   "titulo": "Luciana e a laqueadura (caso 3, Profa. Luiza)",
+   "resumo": "Esterilização: lei, prazos e alternativas.",
+   "tags": [
+    "Contracepção",
+    "Laqueadura"
+   ],
+   "secoes": [
+    "g4",
+    "r4"
+   ],
+   "abertura": "<p><strong>Luciana, 29 anos</strong>, puérpera da 3ª gestação (cesárea há 30 dias), complicada por pré-eclâmpsia. Quer laqueadura, o parceiro apoia, e pergunta se pode ser feita agora e se há alternativas.</p>",
+   "etapas": [
+    {
+     "titulo": "Lei",
+     "pergunta": "Critérios legais para a laqueadura:",
+     "opcoes": [
+      "≥ 21 anos OU ≥ 2 filhos vivos; ≥ 60 dias entre pedido e cirurgia; sem consentimento do cônjuge",
+      "Qualquer idade com assinatura do cônjuge",
+      "Só com risco de morte materna",
+      "> 35 anos e 3 filhos"
+     ],
+     "certa": 0,
+     "explica": "Lei 14.443/2022."
+    },
+    {
+     "titulo": "Hoje",
+     "pergunta": "Ela não havia pedido antes do parto. Conduta mais adequada agora:",
+     "opcoes": [
+      "Negar por ter 29 anos",
+      "Operar amanhã",
+      "Exigir assinatura do parceiro",
+      "Registrar o pedido, agendar após 60 dias com aconselhamento e oferecer LARC agora"
+     ],
+     "certa": 3,
+     "explica": "LARC agora: implante imediato ou DIU (já passou de 4 semanas)."
+    },
+    {
+     "titulo": "Vasectomia",
+     "pergunta": "Sobre a vasectomia:",
+     "opcoes": [
+      "Precisa do consentimento da parceira",
+      "Impede relações por 6 meses",
+      "O homem permanece fértil por cerca de 3 meses",
+      "Exige internação de 48 h"
+     ],
+     "certa": 2,
+     "explica": "Outro método até o espermograma."
+    },
+    {
+     "titulo": "Laqueadura × LARC",
+     "pergunta": "Como explicar a diferença?",
+     "opcoes": [
+      "Laqueadura é permanente e cirúrgica; LARC é reversível, ambulatorial e com retorno rápido da fertilidade",
+      "São iguais",
+      "Laqueadura não falha",
+      "LARC é irreversível"
+     ],
+     "certa": 0,
+     "explica": "Falha da laqueadura ~0,5%, com mais ectópica."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>21 anos OU 2 filhos; 60 dias; sem cônjuge.</li><li>Pode no parto se pediu ≥ 60 dias antes.</li><li>Oferecer LARC enquanto isso.</li></ul>"
+  },
+  {
+   "id": "m4",
+   "nivel": "Caso da aula",
+   "titulo": "Jéssica no pronto-socorro (caso 4, Profa. Luiza)",
+   "resumo": "Contracepção de emergência e atendimento à violência sexual.",
+   "tags": [
+    "Emergência",
+    "Violência sexual",
+    "PEP"
+   ],
+   "secoes": [
+    "g4",
+    "r4",
+    "g2"
+   ],
+   "abertura": "<p><strong>Jéssica, 24 anos</strong>, chega ao PS relatando violência sexual há cerca de <strong>48 h</strong>. Não usava método e teme gravidez. Está abalada; equimoses superficiais apenas.</p>",
+   "etapas": [
+    {
+     "titulo": "Emergência",
+     "pergunta": "Opção contraceptiva mais eficaz para ela:",
+     "opcoes": [
+      "Nada, já passou de 24 h",
+      "Pílula combinada contínua",
+      "DIU de cobre (até 120 h)",
+      "Levonorgestrel em duas doses por 7 dias"
+     ],
+     "certa": 2,
+     "explica": "Depois vêm ulipristal (até 120 h) e LNG 1,5 mg (ideal ≤ 72 h)."
+    },
+    {
+     "titulo": "LNG",
+     "pergunta": "Sobre o levonorgestrel:",
+     "opcoes": [
+      "Duas doses diárias por 7 dias",
+      "Preferir nas primeiras 72 h; repetir se vomitar em < 3 h",
+      "Aumenta a fertilidade",
+      "Interrompe a gravidez"
+     ],
+     "certa": 1,
+     "explica": "Retarda a ovulação; não é abortivo."
+    },
+    {
+     "titulo": "Profilaxias",
+     "pergunta": "Além da contracepção, o que é obrigatório oferecer?",
+     "opcoes": [
+      "Só boletim de ocorrência",
+      "Preservativo apenas",
+      "Esperar sorologias",
+      "PEP HIV (≤ 72 h), profilaxia de IST, hepatite B, apoio psicológico e notificação"
+     ],
+     "certa": 3,
+     "explica": "O atendimento não depende de registro policial."
+    },
+    {
+     "titulo": "Seguimento",
+     "pergunta": "Quando pedir teste de gravidez?",
+     "opcoes": [
+      "Hoje apenas",
+      "Em 3–4 semanas",
+      "Não precisa",
+      "Em 6 meses"
+     ],
+     "certa": 1,
+     "explica": "Retorno em 1–2 semanas e sorologias conforme protocolo."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>CE: DIU cobre > ulipristal > LNG.</li><li>PEP até 72 h, 28 dias.</li><li>Não exigir BO; notificar.</li></ul>"
+  },
+  {
+   "id": "m5",
+   "nivel": "Difícil",
+   "titulo": "Camila e a dor pélvica de sexta-feira",
+   "resumo": "DIP do diagnóstico ao abscesso (inclui as 3 situações de prova da Profa. Luiza).",
+   "tags": [
+    "DIP",
+    "ATO"
+   ],
+   "secoes": [
+    "g3",
+    "r3"
+   ],
+   "abertura": "<p><strong>Camila, 21 anos</strong>, parceiro novo há 2 meses, sem preservativo, chega com dor em baixo ventre há 4 dias e corrimento. T 37,2 °C. Toque: dor à mobilização do colo e dor anexial bilateral.</p>",
+   "etapas": [
+    {
+     "titulo": "Primeiro exame",
+     "pergunta": "Qual exame é indispensável antes de fechar o diagnóstico?",
+     "opcoes": [
+      "β-hCG",
+      "Tomografia",
+      "Laparoscopia",
+      "Cultura do corrimento"
+     ],
+     "certa": 0,
+     "explica": "Excluir ectópica sempre."
+    },
+    {
+     "titulo": "Diagnóstico",
+     "pergunta": "β-hCG negativo. Sem febre. Ela tem DIP?",
+     "opcoes": [
+      "Não, sem febre não é DIP",
+      "Só com USG alterada",
+      "Sim: critérios maiores presentes + secreção anormal (menor); tratar",
+      "Só com NAAT positivo"
+     ],
+     "certa": 2,
+     "explica": "Febre aparece em < 30%."
+    },
+    {
+     "titulo": "Esquema",
+     "pergunta": "Tratamento ambulatorial:",
+     "opcoes": [
+      "Amoxicilina-clavulanato 7 dias",
+      "Azitromicina dose única",
+      "Ceftriaxona 500 mg IM + doxiciclina 14 d + metronidazol 14 d",
+      "Fluconazol"
+     ],
+     "certa": 2,
+     "explica": "Cobrir gonococo, clamídia e anaeróbios."
+    },
+    {
+     "titulo": "72 horas",
+     "pergunta": "Volta em 72 h com febre de 38,8 °C e a mesma dor.",
+     "opcoes": [
+      "Trocar por azitromicina",
+      "Alta",
+      "Manter e esperar",
+      "Internar, ATB IV e USG para procurar abscesso"
+     ],
+     "certa": 3,
+     "explica": "Falha em 72 h."
+    },
+    {
+     "titulo": "Abscesso",
+     "pergunta": "USG: massa anexial complexa de 8 cm e líquido livre; estável.",
+     "opcoes": [
+      "Só analgesia",
+      "Alta com ATB oral",
+      "Internação, ATB IV (clindamicina + gentamicina), vigiar; drenar/operar se falha ou ruptura",
+      "Cirurgia imediata sempre"
+     ],
+     "certa": 2,
+     "explica": "ATO estável: ATB IV; ruptura/sepse: cirurgia de emergência."
+    },
+    {
+     "titulo": "Parceiro",
+     "pergunta": "E o parceiro?",
+     "opcoes": [
+      "Esperar os exames dele",
+      "Tratar empiricamente (ceftriaxona + azitromicina), contatos dos últimos 60 dias",
+      "Não precisa",
+      "Só se tiver sintomas"
+     ],
+     "certa": 1,
+     "explica": "Senão ela se reinfecta."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>β-hCG sempre.</li><li>Não exigir febre nem cultura.</li><li>Reavaliar em 72 h.</li><li>Gestante, ATO, falha: internar.</li></ul><h3>As 3 situações de prova da aula</h3><ul><li>Gestante de 14 semanas com DIP → internar, clindamicina + gentamicina IV.</li><li>Massa anexial de 8 cm + líquido livre → ATO: internar, ATB IV, cirurgia se ruptura/sepse.</li><li>Sem melhora em 72 h → falha: internar, IV, nova USG.</li></ul>"
+  },
+  {
+   "id": "m6",
+   "nivel": "Moderado",
+   "titulo": "Bruna e os três corrimentos",
+   "resumo": "Diagnóstico diferencial do corrimento e cervicite na APS.",
+   "tags": [
+    "Corrimento",
+    "Cervicite",
+    "Parcerias"
+   ],
+   "secoes": [
+    "g1",
+    "r1"
+   ],
+   "abertura": "<p><strong>Bruna, 23 anos</strong>, procura a UBS com corrimento há 1 semana. Tem parceiro fixo há 3 anos, sem preservativo.</p>",
+   "etapas": [
+    {
+     "titulo": "Quadro 1",
+     "pergunta": "Se o corrimento fosse grumoso com prurido intenso e pH 4,0:",
+     "opcoes": [
+      "Cervicite",
+      "Vaginose",
+      "Tricomoníase",
+      "Candidíase"
+     ],
+     "certa": 3,
+     "explica": "pH normal + prurido."
+    },
+    {
+     "titulo": "Quadro 2",
+     "pergunta": "Mas ao especular: corrimento acinzentado homogêneo, aminas positivas, pH 5,5, sem inflamação, clue cells.",
+     "opcoes": [
+      "Vaginose bacteriana",
+      "Candidíase",
+      "Gonorreia",
+      "Tricomoníase"
+     ],
+     "certa": 0,
+     "explica": "Amsel 4/4."
+    },
+    {
+     "titulo": "Tratamento",
+     "pergunta": "Conduta:",
+     "opcoes": [
+      "Metronidazol 500 mg 12/12 h por 7 dias; parceiro não precisa ser tratado",
+      "Fluconazol; tratar parceiro",
+      "Nada",
+      "Ceftriaxona + azitromicina para os dois"
+     ],
+     "certa": 0,
+     "explica": "Vaginose não é IST."
+    },
+    {
+     "titulo": "Colo",
+     "pergunta": "No mesmo exame: mucopus endocervical e colo friável.",
+     "opcoes": [
+      "Esperar NAAT para decidir",
+      "Ignorar",
+      "Só metronidazol resolve",
+      "Tratar também cervicite (ceftriaxona + azitromicina), colher NAAT, tratar parceiro, oferecer HIV/sífilis/hepatites"
+     ],
+     "certa": 3,
+     "explica": "Podem coexistir; cervicite se trata empiricamente."
+    },
+    {
+     "titulo": "Parceiro",
+     "pergunta": "Como comunicar o parceiro?",
+     "opcoes": [
+      "Cartão de comunicação; sem retorno em 15 dias, contato telefônico",
+      "Ligar para ele sem avisar a paciente",
+      "Não comunicar",
+      "Busca ativa imediata"
+     ],
+     "certa": 0,
+     "explica": "Sigilo, voluntariedade, sem coerção."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>pH separa candidíase dos outros dois.</li><li>Vaginose: Amsel ≥ 3.</li><li>Cervicite: tratar na hora, com parceiro.</li></ul>"
+  },
+  {
+   "id": "m7",
+   "nivel": "Difícil",
+   "titulo": "Taís, sífilis e pré-natal",
+   "resumo": "Sífilis na gestação: diagnóstico, tratamento, parceria e seguimento.",
+   "tags": [
+    "Sífilis",
+    "Gestação"
+   ],
+   "secoes": [
+    "g2",
+    "r2"
+   ],
+   "abertura": "<p><strong>Taís, 26 anos</strong>, 12 semanas de gestação, 1ª consulta de pré-natal. Teste rápido para sífilis <strong>reagente</strong>. Assintomática, nunca tratou, não sabe quando se infectou.</p>",
+   "etapas": [
+    {
+     "titulo": "Próximo exame",
+     "pergunta": "Próximo passo diagnóstico:",
+     "opcoes": [
+      "Repetir o teste rápido em 3 meses",
+      "Punção lombar",
+      "Nenhum, já tratar e pronto",
+      "Colher VDRL (não treponêmico quantitativo) e iniciar tratamento"
+     ],
+     "certa": 3,
+     "explica": "Na gestante não se espera o VDRL para tratar."
+    },
+    {
+     "titulo": "Classificação",
+     "pergunta": "VDRL 1:16, sem sintomas, tempo desconhecido. Classificação e esquema:",
+     "opcoes": [
+      "Recente; 2,4 mi dose única",
+      "Latente de duração ignorada; 2,4 mi semanal × 3",
+      "Primária; doxiciclina",
+      "Neurossífilis; cristalina"
+     ],
+     "certa": 1,
+     "explica": "Ignorada = tardia."
+    },
+    {
+     "titulo": "Alergia",
+     "pergunta": "Ela relata urticária com amoxicilina no passado.",
+     "opcoes": [
+      "Encaminhar para dessensibilização e tratar com penicilina",
+      "Não tratar",
+      "Trocar por ceftriaxona",
+      "Trocar por azitromicina"
+     ],
+     "certa": 0,
+     "explica": "Só penicilina previne sífilis congênita."
+    },
+    {
+     "titulo": "Parceiro",
+     "pergunta": "Parceiro com teste rápido não reagente:",
+     "opcoes": [
+      "Tratamento presuntivo com benzatina 2,4 mi dose única e testar",
+      "Nada",
+      "Só preservativo",
+      "Esperar 90 dias"
+     ],
+     "certa": 0,
+     "explica": "Expostos nos últimos 90 dias. Parceiro não tratado = reinfecção."
+    },
+    {
+     "titulo": "Seguimento",
+     "pergunta": "Como acompanhar?",
+     "opcoes": [
+      "Nada",
+      "Treponêmico mensal",
+      "VDRL mensal até o parto; queda de 2 diluições indica resposta",
+      "VDRL só no parto"
+     ],
+     "certa": 2,
+     "explica": "Subida de 2 diluições = reinfecção/falha."
+    },
+    {
+     "titulo": "Notificação",
+     "pergunta": "É de notificação compulsória?",
+     "opcoes": [
+      "Só se for HIV+",
+      "Sim: sífilis em gestante",
+      "Não",
+      "Só se o bebê nascer com sífilis"
+     ],
+     "certa": 1,
+     "explica": "Adquirida, em gestante e congênita."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Gestante: tratar no TR reagente.</li><li>Ignorada = 3 doses.</li><li>Só penicilina; terminar ≥ 30 dias antes do parto.</li><li>Parceiro sempre.</li></ul>"
+  },
+  {
+   "id": "m8",
+   "nivel": "Moderado",
+   "titulo": "Dona Rosa e o resultado do preventivo",
+   "resumo": "Fluxo do DNA-HPV e situações especiais de rastreio.",
+   "tags": [
+    "Colo uterino",
+    "DNA-HPV"
+   ],
+   "secoes": [
+    "g5",
+    "r5"
+   ],
+   "abertura": "<p><strong>Rosa, 38 anos</strong>, fez o rastreio na UBS com <strong>DNA-HPV</strong>. Resultado: <strong>HPV oncogênico detectado, não 16/18</strong>. Ela está muito assustada e acha que tem câncer.</p>",
+   "etapas": [
+    {
+     "titulo": "Explicar",
+     "pergunta": "O que dizer primeiro?",
+     "opcoes": [
+      "Que ela tem câncer",
+      "HPV positivo não é câncer; a maioria das infecções regride; vamos ver a citologia",
+      "Que precisa de histerectomia",
+      "Que foi traição do parceiro"
+     ],
+     "certa": 1,
+     "explica": "Comunicar sem estigma."
+    },
+    {
+     "titulo": "Próximo passo",
+     "pergunta": "Conduta:",
+     "opcoes": [
+      "Citologia reflexa na mesma amostra",
+      "Conização",
+      "Colposcopia direta",
+      "Repetir em 5 anos"
+     ],
+     "certa": 0,
+     "explica": "Só 16/18 vai direto à colposcopia."
+    },
+    {
+     "titulo": "Citologia normal",
+     "pergunta": "Citologia reflexa normal.",
+     "opcoes": [
+      "Colposcopia imediata",
+      "Repetir DNA-HPV em 12 meses",
+      "Repetir citologia em 3 anos",
+      "Alta por 5 anos"
+     ],
+     "certa": 1,
+     "explica": "Persistindo por 24 meses: colposcopia."
+    },
+    {
+     "titulo": "Se alterada",
+     "pergunta": "Se a citologia viesse HSIL:",
+     "opcoes": [
+      "Repetir DNA-HPV",
+      "Repetir em 6 meses",
+      "Só vacinar",
+      "Colposcopia prioritária"
+     ],
+     "certa": 3,
+     "explica": "ASC-H, HSIL e AGC: colposcopia prioritária."
+    },
+    {
+     "titulo": "Biópsia",
+     "pergunta": "Colposcopia com biópsia: NIC 3.",
+     "opcoes": [
+      "Excisão da zona de transformação (CAF/EZT) e DNA-HPV em 12 meses",
+      "Seguimento",
+      "Histerectomia radical",
+      "Radioterapia"
+     ],
+     "certa": 0,
+     "explica": "Teste de cura em 12 meses."
+    },
+    {
+     "titulo": "Filha",
+     "pergunta": "A filha dela, 20 anos, quer fazer o exame também.",
+     "opcoes": [
+      "Coletar DNA-HPV",
+      "Não rastrear antes dos 25; vacinar se ainda tiver direito",
+      "Colposcopia",
+      "Citologia anual"
+     ],
+     "certa": 1,
+     "explica": "< 25 anos não rastreia."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>DNA-HPV 25–64, a cada 5 anos.</li><li>16/18 → colposcopia; outros → citologia reflexa.</li><li>NIC 2/3 → EZT.</li></ul>"
+  }
+ ]
+}

@@ -1339,9 +1339,9 @@ document.querySelector(".marca").style.cursor = "default";
 /* =========================================================
    início do app
    ========================================================= */
-const CONTEUDOS = ["mfc", "imagem", "antibioticos", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
+const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
 async function carregaFabrica() {
-  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=31`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
+  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=32`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
   FABRICA = r.filter(Boolean);
 }
 async function conectaNuvem() {
