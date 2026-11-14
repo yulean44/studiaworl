@@ -45,8 +45,9 @@ O Claude Code carrega sozinho; outros agentes leiam o `SKILL.md` correspondente.
 - **Comece pelo mapa:** `graphify-out/GRAPH_REPORT.md` mostra as funções centrais e os grupos do código. Depois de mexer no código, rode `graphify update .` (o `.graphifyignore` já deixa de fora modelos, figuras e conteúdo).
 - **Escolher a etapa:** `using-agent-skills` indica qual das skills do Agent Skills usar (planejar, implementar, testar, revisar, publicar).
 - **Mudança enxuta:** `ponytail` (menor mudança que resolve; reaproveitar o que já existe).
+- **Visual:** `frontend-design` para direção estética (sem trocar a identidade abaixo) e `web-design-guidelines` para conferir antes de publicar.
 - **Antes de publicar:** `ponytail-review` ou `code-review-and-quality`, rodando todos os testes de `tests/`.
-- Fontes: addyosmani/agent-skills (MIT), DietrichGebert/ponytail (MIT), Graphify-Labs/graphify (Apache 2.0/MIT); licenças dentro de cada pasta.
+- Fontes: addyosmani/agent-skills (MIT), DietrichGebert/ponytail (MIT), Graphify-Labs/graphify (Apache 2.0/MIT), anthropics/skills (Apache 2.0), vercel-labs/agent-skills e web-interface-guidelines (MIT); licenças dentro de cada pasta.
 
 ## Estilo (o dono é exigente com isso)
 

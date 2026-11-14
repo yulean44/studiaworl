@@ -4,7 +4,10 @@ import { FIG } from "./figuras.js?v=46";
 import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=46";
 import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=46";
 import { semanaDeEstudos } from "./relatorio.js?v=46";
+<<<<<<< Updated upstream
 import { carregaMaterias } from "./conteudo.js?v=46";
+=======
+>>>>>>> Stashed changes
 
 /* =========================================================
    utilidades
@@ -1867,6 +1870,7 @@ document.querySelector(".marca").style.cursor = "default";
    início do app
    ========================================================= */
 const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
+<<<<<<< Updated upstream
 async function carregaFabrica(ids = CONTEUDOS) {
   const r = await carregaMaterias(ids);
   FABRICA = CONTEUDOS.map(id => r.materias.find(m => m.id === id) || FABRICA.find(m => m.id === id)).filter(Boolean);
@@ -1883,6 +1887,11 @@ function avisaConteudo() {
     try { await carregaFabrica([...conteudosFalhos]); }
     finally { recarregandoConteudo = false; render(); }
   });
+=======
+async function carregaFabrica() {
+  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=46`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
+  FABRICA = r.filter(Boolean);
+>>>>>>> Stashed changes
 }
 async function conectaNuvem() {
   if (!window.claude || typeof window.claude.use !== "function") return;

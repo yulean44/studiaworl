@@ -6,7 +6,8 @@ O ChatGPT (Codex ou o chat com o conector do GitHub) não carrega `.claude/skill
 
 1. `AGENTS.md` (regras do site, estilo, testes, cache `?v=N`).
 2. O `SKILL.md` da etapa, em `.claude/skills/<nome>/SKILL.md`:
-   - mudança no visual: `frontend-ui-engineering`
+   - mudança no visual: `frontend-design` (direção estética) e `frontend-ui-engineering` (implementação)
+   - conferir o visual antes de publicar: `web-design-guidelines` (regras em `regras.md` da mesma pasta)
    - mudança pequena em código: `ponytail`
    - antes de publicar: `ponytail-review` e `code-review-and-quality`
    - matéria nova ou Kahoot: seção "Conteúdo novo de matéria" do `AGENTS.md`
@@ -31,3 +32,18 @@ Regras que não podem falhar:
 ## Atualizar o Kahoot de uma matéria
 
 Editar só o campo `kahoot` de `content/<materia>.json` (não misturar com `cards` nem `questoes`), conferir com `node --test tests/kahoot.mjs`, aumentar o `?v=N` e publicar.
+
+## Kit "web designer" (reel de 5 skills)
+
+| Item | Aqui no site |
+|---|---|
+| frontend-design (Anthropic) | instalada em `.claude/skills/frontend-design` |
+| Web Interface Guidelines (Vercel) | instalada em `.claude/skills/web-design-guidelines`, com cópia local das regras |
+| Chrome DevTools MCP | não fica no repositório; cada um liga no próprio app (abaixo). A skill `browser-testing-with-devtools` usa ele |
+| shadcn MCP e Magic MCP (21st.dev) | não usar: geram componentes React/Tailwind e o site é HTML + JS puro, sem build |
+
+Ligar o Chrome DevTools MCP no seu computador:
+- Claude Code: `claude mcp add chrome-devtools -- npx -y chrome-devtools-mcp@latest`
+- Codex: em `~/.codex/config.toml`, adicionar `[mcp_servers.chrome-devtools]` com `command = "npx"` e `args = ["-y", "chrome-devtools-mcp@latest"]`
+
+Ao usar `frontend-design` aqui: a identidade do site manda. Jost, tema claro, verdes suaves, rótulos em maiúsculas espaçadas e ícones finos ficam como estão, mesmo onde a skill sugere outra coisa.
