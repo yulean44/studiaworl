@@ -70,6 +70,10 @@ h1{font-weight:200;letter-spacing:.2em;text-transform:uppercase;font-size:clamp(
 .feedback .t{font-weight:500}
 .feedback .t.ok{color:var(--ok)}.feedback .t.no{color:var(--bad)}
 .feedback p{margin:2px 0 0;color:var(--muted);font-weight:300}
+@media (max-width:600px){
+  .kahoot-revisado .feedback{flex-direction:column;align-items:stretch}
+  .kahoot-revisado .feedback #btProx{align-self:flex-end;min-height:44px}
+}
 /* fim */
 .fim{padding:34px;text-align:center}
 .placar{display:flex;justify-content:center;gap:36px;margin:18px 0 8px;flex-wrap:wrap}
@@ -216,12 +220,13 @@ const perguntas = () => DADOS.kahoot.filter(x => x.tipo !== "slide" && (!SECS.le
 
 async function carrega() {
   const mat = new URLSearchParams(location.search).get("mat") || "imagem";
-  try { const r = await fetch(`content/${mat}.json?v=38`); if (!r.ok) throw 0; DADOS = await r.json(); }
+  try { const r = await fetch(`content/${mat}.json?v=39`); if (!r.ok) throw 0; DADOS = await r.json(); }
   catch { DADOS = EMBUTIDO; }
   if (!DADOS || !DADOS.kahoot) { $("#capaSub").textContent = "Não encontrei perguntas para esta matéria."; $("#btJogar").disabled = true; return; }
+  document.body.classList.toggle("kahoot-revisado", DADOS.id !== "imagem" && !!DADOS.kahootInfo?.contextualizado);
   $("#capaSigla").textContent = (DADOS.kahootInfo && DADOS.kahootInfo.titulo) || DADOS.nome;
   $("#chipMat").innerHTML = `Kahoot · <b>${esc(DADOS.sigla || DADOS.nome)}</b>`;
-  try { FIGS = (await import("./figuras.js?v=38")).FIG; } catch {}
+  try { FIGS = (await import("./figuras.js?v=39")).FIG; } catch {}
   $("#planetaCapa").innerHTML = planetaFig(1);
   if (FIGS && FIGS.trofeu) { $("#capaIco").src = FIGS.trofeu; $("#capaIco").classList.remove("oculto"); }
   const n = perguntas().length, sl = DADOS.kahoot.length - n;
@@ -272,6 +277,7 @@ function mostra() {
   $("#ops").innerHTML = q.opcoes.map((o, k) => `<button class="op" data-i="${k}"><svg viewBox="0 0 26 26">${FORMAS[k]}</svg><span>${esc(o)}</span><span class="num">${k + 1}</span></button>`).join("");
   $$(".op").forEach(b => b.addEventListener("click", () => responde(+b.dataset.i)));
   const dur = (q.tempo || 20) * 1000; t0 = performance.now();
+  if (DADOS.id !== "imagem" && DADOS.kahootInfo?.contextualizado) $("#tempo").textContent = q.tempo || 20;
   timer = setInterval(() => {
     const resto = Math.max(0, dur - (performance.now() - t0));
     $("#tempo").textContent = Math.ceil(resto / 1000);

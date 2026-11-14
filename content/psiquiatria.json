@@ -573,433 +573,483 @@
   {
    "tipo": "q",
    "n": 1,
-   "pergunta": "Mulher, 34 anos, há 8 meses preocupada com trabalho, filhos e dinheiro, não consegue parar de pensar nisso, com tensão muscular, insônia e irritabilidade. Diagnóstico?",
+   "pergunta": "Mulher relata oito meses de preocupação difícil de controlar com trabalho, saúde e família, acompanhada de tensão, irritabilidade e insônia, com prejuízo funcional. Qual hipótese é mais compatível?",
    "opcoes": [
-    "Fobia social",
-    "Transtorno de pânico",
-    "TAG",
-    "Transtorno de adaptação"
+    "Reação breve sem repercussão clínica",
+    "Fobia específica limitada a um estímulo",
+    "Transtorno de pânico definido por crises isoladas",
+    "Transtorno de ansiedade generalizada"
    ],
-   "certa": 2,
-   "explica": "Preocupação excessiva e difusa ≥ 6 meses com ≥ 3 sintomas = TAG.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "O conjunto reúne preocupação difusa e persistente, dificuldade de controle e sintomas associados ao longo de meses. No pânico, o elemento central são ataques abruptos e suas consequências; na fobia específica, a ansiedade se vincula a um estímulo delimitado. Avaliar causas clínicas e substâncias continua necessário.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 2,
-   "pergunta": "O ataque de pânico atinge o pico de intensidade em até:",
+   "pergunta": "Após um ataque de pânico, qual informação é decisiva para considerar transtorno de pânico, em vez de apenas registrar um episódio?",
    "opcoes": [
-    "1 minuto",
-    "10 minutos",
-    "1 hora",
-    "24 horas"
+    "Ataques inesperados recorrentes e preocupação ou mudança comportamental persistente",
+    "Um pico de ansiedade isolado, qualquer que seja o contexto",
+    "Medo restrito a uma situação social específica",
+    "Presença obrigatória de desmaio em toda crise"
    ],
-   "certa": 1,
-   "explica": "Início súbito, pico em até 10 min, duração de 15–30 min.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Ataque de pânico pode ocorrer em vários transtornos e em contextos clínicos ou relacionados a substâncias. O transtorno de pânico envolve ataques inesperados recorrentes e pelo menos um mês de preocupação ou mudança desadaptativa, depois de avaliar explicações alternativas.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 3,
-   "pergunta": "Qual fobia específica cursa com resposta vasovagal e desmaio?",
+   "pergunta": "Idoso usa benzodiazepínico diariamente há meses e apresenta quedas. A equipe decide rever o tratamento. Qual é a conduta mais apropriada?",
    "opcoes": [
-    "Elevador",
-    "Altura",
-    "Animais",
-    "Sangue-injeção-ferimento"
+    "Interromper abruptamente o benzodiazepínico na consulta",
+    "Trocar por outro benzodiazepínico sem rever a indicação",
+    "Aumentar a dose para reduzir a ansiedade sobre as quedas",
+    "Planejar redução gradual e tratar o problema que motivou o uso"
    ],
    "certa": 3,
-   "explica": "É a única com bradicardia/hipotensão vasovagal.",
-   "tempo": 20,
+   "explica": "Benzodiazepínicos podem contribuir para quedas, sedação e dependência. Retirada abrupta após uso continuado pode provocar abstinência, inclusive grave; o plano precisa ser gradual, individualizado e acompanhado de tratamento da ansiedade ou insônia de base.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r5",
+    "g5"
    ]
   },
   {
    "tipo": "q",
    "n": 4,
-   "pergunta": "Bombeiro, há 3 meses de um incêndio com vítimas: pesadelos, flashbacks, evita o quartel e se assusta com qualquer barulho. Diagnóstico e 1ª linha?",
+   "pergunta": "Três meses após um incêndio com vítimas, bombeiro tem revivescências, esquiva, hipervigilância e prejuízo no trabalho. Qual estratégia tem melhor fundamento?",
    "opcoes": [
-    "Pânico; BZD contínuo",
-    "Estresse agudo; BZD",
-    "Adaptação; observação",
-    "TEPT; psicoterapia focada no trauma ± ISRS"
+    "Avaliar TEPT e oferecer tratamento focado no trauma",
+    "Orientar a evitar qualquer abordagem do evento para sempre",
+    "Classificar automaticamente como transtorno de adaptação sem avaliar o trauma",
+    "Prescrever benzodiazepínico como tratamento central prolongado"
    ],
-   "certa": 3,
-   "explica": "Mais de 1 mês com revivescência, esquiva e hipervigilância = TEPT. BZD não é recomendado.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "A exposição traumática e os grupos de sintomas persistentes sustentam a avaliação de TEPT. Psicoterapia focada no trauma é uma abordagem central, e farmacoterapia pode ser indicada conforme o caso; benzodiazepínico crônico não substitui esse tratamento.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 5,
-   "pergunta": "Homem, após divórcio há 6 semanas, tristeza e irritação que prejudicam o trabalho, sem critérios para depressão. Diagnóstico?",
+   "pergunta": "Pessoa com depressão grave, recusa alimentar e deterioração importante precisa de resposta rápida, além de proteção e suporte. Qual opção deve ser avaliada em serviço especializado?",
    "opcoes": [
-    "Transtorno de adaptação",
-    "Distimia",
-    "TEPT",
-    "Estresse agudo"
+    "Eletroconvulsoterapia, conforme avaliação e consentimento aplicáveis",
+    "Esperar indefinidamente a resposta de um antidepressivo",
+    "Suspender toda intervenção até a alimentação voltar sozinha",
+    "Apenas benzodiazepínico como tratamento definitivo"
    ],
    "certa": 0,
-   "explica": "Estressor comum (não traumático), início em até 3 meses.",
-   "tempo": 20,
+   "explica": "ECT pode ser indicada quando a depressão é grave e há necessidade de resposta rápida, como em deterioração física importante. A decisão exige avaliação especializada e planejamento do tratamento; não substitui proteção, suporte clínico e cuidado continuado, nem depende apenas de esperar vários antidepressivos falharem.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r5",
+    "g5"
+   ],
+   "fontes": [
+    "https://www.nice.org.uk/guidance/ng222/resources/depression-in-adults-treatment-and-management-pdf-66143832307909"
    ]
   },
   {
    "tipo": "q",
    "n": 6,
-   "pergunta": "Paciente provoca feridas em si mesma às escondidas para ser internada e cuidada, sem benefício financeiro. Diagnóstico?",
+   "pergunta": "Há evidência de que uma pessoa produz deliberadamente sinais de doença para assumir o papel de paciente, sem recompensa externa evidente. Qual distinção é mais adequada?",
    "opcoes": [
-    "Hipocondria",
-    "Transtorno conversivo",
-    "Simulação",
-    "Transtorno factício"
+    "Transtorno factício, após avaliação cuidadosa da situação",
+    "Diagnóstico confirmado apenas por exames normais",
+    "Transtorno somático porque toda produção de sintomas é involuntária",
+    "Simulação necessariamente motivada por ganho financeiro"
    ],
-   "certa": 3,
-   "explica": "Produção consciente, motivação inconsciente, ganho primário.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "No transtorno factício existe falsificação ou indução intencional de sinais, sem o ganho externo evidente que caracteriza a simulação. A conclusão exige evidências e avaliação clínica; exames normais, dificuldade de explicar sintomas ou comportamento incômodo não demonstram falsificação.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 7,
-   "pergunta": "Réu apresenta \"cegueira\" que surge só antes das audiências e some depois. O ganho é:",
+   "pergunta": "Pessoa com doença clínica estável mantém preocupação desproporcional, busca repetida de exames e grande prejuízo pela atenção aos sintomas. Qual abordagem é mais adequada?",
    "opcoes": [
-    "Secundário, consciente (simulação)",
-    "Primário, consciente",
-    "Não há ganho",
-    "Primário, inconsciente"
+    "Repetir exames sem indicação a cada retorno",
+    "Dizer que os sintomas são inventados por haver ansiedade",
+    "Excluir sofrimento somático porque há doença orgânica",
+    "Validar o sofrimento e organizar seguimento clínico consistente"
    ],
-   "certa": 0,
-   "explica": "Simulação: produção e motivação conscientes, ganho secundário.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Sintomas somáticos e sofrimento desproporcional podem coexistir com doença orgânica. O cuidado combina avaliação de sinais de alerta, vínculo, consultas programadas e intervenção sobre pensamentos e comportamentos; invalidar a pessoa ou criar uma cascata de testes tende a piorar o problema.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 8,
-   "pergunta": "Após briga grave com o marido, mulher acorda sem conseguir mover o braço direito; exame neurológico incongruente e TC normal. Hipótese?",
+   "pergunta": "Paciente com fraqueza apresenta sinais positivos de inconsistência no exame motor, compatíveis com transtorno neurológico funcional. Qual afirmação é correta?",
    "opcoes": [
-    "Simulação",
-    "AVC isquêmico",
-    "Transtorno conversivo (sintoma neurológico funcional)",
-    "Hipocondria"
+    "É necessário demonstrar mentira para fazer o diagnóstico",
+    "Uma tomografia normal, isoladamente, confirma o transtorno",
+    "O diagnóstico se apoia em sinais clínicos positivos e avaliação apropriada",
+    "Todo caso exige um conflito emocional claramente identificado"
    ],
    "certa": 2,
-   "explica": "Déficit neurológico precedido de conflito, não explicado por doença.",
-   "tempo": 20,
+   "explica": "O diagnóstico funcional não deve ser apenas um rótulo após exames normais: sinais positivos de incompatibilidade com padrões neurológicos reconhecidos ajudam a sustentá-lo. Os sintomas não são presumidos como intencionais, e a ausência de estressor identificado não exclui o quadro.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 9,
-   "pergunta": "Etilista internado há 3 dias, confuso, com alucinações visuais, febre e taquicardia. Diagnóstico e tratamento?",
+   "pergunta": "Pessoa com uso intenso de álcool interrompe o consumo durante internação e, três dias depois, fica desorientada, muito agitada, febril e taquicárdica. Qual é a prioridade?",
    "opcoes": [
-    "Intoxicação; flumazenil",
-    "Delirium tremens; BZD + tiamina",
-    "Alucinose; haloperidol isolado",
-    "Wernicke; glicose"
+    "Tratar provável delirium por abstinência em ambiente monitorado",
+    "Aguardar resolução espontânea sem monitorização",
+    "Considerar abstinência de álcool sempre benigna",
+    "Tratar apenas alucinações com antipsicótico isolado"
    ],
-   "certa": 1,
-   "explica": "DT aparece 48–96 h após a última dose; BZD é a base, com tiamina.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Delirium tremens combina alteração de atenção e consciência com hiperatividade autonômica no contexto de abstinência. É potencialmente fatal e requer tratamento, geralmente com benzodiazepínicos e suporte monitorado, além de investigar outros precipitantes e corrigir deficiências.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
+   ],
+   "fontes": [
+    "https://downloads.asam.org/sitefinity-production-blobs/docs/default-source/guidelines/awg-3-20-20.pdf"
    ]
   },
   {
    "tipo": "q",
    "n": 10,
-   "pergunta": "No alcoolista hipoglicêmico e confuso, a ordem correta é:",
+   "pergunta": "Pessoa com uso crônico de álcool chega confusa com hipoglicemia importante. A tiamina ainda está sendo preparada. Qual é a prioridade?",
    "opcoes": [
-    "Tiamina antes da glicose",
-    "Só glicose",
-    "Glicose e depois tiamina",
-    "Só tiamina"
+    "Corrigir a hipoglicemia imediatamente e administrar tiamina prontamente",
+    "Usar tiamina como substituto da correção da glicose",
+    "Evitar glicose em qualquer pessoa que consome álcool",
+    "Adiar a glicose até a tiamina estar disponível"
    ],
    "certa": 0,
-   "explica": "Glicose sem tiamina pode precipitar Wernicke.",
-   "tempo": 20,
+   "explica": "Hipoglicemia é uma emergência e sua correção não deve ser atrasada. A tiamina também é necessária quando há risco de deficiência, mas pode ser administrada antes, junto ou logo após a glicose; transformar a sequência em uma barreira ao tratamento imediato é um erro.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
+   ],
+   "fontes": [
+    "https://downloads.asam.org/sitefinity-production-blobs/docs/default-source/guidelines/awg-3-20-20.pdf"
    ]
   },
   {
    "tipo": "q",
    "n": 11,
-   "pergunta": "Jovem agitado, PA 190/110, FC 140, midríase, hipertermia e dor torácica após uso de cocaína. Primeira droga?",
+   "pergunta": "Após uso de cocaína, paciente apresenta agitação, hipertermia, taquicardia e dor torácica. Qual abordagem inicial é mais adequada?",
    "opcoes": [
-    "Benzodiazepínico",
-    "Haloperidol",
-    "Naloxona",
-    "Propranolol"
+    "Tratar como ansiedade simples e liberar sem avaliação",
+    "Monitorizar, controlar agitação e investigar complicações cardiovasculares",
+    "Usar apenas contenção física prolongada sem suporte clínico",
+    "Aguardar o efeito passar antes de medir a temperatura"
    ],
-   "certa": 0,
-   "explica": "BZD controla agitação e efeitos simpáticos. Betabloqueador isolado deixa a ação alfa sem oposição.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "O quadro sugere toxicidade simpaticomimética, e a dor torácica exige investigação de isquemia e outras complicações. Benzodiazepínicos podem ajudar no controle da agitação e da descarga adrenérgica; resfriamento e suporte são definidos pelos achados, não por um diagnóstico presumido de pânico.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
    ]
   },
   {
    "tipo": "q",
    "n": 12,
-   "pergunta": "Rebaixado, FR 6 irpm e pupilas puntiformes. Conduta?",
+   "pergunta": "Paciente é encontrado com rebaixamento de consciência, pupilas puntiformes e frequência respiratória de seis por minuto. Qual é a prioridade?",
    "opcoes": [
-    "Tiamina",
-    "Bicarbonato",
-    "Flumazenil",
-    "Naloxona"
+    "Observar até a substância ser eliminada espontaneamente",
+    "Suportar ventilação e administrar naloxona se houver suspeita de opioide",
+    "Tratar a miose sem abordar a respiração",
+    "Esperar um exame toxicológico antes de ventilar"
    ],
-   "certa": 3,
-   "explica": "Tríade da intoxicação por opioide.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Depressão respiratória é o risco imediato da intoxicação por opioides. A naloxona reverte seus efeitos, mas não substitui suporte de via aérea e ventilação; a pessoa precisa ser monitorizada porque a depressão pode reaparecer após o efeito do antagonista.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
    ]
   },
   {
    "tipo": "q",
    "n": 13,
-   "pergunta": "Transtorno por uso de substância com 5 critérios do DSM-5-TR é classificado como:",
+   "pergunta": "Paciente começou um ISRS há cinco dias e não percebeu melhora, sem efeito adverso grave. Qual orientação é mais adequada?",
    "opcoes": [
-    "Leve",
-    "Moderado",
-    "Grave",
-    "Uso nocivo"
+    "Suspender sem combinar outro acompanhamento",
+    "Dobrar a dose diariamente até desaparecer a ansiedade",
+    "Explicar a latência, acompanhar adesão e programar reavaliação",
+    "Concluir falha terapêutica definitiva em cinco dias"
    ],
-   "certa": 1,
-   "explica": "2–3 leve, 4–5 moderado, ≥ 6 grave.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "A resposta aos antidepressivos costuma se desenvolver ao longo de semanas, e a ausência de melhora nos primeiros dias não define resistência. Acompanhamento deve avaliar tolerabilidade, adesão, evolução e risco de suicídio; piora importante exige reavaliação, não espera passiva.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r5",
+    "g5"
    ]
   },
   {
    "tipo": "q",
    "n": 14,
-   "pergunta": "Criança de 8 anos com desatenção e agitação só em casa; na escola vai bem. Pode ser TDAH?",
+   "pergunta": "Criança é descrita como desatenta somente em casa, mas funciona bem na escola e em outras atividades. Qual é o melhor próximo passo antes de diagnosticar TDAH?",
    "opcoes": [
-    "Sim, se for menino",
-    "Sim, basta um ambiente",
-    "Só se houver baixo QI",
-    "Não fecha critério: exige ≥ 2 ambientes"
+    "Investigar sintomas, prejuízo e contexto em mais de um ambiente",
+    "Iniciar estimulante para usar a resposta como teste diagnóstico",
+    "Excluir qualquer dificuldade porque as notas são boas",
+    "Confirmar TDAH apenas pelo relato de agitação em casa"
    ],
-   "certa": 3,
-   "explica": "TDAH exige sintomas em pelo menos dois ambientes.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "TDAH exige padrão persistente com sintomas em mais de um ambiente e prejuízo relevante, além de avaliar explicações alternativas. Informações da escola e da família ajudam a distinguir o transtorno de problemas de sono, aprendizagem, sofrimento emocional ou condições do contexto.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
    ]
   },
   {
    "tipo": "q",
    "n": 15,
-   "pergunta": "Rastreio de TEA recomendado na puericultura:",
+   "pergunta": "Na puericultura, uma criança apresenta rastreamento positivo para TEA. Qual é a interpretação mais adequada?",
    "opcoes": [
-    "CAGE",
-    "Denver aos 5 anos",
-    "M-CHAT entre 16 e 30 meses",
-    "AUDIT aos 12 anos"
+    "Considerar o instrumento suficiente para diagnóstico definitivo",
+    "Investigar o desenvolvimento e encaminhar para avaliação e intervenção oportunas",
+    "Esperar vários anos para confirmar se a criança melhora sozinha",
+    "Desconsiderar as preocupações da família se houver contato visual"
    ],
-   "certa": 2,
-   "explica": "M-CHAT é aplicado de 16 a 30 meses.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Instrumentos de rastreamento identificam risco, não substituem avaliação diagnóstica. A suspeita deve levar a investigação e apoio precoces, considerando comunicação social, comportamentos, audição e desenvolvimento; uma habilidade preservada isolada não exclui TEA.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
    ]
   },
   {
    "tipo": "q",
    "n": 16,
-   "pergunta": "Idoso em uso de sertralina chega confuso com sódio de 122. Causa provável?",
+   "pergunta": "Idosa que iniciou sertralina recentemente chega confusa, com sódio de 122 mEq/L. Qual hipótese precisa ser considerada na revisão?",
    "opcoes": [
-    "SIADH pelo ISRS",
-    "Síndrome serotoninérgica",
-    "Intoxicação por lítio",
-    "Hipotireoidismo pelo ISRS"
+    "Resposta terapêutica esperada que dispensa investigação",
+    "Hiponatremia associada ao ISRS, entre outras causas a investigar",
+    "Necessidade de aumentar o ISRS para tratar a confusão",
+    "Demência definida por um episódio agudo de confusão"
    ],
-   "certa": 0,
-   "explica": "ISRS causa SIADH e hiponatremia, sobretudo em idosos.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "ISRS podem contribuir para hiponatremia, particularmente em pessoas vulneráveis, e o início temporal ajuda a levantar a hipótese. Confusão com sódio baixo requer avaliação e manejo clínico; não se deve atribuir automaticamente o quadro a uma doença psiquiátrica ou à idade.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
    ]
   },
   {
    "tipo": "q",
    "n": 17,
-   "pergunta": "Paciente com sertralina recebe tramadol e, em horas, tem agitação, diarreia, clônus e hiper-reflexia. Diagnóstico?",
+   "pergunta": "Paciente em uso de sertralina recebe tramadol e, em poucas horas, apresenta agitação, diarreia, clônus e hiper-reflexia. Qual síndrome é mais compatível?",
    "opcoes": [
-    "Hipertermia maligna",
+    "Abstinência de opioide sem exposição prévia",
+    "Distonia aguda isolada",
     "Síndrome serotoninérgica",
-    "Síndrome neuroléptica maligna",
-    "Abstinência de BZD"
+    "Síndrome neuroléptica maligna típica"
    ],
-   "certa": 1,
-   "explica": "Horas + clônus = serotoninérgica. Tratar com suspensão, BZD e ciproeptadina.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "A combinação de exposição serotoninérgica, início rápido, alterações autonômicas e clônus favorece síndrome serotoninérgica. A síndrome neuroléptica maligna costuma se associar a bloqueio dopaminérgico e rigidez; reconhecer a interação leva à retirada dos agentes e ao suporte urgente.",
+   "tempo": 30,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
    ]
   },
   {
    "tipo": "q",
    "n": 18,
-   "pergunta": "Dias após iniciar haloperidol: febre de 40 °C, rigidez intensa, rebaixamento e CPK de 15.000. Conduta?",
+   "pergunta": "Dias após iniciar haloperidol, paciente apresenta febre alta, rigidez intensa, alteração de consciência e CPK muito elevada. Qual é a primeira prioridade?",
    "opcoes": [
-    "Suspender + suporte + dantrolene/bromocriptina",
-    "Ciproeptadina",
-    "Aumentar a dose",
-    "Biperideno e alta"
+    "Tratar como efeito extrapiramidal leve em casa",
+    "Aumentar o haloperidol para controlar a rigidez",
+    "Suspender o agente suspeito e iniciar avaliação e suporte urgentes",
+    "Aguardar CPK normalizar antes de intervir"
    ],
-   "certa": 0,
-   "explica": "Síndrome neuroléptica maligna.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "O quadro é compatível com síndrome neuroléptica maligna, uma emergência. A retirada do agente e o suporte clínico são centrais; tratamentos específicos podem ser considerados conforme gravidade e avaliação especializada, mas não substituem estabilização e monitorização.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
    ]
   },
   {
    "tipo": "q",
    "n": 19,
-   "pergunta": "Bipolar estável com lítio começa hidroclorotiazida e passa a ter tremor grosseiro, ataxia e diarreia. Explicação?",
+   "pergunta": "Paciente estável com lítio passa a usar hidroclorotiazida e desenvolve tremor grosseiro, ataxia e sintomas gastrointestinais. Qual é a preocupação principal?",
    "opcoes": [
-    "Intoxicação por lítio (tiazídico aumenta o nível)",
-    "Síndrome serotoninérgica",
-    "Acatisia",
-    "Hipotireoidismo"
+    "Necessidade de aumentar lítio para corrigir a marcha",
+    "Intoxicação por lítio favorecida pela interação",
+    "Redução obrigatória da concentração de lítio pelo tiazídico",
+    "Efeito terapêutico esperado do diurético"
    ],
-   "certa": 0,
-   "explica": "Tiazídico, IECA e AINE elevam a litemia.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Tiazídicos podem elevar a concentração de lítio, e desidratação ou disfunção renal podem aumentar o risco. Tremor grosseiro e ataxia pedem investigação de intoxicação e revisão imediata do esquema, incluindo função renal, eletrólitos e litemia.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
    ]
   },
   {
    "tipo": "q",
    "n": 20,
-   "pergunta": "Esquizofrenia sem resposta a risperidona e olanzapina em dose e tempo adequados. Próximo passo e exame obrigatório?",
+   "pergunta": "Esquizofrenia persiste apesar de dois antipsicóticos usados em dose, duração e adesão adequadas. Qual opção deve ser avaliada com monitorização apropriada?",
    "opcoes": [
-    "Haloperidol; ECG",
-    "Clozapina; hemograma seriado",
-    "Lítio; TSH",
-    "Quetiapina; nenhum"
+    "Suspensão de todo tratamento por ausência de resposta inicial",
+    "Benzodiazepínico como tratamento único da psicose",
+    "Clozapina para possível resistência ao tratamento",
+    "Trocas diárias entre antipsicóticos sem avaliar adesão"
    ],
-   "certa": 1,
-   "explica": "Refratária = falha de 2. Clozapina exige vigilância de agranulocitose.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Antes de classificar resistência, confirmam-se diagnóstico, adesão e adequação dos ensaios anteriores. Clozapina é indicada em resistência após dois tratamentos adequados e exige vigilância de efeitos adversos, incluindo monitorização hematológica conforme o protocolo; não é apenas uma troca sem acompanhamento.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
+   ],
+   "fontes": [
+    "https://www.nice.org.uk/guidance/cg178/resources/psychosis-and-schizophrenia-inadults-prevention-and-management-35109758952133"
    ]
   },
   {
    "tipo": "q",
    "n": 21,
-   "pergunta": "Qual antidepressivo deve ser evitado em paciente com bulimia?",
+   "pergunta": "Paciente com bulimia nervosa discute escolha de antidepressivo. Qual medicamento deve ser evitado pelo risco aumentado de convulsões?",
    "opcoes": [
-    "Fluoxetina",
+    "Escitalopram",
     "Sertralina",
-    "Bupropiona",
-    "Mirtazapina"
+    "Fluoxetina",
+    "Bupropiona"
    ],
-   "certa": 2,
-   "explica": "Bupropiona baixa o limiar convulsivo; risco maior em bulimia e anorexia.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Bupropiona reduz o limiar convulsivo e é contraindicada em pessoas com diagnóstico atual ou prévio de bulimia ou anorexia nervosa. A escolha não deve se basear apenas em efeito sobre peso ou sexualidade; transtorno alimentar e alterações metabólicas mudam o perfil de segurança.",
+   "tempo": 30,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
    ]
   },
   {
    "tipo": "q",
    "n": 22,
-   "pergunta": "Qual é o maior preditor isolado de suicídio?",
+   "pergunta": "Pessoa com depressão nega plano atual, mas tem tentativa de suicídio prévia. Qual é a melhor interpretação do risco?",
    "opcoes": [
-    "Religiosidade",
-    "Tentativa prévia",
-    "Ser jovem",
-    "Sexo feminino"
+    "Negar plano atual exclui qualquer risco",
+    "Tentativa prévia determina sozinha a internação de toda pessoa",
+    "Um escore isolado substitui entrevista e avaliação do contexto",
+    "A tentativa anterior exige avaliação integrada, não uma classificação automática"
    ],
-   "certa": 1,
-   "explica": "Tentativa prévia é o principal fator de risco.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Tentativa prévia é um fator importante, mas a decisão também considera intenção atual, acesso a meios, preparativos, intoxicação, suporte e capacidade de manter segurança. Nem um fator isolado nem a negação de plano substituem uma avaliação clínica completa.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
+   ],
+   "fontes": [
+    "https://www.who.int/teams/mental-health-and-substance-use/treatment-care/mental-health-gap-action-programme/evidence-centre/self-harm-and-suicide"
    ]
   },
   {
    "tipo": "q",
    "n": 23,
-   "pergunta": "Perguntar diretamente ao paciente se ele pensa em se matar:",
+   "pergunta": "Durante atendimento de pessoa em sofrimento, qual é a forma mais adequada de abordar suspeita de risco de suicídio?",
    "opcoes": [
-    "Não induz e ajuda a avaliar",
-    "Deve ser evitado na APS",
-    "Aumenta o risco",
-    "Só deve ser feito pelo psiquiatra"
+    "Evitar o tema para não colocar a ideia na cabeça",
+    "Aceitar uma resposta vaga e encerrar a avaliação",
+    "Perguntar diretamente sobre ideação, intenção, plano e acesso a meios",
+    "Perguntar apenas à família e nunca à pessoa"
    ],
-   "certa": 0,
-   "explica": "Mito clássico. Perguntar abre espaço para ajuda.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Perguntar de modo direto e acolhedor não induz suicídio e ajuda a reconhecer a urgência. A conversa deve explorar intenção e preparativos, sem julgamento, e orientar um plano proporcional ao risco, com participação da rede de apoio quando apropriado.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
+   ],
+   "fontes": [
+    "https://www.who.int/teams/mental-health-and-substance-use/treatment-care/mental-health-gap-action-programme/evidence-centre/self-harm-and-suicide"
    ]
   },
   {
    "tipo": "q",
    "n": 24,
-   "pergunta": "Homem de 55 anos, deprimido, etilista, com plano de se enforcar, corda comprada e cartas de despedida. Conduta?",
+   "pergunta": "Paciente deprimido relata intenção de morrer, plano definido e acesso imediato ao meio, com preparativos recentes. Qual é a prioridade?",
    "opcoes": [
-    "Não deixar sozinho e internar (involuntária se preciso)",
-    "Encaminhar ao CAPS por e-mail",
-    "Iniciar ISRS e alta",
-    "Plano de segurança e retorno em 30 dias"
+    "Pedir promessa de que não tentará e encerrar a consulta",
+    "Garantir companhia e proteção e organizar avaliação de urgência",
+    "Liberar sozinho com retorno mensal",
+    "Aguardar o paciente procurar ajuda novamente"
    ],
-   "certa": 0,
-   "explica": "Plano + meio + preparativos = alto risco.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Intenção, plano, acesso e preparativos indicam necessidade de proteção imediata. A pessoa não deve ficar sozinha enquanto se organiza atendimento de urgência e se restringe o acesso aos meios; a necessidade de internação é avaliada no contexto, e uma promessa não substitui cuidado.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
+   ],
+   "fontes": [
+    "https://www.who.int/teams/mental-health-and-substance-use/treatment-care/mental-health-gap-action-programme/evidence-centre/self-harm-and-suicide"
    ]
   },
   {
    "tipo": "q",
    "n": 25,
-   "pergunta": "Tentativa de suicídio atendida na UPA deve ser notificada:",
+   "pergunta": "Após estabilização e avaliação de uma crise suicida, qual componente é essencial para a continuidade do cuidado?",
    "opcoes": [
-    "De forma imediata (até 24 h)",
-    "Não é de notificação",
-    "Só se houver óbito",
-    "Semanalmente"
+    "Orientar apenas a voltar se ocorrer nova tentativa",
+    "Confiar exclusivamente em um contrato de não suicídio",
+    "Encerrar o cuidado quando a pessoa parecer mais calma",
+    "Plano de segurança, redução de acesso a meios e seguimento próximo"
    ],
-   "certa": 0,
-   "explica": "Violência autoprovocada é de notificação compulsória imediata.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "A melhora momentânea não elimina a necessidade de continuidade. Um plano de segurança identifica sinais de crise, estratégias e contatos de apoio, junto da restrição de meios e de um retorno definido; isso complementa o tratamento do transtorno de base e a articulação da rede.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
+   ],
+   "fontes": [
+    "https://www.who.int/teams/mental-health-and-substance-use/treatment-care/mental-health-gap-action-programme/evidence-centre/self-harm-and-suicide"
    ]
   }
  ],
  "kahootInfo": {
   "titulo": "Quiz de revisão · Psiquiatria AV2",
-  "capa": "{n} perguntas de revisão das aulas 7 a 12 (ansiedade, somáticos, substâncias, infância, psicofármacos e suicídio). Não é um Kahoot de professor. Quanto mais cedo acertar, mais pontos.",
-  "botao": "Começar o quiz"
+  "capa": "{n} questões focadas nas partes prioritárias, com casos clínicos e gabarito contextualizado.",
+  "botao": "Começar revisão",
+  "contextualizado": true
  },
  "casos": [
   {

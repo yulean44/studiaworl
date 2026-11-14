@@ -566,416 +566,465 @@
   {
    "tipo": "q",
    "n": 1,
-   "pergunta": "Qual o mecanismo de ação dos betalactâmicos?",
+   "pergunta": "Uma pneumonia por Mycoplasma não responde à amoxicilina. Qual característica explica a falta de ação, mesmo sem alergia ou erro de dose?",
    "opcoes": [
-    "Inibem o ribossomo 30S",
-    "Ligam-se à PBP e impedem a parede",
-    "Rompem a membrana externa",
-    "Inibem a DNA girase"
+    "O agente não apresenta a parede celular alvo dos betalactâmicos",
+    "O agente destrói qualquer antibiótico por uma mesma enzima",
+    "Amoxicilina atua apenas em vírus respiratórios",
+    "Trocar por meropeném cria um alvo celular novo"
    ],
-   "certa": 1,
-   "explica": "Travam a PBP; a parede enfraquece e a bactéria sofre lise. Ribossomo é macrolídeo/tetraciclina; membrana é polimixina; DNA girase é quinolona.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Betalactâmicos dependem da síntese de parede para exercer seu efeito. Mycoplasma não possui esse alvo; ampliar para um carbapenêmico não resolve uma ausência de mecanismo de ação. A escolha deve considerar um fármaco ativo contra o agente identificado.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 2,
-   "pergunta": "Paciente com pneumonia por <i>Mycoplasma</i>. Qual droga NÃO funciona?",
+   "pergunta": "Em paciente grave, a equipe discute otimizar a administração de um betalactâmico. Qual parâmetro farmacodinâmico orienta essa estratégia?",
    "opcoes": [
-    "Azitromicina",
-    "Doxiciclina",
-    "Levofloxacino",
-    "Meropeném"
+    "Cor da solução após a diluição",
+    "Tempo em que a concentração livre permanece acima da CIM",
+    "Altura do pico como único determinante do efeito",
+    "Acúmulo de doses sem considerar função renal"
    ],
-   "certa": 3,
-   "explica": "Nenhum betalactâmico pega atípico, nem o carbapenêmico.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Nos betalactâmicos, a exposição livre acima da concentração inibitória mínima é o índice central. Infusões prolongadas podem ajudar em situações selecionadas, mas dependem de dose, estabilidade e função renal; não existe uma duração única obrigatória para toda a classe.",
+   "tempo": 30,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 3,
-   "pergunta": "Neurossífilis: droga de escolha",
+   "pergunta": "Adolescente com antecedente de febre reumática pergunta por que recebe penicilina benzatina regularmente, mesmo sem dor de garganta. Qual é o objetivo?",
    "opcoes": [
-    "Benzatina 7.200.000 UI",
-    "Penicilina cristalina IV",
-    "Ceftriaxona",
-    "Doxiciclina"
+    "Normalizar o ASLO antes de suspender o cuidado",
+    "Prevenir novas infecções estreptocócicas e recorrências",
+    "Tratar continuamente uma endocardite bacteriana ativa",
+    "Substituir qualquer acompanhamento cardíaco"
    ],
    "certa": 1,
-   "explica": "A benzatina não atinge o SNC adequadamente. Ceftriaxona é alternativa.",
-   "tempo": 20,
+   "explica": "A profilaxia secundária busca evitar novos episódios de febre reumática e progressão do dano valvar. A duração considera cardite, lesão residual e outros fatores; não é definida apenas por sintomas de faringite ou por um valor isolado de ASLO.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
+   ],
+   "fontes": [
+    "https://www.who.int/publications/i/item/9789240100077"
    ]
   },
   {
    "tipo": "q",
    "n": 4,
-   "pergunta": "Gestante, VDRL 1:64, treponêmico +, sem lesões, sem data da infecção",
+   "pergunta": "Hemoculturas identificam Staphylococcus aureus sensível à oxacilina em paciente que recebia tratamento empírico amplo. Qual princípio orienta o ajuste?",
    "opcoes": [
-    "Benzatina 2.400.000 UI dose única",
-    "Benzatina 2.400.000 UI semanal × 3",
-    "Doxiciclina 15 dias",
-    "Cristalina IV"
+    "Usar amoxicilina simples porque toda penicilina é equivalente",
+    "Acrescentar antibióticos sem revisar o foco",
+    "Manter vancomicina obrigatoriamente por ser mais ampla",
+    "Preferir um betalactâmico antiestafilocócico adequado ao foco"
    ],
-   "certa": 1,
-   "explica": "Sem data = latente tardia: 3 doses. Doxiciclina é contraindicada na gestação.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Identificar MSSA permite direcionar o tratamento, frequentemente com oxacilina ou cefazolina conforme o contexto. Amplitude não é sinônimo de melhor eficácia; amoxicilina simples não é equivalente às opções antiestafilocócicas, e o foco ainda precisa ser investigado e controlado.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 5,
-   "pergunta": "Faringite estreptocócica em adulto não alérgico",
+   "pergunta": "Idoso com suspeita de meningite apresenta bacilos Gram-positivos no líquor. Qual lacuna do esquema com ceftriaxona precisa ser lembrada?",
    "opcoes": [
-    "Amoxicilina + clavulanato",
-    "Amoxicilina pura ou benzatina",
-    "Cefuroxima",
-    "Azitromicina"
+    "Cobertura de Listeria com ampicilina",
+    "Cobertura de atípicos apenas com azitromicina",
+    "Cobertura de Candida com nistatina oral",
+    "Cobertura de anaeróbios intestinais com metronidazol"
    ],
-   "certa": 1,
-   "explica": "<i>S. pyogenes</i> não produz betalactamase: clavulanato não acrescenta nada.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Idade e bacilos Gram-positivos no LCR levantam a hipótese de Listeria monocytogenes. Cefalosporinas não oferecem cobertura adequada para esse agente; a ampicilina integra o manejo indicado, enquanto identificação microbiológica e contexto definem o esquema completo.",
+   "tempo": 30,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 6,
-   "pergunta": "Idoso de 80 anos, febre baixa e prostração, líquor com bacilo Gram-positivo",
+   "pergunta": "Pessoa com sífilis e quadro compatível com neurossífilis precisa de tratamento. Por que penicilina benzatina intramuscular não substitui o esquema indicado para o sistema nervoso central?",
    "opcoes": [
-    "Ceftriaxona isolada",
-    "Ceftriaxona + ampicilina",
-    "Vancomicina isolada",
-    "Meropeném"
+    "Não alcança exposição adequada no líquor para esse tratamento",
+    "Tem o mesmo perfil farmacocinético da penicilina cristalina IV",
+    "É contraindicada apenas por causar reação local",
+    "É inativa contra Treponema em qualquer localização"
    ],
-   "certa": 1,
-   "explica": "Bacilo Gram+ no idoso = <i>Listeria</i>: ampicilina.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "As apresentações de penicilina não são intercambiáveis apenas por pertencerem à mesma classe. A neurossífilis exige esquema capaz de alcançar o sistema nervoso central, como penicilina cristalina intravenosa; benzatina tem outra indicação e outra distribuição farmacocinética.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 7,
-   "pergunta": "Antibiótico de profilaxia para cirurgia cardíaca",
+   "pergunta": "Uma cirurgia limpa com implante tem indicação de antibioticoprofilaxia. Por que cefazolina costuma ser uma escolha apropriada?",
    "opcoes": [
-    "Ceftriaxona",
-    "Cefazolina",
-    "Cefepima",
-    "Vancomicina"
+    "É escolhida por cobrir todos os agentes resistentes",
+    "Só precisa ser administrada quando a cirurgia terminar",
+    "Elimina a necessidade de técnica asséptica",
+    "Cobre a flora cutânea relevante com espectro dirigido"
    ],
-   "certa": 1,
-   "explica": "Flora da pele (Gram+): cefalosporina de 1ª geração venosa.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "A profilaxia é planejada para os microrganismos prováveis do procedimento e precisa atingir concentração adequada no momento da incisão. Cefazolina é útil em muitos desses cenários; escolher o antibiótico mais amplo ou aplicá-lo apenas depois não substitui esse raciocínio.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
+   ],
+   "fontes": [
+    "https://doi.org/10.1017/ice.2023.67"
    ]
   },
   {
    "tipo": "q",
    "n": 8,
-   "pergunta": "Sinusite no 3º dia de amoxi-clav sem melhora. Próximo passo (aula)",
+   "pergunta": "Pessoa em tratamento de sinusite refere pouca melhora após três dias de antibiótico. Antes de ampliar a cobertura automaticamente, qual é a melhor revisão?",
    "opcoes": [
-    "Meropeném",
-    "Cefuroxima",
-    "Ceftriaxona IM",
-    "Manter e esperar 10 dias"
+    "Trocar sempre por carbapenêmico nesse momento",
+    "Reavaliar diagnóstico, evolução, adesão e sinais de complicação",
+    "Adicionar duas cefalosporinas para ampliar o espectro",
+    "Manter qualquer esquema indefinidamente sem reavaliar"
    ],
    "certa": 1,
-   "explica": "Cefuroxima é a 2ª linha nas infecções de vias aéreas.",
-   "tempo": 20,
+   "explica": "Pouca melhora não identifica sozinha resistência nem aponta automaticamente para outra classe. É necessário rever se há infecção bacteriana, como o tratamento foi usado e se surgiram complicações; escalonar sem essa avaliação pode aumentar danos e manter um diagnóstico errado.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
    ]
   },
   {
    "tipo": "q",
    "n": 9,
-   "pergunta": "Qual cefalosporina de 3ª geração pega <i>Pseudomonas</i>?",
+   "pergunta": "Paciente precisa de cobertura contra Pseudomonas aeruginosa. Entre ceftriaxona e ceftazidima, qual diferença deve ser reconhecida?",
    "opcoes": [
-    "Ceftriaxona",
-    "Cefotaxima",
-    "Ceftazidima",
-    "Cefuroxima"
+    "Ceftazidima tem atividade antipseudomonas; ceftriaxona não é equivalente",
+    "As duas têm cobertura antipseudomonas intercambiável",
+    "Ceftriaxona é preferida por sempre cobrir Pseudomonas",
+    "Ceftazidima cobre MRSA por ser de terceira geração"
    ],
-   "certa": 2,
-   "explica": "\"A Taz\" é a única de 3ª antipseudomonas.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Pertencer à mesma geração não torna o espectro idêntico. A ceftazidima é uma cefalosporina antipseudomonas, mas isso não lhe confere cobertura de MRSA; gravidade, culturas e sensibilidade continuam orientando a escolha final.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
    ]
   },
   {
    "tipo": "q",
    "n": 10,
-   "pergunta": "Pneumonia comunitária com indicação de internamento",
+   "pergunta": "Na pneumonia comunitária de um adulto internado, sem indicação de cobrir MRSA ou Pseudomonas, por que se pode associar azitromicina à ceftriaxona?",
    "opcoes": [
-    "Amoxicilina pura",
-    "Ceftriaxona + azitromicina",
-    "Pipe-tazo",
-    "Meropeném + vancomicina"
+    "Para substituir a avaliação de gravidade e do foco",
+    "Para acrescentar cobertura de agentes respiratórios atípicos",
+    "Para tratar anaeróbios intestinais como objetivo principal",
+    "Para neutralizar obrigatoriamente uma alergia à ceftriaxona"
    ],
    "certa": 1,
-   "explica": "Não é pneumonia hospitalar: cobre-se pneumococo (ceftriaxona) e atípicos (macrolídeo).",
-   "tempo": 20,
+   "explica": "Ceftriaxona não cobre adequadamente agentes como Mycoplasma e Legionella. O macrolídeo complementa essa lacuna em um esquema possível de pneumonia internada; indicação, contraindicações e protocolo local importam, e nem todo caso exige cobertura de agentes multirresistentes.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g6"
    ]
   },
   {
    "tipo": "q",
    "n": 11,
-   "pergunta": "Paciente em uso de ceftriaxona evolui com 10 evacuações aquosas/dia. Higiene das mãos?",
+   "pergunta": "Paciente em uso de antibiótico desenvolve diarreia aquosa importante e há suspeita de Clostridioides difficile. Qual atitude é adequada?",
    "opcoes": [
-    "Álcool gel",
-    "Água e sabão",
-    "Clorexidina alcoólica",
-    "Não precisa isolamento"
+    "Prescrever antidiarreico isolado para impedir toda evacuação",
+    "Considerar a diarreia um efeito esperado que dispensa avaliação",
+    "Investigar o quadro e revisar antibióticos desnecessários",
+    "Associar outro antibiótico amplo sem investigar"
    ],
-   "certa": 1,
-   "explica": "<i>C. difficile</i>: esporos não morrem com álcool.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "O contexto deve levantar suspeita de infecção por C. difficile e motivar avaliação da gravidade, investigação apropriada e medidas de controle. A exposição antimicrobiana precisa ser revista; simplesmente ampliar antibióticos pode manter o fator que favorece a doença.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
    ]
   },
   {
    "tipo": "q",
    "n": 12,
-   "pergunta": "Quimioterapia, febre, neutropenia, paciente estável",
+   "pergunta": "Paciente com neutropenia febril de alto risco está inicialmente estável, sem foco evidente ou indicação específica de cobrir MRSA. Qual cobertura empírica é essencial?",
    "opcoes": [
-    "Cefepima",
-    "Cefepima + vancomicina",
-    "Ceftriaxona",
-    "Fluconazol"
+    "Cefalexina oral como cobertura suficiente",
+    "Vancomicina isolada para toda neutropenia febril",
+    "Betalactâmico com atividade antipseudomonas, como cefepima",
+    "Metronidazol isolado para prevenir bacteremia"
    ],
-   "certa": 0,
-   "explica": "Primeira linha: cefepima isolada; vancomicina se grave ou piora.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Neutropenia febril de alto risco é uma urgência e requer cobertura inicial contra bacilos Gram-negativos, incluindo Pseudomonas. Vancomicina não substitui essa cobertura e não é acrescentada automaticamente em todos; o esquema é ajustado ao foco, à gravidade e aos dados locais.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
    ]
   },
   {
    "tipo": "q",
    "n": 13,
-   "pergunta": "Cefepima + vancomicina sem melhora na neutropenia febril. Próximo passo",
+   "pergunta": "Neutropênico de alto risco mantém febre por vários dias apesar de antibiótico adequado, e a neutropenia deverá ser prolongada. Qual é a melhor linha de raciocínio?",
    "opcoes": [
-    "Trocar por ceftriaxona",
-    "Acrescentar antifúngico",
-    "Suspender tudo",
-    "Acrescentar metronidazol"
+    "Trocar diariamente antibióticos sem nova investigação",
+    "Concluir que a febre só pode ser resistente a cefalosporina",
+    "Reinvestigar o foco e considerar infecção fúngica invasiva",
+    "Adicionar antifúngico a qualquer febre após a primeira dose"
    ],
-   "certa": 1,
-   "explica": "Gram− e Gram+ já cobertos: pensar em fungo.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Persistência de febre em neutropenia prolongada exige nova avaliação, incluindo a possibilidade de infecção fúngica invasiva e estratégias de diagnóstico e tratamento. Não basta uma regra de acrescentar antifúngico após qualquer falta de melhora: duração, risco, achados e protocolo do serviço importam.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
    ]
   },
   {
    "tipo": "q",
    "n": 14,
-   "pergunta": "Hemocultura com MRSA. Qual betalactâmico funciona?",
+   "pergunta": "Qual diferença evita um erro ao escolher uma cefalosporina para MRSA confirmado?",
    "opcoes": [
-    "Meropeném",
-    "Oxacilina",
-    "Ceftarolina",
-    "Pipe-tazo"
+    "A resistência à oxacilina deixa qualquer betalactâmico equivalente",
+    "Ceftarolina tem atividade contra MRSA; ceftriaxona não",
+    "Toda cefalosporina de geração mais recente cobre MRSA",
+    "Ceftazidima cobre MRSA por ter atividade antipseudomonas"
    ],
-   "certa": 2,
-   "explica": "Só a ceftarolina pega MRSA entre os betalactâmicos.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "A atividade da ceftarolina se relaciona à afinidade por PBP alterada e é uma exceção importante ao padrão usual. O nome da geração não basta para prever cobertura; escolha para uma infecção concreta também depende do foco, da indicação e da sensibilidade.",
+   "tempo": 30,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
    ]
   },
   {
    "tipo": "q",
    "n": 15,
-   "pergunta": "ESBL sensível a pipe-tazo, meropeném e amicacina no antibiograma",
+   "pergunta": "Em bacteremia por enterobactéria produtora de ESBL, o antibiograma também informa sensibilidade à piperacilina-tazobactam. Qual opção tem melhor respaldo como tratamento preferencial nesse cenário?",
    "opcoes": [
-    "Pipe-tazo",
-    "Meropeném",
-    "Amicacina",
-    "Ceftriaxona"
+    "Piperacilina-tazobactam obrigatoriamente por ser menos ampla",
+    "Qualquer antibiótico marcado como sensível é equivalente",
+    "Ceftriaxona por pertencer à terceira geração",
+    "Carbapenêmico ativo, selecionado conforme o quadro"
    ],
-   "certa": 1,
-   "explica": "ESBL: carbapenêmico; a sensibilidade à pipe-tazo é só <i>in vitro</i>.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Na infecção invasiva por ESBL, a decisão não se reduz a ler a letra S do antibiograma. Carbapenêmicos têm melhor respaldo para bacteremia nesse contexto; foco, gravidade e condições do paciente orientam qual deles usar e eventuais alternativas.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
+   ],
+   "fontes": [
+    "https://www.idsociety.org/practice-guideline/amr-guidance/"
    ]
   },
   {
    "tipo": "q",
    "n": 16,
-   "pergunta": "<i>Providencia</i> sensível à ceftriaxona no antibiograma. Conduta (aula)",
+   "pergunta": "Bacteremia por Enterobacter cloacae complex mostra sensibilidade inicial à ceftriaxona. Qual risco deve ser considerado antes de escolhê-la?",
    "opcoes": [
-    "Usar ceftriaxona",
-    "Evitar ceftriaxona",
-    "Ceftriaxona em dose dobrada",
-    "Associar clavulanato"
+    "Ausência de qualquer resistência após a primeira cultura",
+    "Emergência de resistência por produção induzível de AmpC",
+    "Resistência obrigatoriamente mediada por MRSA",
+    "Necessidade de usar a mesma regra para toda enterobactéria"
    ],
    "certa": 1,
-   "explica": "Grupo CESP: AmpC induzível; evitar 3ª geração.",
-   "tempo": 20,
+   "explica": "E. cloacae complex está entre os agentes com risco relevante de expressão de AmpC, e infecções invasivas podem selecionar resistência durante o tratamento com ceftriaxona. Esse raciocínio é específico do agente e do cenário; não se deve agrupar todas as enterobactérias em uma regra única.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
+   ],
+   "fontes": [
+    "https://www.idsociety.org/practice-guideline/amr-guidance/"
    ]
   },
   {
    "tipo": "q",
    "n": 17,
-   "pergunta": "Qual carbapenêmico NÃO pega <i>Pseudomonas</i>?",
+   "pergunta": "Paciente com infecção por Pseudomonas precisa de um antibiótico ativo. Por que ertapeném não é uma substituição automática de meropeném?",
    "opcoes": [
-    "Meropeném",
-    "Imipeném",
-    "Ertapeném",
-    "Nenhum"
+    "Ertapeném não oferece cobertura adequada de Pseudomonas",
+    "Ertapeném é a única opção ativa contra MRSA",
+    "Meropeném não pode atingir bactérias Gram-negativas",
+    "Todo carbapenêmico tem exatamente o mesmo espectro"
    ],
-   "certa": 2,
-   "explica": "Ertapeném: 1×/dia, IM ou IV, pele e partes moles.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "A classe carbapenêmico não garante espectro idêntico entre seus representantes. Ertapeném pode ser útil em outras infecções, mas não deve ser usado para preencher uma necessidade de cobertura antipseudomonas; sensibilidade e contexto continuam essenciais.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
+   ],
+   "fontes": [
+    "https://www.idsociety.org/practice-guideline/amr-guidance/"
    ]
   },
   {
    "tipo": "q",
    "n": 18,
-   "pergunta": "Pancreatite necrosante infectada",
+   "pergunta": "Paciente com pancreatite necrosante, sem evidência de infecção da necrose nem outro foco infeccioso, está em acompanhamento hospitalar. Qual princípio evita uso desnecessário de carbapenêmico?",
    "opcoes": [
-    "Ertapeném",
-    "Imipeném-cilastatina",
-    "Ceftriaxona",
-    "Ampicilina"
+    "Toda necrose exige imipeném desde a admissão",
+    "Febre isolada obriga a manter antibiótico até resolver a necrose",
+    "Necrose estéril não indica antibiótico profilático de rotina",
+    "Elevação de enzimas pancreáticas confirma infecção bacteriana"
    ],
-   "certa": 1,
-   "explica": "Melhor penetração pancreática.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Inflamação e necrose pancreática podem existir sem infecção bacteriana. Antibióticos são reservados a indicações infecciosas apropriadas; quando a necrose está infectada, o manejo também envolve avaliação de controle de foco, e não apenas selecionar uma droga que penetre o tecido.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
    ]
   },
   {
    "tipo": "q",
    "n": 19,
-   "pergunta": "KPC isolada. Melhor droga",
+   "pergunta": "Uma enterobactéria produz KPC e é sensível à ceftazidima-avibactam. Qual explicação sustenta essa associação e evita extrapolação errada?",
    "opcoes": [
-    "Meropeném",
-    "Pipe-tazo",
-    "Ceftazidima-avibactam",
-    "Cefepima"
+    "Avibactam age apenas como antibiótico contra a parede",
+    "Ceftazidima-avibactam é equivalente a ceftriaxona para KPC",
+    "Avibactam inibe KPC, mas não resolve metalo-betalactamase como NDM",
+    "Avibactam neutraliza todas as carbapenemases conhecidas"
    ],
    "certa": 2,
-   "explica": "Carbapenêmicos não pegam KPC; o avibactam protege a ceftazidima.",
-   "tempo": 20,
+   "explica": "Identificar o mecanismo de resistência ajuda a escolher combinações efetivas. Avibactam tem ação sobre KPC, mas não sobre NDM; portanto, o resultado não pode ser generalizado para qualquer enterobactéria resistente a carbapenêmicos.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
+   ],
+   "fontes": [
+    "https://www.idsociety.org/practice-guideline/amr-guidance/"
    ]
   },
   {
    "tipo": "q",
    "n": 20,
-   "pergunta": "Colangite (tríade de Charcot)",
+   "pergunta": "Paciente com colangite por obstrução biliar mantém sinais de sepse apesar do antibiótico inicial. O que não pode faltar na estratégia?",
    "opcoes": [
-    "Ceftriaxona isolada",
-    "Ceftriaxona + metronidazol",
-    "Ceftriaxona + azitromicina",
-    "Vancomicina"
+    "Avaliar desobstrução e drenagem da via biliar",
+    "Suspender o tratamento porque a bile está obstruída",
+    "Trocar antibióticos repetidamente sem abordar a obstrução",
+    "Aguardar normalização da febre antes de avaliar o foco"
    ],
-   "certa": 1,
-   "explica": "Bile = intestino: Gram− + anaeróbios.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Antibioticoterapia pode fazer parte do manejo, mas uma via biliar infectada e obstruída exige avaliação de controle do foco. A persistência de sepse não deve levar apenas a ampliações sucessivas do esquema, ignorando a necessidade de drenagem e suporte.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
    ]
   },
   {
    "tipo": "q",
    "n": 21,
-   "pergunta": "DIP: esquema",
+   "pergunta": "No tratamento ambulatorial de DIP, qual raciocínio explica associar ceftriaxona, doxiciclina e metronidazol?",
    "opcoes": [
-    "Ceftriaxona isolada",
-    "Ceftriaxona + metronidazol + doxiciclina",
-    "Amoxicilina",
-    "Azitromicina isolada"
+    "Tratar apenas gonococo com três nomes diferentes",
+    "Cobrir fungos que causam a maior parte das DIP",
+    "Usar doxiciclina para substituir a cobertura de anaeróbios",
+    "Cobrir gonococo, clamídia e componentes anaeróbios"
    ],
-   "certa": 1,
-   "explica": "Anaeróbios (metronidazol) e clamídia (doxiciclina).",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "A DIP pode ser polimicrobiana. A associação cobre agentes e lacunas diferentes, e não representa duplicação indiscriminada; a indicação ambulatorial depende de estabilidade e ausência de critérios de internação, com reavaliação da resposta.",
+   "tempo": 30,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/std/treatment-guidelines/pid.htm"
    ]
   },
   {
    "tipo": "q",
    "n": 22,
-   "pergunta": "Pé diabético com ferida profunda e necrose",
+   "pergunta": "Paciente com diabetes apresenta úlcera profunda no pé, necrose e sinais sistêmicos de infecção. Qual é a estratégia mais adequada?",
    "opcoes": [
-    "Cefalexina",
-    "Ceftriaxona + clindamicina",
-    "Metronidazol isolado",
-    "Azitromicina"
+    "Escolher um esquema fixo para qualquer ferida do diabético",
+    "Tratar a cultura superficial sem examinar o membro",
+    "Avaliar gravidade, perfusão e controle do foco, além dos antibióticos",
+    "Aguardar cicatrização antes de avaliar tecido necrosado"
    ],
-   "certa": 1,
-   "explica": "Ceftriaxona para Gram−; clindamicina para Gram+ e anaeróbios.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Infecção do pé diabético exige avaliar profundidade, isquemia, necessidade de abordagem cirúrgica e possível osteomielite. O espectro antimicrobiano é individualizado; uma combinação decorada não substitui a avaliação de gravidade nem resolve tecido desvitalizado ou perfusão inadequada.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
    ]
   },
   {
    "tipo": "q",
    "n": 23,
-   "pergunta": "Cirrótico, ascite, febre, PMN 480/mm³ no líquido",
+   "pergunta": "Paciente cirrótico com ascite e dor abdominal tem 480 neutrófilos/mm³ no líquido ascítico. Qual interpretação orienta o manejo inicial?",
    "opcoes": [
-    "Ceftriaxona",
-    "Ceftriaxona + metronidazol",
-    "Vancomicina",
-    "Cirurgia de urgência"
+    "Presumir perfuração intestinal em toda ascite infectada",
+    "Esperar a cultura positivar para considerar infecção",
+    "Excluir infecção porque não há pus visível",
+    "Suspeitar de peritonite bacteriana espontânea e tratar prontamente"
    ],
-   "certa": 0,
-   "explica": "PBE: Gram− do intestino; ceftriaxona sozinha.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Contagem de neutrófilos de pelo menos 250/mm³ sustenta o diagnóstico de PBE no contexto apropriado e indica tratamento sem aguardar cultura. Sinais de peritonite secundária exigem investigação própria; cobertura de anaeróbios não deve ser acrescentada automaticamente a todo caso de PBE.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
    ]
   },
   {
    "tipo": "q",
    "n": 24,
-   "pergunta": "Infusão rápida de vancomicina causa vermelhidão no tronco. Conduta",
+   "pergunta": "Durante infusão rápida de vancomicina, o paciente apresenta rubor e prurido no tronco, sem broncoespasmo, angioedema ou instabilidade. Qual é a melhor interpretação inicial?",
    "opcoes": [
-    "Suspender por alergia",
-    "Infundir mais devagar",
-    "Trocar por oxacilina",
-    "Dar adrenalina"
+    "Indicação de acelerar a infusão para terminar logo",
+    "Sinal de que a vancomicina não atinge a bactéria",
+    "Anafilaxia comprovada em qualquer rubor",
+    "Possível reação relacionada à infusão, que exige avaliação e ajuste"
    ],
-   "certa": 1,
-   "explica": "Síndrome do homem vermelho: não é alergia.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "A vancomicina pode causar reação dependente da velocidade de infusão, diferente de uma alergia IgE-mediada. É necessário avaliar a gravidade, interromper e manejar o episódio conforme o quadro; sinais respiratórios ou circulatórios mudariam a urgência e a hipótese de anafilaxia.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
    ]
   }
  ],
  "kahootInfo": {
   "titulo": "Quiz de revisão · Antibióticos",
-  "capa": "{n} perguntas de revisão feitas a partir das aulas de penicilinas, cefalosporinas e carbapenêmicos. Não é um Kahoot de professor. Quanto mais cedo acertar, mais pontos.",
-  "botao": "Começar o quiz"
+  "capa": "{n} questões focadas nas partes prioritárias, com casos clínicos e gabarito contextualizado.",
+  "botao": "Começar revisão",
+  "contextualizado": true
  },
  "casos": [
   {

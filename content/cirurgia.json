@@ -517,484 +517,528 @@
   {
    "tipo": "q",
    "n": 1,
-   "pergunta": "Paciente diabético em uso de insulina, com HbA1c 10% e limitação funcional. Classificação ASA?",
+   "pergunta": "Paciente com diabetes mal controlado e doença sistêmica importante será submetido a uma cirurgia eletiva. Sem ameaça constante à vida, qual classe ASA é mais compatível?",
    "opcoes": [
-    "V",
-    "II",
-    "III",
-    "I"
+    "ASA II por toda doença crônica ser leve",
+    "ASA III",
+    "ASA V apenas por precisar de cirurgia",
+    "ASA I"
    ],
-   "certa": 2,
-   "explica": "Doença sistêmica grave, mal controlada, com limitação = ASA III.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "ASA III corresponde a doença sistêmica grave; ASA II é usada para alterações mais leves e controladas. A classificação descreve a condição física, não o porte da cirurgia nem o risco completo do procedimento; a avaliação deve considerar o quadro clínico além de um exame isolado.",
+   "tempo": 30,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 2,
-   "pergunta": "Jejum mínimo para água ou chá antes da anestesia eletiva:",
+   "pergunta": "Adulto saudável, sem condição de esvaziamento gástrico retardado, fará anestesia eletiva. Qual orientação para água é compatível com a recomendação usual de jejum?",
    "opcoes": [
-    "Zero",
-    "2 horas",
-    "6 horas",
-    "8 horas"
+    "Tratar água como refeição gordurosa em qualquer situação",
+    "Liberar qualquer alimento até duas horas antes",
+    "Permitir líquido claro até duas horas antes, conforme orientação anestésica",
+    "Exigir jejum absoluto de 24 horas para toda cirurgia"
    ],
-   "certa": 1,
-   "explica": "Líquidos claros: 2 h.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Água é um líquido claro e, nesse cenário, o jejum usual é de duas horas. Isso não autoriza leite ou sólidos no mesmo intervalo; condições clínicas e risco de aspiração podem exigir individualização pela equipe de anestesia, evitando tanto jejum excessivo quanto liberação inadequada.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.asahq.org/standards-and-practice-parameters"
    ]
   },
   {
    "tipo": "q",
    "n": 3,
-   "pergunta": "Criança em aleitamento materno exclusivo: jejum mínimo de leite materno:",
+   "pergunta": "No pré-operatório, paciente relata dor torácica aos pequenos esforços, antes ausente. Qual informação mais modifica a avaliação?",
    "opcoes": [
-    "2 h",
-    "4 h",
-    "6 h",
-    "8 h"
+    "O fato de a cirurgia já estar agendada",
+    "Uma radiografia antiga normal como liberação definitiva",
+    "A idade isolada, sem relação com o sintoma",
+    "Sintoma novo sugestivo de doença cardiovascular que precisa ser esclarecido"
    ],
-   "certa": 1,
-   "explica": "Leite materno: 4 h; fórmula: 6 h.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Sintomas novos e capacidade funcional ajudam a selecionar investigação e planejamento perioperatório. Um exame antigo normal ou a data agendada não resolvem uma queixa potencialmente relevante; solicitar testes em todos indiscriminadamente também não substitui essa avaliação dirigida.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 4,
-   "pergunta": "Qual medicação deve ser MANTIDA no dia da cirurgia?",
+   "pergunta": "Paciente usa betabloqueador cronicamente, está estável e não apresenta contraindicação no pré-operatório. Qual princípio costuma orientar o manejo?",
    "opcoes": [
-    "Dapagliflozina",
-    "Metformina",
-    "Clopidogrel",
-    "Betabloqueador"
+    "Interromper abruptamente todo betabloqueador na véspera",
+    "Iniciar dose alta em quem nunca usou para proteção universal",
+    "Trocar obrigatoriamente por um diurético no dia",
+    "Manter o tratamento crônico com avaliação da equipe"
    ],
    "certa": 3,
-   "explica": "Betabloqueador e estatina são mantidos.",
-   "tempo": 20,
+   "explica": "Continuidade de betabloqueador já utilizado é diferente de iniciá-lo em dose alta imediatamente antes da operação. A suspensão abrupta pode ser prejudicial; pressão, frequência cardíaca e condições clínicas devem ser avaliadas para individualizar a prescrição perioperatória.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 5,
-   "pergunta": "Dapagliflozina antes de cirurgia eletiva deve ser suspensa:",
+   "pergunta": "Paciente em uso de dapagliflozina será submetido a cirurgia eletiva. Qual risco justifica um plano específico de suspensão pré-operatória?",
    "opcoes": [
-    "Não precisa suspender",
-    "3 dias antes, pelo risco de cetoacidose euglicêmica",
-    "2 semanas antes",
-    "No dia"
+    "Sangramento por inibição irreversível de plaquetas",
+    "Resistência bacteriana causada diretamente pelo medicamento",
+    "Cetoacidose que pode ocorrer sem hiperglicemia acentuada",
+    "Síndrome de abstinência semelhante à dos benzodiazepínicos"
    ],
-   "certa": 1,
-   "explica": "iSGLT2: 3 dias antes.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Inibidores de SGLT2 estão associados a cetoacidose, inclusive com glicose não muito elevada, no contexto de jejum e estresse cirúrgico. Para dapagliflozina, a recomendação usual é suspender pelo menos três dias antes; o reinício depende de recuperação clínica e alimentação adequadas.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/202293s035lbl.pdf"
    ]
   },
   {
    "tipo": "q",
    "n": 6,
-   "pergunta": "Mulher de 28 anos, saudável, para colecistectomia. Exame que não pode faltar se houver chance de gestação:",
+   "pergunta": "Mulher saudável, com possibilidade de gestação, será submetida a cirurgia eletiva. Como deve ser planejada a investigação pré-operatória?",
    "opcoes": [
-    "ECG",
-    "β-hCG",
-    "Coagulograma",
-    "RX de tórax"
+    "Usar o teste de gravidez como substituto de anamnese e consentimento",
+    "Pedir a mesma bateria extensa para toda pessoa saudável",
+    "Excluir gravidez apenas pela ausência de sintomas",
+    "Selecionar exames pela clínica e discutir teste de gravidez"
    ],
-   "certa": 1,
-   "explica": "β-hCG em mulher em idade fértil.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Exames pré-operatórios devem responder a questões que alterem o cuidado. A possibilidade de gestação precisa ser abordada com informação e consentimento, considerando o impacto do resultado; idade reprodutiva não justifica uma bateria indiscriminada nem permite dispensar a conversa clínica.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 7,
-   "pergunta": "4º dia de pós-operatório de colectomia, febre de 38,7 °C, com sonda vesical desde a cirurgia. Causa mais provável?",
+   "pergunta": "Paciente apresenta febre no quarto dia de pós-operatório e usa sonda vesical. Sem sintomas localizadores ou outros dados, qual é o raciocínio correto?",
    "opcoes": [
-    "Infecção urinária",
-    "Atelectasia",
-    "Deiscência de anastomose",
-    "Febre medicamentosa"
+    "Atribuir toda febre precoce à atelectasia",
+    "Investigar conforme história, exame, dispositivos e sinais de gravidade",
+    "Concluir infecção urinária apenas pelo dia da febre",
+    "Excluir infecção de ferida antes do sétimo dia"
    ],
-   "certa": 0,
-   "explica": "3º–5º dia: água (urina) é o clássico, sobretudo com sonda.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "O dia de pós-operatório ajuda a organizar hipóteses, mas não determina a causa da febre. É necessário avaliar foco, sinais de sepse, medicações e necessidade dos dispositivos; a presença de sonda, isoladamente, não comprova infecção urinária.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 8,
-   "pergunta": "6º dia de pós-operatório de gastrectomia: taquicardia, febre, dor abdominal e saída de líquido bilioso pelo dreno. Hipótese?",
+   "pergunta": "No sexto dia após cirurgia com anastomose intestinal, surgem taquicardia, febre, dor abdominal e secreção entérica pelo dreno. Qual é a prioridade?",
    "opcoes": [
-    "TVP",
-    "Fístula/deiscência de anastomose",
-    "Pneumonia",
-    "ITU"
+    "Considerar a secreção entérica esperada até retirar o dreno",
+    "Aguardar o trânsito intestinal retornar antes de avaliar",
+    "Suspeitar de falha anastomótica e obter avaliação cirúrgica urgente",
+    "Tratar apenas a febre e manter o plano de alta"
    ],
-   "certa": 1,
-   "explica": "5º–7º dia, secreção entérica no dreno = fístula.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "A combinação de deterioração clínica e conteúdo entérico pelo dreno sugere complicação anastomótica com possível infecção intra-abdominal. O manejo exige avaliação rápida, suporte e decisão sobre controle do foco; o calendário ou a presença de um dreno não tornam esse quadro seguro.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 9,
-   "pergunta": "7º dia após laparotomia: grande quantidade de líquido serossanguinolento pela ferida, que está íntegra. O que sugere?",
+   "pergunta": "Uma semana após laparotomia, a ferida libera grande volume de líquido serossanguinolento e há suspeita de falha da aponeurose. Qual é a melhor conduta?",
    "opcoes": [
-    "Infecção superficial",
-    "Deiscência de aponeurose (risco de evisceração)",
-    "Seroma simples",
-    "Normal"
+    "Apertar uma faixa e adiar a avaliação por vários dias",
+    "Proteger a ferida e solicitar avaliação cirúrgica imediata",
+    "Reabrir e suturar cegamente no leito",
+    "Dar alta porque a pele ainda parece fechada"
    ],
    "certa": 1,
-   "explica": "\"Água de carne\" é sinal de alerta de deiscência.",
-   "tempo": 20,
+   "explica": "Saída serossanguinolenta importante pode preceder deiscência fascial e evisceração. Pele aparentemente íntegra não exclui falha profunda; é necessário proteger a região e obter avaliação urgente, sem manipulação improvisada que agrave a lesão.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 10,
-   "pergunta": "Retorno do trânsito: qual segmento é o último a voltar?",
+   "pergunta": "Paciente com íleo pós-operatório prolongado está estável e não apresenta sinais de obstrução mecânica ou peritonite. Qual conjunto de medidas é mais útil?",
    "opcoes": [
-    "Delgado",
-    "Cólon",
-    "Todos ao mesmo tempo",
-    "Estômago"
+    "Indicar nova cirurgia para qualquer atraso do trânsito",
+    "Rever opioides, corrigir eletrólitos e estimular mobilização",
+    "Aumentar opioides e manter imobilidade até evacuar",
+    "Prescrever antibiótico apenas pela ausência de ruídos"
    ],
    "certa": 1,
-   "explica": "Cólon em 48–72 h.",
-   "tempo": 20,
+   "explica": "O íleo pode ser mantido por medicamentos, distúrbios eletrolíticos e imobilidade. A conduta inclui corrigir fatores reversíveis e avaliar suporte conforme sintomas; distensão progressiva, vômitos persistentes ou sinais de complicação exigem nova investigação, não uma espera automática por um dia fixo.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 11,
-   "pergunta": "Colecistectomia eletiva é classificada como:",
+   "pergunta": "Durante cirurgia eletiva, o trato digestivo é aberto de modo controlado, sem extravasamento importante nem infecção prévia. Como classificar a ferida?",
    "opcoes": [
-    "Contaminada",
     "Limpa-contaminada",
-    "Suja",
-    "Limpa"
+    "Limpa, porque o procedimento foi eletivo",
+    "Infectada, mesmo sem infecção ou pus",
+    "Suja, pela abertura de qualquer víscera"
    ],
-   "certa": 1,
-   "explica": "Abertura controlada do trato biliar.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "A entrada controlada em um trato colonizado caracteriza cirurgia limpa-contaminada. O caráter eletivo não a torna limpa, e abrir uma víscera não implica automaticamente uma ferida suja; extravasamento, inflamação e infecção prévia mudam a classificação.",
+   "tempo": 30,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
    ]
   },
   {
    "tipo": "q",
    "n": 12,
-   "pergunta": "Laparotomia por úlcera perfurada com peritonite purulenta:",
+   "pergunta": "Na laparotomia por perfuração intestinal com peritonite purulenta, qual distinção orienta o uso de antibióticos?",
    "opcoes": [
-    "Limpa-contaminada",
-    "Contaminada",
-    "Suja/infectada",
-    "Limpa"
+    "Há infecção estabelecida: o esquema é terapêutico, com controle de foco",
+    "O pus pode ser ignorado depois de administrar cefazolina",
+    "Antibiótico substitui a abordagem da perfuração",
+    "Basta profilaxia de rotina, independentemente dos achados"
    ],
-   "certa": 2,
-   "explica": "Pus e víscera perfurada = suja; ATB é terapêutico.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Perfuração com peritonite purulenta caracteriza campo sujo ou infectado. Nesse contexto, o objetivo não é apenas prevenir infecção, mas tratar uma infecção já presente e controlar sua origem; esquema e duração dependem do foco, da evolução e do manejo cirúrgico.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
    ]
   },
   {
    "tipo": "q",
    "n": 13,
-   "pergunta": "Antibioticoprofilaxia padrão deve ser feita:",
+   "pergunta": "Uma cirurgia tem indicação de profilaxia com cefazolina. Qual é o objetivo de administrá-la antes da incisão?",
    "opcoes": [
-    "Até 60 min antes da incisão",
-    "Só se houver febre",
-    "Após o fechamento",
-    "Na véspera"
+    "Garantir concentração tecidual adequada no início da exposição",
+    "Reservar o antibiótico para quando surgir febre",
+    "Começar o antibiótico somente após a ferida fechar",
+    "Substituir preparo da pele e técnica asséptica"
    ],
    "certa": 0,
-   "explica": "Para ter nível tecidual no momento da incisão.",
-   "tempo": 20,
+   "explica": "A profilaxia precisa estar ativa quando ocorre a exposição do campo operatório, usualmente com cefazolina nos 60 minutos anteriores à incisão. Alguns fármacos exigem infusão iniciada mais cedo; o princípio é o momento adequado, junto das demais medidas de prevenção.",
+   "tempo": 30,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
+   ],
+   "fontes": [
+    "https://doi.org/10.1017/ice.2023.67"
    ]
   },
   {
    "tipo": "q",
    "n": 14,
-   "pergunta": "Cirurgia com cefazolina iniciada às 8 h ainda em andamento ao meio-dia. Conduta?",
+   "pergunta": "Cirurgia prolongada segue quatro horas após a dose inicial de cefazolina, com função renal preservada. Qual questão deve ser revista pela equipe?",
    "opcoes": [
-    "Nada",
-    "Trocar por vancomicina",
-    "Suspender",
-    "Repetir a dose de cefazolina"
+    "Necessidade de dobrar toda dose sem avaliar o caso",
+    "Dispensa de profilaxia porque a incisão já foi feita",
+    "Necessidade de redose intraoperatória conforme o protocolo",
+    "Obrigação de trocar por vancomicina pelo tempo transcorrido"
    ],
-   "certa": 3,
-   "explica": "Redose após 4 h (ou sangramento > 1.500 mL).",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Operação prolongada ou perda sanguínea importante pode reduzir a exposição ao antibiótico e justificar redose. Para cefazolina, quatro horas é um intervalo usual nesse cenário; a decisão considera o fármaco, a função renal, o sangramento e o protocolo, não uma regra igual para todas as drogas.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
+   ],
+   "fontes": [
+    "https://doi.org/10.1017/ice.2023.67"
    ]
   },
   {
    "tipo": "q",
    "n": 15,
-   "pergunta": "Duração adequada da antibioticoprofilaxia em cirurgia limpa-contaminada:",
+   "pergunta": "Cirurgia limpa-contaminada foi concluída, sem infecção estabelecida, e um dreno permanecerá instalado. Qual princípio evita prolongar profilaxia sem indicação?",
    "opcoes": [
-    "Até a alta",
-    "7 dias",
-    "Até retirar o dreno",
-    "Dose única ou até 24 h"
+    "Manter profilaxia até retirar todo dreno e ponto",
+    "Transformar profilaxia em tratamento por causa do dreno",
+    "O dreno, isoladamente, não justifica continuar antibiótico",
+    "Prolongar por uma semana para prevenir resistência"
    ],
-   "certa": 3,
-   "explica": "Prolongar não reduz ISC e aumenta resistência.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Profilaxia não deve ser prolongada apenas pela presença de drenos. Recomendações atuais de prevenção orientam interrompê-la ao fechamento da incisão nos procedimentos apropriados; se houver infecção, a indicação passa a ser terapêutica e exige justificativa própria.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
+   ],
+   "fontes": [
+    "https://doi.org/10.1017/ice.2023.67"
    ]
   },
   {
    "tipo": "q",
    "n": 16,
-   "pergunta": "ISC incisional superficial sem sinais sistêmicos. Tratamento principal:",
+   "pergunta": "Paciente tem infecção incisional superficial com coleção drenável, sem celulite extensa nem sinais sistêmicos. Qual é a medida central?",
    "opcoes": [
-    "Abrir a ferida e drenar",
-    "Reoperação",
-    "Antibiótico oral só",
-    "Observação"
+    "Usar antibiótico isolado sem controlar a coleção",
+    "Abrir e drenar adequadamente a coleção",
+    "Manter a ferida fechada para impedir saída de secreção",
+    "Indicar reoperação abdominal em toda infecção superficial"
    ],
-   "certa": 0,
-   "explica": "Drenagem é o tratamento.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Controle de foco é fundamental em uma coleção da ferida. A necessidade de antibiótico sistêmico depende de extensão, sinais sistêmicos, imunossupressão e outros fatores; nem todo caso superficial exige tratamento amplo, e antibiótico não substitui drenagem quando indicada.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
    ]
   },
   {
    "tipo": "q",
    "n": 17,
-   "pergunta": "Paciente com perda de 15% do peso em 6 meses, albumina 2,6, para gastrectomia eletiva. Conduta?",
+   "pergunta": "Paciente com perda ponderal importante e alto risco nutricional fará cirurgia de grande porte que pode ser adiada com segurança. Qual planejamento é mais adequado?",
    "opcoes": [
-    "Operar amanhã",
-    "Só suplemento após a cirurgia",
-    "Parenteral por 3 meses",
-    "Terapia nutricional 7–14 dias antes"
+    "Oferecer terapia nutricional pré-operatória por período apropriado",
+    "Prescrever apenas jejum mais prolongado antes da operação",
+    "Operar sem considerar o risco nutricional",
+    "Usar albumina isolada como única medida de recuperação"
    ],
-   "certa": 3,
-   "explica": "Risco nutricional grave: nutrir antes da eletiva.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Desnutrição importante aumenta complicações e deve entrar no planejamento. Quando clinicamente possível, pode ser indicado um período de terapia nutricional, frequentemente de 7 a 14 dias; a urgência cirúrgica e a avaliação global importam, e albumina isolada não resume o estado nutricional.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
    ]
   },
   {
    "tipo": "q",
    "n": 18,
-   "pergunta": "Desnutrido grave inicia nutrição plena e no 2º dia tem fraqueza e arritmia. Qual eletrólito mais caracteriza o quadro?",
+   "pergunta": "Paciente muito desnutrido inicia oferta nutricional e desenvolve fraqueza, arritmia e queda acentuada de fósforo. Qual hipótese e prevenção são mais pertinentes?",
    "opcoes": [
-    "Hipercalcemia",
-    "Hipercalemia",
-    "Hipernatremia",
-    "Hipofosfatemia"
+    "Infecção obrigatória do acesso venoso",
+    "Síndrome de realimentação; iniciar progressivamente e monitorizar eletrólitos",
+    "Resposta normal que exige aumentar rapidamente as calorias",
+    "Alergia à dieta, sem relação com eletrólitos"
    ],
-   "certa": 3,
-   "explica": "Síndrome de realimentação.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "A realimentação pode deslocar fósforo, potássio e magnésio para o meio intracelular e causar complicações graves. Pessoas de risco precisam de início e progressão planejados, reposição e monitorização, além de tiamina quando indicada; aumentar a oferta sem avaliar o quadro pode agravá-lo.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
    ]
   },
   {
    "tipo": "q",
    "n": 19,
-   "pergunta": "TGI funcionante, paciente que não consegue comer após AVC, previsão de 3 meses de dieta. Melhor via?",
+   "pergunta": "Paciente com trato gastrointestinal funcionante não consegue deglutir e deverá precisar de suporte por vários meses. Qual raciocínio orienta a via de nutrição?",
    "opcoes": [
-    "Gastrostomia",
-    "Nasoenteral por 3 meses",
-    "Jejum",
-    "Parenteral"
+    "Preferir via enteral e avaliar acesso de longa duração",
+    "Manter hidratação venosa como nutrição por vários meses",
+    "Evitar qualquer uso do intestino por não haver deglutição",
+    "Escolher parenteral apenas por haver disfagia"
    ],
    "certa": 0,
-   "explica": "> 4–6 semanas: gastrostomia.",
-   "tempo": 20,
+   "explica": "Incapacidade de deglutir não significa intestino inutilizável. Quando o trato gastrointestinal funciona, a via enteral é preferida e a duração prevista ajuda a decidir o acesso, como gastrostomia em situações apropriadas; o plano inclui avaliação clínica, objetivos e riscos.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
    ]
   },
   {
    "tipo": "q",
    "n": 20,
-   "pergunta": "Confirmação de que a antibioticoprofilaxia foi feita nos últimos 60 min ocorre em qual etapa do checklist?",
+   "pergunta": "Equipe está pronta para incisar, mas ainda não confirmou em conjunto paciente, sítio e procedimento. Qual ação é adequada?",
    "opcoes": [
-    "Sign in",
-    "Time out",
-    "Sign out",
-    "Na enfermaria"
+    "Delegar toda conferência à lembrança de um único profissional",
+    "Confiar apenas no reconhecimento visual do paciente",
+    "Iniciar e completar a confirmação no fim da operação",
+    "Realizar a pausa de segurança antes da incisão"
    ],
-   "certa": 1,
-   "explica": "Time out, antes da incisão.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "O time out é uma confirmação verbal compartilhada imediatamente antes da incisão. A equipe alinha identificação, procedimento, sítio e pontos críticos; o checklist atua como barreira contra falhas de comunicação, não como preenchimento burocrático depois que o risco passou.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
    ]
   },
   {
    "tipo": "q",
    "n": 21,
-   "pergunta": "A contagem de compressas, instrumentais e agulhas pertence a:",
+   "pergunta": "Antes de sair da sala, a contagem final de compressas não confere. Qual é a melhor conduta?",
    "opcoes": [
-    "Sign in",
-    "Time out",
-    "Sign out",
-    "Avaliação pré-anestésica"
+    "Desconsiderar a contagem se o procedimento foi pequeno",
+    "Esperar o pós-operatório para investigar se surgirem sintomas",
+    "Comunicar a discrepância e seguir o protocolo de busca e conferência",
+    "Registrar o valor esperado para não atrasar a saída"
    ],
    "certa": 2,
-   "explica": "Sign out, antes de o paciente sair da sala.",
-   "tempo": 20,
+   "explica": "A contagem é uma barreira contra retenção de corpo estranho e integra a etapa final de segurança. Divergências precisam ser resolvidas conforme o protocolo e comunicadas à equipe; a ausência de sintomas não é motivo para ignorar uma discrepância conhecida.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
    ]
   },
   {
    "tipo": "q",
    "n": 22,
-   "pergunta": "Tema do 2º Desafio Global da OMS:",
+   "pergunta": "Dois pacientes com nomes semelhantes estão na área cirúrgica. Qual prática reduz o risco de erro de identificação?",
    "opcoes": [
-    "Prevenção de quedas",
-    "Cirurgias seguras salvam vidas",
-    "Medicação sem danos",
-    "Higiene das mãos"
+    "Perguntar à equipe se o rosto parece conhecido",
+    "Usar o número do leito como único identificador",
+    "Confirmar apenas a especialidade da cirurgia",
+    "Confirmar dois identificadores e o procedimento previsto"
    ],
-   "certa": 1,
-   "explica": "Deu origem ao checklist em 2008.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Identificação segura usa dados padronizados, como nome completo e outro identificador, em concordância com registros e planejamento do procedimento. Leito e reconhecimento visual podem mudar ou ser confundidos; o objetivo é interromper a cadeia de erro antes da intervenção.",
+   "tempo": 30,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
    ]
   },
   {
    "tipo": "q",
    "n": 23,
-   "pergunta": "Trauma de face com equimose periorbitária bilateral e rinorreia clara. Para descomprimir o estômago:",
+   "pergunta": "Politraumatizado apresenta sinais de possível fratura de base de crânio e precisa de descompressão gástrica. Qual cuidado é essencial?",
    "opcoes": [
-    "Nasoenteral",
-    "Sonda nasogástrica",
-    "Nada",
-    "Sonda orogástrica"
+    "Forçar a sonda nasal se houver resistência",
+    "Usar cânula nasofaríngea para excluir a fratura",
+    "Introduzir sonda nasal às cegas para testar a passagem",
+    "Evitar a via nasal e avaliar alternativa orogástrica"
    ],
    "certa": 3,
-   "explica": "Suspeita de fratura de base de crânio contraindica via nasal.",
-   "tempo": 20,
+   "explica": "A suspeita de fratura de base de crânio contraindica instrumentação nasal às cegas pelo risco de trajeto inadequado. Quando a descompressão está indicada, avalia-se uma alternativa segura, como via orogástrica, dentro do manejo global do trauma e da via aérea.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
    ]
   },
   {
    "tipo": "q",
    "n": 24,
-   "pergunta": "Politraumatizado com sangue no meato uretral. Antes de sondar:",
+   "pergunta": "Paciente com trauma pélvico apresenta sangue no meato uretral. Qual é a prioridade antes de uma sondagem uretral às cegas?",
    "opcoes": [
-    "Sondar com lubrificante extra",
-    "Uretrocistografia retrógrada; se necessário, cistostomia",
-    "Sonda de 3 vias",
-    "Sondar com Foley fino"
+    "Investigar possível lesão uretral e definir uma via segura de drenagem",
+    "Descartar lesão porque ainda existe vontade de urinar",
+    "Fazer tentativas repetidas com sondas de diferentes calibres",
+    "Forçar uma sonda mais fina até passar"
    ],
-   "certa": 1,
-   "explica": "Suspeita de lesão de uretra.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Sangue no meato após trauma levanta suspeita de lesão uretral. A investigação, frequentemente com uretrografia retrógrada conforme o caso, orienta a drenagem; tentativas repetidas e cegas podem agravar a lesão, e a necessidade de cistostomia é avaliada pela equipe.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
    ]
   },
   {
    "tipo": "q",
    "n": 25,
-   "pergunta": "O dreno de tórax deve passar:",
+   "pergunta": "Na colocação de dreno torácico, por que a passagem é planejada junto à borda superior da costela inferior do espaço escolhido?",
    "opcoes": [
-    "Na borda inferior da costela",
-    "No 2º EIC na linha hemiclavicular",
-    "No 8º EIC posterior",
-    "Na borda superior da costela inferior"
+    "Para reduzir o risco de lesar o feixe neurovascular intercostal",
+    "Porque o feixe principal fica no centro da borda superior",
+    "Porque a borda escolhida elimina todos os riscos do procedimento",
+    "Para permitir inserção em qualquer ponto sem avaliação"
    ],
-   "certa": 3,
-   "explica": "Feixe vasculonervoso corre na borda inferior.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "O feixe neurovascular principal acompanha a borda inferior da costela superior, o que orienta o trajeto de entrada. Isso é uma medida de redução de risco, não garantia de segurança absoluta; sítio, anatomia, técnica e avaliação apropriada continuam fundamentais.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
    ]
   },
   {
    "tipo": "q",
    "n": 26,
-   "pergunta": "Selo d'água com borbulhamento contínuo indica:",
+   "pergunta": "Um sistema de drenagem torácica apresenta borbulhamento contínuo no selo d’água. Qual é a interpretação mais adequada?",
    "opcoes": [
-    "Hemotórax",
-    "Escape aéreo (fístula ou vazamento)",
-    "Funcionamento normal",
-    "Dreno obstruído"
+    "Clampear o dreno indiscriminadamente por tempo prolongado",
+    "Confirmar fístula broncopleural sem verificar conexões",
+    "Concluir que o borbulhamento contínuo prova cura",
+    "Investigar fuga aérea no paciente ou no próprio sistema"
    ],
-   "certa": 1,
-   "explica": "Oscilação = pérvio; borbulhamento = ar escapando.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Borbulhamento contínuo indica passagem de ar e precisa ser localizado: pode haver fuga do paciente ou entrada por conexões e circuito. Não confirma sozinho uma fístula específica; avaliação clínica e do sistema orienta o manejo, evitando clampeamento indiscriminado potencialmente perigoso.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
    ]
   },
   {
    "tipo": "q",
    "n": 27,
-   "pergunta": "Qual cateter periférico oferece maior fluxo?",
+   "pergunta": "Paciente com hemorragia aguda precisa de reposição venosa rápida. Qual característica favorece maior fluxo em acesso periférico?",
    "opcoes": [
-    "24G",
-    "22G",
-    "18G",
-    "14G"
+    "Número de gauge maior como sinônimo de lúmen maior",
+    "Cateter longo e muito fino para aumentar a resistência",
+    "Cateter curto e de grande calibre",
+    "Acesso central como condição obrigatória em qualquer situação"
    ],
-   "certa": 3,
-   "explica": "Quanto menor o número, maior o calibre.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Fluxo depende de calibre, comprimento e condições de infusão. Em uma veia adequada, acessos periféricos curtos e calibrosos permitem reposição rápida; no sistema gauge, um número menor indica maior calibre, e um cateter central longo não é automaticamente a via de maior fluxo.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
    ]
   },
   {
    "tipo": "q",
    "n": 28,
-   "pergunta": "Acesso venoso central com menor risco de infecção:",
+   "pergunta": "É necessário um cateter venoso central. Qual raciocínio é mais apropriado para escolher o sítio?",
    "opcoes": [
-    "Todos iguais",
-    "Subclávia",
-    "Jugular interna",
-    "Femoral"
+    "Escolher apenas pela facilidade de prender o curativo",
+    "Equilibrar risco infeccioso, mecânico, condições clínicas e experiência",
+    "Ignorar risco de pneumotórax e distúrbios de coagulação",
+    "Escolher subclávia como melhor sítio para qualquer paciente"
    ],
    "certa": 1,
-   "explica": "Subclávia: menos infecção, mais pneumotórax.",
-   "tempo": 20,
+   "explica": "Nenhum sítio é ideal em todas as situações. Uma eventual vantagem infecciosa deve ser ponderada com complicações mecânicas, trombose, anatomia, possibilidade de ultrassom e necessidades futuras; técnica asséptica e revisão diária da indicação também reduzem riscos.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
    ]
   }
  ],
  "kahootInfo": {
   "titulo": "Quiz de revisão · Cirurgia AV2",
-  "capa": "{n} perguntas de revisão de pré e pós-operatório, ISC, nutrição, cirurgia segura e dispositivos. Não é um Kahoot de professor. Quanto mais cedo acertar, mais pontos.",
-  "botao": "Começar o quiz"
+  "capa": "{n} questões focadas nas partes prioritárias, com casos clínicos e gabarito contextualizado.",
+  "botao": "Começar revisão",
+  "contextualizado": true
  },
  "casos": [
   {

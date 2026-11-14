@@ -1243,568 +1243,623 @@
   {
    "tipo": "q",
    "n": 1,
-   "pergunta": "Criança com peso para estatura acima de +3 escores Z. Classificação?",
+   "pergunta": "Mulher de 43 anos procura a UBS por um nódulo mamário novo. Ela está fora da faixa do rastreamento populacional. Qual abordagem é adequada?",
    "opcoes": [
-    "Peso adequado",
-    "Sobrepeso",
-    "Magreza",
-    "Obesidade"
+    "Reavaliar somente se surgir dor",
+    "Investigar o nódulo como queixa clínica",
+    "Aguardar a idade do rastreamento",
+    "Solicitar apenas rastreamento bienal"
    ],
-   "certa": 3,
-   "explica": "≥ +2 Z sobrepeso; ≥ +3 Z obesidade.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Rastreamento é dirigido a pessoas sem sintomas; um nódulo novo exige avaliação diagnóstica, independentemente da idade de início do programa. A faixa do rastreamento não pode ser usada para adiar a investigação de uma alteração clínica.",
+   "tempo": 30,
    "secoes": [
-    "r1"
+    "r4",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus"
    ]
   },
   {
    "tipo": "q",
    "n": 2,
-   "pergunta": "Qual sinal de alerta do desenvolvimento é o mais grave?",
+   "pergunta": "Homem de 52 anos, assintomático e sem história familiar relevante, pede PSA no check-up. Qual atitude expressa prevenção quaternária?",
    "opcoes": [
-    "Falar poucas palavras aos 18 meses",
-    "Engatinhar tarde",
-    "Regressão de marcos já adquiridos",
-    "Não andar aos 12 meses"
+    "Solicitar PSA anualmente para todos os homens",
+    "Associar ultrassom prostático para evitar falsos positivos",
+    "Discutir benefícios, danos e preferências antes de decidir",
+    "Recusar a conversa porque o exame nunca pode ser feito"
    ],
    "certa": 2,
-   "explica": "Regressão exige investigação imediata.",
-   "tempo": 20,
+   "explica": "A decisão envolve benefício potencial, falso-positivo, biópsias e sobrediagnóstico. Prevenção quaternária não é proibir qualquer exame: é evitar uma rotina automática sem benefício claramente superior aos danos, usando decisão compartilhada.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r4",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 3,
-   "pergunta": "Criança de 2 anos com vacinas atrasadas desde os 6 meses. Conduta?",
+   "pergunta": "No rastreamento de colo, uma mulher apresenta DNA-HPV positivo para o tipo 18, apesar de citologia reflexa normal. Qual é o próximo passo?",
    "opcoes": [
-    "Aproveitar as doses dadas e completar respeitando intervalos",
-    "Esperar a campanha",
-    "Aplicar só as do ano",
-    "Reiniciar todo o esquema"
+    "Encaminhar para colposcopia",
+    "Repetir apenas a citologia em três anos",
+    "Tratar como câncer invasivo sem biópsia",
+    "Voltar ao rastreamento em cinco anos"
    ],
    "certa": 0,
-   "explica": "Nunca reiniciar esquema.",
-   "tempo": 20,
+   "explica": "Os genótipos 16 e 18 têm risco elevado e indicam colposcopia mesmo quando a citologia está normal. Um resultado citológico normal não anula esse risco; ao mesmo tempo, HPV positivo não equivale a diagnóstico de câncer.",
+   "tempo": 30,
    "secoes": [
-    "r1"
+    "r2",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce"
    ]
   },
   {
    "tipo": "q",
    "n": 4,
-   "pergunta": "Teste do coraçãozinho deve ser feito:",
+   "pergunta": "Mulher de 55 anos, sem sintomas e sem fatores de alto risco, pergunta sobre detecção precoce do câncer de mama no SUS. Qual proposta corresponde ao rastreamento populacional?",
    "opcoes": [
-    "Com 1 mês",
-    "Ao nascer",
-    "Entre 24 e 48 horas",
-    "No 5º dia"
+    "Ultrassom anual em substituição à mamografia",
+    "Mamografia a cada dois anos",
+    "Ressonância semestral para toda mulher",
+    "Mamografia apenas quando surgir nódulo"
    ],
-   "certa": 2,
-   "explica": "Oximetria para cardiopatias críticas.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Na faixa de 50 a 74 anos, a recomendação populacional do Ministério da Saúde é mamografia bienal. Nódulo ou outro sintoma muda a situação para investigação diagnóstica; alto risco também pode exigir um plano diferente do rastreamento habitual.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r2",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus"
    ]
   },
   {
    "tipo": "q",
    "n": 5,
-   "pergunta": "Suspeita de violência contra criança na UBS. Notificar:",
+   "pergunta": "Uma pessoa assintomática fez teste imunoquímico fecal no rastreamento colorretal e o resultado foi positivo. Qual é a sequência adequada?",
    "opcoes": [
-    "Conselho Tutelar e SINAN, já na suspeita",
-    "Só com confirmação",
-    "Só à polícia",
-    "Só com autorização dos pais"
+    "Repetir o teste até obter um resultado negativo",
+    "Prosseguir a investigação com colonoscopia",
+    "Iniciar tratamento de hemorroidas sem investigar",
+    "Concluir que já existe câncer colorretal"
    ],
-   "certa": 0,
-   "explica": "ECA, art. 13.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "O teste fecal positivo sinaliza necessidade de investigação, não confirma câncer. Repeti-lo para tentar obter um negativo pode atrasar o esclarecimento da causa do sangramento; a estratégia de rastreamento depende de completar a etapa diagnóstica.",
+   "tempo": 30,
    "secoes": [
-    "r1"
+    "r4",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 6,
-   "pergunta": "Criança que recebe NutriSUS:",
+   "pergunta": "Um rastreamento antecipa o diagnóstico em três anos, mas não altera a data da morte. A sobrevida desde o diagnóstico aumenta. Como interpretar?",
    "opcoes": [
-    "Suspende o aleitamento",
-    "Recebe vitamina A em dobro",
-    "Recebe também sulfato ferroso",
-    "Não recebe sulfato ferroso nem megadose de vitamina A"
+    "O rastreamento necessariamente prolongou a vida",
+    "O resultado prova que todos devem ser rastreados",
+    "Pode ser viés de tempo ganho, sem redução da mortalidade",
+    "O aumento da sobrevida elimina o sobrediagnóstico"
    ],
-   "certa": 3,
-   "explica": "O sachê já contém os micronutrientes.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Antecipar o início da contagem aumenta a sobrevida medida mesmo sem prolongar a vida. Por isso, avaliar rastreamento exige desfechos relevantes, como redução da mortalidade e balanço de danos, e não apenas anos contados após o diagnóstico.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r4",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 7,
-   "pergunta": "DNA-HPV detecta HPV 18 com citologia normal. Conduta?",
+   "pergunta": "Adulto saudável pede uma bateria anual de exames sem queixa nem fator de risco que justifique a maioria deles. Qual pergunta deve orientar a seleção?",
    "opcoes": [
-    "Repetir em 5 anos",
-    "Repetir em 12 meses",
-    "Colposcopia",
-    "Nada"
+    "Um falso-positivo sempre ajuda a encontrar outra doença?",
+    "O exame está disponível para coleta hoje?",
+    "É possível pedir todos para tranquilizar a pessoa?",
+    "O resultado pode mudar uma conduta com benefício demonstrado?"
    ],
-   "certa": 2,
-   "explica": "16/18 → colposcopia direta.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Um exame sem indicação pode iniciar uma cascata de novos testes, procedimentos e ansiedade. A consulta deve identificar riscos reais e combinar intervenções úteis; pedir mais exames não significa, por si só, prevenir melhor.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r4",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 8,
-   "pergunta": "Mulher de 45 anos assintomática pergunta sobre mamografia no SUS:",
+   "pergunta": "Paciente com infarto prévio apresenta LDL de 110 mg/dL e diz que o valor está próximo do limite do laboratório. Qual raciocínio orienta a prevenção?",
    "opcoes": [
-    "Acesso por decisão compartilhada",
-    "Contraindicada",
-    "Bienal obrigatória",
-    "Anual obrigatória"
+    "A doença cardiovascular prévia exige prevenção secundária",
+    "O escore de baixo risco dispensa tratamento após infarto",
+    "O limite de referência do laboratório define sozinho a meta",
+    "A prevenção depende apenas da ausência de sintomas atuais"
    ],
    "certa": 0,
-   "explica": "40–49: decisão compartilhada; 50–74 bienal.",
-   "tempo": 20,
+   "explica": "Quem já teve evento cardiovascular não deve ser tratado como pessoa de baixo risco por estar assintomático ou próximo do valor de referência laboratorial. As metas e a intensidade das intervenções dependem do risco clínico e da prevenção secundária.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r4",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 9,
-   "pergunta": "Mulher com câncer de mama quer contracepção. Método adequado:",
+   "pergunta": "Adulto sem evento cardiovascular apresenta LDL persistentemente acima de 190 mg/dL. Qual avaliação é mais útil do que aceitar um escore de curto prazo baixo?",
    "opcoes": [
-    "Pílula combinada",
-    "SIU de levonorgestrel",
-    "DIU de cobre",
-    "Minipílula"
+    "Indicar tratamento somente se houver dor torácica",
+    "Desconsiderar o LDL porque a idade reduz o escore",
+    "Investigar hipercolesterolemia grave e causas associadas",
+    "Repetir apenas o colesterol total depois de dez anos"
    ],
    "certa": 2,
-   "explica": "Câncer de mama contraindica todos os hormonais.",
-   "tempo": 20,
+   "explica": "LDL muito elevado merece avaliação própria, incluindo causas secundárias e possível hipercolesterolemia familiar. Um escore baixo por idade jovem pode ocultar exposição cumulativa importante; o risco não se resume ao número calculado para os próximos dez anos.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r4",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 10,
-   "pergunta": "Puérpera de 3 semanas amamentando exclusivamente. Evitar:",
+   "pergunta": "Pessoa sem sintomas tem PA de 148/92 mmHg em uma única consulta, sem sinais de emergência. Qual é a abordagem inicial mais adequada?",
    "opcoes": [
-    "LAM",
-    "Pílula combinada",
-    "Minipílula",
-    "DIU de cobre após 4 semanas"
+    "Excluir hipertensão porque não há cefaleia",
+    "Repetir medidas corretamente e confirmar a elevação",
+    "Diagnosticar hipertensão por essa medida isolada",
+    "Indicar investigação invasiva de rotina"
    ],
    "certa": 1,
-   "explica": "Combinados são evitados na amamentação < 6 meses.",
-   "tempo": 20,
+   "explica": "A técnica de medida e a confirmação em outras ocasiões ou por MAPA/MRPA ajudam a distinguir hipertensão sustentada de efeito do avental branco. A ausência de sintomas não exclui hipertensão; sinais de emergência exigiriam outra abordagem, não esta rotina de confirmação.",
+   "tempo": 30,
    "secoes": [
-    "r2"
+    "r4",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 11,
-   "pergunta": "Na terapia hormonal da menopausa, mulher com útero deve usar:",
+   "pergunta": "Adulto com hipertensão confirmada, PA persistentemente em torno de 164/102 mmHg e sem contraindicações inicia tratamento. Qual estratégia é mais coerente?",
    "opcoes": [
-    "Estrogênio + progestagênio",
-    "Só progestagênio",
-    "Testosterona",
-    "Estrogênio isolado"
+    "Associar medidas de estilo de vida e combinação farmacológica",
+    "Aguardar sintomas para iniciar medicamentos",
+    "Usar só medidas de estilo de vida por tempo indefinido",
+    "Usar dois bloqueadores do sistema renina-angiotensina juntos"
    ],
    "certa": 0,
-   "explica": "Proteção endometrial.",
-   "tempo": 20,
+   "explica": "Em elevações importantes, combinar classes complementares costuma ser necessário para alcançar controle, junto das medidas não farmacológicas. A escolha deve considerar comorbidades e tolerância; associar IECA com BRA não é a combinação de rotina para intensificar o tratamento.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r4",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 12,
-   "pergunta": "Mulher vítima de violência doméstica não quer notificar. Conduta:",
+   "pergunta": "Idosa frágil em tratamento anti-hipertensivo apresenta tontura ao levantar e quedas. Qual é a melhor revisão da conduta?",
    "opcoes": [
-    "Notificar só com BO",
-    "Encaminhar só à delegacia",
-    "Não notificar",
-    "Notificar: independe do consentimento"
+    "Avaliar ortostatismo, medicamentos e metas individualizadas",
+    "Suspender todo tratamento sem avaliação",
+    "Intensificar a medicação para atingir qualquer meta numérica",
+    "Atribuir as quedas à idade e manter o esquema"
    ],
-   "certa": 3,
-   "explica": "Sigilo em relação ao agressor, não à rede.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "O benefício cardiovascular precisa ser equilibrado com hipotensão, quedas e perda de funcionalidade. Medir a pressão em ortostatismo e revisar o esquema permite individualizar o cuidado; nem intensificação automática nem abandono de todo tratamento resolvem esse balanço.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r4",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 13,
-   "pergunta": "Captação ideal do pré-natal até:",
+   "pergunta": "Gestante de dez semanas inicia pré-natal na UBS. Além de solicitar os exames indicados, qual ação deve se repetir durante o acompanhamento?",
    "opcoes": [
-    "8 semanas",
-    "12 semanas",
-    "20 semanas",
-    "28 semanas"
+    "Limitar as consultas à conferência do peso e da ultrassonografia",
+    "Reavaliar risco clínico, obstétrico e social em cada consulta",
+    "Classificar o risco uma vez e mantê-lo até o parto",
+    "Encaminhar toda gestante ao alto risco e encerrar a APS"
    ],
    "certa": 1,
-   "explica": "E no mínimo 6 consultas.",
-   "tempo": 20,
+   "explica": "O pré-natal permite detectar mudanças antes que causem complicações. Uma gestação inicialmente de risco habitual pode mudar de categoria; condições de vida, acesso, violência e suporte também influenciam o plano de cuidado.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 14,
-   "pergunta": "Gestante de 17 semanas com PA 148/94. Classificação:",
+   "pergunta": "Gestante de 12 semanas tem antecedente de pré-eclâmpsia com parto prematuro e não apresenta contraindicação ao AAS. Qual medida preventiva deve ser avaliada no pré-natal?",
    "opcoes": [
-    "Eclâmpsia",
-    "Pré-eclâmpsia",
-    "Hipertensão gestacional",
-    "Hipertensão crônica"
+    "Enalapril para toda gestante de alto risco",
+    "Adiar qualquer prevenção até aparecer proteinúria",
+    "Diurético de rotina para prevenir edema fisiológico",
+    "AAS em baixa dose, iniciado precocemente conforme o protocolo"
    ],
    "certa": 3,
-   "explica": "Antes de 20 semanas = crônica.",
-   "tempo": 20,
+   "explica": "O antecedente indica alto risco de pré-eclâmpsia e justifica avaliar AAS em baixa dose, iniciado a partir de 12 semanas, preferencialmente antes de 16. A prevenção e a vigilância são planejadas com a equipe; encaminhamento ao alto risco não encerra o vínculo e a coordenação pela APS.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.nice.org.uk/guidance/ng133/chapter/Recommendations"
    ]
   },
   {
    "tipo": "q",
    "n": 15,
-   "pergunta": "Anti-hipertensivo proibido na gestação:",
+   "pergunta": "Gestante de 17 semanas apresenta hipertensão confirmada e não conhece medidas anteriores à gravidez. Sem outra explicação, qual classificação é mais compatível?",
    "opcoes": [
-    "Enalapril",
-    "Metildopa",
-    "Nifedipina",
-    "Hidralazina"
+    "Pré-eclâmpsia definida apenas pela pressão",
+    "Eclâmpsia sem convulsão",
+    "Hipertensão gestacional típica",
+    "Hipertensão crônica identificada na gestação"
    ],
-   "certa": 0,
-   "explica": "IECA, BRA e diuréticos são proibidos.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Hipertensão identificada antes de 20 semanas geralmente é classificada como crônica, mesmo quando descoberta no pré-natal. A hipertensão gestacional surge após esse marco; pré-eclâmpsia exige o contexto e os critérios de acometimento associados, não apenas uma medida elevada.",
+   "tempo": 30,
    "secoes": [
-    "r3"
+    "r3",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 16,
-   "pergunta": "AAS para prevenir pré-eclâmpsia deve começar:",
+   "pergunta": "Gestante de 30 semanas tem hipertensão nova, plaquetopenia e alterações hepáticas, sem proteinúria significativa. Qual interpretação é adequada?",
    "opcoes": [
-    "No parto",
-    "Após 28 semanas",
-    "Da 12ª semana, de preferência antes da 16ª",
-    "Só no 3º trimestre"
+    "Reavaliar somente após o parto",
+    "Classificar como hipertensão crônica pela idade gestacional",
+    "Excluir pré-eclâmpsia porque falta proteinúria",
+    "Considerar pré-eclâmpsia com disfunção orgânica"
    ],
-   "certa": 2,
-   "explica": "100–150 mg à noite até 36 semanas.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Proteinúria não é obrigatória quando há hipertensão após 20 semanas acompanhada de disfunção orgânica compatível. Plaquetopenia e comprometimento hepático são sinais relevantes e exigem avaliação obstétrica, em vez de falsa tranquilização por um exame de urina.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 17,
-   "pergunta": "Gestante com teste rápido de sífilis reagente na 1ª consulta:",
+   "pergunta": "Gestante com PA de 170/114 mmHg, cefaleia intensa e escotomas procura a UBS. Qual é a prioridade?",
    "opcoes": [
-    "Encaminhar ao infectologista",
-    "Esperar VDRL para tratar",
-    "Tratar só no 3º trimestre",
-    "Tratar na mesma consulta e colher VDRL"
+    "Organizar atendimento obstétrico de urgência e estabilização",
+    "Aguardar a proteinúria para decidir encaminhamento",
+    "Orientar apenas repouso domiciliar e reduzir sal",
+    "Agendar retorno habitual para confirmar em outra semana"
    ],
-   "certa": 3,
-   "explica": "Na gestante não se espera confirmação.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Hipertensão grave com sintomas neurológicos na gestação sugere risco de complicações maternas e fetais. A prioridade é avaliação e manejo urgentes, com medidas de estabilização conforme o serviço; exames complementares não devem atrasar o atendimento.",
+   "tempo": 30,
    "secoes": [
-    "r3"
+    "r3",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 18,
-   "pergunta": "Intervalo máximo entre doses de benzatina na gestante antes de reiniciar:",
+   "pergunta": "Mulher com hipertensão em uso de enalapril descobre uma gestação. Qual revisão do tratamento é necessária?",
    "opcoes": [
-    "7 dias",
-    "9 dias",
-    "14 dias",
-    "21 dias"
+    "Substituir o IECA por opção apropriada à gestação",
+    "Suspender definitivamente todo anti-hipertensivo",
+    "Manter o IECA porque a pressão está controlada",
+    "Associar um BRA para proteger o feto"
    ],
-   "certa": 1,
-   "explica": "Ideal 7, máximo 9.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "IECA e BRA não são usados para tratar hipertensão durante a gestação por risco fetal. É necessário revisar prontamente o esquema com a equipe e selecionar alternativa adequada, sem abandonar o controle da pressão ou presumir segurança pelo uso prévio.",
+   "tempo": 30,
    "secoes": [
-    "r3"
+    "r3",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 19,
-   "pergunta": "Glicemia de jejum de 98 mg/dL na 1ª consulta da gestante:",
+   "pergunta": "Na primeira consulta do pré-natal, o teste rápido treponêmico é reagente e não há documentação de tratamento anterior adequado. Qual atitude evita atraso desnecessário?",
    "opcoes": [
-    "Repetir em 6 meses",
-    "Diabetes gestacional",
-    "Normal",
-    "Diabetes prévio"
+    "Iniciar tratamento indicado e colher VDRL para avaliação e seguimento",
+    "Descartar sífilis porque não existem lesões",
+    "Tratar apenas depois de confirmar infecção na parceria",
+    "Aguardar semanas pelo VDRL para só então tratar"
    ],
-   "certa": 1,
-   "explica": "92–125 = DMG.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Na gestação, a prevenção da transmissão vertical depende de diagnóstico e tratamento oportunos. O VDRL ajuda a estabelecer o título basal e acompanhar a resposta, mas não deve ser usado para adiar o tratamento quando ele está indicado; a história define o estadiamento.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 20,
-   "pergunta": "Bacteriúria assintomática na gestante:",
+   "pergunta": "Gestante tratada para sífilis retorna, e a parceria sexual ainda não foi avaliada. Qual ação é essencial para o cuidado continuar efetivo?",
    "opcoes": [
-    "Não tratar",
-    "Tratar no puerpério",
-    "Tratar sempre",
-    "Tratar só se febre"
+    "Considerar a parceria irrelevante após a primeira dose materna",
+    "Esperar sintomas na parceria antes de qualquer avaliação",
+    "Avaliar e manejar a parceria e prevenir nova exposição",
+    "Encerrar o seguimento sorológico da gestante"
    ],
    "certa": 2,
-   "explica": "Risco de pielonefrite.",
-   "tempo": 20,
+   "explica": "Mesmo um esquema materno adequado não impede uma nova infecção por exposição posterior. O cuidado inclui manejo das parcerias, prevenção, documentação do tratamento e seguimento da gestante; tratar só o resultado do exame deixa uma parte importante do risco sem abordagem.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 21,
-   "pergunta": "Causa mais comum de hemorragia pós-parto:",
+   "pergunta": "Gestante sem diagnóstico prévio de diabetes chega a 25 semanas com avaliação inicial sem alteração. Qual investigação faz parte do rastreamento nessa fase?",
    "opcoes": [
-    "Coagulopatia",
-    "Atonia uterina",
-    "Trauma",
-    "Retenção de tecido"
+    "Dispensar rastreamento porque a glicemia inicial foi normal",
+    "Teste oral de tolerância à glicose de 75 g, conforme protocolo",
+    "Esperar poliúria e perda de peso para investigar",
+    "Usar somente glicemia capilar isolada após o almoço"
    ],
    "certa": 1,
-   "explica": "Tônus.",
-   "tempo": 20,
+   "explica": "A resistência à insulina aumenta ao longo da gestação, e uma avaliação inicial normal não exclui diabetes gestacional posterior. O teste de 75 g entre 24 e 28 semanas faz parte do rastreamento previsto no acompanhamento, sem depender de sintomas.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g1"
    ]
   },
   {
    "tipo": "q",
    "n": 22,
-   "pergunta": "Meta de pressão para a maioria dos hipertensos (SBC 2025):",
+   "pergunta": "Gestante assintomática tem urocultura com crescimento significativo e amostra adequadamente coletada. Qual é a diferença em relação à maioria dos adultos não gestantes?",
    "opcoes": [
-    "< 140/90",
-    "< 130/80",
-    "< 120/70",
-    "< 150/90"
+    "A ausência de disúria impede qualquer tratamento",
+    "O tratamento é indicado apenas se surgir febre",
+    "Todo resultado exige internação e antibiótico intravenoso",
+    "A bacteriúria assintomática na gestação deve ser tratada"
    ],
-   "certa": 1,
-   "explica": "Meta < 130/80.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Na gestação, tratar bacteriúria assintomática reduz o risco de complicações, especialmente pielonefrite. A escolha depende do antibiograma e da segurança na gravidez; a regra não deve ser extrapolada para tratar indiscriminadamente culturas positivas em adultos não gestantes.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r3",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 23,
-   "pergunta": "Hipertenso estágio 2 sem outras particularidades. Início:",
+   "pergunta": "Mulher com enxaqueca com aura quer iniciar uma pílula combinada. Qual é a orientação mais adequada?",
    "opcoes": [
-    "Só mudança de estilo de vida",
-    "Três fármacos",
-    "Dois fármacos combinados",
-    "Monoterapia"
+    "Liberar estrogênio se a aura ocorrer poucas vezes",
+    "Prescrever combinado porque ela é jovem",
+    "Trocar a pílula por adesivo combinado para eliminar o risco",
+    "Escolher alternativa contraceptiva sem estrogênio"
    ],
-   "certa": 2,
-   "explica": "Monoterapia é exceção.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Enxaqueca com aura é uma contraindicação importante aos contraceptivos combinados pelo risco vascular. Trocar a via para adesivo ou anel não retira o estrogênio; a escolha deve considerar opções sem esse componente e as preferências da pessoa.",
+   "tempo": 30,
    "secoes": [
-    "r4"
+    "r2",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/contraception/hcp/usspr/classifications-mec-contraception.html"
    ]
   },
   {
    "tipo": "q",
    "n": 24,
-   "pergunta": "Paciente diabético: estratificação do risco cardiovascular:",
+   "pergunta": "Mulher com útero, sintomas vasomotores importantes e sem contraindicação à terapia hormonal sistêmica discute tratamento da menopausa. Qual princípio é necessário?",
    "opcoes": [
-    "Depende do LDL",
-    "Calcular PREVENT",
-    "Já é alto risco",
-    "Baixo risco"
+    "Usar estrogênio sistêmico isolado em toda mulher",
+    "Prescrever terapia hormonal como contraceptivo",
+    "Proteger o endométrio ao usar estrogênio sistêmico",
+    "Usar hormônios para prevenir qualquer doença crônica"
    ],
    "certa": 2,
-   "explica": "Diabetes = alto risco sem escore.",
-   "tempo": 20,
+   "explica": "Em quem tem útero, o estrogênio sistêmico requer proteção endometrial apropriada, geralmente com progestagênio. A indicação é individualizada para sintomas e riscos; terapia hormonal da menopausa não funciona como contracepção nem deve ser proposta como prevenção universal de doenças.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r2",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 25,
-   "pergunta": "Homem de 50 anos sem sintomas pede PSA. Abordagem:",
+   "pergunta": "Idoso com várias doenças mantém autonomia. Qual informação melhor orienta um plano de cuidado centrado na pessoa?",
    "opcoes": [
-    "Pedir de rotina",
-    "Proibir",
-    "Decisão compartilhada explicando riscos e benefícios",
-    "Pedir com toque retal"
+    "Quantidade de exames solicitados no último ano",
+    "Idade cronológica como único critério de dependência",
+    "Capacidade funcional, objetivos e suporte disponível",
+    "Número de diagnósticos no prontuário isoladamente"
    ],
    "certa": 2,
-   "explica": "Prevenção quaternária.",
-   "tempo": 20,
+   "explica": "Na saúde do idoso, funcionalidade e autonomia ajudam a definir prioridades reais, mesmo diante de multimorbidade. Avaliar atividades diárias, cognição, mobilidade e apoio permite adaptar o cuidado ao que a pessoa consegue e deseja fazer, sem reduzir a avaliação à idade.",
+   "tempo": 30,
    "secoes": [
-    "r4"
+    "r5",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 26,
-   "pergunta": "Rastreamento colorretal no SUS:",
+   "pergunta": "Idosa previamente orientada fica desatenta e confusa em dois dias, com alternância entre sonolência e agitação. Qual é a abordagem prioritária?",
    "opcoes": [
-    "Toque retal anual",
-    "Nenhum",
-    "Sangue oculto imunoquímico bienal de 50 a 75 anos",
-    "Colonoscopia anual a partir dos 40"
+    "Iniciar sedação contínua sem procurar a causa",
+    "Reconhecer possível delirium e investigar precipitantes",
+    "Concluir demência irreversível pelo início da confusão",
+    "Tratar como envelhecimento esperado"
    ],
-   "certa": 2,
-   "explica": "FIT positivo → colonoscopia.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Início agudo, flutuação e desatenção são características de delirium. É necessário procurar causas como infecção, medicamentos, dor e alterações metabólicas; rotular o quadro como demência pode atrasar o tratamento de uma condição potencialmente reversível.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r5",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 27,
-   "pergunta": "O viés de tempo ganho no rastreamento:",
+   "pergunta": "Idoso usa IECA e diurético; após iniciar AINE e apresentar desidratação, a creatinina sobe. Qual revisão é mais pertinente?",
    "opcoes": [
-    "Reduz mortalidade real",
-    "Aumenta a sobrevida sem mudar a data da morte",
-    "Seleciona pessoas saudáveis",
-    "Detecta tumores lentos"
+    "Acrescentar outro AINE para poupar o primeiro",
+    "Atribuir a elevação apenas à idade",
+    "Manter todas as medicações sem avaliar hidratação",
+    "Investigar lesão renal e a interação entre os medicamentos"
    ],
-   "certa": 1,
-   "explica": "Por isso avaliar mortalidade, não sobrevida.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "A associação de AINE, bloqueador do sistema renina-angiotensina e diurético pode comprometer a perfusão renal, sobretudo com hipovolemia. O caso pede avaliação da função renal, do estado volêmico e do esquema completo, não apenas troca entre anti-inflamatórios.",
+   "tempo": 30,
    "secoes": [
-    "r4"
+    "r5",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 28,
-   "pergunta": "Pai com infarto aos 58 anos é história familiar precoce?",
+   "pergunta": "Idoso cai repetidamente em casa e usa benzodiazepínico à noite. Qual intervenção é mais adequada?",
    "opcoes": [
-    "Só se diabético",
-    "Não: corte para homem é < 55 anos",
-    "Só se fumante",
-    "Sim"
+    "Considerar quedas inevitáveis após certa idade",
+    "Manter sedativo e avaliar somente o piso da casa",
+    "Revisar fármacos, marcha, visão, ortostatismo e ambiente",
+    "Indicar repouso no leito como prevenção permanente"
    ],
-   "certa": 1,
-   "explica": "Mulher < 65 anos.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Quedas geralmente resultam de fatores combinados e não são consequência obrigatória do envelhecimento. Medicamentos sedativos, hipotensão, alterações da marcha e barreiras domiciliares são alvos de uma avaliação multifatorial, preservando mobilidade e independência.",
+   "tempo": 30,
    "secoes": [
-    "r4"
+    "r5",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 29,
-   "pergunta": "No índice de Katz, a primeira atividade perdida é:",
+   "pergunta": "Uma família relata perda gradual de memória, mas também tristeza, isolamento e uso de vários sedativos no idoso. Qual é o próximo passo mais útil?",
    "opcoes": [
-    "Alimentação",
-    "Banho",
-    "Transferência",
-    "Continência"
+    "Avaliar cognição, humor, medicamentos e repercussão funcional",
+    "Prescrever sedativo adicional para melhorar os testes",
+    "Excluir depressão porque há dificuldade de memória",
+    "Confirmar Alzheimer apenas pela queixa familiar"
    ],
-   "certa": 1,
-   "explica": "Alimentação é a última.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Queixa de memória exige avaliação mais ampla do que um teste isolado. Depressão, medicamentos e outras condições podem causar ou agravar sintomas cognitivos; a repercussão funcional e a evolução temporal ajudam a organizar o diagnóstico e o plano de cuidado.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r5",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 30,
-   "pergunta": "Idoso com confusão de início agudo, flutuante, desatento:",
+   "pergunta": "Na puericultura, a curva de crescimento mostra desaceleração persistente e cruzamento descendente de canais. Qual atitude é mais adequada?",
    "opcoes": [
-    "Senescência",
-    "Demência",
-    "Delirium",
-    "Depressão"
+    "Aguardar o peso ficar muito baixo para investigar",
+    "Diagnosticar desnutrição sem conferir as medidas",
+    "Avaliar apenas se o último ponto ainda está na faixa normal",
+    "Rever medidas, trajetória, alimentação e condições clínicas"
    ],
-   "certa": 2,
-   "explica": "Emergência: buscar a causa.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Uma trajetória que muda de padrão pode exigir avaliação antes de atingir um ponto de corte extremo. É preciso confirmar a qualidade da medida e interpretar a curva com a história alimentar, clínica e social; um único número não resume o crescimento.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r1",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 31,
-   "pergunta": "Três critérios de Fried presentes:",
+   "pergunta": "Uma criança deixou de usar palavras e habilidades motoras que já havia adquirido. Qual conduta é mais apropriada?",
    "opcoes": [
-    "Dependente",
-    "Robusto",
-    "Pré-frágil",
-    "Frágil"
+    "Orientar apenas estimulação sem investigar a regressão",
+    "Aguardar a próxima faixa etária para repetir a triagem",
+    "Investigar regressão do desenvolvimento e encaminhar conforme avaliação",
+    "Atribuir a perda de habilidades a variação normal"
    ],
-   "certa": 3,
-   "explica": "0 robusto; 1–2 pré-frágil; ≥ 3 frágil.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Perder marcos adquiridos é um sinal de alerta diferente de alcançar uma habilidade um pouco mais tarde. A regressão exige avaliação clínica e investigação oportuna; o acompanhamento não deve se limitar a tranquilizar a família ou esperar uma nova etapa.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r1",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 32,
-   "pergunta": "Idoso em uso de AINE, IECA e diurético evolui com creatinina elevada:",
+   "pergunta": "Uma criança retorna com calendário vacinal atrasado, mas há registro de doses válidas. Qual princípio deve guiar a atualização?",
    "opcoes": [
-    "Tripla ameaça (lesão renal aguda)",
-    "Delirium",
-    "Cascata prescritiva",
-    "Síndrome serotoninérgica"
+    "Adiar as vacinas até o próximo aniversário",
+    "Aproveitar as doses válidas e completar o esquema",
+    "Reiniciar automaticamente todas as séries",
+    "Aplicar novamente todas as doses na mesma consulta"
    ],
-   "certa": 0,
-   "explica": "Compromete perfusão e autorregulação renal.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Em geral, atraso não invalida doses documentadas e corretamente aplicadas. A atualização deve conferir idade, intervalos, contraindicações e o calendário vigente, evitando tanto perder oportunidades de vacinação quanto repetir séries sem necessidade.",
+   "tempo": 30,
    "secoes": [
-    "r5"
+    "r1",
+    "g2"
    ]
   },
   {
    "tipo": "q",
    "n": 33,
-   "pergunta": "Timed Up and Go de 22 segundos:",
+   "pergunta": "Na consulta, surgem sinais consistentes de possível violência contra criança, sem confirmação pericial. Qual é a postura adequada da APS?",
    "opcoes": [
-    "Baixo risco de quedas",
-    "Risco moderado",
-    "Normal",
-    "Alto risco de quedas"
+    "Proteger a criança, registrar e acionar a rede de notificação e cuidado",
+    "Limitar-se a orientar a família a procurar ajuda",
+    "Esperar comprovação judicial antes de agir",
+    "Exigir autorização do possível agressor para notificar"
    ],
-   "certa": 3,
-   "explica": "> 20 s alto risco.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "A suspeita já demanda medidas de proteção e os encaminhamentos de notificação previstos, incluindo a articulação com o Conselho Tutelar e a vigilância. A equipe deve registrar achados e seguir acompanhando; notificar não substitui assistência nem exige investigação policial concluída.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r1",
+    "g2"
    ]
   }
  ],
  "kahootInfo": {
   "titulo": "Quiz de revisão · MFC 2ª unidade",
-  "capa": "{n} perguntas de revisão sobre criança, mulher, gestante, adulto e idoso. Não é um Kahoot de professor. Quanto mais cedo acertar, mais pontos.",
-  "botao": "Começar o quiz"
+  "capa": "{n} questões focadas nas partes prioritárias, com casos clínicos e gabarito contextualizado.",
+  "botao": "Começar revisão",
+  "contextualizado": true
  }
 }

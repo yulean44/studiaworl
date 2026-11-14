@@ -1,8 +1,9 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=38";
-import { ic, ICONES_MATERIA } from "./icons.js?v=38";
-import { FIG } from "./figuras.js?v=38";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=38";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=38";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=39";
+import { ic, ICONES_MATERIA } from "./icons.js?v=39";
+import { FIG } from "./figuras.js?v=39";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=39";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=39";
+import { semanaDeEstudos } from "./relatorio.js?v=39";
 
 /* =========================================================
    utilidades
@@ -518,7 +519,7 @@ temaMundo = () => mundo?.tema?.(tema);
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=38"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=39"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -551,6 +552,22 @@ function aplicaMundo() { if (mundo) mundo.aplica(estadoMundo()); document.body.c
    início
    ========================================================= */
 function saudacao() { const h = new Date().getHours(); return h < 5 ? "Boa madrugada" : h < 12 ? "Bom dia" : h < 18 ? "Boa tarde" : "Boa noite"; }
+let metricaInicio = "min";
+function relatorioInicio() {
+  const r = semanaDeEstudos(S.dias), foco = metricaInicio === "min", unidade = foco ? "min" : "cards";
+  const max = Math.max(1, ...r.dias.map(d => d[metricaInicio]));
+  const descricao = r.dias.map(d => `${d.rotulo}: ${d[metricaInicio]} ${unidade}`).join("; ");
+  const barras = r.dias.map((d, i) => {
+    const valor = d[metricaInicio], altura = valor / max * 62, x = 10 + i * 40;
+    return `<g><title>${esc(d.rotulo)} · ${valor} ${unidade}</title><rect class="rs-barra${d.hoje ? " hoje" : ""}" x="${x}" y="${82 - altura}" width="20" height="${altura}" rx="4"/><text x="${x + 10}" y="${Math.max(12, 75 - altura)}" text-anchor="middle">${esc(valor)}</text><text class="rs-dia${d.hoje ? " hoje" : ""}" x="${x + 10}" y="103" text-anchor="middle">${d.dia}</text></g>`;
+  }).join("");
+  return `<section class="vidro card relatorio-inicio" aria-labelledby="rsTitulo">
+    <div class="rs-cab"><h2 class="h-sec" id="rsTitulo">Últimos 7 dias</h2><div class="rs-metricas" role="group" aria-label="Métrica do gráfico"><button type="button" data-rs="min" aria-pressed="${foco}" title="Minutos de foco por dia">Foco</button><button type="button" data-rs="cards" aria-pressed="${!foco}" title="Cards estudados por dia">Cards</button></div></div>
+    <div class="rs-numeros"><div><b>${fmtMin(r.min)}</b><span>Foco</span></div><div><b>${r.cards}</b><span>Cards</span></div><div title="Percentual de acertos nos flashcards"><b>${r.taxa == null ? "—" : r.taxa + "%"}</b><span>Acertos</span></div></div>
+    <svg class="rs-grafico" viewBox="0 0 280 112" role="img" aria-label="${esc((foco ? "Minutos de foco" : "Cards estudados") + " nos últimos sete dias. " + descricao)}"><line x1="5" y1="83" x2="275" y2="83"/>${barras}</svg>
+    <div class="rs-rodape"><p class="rs-legenda" title="Dias com foco, cards ou leituras">${r.ativos ? `${unidade}/dia · ${r.ativos} de 7 dias ativos` : "Seu gráfico cresce com seu estudo."}</p><button type="button" class="rs-mais" data-go="progresso" aria-label="Ver progresso completo">Ver mais</button></div>
+  </section>`;
+}
 function renderInicio() {
   const h = diaObj(), D = diarias(), j = JORNADA[S.jornada], m = metricas();
   const ult = S.ultimo && materia(S.ultimo.mat) && materia(S.ultimo.mat).secoes.find(s => s.id === S.ultimo.sid);
@@ -573,6 +590,7 @@ function renderInicio() {
         </div>
       </div>
       <div class="dir">
+        <div id="resumoInicio">${relatorioInicio()}</div>
         <div class="vidro card">
           <h2 class="h-sec">Missões de hoje<span class="grow"></span><span class="hs-meta">${D.bonus ? "completas" : "3 = criatura nova"}</span></h2>
           ${D.ids.map(id => { const q = DIARIAS.find(x => x.id === id); if (!q) return ""; const v = Math.min(q.alvo, q.meta(h)), ok = !!D.pegas[id];
@@ -584,6 +602,12 @@ function renderInicio() {
       </div>
     </div>`;
   $("#btCont")?.addEventListener("click", e => { e.preventDefault(); abreSecao(S.ultimo.mat, S.ultimo.sid); });
+  $("#resumoInicio").addEventListener("click", e => {
+    const b = e.target.closest("[data-rs]"); if (!b) return;
+    metricaInicio = b.dataset.rs === "cards" ? "cards" : "min";
+    $("#resumoInicio").innerHTML = relatorioInicio();
+    $(`[data-rs="${metricaInicio}"]`, $("#resumoInicio"))?.focus({ preventScroll: true });
+  });
 }
 
 /* =========================================================
@@ -1282,7 +1306,7 @@ function renderNotasMat(corpo, m) {
 function renderKahootMat(corpo, m) {
   const f = kSec && kSec.mat === m.id ? kSec : null;
   corpo.innerHTML = (f ? `<div class="vidro filtroq"><span class="kicker" style="flex:1">Só as questões de · ${esc(f.nome)}</span><button class="btn sm" id="kTodas">Ver todas as questões</button></div>` : "")
-    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=38${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
+    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=39${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
   $("#kTodas")?.addEventListener("click", () => { kSec = null; renderKahootMat(corpo, m); });
 }
 function zoomImg(src, alt = "Imagem ampliada") {
@@ -1687,7 +1711,7 @@ document.querySelector(".marca").style.cursor = "default";
    ========================================================= */
 const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
 async function carregaFabrica() {
-  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=38`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
+  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=39`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
   FABRICA = r.filter(Boolean);
 }
 async function conectaNuvem() {
@@ -1741,7 +1765,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=38");
+      const mod = await import("./conta.js?v=39");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }

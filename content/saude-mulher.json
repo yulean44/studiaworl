@@ -783,790 +783,969 @@
   {
    "tipo": "q",
    "n": 1,
-   "pergunta": "Mulher de 28 anos com prurido vulvar intenso e corrimento branco grumoso; pH 4,0. Diagnóstico?",
+   "pergunta": "Mulher com prurido vulvar intenso, eritema e corrimento branco grumoso apresenta pH vaginal de 4,0. Qual hipótese é mais compatível?",
    "opcoes": [
-    "Cervicite",
+    "Vaginose bacteriana típica",
+    "Tricomoníase típica",
     "Candidíase vulvovaginal",
-    "Vaginose bacteriana",
-    "Tricomoníase"
+    "Cervicite gonocócica como explicação única"
    ],
-   "certa": 1,
-   "explica": "Prurido + grumoso + pH normal.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Prurido e inflamação vulvar, associados a corrimento grumoso e pH habitualmente normal, favorecem candidíase. Vaginose e tricomoníase costumam elevar o pH; a avaliação pode ser complementada por microscopia ou testes, sobretudo em quadros recorrentes ou de diagnóstico incerto.",
+   "tempo": 30,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm"
    ]
   },
   {
    "tipo": "q",
    "n": 2,
-   "pergunta": "Corrimento acinzentado, homogêneo, com odor de peixe pior após a relação, sem prurido; pH 5,0 e clue cells. Tratamento?",
+   "pergunta": "Mulher não gestante apresenta corrimento homogêneo acinzentado, odor característico, pH elevado e clue cells, sem dor pélvica. Qual tratamento corresponde à hipótese principal?",
    "opcoes": [
-    "Metronidazol 500 mg 12/12 h por 7 dias",
-    "Ceftriaxona + azitromicina",
-    "Nistatina 14 dias",
-    "Fluconazol 150 mg"
+    "Ceftriaxona isolada como tratamento da flora vaginal",
+    "Fluconazol em dose única para toda alteração do pH",
+    "Aciclovir para eliminar clue cells",
+    "Metronidazol oral por sete dias, no esquema recomendado"
    ],
-   "certa": 0,
-   "explica": "Vaginose bacteriana.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "O conjunto favorece vaginose bacteriana, uma disbiose com redução de lactobacilos e aumento de outros microrganismos. Metronidazol é uma opção recomendada; antifúngico não trata essa disbiose, e é preciso distinguir vaginite de cervicite e de infecção do trato genital superior.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 3,
-   "pergunta": "Na vaginose bacteriana, a parceria deve ser:",
+   "pergunta": "Pessoa relata episódios recorrentes de corrimento e usa fluconazol por conta própria, mas os sintomas variam e não houve confirmação do diagnóstico. Qual é o passo mais útil?",
    "opcoes": [
-    "Tratada só se sintomática",
-    "Tratada sempre",
-    "Tratada com fluconazol",
-    "Não tratada rotineiramente"
+    "Repetir fluconazol indefinidamente por todo corrimento ser fúngico",
+    "Escolher outro medicamento apenas pela cor relatada",
+    "Associar corticoide sistêmico sem reexaminar",
+    "Reavaliar clinicamente e investigar a causa do corrimento"
    ],
    "certa": 3,
-   "explica": "Vaginose não é IST.",
-   "tempo": 20,
+   "explica": "Corrimento recorrente não comprova candidíase nem significa necessariamente resistência ao antifúngico. História, exame, pH e investigação microbiológica conforme o caso ajudam a distinguir candidíase, vaginose, tricomoníase, cervicite e outras causas, evitando tratar repetidamente uma hipótese errada.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view",
+    "https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm"
    ]
   },
   {
    "tipo": "q",
    "n": 4,
-   "pergunta": "Corrimento amarelo-esverdeado, bolhoso, com colo em morango. Conduta com a parceria?",
+   "pergunta": "Tricomoníase foi identificada em mulher com corrimento e inflamação vaginal. Qual medida é importante para evitar reinfecção?",
    "opcoes": [
-    "Fluconazol",
-    "Só se tiver sintomas",
-    "Não tratar",
-    "Tratar com metronidazol 2 g dose única, mesmo assintomática"
+    "Tratar a pessoa e as parcerias sexuais conforme o protocolo",
+    "Tratar apenas se a parceria também tiver sintomas",
+    "Encerrar o cuidado sem orientar prevenção durante o tratamento",
+    "Usar antifúngico na parceria para cobrir qualquer corrimento"
    ],
-   "certa": 3,
-   "explica": "Tricomoníase é IST: parceria sempre.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Tricomoníase é uma IST e parcerias podem estar infectadas sem sintomas. Tratamento dos envolvidos e orientação sobre relações sexuais durante o manejo reduzem reinfecção; isso difere de aplicar a mesma conduta indiscriminadamente a toda causa de corrimento.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 5,
-   "pergunta": "Quantos critérios de Amsel são necessários para vaginose bacteriana?",
+   "pergunta": "Ao exame há corrimento homogêneo, pH maior que 4,5, teste das aminas positivo e clue cells. Qual interpretação usa corretamente esses achados?",
    "opcoes": [
-    "1",
-    "2",
-    "3",
-    "4"
+    "pH elevado isoladamente define infecção gonocócica",
+    "Teste das aminas confirma herpes genital",
+    "Clue cells demonstram infecção por Candida",
+    "O conjunto de critérios clínicos favorece vaginose bacteriana"
    ],
-   "certa": 2,
-   "explica": "≥ 3 de 4.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Esses achados compõem os critérios de Amsel, dos quais pelo menos três sustentam o diagnóstico clínico de vaginose. O raciocínio é combinar sinais, não usar o pH sozinho como identificação do agente; candidíase tem outro padrão clínico e microscópico.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 6,
-   "pergunta": "Gestante com candidíase vulvovaginal. Tratamento indicado:",
+   "pergunta": "Gestante com candidíase vulvovaginal sintomática procura tratamento. Qual opção é preferida?",
    "opcoes": [
-    "Metronidazol",
-    "Fluconazol oral",
-    "Azólico tópico intravaginal",
-    "Não tratar"
+    "Tratar apenas a parceria e observar a gestante",
+    "Azólico tópico vaginal por sete dias",
+    "Metronidazol por se tratar de qualquer vaginite",
+    "Fluconazol oral em dose única como rotina na gestação"
    ],
-   "certa": 2,
-   "explica": "Na gestação, só tópico.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Na gestação, recomenda-se azólico tópico por sete dias para candidíase vulvovaginal. Fluconazol oral não é a opção de rotina nesse contexto; o diagnóstico de candidíase também não justifica tratar automaticamente a parceria assintomática.",
+   "tempo": 30,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm"
    ]
   },
   {
    "tipo": "q",
    "n": 7,
-   "pergunta": "Ao especular: mucopus endocervical e colo que sangra ao toque do cotonete. Conduta?",
+   "pergunta": "Ao especular, há secreção mucopurulenta endocervical e sangramento fácil ao toque do colo. Qual linha de avaliação é mais adequada?",
    "opcoes": [
-    "Metronidazol 7 dias",
-    "Fluconazol",
-    "Aguardar NAAT",
-    "Ceftriaxona 500 mg IM + azitromicina 1 g VO agora"
+    "Investigar cervicite, especialmente gonococo e clamídia",
+    "Presumir candidíase pelo simples achado de secreção",
+    "Interpretar como vaginose sem avaliar o colo",
+    "Encaminhar diretamente para excisão do colo sem investigação"
    ],
-   "certa": 3,
-   "explica": "Tratar cervicite empiricamente.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Mucopus endocervical e friabilidade sugerem cervicite, que pode ser causada por gonococo ou clamídia. Avaliar risco, testes, possibilidade de seguimento e sinais de DIP ajuda a definir o tratamento; uma infecção cervical não deve ser confundida com qualquer corrimento vaginal.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 8,
-   "pergunta": "Qual percentual aproximado das cervicites é assintomático?",
+   "pergunta": "A parceria de uma mulher assintomática recebeu diagnóstico de clamídia. Qual afirmação deve orientar a consulta?",
    "opcoes": [
-    "10–20%",
-    "30–40%",
-    "50%",
-    "70–80%"
+    "Ausência de sintomas não exclui infecção nem dispensa avaliação da parceria",
+    "Cervicite só existe quando há dor ou corrimento",
+    "É necessário esperar surgir febre para avaliar a exposição",
+    "Exame especular normal elimina a necessidade de considerar testes"
    ],
-   "certa": 3,
-   "explica": "Por isso o rastreio em jovens.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Infecções cervicais podem permanecer assintomáticas e ainda produzir complicações ou manter transmissão. A exposição conhecida exige avaliação e manejo conforme o protocolo; porcentagens decoradas de casos silenciosos são menos úteis do que reconhecer esse risco na decisão clínica.",
+   "tempo": 45,
    "secoes": [
-    "r1"
+    "r1",
+    "g1"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 9,
-   "pergunta": "Teste rápido treponêmico reagente e VDRL 1:16 em paciente sem tratamento prévio e sem saber quando se infectou. Tratamento?",
+   "pergunta": "Pessoa sem tratamento prévio tem testes compatíveis com sífilis, não apresenta sintomas e não sabe quando adquiriu a infecção. Sem sinais de acometimento neurológico, qual esquema corresponde à duração ignorada?",
    "opcoes": [
-    "Benzatina 2,4 mi semanal por 3 semanas",
-    "Doxiciclina 15 dias",
-    "Cristalina IV 14 dias",
-    "Benzatina 2,4 mi dose única"
+    "Penicilina benzatina em dose única apenas pelo título do VDRL",
+    "Não tratar enquanto não for possível datar a infecção",
+    "Penicilina benzatina semanal, em três doses de 2,4 milhões de UI",
+    "Penicilina cristalina em qualquer sífilis assintomática"
    ],
-   "certa": 0,
-   "explica": "Duração ignorada = tardia.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Sem evidência de infecção recente, a sífilis latente de duração ignorada é tratada como tardia, com três doses semanais de benzatina. O título do VDRL não define sozinho o tempo de infecção; manifestações neurológicas ou oculares exigiriam avaliação e esquema próprios.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 10,
-   "pergunta": "Úlcera genital única, indolor, de base endurecida. Hipótese?",
+   "pergunta": "Paciente apresenta úlcera genital indolor, de base endurecida, após exposição sexual. Qual é a melhor interpretação inicial?",
    "opcoes": [
-    "Donovanose",
-    "Herpes",
-    "Sífilis primária",
-    "Cancroide"
+    "Excluir IST porque a úlcera não dói",
+    "Confirmar sífilis somente pela fotografia da lesão",
+    "Suspeitar de sífilis primária e realizar avaliação e testes apropriados",
+    "Tratar como candidíase antes de considerar outras causas"
    ],
    "certa": 2,
-   "explica": "Cancro duro.",
-   "tempo": 20,
+   "explica": "O aspecto descrito é compatível com cancro sifilítico, mas a apresentação pode variar e há outras causas de úlcera genital. História, exame e testes orientam o manejo; ausência de dor não torna a lesão benigna nem substitui investigação etiológica.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 11,
-   "pergunta": "Febre e mialgia 6 h após a benzatina. O que é?",
+   "pergunta": "Seis horas após a primeira dose de penicilina para sífilis, paciente apresenta febre, calafrios e mialgia, sem urticária, angioedema ou alteração respiratória. Qual hipótese é mais compatível?",
    "opcoes": [
-    "Reação de Jarisch-Herxheimer",
-    "Neurossífilis",
-    "Alergia à penicilina",
-    "Falha terapêutica"
+    "Resistência do Treponema demonstrada nesse intervalo",
+    "Anafilaxia comprovada por toda febre após penicilina",
+    "Necessidade de nunca mais usar penicilinas",
+    "Reação de Jarisch–Herxheimer"
    ],
-   "certa": 0,
-   "explica": "Reação ao tratamento, não alergia.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Jarisch–Herxheimer é uma reação inflamatória que pode ocorrer após iniciar o tratamento da sífilis e não equivale a alergia à penicilina. É necessário avaliar o episódio e a gravidade; manifestações de anafilaxia exigiriam outra abordagem, e gestantes merecem atenção especial.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 12,
-   "pergunta": "Resposta adequada após tratar sífilis recente:",
+   "pergunta": "No seguimento da sífilis, o VDRL realizado pelo mesmo método caiu de 1:32 para 1:8. O que essa mudança representa?",
    "opcoes": [
-    "Queda de 2 diluições em até 6 meses",
-    "Qualquer queda",
-    "Treponêmico negativo",
-    "VDRL negativo em 1 mês"
+    "Queda de apenas uma diluição",
+    "Queda de quatro vezes, equivalente a duas diluições",
+    "Resultado sem utilidade para o seguimento",
+    "Prova de que a pessoa nunca poderá se reinfectar"
    ],
-   "certa": 0,
-   "explica": "Ex.: 1:32 → 1:8.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "A sequência 1:32 para 1:16 para 1:8 corresponde a duas diluições, uma redução de quatro vezes. A interpretação da resposta ainda depende do estágio, do tempo de acompanhamento e de novas exposições; a queda não dispensa seguimento nem torna a pessoa imune.",
+   "tempo": 30,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 13,
-   "pergunta": "Gestante com sífilis e alergia comprovada à penicilina:",
+   "pergunta": "Gestante com sífilis tem história confirmada de alergia imediata à penicilina. Qual estratégia permite o tratamento adequado para prevenir sífilis congênita?",
    "opcoes": [
-    "Azitromicina",
-    "Ceftriaxona",
-    "Doxiciclina",
-    "Dessensibilização e penicilina"
+    "Adiar todo tratamento até depois do parto",
+    "Dessensibilização em ambiente apropriado seguida de penicilina",
+    "Presumir que qualquer antibiótico previne transmissão vertical igualmente",
+    "Substituir por doxiciclina durante toda a gestação"
    ],
-   "certa": 3,
-   "explica": "Só a penicilina trata o feto.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "A penicilina é o tratamento com eficácia comprovada para tratar a gestante e prevenir sífilis congênita. A alergia confirmada exige planejamento de dessensibilização e aplicação em ambiente adequado, e não atraso ou troca por esquemas sem eficácia equivalente nesse objetivo.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 14,
-   "pergunta": "Parceria de paciente com sífilis, exposta há 30 dias, com teste rápido não reagente:",
+   "pergunta": "Parceria de pessoa com sífilis recente relata contato sexual há 30 dias e tem teste inicial não reagente. Qual princípio deve ser considerado?",
    "opcoes": [
-    "Doxiciclina",
-    "Tratamento presuntivo com benzatina 2,4 mi dose única",
-    "Nada",
-    "Repetir o teste em 90 dias apenas"
+    "Tratar somente se surgir uma úlcera típica",
+    "Um teste negativo precoce exclui infecção em qualquer momento",
+    "A exposição recente pode exigir tratamento presuntivo apesar do teste negativo",
+    "Esperar obrigatoriamente vários meses antes de avaliar a parceria"
    ],
-   "certa": 1,
-   "explica": "Expostos nos últimos 90 dias: presuntivo.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "A sorologia pode estar negativa na fase inicial após exposição. Para contatos recentes de sífilis inicial, o manejo presuntivo previsto no protocolo pode ser indicado; a decisão considera a exposição, a avaliação clínica e o seguimento, e não apenas um teste precoce isolado.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 15,
-   "pergunta": "Esquema da PEP após exposição sexual de risco:",
+   "pergunta": "Pessoa procura atendimento 12 horas após exposição sexual com risco relevante para HIV. Qual é a prioridade?",
    "opcoes": [
-    "AZT por 6 semanas",
-    "Iniciar só após teste confirmado",
-    "TDF/FTC por 7 dias",
-    "TDF + 3TC + DTG por 28 dias, até 72 h"
+    "Avaliar indicação e iniciar PEP o mais cedo possível",
+    "Prescrever PrEP como substituto automático da PEP",
+    "Aguardar a sorologia da pessoa-fonte sem considerar o prazo",
+    "Esperar sintomas de infecção aguda para oferecer profilaxia"
    ],
-   "certa": 3,
-   "explica": "Iniciar o quanto antes, máximo 72 h.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "A PEP é uma medida de urgência: quando indicada, deve começar o quanto antes, até 72 horas após a exposição, por 28 dias. A avaliação inclui testes e outros cuidados, mas não deve criar um atraso evitável; PrEP é uma estratégia preventiva distinta.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 16,
-   "pergunta": "Vesículas agrupadas que viraram úlceras rasas e muito dolorosas, com febre. Tratamento?",
+   "pergunta": "Paciente tem vesículas genitais agrupadas que evoluíram para úlceras rasas dolorosas, em primeiro episódio. Qual abordagem é mais adequada?",
    "opcoes": [
-    "Aciclovir 400 mg 8/8 h por 7–10 dias",
-    "Doxiciclina 21 dias",
-    "Benzatina",
-    "Azitromicina 1 g"
+    "Tratar apenas quando todas as lesões já tiverem cicatrizado",
+    "Usar penicilina benzatina como tratamento específico do herpes",
+    "Orientar que antiviral elimina definitivamente a latência",
+    "Considerar herpes genital e oferecer antiviral e aconselhamento apropriados"
    ],
-   "certa": 0,
-   "explica": "Primeiro episódio de herpes.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "A evolução vesicular e a dor favorecem herpes, com confirmação por testes quando disponíveis e indicados. Antivirais reduzem a duração e a intensidade do episódio, mas não erradicam o vírus latente; o cuidado também inclui orientações sobre transmissão e recorrências.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 17,
-   "pergunta": "Condiloma acuminado em gestante. Tratamento permitido:",
+   "pergunta": "Gestante apresenta condilomas genitais e precisa discutir tratamento. Qual estratégia é adequada?",
    "opcoes": [
-    "Imiquimode",
-    "Nenhum",
-    "Ácido tricloroacético",
-    "Podofilina"
+    "Aplicar podofilotoxina como opção universal na gestação",
+    "Presumir que tratar verrugas elimina todo o HPV",
+    "Ácido tricloroacético ou crioterapia, conforme avaliação",
+    "Realizar excisão do colo por qualquer verruga externa"
    ],
    "certa": 2,
-   "explica": "ATA, crio ou exérese.",
-   "tempo": 20,
+   "explica": "O tratamento depende da localização, extensão das lesões e gestação. Ácido tricloroacético e crioterapia estão entre as opções apropriadas em situações indicadas; a gravidez modifica a escolha, e tratar uma verruga não equivale a eliminar a infecção por HPV.",
+   "tempo": 30,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 18,
-   "pergunta": "Vacina HPV no SUS para menina de 11 anos:",
+   "pergunta": "Adolescente elegível à vacinação contra HPV pergunta se a vacina servirá para tratar uma verruga que já existe. Qual orientação é correta?",
    "opcoes": [
-    "3 doses",
-    "2 doses",
-    "Dose única",
-    "Não indicada"
+    "A presença de uma verruga torna a vacina sempre inútil",
+    "Quem é vacinado dispensa todo rastreamento futuro do colo",
+    "A vacina é preventiva e não substitui o tratamento da lesão existente",
+    "A vacina é o tratamento de escolha para toda verruga ativa"
    ],
    "certa": 2,
-   "explica": "Dose única 9–14 anos.",
-   "tempo": 20,
+   "explica": "A vacinação busca prevenir infecções e lesões associadas aos tipos incluídos, não tratar uma infecção já estabelecida. A avaliação da verruga segue seu próprio manejo; a indicação vacinal e o esquema dependem do calendário e das condições clínicas, e o rastreamento continua quando indicado.",
+   "tempo": 45,
    "secoes": [
-    "r2"
+    "r2",
+    "g2"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view",
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce"
    ]
   },
   {
    "tipo": "q",
    "n": 19,
-   "pergunta": "Jovem com dor hipogástrica, dor à mobilização do colo e dor anexial, sem febre. O que fazer?",
+   "pergunta": "Jovem com dor pélvica apresenta dor à mobilização do colo e dor anexial, sem febre. Qual atitude é mais apropriada diante de suspeita de DIP?",
    "opcoes": [
-    "Esperar febre",
-    "Antibiótico só após NAAT",
-    "Pedir β-hCG e iniciar tratamento de DIP sem esperar cultura",
-    "Só USG"
+    "Avaliar gestação e diagnósticos diferenciais e iniciar tratamento quando indicado",
+    "Excluir DIP porque a temperatura está normal",
+    "Esperar a cultura positivar antes de qualquer tratamento",
+    "Usar ultrassom normal como critério definitivo de exclusão"
    ],
-   "certa": 2,
-   "explica": "Febre em < 30%; tratar empiricamente.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "DIP pode ocorrer sem febre, e o tratamento não deve esperar confirmação microbiológica quando a suspeita clínica é suficiente. Testar gestação e considerar gravidez ectópica e outras causas de dor faz parte da avaliação; ultrassom normal não afasta todos os casos.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/std/treatment-guidelines/pid.htm",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 20,
-   "pergunta": "Esquema ambulatorial de DIP:",
+   "pergunta": "Paciente com DIP leve a moderada, não gestante, tolera via oral e não tem abscesso nem sinais de gravidade. Qual esquema ambulatorial corresponde à cobertura recomendada?",
    "opcoes": [
-    "Metronidazol isolado",
-    "Ceftriaxona IM + doxiciclina 14 d + metronidazol 14 d",
-    "Azitromicina dose única",
-    "Amoxicilina 7 dias"
+    "Ceftriaxona isolada para todo o tratamento",
+    "Penicilina benzatina como cobertura de todos os agentes",
+    "Ceftriaxona associada a doxiciclina e metronidazol",
+    "Fluconazol associado a nistatina"
    ],
-   "certa": 1,
-   "explica": "Cobrir gonococo, clamídia e anaeróbios por 14 dias.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "A DIP é frequentemente polimicrobiana, e o esquema precisa cobrir gonococo, clamídia e anaeróbios. Doxiciclina e metronidazol são mantidos por 14 dias no esquema usual; avaliação de gravidade e reavaliação da resposta são indispensáveis para sustentar o manejo ambulatorial.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/std/treatment-guidelines/pid.htm",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 21,
-   "pergunta": "DIP tratada há 72 h sem melhora da dor e da febre. Conduta?",
+   "pergunta": "Paciente tratada ambulatorialmente por DIP segue com dor e febre após 72 horas, sem melhora clínica. Qual é a melhor conduta?",
    "opcoes": [
-    "Alta",
-    "Manter e esperar mais 7 dias",
-    "Trocar por amoxicilina",
-    "Internar, ATB IV e USG para procurar abscesso"
+    "Concluir que a ausência de melhora é esperada em qualquer DIP",
+    "Suspender o tratamento por não ter havido resposta imediata",
+    "Manter o mesmo plano sem reexaminar até completar o mês",
+    "Reavaliar, considerar internação e investigar complicações ou outro diagnóstico"
    ],
    "certa": 3,
-   "explica": "Falha em 72 h é critério de internação.",
-   "tempo": 20,
+   "explica": "Espera-se melhora clínica em poucos dias. Falha de resposta exige rever adesão, diagnóstico e complicações como abscesso, além da necessidade de terapia hospitalar; não é uma situação para prolongar a espera usando apenas um prazo fixo de término do antibiótico.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/std/treatment-guidelines/pid.htm"
    ]
   },
   {
    "tipo": "q",
    "n": 22,
-   "pergunta": "Gestante de 14 semanas com DIP:",
+   "pergunta": "Gestante apresenta quadro suspeito de DIP. Qual é a estratégia de cuidado mais adequada?",
    "opcoes": [
-    "Observar",
-    "Internação e clindamicina + gentamicina IV",
-    "Só metronidazol",
-    "Tratamento ambulatorial com doxiciclina"
+    "Aguardar o término da gestação para tratar",
+    "Avaliação hospitalar e tratamento com equipe especializada",
+    "Excluir a hipótese apenas porque a paciente está grávida",
+    "Usar automaticamente o esquema oral de qualquer não gestante"
    ],
    "certa": 1,
-   "explica": "Gestação é critério de internação; doxiciclina contraindicada.",
-   "tempo": 20,
+   "explica": "Suspeita de DIP na gestação exige hospitalização e avaliação especializada pelo risco materno e gestacional. O esquema deve ser apropriado à gravidez e aos achados; não se deve copiar uma prescrição ambulatorial de não gestante ou adiar a investigação.",
+   "tempo": 30,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/std/treatment-guidelines/pid.htm"
    ]
   },
   {
    "tipo": "q",
    "n": 23,
-   "pergunta": "Paciente com DIP usa DIU de cobre há 3 anos. Sobre o DIU:",
+   "pergunta": "Paciente com DIP usa DIU há três anos, está estável e iniciou antibióticos. Qual orientação é mais adequada sobre o dispositivo?",
    "opcoes": [
-    "Retirar imediatamente sempre",
-    "O DIU causou a DIP",
-    "Manter e reavaliar; retirar se não houver melhora",
-    "Trocar por SIU-LNG"
+    "A presença de DIU exclui outras causas de dor pélvica",
+    "Retirar sempre antes de iniciar qualquer antibiótico",
+    "Manter o DIU impede qualquer tratamento efetivo",
+    "Não retirar automaticamente; acompanhar resposta e reavaliar a necessidade"
    ],
-   "certa": 2,
-   "explica": "O risco de DIP pelo DIU está nas primeiras semanas.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "O diagnóstico de DIP não exige retirada imediata do DIU em todo caso. Tratamento e reavaliação em 48 a 72 horas são importantes; ausência de melhora e preferências da paciente entram na decisão sobre remoção, que não deve atrasar o início dos antibióticos.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/std/treatment-guidelines/pid.htm"
    ]
   },
   {
    "tipo": "q",
    "n": 24,
-   "pergunta": "Dor em hipocôndrio direito pior à inspiração, após quadro de DIP, com USG de vias biliares normal:",
+   "pergunta": "Paciente com quadro de DIP passa a ter dor no hipocôndrio direito que piora à inspiração, sem explicação biliar na avaliação inicial. Qual complicação deve ser lembrada?",
    "opcoes": [
-    "Fitz-Hugh-Curtis",
-    "Colecistite",
-    "Pielonefrite",
-    "Hepatite"
+    "Efeito inevitável do DIU, independentemente de infecção",
+    "Peri-hepatite associada à DIP, ou síndrome de Fitz–Hugh–Curtis",
+    "Endometriose confirmada apenas por esse padrão",
+    "Candidíase vulvovaginal como causa da dor subcostal"
    ],
-   "certa": 0,
-   "explica": "Peri-hepatite.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "A inflamação perihepática associada à DIP pode causar dor no quadrante superior direito e simular doença biliar. Essa hipótese deve ser integrada ao contexto e à avaliação de outras causas; um exame biliar normal isolado não a confirma nem dispensa investigação clínica.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/std/treatment-guidelines/pid.htm"
    ]
   },
   {
    "tipo": "q",
    "n": 25,
-   "pergunta": "Parcerias de paciente com DIP devem ser tratadas se o contato foi nos últimos:",
+   "pergunta": "Mulher tratada por DIP melhora, mas a parceria sexual não apresenta sintomas e não quer avaliação. Qual orientação é mais adequada?",
    "opcoes": [
-    "15 dias",
-    "30 dias",
-    "60 dias",
-    "1 ano"
+    "Explicar a possibilidade de infecção silenciosa e a necessidade de manejo das parcerias",
+    "Prescrever apenas analgésico à mulher se houver nova exposição",
+    "Esperar dor pélvica na parceria para agir",
+    "Dispensar a parceria porque a melhora da mulher impede reinfecção"
    ],
-   "certa": 2,
-   "explica": "60 dias, mesmo assintomáticos.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "O cuidado da DIP inclui avaliar e tratar as parcerias indicadas pelo protocolo, especialmente para gonococo e clamídia. Pessoas assintomáticas podem manter transmissão e reinfecção; concluir o tratamento individual sem abordar esse contexto deixa risco e possíveis complicações.",
+   "tempo": 45,
    "secoes": [
-    "r3"
+    "r3",
+    "g3"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/std/treatment-guidelines/pid.htm",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 26,
-   "pergunta": "Contraindicação absoluta ao DIU de cobre:",
+   "pergunta": "Mulher quer inserir DIU de cobre, mas apresenta cervicite purulenta ativa. Qual conduta é mais adequada?",
    "opcoes": [
-    "Mioma assintomático sem distorção",
-    "Uso de AINE",
-    "Cervicite purulenta não tratada",
-    "Nuliparidade"
+    "Tratar a infecção e adiar a inserção até manejo adequado",
+    "Inserir imediatamente porque cobre trata cervicite",
+    "Inserir e aguardar febre para avaliar a infecção",
+    "Excluir definitivamente qualquer uso futuro de DIU"
    ],
-   "certa": 2,
-   "explica": "Caso 1 da Profa. Luiza.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Infecção cervical ativa é uma contraindicação à inserção naquele momento, não uma proibição permanente ao método. É preciso tratar e organizar uma alternativa e o retorno; isso é diferente do manejo de quem já utiliza DIU e desenvolve DIP.",
+   "tempo": 30,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/contraception/hcp/usspr/classifications-mec-contraception.html",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 27,
-   "pergunta": "DIU de cobre no pós-parto pode ser inserido:",
+   "pergunta": "Adolescente sem gestação, infecção ativa ou distorção da cavidade uterina quer um método de longa duração e nunca teve filhos. Qual orientação é correta?",
    "opcoes": [
-    "Contraindicado no aleitamento",
-    "Só na menstruação",
-    "Só guiado por USG",
-    "Até 48 h ou após 4 semanas"
+    "Só se oferece método de longa duração após esterilização",
+    "Nuliparidade isolada não impede a escolha de DIU",
+    "Adolescência torna qualquer DIU contraindicado",
+    "DIU exige obrigatoriamente pelo menos um parto"
    ],
-   "certa": 3,
-   "explica": "Entre 48 h e 4 semanas: mais expulsão e perfuração.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Adolescência e ausência de partos, isoladamente, não são contraindicações ao DIU. A escolha deve considerar condições clínicas, preferências, benefícios e efeitos esperados, com aconselhamento e inserção apropriados; uma restrição sem fundamento reduz opções eficazes de contracepção.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/contraception/hcp/usspr/classifications-mec-contraception.html"
    ]
   },
   {
    "tipo": "q",
    "n": 28,
-   "pergunta": "Contraindicação absoluta (cat. 4) ao contraceptivo hormonal combinado:",
+   "pergunta": "Mulher com antecedente de tromboembolismo associado a estrogênio deseja contracepção. Qual é o princípio mais importante?",
    "opcoes": [
-    "TEV prévio",
-    "Fumante de 30 anos, 4 cigarros/dia",
-    "Lactação há 4 meses",
-    "Mioma de 4 cm assintomático"
+    "Escolher anel combinado porque não é tomado por via oral",
+    "Evitar contraceptivo combinado e avaliar alternativas sem estrogênio",
+    "Ignorar o evento se não há dor na perna hoje",
+    "Usar adesivo combinado para eliminar o risco trombótico"
    ],
-   "certa": 0,
-   "explica": "Caso 2 da Profa. Luiza.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Antecedente de evento tromboembólico associado a estrogênio muda a elegibilidade para métodos combinados. Anel, adesivo e pílula compartilham esse componente; o método alternativo precisa ser escolhido segundo os riscos específicos e as preferências, e não apenas pela via de uso.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/contraception/hcp/usspr/classifications-mec-contraception.html"
    ]
   },
   {
    "tipo": "q",
    "n": 29,
-   "pergunta": "Usuária de pílula combinada passa a ter enxaqueca com aura. Conduta:",
+   "pergunta": "Usuária de contraceptivo combinado recebe diagnóstico de enxaqueca com aura. Qual revisão é necessária?",
    "opcoes": [
-    "Associar triptano",
-    "Reduzir a dose de estrogênio",
-    "Suspender e trocar por método sem estrogênio",
-    "Manter"
+    "Trocar a pílula por outro combinado de via diferente",
+    "Acrescentar AAS para tornar o combinado automaticamente seguro",
+    "Manter qualquer estrogênio se a pessoa tiver menos de 35 anos",
+    "Suspender o combinado e selecionar método sem estrogênio"
    ],
-   "certa": 2,
-   "explica": "Aura + estrogênio aumenta AVC.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "A aura é relevante pelo risco de AVC associado ao uso de contraceptivo combinado. A estratégia é reavaliar e escolher alternativa sem estrogênio; mudar apenas a marca ou a via, ou acrescentar outro fármaco, não elimina a contraindicação.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/contraception/hcp/usspr/classifications-mec-contraception.html"
    ]
   },
   {
    "tipo": "q",
    "n": 30,
-   "pergunta": "Benefício não contraceptivo do CHC:",
+   "pergunta": "Pessoa satisfeita com o contraceptivo hormonal passa a ter nova parceria e pergunta se ainda precisa de preservativo. Qual resposta é adequada?",
    "opcoes": [
-    "Aumento do câncer de ovário",
-    "Melhora da acne",
-    "Aumento de DIP",
-    "Piora de cistos funcionais"
+    "Preservativo só tem utilidade quando há falha da pílula",
+    "A proteção contra IST é igual em todos os contraceptivos",
+    "O método evita gestação, mas a prevenção de IST exige orientação própria",
+    "O controle da ovulação também impede transmissão de HIV"
    ],
-   "certa": 1,
-   "explica": "Também ↓ câncer de ovário e endométrio.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Eficácia contraceptiva e proteção contra IST são objetivos diferentes. Métodos hormonais e dispositivos não substituem preservativos e outras medidas de prevenção combinada, que devem ser discutidas conforme exposição, testes, vacinação e indicação de PrEP ou PEP.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view"
    ]
   },
   {
    "tipo": "q",
    "n": 31,
-   "pergunta": "Laqueadura no Brasil (Lei 14.443/2022):",
+   "pergunta": "Mulher de 23 anos, com capacidade civil plena e sem filhos, solicita informação sobre esterilização voluntária no Brasil. Qual orientação respeita a legislação?",
    "opcoes": [
-    "> 35 anos e 3 filhos",
-    "Qualquer idade com assinatura do cônjuge",
-    "≥ 21 anos ou ≥ 2 filhos vivos, 60 dias entre pedido e cirurgia, sem cônjuge",
-    "Só com risco de morte"
+    "Só pode iniciar o processo com autorização do parceiro",
+    "Pode acessar avaliação e aconselhamento sem exigir autorização de cônjuge",
+    "O pedido autoriza cirurgia no mesmo dia sem prazo de reflexão",
+    "Precisa obrigatoriamente de dois filhos, mesmo tendo a idade prevista"
    ],
-   "certa": 2,
-   "explica": "Caso 3 da Profa. Luiza.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "A legislação permite esterilização a partir de 21 anos ou com pelo menos dois filhos vivos, sem autorização conjugal. É necessário consentimento informado e observar o prazo mínimo de 60 dias entre manifestação de vontade e procedimento; o aconselhamento também apresenta alternativas reversíveis.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
+   ],
+   "fontes": [
+    "https://www.gov.br/saude/pt-br/assuntos/noticias/2023/junho/ministerio-da-saude-orienta-gestores-sobre-laqueadura-e-vasectomia-no-sus/"
    ]
   },
   {
    "tipo": "q",
    "n": 32,
-   "pergunta": "Após vasectomia, o homem:",
+   "pergunta": "Casal pergunta se pode abandonar outro método contraceptivo logo após uma vasectomia. Qual orientação é correta?",
    "opcoes": [
-    "Precisa de internação de 48 h",
-    "Permanece fértil por cerca de 3 meses",
-    "Precisa do consentimento da parceira",
-    "Fica estéril no mesmo dia"
+    "Considerar esterilidade imediata ao terminar o procedimento",
+    "Usar apenas a aparência do sêmen como teste de sucesso",
+    "Manter contracepção até confirmação de sucesso conforme seguimento",
+    "Suspender contracepção quando a dor do procedimento desaparecer"
    ],
-   "certa": 1,
-   "explica": "Usar outro método até o espermograma.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "Espermatozoides podem permanecer no trato reprodutivo após a cirurgia. A liberação depende do acompanhamento e do exame seminal conforme o protocolo, não apenas de um prazo decorado ou da melhora da ferida; até essa confirmação, outro método deve ser mantido.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
    ]
   },
   {
    "tipo": "q",
    "n": 33,
-   "pergunta": "Levonorgestrel de emergência:",
+   "pergunta": "Pessoa procura contracepção de emergência 12 horas após relação desprotegida e escolhe levonorgestrel após aconselhamento. Qual orientação é adequada?",
    "opcoes": [
-    "Interrompe gravidez em curso",
-    "Duas doses por 7 dias",
-    "Preferir nas primeiras 72 h; eficácia cai com o tempo",
-    "Aumenta a fertilidade"
+    "Adiar até completar três dias para aumentar a eficácia",
+    "Esperar a menstruação atrasar para iniciar",
+    "Considerar proteção garantida para todo o restante do ciclo",
+    "Usar o quanto antes e discutir proteção para exposições posteriores"
    ],
-   "certa": 2,
-   "explica": "Caso 4 da Profa. Luiza.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "A eficácia da contracepção de emergência depende do tempo e da opção utilizada; levonorgestrel deve ser usado o mais cedo possível. A dose não protege automaticamente relações posteriores, e o atendimento deve incluir um plano contraceptivo contínuo e avaliação de risco de IST.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/contraception/hcp/usspr/classifications-mec-contraception.html"
    ]
   },
   {
    "tipo": "q",
    "n": 34,
-   "pergunta": "Método de emergência mais eficaz:",
+   "pergunta": "Após relação desprotegida há três dias, mulher deseja a opção mais eficaz de contracepção de emergência e um método contínuo, sem contraindicação à inserção. Qual opção atende a esses objetivos?",
    "opcoes": [
-    "Pílula combinada (Yuzpe)",
-    "Ulipristal",
-    "DIU de cobre até 5 dias",
-    "Levonorgestrel 1,5 mg"
+    "Vasectomia da parceria como proteção dessa exposição",
+    "Anticoncepcional combinado mensal iniciado sem discutir emergência",
+    "Esperar o teste de gravidez positivar para inserir o DIU",
+    "DIU de cobre, inserido dentro da janela indicada"
    ],
-   "certa": 2,
-   "explica": "Independe do IMC e já fica como método.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "DIU de cobre é uma opção muito eficaz de emergência quando inserido no prazo apropriado, usualmente até cinco dias após a relação, e oferece contracepção contínua. A avaliação precisa excluir contraindicações e explicar benefícios e efeitos esperados; ele não trata nem previne IST.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/contraception/hcp/usspr/classifications-mec-contraception.html"
    ]
   },
   {
    "tipo": "q",
    "n": 35,
-   "pergunta": "Puérpera de 3 semanas amamentando quer pílula. Melhor opção:",
+   "pergunta": "Puérpera de três semanas está amamentando e quer retomar contracepção. Qual princípio deve orientar a escolha?",
    "opcoes": [
-    "Pílula combinada",
-    "Anel vaginal",
-    "Minipílula (só progestagênio)",
-    "Adesivo"
+    "Afirmar que toda amamentação impede gravidez de forma confiável",
+    "Evitar estrogênio nesse período e avaliar método compatível com a lactação",
+    "Liberar combinado apenas porque o parto foi vaginal",
+    "Usar estrogênio para aumentar a produção de leite"
    ],
-   "certa": 2,
-   "explica": "Sem estrogênio antes de 6 semanas na lactação.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "No puerpério inicial, o risco trombótico e a amamentação precisam entrar na escolha. Há alternativas sem estrogênio apropriadas conforme a avaliação; lactação isolada não garante contracepção fora dos critérios específicos do método da amenorreia lactacional.",
+   "tempo": 45,
    "secoes": [
-    "r4"
+    "r4",
+    "g4"
+   ],
+   "fontes": [
+    "https://www.cdc.gov/contraception/hcp/usspr/classifications-mec-contraception.html"
    ]
   },
   {
    "tipo": "q",
    "n": 36,
-   "pergunta": "Rastreio de colo vigente no SUS (Portaria 13/2025):",
+   "pergunta": "Mulher de 35 anos, assintomática e de risco padrão, fez DNA-HPV negativo em um serviço que já adotou o rastreamento molecular. Qual é o intervalo de rotina previsto?",
    "opcoes": [
-    "Citologia a cada 3 anos desde os 21",
-    "DNA-HPV de 25 a 64 anos a cada 5 anos",
-    "Citologia anual a partir da sexarca",
-    "DNA-HPV a partir dos 18 anos"
+    "Repetir DNA-HPV em cinco anos",
+    "Aplicar o mesmo intervalo a qualquer situação de imunossupressão",
+    "Repetir DNA-HPV todos os meses",
+    "Fazer colposcopia imediata por resultado negativo"
    ],
-   "certa": 1,
-   "explica": "DNA-HPV primário.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "No rastreamento molecular de risco padrão, um resultado negativo permite intervalo de cinco anos. Essa regra depende de o serviço ter adotado o método e não deve ser copiada automaticamente para citologia, sintomas ou condições especiais; a implantação no país é progressiva.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
+   ],
+   "fontes": [
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce"
    ]
   },
   {
    "tipo": "q",
    "n": 37,
-   "pergunta": "DNA-HPV positivo para HPV 16:",
+   "pergunta": "DNA-HPV detecta genótipo 16 em uma mulher dentro do rastreamento, mesmo sem alteração citológica. Qual é o próximo passo?",
    "opcoes": [
-    "Citologia reflexa",
-    "Repetir em 5 anos",
-    "Repetir em 12 meses",
-    "Colposcopia direta"
+    "Tratar câncer invasivo sem avaliação adicional",
+    "Colposcopia conforme o fluxo de risco",
+    "Repetir em cinco anos como se o resultado fosse negativo",
+    "Desconsiderar o genótipo porque a citologia está normal"
    ],
-   "certa": 3,
-   "explica": "16/18 vão direto à colposcopia.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "HPV 16 e 18 têm encaminhamento direto à colposcopia no fluxo de rastreamento molecular. A citologia normal não retira essa indicação, mas a presença do vírus também não confirma uma lesão invasiva nem justifica tratamento oncológico sem avaliação.",
+   "tempo": 30,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
+   ],
+   "fontes": [
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce"
    ]
   },
   {
    "tipo": "q",
    "n": 38,
-   "pergunta": "DNA-HPV positivo para HPV não 16/18 com citologia reflexa normal:",
+   "pergunta": "DNA-HPV é positivo para tipo oncogênico diferente de 16/18, com citologia reflexa negativa, em pessoa de risco padrão. Qual sequência corresponde ao fluxo inicial?",
    "opcoes": [
     "Repetir DNA-HPV em 12 meses",
-    "Repetir em 5 anos",
-    "Colposcopia",
-    "Conização"
+    "Repetir semanalmente até negativar",
+    "Voltar diretamente ao intervalo de cinco anos",
+    "Indicar excisão do colo apenas pela positividade viral"
    ],
    "certa": 0,
-   "explica": "Persistindo 24 meses: colposcopia.",
-   "tempo": 20,
+   "explica": "Para outros tipos oncogênicos, a citologia reflexa ajuda a definir a conduta. Quando ela é negativa, o fluxo prevê repetição do teste molecular em 12 meses para avaliar persistência, em vez de tratar a infecção viral como uma lesão já confirmada.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
+   ],
+   "fontes": [
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce"
    ]
   },
   {
    "tipo": "q",
    "n": 39,
-   "pergunta": "Mulher de 22 anos pede preventivo:",
+   "pergunta": "Mulher de 22 anos, assintomática e sem situação especial, pede rastreamento de colo. Qual é a orientação adequada para a rotina brasileira de risco padrão?",
    "opcoes": [
-    "Coletar citologia",
-    "Colposcopia",
-    "Coletar DNA-HPV",
-    "Não rastrear antes dos 25 anos; vacinar"
+    "Iniciar excisão preventiva antes de qualquer teste",
+    "Explicar que a rotina começa aos 25 anos e manter prevenção e avaliação de queixas",
+    "Dispensar vacinação e aconselhamento por ser jovem",
+    "Usar a idade de rastreamento para ignorar sangramento ou lesão"
    ],
-   "certa": 3,
-   "explica": "Infecções transitórias.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Rastrear cedo demais aumenta a detecção de infecções transitórias e intervenções desnecessárias. A rotina de risco padrão começa aos 25 anos; isso não impede vacinação e prevenção, e não deve ser confundido com deixar de investigar sintomas em qualquer idade.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
+   ],
+   "fontes": [
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce"
    ]
   },
   {
    "tipo": "q",
    "n": 40,
-   "pergunta": "Histerectomia total por mioma, sem lesão prévia de colo:",
+   "pergunta": "Pessoa fez histerectomia total por causa benigna, sem histórico de lesão cervical precursora ou câncer. Qual informação é decisiva para avaliar a necessidade de rastreamento do colo?",
    "opcoes": [
-    "Rastrear cúpula a cada 3 anos",
-    "Rastrear até 74 anos",
-    "Dispensa rastreio",
-    "DNA-HPV anual"
+    "Manter a mesma rotina porque toda histerectomia preserva colo",
+    "Encerrar também qualquer investigação futura de sintomas ginecológicos",
+    "Indicar colposcopia anual para qualquer pessoa operada",
+    "Confirmar retirada do colo e ausência de antecedente que exija vigilância"
    ],
-   "certa": 2,
-   "explica": "Não há colo.",
-   "tempo": 20,
+   "certa": 3,
+   "explica": "Histerectomia total por doença benigna, sem antecedentes relevantes, pode dispensar o rastreamento cervical habitual. Cirurgia subtotal e história de lesão de alto grau ou câncer mudam a análise; deixar de rastrear o colo não significa abandonar o cuidado ginecológico ou ignorar sintomas.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
+   ],
+   "fontes": [
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce"
    ]
   },
   {
    "tipo": "q",
    "n": 41,
-   "pergunta": "Biópsia de colo com NIC 3:",
+   "pergunta": "Mulher não gestante tem NIC 3 confirmada em biópsia. Qual é a melhor linha de conduta?",
    "opcoes": [
-    "Histerectomia radical",
-    "Excisão da zona de transformação (CAF/EZT)",
-    "Repetir citologia em 6 meses",
-    "Seguimento"
+    "Acompanhar como se fosse apenas HPV positivo sem lesão",
+    "Concluir câncer invasivo sem correlacionar os achados",
+    "Avaliação especializada para tratamento da lesão de alto grau",
+    "Prescrever antifúngico e retornar ao rastreamento habitual"
    ],
-   "certa": 1,
-   "explica": "Alto grau = tratar.",
-   "tempo": 20,
+   "certa": 2,
+   "explica": "NIC 3 é uma lesão precursora de alto grau e, em geral, exige tratamento excisional planejado, como excisão da zona de transformação. Não é equivalente à simples presença do vírus nem confirma invasão; extensão, adequação da avaliação e contexto clínico orientam a abordagem.",
+   "tempo": 30,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
    ]
   },
   {
    "tipo": "q",
    "n": 42,
-   "pergunta": "Oncoproteína do HPV que degrada a p53:",
+   "pergunta": "Após receber DNA-HPV positivo, uma mulher entende que já está com câncer. Qual explicação é correta?",
    "opcoes": [
-    "E2",
-    "E6",
-    "E7",
-    "L1"
+    "O teste detecta o vírus; o fluxo de triagem avalia o risco e a presença de lesão",
+    "O resultado só tem relevância se houver sintomas",
+    "Qualquer HPV positivo confirma invasão do colo",
+    "Resultado positivo dispensa colposcopia ou seguimento indicados"
    ],
-   "certa": 1,
-   "explica": "E7 inativa pRb.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Infecção por HPV é diferente de lesão precursora e de câncer invasivo. Genótipo, citologia e, quando indicada, avaliação colposcópica e histológica ajudam a distinguir essas situações; explicar essa sequência reduz medo sem minimizar a importância do seguimento.",
+   "tempo": 45,
    "secoes": [
-    "r5"
+    "r5",
+    "g5"
+   ],
+   "fontes": [
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce"
    ]
   },
   {
    "tipo": "q",
    "n": 43,
-   "pergunta": "Rastreamento de câncer de mama no SUS para mulher de 55 anos:",
+   "pergunta": "Mulher de 55 anos, assintomática e sem alto risco, pergunta qual exame integra o rastreamento populacional de mama no SUS. Qual opção é adequada?",
    "opcoes": [
-    "Mamografia anual",
-    "USG anual",
-    "Não rastrear",
-    "Mamografia a cada 2 anos"
+    "Mamografia bienal",
+    "Investigar somente quando surgir uma massa palpável",
+    "Ultrassom isolado em substituição à mamografia para toda mulher",
+    "Ressonância mensal para aumentar a detecção"
    ],
-   "certa": 3,
-   "explica": "50–74 anos, bienal.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "Para mulheres de risco padrão entre 50 e 74 anos, o Ministério da Saúde recomenda mamografia a cada dois anos. Ultrassom pode complementar avaliações específicas, mas não substitui o método populacional; um sintoma novo exige investigação diagnóstica, sem esperar a próxima rodada.",
+   "tempo": 30,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
+   ],
+   "fontes": [
+    "https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus"
    ]
   },
   {
    "tipo": "q",
    "n": 44,
-   "pergunta": "Mamografia BI-RADS 3:",
+   "pergunta": "Uma lesão mamária foi classificada como BI-RADS 3, sem discordância clínica e radiológica. Qual é a interpretação mais adequada?",
    "opcoes": [
-    "Biópsia",
-    "Rotina em 2 anos",
-    "Controle em 6 meses",
-    "Mastectomia"
+    "Câncer confirmado que exige tratamento imediato",
+    "Exame negativo que dispensa todo seguimento",
+    "Achado provavelmente benigno com acompanhamento em curto intervalo",
+    "Categoria que obriga biópsia em qualquer contexto"
    ],
    "certa": 2,
-   "explica": "Provavelmente benigno.",
-   "tempo": 20,
+   "explica": "BI-RADS 3 indica probabilidade baixa de malignidade e costuma levar a controle inicial em seis meses, conforme o plano radiológico. A lógica é verificar estabilidade, e não declarar certeza absoluta; crescimento ou discordância com o exame clínico pode exigir outra conduta.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
    ]
   },
   {
    "tipo": "q",
    "n": 45,
-   "pergunta": "Nódulo móvel, elástico, bem delimitado em mulher de 20 anos. Primeiro exame e hipótese:",
+   "pergunta": "Mulher de 20 anos percebe nódulo mamário móvel e bem delimitado. Qual abordagem inicial é mais adequada?",
    "opcoes": [
-    "Biópsia; papiloma",
-    "Ressonância; cisto",
-    "Mamografia; carcinoma",
-    "USG; fibroadenoma"
+    "Avaliação clínica e ultrassonografia para caracterizar a massa",
+    "Indicar mastectomia apenas por haver um nódulo",
+    "Aguardar a idade da mamografia de rastreamento",
+    "Diagnosticar fibroadenoma sem nenhum esclarecimento"
    ],
-   "certa": 3,
-   "explica": "Jovem: USG primeiro.",
-   "tempo": 20,
+   "certa": 0,
+   "explica": "O aspecto pode sugerir lesão benigna, como fibroadenoma, mas uma massa nova precisa ser avaliada. A ultrassonografia costuma ser o exame inicial nessa faixa etária; investigação de um sintoma não depende da idade de início do rastreamento populacional.",
+   "tempo": 30,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
    ]
   },
   {
    "tipo": "q",
    "n": 46,
-   "pergunta": "Puérpera com mama vermelha, quente e dolorosa, febre, sem flutuação:",
+   "pergunta": "Lactante apresenta mama eritematosa e dolorosa, com febre e sintomas persistentes, sem coleção identificada. Na avaliação, há suspeita de mastite bacteriana. Qual princípio é adequado?",
    "opcoes": [
-    "Mamografia urgente",
-    "Drenagem cirúrgica",
-    "Suspender amamentação",
-    "Manter amamentação + cefalexina"
+    "Drenar cirurgicamente qualquer mama dolorosa sem coleção",
+    "Tratar o quadro e manter amamentação, quando clinicamente possível",
+    "Usar apenas compressão vigorosa para esvaziar toda a mama",
+    "Suspender obrigatoriamente toda amamentação até negativar culturas"
    ],
-   "certa": 3,
-   "explica": "Mastite lactacional.",
-   "tempo": 20,
+   "certa": 1,
+   "explica": "Mastite não exige interrupção automática da amamentação, e o quadro bacteriano demanda tratamento apropriado. É importante evitar manipulação agressiva e reavaliar a evolução; persistência ou sinais de coleção levantam suspeita de abscesso e podem mudar a necessidade de imagem e drenagem.",
+   "tempo": 45,
    "secoes": [
-    "r6"
+    "r6",
+    "g6"
+   ],
+   "fontes": [
+    "https://www.bfmed.org/assets/ABM%20Protocol%20%2336.pdf"
    ]
   }
  ],
  "kahootInfo": {
   "titulo": "Quiz de revisão · Saúde da Mulher AV2",
-  "capa": "{n} perguntas de revisão das aulas 7 a 12 (corrimentos, IST, DIP, contracepção, colo e mama), incluindo as questões dos casos da Profa. Luiza. Não é um Kahoot de professor. Quanto mais cedo acertar, mais pontos.",
-  "botao": "Começar o quiz"
+  "capa": "{n} questões focadas nas partes prioritárias, com casos clínicos e gabarito contextualizado.",
+  "botao": "Começar revisão",
+  "contextualizado": true
  },
  "casos": [
   {
