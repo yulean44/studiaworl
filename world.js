@@ -3,7 +3,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import * as SkeletonUtils from "three/addons/utils/SkeletonUtils.js";
-import { CRIATURAS, DECOS } from "./data.js?v=48";
+import { CRIATURAS, DECOS } from "./data.js?v=49";
 
 /* ---------- ruído ---------- */
 function hash(x, y, z) { let h = x * 374761393 + y * 668265263 + z * 2147483647; h = (h ^ (h >>> 13)) * 1274126177; return ((h ^ (h >>> 16)) >>> 0) / 4294967295; }
@@ -107,7 +107,7 @@ function fazDeco(k, seed) {
 const loader = new GLTFLoader();
 const cache = {};
 function carregaGLB(id) {
-  return (cache[id] ||= import(`./m/${id}.js?v=48`).then(mod => {
+  return (cache[id] ||= import(`./m/${id}.js?v=49`).then(mod => {
     const bin = atob(mod.default), buf = new Uint8Array(bin.length);
     for (let i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
     return new Promise((res, rej) => loader.parse(buf.buffer, "", res, rej));
@@ -462,12 +462,13 @@ export function criaMundo(host) {
       deslAlvo = cfg[0]; dimAlvo = cfg[1]; distAlvo = cfg[2]; controls.enabled = modo === "mundo" || modo === "centro"; controls.enableZoom = modo === "mundo"; leve = modo === "fundo"; oculto = false;
     },
     tema(t) {
-      const claro = t === "amanhecer" || t === "claro";
-      const c = { meianoite: "#7fa8e0", noite: "#a0d7ff", cristal: "#9ff0ff", aurora: "#c9b3f0", floresta: "#b5e48c", amanhecer: "#ffffff", claro: "#cfe6f5" }[t] || "#a0d7ff";
+      const claro = t === "amanhecer" || t === "claro" || t === "dourado";
+      const c = { meianoite: "#7fa8e0", noite: "#a0d7ff", cristal: "#9ff0ff", aurora: "#c9b3f0", floresta: "#b5e48c", amanhecer: "#ffffff", claro: "#cfe6f5", dourado: "#ffe3b8" }[t] || "#a0d7ff";
       halo.material.color.set(c); estrelas.visible = !claro; halo.material.opacity = claro ? .55 : t === "meianoite" ? .55 : 1;
       halo.material.blending = claro ? THREE.NormalBlending : THREE.AdditiveBlending; halo.material.needsUpdate = true;
       fatorCasca = claro ? .5 : 1; casca.material.uniforms.forca.value = (st.efeitos.nuvens ? .95 : .6) * fatorCasca;
-      corCasca = t === "aurora" ? "#c9b3f0" : t === "floresta" ? "#b5e48c" : t === "cristal" ? "#9ff0ff" : "#8fd6ff"; if (!st.efeitos.aurora) casca.material.uniforms.cor.value.set(corCasca);
+      sol.color.set(t === "dourado" ? "#ffd9a8" : "#fff3e0"); contra.color.set(t === "dourado" ? "#ffc68a" : "#7fc8ff");
+      corCasca = t === "dourado" ? "#ffd29a" : t === "aurora" ? "#c9b3f0" : t === "floresta" ? "#b5e48c" : t === "cristal" ? "#9ff0ff" : "#8fd6ff"; if (!st.efeitos.aurora) casca.material.uniforms.cor.value.set(corCasca);
     },
     foco(k) { const o = bichoObjs.get(k); if (!o) return; const p = o.getWorldPosition(new THREE.Vector3()).normalize(); camera.position.copy(p.multiplyScalar(2.1)); distAlvo = null; controls.autoRotate = false; parado = 0; },
   };

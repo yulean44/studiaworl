@@ -54,7 +54,7 @@ O Claude Code carrega sozinho; outros agentes leiam o `SKILL.md` correspondente.
 - **Bom gosto, limpo, pouco texto.** Instruções curtas; nada de blocos explicativos longos, chips de "em poucas palavras" ou passo a passo enfeitado.
 - **Sem emojis** na interface. Ícones de traço fino de `icons.js`; os ícones 3D só quando o estilo 3D está ligado.
 - Fonte **Jost**. Rótulos pequenos em maiúsculas espaçadas; títulos de documento em caixa normal.
-- **Tema claro é o padrão**; temas escuros são opcionais. Use sempre as variáveis CSS (`--ink`, `--muted`, `--faint`, `--acc`, `--acc2`, `--solid`, `--line`, `--glass2`, `--glass3`, `--forte`, `--doc`, `--modal-bg`, `--veu`), nunca cores fixas.
+- **Tema automático é o padrão** (`temaDaHora` em `app.js`): Amanhecer das 5h às 12h, Golden hour (`dourado`) das 12h às 18h, Noite estelar das 18h às 5h. Temas fixos continuam opcionais. Use sempre as variáveis CSS (`--ink`, `--muted`, `--faint`, `--acc`, `--acc2`, `--solid`, `--line`, `--glass2`, `--glass3`, `--forte`, `--doc`, `--modal-bg`, `--veu`), nunca cores fixas.
 - Vidro/transparência discreta, tons de verde suaves, nada saturado.
 - Ajustes finos de visual vão no bloco "refino leve" no fim do CSS de `index.html`, sem mudar fonte, cores dos temas nem ícones.
 - A área de Matérias segue o estilo de documentos: menu lateral fixo em pastas (matéria › grupo › seção), trilha "Matérias › … " no topo e a seção como página.

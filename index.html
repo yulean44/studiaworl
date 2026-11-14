@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=48">
-<link rel="icon" type="image/png" href="favicon.png?v=48">
-<link rel="manifest" href="manifest.webmanifest?v=48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=49">
+<link rel="icon" type="image/png" href="favicon.png?v=49">
+<link rel="manifest" href="manifest.webmanifest?v=49">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -488,7 +488,7 @@ mark.grifo.pisca{outline:2px solid var(--ink);outline-offset:2px}
 
 /* ================= tema claro (padrão) ================= */
 :root{--nav-bg:rgba(18,27,45,.45);--modal-bg:rgba(20,30,50,.88);--veu:rgba(6,10,20,.55)}
-:root[data-tema="claro"],:root[data-tema="amanhecer"]{--nav-bg:rgba(255,255,255,.7);--modal-bg:rgba(255,255,255,.96);--veu:rgba(210,222,234,.55)}
+:root[data-tema="claro"],:root[data-tema="amanhecer"],:root[data-tema="dourado"]{--nav-bg:rgba(255,255,255,.7);--modal-bg:rgba(255,255,255,.96);--veu:rgba(210,222,234,.55)}
 :root[data-tema="claro"]{
   --ink:#1b2733; --muted:#5b6b7c; --faint:#8492a3; --line:rgba(20,40,70,.10); --line2:rgba(20,40,70,.18);
   --glass:rgba(255,255,255,.74); --glass2:rgba(20,40,70,.04); --glass3:rgba(20,40,70,.08); --solid:rgba(255,255,255,.95);
@@ -502,7 +502,7 @@ mark.grifo.pisca{outline:2px solid var(--ink);outline-offset:2px}
 .modal{background:var(--modal-bg)}
 .modal-bg{background:var(--veu)}
 .toast{background:var(--modal-bg);color:var(--ink)}
-:root[data-tema="claro"] .searchhit,:root[data-tema="amanhecer"] .searchhit{color:var(--forte)}
+:root[data-tema="claro"] .searchhit,:root[data-tema="amanhecer"] .searchhit,:root[data-tema="dourado"] .searchhit{color:var(--forte)}
 
 /* ================= iPhone, iPad e computador ================= */
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
@@ -905,7 +905,7 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 .ws .doc table{font-variant-numeric:tabular-nums}
 /* trilha e chips: um único peso de sombra, sem bordas duplicadas */
 .trilha{box-shadow:0 1px 2px rgba(20,40,70,.05)}
-:root[data-tema="claro"] .chipi{background:var(--solid);box-shadow:0 1px 2px rgba(20,40,70,.05)}
+:root[data-tema="claro"] .chipi,:root[data-tema="dourado"] .chipi{background:var(--solid);box-shadow:0 1px 2px rgba(20,40,70,.05)}
 @media (prefers-reduced-motion:reduce){.btn:active,.chipi:active,.navbtn:active{transform:none}}
 /* Web Interface Guidelines: transição só no que muda, foco visível no editor, rolagem presa no modal */
 .navbtn .tip{transition:opacity .2s ease,transform .2s ease}
@@ -922,6 +922,20 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 .tempo-big,.stat b,.durs button,.chipi{font-variant-numeric:tabular-nums}
 .ws .doc img{height:auto;max-width:100%}
 .sub{text-wrap:balance}
+
+/* ================= golden hour (tarde no tema automático) ================= */
+:root[data-tema="dourado"]{
+  --ink:#2b2519; --muted:#6e6350; --faint:#a1957e; --line:rgba(90,65,20,.11); --line2:rgba(90,65,20,.19);
+  --glass:rgba(255,251,243,.86); --glass2:rgba(90,65,20,.04); --glass3:rgba(90,65,20,.08); --solid:rgba(255,253,248,.95);
+  --acc:#5c8a45; --acc2:#b07a2e; --acc-soft:rgba(120,165,90,.14); --ok:#4f8a4a; --bad:#c0574b; --gold:#a8790a;
+  --on-ink:#ffffff; --doc:#3a3226; --forte:#1d180f; --opt:#fffdf8;
+  --modal-bg:rgba(255,252,246,.97); --veu:rgba(235,220,195,.55); --nav-bg:rgba(255,251,243,.72);
+  --fundo:radial-gradient(60% 55% at 35% 45%,#fffaf1 0%,rgba(255,250,241,0) 70%),radial-gradient(50% 45% at 90% 6%,rgba(255,205,140,.5),transparent 70%),radial-gradient(45% 40% at 8% 96%,rgba(200,222,175,.5),transparent 70%),linear-gradient(180deg,#fbf4e6 0%,#f2e3c9 100%);
+  color-scheme:light;
+}
+:root[data-tema="dourado"] .vidro{box-shadow:0 14px 40px rgba(120,85,30,.10),inset 0 1px 0 rgba(255,255,255,.9)}
+:root[data-tema="dourado"] ::selection{background:rgba(214,160,80,.28)}
+.tema.auto i{position:relative;overflow:hidden}
 </style>
 </head>
 <body class="iniciando">
@@ -944,6 +958,6 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=48"></script>
+<script type="module" src="app.js?v=49"></script>
 </body>
 </html>

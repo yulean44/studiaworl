@@ -1,10 +1,10 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=48";
-import { ic, ICONES_MATERIA } from "./icons.js?v=48";
-import { FIG } from "./figuras.js?v=48";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=48";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=48";
-import { semanaDeEstudos } from "./relatorio.js?v=48";
-import { carregaMaterias } from "./conteudo.js?v=48";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=49";
+import { ic, ICONES_MATERIA } from "./icons.js?v=49";
+import { FIG } from "./figuras.js?v=49";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=49";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=49";
+import { semanaDeEstudos } from "./relatorio.js?v=49";
+import { carregaMaterias } from "./conteudo.js?v=49";
 
 /* =========================================================
    utilidades
@@ -25,15 +25,25 @@ const LS = {
   del(k) { try { localStorage.removeItem("pe:" + k); } catch {} },
 };
 const ICONE_EFEITO = { broto: "broto", agua: "gota", nuvens: "nuvem", borboletas: "borboleta", lua: "lua", anel: "anel", aurora: "aurora" };
-const TEMAS = [["claro", "Claro", "linear-gradient(160deg,#ffffff,#e7eef5)"], ["amanhecer", "Amanhecer", "linear-gradient(160deg,#ffffff,#cfe2ef)"], ["noite", "Noite estelar", "linear-gradient(160deg,#1e2d48,#0c1220)"], ["meianoite", "Meia-noite", "linear-gradient(160deg,#121a2c,#000)"], ["cristal", "Cristal", "linear-gradient(160deg,#1d4357,#08141f)"], ["aurora", "Aurora", "linear-gradient(160deg,#3a8f6a,#2a2350 55%,#5a3f9a)"], ["floresta", "Floresta", "linear-gradient(160deg,#1f4a33,#07120c)"]];
+const TEMAS = [["auto", "Automático", "linear-gradient(120deg,#e4eef6 10%,#f6dfb4 50%,#1e2d48 90%)"], ["claro", "Claro", "linear-gradient(160deg,#ffffff,#e7eef5)"], ["amanhecer", "Amanhecer", "linear-gradient(160deg,#ffffff,#cfe2ef)"], ["dourado", "Golden hour", "linear-gradient(160deg,#fffaf1,#f2dcae)"], ["noite", "Noite estelar", "linear-gradient(160deg,#1e2d48,#0c1220)"], ["meianoite", "Meia-noite", "linear-gradient(160deg,#121a2c,#000)"], ["cristal", "Cristal", "linear-gradient(160deg,#1d4357,#08141f)"], ["aurora", "Aurora", "linear-gradient(160deg,#3a8f6a,#2a2350 55%,#5a3f9a)"], ["floresta", "Floresta", "linear-gradient(160deg,#1f4a33,#07120c)"]];
 if (!LS.get("temaV3", false)) { LS.set("tema2", "claro"); LS.set("temaV3", true); }
-let tema = LS.get("tema2", "claro"), estiloIcone = LS.get("icones", "3d");
+if (!LS.get("temaV4", false)) { LS.set("tema2", "auto"); LS.set("temaV4", true); }
+let tema = LS.get("tema2", "auto"), estiloIcone = LS.get("icones", "3d");
+/* automático: manhã clara (5h–12h), golden hour à tarde (12h–18h), noite estrelada (18h–5h) */
+const temaDaHora = (h = new Date().getHours()) => h >= 5 && h < 12 ? "amanhecer" : h >= 12 && h < 18 ? "dourado" : "noite";
+const temaAtivo = () => tema === "auto" ? temaDaHora() : tema;
+let temaAplicado = null;
 function aplicaTema() {
-  const tc = { claro: "#eef4f9", amanhecer: "#e4eef6" }[tema] || "#10182a";
+  const t = temaAtivo(); temaAplicado = t;
+  const tc = { claro: "#eef4f9", amanhecer: "#e4eef6", dourado: "#f8ecd6" }[t] || "#10182a";
   document.querySelector('meta[name="theme-color"]')?.setAttribute("content", tc);
-  if (tema === "noite") document.documentElement.removeAttribute("data-tema"); else document.documentElement.setAttribute("data-tema", tema);
+  if (t === "noite") document.documentElement.removeAttribute("data-tema"); else document.documentElement.setAttribute("data-tema", t);
   temaMundo();
 }
+/* troca sozinho quando muda o período do dia (e ao voltar para a aba) */
+const conferePeriodo = () => { if (tema === "auto" && temaDaHora() !== temaAplicado) aplicaTema(); };
+setInterval(conferePeriodo, 60000);
+document.addEventListener("visibilitychange", () => { if (!document.hidden) conferePeriodo(); });
 let temaMundo = () => {};
 aplicaTema();
 /* ícone 3D (imagem) quando o estilo permite; senão, traço fino */
@@ -75,7 +85,7 @@ function manual() {
 }
 function escolheTema() {
   const m = modal(`<h3>Aparência</h3><p class="muted" style="font-weight:300;margin:0 0 14px">Escolha o tema e o estilo dos ícones.</p>
-    <label class="lb">Claros</label><div class="temas">${TEMAS.slice(0, 2).map(([k, n, g]) => `<button class="tema ${tema === k ? "on" : ""}" data-t="${k}"><i style="background:${g}"></i>${n}</button>`).join("")}</div><label class="lb">Escuros</label><div class="temas">${TEMAS.slice(2).map(([k, n, g]) => `<button class="tema ${tema === k ? "on" : ""}" data-t="${k}"><i style="background:${g}"></i>${n}</button>`).join("")}</div>
+    <label class="lb">Muda com a hora do dia</label><div class="temas">${TEMAS.slice(0, 1).map(([k, n, g]) => `<button class="tema auto ${tema === k ? "on" : ""}" data-t="${k}"><i style="background:${g}"></i>${n}</button>`).join("")}</div><label class="lb">Claros</label><div class="temas">${TEMAS.slice(1, 4).map(([k, n, g]) => `<button class="tema ${tema === k ? "on" : ""}" data-t="${k}"><i style="background:${g}"></i>${n}</button>`).join("")}</div><label class="lb">Escuros</label><div class="temas">${TEMAS.slice(4).map(([k, n, g]) => `<button class="tema ${tema === k ? "on" : ""}" data-t="${k}"><i style="background:${g}"></i>${n}</button>`).join("")}</div>
     <label class="lb">Ícones</label><div class="tabs"><button class="${estiloIcone === "3d" ? "on" : ""}" data-e="3d">3D low-poly</button><button class="${estiloIcone === "linha" ? "on" : ""}" data-e="linha">Traço fino</button></div>
     <div class="acts"><button class="btn pri" data-fecha>Pronto</button></div>`);
   $$("[data-t]", m.el).forEach(b => b.addEventListener("click", () => { tema = b.dataset.t; LS.set("tema2", tema); aplicaTema(); $$("[data-t]", m.el).forEach(x => x.classList.toggle("on", x === b)); }));
@@ -664,11 +674,11 @@ function renderTopo() {
    planeta
    ========================================================= */
 let mundo = null, mundoMod = null;
-temaMundo = () => mundo?.tema?.(tema);
+temaMundo = () => mundo?.tema?.(temaAtivo());
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=48"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=49"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -1937,7 +1947,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=48");
+      const mod = await import("./conta.js?v=49");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }
