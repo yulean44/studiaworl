@@ -1861,5 +1861,1901 @@
   "capa": "{n} questões focadas nas partes prioritárias, com casos clínicos e gabarito contextualizado.",
   "botao": "Começar revisão",
   "contextualizado": true
- }
+ },
+ "questoes": [
+  {
+   "id": "q-r1-01",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Quantas consultas de puericultura o Ministério da Saúde recomenda nos dois primeiros anos?",
+   "alternativas": [
+    {
+     "t": "Nove",
+     "certa": true,
+     "porque": "Recomendação do MS."
+    },
+    {
+     "t": "Doze",
+     "certa": false,
+     "porque": "É a da SBP."
+    },
+    {
+     "t": "Seis",
+     "certa": false,
+     "porque": "Não é o número."
+    },
+    {
+     "t": "Vinte e quatro",
+     "certa": false,
+     "porque": "Não é o número."
+    }
+   ],
+   "explica": "Primeira semana e 1, 2, 4, 6, 9, 12, 18 e 24 meses.",
+   "pegadinha": "MS e SBP diferem.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O Ministério da Saúde recomenda nove consultas nos dois primeiros anos, e a Sociedade Brasileira de Pediatria, 12."
+   }
+  },
+  {
+   "id": "q-r1-02",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "No acompanhamento do crescimento, o que importa mais?",
+   "alternativas": [
+    {
+     "t": "Uma medida isolada abaixo da média",
+     "certa": false,
+     "porque": "Não basta."
+    },
+    {
+     "t": "Só o peso ao nascer",
+     "certa": false,
+     "porque": "Não é o foco."
+    },
+    {
+     "t": "A trajetória ao longo do tempo",
+     "certa": true,
+     "porque": "Não um ponto isolado."
+    },
+    {
+     "t": "O IMC desde o nascimento",
+     "certa": false,
+     "porque": "IMC só a partir dos 2 anos."
+    }
+   ],
+   "explica": "O peso reflete agravos agudos e a estatura, crônicos.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O que importa no crescimento é a trajetória , e não um ponto isolado."
+   }
+  },
+  {
+   "id": "q-r1-03",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Criança de 3 anos com estatura para idade abaixo de −2 Z. Como se classifica?",
+   "alternativas": [
+    {
+     "t": "Magreza",
+     "certa": false,
+     "porque": "É peso para estatura ou IMC."
+    },
+    {
+     "t": "Baixo peso",
+     "certa": false,
+     "porque": "É peso para idade."
+    },
+    {
+     "t": "Microcefalia",
+     "certa": false,
+     "porque": "É perímetro cefálico."
+    },
+    {
+     "t": "Baixa estatura",
+     "certa": true,
+     "porque": "Tabela do escore Z."
+    }
+   ],
+   "explica": "Escore Z mostra quantos desvios-padrão a medida se afasta da mediana.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Baixa estatura"
+   }
+  },
+  {
+   "id": "q-r1-04",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual o sinal de alerta mais grave do desenvolvimento?",
+   "alternativas": [
+    {
+     "t": "Não andar aos 12 meses",
+     "certa": false,
+     "porque": "Andar sozinho é esperado aos 18 meses."
+    },
+    {
+     "t": "Regressão de marcos já adquiridos",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Estranhar desconhecidos aos 9 meses",
+     "certa": false,
+     "porque": "É marco normal."
+    },
+    {
+     "t": "Brincar paralelo aos 2 anos",
+     "certa": false,
+     "porque": "É marco normal."
+    }
+   ],
+   "explica": "Exige investigação imediata.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Alguns achados exigem investigação imediata e estão no Quadro 1.1; a regressão de marcos já adquiridos é o mais grave deles."
+   }
+  },
+  {
+   "id": "q-r1-05",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Criança de 15 meses chega com vacinas atrasadas desde os 6 meses. O que fazer?",
+   "alternativas": [
+    {
+     "t": "Aproveitar as doses já aplicadas e completar, sem reiniciar",
+     "certa": true,
+     "porque": "Regra do PNI."
+    },
+    {
+     "t": "Reiniciar todo o esquema",
+     "certa": false,
+     "porque": "Nunca se reinicia."
+    },
+    {
+     "t": "Aguardar a próxima campanha",
+     "certa": false,
+     "porque": "Cada consulta é oportunidade."
+    },
+    {
+     "t": "Aplicar só as vacinas dos 15 meses",
+     "certa": false,
+     "porque": "Deve completar o atraso."
+    }
+   ],
+   "explica": "Respeitar intervalos mínimos e registrar no sistema.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Diante de atraso vacinal, o esquema nunca é reiniciado : aproveitam-se as doses já aplicadas, respeitam-se os intervalos mínimos, registra-se no sistema de informação e cada consulta é tratada como oportunidade de vacinar."
+   }
+  },
+  {
+   "id": "q-r1-06",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Quando é colhido o teste do pezinho?",
+   "alternativas": [
+    {
+     "t": "Nas primeiras 6 horas",
+     "certa": false,
+     "porque": "Cedo demais."
+    },
+    {
+     "t": "Com 1 mês",
+     "certa": false,
+     "porque": "Tarde demais."
+    },
+    {
+     "t": "Entre o terceiro e o quinto dia",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Entre 24 e 48 horas",
+     "certa": false,
+     "porque": "É o teste do coraçãozinho."
+    }
+   ],
+   "explica": "Detecta fenilcetonúria, hipotireoidismo congênito, fibrose cística e outras.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "colhido entre o terceiro e o quinto dia"
+   }
+  },
+  {
+   "id": "q-r1-07",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Criança de 8 meses beneficiária do Bolsa Família recebe NutriSUS. Deve receber também sulfato ferroso?",
+   "alternativas": [
+    {
+     "t": "Sim, sempre associado",
+     "certa": false,
+     "porque": "Não se associa."
+    },
+    {
+     "t": "Não, o sachê já contém ferro e vitamina A",
+     "certa": true,
+     "porque": "Regra do material."
+    },
+    {
+     "t": "Sim, e megadose de vitamina A",
+     "certa": false,
+     "porque": "Não se associa."
+    },
+    {
+     "t": "Só se tiver anemia confirmada",
+     "certa": false,
+     "porque": "O material exclui o ferro isolado."
+    }
+   ],
+   "explica": "NutriSUS exclui sulfato ferroso e megadose de vitamina A.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "quem recebe NutriSUS não recebe sulfato ferroso"
+   }
+  },
+  {
+   "id": "q-r1-08",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Criança com hematomas em fases diferentes e em locais atípicos. O que a notificação exige?",
+   "alternativas": [
+    {
+     "t": "Confirmação por perícia",
+     "certa": false,
+     "porque": "Basta a suspeita."
+    },
+    {
+     "t": "Autorização dos pais",
+     "certa": false,
+     "porque": "Não é necessária."
+    },
+    {
+     "t": "Só se houver fratura",
+     "certa": false,
+     "porque": "Não é exigido."
+    },
+    {
+     "t": "Basta a suspeita; notificar ao Conselho Tutelar e ao SINAN",
+     "certa": true,
+     "porque": "ECA, artigo 13."
+    }
+   ],
+   "explica": "A notificação não viola o sigilo profissional.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "a notificação é compulsória para qualquer profissional, basta a suspeita"
+   }
+  },
+  {
+   "id": "q-r1-09",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Quando a confidencialidade do adolescente pode ser quebrada?",
+   "alternativas": [
+    {
+     "t": "Diante de risco de vida, avisando o adolescente",
+     "certa": true,
+     "porque": "Regra do material."
+    },
+    {
+     "t": "Sempre que os pais pedirem",
+     "certa": false,
+     "porque": "Não é a regra."
+    },
+    {
+     "t": "Nunca",
+     "certa": false,
+     "porque": "Pode diante de risco de vida."
+    },
+    {
+     "t": "Ao prescrever contracepção",
+     "certa": false,
+     "porque": "Não é motivo."
+    }
+   ],
+   "explica": "A consulta deve incluir um momento sem os responsáveis.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "A consulta deve incluir um momento sem os responsáveis, e a confidencialidade só pode ser quebrada diante de risco de vida, sempre avisando o adolescente."
+   }
+  },
+  {
+   "id": "q-r2-01",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Como rastrear o colo do útero em mulher trans?",
+   "alternativas": [
+    {
+     "t": "Nunca rastrear",
+     "certa": false,
+     "porque": "Depende dos órgãos."
+    },
+    {
+     "t": "Sempre como mulher cis",
+     "certa": false,
+     "porque": "Depende dos órgãos."
+    },
+    {
+     "t": "Conforme os órgãos presentes",
+     "certa": true,
+     "porque": "Não pela identidade."
+    },
+    {
+     "t": "Só com mamografia",
+     "certa": false,
+     "porque": "Não é o caso."
+    }
+   ],
+   "explica": "A perspectiva de gênero e vulnerabilidade orienta a abordagem.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "mulheres trans são rastreadas conforme os órgãos presentes"
+   }
+  },
+  {
+   "id": "q-r2-02",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Mulher em situação de violência doméstica não quer denunciar. A notificação depende do consentimento dela?",
+   "alternativas": [
+    {
+     "t": "Sim, só com autorização",
+     "certa": false,
+     "porque": "Independe."
+    },
+    {
+     "t": "Só se houver lesão grave",
+     "certa": false,
+     "porque": "Não é a regra."
+    },
+    {
+     "t": "Só se ela registrar boletim",
+     "certa": false,
+     "porque": "Não é a regra."
+    },
+    {
+     "t": "Não, é compulsória e independe do consentimento",
+     "certa": true,
+     "porque": "Regra do material."
+    }
+   ],
+   "explica": "O sigilo é mantido em relação ao agressor, não à rede de proteção.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A notificação é compulsória e independe do consentimento da mulher"
+   }
+  },
+  {
+   "id": "q-r2-03",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Teste de DNA-HPV não detectado em mulher de 40 anos. Quando repetir?",
+   "alternativas": [
+    {
+     "t": "Em 1 ano",
+     "certa": false,
+     "porque": "Não é a conduta."
+    },
+    {
+     "t": "Em 5 anos",
+     "certa": true,
+     "porque": "Conduta da tabela."
+    },
+    {
+     "t": "Em 3 anos",
+     "certa": false,
+     "porque": "Era o intervalo da citologia."
+    },
+    {
+     "t": "Não precisa repetir",
+     "certa": false,
+     "porque": "Repete-se até 64 anos."
+    }
+   ],
+   "explica": "O rastreamento encerra se o último teste após os 60 for negativo.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "repetido a cada cinco anos se negativo"
+   }
+  },
+  {
+   "id": "q-r2-04",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "dificil",
+   "enunciado": "Mulher vivendo com HIV com DNA-HPV detectando tipo oncogênico não 16/18. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Citologia reflexa",
+     "certa": false,
+     "porque": "É a regra para as demais."
+    },
+    {
+     "t": "Colposcopia",
+     "certa": true,
+     "porque": "Em imunossuprimidas, qualquer HPV detectado vai à colposcopia."
+    },
+    {
+     "t": "Repetir em 12 meses",
+     "certa": false,
+     "porque": "Não para imunossuprimidas."
+    },
+    {
+     "t": "Repetir em 3 anos",
+     "certa": false,
+     "porque": "É o intervalo se negativo."
+    }
+   ],
+   "explica": "Em HIV o intervalo é de 3 anos se negativo.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "vão à colposcopia diante de qualquer HPV detectado"
+   }
+  },
+  {
+   "id": "q-r2-05",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Mulher de 45 anos com nódulo endurecido e fixo na mama. Faz rastreamento?",
+   "alternativas": [
+    {
+     "t": "Sim, mamografia bienal",
+     "certa": false,
+     "porque": "É para assintomáticas."
+    },
+    {
+     "t": "Só aos 50 anos",
+     "certa": false,
+     "porque": "Sintoma exige investigação agora."
+    },
+    {
+     "t": "Não, faz investigação diagnóstica",
+     "certa": true,
+     "porque": "Sintomática não entra no rastreamento."
+    },
+    {
+     "t": "Autoexame mensal",
+     "certa": false,
+     "porque": "Não é conduta."
+    }
+   ],
+   "explica": "Nódulo endurecido e fixo é sinal de alerta.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Mulher sintomática, em qualquer idade, faz investigação diagnóstica, e não rastreamento."
+   }
+  },
+  {
+   "id": "q-r2-06",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Mulher com história familiar de alto risco para câncer de mama. Quando começa o rastreamento?",
+   "alternativas": [
+    {
+     "t": "Dez anos antes do caso mais jovem ou aos 25 anos",
+     "certa": true,
+     "porque": "Regra do material."
+    },
+    {
+     "t": "Aos 50 anos",
+     "certa": false,
+     "porque": "É a regra geral."
+    },
+    {
+     "t": "Aos 40 anos",
+     "certa": false,
+     "porque": "Não é a regra de alto risco."
+    },
+    {
+     "t": "Nunca",
+     "certa": false,
+     "porque": "Deve rastrear."
+    }
+   ],
+   "explica": "Alto risco: dois ou mais parentes com câncer antes dos 50.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Mulheres de alto risco familiar, com dois ou mais parentes de primeiro ou segundo grau com câncer antes dos 50 anos, iniciam dez anos antes da idade do caso mais jovem ou aos 25 anos."
+   }
+  },
+  {
+   "id": "q-r2-07",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Mulher fumante de 38 anos (20 cigarros/dia) quer pílula combinada. Qual a orientação?",
+   "alternativas": [
+    {
+     "t": "Liberar com controle de pressão",
+     "certa": false,
+     "porque": "Contraindicada."
+    },
+    {
+     "t": "Liberar se usar preservativo",
+     "certa": false,
+     "porque": "Não muda a contraindicação."
+    },
+    {
+     "t": "Liberar a dose baixa",
+     "certa": false,
+     "porque": "Continua contraindicada."
+    },
+    {
+     "t": "Contraindicada; usar método sem estrogênio",
+     "certa": true,
+     "porque": "Tabagismo após 35 anos."
+    }
+   ],
+   "explica": "O estrogênio aumenta fatores de coagulação.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "os combinados são contraindicados no tabagismo após os 35 anos"
+   }
+  },
+  {
+   "id": "q-r2-08",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Puérpera que não amamenta quer pílula combinada. Quando iniciar?",
+   "alternativas": [
+    {
+     "t": "Imediatamente após o parto",
+     "certa": false,
+     "porque": "Risco trombótico."
+    },
+    {
+     "t": "Após 6 meses",
+     "certa": false,
+     "porque": "É a regra de quem amamenta."
+    },
+    {
+     "t": "Nunca",
+     "certa": false,
+     "porque": "Pode após 21 dias."
+    },
+    {
+     "t": "Após 21 dias",
+     "certa": true,
+     "porque": "Regra do material."
+    }
+   ],
+   "explica": "Com amamentação, evitam-se combinados.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "sem amamentar, o combinado só é iniciado após 21 dias"
+   }
+  },
+  {
+   "id": "q-r2-09",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Como se confirma a menopausa?",
+   "alternativas": [
+    {
+     "t": "6 meses de amenorreia",
+     "certa": false,
+     "porque": "Insuficiente."
+    },
+    {
+     "t": "FSH elevado isolado",
+     "certa": false,
+     "porque": "Não é o critério do material."
+    },
+    {
+     "t": "12 meses de amenorreia",
+     "certa": true,
+     "porque": "Definição do material."
+    },
+    {
+     "t": "Fogachos",
+     "certa": false,
+     "porque": "São sintomas."
+    }
+   ],
+   "explica": "Ocorre em média aos 51 anos no Brasil.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A menopausa é a última menstruação, confirmada após 12 meses de amenorreia, e ocorre em média aos 51 anos no Brasil."
+   }
+  },
+  {
+   "id": "q-r2-10",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a mulher com útero em terapia hormonal precisa de progestagênio?",
+   "alternativas": [
+    {
+     "t": "Para reduzir os fogachos",
+     "certa": false,
+     "porque": "O estrogênio já reduz."
+    },
+    {
+     "t": "Para proteger o endométrio da hiperplasia",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Para evitar osteoporose",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Para prevenir câncer de mama",
+     "certa": false,
+     "porque": "Não é o motivo."
+    }
+   ],
+   "explica": "Estrogênio isolado só em histerectomizadas.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Mulheres com útero recebem estrogênio associado a progestagênio, para proteger o endométrio da hiperplasia; o estrogênio isolado só é usado em histerectomizadas."
+   }
+  },
+  {
+   "id": "q-r2-11",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Mulher obesa e tabagista com fogachos intensos indicada para terapia hormonal. Qual via preferir?",
+   "alternativas": [
+    {
+     "t": "Transdérmica",
+     "certa": true,
+     "porque": "Menor risco trombótico."
+    },
+    {
+     "t": "Oral",
+     "certa": false,
+     "porque": "Maior risco trombótico."
+    },
+    {
+     "t": "Estriol vaginal",
+     "certa": false,
+     "porque": "É para síndrome geniturinária isolada."
+    },
+    {
+     "t": "Nenhuma, é contraindicada",
+     "certa": false,
+     "porque": "Obesidade não contraindica."
+    }
+   ],
+   "explica": "Janela de oportunidade: antes dos 60 ou menos de 10 anos de menopausa.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A via transdérmica tem menor risco trombótico e é preferida em tabagistas, obesas, mulheres com risco cardiovascular e hipertrigliceridemia; o estriol vaginal trata a síndrome geniturinária isolada."
+   }
+  },
+  {
+   "id": "q-r2-12",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual T-score define osteoporose?",
+   "alternativas": [
+    {
+     "t": "Entre −1,0 e −2,5",
+     "certa": false,
+     "porque": "É osteopenia."
+    },
+    {
+     "t": "−1,0 ou mais",
+     "certa": false,
+     "porque": "É normal."
+    },
+    {
+     "t": "Abaixo de −1,0 apenas",
+     "certa": false,
+     "porque": "Inclui osteopenia."
+    },
+    {
+     "t": "−2,5 ou menos",
+     "certa": true,
+     "porque": "Critério do material."
+    }
+   ],
+   "explica": "Densitometria acima de 65 anos ou pós-menopausa com risco.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "O T-score compara a densidade com a de um adulto jovem: normal a partir de -1,0, osteopenia entre -1,0 e -2,5 e osteoporose igual ou abaixo de -2,5."
+   }
+  },
+  {
+   "id": "q-r3-01",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Até quando a gestante deve ser captada e quantas consultas no mínimo?",
+   "alternativas": [
+    {
+     "t": "Até 20 semanas; quatro consultas",
+     "certa": false,
+     "porque": "Não é a regra."
+    },
+    {
+     "t": "Até 12 semanas; seis consultas ou mais",
+     "certa": true,
+     "porque": "Regra do material."
+    },
+    {
+     "t": "Até 28 semanas; doze consultas",
+     "certa": false,
+     "porque": "Doze é meta do alto risco."
+    },
+    {
+     "t": "A qualquer momento; três consultas",
+     "certa": false,
+     "porque": "Não é a regra."
+    }
+   ],
+   "explica": "Consultas mensais até 28 semanas, quinzenais até 36 e semanais depois.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A gestante deve ser captada até a 12ª semana"
+   }
+  },
+  {
+   "id": "q-r3-02",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "facil",
+   "enunciado": "DUM em 10/03. Qual a data provável do parto pela regra de Naegele?",
+   "alternativas": [
+    {
+     "t": "10/12",
+     "certa": false,
+     "porque": "Faltou somar 7 dias."
+    },
+    {
+     "t": "17/06",
+     "certa": false,
+     "porque": "Subtraiu errado."
+    },
+    {
+     "t": "17/12",
+     "certa": true,
+     "porque": "Soma 7 dias e subtrai 3 meses."
+    },
+    {
+     "t": "03/12",
+     "certa": false,
+     "porque": "Subtraiu dias."
+    }
+   ],
+   "explica": "Regra: +7 dias, −3 meses.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A data provável do parto é calculada pela regra de Naegele, somando sete dias e subtraindo três meses da data da última menstruação."
+   }
+  },
+  {
+   "id": "q-r3-03",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Quando se faz o TOTG com 75 g no pré-natal?",
+   "alternativas": [
+    {
+     "t": "24 a 28 semanas",
+     "certa": true,
+     "porque": "Tabela de exames."
+    },
+    {
+     "t": "Na primeira consulta",
+     "certa": false,
+     "porque": "É a glicemia de jejum."
+    },
+    {
+     "t": "36 semanas",
+     "certa": false,
+     "porque": "Não é o momento."
+    },
+    {
+     "t": "Após o parto",
+     "certa": false,
+     "porque": "Não é rotina."
+    }
+   ],
+   "explica": "Coombs indireto também, se Rh negativo.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Teste oral de tolerância à glicose com 75 g; Coombs indireto se Rh negativo"
+   }
+  },
+  {
+   "id": "q-r3-04",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Quando aplicar a dTpa na gestação?",
+   "alternativas": [
+    {
+     "t": "Uma dose a cada gestação, a partir de 20 semanas",
+     "certa": true,
+     "porque": "Tabela de vacinas."
+    },
+    {
+     "t": "Só na primeira gestação",
+     "certa": false,
+     "porque": "É a cada gestação."
+    },
+    {
+     "t": "No primeiro trimestre",
+     "certa": false,
+     "porque": "A partir de 20 semanas."
+    },
+    {
+     "t": "É contraindicada",
+     "certa": false,
+     "porque": "É recomendada."
+    }
+   ],
+   "explica": "Vacinas de vírus vivo são contraindicadas.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Uma dose a cada gestação, a partir de 20 semanas"
+   }
+  },
+  {
+   "id": "q-r3-05",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o cálcio é dado a todas as gestantes da 12ª semana ao parto?",
+   "alternativas": [
+    {
+     "t": "Para prevenir defeitos do tubo neural",
+     "certa": false,
+     "porque": "É o ácido fólico."
+    },
+    {
+     "t": "Para tratar anemia",
+     "certa": false,
+     "porque": "É o ferro."
+    },
+    {
+     "t": "Para prevenir hiperêmese",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Para reduzir o risco de pré-eclâmpsia",
+     "certa": true,
+     "porque": "Dado do material."
+    }
+   ],
+   "explica": "Cálcio 1 g por dia.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "para reduzir o risco de pré-eclâmpsia"
+   }
+  },
+  {
+   "id": "q-r3-06",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Gestante com urocultura de 150.000 UFC/mL, sem sintomas. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Não tratar, é assintomática",
+     "certa": false,
+     "porque": "Na gestação sempre se trata."
+    },
+    {
+     "t": "Tratar, por exemplo com cefalexina por 7 dias",
+     "certa": true,
+     "porque": "Bacteriúria assintomática é sempre tratada."
+    },
+    {
+     "t": "Internar com ceftriaxona",
+     "certa": false,
+     "porque": "É para pielonefrite."
+    },
+    {
+     "t": "Repetir urocultura em 3 meses",
+     "certa": false,
+     "porque": "Tratamento antes."
+    }
+   ],
+   "explica": "Ureteres dilatados favorecem a ascensão.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "a infecção urinária é sempre tratada"
+   }
+  },
+  {
+   "id": "q-r3-07",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Gestante com febre e Giordano positivo. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Cefalexina ambulatorial",
+     "certa": false,
+     "porque": "É para cistite."
+    },
+    {
+     "t": "Nitrofurantoína",
+     "certa": false,
+     "porque": "É para cistite."
+    },
+    {
+     "t": "Internação e ceftriaxona IV",
+     "certa": true,
+     "porque": "Pielonefrite."
+    },
+    {
+     "t": "Observar 48 horas em casa",
+     "certa": false,
+     "porque": "Exige internação."
+    }
+   ],
+   "explica": "Após o tratamento, urocultura de controle.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A pielonefrite, com febre e sinal de Giordano positivo, exige internação e ceftriaxona intravenosa."
+   }
+  },
+  {
+   "id": "q-r3-08",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Gestante de 17 semanas com PA 148/94 mmHg em duas medidas. Qual a classificação?",
+   "alternativas": [
+    {
+     "t": "Pré-eclâmpsia",
+     "certa": false,
+     "porque": "Exige mais de 20 semanas."
+    },
+    {
+     "t": "Hipertensão gestacional",
+     "certa": false,
+     "porque": "Exige mais de 20 semanas."
+    },
+    {
+     "t": "Hipertensão crônica",
+     "certa": true,
+     "porque": "Antes de 20 semanas."
+    },
+    {
+     "t": "Normal",
+     "certa": false,
+     "porque": "Está acima de 140/90."
+    }
+   ],
+   "explica": "Antes de 20 semanas a hipertensão é crônica e coloca a gestante em alto risco.",
+   "pegadinha": "Não é pré-eclâmpsia.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A hipertensão antes de 20 semanas é crônica, o que a coloca em alto risco."
+   }
+  },
+  {
+   "id": "q-r3-09",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Gestante com hipertensão crônica. Quando iniciar o AAS?",
+   "alternativas": [
+    {
+     "t": "Só após 20 semanas",
+     "certa": false,
+     "porque": "Tarde demais."
+    },
+    {
+     "t": "Só se surgir proteinúria",
+     "certa": false,
+     "porque": "É prevenção."
+    },
+    {
+     "t": "Não está indicado",
+     "certa": false,
+     "porque": "Está indicado."
+    },
+    {
+     "t": "Da 12ª semana, preferencialmente antes da 16ª, até 36 semanas",
+     "certa": true,
+     "porque": "Fator de alto risco."
+    }
+   ],
+   "explica": "AAS 100 a 150 mg à noite.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "da 12ª semana, preferencialmente antes da 16ª, até 36 semanas"
+   }
+  },
+  {
+   "id": "q-r3-10",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Qual anti-hipertensivo é proibido na gestação?",
+   "alternativas": [
+    {
+     "t": "Enalapril (IECA)",
+     "certa": true,
+     "porque": "IECA, BRA e diuréticos são proibidos."
+    },
+    {
+     "t": "Metildopa",
+     "certa": false,
+     "porque": "É primeira escolha."
+    },
+    {
+     "t": "Nifedipina",
+     "certa": false,
+     "porque": "É opção."
+    },
+    {
+     "t": "Nenhum",
+     "certa": false,
+     "porque": "Há proibidos."
+    }
+   ],
+   "explica": "Na amamentação, nifedipina e enalapril são compatíveis.",
+   "pegadinha": "Enalapril é proibido na gestação, mas não na amamentação.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "O tratamento usa metildopa ou nifedipina; inibidores da enzima conversora, bloqueadores do receptor de angiotensina e diuréticos são proibidos na gestação."
+   }
+  },
+  {
+   "id": "q-r3-11",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Gestante em tratamento de sífilis tardia atrasou a 2ª dose de benzatina: 11 dias após a 1ª. O que fazer?",
+   "alternativas": [
+    {
+     "t": "Seguir com a 2ª dose normalmente",
+     "certa": false,
+     "porque": "Ultrapassou o limite."
+    },
+    {
+     "t": "Reiniciar o esquema",
+     "certa": true,
+     "porque": "Intervalo máximo de 9 dias."
+    },
+    {
+     "t": "Trocar por doxiciclina",
+     "certa": false,
+     "porque": "Proibida na gestante."
+    },
+    {
+     "t": "Considerar tratada",
+     "certa": false,
+     "porque": "Esquema incompleto."
+    }
+   ],
+   "explica": "Intervalo ideal de 7 dias e máximo de 9.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Entre as doses, o intervalo ideal é de sete dias e o máximo de nove; se ultrapassado, o esquema é reiniciado."
+   }
+  },
+  {
+   "id": "q-r3-12",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Glicemia de jejum de 100 mg/dL na primeira consulta do pré-natal. Como interpretar?",
+   "alternativas": [
+    {
+     "t": "Normal",
+     "certa": false,
+     "porque": "Normal é abaixo de 92."
+    },
+    {
+     "t": "Diabetes prévio",
+     "certa": false,
+     "porque": "Seria 126 ou mais."
+    },
+    {
+     "t": "Pré-diabetes",
+     "certa": false,
+     "porque": "Não é a classificação na gestação."
+    },
+    {
+     "t": "Diabetes gestacional",
+     "certa": true,
+     "porque": "Entre 92 e 125."
+    }
+   ],
+   "explica": "Metas: jejum abaixo de 95 e 2 h pós-prandial abaixo de 120.",
+   "pegadinha": "O corte na gestação é 92, não 100.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "92 a 125"
+   }
+  },
+  {
+   "id": "q-r3-13",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual a causa mais comum de hemorragia pós-parto?",
+   "alternativas": [
+    {
+     "t": "Tônus (atonia uterina)",
+     "certa": true,
+     "porque": "Primeiro dos quatro T."
+    },
+    {
+     "t": "Trauma",
+     "certa": false,
+     "porque": "Não é a mais comum."
+    },
+    {
+     "t": "Tecido",
+     "certa": false,
+     "porque": "Não é a mais comum."
+    },
+    {
+     "t": "Trombina",
+     "certa": false,
+     "porque": "Não é a mais comum."
+    }
+   ],
+   "explica": "Conduta: massagem uterina, ocitocina, ácido tranexâmico precoce e volume.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A hemorragia pós-parto , perda de 500 mL ou mais no parto vaginal ou de 1.000 mL ou mais na cesárea, tem quatro causas, os quatro T: tônus (atonia uterina, a mais comum), trauma, tecido e trombina."
+   }
+  },
+  {
+   "id": "q-r4-01",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a pressão precisa ser confirmada em pelo menos duas visitas?",
+   "alternativas": [
+    {
+     "t": "Porque a primeira medida é sempre falsa",
+     "certa": false,
+     "porque": "Não é o argumento."
+    },
+    {
+     "t": "Para confirmar o diagnóstico, salvo lesão de órgão-alvo ou doença cardiovascular",
+     "certa": true,
+     "porque": "Regra da diretriz."
+    },
+    {
+     "t": "Para escolher o anti-hipertensivo",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Porque MAPA é proibida",
+     "certa": false,
+     "porque": "MAPA também confirma."
+    }
+   ],
+   "explica": "Monitorização ambulatorial ou residencial também confirma.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "O diagnóstico exige confirmação em pelo menos duas visitas ou por monitorização ambulatorial ou residencial da pressão, exceto quando já há lesão de órgão-alvo ou doença cardiovascular."
+   }
+  },
+  {
+   "id": "q-r4-02",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual a meta de pressão para a maioria dos hipertensos?",
+   "alternativas": [
+    {
+     "t": "Abaixo de 140/90",
+     "certa": false,
+     "porque": "Não é a meta atual."
+    },
+    {
+     "t": "Abaixo de 120/70",
+     "certa": false,
+     "porque": "Não é a meta."
+    },
+    {
+     "t": "Abaixo de 130/80 mmHg",
+     "certa": true,
+     "porque": "Meta do material."
+    },
+    {
+     "t": "Abaixo de 150/90",
+     "certa": false,
+     "porque": "Não é a meta."
+    }
+   ],
+   "explica": "PA ≥ 140/90 é medicada desde o diagnóstico.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "A meta para a maioria é abaixo de 130/80 mmHg."
+   }
+  },
+  {
+   "id": "q-r4-03",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Como iniciar o tratamento medicamentoso na maioria dos hipertensos?",
+   "alternativas": [
+    {
+     "t": "Monoterapia sempre",
+     "certa": false,
+     "porque": "É exceção."
+    },
+    {
+     "t": "Dois fármacos combinados em dose baixa e comprimido único",
+     "certa": true,
+     "porque": "A monoterapia é exceção."
+    },
+    {
+     "t": "Três fármacos de início",
+     "certa": false,
+     "porque": "É para falta de controle."
+    },
+    {
+     "t": "Só mudança de estilo de vida por 1 ano",
+     "certa": false,
+     "porque": "Não é a regra."
+    }
+   ],
+   "explica": "Monoterapia: estágio 1 de baixo risco, maiores de 80 anos e frágeis.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "A monoterapia é exceção, reservada ao estágio 1 de baixo risco, aos maiores de 80 anos, aos frágeis, à hipotensão ortostática e à faixa de 130 a 139 em alto risco; nos demais, inicia-se com dois fármacos combinados em dose baixa e comprimido único."
+   }
+  },
+  {
+   "id": "q-r4-04",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Glicemia de jejum de 130 e hemoglobina glicada de 6,8% na mesma amostra. Qual o diagnóstico?",
+   "alternativas": [
+    {
+     "t": "Diabetes",
+     "certa": true,
+     "porque": "Dois resultados alterados."
+    },
+    {
+     "t": "Pré-diabetes",
+     "certa": false,
+     "porque": "Valores acima dos cortes."
+    },
+    {
+     "t": "Normal",
+     "certa": false,
+     "porque": "Estão alterados."
+    },
+    {
+     "t": "Precisa repetir os dois em outro dia",
+     "certa": false,
+     "porque": "Pode ser na mesma amostra."
+    }
+   ],
+   "explica": "Jejum ≥ 126 e HbA1c ≥ 6,5.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "O diagnóstico exige dois resultados alterados, na mesma amostra ou não; sintomas clássicos com glicemia ao acaso de 200 mg/dL ou mais dispensam a confirmação."
+   }
+  },
+  {
+   "id": "q-r4-05",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "O que define a prevenção quaternária?",
+   "alternativas": [
+    {
+     "t": "Reabilitar após a doença",
+     "certa": false,
+     "porque": "É terciária."
+    },
+    {
+     "t": "Detectar doença cedo",
+     "certa": false,
+     "porque": "É secundária."
+    },
+    {
+     "t": "Proteger a pessoa de intervenções desnecessárias",
+     "certa": true,
+     "porque": "Conceito de Marc Jamoulle."
+    },
+    {
+     "t": "Evitar fatores de risco",
+     "certa": false,
+     "porque": "É primordial."
+    }
+   ],
+   "explica": "Pergunta-chave: o resultado mudaria a conduta?",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "A prevenção quaternária , conceito proposto por Marc Jamoulle, protege a pessoa de intervenções desnecessárias, cujos danos incluem falso-positivos, sobrediagnóstico, cascatas de exames e rotulação."
+   }
+  },
+  {
+   "id": "q-r4-06",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "O que é o viés de tempo ganho no rastreamento?",
+   "alternativas": [
+    {
+     "t": "O rastreamento detecta mais doenças lentas",
+     "certa": false,
+     "porque": "É o viés de duração."
+    },
+    {
+     "t": "O teste tem baixa sensibilidade",
+     "certa": false,
+     "porque": "Não é um viés de sobrevida."
+    },
+    {
+     "t": "O paciente rastreado vive mais de fato",
+     "certa": false,
+     "porque": "Não é o que ocorre."
+    },
+    {
+     "t": "O diagnóstico é antecipado, mas a data da morte não muda",
+     "certa": true,
+     "porque": "Aumenta artificialmente a sobrevida."
+    }
+   ],
+   "explica": "Por isso avalia-se mortalidade em ensaios clínicos.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "o viés de tempo ganho"
+   }
+  },
+  {
+   "id": "q-r4-07",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Homem de 60 anos pergunta sobre PSA. Qual a orientação?",
+   "alternativas": [
+    {
+     "t": "Pedir anualmente",
+     "certa": false,
+     "porque": "Não é de rotina."
+    },
+    {
+     "t": "Pedir com toque retal",
+     "certa": false,
+     "porque": "Não é rotina."
+    },
+    {
+     "t": "Nunca falar do assunto",
+     "certa": false,
+     "porque": "Deve haver conversa."
+    },
+    {
+     "t": "Decisão compartilhada, sem pedido automático",
+     "certa": true,
+     "porque": "Faixa de 55 a 69 anos."
+    }
+   ],
+   "explica": "Acima de 70 os riscos superam os benefícios.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Não de rotina; decisão compartilhada de 55 a 69 anos; acima de 70 os riscos superam os benefícios"
+   }
+  },
+  {
+   "id": "q-r4-08",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Qual o rastreamento de câncer colorretal recomendado?",
+   "alternativas": [
+    {
+     "t": "Sangue oculto imunoquímico (FIT) de 50 a 75 anos a cada 2 anos",
+     "certa": true,
+     "porque": "Tabela de rastreamentos."
+    },
+    {
+     "t": "Colonoscopia anual a partir dos 40",
+     "certa": false,
+     "porque": "Não é a regra."
+    },
+    {
+     "t": "Toque retal isolado",
+     "certa": false,
+     "porque": "Não é rastreamento."
+    },
+    {
+     "t": "CEA anual",
+     "certa": false,
+     "porque": "Não é rastreamento."
+    }
+   ],
+   "explica": "FIT positivo leva à colonoscopia.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "50 a 75 anos, a cada 2 anos; positivo leva à colonoscopia"
+   }
+  },
+  {
+   "id": "q-r4-09",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual LDL confere alto risco cardiovascular sem necessidade de escore?",
+   "alternativas": [
+    {
+     "t": "130 mg/dL",
+     "certa": false,
+     "porque": "Não basta."
+    },
+    {
+     "t": "190 mg/dL ou mais",
+     "certa": true,
+     "porque": "Critério do material."
+    },
+    {
+     "t": "160 mg/dL",
+     "certa": false,
+     "porque": "É intermediário."
+    },
+    {
+     "t": "100 mg/dL",
+     "certa": false,
+     "porque": "Não basta."
+    }
+   ],
+   "explica": "Diabetes, DRC e aterosclerose também conferem alto risco direto.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Doença aterosclerótica, diabetes, doença renal crônica, LDL de 190 mg/dL ou mais e aterosclerose subclínica já conferem alto risco, sem necessidade de calcular o escore."
+   }
+  },
+  {
+   "id": "q-r4-10",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Homem de 54 anos, PREVENT de 10%, lipoproteína(a) 62 mg/dL, obesidade central e tabagismo. Qual a meta de LDL?",
+   "alternativas": [
+    {
+     "t": "Abaixo de 100",
+     "certa": false,
+     "porque": "É a meta do intermediário."
+    },
+    {
+     "t": "Abaixo de 115",
+     "certa": false,
+     "porque": "É a do baixo."
+    },
+    {
+     "t": "Abaixo de 70 mg/dL",
+     "certa": true,
+     "porque": "Agravantes o reclassificam para alto risco."
+    },
+    {
+     "t": "Abaixo de 50",
+     "certa": false,
+     "porque": "É a do muito alto."
+    }
+   ],
+   "explica": "Lp(a) ≥ 50 é agravante.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "O risco intermediário, somado aos agravantes, reclassifica-o como alto risco, com metas de pressão abaixo de 130/80 mmHg, LDL abaixo de 70 e não-HDL abaixo de 100."
+   }
+  },
+  {
+   "id": "q-r4-11",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "João, 50 anos, conta que o pai teve infarto aos 58. Isso é história familiar precoce?",
+   "alternativas": [
+    {
+     "t": "Sim, qualquer infarto em parente",
+     "certa": false,
+     "porque": "Há corte de idade."
+    },
+    {
+     "t": "Sim, abaixo de 60 anos",
+     "certa": false,
+     "porque": "O corte é 55."
+    },
+    {
+     "t": "Só se for a mãe",
+     "certa": false,
+     "porque": "Mulher: antes dos 65."
+    },
+    {
+     "t": "Não, o corte para homens é antes dos 55 anos",
+     "certa": true,
+     "porque": "Regra do material."
+    }
+   ],
+   "explica": "Cada exame do check-up precisa responder a uma pergunta.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "O pai de João teve infarto aos 58 anos, o que não configura história familiar precoce, porque o corte para homens é de 55 anos."
+   }
+  },
+  {
+   "id": "q-r5-01",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Qual a diferença entre senescência e senilidade?",
+   "alternativas": [
+    {
+     "t": "Senescência é envelhecimento fisiológico; senilidade é patológica, com perda funcional além do esperado",
+     "certa": true,
+     "porque": "Definição do material."
+    },
+    {
+     "t": "São sinônimos",
+     "certa": false,
+     "porque": "Não são."
+    },
+    {
+     "t": "Senilidade é universal",
+     "certa": false,
+     "porque": "Não é universal."
+    },
+    {
+     "t": "Senescência é doença",
+     "certa": false,
+     "porque": "Não é doença."
+    }
+   ],
+   "explica": "Atribuir sinais de senilidade à idade causa subdiagnóstico.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "da senilidade , processo patológico"
+   }
+  },
+  {
+   "id": "q-r5-02",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "No índice de Katz, qual a primeira atividade perdida?",
+   "alternativas": [
+    {
+     "t": "Alimentação",
+     "certa": false,
+     "porque": "É a última."
+    },
+    {
+     "t": "Continência",
+     "certa": false,
+     "porque": "Não é a primeira."
+    },
+    {
+     "t": "Banho",
+     "certa": true,
+     "porque": "Perda hierárquica."
+    },
+    {
+     "t": "Transferência",
+     "certa": false,
+     "porque": "Não é a primeira."
+    }
+   ],
+   "explica": "Ordem inversa da aquisição na infância.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "O índice de Katz avalia as atividades básicas da vida diária, cuja perda segue uma hierarquia: o banho é a primeira atividade perdida e a alimentação a última, na ordem inversa da aquisição na infância."
+   }
+  },
+  {
+   "id": "q-r5-03",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "O que sugere a perda do controle de medicamentos ou finanças na escala de Lawton?",
+   "alternativas": [
+    {
+     "t": "Depressão leve",
+     "certa": false,
+     "porque": "Não é a interpretação."
+    },
+    {
+     "t": "Declínio cognitivo",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Fragilidade física apenas",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Normalidade",
+     "certa": false,
+     "porque": "Não é normal."
+    }
+   ],
+   "explica": "Atividades instrumentais são perdidas antes das básicas.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A escala de Lawton avalia as atividades instrumentais, que exigem planejamento e são perdidas antes das básicas; a perda do controle de medicamentos ou finanças sugere declínio cognitivo."
+   }
+  },
+  {
+   "id": "q-r5-04",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Idoso faz o Timed Up and Go em 22 segundos. Como se classifica?",
+   "alternativas": [
+    {
+     "t": "Baixo risco",
+     "certa": false,
+     "porque": "Menos de 10 s."
+    },
+    {
+     "t": "Risco moderado",
+     "certa": false,
+     "porque": "10 a 20 s."
+    },
+    {
+     "t": "Normal",
+     "certa": false,
+     "porque": "Não é normal."
+    },
+    {
+     "t": "Alto risco de queda",
+     "certa": true,
+     "porque": "Mais de 20 s."
+    }
+   ],
+   "explica": "Mais de 12 s indica fisioterapia.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Menos de 10 s baixo risco; 10 a 20 s moderado; mais de 20 s alto; mais de 12 s indica fisioterapia"
+   }
+  },
+  {
+   "id": "q-r5-05",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Idosa com perda de peso involuntária e marcha lenta, sem outros critérios de Fried. Como se classifica?",
+   "alternativas": [
+    {
+     "t": "Pré-frágil",
+     "certa": true,
+     "porque": "Um ou dois critérios."
+    },
+    {
+     "t": "Robusta",
+     "certa": false,
+     "porque": "Nenhum critério."
+    },
+    {
+     "t": "Frágil",
+     "certa": false,
+     "porque": "Três ou mais."
+    },
+    {
+     "t": "Dependente total",
+     "certa": false,
+     "porque": "Não é a classificação de Fried."
+    }
+   ],
+   "explica": "A pré-fragilidade é o momento ideal de intervir, ainda reversível.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Nenhum critério define o idoso robusto, um ou dois o pré-frágil e três ou mais o frágil."
+   }
+  },
+  {
+   "id": "q-r5-06",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Idoso internado fica confuso de repente, com atenção muito prejudicada e quadro que flutua ao longo do dia. Qual a hipótese?",
+   "alternativas": [
+    {
+     "t": "Demência",
+     "certa": false,
+     "porque": "Início insidioso, atenção preservada no início."
+    },
+    {
+     "t": "Depressão",
+     "certa": false,
+     "porque": "Semanas a meses."
+    },
+    {
+     "t": "Delirium",
+     "certa": true,
+     "porque": "Início agudo, flutuante, atenção grave."
+    },
+    {
+     "t": "Senescência",
+     "certa": false,
+     "porque": "Não é fisiológico."
+    }
+   ],
+   "explica": "Emergência: procurar infecção, medicamentos, metabólico, retenção urinária e fecaloma.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "O delirium é uma síndrome de início agudo"
+   }
+  },
+  {
+   "id": "q-r5-07",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Por que a associação de anti-inflamatório, IECA e diurético é chamada tripla ameaça?",
+   "alternativas": [
+    {
+     "t": "Porque causa sangramento",
+     "certa": false,
+     "porque": "É anticoagulante com AINE."
+    },
+    {
+     "t": "Compromete ao mesmo tempo a perfusão e a autorregulação renais",
+     "certa": true,
+     "porque": "Causa lesão renal aguda."
+    },
+    {
+     "t": "Porque causa delirium",
+     "certa": false,
+     "porque": "São anticolinérgicos e benzodiazepínicos."
+    },
+    {
+     "t": "Porque causa quedas",
+     "certa": false,
+     "porque": "Não é o motivo do nome."
+    }
+   ],
+   "explica": "Polifarmácia começa com cinco medicamentos.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "chamada tripla ameaça"
+   }
+  },
+  {
+   "id": "q-r5-08",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Idoso em uso de metoclopramida passa a ter tremor e rigidez e recebe levodopa. O que ocorreu?",
+   "alternativas": [
+    {
+     "t": "Parkinson idiopático",
+     "certa": false,
+     "porque": "É efeito da metoclopramida."
+    },
+    {
+     "t": "Cascata prescritiva",
+     "certa": true,
+     "porque": "Efeito adverso tratado como doença nova."
+    },
+    {
+     "t": "Delirium",
+     "certa": false,
+     "porque": "Não é o quadro."
+    },
+    {
+     "t": "Interação benéfica",
+     "certa": false,
+     "porque": "Não é."
+    }
+   ],
+   "explica": "A sacola de remédios ajuda a revelar cascatas.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "a metoclopramida causa parkinsonismo tratado com levodopa"
+   }
+  },
+  {
+   "id": "q-r5-09",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Seu Antônio, 78 anos, esquecido, caiu duas vezes no mês. O que revisar primeiro para explicar os dois problemas?",
+   "alternativas": [
+    {
+     "t": "Pedir ressonância de crânio",
+     "certa": false,
+     "porque": "Não é o primeiro passo descrito."
+    },
+    {
+     "t": "Iniciar anticolinesterásico",
+     "certa": false,
+     "porque": "Sem avaliação."
+    },
+    {
+     "t": "A sacola de remédios",
+     "certa": true,
+     "porque": "Um medicamento pode explicar queda e esquecimento."
+    },
+    {
+     "t": "Prescrever vitamina D apenas",
+     "certa": false,
+     "porque": "Insuficiente."
+    }
+   ],
+   "explica": "Aplica Katz, Lawton, TUG, Fried, Mini-Cog e GDS.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "um medicamento pode explicar tanto a queda quanto o esquecimento"
+   }
+  }
+ ]
 }
