@@ -62,3 +62,29 @@ test("banco de questões: estrutura e fidelidade ao material", () => {
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1] && !process.argv.includes("--test")) {
   for (const m of materias()) { const r = valida(m); r.avisos.forEach(a => console.log(a)); r.erros.forEach(e => console.log("ERRO", e)); }
 }
+
+// Testes do próprio validador, com uma matéria de exemplo (não dependem do conteúdo publicado)
+const EX = { id: "ex", secoes: [{ id: "r1", titulo: "Neuro", html: "<p>Sangue agudo é <strong>hiperdenso</strong> na TC sem contraste.</p>" }], kahoot: [{ pergunta: "Qual o exame inicial?" }] };
+const boa = () => ({ id: "q-r1-01", secao: "r1", tipo: "recordacao", nivel: "facil", enunciado: "Como o sangue agudo aparece na TC sem contraste?",
+  alternativas: [{ t: "Hipodenso", certa: false, porque: "Seria sangue antigo." }, { t: "Hiperdenso", certa: true, porque: "Sangue agudo é hiperdenso." }, { t: "Isodenso", certa: false, porque: "Típico de fase subaguda." }, { t: "Invisível", certa: false, porque: "A TC mostra sangue agudo." }],
+  explica: "Sangue agudo fica branco na TC.", fonte: { secao: "r1", trecho: "Sangue agudo é hiperdenso na TC sem contraste." } });
+const erros = q => valida({ ...EX, questoes: [q] }).erros.join(" | ");
+test("validador: questão correta passa", () => { assert.equal(erros(boa()), ""); });
+test("validador: barra cada tipo de erro", () => {
+  const caso = (muda, trecho) => { const q = boa(); muda(q); assert.match(erros(q), trecho); };
+  caso(q => { q.alternativas[0].certa = true; }, /exatamente 1 alternativa certa/);
+  caso(q => { q.alternativas.forEach(a => { a.certa = false; }); }, /exatamente 1 alternativa certa/);
+  caso(q => { q.alternativas.pop(); }, /4 ou 5 alternativas/);
+  caso(q => { q.fonte.trecho = "frase que não está no material"; }, /não está no texto da seção/);
+  caso(q => { q.fonte.secao = "r9"; }, /fonte.secao/);
+  caso(q => { q.secao = "r9"; }, /secao "r9" não existe/);
+  caso(q => { q.tipo = "outro"; }, /tipo inválido/);
+  caso(q => { q.nivel = "x"; }, /nivel inválido/);
+  caso(q => { q.alternativas[2].porque = ""; }, /sem "porque"/);
+  caso(q => { q.alternativas[3].t = "Todas as anteriores"; }, /todas\/nenhuma/);
+  caso(q => { q.explica = ""; }, /sem explica/);
+  caso(q => { q.enunciado = "Qual o exame inicial?"; }, /copia uma pergunta do Kahoot/);
+  caso(q => { q.enunciado = "Assinale a INCORRETA."; }, /negativo sem <strong>/);
+  caso(q => { q.img = "content/img/nao-existe.jpg"; }, /imagem não encontrada/);
+  const dup = boa(); assert.match(valida({ ...EX, questoes: [boa(), dup] }).erros.join(), /id repetido/);
+});

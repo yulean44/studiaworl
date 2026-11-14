@@ -1,0 +1,8 @@
+m/
+figuras.js
+content/
+docs/
+.claude/
+graphify-out/
+*.png
+*.webmanifest

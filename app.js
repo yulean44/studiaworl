@@ -1,9 +1,9 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=40";
-import { ic, ICONES_MATERIA } from "./icons.js?v=40";
-import { FIG } from "./figuras.js?v=40";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=40";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=40";
-import { semanaDeEstudos } from "./relatorio.js?v=40";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=41";
+import { ic, ICONES_MATERIA } from "./icons.js?v=41";
+import { FIG } from "./figuras.js?v=41";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=41";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=41";
+import { semanaDeEstudos } from "./relatorio.js?v=41";
 
 /* =========================================================
    utilidades
@@ -284,7 +284,7 @@ function qCorrige(m) {
   const mapa = Object.fromEntries(questoesDe(m.id).map(q => [q.id, q]));
   st.lista.forEach(id => { if (st.resp[id] !== undefined) qRegistra(m, mapa[id], st.resp[id]); });
   S.questoesDia ||= {}; const k = `${m.id}:${hoje()}`;
-  if (!S.questoesDia[k]) { S.questoesDia[k] = 1; ganhaXP(10); toast("Simulado entregue · +10 XP"); }
+  if (st.lista.some(id => st.resp[id] !== undefined) && !S.questoesDia[k]) { S.questoesDia[k] = 1; ganhaXP(10); toast("Simulado entregue · +10 XP"); }
   checaTudo(); salvar(); renderTopo();
 }
 function qResultado(corpo, m) {
@@ -658,7 +658,7 @@ temaMundo = () => mundo?.tema?.(tema);
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=40"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=41"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -1453,7 +1453,7 @@ function renderNotasMat(corpo, m) {
 function renderKahootMat(corpo, m) {
   const f = kSec && kSec.mat === m.id ? kSec : null;
   corpo.innerHTML = (f ? `<div class="vidro filtroq"><span class="kicker" style="flex:1">Só as questões de · ${esc(f.nome)}</span><button class="btn sm" id="kTodas">Ver todas as questões</button></div>` : "")
-    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=40${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
+    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=41${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
   $("#kTodas")?.addEventListener("click", () => { kSec = null; renderKahootMat(corpo, m); });
 }
 function zoomImg(src, alt = "Imagem ampliada") {
@@ -1858,7 +1858,7 @@ document.querySelector(".marca").style.cursor = "default";
    ========================================================= */
 const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
 async function carregaFabrica() {
-  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=40`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
+  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=41`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
   FABRICA = r.filter(Boolean);
 }
 async function conectaNuvem() {
@@ -1912,7 +1912,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=40");
+      const mod = await import("./conta.js?v=41");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }

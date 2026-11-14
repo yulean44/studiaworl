@@ -34,7 +34,19 @@ Site estático, sem build: HTML + JS em módulos ES, three.js 0.160 via importma
 
 `node --test tests/questoes.mjs` valida o banco de questões (campo `questoes`): estrutura, 1 alternativa certa e se o `fonte.trecho` está mesmo no texto da seção citada. `node tests/questoes.mjs` mostra a distribuição por tipo, nível e gabarito.
 
+Rodar tudo: `for t in tests/*.mjs; do node --test $t; done`.
+
 `node --test tests/regressoes.mjs` verifica preservação de estado, troca de conta, conflitos no Firestore com SDK simulado e limite do timer, sem acessar contas reais. Não precisa de `package.json` nem dependências.
+
+## Skills do projeto (`.claude/skills/`)
+
+O Claude Code carrega sozinho; outros agentes leiam o `SKILL.md` correspondente.
+
+- **Comece pelo mapa:** `graphify-out/GRAPH_REPORT.md` mostra as funções centrais e os grupos do código. Depois de mexer no código, rode `graphify update .` (o `.graphifyignore` já deixa de fora modelos, figuras e conteúdo).
+- **Escolher a etapa:** `using-agent-skills` indica qual das skills do Agent Skills usar (planejar, implementar, testar, revisar, publicar).
+- **Mudança enxuta:** `ponytail` (menor mudança que resolve; reaproveitar o que já existe).
+- **Antes de publicar:** `ponytail-review` ou `code-review-and-quality`, rodando todos os testes de `tests/`.
+- Fontes: addyosmani/agent-skills (MIT), DietrichGebert/ponytail (MIT), Graphify-Labs/graphify (Apache 2.0/MIT); licenças dentro de cada pasta.
 
 ## Estilo (o dono é exigente com isso)
 
