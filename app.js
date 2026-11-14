@@ -1,6 +1,6 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=30";
-import { ic, ICONES_MATERIA } from "./icons.js?v=30";
-import { FIG } from "./figuras.js?v=30";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=31";
+import { ic, ICONES_MATERIA } from "./icons.js?v=31";
+import { FIG } from "./figuras.js?v=31";
 
 /* =========================================================
    utilidades
@@ -455,7 +455,7 @@ temaMundo = () => mundo?.tema?.(tema);
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=30"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=31"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -938,59 +938,148 @@ function aplicaGrifos(pane, k) {
 }
 let gtool = null;
 function fechaGtool() { gtool?.remove(); gtool = null; }
+const refazGrifos = (pane, k) => { if (!pane) return; limpaGrifos(pane); aplicaGrifos(pane, k); };
+function toastAcao(texto, rotulo, fn) {
+  const el = document.createElement("div"); el.className = "toast com-acao";
+  el.innerHTML = `<span>${esc(texto)}</span><button class="tacao">${ic("desfaz", "s")}${esc(rotulo)}</button>`;
+  $("button", el).addEventListener("click", () => { fn(); el.remove(); });
+  $("#toasts").appendChild(el); setTimeout(() => el.remove(), 6500);
+}
+/* apaga grifos (por id) de uma ou mais seções, com "Desfazer" */
+function apagaGrifos(alvos, depois) {
+  const antes = {}; let n = 0;
+  for (const [k, ids] of Object.entries(alvos)) {
+    const o = S.notas[k]; if (!o) continue; antes[k] = JSON.parse(JSON.stringify(o));
+    const fora = ids === "*" ? (o.g || []) : (o.g || []).filter(g => ids.includes(g.id)); n += fora.length;
+    o.g = ids === "*" ? [] : (o.g || []).filter(g => !ids.includes(g.id));
+    if (ids === "*") { if (o.txt) n++; o.txt = ""; }
+  }
+  if (!n) return;
+  salvar(); depois && depois();
+  toastAcao(n === 1 ? "1 grifo apagado" : `${n} itens apagados`, "Desfazer", () => { Object.assign(S.notas, antes); salvar(); depois && depois(); });
+}
+function copiaTexto(t, ok = "Copiado") { (navigator.clipboard?.writeText(t) || Promise.reject()).then(() => toast(ok)).catch(() => { const ta = document.createElement("textarea"); ta.value = t; document.body.append(ta); ta.select(); try { document.execCommand("copy"); toast(ok); } catch {} ta.remove(); }); }
+let semGrifos = LS.get("semGrifos", false); document.body.classList.toggle("sem-grifos", semGrifos);
+let selAtual = null, selLigado = false, tSel = null;
+const toque = () => matchMedia("(pointer:coarse)").matches;
 function ativaGrifos(pane, k, depois) {
   const salva = () => { salvar(); depois && depois(); };
-  const mostra = (x, y, html, liga) => { fechaGtool(); gtool = document.createElement("div"); gtool.className = "gtool vidro"; gtool.innerHTML = html; document.body.append(gtool);
-    const w = gtool.offsetWidth; gtool.style.left = Math.max(8, Math.min(innerWidth - w - 8, x - w / 2)) + "px"; gtool.style.top = Math.max(8, y - gtool.offsetHeight - 10) + "px"; liga(gtool); };
+  const mostra = (rc, html, liga) => { fechaGtool(); gtool = document.createElement("div"); gtool.className = "gtool vidro"; gtool.setAttribute("role", "toolbar"); gtool.innerHTML = html; document.body.append(gtool);
+    const w = gtool.offsetWidth, h = gtool.offsetHeight, x = rc.left + rc.width / 2;
+    gtool.style.left = Math.max(8, Math.min(innerWidth - w - 8, x - w / 2)) + "px";
+    // no celular/tablet o menu nativo do sistema fica em cima da seleção: a barra vai para baixo
+    let y = toque() ? rc.bottom + 12 : rc.top - h - 10; if (y < 8) y = rc.bottom + 12; if (y + h > innerHeight - 8) y = Math.max(8, rc.top - h - 10);
+    gtool.style.top = y + "px"; liga(gtool); };
+  const intervalo = r => { const { nodes, txt } = textosDe(pane); let a = Infinity, b = -1;
+    nodes.forEach(({ n, ini }) => { if (!r.intersectsNode(n)) return; const s0 = n === r.startContainer ? r.startOffset : 0, e0 = n === r.endContainer ? r.endOffset : n.nodeValue.length; if (e0 > s0) { a = Math.min(a, ini + s0); b = Math.max(b, ini + e0); } });
+    return { a, b, txt }; };
   const novo = (c, comNota) => {
     const sel = getSelection(); if (!sel.rangeCount || sel.isCollapsed) return; const r = sel.getRangeAt(0); if (!pane.contains(r.commonAncestorContainer)) return;
-    const { nodes, txt } = textosDe(pane); let a = Infinity, b = -1;
-    nodes.forEach(({ n, ini }) => { if (!r.intersectsNode(n)) return; const s0 = n === r.startContainer ? r.startOffset : 0, e0 = n === r.endContainer ? r.endOffset : n.nodeValue.length; if (e0 > s0) { a = Math.min(a, ini + s0); b = Math.max(b, ini + e0); } });
+    const { a, b, txt } = intervalo(r);
     if (b <= a) return; const t = txt.slice(a, b); if (!t.trim()) return;
     let o = 0, d = 0; while (true) { const p = txt.indexOf(t, d); if (p < 0 || p >= a) break; o++; d = p + 1; }
     const gr = { id: uid6(), t, o, c, n: "", em: Date.now() }; sel.removeAllRanges(); fechaGtool();
-    const fecha = () => { (S.notas[k] ||= { g: [], txt: "" }).g.push(gr); limpaGrifos(pane); aplicaGrifos(pane, k); salva(); };
+    const fecha = () => { (S.notas[k] ||= { g: [], txt: "" }).g.push(gr); refazGrifos(pane, k); salva(); };
     if (comNota) formulario("Nota do grifo", [{ k: "n", label: `“${t.slice(0, 80)}${t.length > 80 ? "…" : ""}”`, tipo: "area" }], "Salvar").then(o2 => { if (o2) gr.n = o2.n || ""; fecha(); });
     else fecha();
   };
-  pane.addEventListener("mouseup", e => setTimeout(() => {
+  const barraSelecao = () => {
     const sel = getSelection(); if (!sel.rangeCount || sel.isCollapsed || !pane.contains(sel.anchorNode)) return;
-    const rc = sel.getRangeAt(0).getBoundingClientRect();
-    mostra(rc.left + rc.width / 2, rc.top, `${CORES_GRIFO.map(([c, t]) => `<button class="gc g-${c}" data-c="${c}" title="Grifar em ${t.toLowerCase()}"></button>`).join("")}<button class="btn sm" data-nota>${ic("lapis", "s")}Grifar com nota</button>`,
-      el => { $$("[data-c]", el).forEach(b => b.addEventListener("mousedown", ev => { ev.preventDefault(); novo(b.dataset.c, false); })); $("[data-nota]", el).addEventListener("mousedown", ev => { ev.preventDefault(); novo("a", true); }); });
-  }, 10));
-  pane.addEventListener("click", e => {
-    const mk = e.target.closest("mark.grifo"); if (!mk || !getSelection().isCollapsed) return;
-    const lista = (S.notas[k] || {}).g || [], gr = lista.find(x => x.id === mk.dataset.g); if (!gr) return;
-    const rc = mk.getBoundingClientRect();
-    mostra(rc.left + rc.width / 2, rc.top, `${gr.n ? `<div class="gnota">${esc(gr.n)}</div>` : ""}${CORES_GRIFO.map(([c, t]) => `<button class="gc g-${c} ${c === gr.c ? "on" : ""}" data-c="${c}" title="${t}"></button>`).join("")}<button class="btn sm" data-ed>${ic("lapis", "s")}${gr.n ? "Editar nota" : "Nota"}</button><button class="btn ic sm" data-rm title="Tirar grifo">${ic("lixo", "s")}</button>`,
+    const r = sel.getRangeAt(0); if (!r.toString().trim()) return;
+    const dentro = [...new Set($$("mark.grifo", pane).filter(mk => r.intersectsNode(mk)).map(mk => mk.dataset.g))];
+    mostra(r.getBoundingClientRect(), `${CORES_GRIFO.map(([c, t]) => `<button class="gc g-${c}" data-c="${c}" title="Grifar em ${t.toLowerCase()}" aria-label="Grifar em ${t.toLowerCase()}"></button>`).join("")}
+      <span class="gsep"></span><button class="btn ic sm" data-nota title="Grifar com nota" aria-label="Grifar com nota">${ic("lapis", "s")}</button>
+      ${dentro.length ? `<button class="btn ic sm" data-apaga title="Apagar ${dentro.length > 1 ? dentro.length + " grifos" : "grifo"} da seleção" aria-label="Apagar grifo da seleção">${ic("borracha", "s")}</button>` : ""}
+      <button class="btn ic sm" data-copia title="Copiar trecho" aria-label="Copiar trecho">${ic("copia", "s")}</button>`,
       el => {
-        $$("[data-c]", el).forEach(b => b.addEventListener("click", () => { gr.c = b.dataset.c; fechaGtool(); limpaGrifos(pane); aplicaGrifos(pane, k); salva(); }));
-        $("[data-ed]", el).addEventListener("click", async () => { fechaGtool(); const o2 = await formulario("Nota do grifo", [{ k: "n", label: `“${gr.t.slice(0, 80)}${gr.t.length > 80 ? "…" : ""}”`, tipo: "area", valor: gr.n }], "Salvar"); if (o2) { gr.n = o2.n || ""; limpaGrifos(pane); aplicaGrifos(pane, k); salva(); } });
-        $("[data-rm]", el).addEventListener("click", () => { S.notas[k].g = lista.filter(x => x.id !== gr.id); fechaGtool(); limpaGrifos(pane); aplicaGrifos(pane, k); salva(); });
+        const pega = (sel2, fn) => $$(sel2, el).forEach(b => { b.addEventListener("mousedown", ev => ev.preventDefault()); b.addEventListener("click", fn); });
+        pega("[data-c]", ev => novo(ev.currentTarget.dataset.c, false));
+        pega("[data-nota]", () => novo("a", true));
+        pega("[data-apaga]", () => { getSelection().removeAllRanges(); fechaGtool(); apagaGrifos({ [k]: dentro }, () => { refazGrifos(pane, k); depois && depois(); }); });
+        pega("[data-copia]", () => { copiaTexto(getSelection().toString().trim(), "Trecho copiado"); getSelection().removeAllRanges(); fechaGtool(); });
+      });
+  };
+  pane.addEventListener("mouseup", () => setTimeout(barraSelecao, 10));
+  // iPhone/iPad: a seleção por toque não dispara mouseup de forma confiável
+  selAtual = barraSelecao;
+  if (!selLigado) { selLigado = true; document.addEventListener("selectionchange", () => { if (!toque()) return; clearTimeout(tSel); tSel = setTimeout(() => { const s2 = getSelection(); if (s2.isCollapsed) { fechaGtool(); return; } selAtual && selAtual(); }, 350); }); }
+  pane.addEventListener("click", e => {
+    const mk = e.target.closest("mark.grifo"); if (!mk || !getSelection().isCollapsed || semGrifos) return;
+    const lista = (S.notas[k] || {}).g || [], gr = lista.find(x => x.id === mk.dataset.g); if (!gr) return;
+    mostra(mk.getBoundingClientRect(), `${gr.n ? `<div class="gnota">${esc(gr.n)}</div>` : ""}${CORES_GRIFO.map(([c, t]) => `<button class="gc g-${c} ${c === gr.c ? "on" : ""}" data-c="${c}" title="${t}" aria-label="Mudar para ${t.toLowerCase()}"></button>`).join("")}
+      <span class="gsep"></span><button class="btn ic sm" data-ed title="${gr.n ? "Editar nota" : "Adicionar nota"}" aria-label="${gr.n ? "Editar nota" : "Adicionar nota"}">${ic("lapis", "s")}</button>
+      <button class="btn ic sm" data-cp title="Copiar trecho" aria-label="Copiar trecho">${ic("copia", "s")}</button>
+      <button class="btn ic sm" data-rm title="Apagar grifo" aria-label="Apagar grifo">${ic("borracha", "s")}</button>`,
+      el => {
+        $$("[data-c]", el).forEach(b => b.addEventListener("click", () => { gr.c = b.dataset.c; fechaGtool(); refazGrifos(pane, k); salva(); }));
+        $("[data-ed]", el).addEventListener("click", async () => { fechaGtool(); const o2 = await formulario("Nota do grifo", [{ k: "n", label: `“${gr.t.slice(0, 80)}${gr.t.length > 80 ? "…" : ""}”`, tipo: "area", valor: gr.n }], "Salvar"); if (o2) { gr.n = o2.n || ""; refazGrifos(pane, k); salva(); } });
+        $("[data-cp]", el).addEventListener("click", () => { fechaGtool(); copiaTexto(gr.t + (gr.n ? `\n— ${gr.n}` : ""), "Trecho copiado"); });
+        $("[data-rm]", el).addEventListener("click", () => { fechaGtool(); apagaGrifos({ [k]: [gr.id] }, () => { refazGrifos(pane, k); depois && depois(); }); });
       });
   });
 }
 function limpaGrifos(pane) { $$("mark.grifo", pane).forEach(mk => { const p = mk.parentNode; while (mk.firstChild) p.insertBefore(mk.firstChild, mk); mk.remove(); p.normalize(); }); }
 document.addEventListener("mousedown", e => { if (gtool && !gtool.contains(e.target)) fechaGtool(); });
-addEventListener("scroll", fechaGtool, { passive: true });
+addEventListener("scroll", () => { if (!toque()) fechaGtool(); }, { passive: true });
 function irParaGrifo(id) { setTimeout(() => { const mk = document.querySelector(`#pane mark.grifo[data-g="${id}"]`); if (mk) { mk.scrollIntoView({ block: "center", behavior: "smooth" }); mk.classList.add("pisca"); setTimeout(() => mk.classList.remove("pisca"), 1600); } }, 120); }
+const corNome = c => (CORES_GRIFO.find(x => x[0] === c) || [, ""])[1];
+const itemGrifo = (g, extra = "", max = 200) => `<div class="gwrap"><button class="gitem" data-gi="${esc(g.id)}" ${extra}><span class="gq g-${g.c}">${esc(g.t.length > max ? g.t.slice(0, max) + "…" : g.t)}</span>${g.n ? `<span class="gn">${esc(g.n)}</span>` : ""}</button>
+  <button class="gx" data-gx="${esc(g.id)}" title="Apagar este grifo" aria-label="Apagar este grifo">${ic("x", "s")}</button></div>`;
+function textoNotas(titulo, blocos) {
+  return `${titulo}\n${"=".repeat(titulo.length)}\n\n` + blocos.map(({ nome, o }) => `## ${nome}\n` + (o.g || []).map(g => `• [${corNome(g.c)}] ${g.t}${g.n ? `\n  Nota: ${g.n}` : ""}`).join("\n") + (o.txt ? `\n\nAnotação: ${o.txt}` : "")).join("\n\n") + "\n";
+}
+function baixaTexto(nome, t) { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([t], { type: "text/plain;charset=utf-8" })); a.download = nome; document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500); }
+function botaoVerGrifos() { return `<button class="btn sm" data-vergr title="${semGrifos ? "Mostrar as cores dos grifos no texto" : "Ver o texto limpo, sem as cores (os grifos continuam salvos)"}">${ic(semGrifos ? "olho" : "olhox", "s")}${semGrifos ? "Mostrar grifos" : "Esconder grifos"}</button>`; }
+function ligaVerGrifos(box, de) { $("[data-vergr]", box)?.addEventListener("click", () => { semGrifos = !semGrifos; LS.set("semGrifos", semGrifos); document.body.classList.toggle("sem-grifos", semGrifos); fechaGtool(); de(); }); }
 function renderNotasSec(m, s) {
   const k = `${m.id}--${s.id}`, o = S.notas[k] || { g: [], txt: "" }, box = $("#notasSec"); if (!box) return;
-  box.innerHTML = `<div class="kicker">Minhas notas desta seção</div>
-    <p class="muted dica">Selecione qualquer trecho do texto para grifar (4 cores) ou grifar com nota. Clique num grifo para mudar a cor, editar ou apagar.</p>
-    ${(o.g || []).length ? `<div class="glist">${o.g.map(g => `<button class="gitem" data-gi="${esc(g.id)}"><span class="gq g-${g.c}">${esc(g.t.length > 160 ? g.t.slice(0, 160) + "…" : g.t)}</span>${g.n ? `<span class="gn">${esc(g.n)}</span>` : ""}</button>`).join("")}</div>` : ""}
+  const ng = (o.g || []).length, pane = $("#pane");
+  const re = () => { refazGrifos(pane, k); renderNotasSec(m, s); };
+  box.innerHTML = `<div class="nsec-cab"><div class="kicker">Minhas notas desta seção${ng ? ` · ${ng}` : ""}</div>
+      <div class="nsec-acoes">${ng ? botaoVerGrifos() : ""}
+        ${ng || o.txt ? `<button class="btn ic sm" data-cpall title="Copiar grifos e notas desta seção" aria-label="Copiar grifos e notas desta seção">${ic("copia", "s")}</button>` : ""}
+        ${ng || o.txt ? `<button class="btn ic sm" data-rmall title="Apagar todos os grifos e notas desta seção" aria-label="Apagar tudo desta seção">${ic("lixo", "s")}</button>` : ""}</div></div>
+    <p class="muted dica">${toque() ? "Toque e segure para selecionar um trecho; a barra de grifo aparece logo abaixo." : "Selecione um trecho para grifar."} Toque num grifo para mudar a cor, pôr nota ou apagar. Para apagar vários de uma vez, selecione o trecho e use a borracha.</p>
+    ${ng ? `<div class="glist">${o.g.map(g => itemGrifo(g, "", 160)).join("")}</div>` : ""}
     <textarea class="f" id="notaTxt" rows="3" placeholder="Anotação livre desta seção (fica salva no seu progresso)">${esc(o.txt || "")}</textarea>`;
   $$("[data-gi]", box).forEach(b => b.addEventListener("click", () => irParaGrifo(b.dataset.gi)));
+  $$("[data-gx]", box).forEach(b => b.addEventListener("click", () => apagaGrifos({ [k]: [b.dataset.gx] }, re)));
+  $("[data-cpall]", box)?.addEventListener("click", () => copiaTexto(textoNotas(s.titulo, [{ nome: s.titulo, o }]), "Notas copiadas"));
+  $("[data-rmall]", box)?.addEventListener("click", async () => { if (await confirma("Apagar tudo desta seção?", `Saem ${ng} grifo(s)${o.txt ? " e a anotação livre" : ""}. Dá para desfazer logo em seguida.`, "Apagar", true)) apagaGrifos({ [k]: "*" }, re); });
+  ligaVerGrifos(box, () => renderNotasSec(m, s));
   let t = null; $("#notaTxt").addEventListener("input", e => { clearTimeout(t); t = setTimeout(() => { (S.notas[k] ||= { g: [], txt: "" }).txt = e.target.value; salvar(); }, 500); });
 }
+let filtroCor = "";
 function renderNotasMat(corpo, m) {
-  const itens = m.secoes.map(s => ({ s, o: S.notas[`${m.id}--${s.id}`] })).filter(x => x.o && ((x.o.g || []).length || x.o.txt));
-  corpo.innerHTML = itens.length ? itens.map(({ s, o }) => `<div class="nbloco"><div class="grupo" style="margin-top:4px">${esc(s.grupo || "")} · ${esc(s.titulo)}</div>
-      ${(o.g || []).map(g => `<button class="gitem" data-s="${esc(s.id)}" data-gi="${esc(g.id)}"><span class="gq g-${g.c}">${esc(g.t.length > 220 ? g.t.slice(0, 220) + "…" : g.t)}</span>${g.n ? `<span class="gn">${esc(g.n)}</span>` : ""}</button>`).join("")}
-      ${o.txt ? `<button class="gitem" data-s="${esc(s.id)}"><span class="gn">${esc(o.txt)}</span></button>` : ""}</div>`).join("")
-    : `<div class="empty">Nenhuma nota ainda. Abra uma seção e selecione um trecho do texto para grifar.</div>`;
+  const todos = m.secoes.map(s => ({ s, k: `${m.id}--${s.id}`, o: S.notas[`${m.id}--${s.id}`] })).filter(x => x.o && ((x.o.g || []).length || x.o.txt));
+  const passa = g => !filtroCor || g.c === filtroCor;
+  const itens = todos.map(x => ({ ...x, gs: (x.o.g || []).filter(passa) })).filter(x => x.gs.length || (!filtroCor && x.o.txt));
+  const total = todos.reduce((a, x) => a + (x.o.g || []).length, 0);
+  const re = () => renderNotasMat(corpo, m);
+  corpo.innerHTML = !todos.length ? `<div class="empty">Nenhuma nota ainda. Abra uma seção e selecione um trecho do texto para grifar.</div>` : `
+    <div class="nmat-barra">
+      <div class="filtros" role="group" aria-label="Filtrar por cor"><button class="fcor ${!filtroCor ? "on" : ""}" data-fc="">Todas · ${total}</button>${CORES_GRIFO.map(([c, t]) => { const n = todos.reduce((a, x) => a + (x.o.g || []).filter(g => g.c === c).length, 0); return n ? `<button class="fcor ${filtroCor === c ? "on" : ""}" data-fc="${c}"><i class="gq g-${c}"></i>${t} · ${n}</button>` : ""; }).join("")}</div>
+      <span class="grow"></span>
+      ${botaoVerGrifos()}
+      <button class="btn ic sm" data-cpm title="Copiar todas as notas" aria-label="Copiar todas as notas">${ic("copia", "s")}</button>
+      <button class="btn ic sm" data-bxm title="Baixar as notas em .txt" aria-label="Baixar as notas em arquivo de texto">${ic("baixar", "s")}</button>
+      <button class="btn ic sm" data-rmm title="Apagar todas as notas desta matéria" aria-label="Apagar todas as notas desta matéria">${ic("lixo", "s")}</button>
+    </div>
+    ${itens.map(({ s, k, o, gs }) => `<div class="nbloco" data-k="${esc(k)}"><button class="grupo nb-tit" data-s="${esc(s.id)}">${esc(s.grupo ? s.grupo + " · " : "")}${esc(s.titulo)}</button>
+      ${gs.map(g => itemGrifo(g, `data-s="${esc(s.id)}"`, 220)).join("")}
+      ${!filtroCor && o.txt ? `<button class="gitem" data-s="${esc(s.id)}"><span class="gn">${esc(o.txt)}</span></button>` : ""}</div>`).join("") || `<div class="empty">Nenhum grifo nessa cor.</div>`}`;
+  $$("[data-fc]", corpo).forEach(b => b.addEventListener("click", () => { filtroCor = b.dataset.fc; re(); }));
   $$("[data-s]", corpo).forEach(b => b.addEventListener("click", () => { const gi = b.dataset.gi; abreSecao(m.id, b.dataset.s); if (gi) irParaGrifo(gi); }));
+  $$("[data-gx]", corpo).forEach(b => b.addEventListener("click", () => apagaGrifos({ [b.closest(".nbloco").dataset.k]: [b.dataset.gx] }, re)));
+  const blocos = () => itens.map(({ s, gs, o }) => ({ nome: (s.grupo ? s.grupo + " · " : "") + s.titulo, o: { g: gs, txt: filtroCor ? "" : o.txt } }));
+  $("[data-cpm]", corpo)?.addEventListener("click", () => copiaTexto(textoNotas(`Notas · ${m.nome}`, blocos()), "Notas copiadas"));
+  $("[data-bxm]", corpo)?.addEventListener("click", () => baixaTexto(`notas-${m.id}.txt`, textoNotas(`Notas · ${m.nome}`, blocos())));
+  $("[data-rmm]", corpo)?.addEventListener("click", async () => {
+    const alvo = filtroCor ? Object.fromEntries(itens.map(x => [x.k, x.gs.map(g => g.id)])) : Object.fromEntries(todos.map(x => [x.k, "*"]));
+    const n = filtroCor ? itens.reduce((a, x) => a + x.gs.length, 0) : total;
+    if (await confirma(filtroCor ? `Apagar os grifos em ${corNome(filtroCor).toLowerCase()}?` : "Apagar todas as notas desta matéria?", `${n} grifo(s)${filtroCor ? "" : " e as anotações livres"} de ${m.nome}. Dá para desfazer logo em seguida.`, "Apagar", true)) apagaGrifos(alvo, re);
+  });
+  ligaVerGrifos(corpo, re);
 }
 /* ---------- Kahoot dentro da matéria ---------- */
 function renderKahootMat(corpo, m) {
@@ -1382,6 +1471,6 @@ function atualizaConteudo() { clearTimeout(tConteudo); tConteudo = setTimeout(()
   if (S.timer) tick();
   if (!S.upd && !modoConta) setTimeout(() => festa({ icone: "planeta_vazio", titulo: "Seu planeta", texto: "Cada minuto de foco, card respondido e seção concluída faz surgir algo novo nele. Comece com 5 minutos de foco." }), 900);
   if (modoConta) {
-    import("./conta.js?v=30").then(async mod => { contaMod = mod; await mod.iniciaConta(aoMudarConta); }).catch(e => { console.warn("contas indisponíveis", e); });
+    import("./conta.js?v=31").then(async mod => { contaMod = mod; await mod.iniciaConta(aoMudarConta); }).catch(e => { console.warn("contas indisponíveis", e); });
   } else conectaNuvem();
 })();
