@@ -1,8 +1,8 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=38";
-import { ic, ICONES_MATERIA } from "./icons.js?v=38";
-import { FIG } from "./figuras.js?v=38";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=38";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=38";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=39";
+import { ic, ICONES_MATERIA } from "./icons.js?v=39";
+import { FIG } from "./figuras.js?v=39";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=39";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=39";
 
 /* =========================================================
    utilidades
@@ -87,7 +87,7 @@ const iconeMat = m => m.icone || (m.id === "mfc" ? "estetoscopio" : "livro");
 function novoEstado() {
   return { v: 2, upd: 0, xp: 0, nivel: 1, totMin: 0, totCards: 0, totOk: 0, totErr: 0, rev: 0, criados: 0,
     dias: {}, cards: {}, lidas: {}, premLidas: {}, checks: {}, decos: [], criaturas: [], efeitos: {}, verde: 0,
-    jornada: 0, conq: {}, diarias: null, diasCompletos: 0, log: [], maxSess: 0, meus: {}, mats: {}, ultimo: null, timer: null, notas: {}, casos: {}, kahootDia: {}, ordem: {} };
+    jornada: 0, conq: {}, diarias: null, diasCompletos: 0, log: [], maxSess: 0, meus: {}, mats: {}, ultimo: null, timer: null, notas: {}, casos: {}, kahootDia: {}, questoes: {}, questoesDia: {}, ordem: {} };
 }
 let S = Object.assign(novoEstado(), LS.get("estado", {}));
 if (S.inv) { for (const [k, n] of Object.entries(S.inv)) for (let i = 0; i < n; i++) S.decos.push({ id: uid6(), k, d: [0, 1, 0], r: Math.random() * 6.28, s: Math.floor(Math.random() * 1e6) }); delete S.inv; }
@@ -175,6 +175,145 @@ function idsAssunto(mat, sid) {
 const tocaAssunto = (o, ids) => ids.includes(o.secao) || [].concat(o.assunto || [], o.secoes || []).some(x => ids.includes(x));
 function cardsDoAssunto(mat, ids) { return todosCards(mat).filter(c => tocaAssunto(c, ids)); }
 function questoesDoAssunto(mat, ids) { return (fab(mat).kahoot || []).filter(q => q.tipo !== "slide" && tocaAssunto(q, ids)); }
+/* ---------- banco de questões (aba própria, separada do Kahoot e dos flashcards) ---------- */
+const TIPOS_Q = [["recordacao", "Recordação"], ["compreensao", "Compreensão"], ["aplicacao", "Aplicação"], ["caso", "Caso clínico"]];
+const NIVEIS_Q = [["facil", "Fácil"], ["medio", "Médio"], ["dificil", "Difícil"]];
+const LETRAS = "ABCDE";
+const questoesDe = mat => (fab(mat).questoes || []).filter(q => q && q.id && Array.isArray(q.alternativas) && q.alternativas.filter(a => a.certa).length === 1);
+const bancoDoAssunto = (mat, ids) => questoesDe(mat).filter(q => tocaAssunto(q, ids));
+const qChave = (mat, id) => `${mat}--${id}`;
+const qReg = (mat, id) => (S.questoes || {})[qChave(mat, id)];
+let qCfg = LS.get("qCfg", {});      // por matéria: {secs, secNome, tipos, niveis, so}
+let qSessao = null;                 // {mat, modo, lista, i, resp, ini, dur, fim}
+let qTimer = null;
+function qFiltro(m) { return qCfg[m.id] || (qCfg[m.id] = { secs: null, secNome: "", tipos: [], niveis: [], so: "" }); }
+function qAplica(m) {
+  const f = qFiltro(m);
+  return questoesDe(m.id).filter(q => (!f.secs || tocaAssunto(q, f.secs)) && (!f.tipos.length || f.tipos.includes(q.tipo)) && (!f.niveis.length || f.niveis.includes(q.nivel))
+    && (f.so !== "novas" || !qReg(m.id, q.id)) && (f.so !== "erradas" || (qReg(m.id, q.id) && !qReg(m.id, q.id).ok)));
+}
+function qRegistra(m, q, k) {
+  S.questoes ||= {}; const c = qChave(m.id, q.id), ant = S.questoes[c], ok = !!(q.alternativas[k] || {}).certa;
+  S.questoes[c] = { r: k, ok, n: ((ant && ant.n) || 0) + 1, t: Date.now(), ja: (ant && ant.ja) || ok };
+  if (ok && !(ant && ant.ja)) ganhaXP(2);
+  return ok;
+}
+function renderQuestoes(corpo, m) {
+  clearInterval(qTimer);
+  const todas = questoesDe(m.id);
+  if (!todas.length) { corpo.innerHTML = `<div class="empty">Ainda não há questões desta matéria.</div>`; return; }
+  if (qSessao && qSessao.mat === m.id) return qSessao.fim ? qResultado(corpo, m) : qJoga(corpo, m);
+  const f = qFiltro(m), lista = qAplica(m);
+  const feitas = todas.filter(q => qReg(m.id, q.id)), certas = feitas.filter(q => qReg(m.id, q.id).ok).length;
+  const secsComQ = m.secoes.filter(s => todas.some(q => tocaAssunto(q, [s.id])));
+  const chip = (grupo, v, t) => { const on = f[grupo].includes(v); return `<button class="qchip ${on ? "on" : ""}" data-qf="${grupo}" data-v="${v}" aria-pressed="${on}">${t}</button>`; };
+  corpo.innerHTML = `
+    <div class="qtopo"><div class="qnum"><b>${feitas.length}</b><span>de ${todas.length} respondidas</span></div><div class="qnum"><b>${feitas.length ? Math.round(certas / feitas.length * 100) + "%" : "–"}</b><span>de acerto</span></div>
+      ${feitas.length - certas ? `<div class="qnum"><b>${feitas.length - certas}</b><span>para revisar</span></div>` : ""}</div>
+    <div class="qfiltros">
+      <label class="qlin"><span class="kicker">Assunto</span><select class="f" id="qSec"><option value="">Todos os assuntos</option>${secsComQ.map(s => `<option value="${esc(s.id)}" ${f.secs && f.secs.length === 1 && f.secs[0] === s.id ? "selected" : ""}>${esc(s.titulo)}</option>`).join("")}${f.secs && f.secs.length > 1 ? `<option value="__assunto" selected>${esc(f.secNome)}</option>` : ""}</select></label>
+      <div class="qlin"><span class="kicker">Tipo</span><div class="qchips">${TIPOS_Q.map(([v, t]) => chip("tipos", v, t)).join("")}</div></div>
+      <div class="qlin"><span class="kicker">Nível</span><div class="qchips">${NIVEIS_Q.map(([v, t]) => chip("niveis", v, t)).join("")}</div></div>
+      <div class="qlin"><span class="kicker">Mostrar</span><div class="qchips">${[["", "Todas"], ["novas", "Não respondidas"], ["erradas", "Só as que errei"]].map(([v, t]) => `<button class="qchip ${f.so === v ? "on" : ""}" data-qso="${v}" aria-pressed="${f.so === v}">${t}</button>`).join("")}</div></div>
+    </div>
+    <div class="qmodos">
+      <div class="qmodo"><div><b>Treino</b><span class="muted">Comentário de cada alternativa logo depois de responder.</span></div><button class="btn pri" id="qTreino" ${lista.length ? "" : "disabled"}>${ic("play", "s")}Começar · ${lista.length}</button></div>
+      <div class="qmodo"><div><b>Simulado</b><span class="muted">Com tempo; o gabarito aparece só no fim.</span></div>
+        <div class="qsim"><select class="f" id="qQtd" aria-label="Quantidade de questões">${[10, 20, 30, 50].filter(n => n < lista.length).concat(lista.length).filter((n, i, a) => n && a.indexOf(n) === i).map(n => `<option value="${n}">${n} questões · ${Math.max(5, Math.round(n * 1.5))} min</option>`).join("")}</select><button class="btn" id="qSim" ${lista.length ? "" : "disabled"}>${ic("relogio", "s")}Iniciar</button></div></div>
+    </div>`;
+  const salvaF = () => { LS.set("qCfg", qCfg); renderQuestoes(corpo, m); };
+  $("#qSec", corpo).addEventListener("change", e => { const v = e.target.value; if (v === "__assunto") return; f.secs = v ? [v] : null; f.secNome = v ? m.secoes.find(s => s.id === v).titulo : ""; salvaF(); });
+  $$("[data-qf]", corpo).forEach(b => b.addEventListener("click", () => { const g = f[b.dataset.qf], v = b.dataset.v; const i = g.indexOf(v); i < 0 ? g.push(v) : g.splice(i, 1); salvaF(); }));
+  $$("[data-qso]", corpo).forEach(b => b.addEventListener("click", () => { f.so = b.dataset.qso; salvaF(); }));
+  const embaralha = a => { a = [...a]; for (let k = a.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; } return a; };
+  $("#qTreino", corpo).addEventListener("click", () => { qSessao = { mat: m.id, modo: "treino", lista: embaralha(lista).map(q => q.id), i: 0, resp: {}, ini: Date.now() }; renderQuestoes(corpo, m); });
+  $("#qSim", corpo).addEventListener("click", () => { const n = +$("#qQtd", corpo).value; qSessao = { mat: m.id, modo: "simulado", lista: embaralha(lista).slice(0, n).map(q => q.id), i: 0, resp: {}, ini: Date.now(), dur: Math.max(5, Math.round(n * 1.5)) * 60000 }; renderQuestoes(corpo, m); });
+}
+function qJoga(corpo, m) {
+  const st = qSessao, mapa = Object.fromEntries(questoesDe(m.id).map(q => [q.id, q]));
+  st.lista = st.lista.filter(id => mapa[id]); if (!st.lista.length) { qSessao = null; return renderQuestoes(corpo, m); }
+  const q = mapa[st.lista[st.i]], k = st.resp[q.id], treino = st.modo === "treino", respondida = treino && k !== undefined;
+  const sec = m.secoes.find(s => s.id === ((q.fonte && q.fonte.secao) || q.secao));
+  const tipo = (TIPOS_Q.find(t => t[0] === q.tipo) || [0, ""])[1], nivel = (NIVEIS_Q.find(t => t[0] === q.nivel) || [0, ""])[1];
+  corpo.innerHTML = `
+    <div class="qbarra"><button class="btn sm" id="qSair">${ic("seta", "s")}Sair</button><span class="kicker" style="flex:1">${treino ? "Treino" : "Simulado"} · ${st.i + 1} de ${st.lista.length}</span>${treino ? "" : `<span class="qrelogio" id="qRel" aria-live="off"></span><button class="btn sm pri" id="qEntrega">Entregar</button>`}</div>
+    <div class="prog"><i style="width:${(st.i + (respondida ? 1 : 0)) / st.lista.length * 100}%"></i></div>
+    <article class="qcard">
+      <div class="qtags">${tipo ? `<span>${tipo}</span>` : ""}${nivel ? `<span>${nivel}</span>` : ""}${sec ? `<span>${esc(sec.titulo)}</span>` : ""}</div>
+      <div class="qenun">${q.enunciado}</div>
+      ${q.img ? `<img class="qimg" src="${esc(q.img)}" alt="Imagem da questão" loading="lazy">` : ""}
+      <div class="qalts" role="group" aria-label="Alternativas">${q.alternativas.map((a, i) => {
+        const est = respondida ? (a.certa ? "certa" : i === k ? "errada" : "apaga") : (!treino && i === k ? "marcada" : "");
+        return `<button class="qalt ${est}" data-qa="${i}" ${respondida ? "disabled" : ""} aria-pressed="${i === k}"><b>${LETRAS[i]}</b><span><span class="qt">${a.t}</span>${respondida && a.porque ? `<span class="qpq">${a.porque}</span>` : ""}</span></button>`; }).join("")}</div>
+      ${treino && !respondida && q.dica ? `<button class="link qdica" id="qDica">Ver dica</button><p class="qdicat oculto" id="qDicaT">${q.dica}</p>` : ""}
+      ${respondida ? `<div class="qfb ${q.alternativas[k].certa ? "ok" : "no"}"><b>${q.alternativas[k].certa ? "Certo." : `Errado. A resposta é ${LETRAS[q.alternativas.findIndex(a => a.certa)]}.`}</b>
+          ${q.explica ? `<p>${q.explica}</p>` : ""}${q.pegadinha ? `<p class="qpeg"><strong>Pegadinha:</strong> ${q.pegadinha}</p>` : ""}
+          ${q.fora ? `<p class="qfora"><strong>Fora do material:</strong> ${q.fora}</p>` : ""}
+          ${q.fonte && q.fonte.trecho ? `<p class="qfonte">No material: “${esc(q.fonte.trecho)}”</p>` : ""}
+          <div class="qacoes">${sec ? `<button class="btn sm" id="qReler">${ic("livro", "s")}Reler: ${esc(sec.titulo)}</button>` : ""}<button class="btn pri" id="qProx">${st.i + 1 < st.lista.length ? "Próxima" : "Ver resultado"}</button></div></div>` : ""}
+      ${!treino ? `<div class="qacoes"><button class="btn sm" id="qAnt" ${st.i ? "" : "disabled"}>${ic("seta", "s")}Anterior</button><span style="flex:1"></span><button class="btn ${st.i + 1 < st.lista.length ? "pri" : ""}" id="qSeg">${st.i + 1 < st.lista.length ? "Próxima" : "Revisar e entregar"}</button></div>
+        <div class="qmapa">${st.lista.map((id, i) => `<button class="${i === st.i ? "on" : ""} ${st.resp[id] !== undefined ? "feita" : ""}" data-qir="${i}" aria-label="Ir para a questão ${i + 1}">${i + 1}</button>`).join("")}</div>` : ""}
+    </article>`;
+  $$(".qimg", corpo).forEach(im => im.addEventListener("click", () => zoomImg(im.src)));
+  $("#qSair", corpo).addEventListener("click", async () => { if (Object.keys(st.resp).length && !(await confirma("Sair desta rodada?", treino ? "As respostas já dadas ficam salvas." : "O simulado não será corrigido.", "Sair"))) return; qSessao = null; clearInterval(qTimer); salvar(); renderQuestoes(corpo, m); });
+  $$("[data-qa]", corpo).forEach(b => b.addEventListener("click", () => {
+    const i = +b.dataset.qa;
+    if (treino) { if (st.resp[q.id] !== undefined) return; st.resp[q.id] = i; qRegistra(m, q, i); salvar(); renderTopo(); }
+    else st.resp[q.id] = i;
+    qJoga(corpo, m);
+  }));
+  $("#qDica", corpo)?.addEventListener("click", e => { e.target.remove(); $("#qDicaT", corpo).classList.remove("oculto"); });
+  $("#qReler", corpo)?.addEventListener("click", () => abreSecao(m.id, sec.id));
+  $("#qProx", corpo)?.addEventListener("click", () => { if (st.i + 1 < st.lista.length) { st.i++; qJoga(corpo, m); qTopo(corpo); } else { st.fim = Date.now(); qResultado(corpo, m); } });
+  $("#qAnt", corpo)?.addEventListener("click", () => { st.i--; qJoga(corpo, m); });
+  $("#qSeg", corpo)?.addEventListener("click", () => { if (st.i + 1 < st.lista.length) { st.i++; qJoga(corpo, m); qTopo(corpo); } else qEntrega(corpo, m); });
+  $$("[data-qir]", corpo).forEach(b => b.addEventListener("click", () => { st.i = +b.dataset.qir; qJoga(corpo, m); }));
+  $("#qEntrega", corpo)?.addEventListener("click", () => qEntrega(corpo, m));
+  clearInterval(qTimer);
+  if (!treino) { const tic = () => { const r = Math.max(0, st.dur - (Date.now() - st.ini)), el = $("#qRel"); if (el) { el.textContent = `${Math.floor(r / 60000)}:${String(Math.floor(r / 1000) % 60).padStart(2, "0")}`; el.classList.toggle("pouco", r < 120000); } if (r <= 0) { clearInterval(qTimer); st.fim = Date.now(); qCorrige(m); qResultado(corpo, m); } }; tic(); qTimer = setInterval(tic, 1000); }
+}
+function qTopo(corpo) { const y = corpo.getBoundingClientRect().top + scrollY - 90; if (scrollY > y) scrollTo({ top: y, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }
+async function qEntrega(corpo, m) {
+  const st = qSessao, branco = st.lista.filter(id => st.resp[id] === undefined).length;
+  if (branco && !(await confirma("Entregar o simulado?", `${branco} ${branco === 1 ? "questão está" : "questões estão"} em branco.`, "Entregar"))) return;
+  clearInterval(qTimer); st.fim = Date.now(); qCorrige(m); qResultado(corpo, m);
+}
+function qCorrige(m) {
+  const st = qSessao; if (st.corrigido) return; st.corrigido = true;
+  const mapa = Object.fromEntries(questoesDe(m.id).map(q => [q.id, q]));
+  st.lista.forEach(id => { if (st.resp[id] !== undefined) qRegistra(m, mapa[id], st.resp[id]); });
+  S.questoesDia ||= {}; const k = `${m.id}:${hoje()}`;
+  if (!S.questoesDia[k]) { S.questoesDia[k] = 1; ganhaXP(10); toast("Simulado entregue · +10 XP"); }
+  checaTudo(); salvar(); renderTopo();
+}
+function qResultado(corpo, m) {
+  clearInterval(qTimer);
+  const st = qSessao, mapa = Object.fromEntries(questoesDe(m.id).map(q => [q.id, q])), qs = st.lista.map(id => mapa[id]).filter(Boolean);
+  const ok = qs.filter(q => st.resp[q.id] !== undefined && q.alternativas[st.resp[q.id]].certa), err = qs.filter(q => st.resp[q.id] !== undefined && !q.alternativas[st.resp[q.id]].certa), br = qs.filter(q => st.resp[q.id] === undefined);
+  const porTipo = TIPOS_Q.map(([v, t]) => { const l = qs.filter(q => q.tipo === v); return l.length ? `<span>${t} <b>${l.filter(q => ok.includes(q)).length}/${l.length}</b></span>` : ""; }).join("");
+  const reler = [...new Set(err.concat(br).map(q => (q.fonte && q.fonte.secao) || q.secao))].map(id => m.secoes.find(s => s.id === id)).filter(Boolean).slice(0, 3);
+  const min = Math.max(1, Math.round((st.fim - st.ini) / 60000));
+  corpo.innerHTML = `
+    <div class="qbarra"><span class="kicker" style="flex:1">${st.modo === "treino" ? "Treino" : "Simulado"} concluído · ${min} min</span></div>
+    <div class="qtopo"><div class="qnum"><b>${ok.length}</b><span>certas</span></div><div class="qnum"><b>${err.length}</b><span>erradas</span></div>${br.length ? `<div class="qnum"><b>${br.length}</b><span>em branco</span></div>` : ""}<div class="qnum"><b>${qs.length}</b><span>no total</span></div></div>
+    ${porTipo ? `<div class="qportipo">${porTipo}</div>` : ""}
+    ${reler.length ? `<div class="qreler"><span class="kicker">Para reler</span>${reler.map(s => `<button class="btn sm" data-qrl="${esc(s.id)}">${ic("livro", "s")}${esc(s.titulo)}</button>`).join("")}</div>` : ""}
+    <div class="qacoes" style="margin:14px 0">${err.length + br.length ? `<button class="btn pri" id="qRefaz">Refazer as que errei · ${err.length + br.length}</button>` : ""}<button class="btn" id="qNova">Nova rodada</button></div>
+    ${st.modo === "simulado" ? `<div class="qgab"><div class="kicker">Gabarito comentado</div>${qs.map((q, n) => { const k = st.resp[q.id], c = q.alternativas.findIndex(a => a.certa), certo = k === c;
+      return `<details class="qgi ${k === undefined ? "br" : certo ? "ok" : "no"}"><summary><b>${n + 1}</b><span>${q.enunciado.replace(/<[^>]+>/g, "").slice(0, 120)}${q.enunciado.length > 120 ? "…" : ""}</span><em>${k === undefined ? "em branco" : certo ? "certa" : `marcou ${LETRAS[k]} · certa ${LETRAS[c]}`}</em></summary>
+        <div class="qalts">${q.alternativas.map((a, i) => `<div class="qalt ${a.certa ? "certa" : i === k ? "errada" : "apaga"}"><b>${LETRAS[i]}</b><span><span class="qt">${a.t}</span>${a.porque ? `<span class="qpq">${a.porque}</span>` : ""}</span></div>`).join("")}</div>
+        ${q.explica ? `<p class="qex">${q.explica}</p>` : ""}${q.pegadinha ? `<p class="qpeg"><strong>Pegadinha:</strong> ${q.pegadinha}</p>` : ""}</details>`; }).join("")}</div>` : ""}`;
+  $$("[data-qrl]", corpo).forEach(b => b.addEventListener("click", () => { qSessao = null; abreSecao(m.id, b.dataset.qrl); }));
+  $("#qRefaz", corpo)?.addEventListener("click", () => { qSessao = { mat: m.id, modo: "treino", lista: err.concat(br).map(q => q.id), i: 0, resp: {}, ini: Date.now() }; renderQuestoes(corpo, m); });
+  $("#qNova", corpo).addEventListener("click", () => { qSessao = null; renderQuestoes(corpo, m); });
+}
+document.addEventListener("keydown", e => {
+  if (!qSessao || qSessao.fim || atual !== "materias" || abaMat !== "questoes" || e.target.closest("input,textarea,select,[contenteditable]") || e.metaKey || e.ctrlKey || e.altKey) return;
+  const corpo = $("#matCorpo"); if (!corpo) return;
+  const l = e.key.toUpperCase(), i = "12345".includes(e.key) ? +e.key - 1 : LETRAS.indexOf(l);
+  if (i >= 0 && e.key.length === 1) { const b = $(`[data-qa="${i}"]`, corpo); if (b && !b.disabled) { e.preventDefault(); b.click(); } }
+  else if (e.key === "Enter") { const b = $("#qProx", corpo) || $("#qSeg", corpo); if (b && document.activeElement?.tagName !== "BUTTON") { e.preventDefault(); b.click(); } }
+});
 function todosCards(mat) {
   const out = [];
   for (const m of materias()) {
@@ -518,7 +657,7 @@ temaMundo = () => mundo?.tema?.(tema);
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=38"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=39"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -876,14 +1015,19 @@ const alteraSecoes = (matId, fn) => salvaIndice(materias().map(x => x.id === mat
 
 let abaMat = LS.get("abaMat", "secoes");
 function abasMat(m, nCards) {
-  const a = [["secoes", `Seções · ${m.secoes.length}`, "livro"]];
+  const a = [["secoes", `Seções · ${m.secoes.length}`, "livro"], ["questoes", `Questões${questoesDe(m.id).length ? " · " + questoesDe(m.id).length : ""}`, "check"]];
   if (temKahoot(m.id)) a.push(["kahoot", `Kahoot · ${fab(m.id).kahoot.filter(x => x.tipo !== "slide").length}`, "alvo"]);
   if (casosDe(m.id).length) a.push(["casos", `Casos clínicos · ${casosDe(m.id).length}`, "estetoscopio"]);
   a.push(["cards", `Flashcards · ${nCards}`, "cards"]);
   const nN = contaNotas(m.id); a.push(["notas", `Minhas notas${nN ? " · " + nN : ""}`, "lapis"]);
   return a;
 }
+function atalhosMat(m, nCards) {
+  return abasMat(m, nCards).filter(a => ["questoes", "kahoot", "cards"].includes(a[0])).map(([k, t, i]) => { const [nm, n] = t.split(" · ");
+    return `<button class="atalho ${sub.tela === "mat" && abaMat === k ? "on" : ""}" data-am="${k}" aria-label="${esc(nm)}${n ? ", " + n : ""}">${k === "kahoot" && estiloIcone === "3d" && FIG.trofeu ? `<img src="${FIG.trofeu}" alt="">` : ic(i, "s")}<span>${esc(nm)}</span>${n ? `<em>${esc(n)}</em>` : ""}</button>`; }).join("");
+}
 function renderMateria(v) {
+  clearInterval(qTimer);
   const m = materia(sub.mat);
   const grupos = []; m.secoes.forEach(s => { const g = s.grupo || ""; let G = grupos.find(x => x.g === g); if (!G) grupos.push(G = { g, l: [] }); G.l.push(s); });
   const nCards = cardsCompartilhados(m.id).length + (S.meus[m.id] || []).length;
@@ -892,6 +1036,7 @@ function renderMateria(v) {
     <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
       ${icoBox(iconeMat(m))}
       <div style="flex:1;min-width:200px"><h1 class="doc-tit" style="margin:0">${esc(m.nome)}</h1><p class="sub" style="margin-top:6px">${esc(m.sub || "")}</p></div>
+      <div class="atalhos" role="navigation" aria-label="Atalhos da matéria">${atalhosMat(m, nCards)}</div>
       ${souDono ? `<button class="btn sm" id="edMat">${ic("lapis", "s")}Editar</button><button class="btn sm bad" id="apMat">${ic("lixo", "s")}</button>` : ""}
     </div>
     <div class="${abaMat === "kahoot" ? "" : "vidro card"}" id="matCorpo" style="margin-top:22px"></div></div>`;
@@ -902,6 +1047,7 @@ function renderMateria(v) {
   const corpo = $("#matCorpo");
   if (!abasMat(m, nCards).some(a => a[0] === abaMat)) abaMat = "secoes";
   if (abaMat === "kahoot") return renderKahootMat(corpo, m);
+  if (abaMat === "questoes") return renderQuestoes(corpo, m);
   if (abaMat === "casos") return renderCasos(corpo, m);
   if (abaMat === "notas") return renderNotasMat(corpo, m);
   if (abaMat !== "secoes") return renderCardsMateria(corpo, m);
@@ -1102,11 +1248,12 @@ function renderLeitura(v) {
 let kSec = null;   // {mat, ids, nome} quando o quiz foi aberto a partir de uma seção
 function renderPratica(m, s) {
   const box = $("#pratica"); if (!box) return;
-  const ids = idsAssunto(m.id, s.id), nC = cardsDoAssunto(m.id, ids).length, nQ = questoesDoAssunto(m.id, ids).length;
-  if (!nC && !nQ) { box.innerHTML = ""; return; }
+  const ids = idsAssunto(m.id, s.id), nC = cardsDoAssunto(m.id, ids).length, nQ = questoesDoAssunto(m.id, ids).length, nB = bancoDoAssunto(m.id, ids).length;
+  if (!nC && !nQ && !nB) { box.innerHTML = ""; return; }
   box.innerHTML = `<div class="kicker">Praticar este assunto</div>
-    <p class="muted dica">Só os flashcards e as questões sobre <b style="font-weight:400">${esc(s.titulo)}</b>.</p>
-    <div class="pratbt">${nC ? `<button class="btn pri" id="prCards">${ic("cards", "s")}Flashcards deste assunto · ${nC}</button>` : ""}${nQ ? `<button class="btn" id="prQuest">${ic("alvo", "s")}Questões deste assunto · ${nQ}</button>` : ""}</div>`;
+    <p class="muted dica">Só o que é sobre <b style="font-weight:400">${esc(s.titulo)}</b>.</p>
+    <div class="pratbt">${nC ? `<button class="btn pri" id="prCards">${ic("cards", "s")}Flashcards deste assunto · ${nC}</button>` : ""}${nB ? `<button class="btn" id="prBanco">${ic("check", "s")}Questões deste assunto · ${nB}</button>` : ""}${nQ ? `<button class="btn" id="prQuest">${ic("alvo", "s")}Kahoot deste assunto · ${nQ}</button>` : ""}</div>`;
+  $("#prBanco")?.addEventListener("click", () => { const f = qFiltro(m); Object.assign(f, { secs: ids, secNome: s.titulo, tipos: [], niveis: [], so: "" }); LS.set("qCfg", qCfg); qSessao = null; abaMat = "questoes"; LS.set("abaMat", abaMat); sub = { tela: "mat", mat: m.id }; LS.set("sub", sub); show("materias"); });
   $("#prCards")?.addEventListener("click", () => { revCfg = { mat: m.id, filtro: "todos", secs: ids, secNome: s.titulo }; LS.set("revCfg", revCfg); rodada = null; show("revisao"); });
   $("#prQuest")?.addEventListener("click", () => { kSec = { mat: m.id, ids, nome: s.titulo }; abaMat = "kahoot"; LS.set("abaMat", abaMat); sub = { tela: "mat", mat: m.id }; LS.set("sub", sub); show("materias"); });
 }
@@ -1687,7 +1834,7 @@ document.querySelector(".marca").style.cursor = "default";
    ========================================================= */
 const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
 async function carregaFabrica() {
-  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=38`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
+  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=39`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
   FABRICA = r.filter(Boolean);
 }
 async function conectaNuvem() {
@@ -1741,7 +1888,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=38");
+      const mod = await import("./conta.js?v=39");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }

@@ -32,6 +32,8 @@ Site estático, sem build: HTML + JS em módulos ES, three.js 0.160 via importma
 
 ## Verificações
 
+`node --test tests/questoes.mjs` valida o banco de questões (campo `questoes`): estrutura, 1 alternativa certa e se o `fonte.trecho` está mesmo no texto da seção citada. `node tests/questoes.mjs` mostra a distribuição por tipo, nível e gabarito.
+
 `node --test tests/regressoes.mjs` verifica preservação de estado, troca de conta, conflitos no Firestore com SDK simulado e limite do timer, sem acessar contas reais. Não precisa de `package.json` nem dependências.
 
 ## Estilo (o dono é exigente com isso)
@@ -53,6 +55,12 @@ Site estático, sem build: HTML + JS em módulos ES, three.js 0.160 via importma
 ## Conteúdo novo de matéria
 
 Novo arquivo em `content/<id>.json`, no mesmo formato dos existentes, e o id adicionado à lista `CONTEUDOS` em `app.js`. Seções agrupadas por `grupo` (ex.: "Guia de estudo", "Resumo completo").
+
+Três coisas separadas, cada uma com sua aba: **`kahoot`** (o Kahoot da professora, aba Kahoot), **`cards`** (flashcards) e **`questoes`** (banco de questões próprio, aba Questões). Não misturar.
+
+Formato de cada item de `questoes`:
+`{ "id": "q-r2-01", "secao": "r2", "tags": [], "tipo": "recordacao|compreensao|aplicacao|caso", "nivel": "facil|medio|dificil", "enunciado": "html curto", "img": "content/img/... (opcional)", "alternativas": [{ "t": "...", "certa": false, "porque": "1 frase" }, ...4 ou 5], "explica": "...", "pegadinha": "(opcional)", "dica": "(opcional)", "fonte": { "secao": "r2", "trecho": "frase copiada da seção" }, "fora": "dado externo + fonte (opcional)" }`.
+Toda questão sai do material da matéria; o que vier de fora vai em `fora`, com a fonte. Rodar `node --test tests/questoes.mjs` antes de publicar.
 
 ## Commits
 
