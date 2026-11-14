@@ -1,7 +1,8 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=36";
-import { ic, ICONES_MATERIA } from "./icons.js?v=36";
-import { FIG } from "./figuras.js?v=36";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=36";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=37";
+import { ic, ICONES_MATERIA } from "./icons.js?v=37";
+import { FIG } from "./figuras.js?v=37";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=37";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=37";
 
 /* =========================================================
    utilidades
@@ -517,7 +518,7 @@ temaMundo = () => mundo?.tema?.(tema);
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=36"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=37"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -979,6 +980,33 @@ function melhoraDoc(pane, mat, naConsulta = false) {
   $$(".xref", pane).forEach(x => { x.title = "Abrir ao lado, sem sair desta página"; x.addEventListener("click", () => { const M = materia(mat); if (M && M.secoes.find(s => s.id === x.dataset.sec)) abreConsulta(mat, x.dataset.sec); }); });
 }
 /* ---------- consulta lateral ---------- */
+const rotasLeitura = new Map(), posicoesLeitura = new Map();
+function secoesParaTroca(m) {
+  return m.secoes.map(s => ({ ...s, par: parDe(m.id, s.id), html: htmlSecao(m.id, s.id) }));
+}
+function atalhosLeitura(m, s) {
+  const tipo = tipoLeitura(s), memoria = rotasLeitura.get(m.id) || {};
+  if (tipo) memoria[tipo] = s.id;
+  rotasLeitura.set(m.id, memoria);
+  const destinos = destinosLeitura(secoesParaTroca(m), s.id, memoria);
+  if (Object.values(destinos).filter(Boolean).length < 2) return "";
+  return `<nav class="atalhos-estudo" aria-label="Navegação rápida do estudo">${[["prioritario", "Prioritário", "Parte prioritária"], ["resumo", "Resumo", "Resumo completo"], ["siglas", "Siglas", "Guia de siglas"]].map(([k, texto, nome]) => `<button type="button" data-troca-leitura="${k}" aria-label="${nome}" ${tipo === k ? 'aria-current="page"' : ""} ${destinos[k] ? "" : "disabled"}>${texto}</button>`).join("")}</nav>`;
+}
+function trocaLeitura(m, s, destino) {
+  const pane = $("#pane"), limite = $(".leitura-topo")?.getBoundingClientRect().bottom || 0;
+  const hs = $$("h2,h3", pane);
+  const h = hs.filter(h => h.getBoundingClientRect().top <= limite + 60).at(-1) || hs[0];
+  let referencia = null;
+  for (let el = h?.nextElementSibling; el && !/^H[23]$/.test(el.tagName); el = el.nextElementSibling) {
+    referencia ||= el.matches("[data-sec]") ? el.dataset.sec : $("[data-sec]", el)?.dataset.sec;
+  }
+  const sid = destinosLeitura(secoesParaTroca(m), s.id, rotasLeitura.get(m.id), referencia)[destino];
+  if (!sid || sid === s.id) return;
+  posicoesLeitura.set(`${m.id}--${s.id}`, scrollY);
+  abreSecao(m.id, sid);
+  scrollTo(0, posicoesLeitura.get(`${m.id}--${sid}`) || 0);
+  $(`[data-troca-leitura="${destino}"]`)?.focus({ preventScroll: true });
+}
 let consulta = LS.get("consulta", null);   // {mat, sid} ou null
 let acompanhar = LS.get("acompanhar", true), trocando = false;
 function grupoDe(m, sid) { return (m.secoes.find(x => x.id === sid) || {}).grupo || ""; }
@@ -1015,10 +1043,12 @@ function renderLeitura(v) {
   if (consulta && consulta.mat === m.id && acompanhar && !trocando) { const p = parDe(m.id, s.id); if (p && p !== consulta.sid) { consulta = { mat: m.id, sid: p }; LS.set("consulta", consulta); } }
   trocando = false;
   v.innerHTML = `<div class="pagina larga">
+    <div class="leitura-topo">
     ${trilha([{ t: "Matérias", h: "materias" }, { t: m.nome, h: "materias/" + m.id }, ...(s.grupo ? [{ t: s.grupo }] : []), { t: s.titulo }],
       `<button class="btn ic sm" id="lAnt" ${ant ? "" : "disabled"} title="Seção anterior" aria-label="Seção anterior">${ic("seta", "s")}</button><button class="btn ic sm" id="lProx" ${prox ? "" : "disabled"} title="Próxima seção" aria-label="Próxima seção">${ic("setad", "s")}</button>
       <button class="btn sm ${consulta ? "on" : ""}" id="btConsulta" title="Abrir a parte correspondente ao lado">${ic("livro", "s")}<span class="rot2">${consulta ? "Fechar lado a lado" : "Lado a lado"}</span></button>
       <button class="btn sm" id="lNotas" title="Minhas notas desta seção">${ic("lapis", "s")}<span class="rot2">Notas${nGr ? " · " + nGr : ""}</span></button>`)}
+    ${atalhosLeitura(m, s)}</div>
     <div class="leitura">
       <article class="doc vidro">
         <div style="display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap"><div style="flex:1;min-width:220px"><div class="kicker">${esc(s.grupo || m.sigla || "")}</div><h1 class="doc-tit">${esc(s.titulo)}</h1></div>
@@ -1036,6 +1066,7 @@ function renderLeitura(v) {
   renderArvore();
   const pane = $("#pane"); melhoraDoc(pane, m.id); aplicaGrifos(pane, k); ativaGrifos(pane, k, () => renderNotasSec(m, s));
   renderNotasSec(m, s); renderPratica(m, s);
+  $$("[data-troca-leitura]", v).forEach(b => b.addEventListener("click", () => trocaLeitura(m, s, b.dataset.trocaLeitura)));
   $$("[data-lg]", v).forEach(b => b.addEventListener("click", () => { const g = b.dataset.lg; if (g === gAt) return; const p = parDe(m.id, s.id); const alvo = (p && (m.secoes.find(x => x.id === p).grupo || "Seções") === g) ? p : m.secoes.find(x => (x.grupo || "Seções") === g).id; abreSecao(m.id, alvo); }));
   $("#lSec")?.addEventListener("change", e => abreSecao(m.id, e.target.value));
   $("#lAnt").addEventListener("click", () => ant && abreSecao(m.id, ant.id));
@@ -1249,7 +1280,7 @@ function renderNotasMat(corpo, m) {
 function renderKahootMat(corpo, m) {
   const f = kSec && kSec.mat === m.id ? kSec : null;
   corpo.innerHTML = (f ? `<div class="vidro filtroq"><span class="kicker" style="flex:1">Só as questões de · ${esc(f.nome)}</span><button class="btn sm" id="kTodas">Ver todas as questões</button></div>` : "")
-    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=36${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
+    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=37${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
   $("#kTodas")?.addEventListener("click", () => { kSec = null; renderKahootMat(corpo, m); });
 }
 function zoomImg(src, alt = "Imagem ampliada") {
@@ -1654,7 +1685,7 @@ document.querySelector(".marca").style.cursor = "default";
    ========================================================= */
 const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
 async function carregaFabrica() {
-  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=36`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
+  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=37`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
   FABRICA = r.filter(Boolean);
 }
 async function conectaNuvem() {
@@ -1708,7 +1739,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=36");
+      const mod = await import("./conta.js?v=37");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }
