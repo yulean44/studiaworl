@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=51">
-<link rel="icon" type="image/png" href="favicon.png?v=51">
-<link rel="manifest" href="manifest.webmanifest?v=51">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=52">
+<link rel="icon" type="image/png" href="favicon.png?v=52">
+<link rel="manifest" href="manifest.webmanifest?v=52">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -954,11 +954,25 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 @media (max-width:760px){.diahora{width:58px}}
 @media (max-width:400px){.chipi .lbar{width:54px}.topo{gap:5px}}
 @media (prefers-reduced-motion:reduce){.diahora,.diahora *{transition:none}.diahora:active{transform:none}}
+
+/* raios de luz vindos do canto (sol); mais quentes na golden hour, só um fio de luar à noite */
+.raios{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden;--raio-cor:rgba(255,255,255,.55);--raio-op:.55}
+.raios i{position:absolute;width:220vmax;height:220vmax;left:calc(86% - 110vmax);top:calc(-8% - 110vmax);opacity:var(--raio-op);
+  background:conic-gradient(from 180deg,transparent 0deg,transparent 18deg,var(--raio-cor) 24deg,transparent 31deg,transparent 40deg,var(--raio-cor) 43deg,transparent 47deg,transparent 58deg,var(--raio-cor) 66deg,transparent 78deg,transparent 88deg,var(--raio-cor) 92deg,transparent 97deg,transparent 110deg,var(--raio-cor) 117deg,transparent 126deg,transparent 360deg);
+  -webkit-mask:radial-gradient(closest-side,#000 0%,rgba(0,0,0,.6) 30%,transparent 66%);mask:radial-gradient(closest-side,#000 0%,rgba(0,0,0,.6) 30%,transparent 66%);
+  filter:blur(12px);animation:raios 38s ease-in-out infinite alternate;will-change:transform}
+@keyframes raios{from{transform:rotate(-4deg)}to{transform:rotate(5deg)}}
+:root[data-tema="dourado"] .raios{--raio-cor:rgba(255,186,100,.42);--raio-op:1}
+:root[data-tema="amanhecer"] .raios,:root[data-tema="claro"] .raios{--raio-cor:rgba(255,255,255,.85);--raio-op:1}
+:root:not([data-tema]) .raios,:root[data-tema="meianoite"] .raios,:root[data-tema="cristal"] .raios,:root[data-tema="aurora"] .raios,:root[data-tema="floresta"] .raios{--raio-cor:rgba(180,205,255,.10);--raio-op:1}
+body.iniciando .raios{visibility:hidden}
+@media (prefers-reduced-motion:reduce){.raios i{animation:none}}
 </style>
 </head>
 <body class="iniciando">
 <div id="inicioApp" role="status" aria-live="polite"><div class="vidro card"><h1>Planeta de Estudos</h1><p id="inicioStatus">Preparando seu planeta…</p><button class="btn pri" id="inicioTentar" hidden>Tentar novamente</button></div></div>
 <div id="espaco"></div>
+<div class="raios" aria-hidden="true"><i></i></div>
 <div class="marca">Planeta de Estudos</div>
 <nav class="nav" aria-label="Navegação" id="nav" inert></nav>
 <main class="main" inert>
@@ -977,6 +991,6 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=51"></script>
+<script type="module" src="app.js?v=52"></script>
 </body>
 </html>
