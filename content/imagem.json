@@ -4115,6 +4115,288 @@
     "secao": "k4",
     "trecho": "Estriações da gordura perirrenal"
    }
+  },
+  {
+   "id": "q-r3-18",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "facil",
+   "enunciado": "Jovem de 20 anos com dor abdominal há 12 horas, sem sinais de obstrução. Qual o primeiro exame de imagem na maioria dos casos?",
+   "alternativas": [
+    {
+     "t": "Radiografia simples",
+     "certa": false,
+     "porque": "É o exame inicial na obstrução."
+    },
+    {
+     "t": "Tomografia com contraste",
+     "certa": false,
+     "porque": "Entra quando o US é limitado ou inconclusivo."
+    },
+    {
+     "t": "Ressonância magnética",
+     "certa": false,
+     "porque": "É demorada e pouco disponível na urgência."
+    },
+    {
+     "t": "Ultrassonografia",
+     "certa": true,
+     "porque": "É a investigação inicial da maioria das dores abdominais."
+    }
+   ],
+   "explica": "A exceção é a obstrução, em que o RX vem primeiro.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A ultrassonografia é a investigação inicial da maioria das dores abdominais, exceto a obstrução, e é o método de escolha para a vesícula."
+   }
+  },
+  {
+   "id": "q-r3-19",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Mulher de 45 anos com dor no hipocôndrio direito após refeição gordurosa, febre e Murphy positivo. O que o ultrassom deve mostrar para sustentar colecistite?",
+   "alternativas": [
+    {
+     "t": "Apêndice acima de 6 mm",
+     "certa": false,
+     "porque": "É critério de apendicite."
+    },
+    {
+     "t": "Parede do cólon acima de 5 mm",
+     "certa": false,
+     "porque": "É critério de diverticulite."
+    },
+    {
+     "t": "Parede da vesícula acima de 3 mm, líquido perivesicular e Murphy ultrassonográfico",
+     "certa": true,
+     "porque": "Critérios do material."
+    },
+    {
+     "t": "Ar livre sob o diafragma",
+     "certa": false,
+     "porque": "É sinal de perfuração no RX."
+    }
+   ],
+   "explica": "Cálculo isolado não fecha colecistite; a parede espessada e o líquido apoiam.",
+   "pegadinha": "Não troque 3 mm (vesícula) por 6 mm (apêndice).",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Na colecistite aguda , a ultrassonografia mostra parede da vesícula acima de 3 mm, líquido perivesicular e sinal de Murphy ultrassonográfico, dor à compressão com o transdutor; a radiografia não está indicada."
+   }
+  },
+  {
+   "id": "q-r3-20",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Etilista com dor epigástrica em faixa e lipase três vezes o normal chega ao pronto-socorro. Deve fazer TC com contraste já na admissão?",
+   "alternativas": [
+    {
+     "t": "Não; a TC fica para após 72 horas ou para a dúvida diagnóstica",
+     "certa": true,
+     "porque": "O diagnóstico já está feito pela clínica e laboratório."
+    },
+    {
+     "t": "Sim, sempre na admissão",
+     "certa": false,
+     "porque": "O material indica após 72 h ou na dúvida."
+    },
+    {
+     "t": "Não, o ultrassom resolve o pâncreas",
+     "certa": false,
+     "porque": "O US vê mal o pâncreas."
+    },
+    {
+     "t": "Sim, sem contraste",
+     "certa": false,
+     "porque": "A TC indicada é com contraste."
+    }
+   ],
+   "explica": "Feita no tempo certo, a TC mostra necrose, coleções e realce heterogêneo.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Na pancreatite aguda , o diagnóstico é clínico e laboratorial, e a tomografia com contraste, feita após 72 horas ou na dúvida, mostra pâncreas aumentado, densificação da gordura peripancreática, realce heterogêneo e coleções (Figura 3.6)."
+   }
+  },
+  {
+   "id": "q-r3-21",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Homem de 70 anos com dor na fossa ilíaca esquerda, febre e leucocitose. Qual achado na TC confirma a principal hipótese?",
+   "alternativas": [
+    {
+     "t": "Apêndice acima de 6 mm, não compressível",
+     "certa": false,
+     "porque": "É apendicite, à direita."
+    },
+    {
+     "t": "Parede do cólon acima de 5 mm e densificação da gordura pericólica",
+     "certa": true,
+     "porque": "Diverticulite."
+    },
+    {
+     "t": "Sinal do grão de café",
+     "certa": false,
+     "porque": "É volvo de sigmoide."
+    },
+    {
+     "t": "Gás na parede das alças",
+     "certa": false,
+     "porque": "É pneumatose da isquemia."
+    }
+   ],
+   "explica": "Nos graves, a TC mostra abscesso e líquido livre.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Na diverticulite , a tomografia é a escolha: parede do cólon acima de 5 mm, densificação da gordura pericólica e, nos casos graves, abscessos e líquido (Figuras 3.7 e 3.8)."
+   }
+  },
+  {
+   "id": "q-r4-10",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Motociclista chega hipotenso e taquicárdico após colisão. Qual exame de imagem é feito na própria sala de emergência?",
+   "alternativas": [
+    {
+     "t": "TC de abdome com contraste",
+     "certa": false,
+     "porque": "Exige paciente estável."
+    },
+    {
+     "t": "Radiografia de abdome",
+     "certa": false,
+     "porque": "Não procura sangue livre."
+    },
+    {
+     "t": "Ressonância",
+     "certa": false,
+     "porque": "Inviável no instável."
+    },
+    {
+     "t": "FAST, ultrassom à procura de líquido livre",
+     "certa": true,
+     "porque": "Rápido, à beira do leito, sem transportar o instável."
+    }
+   ],
+   "explica": "O FAST procura líquido nos espaços hepatorrenal, esplenorrenal, pélvico e no pericárdio.",
+   "pegadinha": "A TC com contraste é para o trauma estável.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "ultrassonografia que procura líquido livre nos espaços hepatorrenal, esplenorrenal e pélvico e no pericárdio"
+   }
+  },
+  {
+   "id": "q-r4-11",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Homem de 35 anos com dor lombar intensa irradiada para a virilha e hematúria. Qual exame pedir e como?",
+   "alternativas": [
+    {
+     "t": "TC com contraste iodado",
+     "certa": false,
+     "porque": "O contraste excretado oculta o cálculo."
+    },
+    {
+     "t": "Radiografia em duas incidências",
+     "certa": false,
+     "porque": "É regra das fraturas."
+    },
+    {
+     "t": "TC sem contraste",
+     "certa": true,
+     "porque": "Cálculos são hiperdensos; o contraste nos rins os esconderia."
+    },
+    {
+     "t": "Ressonância com gadolínio",
+     "certa": false,
+     "porque": "Não é o exame do material."
+    }
+   ],
+   "explica": "A TC sem contraste mostra o cálculo, o tamanho e a hidronefrose acima dele.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Na suspeita de cálculo urinário, o padrão-ouro é a tomografia sem contraste , porque praticamente todos os cálculos são hiperdensos e o contraste excretado pelos rins poderia ocultá-los."
+   }
+  },
+  {
+   "id": "q-r2-12",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Mulher de 40 anos com a pior cefaleia da vida, de início súbito. A TC sem contraste mostra sangue nas cisternas. Qual o próximo exame?",
+   "alternativas": [
+    {
+     "t": "Angiotomografia ou arteriografia",
+     "certa": true,
+     "porque": "Procuram o aneurisma roto."
+    },
+    {
+     "t": "Repetir a TC em 24 horas",
+     "certa": false,
+     "porque": "Não procura a causa."
+    },
+    {
+     "t": "Ressonância T1",
+     "certa": false,
+     "porque": "Não é o exame indicado no material."
+    },
+    {
+     "t": "Punção lombar",
+     "certa": false,
+     "porque": "O sangue já foi visto na TC."
+    }
+   ],
+   "explica": "A causa mais comum da HSA não traumática é o aneurisma roto.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Confirmada a hemorragia subaracnoide, a angiotomografia ou a arteriografia procuram o aneurisma (Figura 2.5)."
+   }
+  },
+  {
+   "id": "q-r4-12",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Adolescente cai sobre o punho; a radiografia em uma única incidência está normal, mas a dor e o edema persistem. Qual o próximo passo?",
+   "alternativas": [
+    {
+     "t": "Alta: radiografia normal exclui fratura",
+     "certa": false,
+     "porque": "Uma incidência não basta."
+    },
+    {
+     "t": "Completar a radiografia com pelo menos duas incidências",
+     "certa": true,
+     "porque": "Uma fratura pode ser invisível numa única projeção."
+    },
+    {
+     "t": "Ressonância de imediato",
+     "certa": false,
+     "porque": "Não é o passo descrito."
+    },
+    {
+     "t": "TC de crânio",
+     "certa": false,
+     "porque": "Não tem relação."
+    }
+   ],
+   "explica": "Toda radiografia de suspeita de fratura é feita em duas incidências ou mais.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Na suspeita de fratura, a radiografia é o primeiro exame , sempre em pelo menos duas incidências, porque uma linha de fratura pode ser invisível numa única projeção."
+   }
   }
  ]
 }

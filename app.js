@@ -1,10 +1,10 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=44";
-import { ic, ICONES_MATERIA } from "./icons.js?v=44";
-import { FIG } from "./figuras.js?v=44";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=44";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=44";
-import { semanaDeEstudos } from "./relatorio.js?v=44";
-import { carregaMaterias } from "./conteudo.js?v=44";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=46";
+import { ic, ICONES_MATERIA } from "./icons.js?v=46";
+import { FIG } from "./figuras.js?v=46";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=46";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=46";
+import { semanaDeEstudos } from "./relatorio.js?v=46";
+import { carregaMaterias } from "./conteudo.js?v=46";
 
 /* =========================================================
    utilidades
@@ -666,7 +666,7 @@ temaMundo = () => mundo?.tema?.(tema);
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=44"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=46"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -1461,7 +1461,7 @@ function renderNotasMat(corpo, m) {
 function renderKahootMat(corpo, m) {
   const f = kSec && kSec.mat === m.id ? kSec : null;
   corpo.innerHTML = (f ? `<div class="vidro filtroq"><span class="kicker" style="flex:1">Só as questões de · ${esc(f.nome)}</span><button class="btn sm" id="kTodas">Ver todas as questões</button></div>` : "")
-    + `<iframe class="kframe" data-sessao="${sessaoConta}" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=44${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
+    + `<iframe class="kframe" data-sessao="${sessaoConta}" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=46${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
   $("#kTodas")?.addEventListener("click", () => { kSec = null; renderKahootMat(corpo, m); });
 }
 function zoomImg(src, alt = "Imagem ampliada") {
@@ -1935,7 +1935,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=44");
+      const mod = await import("./conta.js?v=46");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }

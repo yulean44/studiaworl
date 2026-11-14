@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=44">
-<link rel="icon" type="image/png" href="favicon.png?v=44">
-<link rel="manifest" href="manifest.webmanifest?v=44">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=46">
+<link rel="icon" type="image/png" href="favicon.png?v=46">
+<link rel="manifest" href="manifest.webmanifest?v=46">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -125,7 +125,6 @@ svg.i.s{width:16px;height:16px;stroke-width:1.5}
 .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--acc2),var(--acc));border-radius:9px;transition:width .5s}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.conteudo-status{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px;font-size:14px;color:var(--ink)}
 .empty{padding:24px;text-align:center;color:var(--muted);font-weight:300}
 input.f,select.f,textarea.f{width:100%;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--ink);border-radius:14px;padding:10px 14px;font:400 14.5px var(--font);outline:none}
 input.f:focus,select.f:focus,textarea.f:focus{border-color:var(--acc2)}
@@ -567,7 +566,7 @@ button,a,.sec,.mat,.passo{-webkit-tap-highlight-color:transparent;touch-action:m
 .stat b,.tempo-big,.chipi,.g-n,table.tb td,.rw{font-variant-numeric:tabular-nums}
 /* um só estilo de foco, visível no teclado */
 :focus{outline:none}
-:focus-visible{outline:2px solid var(--acc2);outline-offset:3px;border-radius:10px}
+:focus-visible{outline:2px solid var(--acc2);outline-offset:3px}
 input.f:focus-visible,select.f:focus-visible,textarea.f:focus-visible{outline:none;border-color:var(--acc2);box-shadow:0 0 0 3px color-mix(in srgb,var(--acc2) 22%,transparent)}
 /* selects nativos legíveis em qualquer tema */
 select.f{background-color:var(--solid);color:var(--ink)}
@@ -889,6 +888,21 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 .qgi .qalts{margin-top:10px}
 .qex{color:var(--doc);font-weight:300;font-size:14.5px}
 @media (prefers-reduced-motion:reduce){.qalt,.atalho,#matCorpo .prog i{transition:none}}
+
+/* ================= refino leve (nov/2026): mesma identidade, menos ruído ================= */
+.conteudo-status{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px;font-size:14px;color:var(--ink)}
+/* celular: na área de estudo a marca some, então o topo não precisa de faixa vazia */
+@media (max-width:760px){body.estudo .main{padding-top:calc(14px + env(safe-area-inset-top))}}
+/* Prioritário · Resumo · Siglas: aba ativa com fundo suave em vez de moldura */
+.atalhos-estudo button[aria-current=page]{background:var(--acc-soft);border-color:transparent;color:var(--forte);font-weight:500}
+/* leitura: linha mais curta (cerca de 75 caracteres) e ritmo vertical mais calmo */
+.ws .doc{max-width:800px}
+.ws .doc h2,.ws .doc h3{scroll-margin-top:96px}
+.ws .doc table{font-variant-numeric:tabular-nums}
+/* trilha e chips: um único peso de sombra, sem bordas duplicadas */
+.trilha{box-shadow:0 1px 2px rgba(20,40,70,.05)}
+:root[data-tema="claro"] .chipi{background:var(--solid);box-shadow:0 1px 2px rgba(20,40,70,.05)}
+@media (prefers-reduced-motion:reduce){.btn:active,.chipi:active,.navbtn:active{transform:none}}
 </style>
 </head>
 <body class="iniciando">
@@ -911,6 +925,6 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=44"></script>
+<script type="module" src="app.js?v=46"></script>
 </body>
 </html>
