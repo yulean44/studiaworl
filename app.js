@@ -1,7 +1,7 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=35";
-import { ic, ICONES_MATERIA } from "./icons.js?v=35";
-import { FIG } from "./figuras.js?v=35";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=35";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=36";
+import { ic, ICONES_MATERIA } from "./icons.js?v=36";
+import { FIG } from "./figuras.js?v=36";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=36";
 
 /* =========================================================
    utilidades
@@ -517,7 +517,7 @@ temaMundo = () => mundo?.tema?.(tema);
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=35"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=36"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -973,7 +973,8 @@ function melhoraDoc(pane, mat, naConsulta = false) {
   });
   const labels = [[/^Por que é essencial/, "lbl-why"], [/^Entenda primeiro/, "lbl-learn"], [/^Memorize\.?$/, "lbl-mem"], [/^Divergência entre aulas/, "lbl-div"], [/^Para aprofundar/, "lbl-ref"]];
   $$("p", pane).forEach(p => { const s = p.firstElementChild; if (!s || s.tagName !== "STRONG" || p.firstChild !== s) return; const t = s.textContent.trim(); for (const [re, c] of labels) if (re.test(t)) { p.classList.add("lbl", c); s.textContent = t.replace(/[.:]$/, ""); break; } });
-  $$("img", pane).forEach(im => { im.style.cursor = "zoom-in"; im.addEventListener("click", () => zoomImg(im.src)); });
+  $$(".figure-zoom", pane).forEach(b => b.addEventListener("click", () => { const im = $("img", b); zoomImg(im.src, im.alt); }));
+  $$("img", pane).filter(im => !im.closest(".figure-zoom")).forEach(im => { im.style.cursor = "zoom-in"; im.addEventListener("click", () => zoomImg(im.src, im.alt)); });
   $$("figure.ref a", pane).forEach(a => { a.target = "_blank"; a.rel = "noopener"; });
   $$(".xref", pane).forEach(x => { x.title = "Abrir ao lado, sem sair desta página"; x.addEventListener("click", () => { const M = materia(mat); if (M && M.secoes.find(s => s.id === x.dataset.sec)) abreConsulta(mat, x.dataset.sec); }); });
 }
@@ -1248,10 +1249,13 @@ function renderNotasMat(corpo, m) {
 function renderKahootMat(corpo, m) {
   const f = kSec && kSec.mat === m.id ? kSec : null;
   corpo.innerHTML = (f ? `<div class="vidro filtroq"><span class="kicker" style="flex:1">Só as questões de · ${esc(f.nome)}</span><button class="btn sm" id="kTodas">Ver todas as questões</button></div>` : "")
-    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=35${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
+    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=36${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
   $("#kTodas")?.addEventListener("click", () => { kSec = null; renderKahootMat(corpo, m); });
 }
-function zoomImg(src) { const z = document.createElement("div"); z.className = "zoomP"; z.innerHTML = `<img src="${esc(src)}" alt="">`; z.addEventListener("click", () => z.remove()); document.body.append(z); }
+function zoomImg(src, alt = "Imagem ampliada") {
+  const m = modal(`<h3>Imagem ampliada</h3><img src="${esc(src)}" alt="${esc(alt)}"><div class="acts"><button class="btn" data-fecha>Fechar</button></div>`);
+  m.el.classList.add("imagem-ampliada");
+}
 addEventListener("message", e => {
   if (e.origin !== location.origin) return; const d = e.data || {};
   const f = $(".kframe");
@@ -1650,7 +1654,7 @@ document.querySelector(".marca").style.cursor = "default";
    ========================================================= */
 const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
 async function carregaFabrica() {
-  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=35`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
+  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=36`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
   FABRICA = r.filter(Boolean);
 }
 async function conectaNuvem() {
@@ -1704,7 +1708,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=35");
+      const mod = await import("./conta.js?v=36");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }

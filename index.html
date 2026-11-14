@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=35">
-<link rel="icon" type="image/png" href="favicon.png?v=35">
-<link rel="manifest" href="manifest.webmanifest?v=35">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=36">
+<link rel="icon" type="image/png" href="favicon.png?v=36">
+<link rel="manifest" href="manifest.webmanifest?v=36">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -415,8 +415,8 @@ mark.grifo.pisca{outline:2px solid var(--ink);outline-offset:2px}
 .nbloco{margin-bottom:12px}
 /* ---- Kahoot dentro da matéria ---- */
 .kframe{width:100%;height:760px;border:0;display:block;background:transparent;border-radius:22px}
-.zoomP{position:fixed;inset:0;z-index:80;background:rgba(6,9,16,.92);display:grid;place-items:center;padding:20px;cursor:zoom-out}
-.zoomP img{max-width:96vw;max-height:92vh;border-radius:12px}
+.modal.imagem-ampliada{width:min(1100px,96vw);max-width:96vw}
+.imagem-ampliada img{display:block;max-width:100%;max-height:72dvh;width:auto;height:auto;object-fit:contain;margin:0 auto;border-radius:12px}
 /* ---- casos clínicos ---- */
 .casos{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
 .caso{display:flex;flex-direction:column;gap:6px;text-align:left;padding:18px;border-radius:20px;color:var(--ink);font:300 14px var(--font);cursor:pointer;transition:.2s;border:1px solid var(--line)}
@@ -453,6 +453,14 @@ mark.grifo.pisca{outline:2px solid var(--ink);outline-offset:2px}
 .doc figure.ref figcaption{font-size:13.5px;font-weight:300;color:var(--doc);line-height:1.5}
 .doc figure.ref .fonte{display:block;margin-top:6px;font-size:12px;color:var(--muted)}
 .doc figure.ref .fonte a{color:var(--acc2)}
+.doc .figure-zoom{display:block;width:100%;border:0;padding:0;margin:0 0 10px;background:transparent;cursor:zoom-in}
+.doc .figure-zoom img{height:auto;object-fit:contain;margin:0 auto}
+.doc button.xref{font:inherit;background:transparent;border:0;padding:0;text-align:left}
+.doc table.siglas{table-layout:fixed}
+.doc .siglas thead th:first-child{width:26%}
+.doc .siglas th[scope=row]{width:26%;font-size:14px;text-transform:none;letter-spacing:normal;color:var(--ink)}
+.doc .siglas th,.doc .siglas td{overflow-wrap:anywhere}
+@media (pointer:coarse){.doc button.xref,.doc .figure-zoom{min-height:44px}}
 .fimcaso .relac{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 
 /* ================= tema claro (padrão) ================= */
@@ -798,6 +806,6 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=35"></script>
+<script type="module" src="app.js?v=36"></script>
 </body>
 </html>
