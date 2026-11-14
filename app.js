@@ -134,6 +134,15 @@ function cardsCompartilhados(mat) {
   const o = CONT.cards[mat]; if (o && Array.isArray(o.lista)) return o.lista;
   const f = FABRICA.find(m => m.id === mat); return f ? f.cards : [];
 }
+function idsAssunto(mat, sid) {
+  const m = materia(mat); if (!m) return [sid];
+  const ids = new Set([sid]); const p = parDe(mat, sid); if (p) ids.add(p);
+  m.secoes.forEach(x => { if (parDe(mat, x.id) === sid) ids.add(x.id); });
+  return [...ids];
+}
+const tocaAssunto = (o, ids) => ids.includes(o.secao) || [].concat(o.assunto || [], o.secoes || []).some(x => ids.includes(x));
+function cardsDoAssunto(mat, ids) { return todosCards(mat).filter(c => tocaAssunto(c, ids)); }
+function questoesDoAssunto(mat, ids) { return (fab(mat).kahoot || []).filter(q => q.tipo !== "slide" && tocaAssunto(q, ids)); }
 function todosCards(mat) {
   const out = [];
   for (const m of materias()) {
@@ -745,7 +754,7 @@ function renderMateria(v) {
     </div>
     <div class="${abaMat === "kahoot" ? "" : "vidro card"}" id="matCorpo" style="margin-top:22px"></div></div>`;
   renderArvore();
-  $$("[data-am]", v).forEach(b => b.addEventListener("click", () => { abaMat = b.dataset.am; LS.set("abaMat", abaMat); renderMateria(v); sincronizaHash(); }));
+  $$("[data-am]", v).forEach(b => b.addEventListener("click", () => { kSec = null; abaMat = b.dataset.am; LS.set("abaMat", abaMat); renderMateria(v); sincronizaHash(); }));
   $("#edMat", v)?.addEventListener("click", () => editaMateria(m));
   $("#apMat", v)?.addEventListener("click", async () => { if (await confirma(`Apagar ${m.nome}?`, "A matéria some do site. O progresso das pessoas não é apagado.", "Apagar", true)) { await salvaIndice(materias().filter(x => x.id !== m.id)); sub = { tela: "lista" }; render(); } });
   const corpo = $("#matCorpo");
@@ -876,6 +885,7 @@ function renderLeitura(v) {
         <div id="pane">${html || '<p class="muted">Seção vazia.</p>'}</div>
         <div class="leiturafim"><div class="ico ${lida ? "ok" : ""}">${ic(lida ? "check" : "livro", "s")}</div><div class="t"><b style="font-weight:400">${lida ? "Seção concluída" : "Terminou de ler?"}</b><br><small class="muted">${lida ? "Desmarque se quiser rever." : "Marque como concluída e ganhe 20 XP."}</small></div>
           <button class="btn ${lida ? "" : "pri"}" id="btLida">${lida ? "Desmarcar" : "Concluir seção"}</button></div>
+        <div class="pratica" id="pratica"></div>
         <div class="notasSec" id="notasSec"></div>
         <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">${ant ? `<button class="btn" id="btAnt">${ic("seta", "s")}${esc(ant.titulo)}</button>` : ""}<span style="flex:1"></span>${prox ? `<button class="btn" id="btProx">${esc(prox.titulo)}${ic("setad", "s")}</button>` : ""}</div>
       </article>
@@ -883,7 +893,7 @@ function renderLeitura(v) {
     </div></div>`;
   renderArvore();
   const pane = $("#pane"); melhoraDoc(pane, m.id); aplicaGrifos(pane, k); ativaGrifos(pane, k, () => renderNotasSec(m, s));
-  renderNotasSec(m, s);
+  renderNotasSec(m, s); renderPratica(m, s);
   $$("[data-lg]", v).forEach(b => b.addEventListener("click", () => { const g = b.dataset.lg; if (g === gAt) return; const p = parDe(m.id, s.id); const alvo = (p && (m.secoes.find(x => x.id === p).grupo || "Seções") === g) ? p : m.secoes.find(x => (x.grupo || "Seções") === g).id; abreSecao(m.id, alvo); }));
   $("#lSec")?.addEventListener("change", e => abreSecao(m.id, e.target.value));
   $("#lAnt").addEventListener("click", () => ant && abreSecao(m.id, ant.id));
@@ -912,6 +922,18 @@ function renderLeitura(v) {
     if (consulta) { fechaConsulta(); render(); } else { abreConsulta(m.id, outro.id); render(); }
   });
   renderConsulta();
+}
+/* ---------- praticar o assunto da seção ---------- */
+let kSec = null;   // {mat, ids, nome} quando o quiz foi aberto a partir de uma seção
+function renderPratica(m, s) {
+  const box = $("#pratica"); if (!box) return;
+  const ids = idsAssunto(m.id, s.id), nC = cardsDoAssunto(m.id, ids).length, nQ = questoesDoAssunto(m.id, ids).length;
+  if (!nC && !nQ) { box.innerHTML = ""; return; }
+  box.innerHTML = `<div class="kicker">Praticar este assunto</div>
+    <p class="muted dica">Só os flashcards e as questões sobre <b style="font-weight:400">${esc(s.titulo)}</b>.</p>
+    <div class="pratbt">${nC ? `<button class="btn pri" id="prCards">${ic("cards", "s")}Flashcards deste assunto · ${nC}</button>` : ""}${nQ ? `<button class="btn" id="prQuest">${ic("alvo", "s")}Questões deste assunto · ${nQ}</button>` : ""}</div>`;
+  $("#prCards")?.addEventListener("click", () => { revCfg = { mat: m.id, filtro: "todos", secs: ids, secNome: s.titulo }; LS.set("revCfg", revCfg); rodada = null; show("revisao"); });
+  $("#prQuest")?.addEventListener("click", () => { kSec = { mat: m.id, ids, nome: s.titulo }; abaMat = "kahoot"; LS.set("abaMat", abaMat); sub = { tela: "mat", mat: m.id }; LS.set("sub", sub); show("materias"); });
 }
 /* ---------- grifos e mini notas ---------- */
 const CORES_GRIFO = [["a", "Amarelo"], ["v", "Verde"], ["z", "Azul"], ["r", "Rosa"]];
@@ -1083,7 +1105,10 @@ function renderNotasMat(corpo, m) {
 }
 /* ---------- Kahoot dentro da matéria ---------- */
 function renderKahootMat(corpo, m) {
-  corpo.innerHTML = `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=24" title="Kahoot de ${esc(m.nome)}"></iframe>`;
+  const f = kSec && kSec.mat === m.id ? kSec : null;
+  corpo.innerHTML = (f ? `<div class="vidro filtroq"><span class="kicker" style="flex:1">Só as questões de · ${esc(f.nome)}</span><button class="btn sm" id="kTodas">Ver todas as questões</button></div>` : "")
+    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=33${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
+  $("#kTodas")?.addEventListener("click", () => { kSec = null; renderKahootMat(corpo, m); });
 }
 function zoomImg(src) { const z = document.createElement("div"); z.className = "zoomP"; z.innerHTML = `<img src="${esc(src)}" alt="">`; z.addEventListener("click", () => z.remove()); document.body.append(z); }
 addEventListener("message", e => {
@@ -1176,6 +1201,7 @@ function renderEditor(v, m, s, html) {
 let revCfg = LS.get("revCfg", { mat: "todas", filtro: "rec" }), rodada = null;
 function baralho() {
   let l = todosCards(revCfg.mat); const st = c => S.cards[c.id];
+  if (revCfg.secs && revCfg.secs.length) l = l.filter(c => tocaAssunto(c, revCfg.secs));
   if (revCfg.filtro === "err") l = l.filter(c => st(c)?.err > 0 && st(c).b < 3);
   else if (revCfg.filtro === "novos") l = l.filter(c => !st(c));
   else if (revCfg.filtro === "rec") l = l.filter(c => (st(c)?.b || 0) < 3);
@@ -1212,10 +1238,12 @@ function renderRevisao() {
     <div class="fc-top">
       <select class="f" id="rMat"><option value="todas">Todas as matérias</option>${ms.map(m => `<option value="${esc(m.id)}" ${revCfg.mat === m.id ? "selected" : ""}>${esc(m.nome)}</option>`).join("")}</select>
       <select class="f" id="rFil">${[["rec", "Para dominar"], ["err", "Só os que errei"], ["novos", "Nunca vistos"], ["todos", "Todos"]].map(([k, t]) => `<option value="${k}" ${revCfg.filtro === k ? "selected" : ""}>${t}</option>`).join("")}</select>
+      ${revCfg.secs && revCfg.secs.length ? `<button class="btn sm on" id="rSecX" title="Voltar a todos os cards da matéria">${esc(revCfg.secNome || "Assunto")}${ic("x", "s")}</button>` : ""}
       <span class="kicker">${baralho().length} cards</span>
     </div>${corpo}</div>`;
   const reCfg = () => { revCfg = { mat: $("#rMat").value, filtro: $("#rFil").value }; LS.set("revCfg", revCfg); rodada = null; renderRevisao(); };
   $("#rMat").addEventListener("change", reCfg); $("#rFil").addEventListener("change", reCfg);
+  $("#rSecX")?.addEventListener("click", () => { revCfg = { mat: revCfg.mat, filtro: revCfg.filtro }; LS.set("revCfg", revCfg); rodada = null; renderRevisao(); });
   $("#rNova")?.addEventListener("click", () => { rodada = null; renderRevisao(); });
   $("#fcCard")?.addEventListener("click", vira); $("#rVira")?.addEventListener("click", vira);
   $("#rOk")?.addEventListener("click", () => responde(true)); $("#rErr")?.addEventListener("click", () => responde(false));
@@ -1430,7 +1458,7 @@ document.querySelector(".marca").style.cursor = "default";
    ========================================================= */
 const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
 async function carregaFabrica() {
-  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=32`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
+  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=33`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
   FABRICA = r.filter(Boolean);
 }
 async function conectaNuvem() {

@@ -210,11 +210,13 @@ const EMBED = new URLSearchParams(location.search).has("embed");
 if (EMBED) { document.body.classList.add("embed"); const avisa = () => parent.postMessage({ tipo: "kahoot-altura", h: document.documentElement.scrollHeight }, location.origin); new ResizeObserver(avisa).observe(document.body); addEventListener("load", avisa); }
 function $$(s) { return [...document.querySelectorAll(s)]; }
 function zoom(src) { if (EMBED && parent !== window) { parent.postMessage({ tipo: "kahoot-zoom", src: new URL(src, location.href).href }, location.origin); return; } const z = document.createElement("div"); z.className = "zoom"; z.innerHTML = `<img src="${esc(src)}" alt="">`; z.addEventListener("click", () => z.remove()); document.body.append(z); }
-const perguntas = () => DADOS.kahoot.filter(x => x.tipo !== "slide");
+const QS = new URLSearchParams(location.search), SECS = (QS.get("sec") || "").split(",").filter(Boolean);
+const doAssunto = q => [].concat(q.secoes || [], q.assunto || [], q.secao || []).some(x => SECS.includes(x));
+const perguntas = () => DADOS.kahoot.filter(x => x.tipo !== "slide" && (!SECS.length || doAssunto(x)));
 
 async function carrega() {
   const mat = new URLSearchParams(location.search).get("mat") || "imagem";
-  try { const r = await fetch(`content/${mat}.json?v=31`); if (!r.ok) throw 0; DADOS = await r.json(); }
+  try { const r = await fetch(`content/${mat}.json?v=33`); if (!r.ok) throw 0; DADOS = await r.json(); }
   catch { DADOS = EMBUTIDO; }
   if (!DADOS || !DADOS.kahoot) { $("#capaSub").textContent = "Não encontrei perguntas para esta matéria."; $("#btJogar").disabled = true; return; }
   $("#capaSigla").textContent = (DADOS.kahootInfo && DADOS.kahootInfo.titulo) || DADOS.nome;
@@ -227,6 +229,7 @@ async function carrega() {
   const KI = DADOS.kahootInfo || {};
   if (KI.capa) $("#capaSub").textContent = KI.capa.replace("{n}", n);
   if (KI.botao) $("#btJogar").textContent = KI.botao;
+  if (SECS.length) { $("#capaSub").textContent = `${n} ${n === 1 ? "pergunta" : "perguntas"} sobre ${QS.get("nome") || "este assunto"}. Quanto mais cedo acertar, mais pontos.`; $("#btJogar").textContent = "Começar"; }
   const fotos = [...new Set(DADOS.kahoot.map(x => x.foto).filter(Boolean))];
   $("#btGal").classList.toggle("oculto", !fotos.length);
   $("#btGal").textContent = `Fotos da aula · ${fotos.length}`;
@@ -308,7 +311,7 @@ function fim() {
 }
 $("#btProx").addEventListener("click", avanca);
 $("#btSlProx").addEventListener("click", avanca);
-$("#btJogar").addEventListener("click", () => inicia(DADOS.kahoot));
+$("#btJogar").addEventListener("click", () => inicia(SECS.length ? perguntas() : DADOS.kahoot));
 $("#btAleat").addEventListener("click", () => inicia(embaralha(perguntas())));
 $("#btDeNovo").addEventListener("click", () => tela("telaCapa"));
 $("#btSoErros").addEventListener("click", () => inicia(erros.map(e => e.q)));

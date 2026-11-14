@@ -10,51 +10,58 @@
   {
    "id": "r0",
    "grupo": "Resumo de referência",
-   "titulo": "Comece por aqui",
+   "titulo": "Introdução",
    "par": "g0",
-   "html": "<p>A <strong>AV2 de Práticas Médicas II · Cirurgia</strong> (semana de 23 a 28/11) segue a segunda metade da ementa da disciplina:</p><table><thead><tr><th>Aula</th><th>Tema</th></tr></thead><tbody><tr><td>7</td><td>Pré-operatório (avaliação, ASA, exames, jejum, medicações, profilaxias)</td></tr><tr><td>8</td><td>Pós-operatório (dor, íleo, febre, complicações, tromboprofilaxia)</td></tr><tr><td>9</td><td>Infecção de sítio cirúrgico</td></tr><tr><td>10</td><td>Nutrição em cirurgia</td></tr><tr><td>11</td><td>Cirurgia segura (checklist da OMS)</td></tr><tr><td>12</td><td>Dispositivos cirúrgicos: drenos, sondas, cateteres e cânulas</td></tr></tbody></table><p>Leia primeiro o <strong>resumo</strong> e depois o <strong>guia prioritário</strong> pareado. Feche com flashcards, quiz e casos.</p><p><strong>De onde veio:</strong> temas e objetivos da <em>Ementa</em> de Cirurgia que está no Drive da turma. O último material enviado ao Drive (<em>check list · acesso · anestésico</em>, 11/11) cobre cirurgia segura, acessos e avaliação pré-anestésica, já incluídos aqui. Os slides das aulas 7 a 10 ainda não estão no Drive; o conteúdo segue as referências da área (Sabiston, ASA, CDC/ANVISA, OMS, ESPEN/ACERTO). Quando chegarem, vale conferir.</p><blockquote><strong>Cai na prova:</strong> Os números (jejum, tempo de antibioticoprofilaxia, faixas de sondas e cateteres) e as três etapas do checklist costumam virar questão direta.</blockquote>"
+   "html": "<p><strong>Práticas Médicas II · Cirurgia · 2ª unidade.</strong> Capítulo de referência das aulas 7 a 12 da ementa de Cirurgia (Turma 41).</p><h3>Introdução</h3><p>O resultado de uma operação depende tanto do que acontece antes e depois dela quanto do ato cirúrgico em si. A avaliação pré-operatória identifica e corrige riscos que, ignorados, transformam um procedimento simples numa complicação grave. O pós-operatório exige distinguir a resposta fisiológica esperada ao trauma das complicações que precisam de intervenção. A infecção do sítio cirúrgico é a complicação infecciosa mais frequente do paciente operado, e boa parte dela é evitável. O estado nutricional condiciona a cicatrização e a resposta imune. A segurança do paciente no centro cirúrgico depende de processos padronizados e de comunicação. E os dispositivos, como sondas, drenos, cateteres e cânulas, acompanham praticamente todo paciente cirúrgico.</p><p>Esses seis temas formam a segunda metade da ementa da disciplina e compõem um percurso único, do ambulatório pré-operatório à alta. Ao final do capítulo, o leitor deve saber estratificar o risco cirúrgico e preparar o paciente, reconhecer complicações pós-operatórias pelo tempo em que aparecem, classificar as feridas e indicar a antibioticoprofilaxia, escolher a via de suporte nutricional, aplicar o checklist de cirurgia segura e indicar e manejar os principais dispositivos.</p><p class=\"tabtit\"><strong>Tabela 0.1</strong>Seções do capítulo</p><table><thead><tr><th>Seção</th><th>Tema (aula)</th></tr></thead><tbody><tr><td>1</td><td>Pré-operatório e avaliação pré-anestésica (7)</td></tr><tr><td>2</td><td>Pós-operatório (8)</td></tr><tr><td>3</td><td>Infecção do sítio cirúrgico (9)</td></tr><tr><td>4</td><td>Nutrição em cirurgia (10)</td></tr><tr><td>5</td><td>Cirurgia segura (11)</td></tr><tr><td>6</td><td>Dispositivos cirúrgicos: sondas, drenos, cateteres e cânulas (12)</td></tr></tbody></table><p>O conteúdo segue os objetivos da ementa disponível no Drive da turma e o último material enviado (checklist, acessos e avaliação pré-anestésica). Os slides das aulas 7 a 10 ainda não estavam disponíveis; o texto apoia-se nas referências clássicas da área e deve ser conferido com o conteúdo de sala.</p>"
   },
   {
    "id": "r1",
    "grupo": "Resumo de referência",
    "titulo": "1. Pré-operatório e avaliação pré-anestésica (Aula 7)",
    "par": "g1",
-   "html": "<p>Objetivo: conhecer o paciente, a doença e a cirurgia para <strong>estimar o risco</strong>, <strong>otimizar</strong> o que for possível e decidir <strong>se, quando e onde</strong> operar.</p><h3>Avaliação clínica</h3><ul><li>Anamnese e exame dirigidos: cardiopatia, pneumopatia, DM, DRC, hepatopatia, coagulopatia, alergias, cirurgias e anestesias prévias (complicações, história familiar de <strong>hipertermia maligna</strong>), tabagismo, álcool, medicações.</li><li><strong>Capacidade funcional</strong>: ≥ <strong>4 METs</strong> (subir 2 lances de escada ou uma ladeira sem parar) = boa reserva; dispensa investigação cardíaca extra na maioria.</li><li><strong>Via aérea</strong>: Mallampati (I–IV), abertura de boca, distância tireomentoniana, mobilidade cervical.</li></ul><h3>Classificação ASA</h3><table><thead><tr><th>ASA</th><th>Paciente</th><th>Exemplo</th></tr></thead><tbody><tr><td>I</td><td>Saudável</td><td>Sem doença, não fuma</td></tr><tr><td>II</td><td>Doença sistêmica <strong>leve</strong>, sem limitação</td><td>HAS e DM controlados, fumante, gestante, obesidade IMC 30–40</td></tr><tr><td>III</td><td>Doença sistêmica <strong>grave</strong>, com limitação</td><td>DM/HAS mal controlados, DPOC, IMC ≥ 40, IAM &gt; 3 meses, diálise</td></tr><tr><td>IV</td><td>Doença grave com <strong>ameaça constante à vida</strong></td><td>IAM/AVC &lt; 3 meses, ICC descompensada, sepse</td></tr><tr><td>V</td><td>Moribundo, não sobrevive sem a cirurgia</td><td>Aneurisma roto</td></tr><tr><td>VI</td><td>Morte encefálica, doador de órgãos</td><td>—</td></tr></tbody></table><p>Acrescenta-se <strong>\"E\"</strong> quando a cirurgia é de <strong>emergência</strong> (ex.: ASA II-E).</p><p>Risco cardíaco: <strong>índice de Lee (RCRI)</strong>, 6 itens: cirurgia de alto risco (intraperitoneal, intratorácica, vascular suprainguinal), doença coronariana, insuficiência cardíaca, doença cerebrovascular, DM em uso de insulina, creatinina &gt; 2 mg/dL. Risco de TEV: <strong>Caprini</strong>.</p><h3>Exames pré-operatórios</h3><p><strong>Não existe \"rotina\" para todos.</strong> Peça conforme doença, idade, porte da cirurgia:</p><ul><li><strong>ECG</strong>: cardiopatia ou fatores de risco, cirurgia de risco intermediário/alto.</li><li><strong>Hemograma</strong>: perda sanguínea esperada, suspeita de anemia.</li><li><strong>Creatinina/eletrólitos</strong>: DRC, diurético, IECA, DM, cirurgia grande.</li><li><strong>Coagulograma</strong>: anticoagulante, hepatopatia, história de sangramento.</li><li><strong>Glicemia/HbA1c</strong>: diabéticos.</li><li><strong>β-hCG</strong>: mulher em idade fértil com possibilidade de gestação.</li><li>Paciente ASA I em cirurgia de pequeno porte pode não precisar de nenhum exame.</li></ul><h3>Jejum pré-operatório (ASA)</h3><table><thead><tr><th>O quê</th><th>Jejum mínimo</th></tr></thead><tbody><tr><td>Líquidos claros (água, chá, suco sem polpa, bebida com carboidrato)</td><td><strong>2 h</strong></td></tr><tr><td>Leite materno</td><td><strong>4 h</strong></td></tr><tr><td>Fórmula infantil, leite não humano, refeição leve</td><td><strong>6 h</strong></td></tr><tr><td>Refeição gordurosa, frituras, carne</td><td><strong>8 h</strong></td></tr></tbody></table><h3>Medicações de uso contínuo</h3><table><thead><tr><th>Manter</th><th>Suspender / ajustar</th></tr></thead><tbody><tr><td><ul><li><strong>Betabloqueador</strong> (não iniciar na véspera)</li><li><strong>Estatina</strong></li><li>Maioria dos anti-hipertensivos</li><li>AAS na maioria (prevenção secundária), exceto neurocirurgia, próstata e alguns procedimentos</li><li>Levotiroxina, anticonvulsivantes, inaladores</li><li>Corticoide crônico (considerar dose de estresse)</li></ul></td><td><ul><li><strong>Clopidogrel</strong>: 5 dias antes</li><li><strong>Varfarina</strong>: 5 dias antes (INR &lt; 1,5); ponte com heparina se alto risco trombótico</li><li><strong>DOACs</strong>: 24–48 h (mais se função renal ruim ou cirurgia de alto risco de sangramento)</li><li><strong>Metformina</strong>: no dia da cirurgia</li><li><strong>iSGLT2</strong> (dapagliflozina, empagliflozina): 3 dias antes pelo risco de <strong>cetoacidose euglicêmica</strong></li><li>IECA/BRA: muitos serviços suspendem 24 h antes (hipotensão na indução)</li><li>Insulina basal: reduzir a dose; hipoglicemiantes orais no dia: suspender</li></ul></td></tr></tbody></table><h3>Profilaxias e orientações</h3><ul><li><strong>Consentimento informado</strong> assinado (riscos, benefícios, alternativas).</li><li><strong>Tromboprofilaxia</strong> conforme Caprini.</li><li><strong>Antibioticoprofilaxia</strong> até 60 min antes da incisão (ver aula 9).</li><li>Parar de fumar idealmente ≥ 4–8 semanas antes.</li><li>Banho na véspera; tricotomia só se atrapalhar, com <strong>tricotomizador elétrico</strong>, logo antes da cirurgia (lâmina aumenta infecção).</li><li>Abreviar o jejum com bebida de carboidrato até 2 h antes (protocolo ACERTO/ERAS).</li></ul>"
+   "html": "<h3>1.1 Objetivos da avaliação pré-operatória</h3><p>A avaliação pré-operatória responde a três perguntas: qual o risco deste paciente para esta operação, o que pode ser otimizado antes dela e se, quando e onde ela deve ser feita. O risco resulta da combinação de três elementos: as condições do paciente, a doença que motiva a cirurgia e o porte e a urgência do procedimento. Uma colecistectomia eletiva num adulto saudável e uma laparotomia de urgência num idoso cardiopata têm riscos muito diferentes, e a avaliação existe para quantificar essa diferença e agir sobre o que é modificável.</p><h3>1.2 Anamnese, exame físico e capacidade funcional</h3><p>A anamnese investiga doenças cardiovasculares, pulmonares, renais, hepáticas e hematológicas, diabetes, alergias, medicamentos em uso, cirurgias e anestesias anteriores e suas complicações, história familiar de complicação anestésica grave (que sugere <strong>hipertermia maligna</strong>, doença genética desencadeada por anestésicos inalatórios e succinilcolina), tabagismo e consumo de álcool. O exame físico inclui a avaliação da via aérea pela classificação de Mallampati, pela abertura de boca, pela distância tireomentoniana e pela mobilidade cervical, porque a dificuldade de intubação é uma das principais causas de morbidade anestésica.</p><p>A <strong>capacidade funcional</strong> é um dos melhores preditores de complicação cardíaca e é expressa em equivalentes metabólicos (MET). A capacidade de realizar atividades de pelo menos <strong>4 MET</strong>, como subir dois lances de escada ou uma ladeira sem parar, indica boa reserva cardiopulmonar e, na maioria dos casos, dispensa investigação cardíaca adicional antes de cirurgias não cardíacas.</p><h3>1.3 Classificação do estado físico e escores de risco</h3><p>A classificação da American Society of Anesthesiologists (ASA), apresentada na Tabela 1.1, descreve o estado físico do paciente e correlaciona-se com a mortalidade perioperatória. A letra E é acrescentada quando a cirurgia é de emergência, porque a urgência por si só aumenta o risco.</p><p class=\"tabtit\"><strong>Tabela 1.1</strong>Classificação do estado físico (ASA)</p><table><thead><tr><th>Classe</th><th>Definição</th><th>Exemplos</th></tr></thead><tbody><tr><td>I</td><td>Saudável</td><td>Sem doença, não fumante</td></tr><tr><td>II</td><td>Doença sistêmica leve, sem limitação funcional</td><td>Hipertensão e diabetes controlados, tabagismo, gestação, obesidade com IMC de 30 a 40</td></tr><tr><td>III</td><td>Doença sistêmica grave, com limitação</td><td>Diabetes ou hipertensão mal controlados, DPOC, IMC ≥ 40, infarto há mais de 3 meses, diálise</td></tr><tr><td>IV</td><td>Doença grave com ameaça constante à vida</td><td>Infarto ou AVC há menos de 3 meses, insuficiência cardíaca descompensada, sepse</td></tr><tr><td>V</td><td>Moribundo, sem expectativa de sobreviver sem a cirurgia</td><td>Aneurisma de aorta roto</td></tr><tr><td>VI</td><td>Morte encefálica, doador de órgãos</td><td>Captação de órgãos</td></tr></tbody></table><p>Para o risco cardíaco em cirurgia não cardíaca usa-se o <strong>índice de Lee</strong> (índice de risco cardíaco revisado), que soma um ponto para cada um de seis fatores: cirurgia de alto risco (intraperitoneal, intratorácica ou vascular suprainguinal), doença coronariana, insuficiência cardíaca, doença cerebrovascular, diabetes em uso de insulina e creatinina acima de 2 mg/dL. O risco de tromboembolismo venoso é estimado pelo escore de Caprini, que orienta a tromboprofilaxia.</p><h3>1.4 Exames complementares</h3><p>Não existem exames pré-operatórios de rotina para todos os pacientes. Exames sem indicação geram falso-positivos, atrasos, custos e novos exames, sem reduzir complicações. Cada exame responde a uma pergunta clínica, conforme o Quadro 1.1; um paciente ASA I candidato a cirurgia de pequeno porte pode não precisar de nenhum.</p><div class=\"quadro\"><p class=\"qtit\">Quadro 1.1 · Indicações dos principais exames pré-operatórios</p><ul><li>Eletrocardiograma: cardiopatia ou fatores de risco cardiovascular em cirurgia de risco intermediário ou alto</li><li>Hemograma: perda sanguínea esperada ou suspeita de anemia</li><li>Creatinina e eletrólitos: doença renal, uso de diurético ou IECA, diabetes, cirurgia de grande porte</li><li>Coagulograma: uso de anticoagulante, hepatopatia, história de sangramento</li><li>Glicemia ou hemoglobina glicada: diabéticos</li><li>Teste de gravidez: mulher em idade fértil com possibilidade de gestação</li></ul></div><h3>1.5 Jejum pré-operatório</h3><p>O jejum reduz o risco de aspiração pulmonar do conteúdo gástrico durante a indução anestésica. Os tempos mínimos recomendados pela ASA, na Tabela 1.2, refletem a velocidade de esvaziamento gástrico de cada alimento: líquidos claros deixam o estômago rapidamente, enquanto gorduras e proteínas permanecem por horas. O jejum prolongado além do necessário aumenta a resistência à insulina e o catabolismo, e por isso os protocolos de recuperação acelerada, como o ACERTO e o ERAS, recomendam bebida com carboidrato até duas horas antes da anestesia.</p><p class=\"tabtit\"><strong>Tabela 1.2</strong>Tempos mínimos de jejum (ASA)</p><table><thead><tr><th>Ingesta</th><th>Jejum mínimo</th></tr></thead><tbody><tr><td>Líquidos claros (água, chá, suco sem polpa, bebida com carboidrato)</td><td>2 horas</td></tr><tr><td>Leite materno</td><td>4 horas</td></tr><tr><td>Fórmula infantil, leite não humano, refeição leve</td><td>6 horas</td></tr><tr><td>Refeição gordurosa, frituras, carne</td><td>8 horas</td></tr></tbody></table><h3>1.6 Medicações de uso contínuo</h3><p>A conduta com cada medicação pondera o risco de suspender contra o risco de manter. Os <strong>betabloqueadores</strong> e as <strong>estatinas</strong> devem ser mantidos, porque a suspensão abrupta aumenta o risco de eventos cardiovasculares; o betabloqueador, porém, não deve ser iniciado na véspera da cirurgia, prática que aumentou a incidência de AVC e a mortalidade em ensaios clínicos. A maioria dos anti-hipertensivos é mantida, embora muitos serviços suspendam IECA e bloqueadores do receptor de angiotensina 24 horas antes pelo risco de hipotensão na indução. O AAS usado em prevenção secundária costuma ser mantido, exceto em cirurgias nas quais um pequeno sangramento é catastrófico, como neurocirurgia.</p><p>O clopidogrel e a varfarina são suspensos cinco dias antes, este último até INR abaixo de 1,5, com ponte de heparina nos pacientes de alto risco trombótico; os anticoagulantes orais diretos são suspensos de 24 a 48 horas antes, ou mais se houver disfunção renal ou alto risco de sangramento. Em pacientes com stent coronariano recente, a suspensão da antiagregação é decidida com o cardiologista. A metformina é suspensa no dia da cirurgia, e os inibidores do cotransportador sódio-glicose tipo 2 (dapagliflozina, empagliflozina), três dias antes, pelo risco de <strong>cetoacidose euglicêmica</strong>. A insulina basal tem a dose reduzida, e os pacientes em uso crônico de corticoide podem precisar de dose de estresse pela supressão do eixo adrenal.</p><h3>1.7 Consentimento e profilaxias</h3><p>O <strong>consentimento informado</strong>, assinado após explicação dos riscos, benefícios e alternativas, é obrigatório. A tromboprofilaxia é indicada conforme o risco estimado, e a antibioticoprofilaxia é feita até 60 minutos antes da incisão (seção 3). Recomenda-se interromper o tabagismo idealmente quatro a oito semanas antes, para melhorar a função pulmonar e a cicatrização. O banho na véspera é estimulado, e a tricotomia só é feita se os pelos atrapalharem o procedimento, com <strong>tricotomizador elétrico</strong> e imediatamente antes da cirurgia, porque a lâmina provoca microlesões que se tornam porta de entrada para bactérias.</p><div class=\"correl\"><p class=\"qtit\">Correlação clínica</p><p>Uma mulher de 64 anos, hipertensa e diabética, com stent coronariano há dois anos, usa losartana, metformina, dapagliflozina, AAS e clopidogrel e vai fazer colecistectomia eletiva. Sobe dois andares sem parar, o que indica boa capacidade funcional. A orientação é suspender a dapagliflozina três dias antes, a metformina no dia, decidir o clopidogrel com o cardiologista, permitir água até duas horas antes e fazer a profilaxia com cefazolina até 60 minutos antes da incisão.</p></div>"
   },
   {
    "id": "r2",
    "grupo": "Resumo de referência",
    "titulo": "2. Pós-operatório (Aula 8)",
    "par": "g2",
-   "html": "<p>Objetivo: monitorar a recuperação, separar o que é <strong>esperado</strong> do que é <strong>complicação</strong> e intervir cedo.</p><h3>O esperado</h3><ul><li><strong>Resposta metabólica ao trauma</strong>: catabolismo, hiperglicemia, retenção de sódio e água (ADH, aldosterona) e oligúria leve nas primeiras 24–48 h.</li><li>Febre baixa nas primeiras <strong>24–48 h</strong>, geralmente pela resposta inflamatória à cirurgia.</li><li>Íleo fisiológico: intestino delgado volta em <strong>horas (0–24 h)</strong>, estômago em <strong>24–48 h</strong>, cólon em <strong>48–72 h</strong>.</li></ul><h3>Dor</h3><ul><li><strong>Analgesia multimodal</strong>: dipirona/paracetamol + AINE (se sem contraindicação) + bloqueios/anestesia regional; opioide para resgate ou dor intensa.</li><li>Dor bem controlada permite deambular, tossir e respirar fundo (menos atelectasia e TEV).</li></ul><h3>Náusea e vômitos (NVPO)</h3><p>Fatores de Apfel: <strong>sexo feminino, não fumante, história de NVPO/cinetose, uso de opioide no pós-operatório</strong>. Profilaxia: ondansetrona, dexametasona.</p><h3>Íleo pós-operatório prolongado</h3><p>Distensão, náusea, sem eliminação de flatos por mais de 3–5 dias. Conduta: <strong>deambulação</strong>, corrigir <strong>K e Mg</strong>, reduzir opioide, <strong>SNG</strong> se vômitos ou distensão importante. Se não melhora, investigar obstrução, abscesso ou fístula (TC).</p><h3>Febre pós-operatória: os \"5 W\" pelo tempo</h3><table><thead><tr><th>Quando</th><th>Causa</th></tr></thead><tbody><tr><td>1º–2º dia</td><td><strong>Wind</strong>: resposta inflamatória, atelectasia; depois pneumonia (aspiração, ventilação)</td></tr><tr><td>3º–5º dia</td><td><strong>Water</strong>: infecção urinária (sonda vesical); também flebite de acesso</td></tr><tr><td>5º–7º dia</td><td><strong>Wound</strong>: infecção de sítio cirúrgico; <strong>fístula/deiscência de anastomose</strong></td></tr><tr><td>≥ 5º–7º dia</td><td><strong>Walking</strong>: TVP/TEP; abscesso intracavitário</td></tr><tr><td>Qualquer momento</td><td><strong>Wonder drugs</strong>: febre por medicamento, reação transfusional</td></tr></tbody></table><p>Febre muito precoce (horas) com instabilidade: pensar em <strong>hipertermia maligna</strong> (intraoperatória: hipercapnia, rigidez, taquicardia; tratar com <strong>dantrolene</strong>), infecção necrotizante por clostrídio/estreptococo ou reação transfusional.</p><h3>Complicações por sistema</h3><ul><li><strong>Respiratórias</strong>: atelectasia (prevenção com fisioterapia, espirometria de incentivo, analgesia), pneumonia hospitalar, TEP.</li><li><strong>Urinárias</strong>: <strong>retenção urinária</strong> (anestesia raquidiana, opioide, homem idoso) → sondagem de alívio; ITU associada a sonda.</li><li><strong>Cardiovasculares</strong>: IAM perioperatório (muitas vezes silencioso, só troponina), FA, hipotensão.</li><li><strong>Ferida</strong>: seroma, hematoma, ISC, <strong>deiscência</strong>. Sinal de alerta: saída de líquido <strong>serossanguinolento (\"água de carne\")</strong> pela ferida por volta do 5º–8º dia → pode virar <strong>evisceração</strong>: cobrir com compressa estéril úmida e levar ao centro cirúrgico.</li><li><strong>Anastomose</strong>: <strong>fístula/deiscência</strong> por volta do 5º–7º dia: febre, dor, taquicardia, saída de secreção entérica, fecaloide ou bile pelo dreno, peritonite.</li></ul><h3>Tromboprofilaxia</h3><ul><li>Todos: <strong>deambulação precoce</strong>.</li><li>Risco moderado/alto: <strong>enoxaparina 40 mg SC 1×/dia</strong> ou heparina não fracionada 5.000 UI SC 8/8 ou 12/12 h; compressão pneumática intermitente quando há risco de sangramento.</li><li>Cirurgia oncológica abdominopélvica de grande porte: estender por até 4 semanas.</li></ul><h3>Alta</h3><p>Dor controlada com medicação oral, tolerando dieta, deambulando, diurese presente, sem sinais de complicação e com orientação de retorno e sinais de alarme.</p>"
+   "html": "<h3>2.1 A resposta metabólica ao trauma</h3><p>A cirurgia desencadeia uma resposta neuroendócrina e inflamatória proporcional à magnitude do trauma tecidual. Os estímulos aferentes da lesão ativam o eixo hipotálamo-hipófise-adrenal, elevando o cortisol, e o sistema nervoso simpático aumenta a liberação de catecolaminas. Esses hormônios promovem glicogenólise, gliconeogênese, proteólise e resistência periférica à insulina, o que explica a <strong>hiperglicemia de estresse</strong> mesmo em não diabéticos e o catabolismo proteico. Ao mesmo tempo, a secreção de hormônio antidiurético e a ativação do sistema renina-angiotensina-aldosterona promovem retenção de água e sódio, o que reduz o débito urinário nas primeiras 24 a 48 horas, achado esperado que não deve ser interpretado isoladamente como hipovolemia.</p><p>Também são esperados, nas primeiras 24 a 48 horas, febre baixa decorrente da resposta inflamatória e uma lentificação do trânsito intestinal. O intestino delgado recupera a motilidade em poucas horas, o estômago em 24 a 48 horas e o cólon em 48 a 72 horas; por isso a eliminação de flatos marca a recuperação do cólon, a última a ocorrer.</p><h3>2.2 Dor, náuseas e vômitos</h3><p>A dor mal controlada não é apenas sofrimento: impede a tosse e a respiração profunda, favorecendo atelectasia e pneumonia, e impede a deambulação, favorecendo trombose. A <strong>analgesia multimodal</strong> combina dipirona ou paracetamol, anti-inflamatórios quando não contraindicados e técnicas regionais, reservando os opioides para dor intensa ou resgate, o que reduz seus efeitos adversos. As náuseas e vômitos pós-operatórios são previstos pelos fatores de Apfel, sexo feminino, não tabagismo, história de náuseas pós-operatórias ou cinetose e uso de opioide no pós-operatório, e podem ser prevenidos com ondansetrona e dexametasona.</p><h3>2.3 Íleo pós-operatório</h3><p>O íleo prolongado manifesta-se por distensão, náuseas e ausência de eliminação de flatos por mais de três a cinco dias. Contribuem os opioides, os distúrbios eletrolíticos, sobretudo hipocalemia e hipomagnesemia, a manipulação intestinal e a imobilidade. O manejo inclui deambulação, correção do potássio e do magnésio, redução dos opioides e sonda nasogástrica se houver vômitos ou distensão importante. Se não houver melhora, devem ser investigados obstrução mecânica, abscesso ou fístula, em geral por tomografia.</p><h3>2.4 Febre no pós-operatório</h3><p>O momento em que a febre aparece é a principal pista de sua causa, e a regra mnemônica dos \"5 W\" organiza esse raciocínio (Tabela 2.1). Nas primeiras 24 a 48 horas a febre costuma refletir a resposta inflamatória ao trauma, e a atelectasia é tradicionalmente lembrada, embora sua relação causal com a febre seja discutida; a pneumonia por aspiração ou associada à ventilação também deve ser considerada. Entre o terceiro e o quinto dia, a infecção urinária associada à sonda vesical e a flebite do acesso venoso tornam-se prováveis. Entre o quinto e o sétimo dia, a infecção do sítio cirúrgico e a deiscência de anastomose são as causas principais. A partir do quinto ao sétimo dia, a trombose venosa profunda, a embolia pulmonar e os abscessos intracavitários ganham importância. A febre por medicamento ou reação transfusional pode ocorrer a qualquer momento.</p><p class=\"tabtit\"><strong>Tabela 2.1</strong>Febre pós-operatória pelo tempo de aparecimento</p><table><thead><tr><th>Quando</th><th>Regra</th><th>Causas principais</th></tr></thead><tbody><tr><td>1º e 2º dias</td><td>Wind (vento)</td><td>Resposta inflamatória, atelectasia, pneumonia</td></tr><tr><td>3º ao 5º dia</td><td>Water (água)</td><td>Infecção urinária, flebite</td></tr><tr><td>5º ao 7º dia</td><td>Wound (ferida)</td><td>Infecção do sítio cirúrgico, fístula ou deiscência de anastomose</td></tr><tr><td>A partir do 5º ao 7º dia</td><td>Walking (caminhar)</td><td>Trombose venosa profunda, embolia pulmonar, abscesso</td></tr><tr><td>Qualquer momento</td><td>Wonder drugs (medicamentos)</td><td>Febre medicamentosa, reação transfusional</td></tr></tbody></table><p>A febre muito precoce, em horas, com instabilidade sugere causas graves: hipertermia maligna, que surge ainda no intraoperatório com hipercapnia, rigidez muscular e taquicardia e é tratada com dantrolene; infecção necrotizante de partes moles por estreptococo ou clostrídio; ou reação transfusional.</p><h3>2.5 Complicações por sistema</h3><p>As complicações respiratórias incluem a atelectasia, prevenida por fisioterapia, espirometria de incentivo e analgesia adequada, a pneumonia hospitalar e a embolia pulmonar. A <strong>retenção urinária</strong> é comum após raquianestesia, uso de opioides e em homens idosos com hiperplasia prostática e é tratada com sondagem de alívio; a infecção urinária relaciona-se ao tempo de permanência da sonda, que deve ser retirada o quanto antes. Entre as complicações cardiovasculares, o infarto perioperatório é frequentemente silencioso, revelado apenas pela elevação da troponina, e a fibrilação atrial é a arritmia mais comum.</p><p>Na ferida, além de seroma, hematoma e infecção, pode ocorrer <strong>deiscência da aponeurose</strong>. O sinal de alerta é a saída de grande quantidade de líquido serossanguinolento, descrito como água de carne, pela ferida aparentemente íntegra, por volta do quinto ao oitavo dia; ela pode evoluir para <strong>evisceração</strong>, que se trata cobrindo as vísceras com compressa estéril umedecida e levando o paciente ao centro cirúrgico. A <strong>fístula ou deiscência de anastomose</strong> manifesta-se em geral entre o quinto e o sétimo dia, com febre, dor, taquicardia e saída de secreção entérica, bile ou conteúdo fecaloide pelo dreno, podendo evoluir para peritonite.</p><h3>2.6 Tromboprofilaxia e alta</h3><p>A cirurgia reúne os três elementos da <strong>tríade de Virchow</strong>: estase pela imobilidade, lesão endotelial pelo trauma e hipercoagulabilidade pela resposta inflamatória. Todos os pacientes devem deambular precocemente. Nos de risco moderado ou alto acrescenta-se profilaxia farmacológica com <strong>enoxaparina 40 mg por via subcutânea uma vez ao dia</strong> ou heparina não fracionada 5.000 UI a cada 8 ou 12 horas; quando o risco de sangramento contraindica o anticoagulante, usa-se compressão pneumática intermitente. Após cirurgia oncológica abdominopélvica de grande porte, a profilaxia é estendida por até quatro semanas.</p><p>A alta é possível quando a dor está controlada com medicação oral, o paciente tolera a dieta, deambula, urina e não há sinais de complicação, e deve ser acompanhada de orientação sobre sinais de alarme e retorno.</p>"
   },
   {
    "id": "r3",
    "grupo": "Resumo de referência",
-   "titulo": "3. Infecção de sítio cirúrgico (Aula 9)",
+   "titulo": "3. Infecção do sítio cirúrgico (Aula 9)",
    "par": "g3",
-   "html": "<h3>Classificação da ferida operatória pelo potencial de contaminação</h3><table><thead><tr><th>Classe</th><th>Definição</th><th>Exemplos</th><th>Taxa aprox. de ISC</th></tr></thead><tbody><tr><td><strong>Limpa</strong></td><td>Sem inflamação, <strong>sem abrir</strong> trato respiratório, digestivo, genital ou urinário</td><td>Herniorrafia, tireoidectomia, mastectomia, cirurgia ortopédica eletiva</td><td>1–5%</td></tr><tr><td><strong>Limpa-contaminada</strong></td><td>Abertura <strong>controlada</strong> desses tratos, sem contaminação fora do comum</td><td>Colecistectomia eletiva, gastrectomia, histerectomia, apendicectomia não perfurada</td><td>3–11%</td></tr><tr><td><strong>Contaminada</strong></td><td>Quebra importante da técnica, extravasamento grosseiro do TGI, inflamação aguda <strong>não purulenta</strong>, ferida traumática recente</td><td>Colectomia com extravasamento, apendicite aguda inflamada, trauma aberto recente</td><td>10–17%</td></tr><tr><td><strong>Suja / infectada</strong></td><td><strong>Pus</strong>, víscera perfurada, trauma antigo com tecido desvitalizado ou corpo estranho</td><td>Peritonite fecal, abscesso, apendicite perfurada</td><td>&gt; 27%</td></tr></tbody></table><h3>Antibioticoprofilaxia</h3><ul><li>Indicada em cirurgia <strong>limpa-contaminada</strong>, <strong>contaminada</strong> e na <strong>limpa com prótese/implante</strong> ou em que uma infecção seria catastrófica (cardíaca, neuro, vascular).</li><li>Na ferida <strong>suja</strong> o antibiótico é <strong>tratamento</strong>, não profilaxia.</li><li>Droga mais usada: <strong>cefazolina 2 g IV</strong> (3 g se ≥ 120 kg), <strong>até 60 min antes da incisão</strong>. Vancomicina (alergia grave ou MRSA): iniciar 60–120 min antes.</li><li>Cirurgia colorretal: cefazolina + <strong>metronidazol</strong> (ou cefoxitina) para anaeróbios.</li><li><strong>Repetir a dose</strong> de cefazolina se a cirurgia passar de <strong>4 h</strong> ou se o sangramento for &gt; 1.500 mL.</li><li>Duração: <strong>dose única ou no máximo 24 h</strong>. Prolongar não reduz infecção e aumenta resistência e <em>C. difficile</em>.</li></ul><h3>Critérios de ISC (CDC/ANVISA)</h3><p>Ocorre em até <strong>30 dias</strong> da cirurgia, ou até <strong>90 dias</strong> se houver implante (para as profundas e de órgão/espaço).</p><table><thead><tr><th>Tipo</th><th>Atinge</th><th>Achados</th><th>Tratamento</th></tr></thead><tbody><tr><td><strong>Incisional superficial</strong></td><td>Pele e subcutâneo</td><td>Drenagem purulenta, cultura positiva, dor, rubor, calor, edema; ferida aberta pelo cirurgião</td><td><strong>Abrir a ferida, drenar</strong>, curativo; ATB só se celulite extensa ou sinais sistêmicos</td></tr><tr><td><strong>Incisional profunda</strong></td><td>Fáscia e músculo</td><td>Pus da camada profunda, deiscência espontânea com febre, abscesso</td><td>Drenagem/debridamento + ATB</td></tr><tr><td><strong>Órgão/espaço</strong></td><td>Qualquer estrutura manipulada além da parede (cavidade)</td><td>Abscesso intra-abdominal, pus no dreno, achado em imagem</td><td><strong>Drenagem percutânea guiada por imagem</strong> ou reabordagem + ATB</td></tr></tbody></table><p>Agentes: pele → <strong><em>S. aureus</em></strong> (o mais comum) e estafilococos coagulase-negativos; cirurgias do TGI → <strong>Gram-negativos entéricos e anaeróbios</strong>.</p><h3>Prevenção</h3><ul><li>Antissepsia com <strong>clorexidina alcoólica</strong>; banho pré-operatório.</li><li>Tricotomia só se necessário, com tricotomizador, logo antes.</li><li><strong>Glicemia</strong> perioperatória &lt; 180–200 mg/dL; <strong>normotermia</strong>; oxigenação adequada.</li><li>Parar de fumar; tratar infecções à distância antes de cirurgia eletiva; tempo cirúrgico e técnica adequados.</li></ul>"
+   "html": "<h3>3.1 Conceito e importância</h3><p>A <strong>infecção do sítio cirúrgico</strong> (ISC) é a infecção relacionada ao procedimento que ocorre na incisão ou nos órgãos e espaços manipulados durante a operação. É uma das infecções relacionadas à assistência mais frequentes e prolonga a internação, aumenta custos e mortalidade. O risco depende do grau de contaminação da ferida, das condições do paciente e da técnica cirúrgica.</p><h3>3.2 Classificação das feridas operatórias</h3><p>A classificação pelo potencial de contaminação, apresentada na Tabela 3.1, considera se a cirurgia abre tratos colonizados por bactérias e se houve quebra de técnica ou infecção prévia. Ela orienta a indicação de antibioticoprofilaxia e prevê a taxa esperada de infecção.</p><p class=\"tabtit\"><strong>Tabela 3.1</strong>Classificação das feridas pelo potencial de contaminação</p><table><thead><tr><th>Classe</th><th>Definição</th><th>Exemplos</th><th>ISC aproximada</th></tr></thead><tbody><tr><td>Limpa</td><td>Sem inflamação, sem abertura dos tratos respiratório, digestivo, genital ou urinário</td><td>Herniorrafia, tireoidectomia, mastectomia, ortopedia eletiva</td><td>1 a 5%</td></tr><tr><td>Limpa-contaminada</td><td>Abertura controlada desses tratos, sem contaminação incomum</td><td>Colecistectomia eletiva, gastrectomia, histerectomia, apendicectomia não perfurada</td><td>3 a 11%</td></tr><tr><td>Contaminada</td><td>Quebra importante de técnica, extravasamento grosseiro do trato digestivo, inflamação aguda não purulenta, ferida traumática recente</td><td>Colectomia com extravasamento, apendicite aguda inflamada, trauma aberto recente</td><td>10 a 17%</td></tr><tr><td>Suja ou infectada</td><td>Pus, víscera perfurada, trauma antigo com tecido desvitalizado ou corpo estranho</td><td>Peritonite fecal, abscesso, apendicite perfurada</td><td>Acima de 27%</td></tr></tbody></table><h3>3.3 Antibioticoprofilaxia</h3><p>O objetivo da profilaxia é garantir concentração do antibiótico nos tecidos no momento em que a contaminação ocorre, isto é, durante o procedimento. Ela é indicada nas cirurgias limpas-contaminadas e contaminadas e nas limpas com implante de prótese ou em que uma infecção seria catastrófica, como cirurgia cardíaca, neurocirurgia e cirurgia vascular. Na ferida suja, a infecção já existe, e o antibiótico é <strong>tratamento</strong>, não profilaxia.</p><p>Como a maioria das infecções incisionais é causada pela flora da pele, a droga padrão é a <strong>cefazolina 2 g por via intravenosa</strong> (3 g em pacientes com 120 kg ou mais), administrada <strong>até 60 minutos antes da incisão</strong>. A vancomicina, usada em alergia grave ou colonização por estafilococo resistente à meticilina, deve começar de 60 a 120 minutos antes, pelo tempo de infusão. Nas cirurgias colorretais acrescenta-se metronidazol, ou usa-se cefoxitina, para cobrir anaeróbios. A dose é repetida se a cirurgia ultrapassar quatro horas, que corresponde a duas meias-vidas da cefazolina, ou se o sangramento passar de 1.500 mL. A duração deve ser de <strong>dose única ou, no máximo, 24 horas</strong>: prolongar a profilaxia não reduz a infecção e aumenta a resistência bacteriana e o risco de colite por <em>Clostridioides difficile</em>.</p><h3>3.4 Diagnóstico e classificação da ISC</h3><p>Pelos critérios do Centers for Disease Control and Prevention, adotados pela ANVISA, a ISC ocorre em até 30 dias após o procedimento, ou em até 90 dias quando há implante, nas formas profunda e de órgão ou espaço. Classifica-se pela profundidade (Tabela 3.2). O agente mais comum é o <em>Staphylococcus aureus</em>, seguido dos estafilococos coagulase-negativos; nas cirurgias do trato digestivo predominam bacilos Gram-negativos entéricos e anaeróbios.</p><p class=\"tabtit\"><strong>Tabela 3.2</strong>Tipos de infecção do sítio cirúrgico</p><table><thead><tr><th>Tipo</th><th>Atinge</th><th>Achados</th><th>Tratamento</th></tr></thead><tbody><tr><td>Incisional superficial</td><td>Pele e subcutâneo</td><td>Drenagem purulenta, cultura positiva, dor, rubor, calor e edema com abertura da ferida</td><td>Abrir a ferida, drenar, curativo; antibiótico se celulite extensa ou sinais sistêmicos</td></tr><tr><td>Incisional profunda</td><td>Fáscia e músculo</td><td>Pus da camada profunda, deiscência com febre, abscesso</td><td>Drenagem ou desbridamento e antibiótico</td></tr><tr><td>Órgão ou espaço</td><td>Estruturas manipuladas além da parede</td><td>Abscesso intra-abdominal, pus no dreno, achado de imagem</td><td>Drenagem percutânea guiada por imagem ou reabordagem e antibiótico</td></tr></tbody></table><h3>3.5 Prevenção</h3><p>A prevenção atua em todas as etapas. Antes da cirurgia: banho, tricotomia apenas se necessária e com tricotomizador, controle da glicemia, interrupção do tabagismo e tratamento de infecções à distância antes de cirurgias eletivas. Durante a cirurgia: antissepsia da pele com <strong>clorexidina alcoólica</strong>, antibioticoprofilaxia no momento certo, normotermia, oxigenação adequada, técnica cuidadosa e tempo cirúrgico razoável. Depois: controle glicêmico abaixo de 180 a 200 mg/dL e cuidado adequado com a ferida.</p><div class=\"correl\"><p class=\"qtit\">Correlação clínica</p><p>No quinto dia após uma colectomia com anastomose primária, um paciente de 71 anos apresenta febre de 38,8 °C, taquicardia, dor abdominal difusa e saída de conteúdo fecaloide pelo dreno. Trata-se de deiscência de anastomose com peritonite, uma infecção de órgão ou espaço. A conduta é ressuscitação, antibiótico de amplo espectro e reabordagem para controle do foco, e a reoperação será classificada como suja.</p></div>"
   },
   {
    "id": "r4",
    "grupo": "Resumo de referência",
    "titulo": "4. Nutrição em cirurgia (Aula 10)",
    "par": "g4",
-   "html": "<p>Desnutrição aumenta infecção, deiscência, tempo de internação e mortalidade. Por isso <strong>todo paciente cirúrgico deve ser triado</strong>.</p><h3>Avaliar</h3><ul><li>Triagem: <strong>NRS-2002</strong> (escore ≥ 3 = risco nutricional) ou <strong>ASG</strong> (avaliação subjetiva global: A bem nutrido, B moderado, C grave).</li><li>Sinais de <strong>risco nutricional grave</strong> (ESPEN): perda de peso &gt; 10–15% em 6 meses, IMC &lt; 18,5, ASG C ou NRS ≥ 5, albumina &lt; 3,0 g/dL (sem disfunção renal/hepática).</li><li>Nesses casos, em cirurgia eletiva: <strong>terapia nutricional por 7–14 dias antes</strong>, mesmo que adie a cirurgia.</li><li>Necessidades: <strong>25–30 kcal/kg/dia</strong> e <strong>1,5 g/kg/dia de proteína</strong> (até 2 g/kg no paciente grave).</li></ul><h3>Escolher a via: \"se o intestino funciona, use-o\"</h3><table><thead><tr><th>Via</th><th>Quando</th><th>Observações</th></tr></thead><tbody><tr><td><strong>Oral</strong> + suplemento</td><td>Come, mas não atinge a meta</td><td>Primeira opção</td></tr><tr><td><strong>Enteral</strong></td><td>TGI funciona, mas não come o suficiente (ingestão &lt; 50–60% da meta)</td><td><strong>Preserva a barreira intestinal</strong> (menos translocação), mais barata e com menos infecção. Iniciar <strong>precocemente (24–48 h)</strong>. Sonda nasoenteral (pós-pilórica se risco de aspiração ou gastroparesia); <strong>gastrostomia/jejunostomia se &gt; 4–6 semanas</strong></td></tr><tr><td><strong>Parenteral</strong></td><td>TGI <strong>não pode ser usado</strong> (obstrução, íleo prolongado, fístula de alto débito, intestino curto) ou enteral não atinge a meta</td><td>Acesso <strong>central</strong> (periférica só se osmolaridade &lt; 900 mOsm/L). Complicações: <strong>infecção de cateter</strong>, hiperglicemia, esteatose, distúrbios eletrolíticos</td></tr></tbody></table><h3>Síndrome de realimentação</h3><p>Desnutrido grave que recebe nutrição rápido demais: a insulina joga eletrólitos para dentro da célula → <strong>hipofosfatemia</strong> (marca principal), hipocalemia, hipomagnesemia, deficiência de tiamina, retenção hídrica; pode causar arritmia e insuficiência respiratória. Prevenção: iniciar com <strong>baixa oferta calórica</strong>, aumentar aos poucos, repor <strong>tiamina</strong> e eletrólitos.</p><h3>Imunonutrição e jejum</h3><ul><li><strong>Imunonutrição</strong> (arginina, ômega-3, nucleotídeos) por <strong>5–7 dias antes</strong> de cirurgia oncológica de grande porte do TGI (esôfago, estômago, pâncreas, cabeça e pescoço).</li><li><strong>Abreviação do jejum</strong> (ACERTO/ERAS): bebida com carboidrato (maltodextrina) até 2 h antes reduz resistência à insulina e catabolismo.</li><li><strong>Realimentação precoce</strong>: dieta oral nas primeiras 24 h após a maioria das cirurgias, inclusive com anastomose.</li></ul><h3>Urgência e emergência</h3><p>Paciente grave: iniciar <strong>enteral precoce</strong> (24–48 h) assim que estiver <strong>hemodinamicamente estável</strong>; parenteral se a enteral for impossível ou insuficiente.</p>"
+   "html": "<h3>4.1 Por que a nutrição importa</h3><p>A desnutrição está presente em uma parcela importante dos pacientes cirúrgicos e associa-se a mais infecções, deiscências, tempo de internação e mortalidade. A resposta metabólica ao trauma aumenta o gasto energético e o catabolismo proteico justamente quando o paciente come menos, e a proteína muscular é consumida para fornecer aminoácidos à cicatrização e à síntese de proteínas de fase aguda. Por isso todo paciente cirúrgico deve passar por triagem nutricional.</p><h3>4.2 Avaliação</h3><p>A triagem pode ser feita pela <strong>NRS-2002</strong>, em que um escore de três ou mais indica risco nutricional, ou pela <strong>avaliação subjetiva global</strong>, que classifica o paciente como bem nutrido (A), moderadamente desnutrido (B) ou gravemente desnutrido (C). Pelos critérios da sociedade europeia (ESPEN), o risco nutricional grave inclui perda de peso acima de 10% a 15% em seis meses, índice de massa corporal abaixo de 18,5, avaliação subjetiva global C ou NRS de cinco ou mais e albumina abaixo de 3,0 g/dL na ausência de doença renal ou hepática. Esses pacientes, quando candidatos a cirurgia eletiva, devem receber <strong>terapia nutricional por 7 a 14 dias antes da operação</strong>, mesmo que isso a adie. As necessidades estimadas são de 25 a 30 kcal/kg/dia e 1,5 g/kg/dia de proteína, chegando a 2 g/kg no paciente grave.</p><h3>4.3 Escolha da via</h3><p>A escolha segue o princípio \"se o intestino funciona, use-o\" (Tabela 4.1). A via oral, com suplementos se necessário, é a primeira opção. A <strong>nutrição enteral</strong> é indicada quando o trato digestivo funciona, mas a ingestão oral não alcança 50% a 60% da meta. Ela preserva a integridade da mucosa intestinal e reduz a translocação bacteriana, o que se traduz em menos infecções em comparação com a parenteral, além de ser mais barata. Deve ser iniciada precocemente, em 24 a 48 horas, por sonda nasoenteral, com posição pós-pilórica se houver risco de aspiração ou gastroparesia, ou por gastrostomia ou jejunostomia quando a previsão de uso ultrapassa quatro a seis semanas.</p><p>A <strong>nutrição parenteral</strong> fica reservada às situações em que o trato digestivo não pode ser usado, como obstrução, íleo prolongado, fístula de alto débito e síndrome do intestino curto, ou em que a via enteral não atinge as metas. Por sua osmolaridade elevada, exige acesso venoso central, salvo formulações com osmolaridade abaixo de 900 mOsm/L. Suas complicações incluem infecção da corrente sanguínea relacionada ao cateter, hiperglicemia, esteatose hepática e distúrbios eletrolíticos.</p><p class=\"tabtit\"><strong>Tabela 4.1</strong>Vias de suporte nutricional</p><table><thead><tr><th>Via</th><th>Indicação</th><th>Observações</th></tr></thead><tbody><tr><td>Oral com suplemento</td><td>Come, mas não atinge a meta</td><td>Primeira opção</td></tr><tr><td>Enteral</td><td>Trato digestivo funcionante e ingestão abaixo de 50 a 60% da meta</td><td>Preserva a barreira intestinal; iniciar em 24 a 48 horas; ostomia se mais de 4 a 6 semanas</td></tr><tr><td>Parenteral</td><td>Trato digestivo inutilizável ou enteral insuficiente</td><td>Acesso central; risco de infecção e distúrbios metabólicos</td></tr></tbody></table><h3>4.4 Síndrome de realimentação</h3><p>No paciente gravemente desnutrido, a oferta rápida de carboidratos estimula a secreção de insulina, que desloca fósforo, potássio e magnésio para o interior das células e consome a tiamina. O resultado é a <strong>síndrome de realimentação</strong>, cuja marca é a <strong>hipofosfatemia</strong>, acompanhada de hipocalemia, hipomagnesemia, deficiência de tiamina e retenção hídrica, com risco de arritmias, insuficiência respiratória e insuficiência cardíaca. A prevenção consiste em iniciar com oferta calórica baixa, aumentá-la progressivamente, repor tiamina e monitorar e repor os eletrólitos.</p><h3>4.5 Imunonutrição, abreviação do jejum e urgência</h3><p>A <strong>imunonutrição</strong>, com fórmulas enriquecidas com arginina, ácidos graxos ômega-3 e nucleotídeos, administrada por cinco a sete dias antes de cirurgias oncológicas de grande porte do trato digestivo e de cabeça e pescoço, reduz complicações infecciosas. Os protocolos de recuperação acelerada recomendam abreviar o jejum com bebida de carboidrato até duas horas antes da anestesia, o que reduz a resistência à insulina e o catabolismo, e reintroduzir a dieta oral nas primeiras 24 horas após a maioria das cirurgias, inclusive com anastomoses. No paciente grave de urgência, a nutrição enteral é iniciada em 24 a 48 horas, assim que houver estabilidade hemodinâmica, e a parenteral é considerada se a enteral for impossível ou insuficiente.</p>"
   },
   {
    "id": "r5",
    "grupo": "Resumo de referência",
    "titulo": "5. Cirurgia segura (Aula 11)",
    "par": "g5",
-   "html": "<h3>Contexto histórico</h3><ul><li>2004: OMS cria a <strong>Aliança Mundial para a Segurança do Paciente</strong>.</li><li><strong>1º Desafio Global</strong> (2005): <strong>\"Uma assistência limpa é uma assistência mais segura\"</strong>, foco na <strong>higiene das mãos</strong> e infecção relacionada à assistência.</li><li><strong>2º Desafio Global</strong> (2007–2008): <strong>\"Cirurgias seguras salvam vidas\"</strong> → <strong>Lista de Verificação de Segurança Cirúrgica</strong> (checklist).</li><li>Estudo de validação em 8 países (Haynes, 2009): mortalidade caiu de ~1,5% para ~0,8% e complicações de ~11% para ~7%.</li><li>3º Desafio (2017): \"Medicação sem danos\".</li><li>No Brasil: <strong>Programa Nacional de Segurança do Paciente</strong> (Portaria MS 529/2013) e <strong>RDC 36/2013</strong> (Núcleo de Segurança do Paciente e notificação de eventos adversos).</li></ul><h3>O checklist da OMS: três momentos</h3><table><thead><tr><th>Momento</th><th>Quando</th><th>O que se confere</th></tr></thead><tbody><tr><td><strong>Entrada</strong> (sign in)</td><td>Antes da <strong>indução anestésica</strong></td><td>Identidade, sítio, procedimento e <strong>consentimento</strong> confirmados pelo paciente; <strong>sítio demarcado</strong>; checagem do equipamento e medicações anestésicas; <strong>oxímetro</strong> funcionando; <strong>alergias</strong>; <strong>via aérea difícil/risco de aspiração</strong>; risco de perda sanguínea &gt; 500 mL (7 mL/kg em criança)</td></tr><tr><td><strong>Pausa cirúrgica</strong> (time out)</td><td>Antes da <strong>incisão</strong></td><td>Todos se apresentam por nome e função; confirmação verbal de paciente, sítio e procedimento; eventos críticos previstos pelo cirurgião, anestesista e enfermagem (esterilização confirmada); <strong>antibioticoprofilaxia nos últimos 60 min</strong>; <strong>exames de imagem</strong> disponíveis</td></tr><tr><td><strong>Saída</strong> (sign out)</td><td>Antes de o paciente <strong>sair da sala</strong></td><td>Registro do procedimento realizado; <strong>contagem de instrumentais, compressas e agulhas</strong>; identificação das <strong>peças/amostras</strong>; problemas com equipamentos; cuidados principais na recuperação</td></tr></tbody></table><p>Um membro da equipe (geralmente a enfermagem circulante) <strong>coordena</strong> o checklist em voz alta; a equipe só segue quando cada item foi confirmado.</p><h3>As 6 metas internacionais de segurança do paciente</h3><ol><li>Identificar corretamente o paciente.</li><li>Melhorar a comunicação entre profissionais.</li><li>Segurança na prescrição, uso e administração de medicamentos (alta vigilância).</li><li><strong>Cirurgia segura</strong> (local, procedimento e paciente corretos).</li><li>Higiene das mãos.</li><li>Reduzir risco de quedas e lesões por pressão.</li></ol><h3>Cultura de segurança</h3><ul><li><strong>Modelo do queijo suíço</strong> (James Reason): o erro passa quando falhas em várias barreiras se alinham; a solução é reforçar sistemas, não só culpar pessoas.</li><li><strong>Cultura justa</strong>: notificar eventos adversos e quase-erros sem punição automática, para aprender com eles.</li><li><strong>Never events</strong>: cirurgia no lado/local/paciente errado, <strong>corpo estranho retido</strong>.</li><li>Comunicação estruturada: <strong>SBAR</strong> (Situação, Breve histórico, Avaliação, Recomendação) e confirmação de ordens verbais (\"read-back\").</li></ul>"
+   "html": "<h3>5.1 Contexto histórico</h3><p>A preocupação sistemática com a segurança do paciente ganhou força após estudos que mostraram a frequência dos eventos adversos evitáveis na assistência. Em 2004, a Organização Mundial da Saúde criou a <strong>Aliança Mundial para a Segurança do Paciente</strong>, que lançou desafios globais. O <strong>primeiro desafio</strong>, em 2005, teve o lema \"uma assistência limpa é uma assistência mais segura\" e focou a higiene das mãos e as infecções relacionadas à assistência. O <strong>segundo desafio</strong>, de 2007 a 2008, \"cirurgias seguras salvam vidas\", produziu a <strong>Lista de Verificação de Segurança Cirúrgica</strong>. O estudo de validação, conduzido em oito países e publicado por Haynes e colaboradores em 2009, mostrou queda da mortalidade de cerca de 1,5% para 0,8% e das complicações de cerca de 11% para 7% após a implantação. O terceiro desafio, em 2017, tratou da medicação sem danos.</p><p>No Brasil, o <strong>Programa Nacional de Segurança do Paciente</strong> foi instituído pela Portaria MS 529/2013, e a RDC 36/2013 da ANVISA tornou obrigatória a criação de Núcleos de Segurança do Paciente nos serviços e a notificação de eventos adversos.</p><h3>5.2 A lista de verificação da OMS</h3><p>O checklist organiza-se em três momentos, cada um num ponto crítico do fluxo cirúrgico (Tabela 5.1). Um membro da equipe, geralmente o enfermeiro circulante, conduz a verificação em voz alta, e a equipe só prossegue quando cada item foi confirmado. A <strong>entrada</strong> (<em>sign in</em>) ocorre antes da indução anestésica e verifica condições do paciente e da anestesia. A <strong>pausa cirúrgica</strong> (<em>time out</em>) ocorre antes da incisão, com toda a equipe presente, e confirma a operação certa no paciente certo. A <strong>saída</strong> (<em>sign out</em>) ocorre antes de o paciente deixar a sala e garante o registro, a contagem do material e a identificação das peças.</p><p class=\"tabtit\"><strong>Tabela 5.1</strong>Os três momentos da Lista de Verificação de Segurança Cirúrgica</p><table><thead><tr><th>Momento</th><th>Quando</th><th>O que se confere</th></tr></thead><tbody><tr><td>Entrada (<em>sign in</em>)</td><td>Antes da indução anestésica</td><td>Identidade, sítio, procedimento e consentimento confirmados pelo paciente; sítio demarcado; equipamento e medicações anestésicas verificados; oxímetro funcionando; alergias; via aérea difícil ou risco de aspiração; risco de perda sanguínea acima de 500 mL (7 mL/kg em criança)</td></tr><tr><td>Pausa cirúrgica (<em>time out</em>)</td><td>Antes da incisão</td><td>Apresentação de todos por nome e função; confirmação verbal de paciente, sítio e procedimento; eventos críticos previstos por cirurgião, anestesista e enfermagem, incluindo esterilização; antibioticoprofilaxia nos últimos 60 minutos; exames de imagem disponíveis</td></tr><tr><td>Saída (<em>sign out</em>)</td><td>Antes de o paciente sair da sala</td><td>Registro do procedimento realizado; contagem de instrumentais, compressas e agulhas; identificação das peças e amostras; problemas com equipamentos; cuidados principais na recuperação</td></tr></tbody></table><h3>5.3 Metas internacionais e cultura de segurança</h3><p>As seis metas internacionais de segurança do paciente, adotadas pelo programa brasileiro, estão no Quadro 5.1. A cirurgia segura é uma delas, ao lado de outras que também se aplicam ao centro cirúrgico, como a identificação correta e a comunicação efetiva.</p><div class=\"quadro\"><p class=\"qtit\">Quadro 5.1 · Metas internacionais de segurança do paciente</p><ol><li>Identificar corretamente o paciente</li><li>Melhorar a comunicação entre profissionais</li><li>Melhorar a segurança na prescrição, no uso e na administração de medicamentos de alta vigilância</li><li>Assegurar cirurgia em local, procedimento e paciente corretos</li><li>Higienizar as mãos para evitar infecções</li><li>Reduzir o risco de quedas e lesões por pressão</li></ol></div><p>O <strong>modelo do queijo suíço</strong>, proposto por James Reason, explica que os acidentes raramente resultam de um único erro: cada barreira do sistema tem falhas, como os furos de uma fatia de queijo, e o dano ocorre quando os furos de várias barreiras se alinham. A solução, portanto, é fortalecer o sistema, e não apenas punir indivíduos. A <strong>cultura justa</strong> estimula a notificação de eventos adversos e quase-erros sem punição automática, para que se aprenda com eles. Alguns eventos, chamados <em>never events</em>, nunca deveriam ocorrer, como a cirurgia no lado, local ou paciente errado e a retenção de corpo estranho. Ferramentas de comunicação estruturada, como o SBAR (situação, breve histórico, avaliação e recomendação), e a confirmação de ordens verbais por repetição reduzem falhas de comunicação.</p><div class=\"correl\"><p class=\"qtit\">Correlação clínica</p><p>Para o instrumentador cirúrgico, a etapa de saída tem papel central: a contagem de instrumentais, compressas e agulhas no início e no fim do procedimento é a barreira contra a retenção de corpo estranho. Qualquer discrepância na contagem interrompe o fechamento até ser esclarecida, se necessário com radiografia na sala.</p></div>"
   },
   {
    "id": "r6",
    "grupo": "Resumo de referência",
    "titulo": "6. Dispositivos: sondas, drenos, cateteres e cânulas (Aula 12)",
    "par": "g6",
-   "html": "<h3>Sondas</h3><table><thead><tr><th>Sonda</th><th>Para quê</th><th>Pontos-chave</th></tr></thead><tbody><tr><td><strong>Nasogástrica</strong> (Levine, calibrosa)</td><td><strong>Descompressão/drenagem</strong> gástrica (obstrução, íleo, vômitos), lavagem; dieta por pouco tempo</td><td>Medida: <strong>ponta do nariz → lóbulo da orelha → apêndice xifoide</strong>. Confirmar posição: <strong>RX</strong> é o padrão-ouro; pH do aspirado ≤ 5,5 ajuda; ausculta do ar não é confiável</td></tr><tr><td><strong>Nasoenteral</strong> (Dobbhoff, fina, com fio-guia)</td><td><strong>Alimentação</strong> por mais tempo</td><td><strong>RX obrigatório</strong> antes de iniciar a dieta; posição pós-pilórica se risco de aspiração</td></tr><tr><td><strong>Orogástrica</strong></td><td>Mesmo uso da NG</td><td>Usar quando a via nasal é contraindicada: <strong>suspeita de fratura de base de crânio</strong> (olhos de guaxinim, sinal de Battle, rinorreia/otorreia liquórica) e em neonatos</td></tr><tr><td><strong>Vesical</strong></td><td><strong>Alívio</strong> (intermitente) ou <strong>demora</strong> (Foley de 2 ou 3 vias: diurese horária, retenção, irrigação)</td><td>Técnica <strong>asséptica</strong>; insuflar o balão só após sair urina. <strong>Contraindicada na suspeita de lesão de uretra</strong>: sangue no meato, hematoma perineal/escrotal, próstata alta ao toque → uretrocistografia retrógrada; se precisar drenar, <strong>cistostomia</strong>. Retirar o quanto antes (ITU)</td></tr></tbody></table><h3>Drenos</h3><ul><li>Servem para retirar sangue, pus, bile, linfa, ar ou secreções e para <strong>vigiar</strong> (sangramento, fístula).</li><li><strong>Abertos/passivos</strong>: <strong>Penrose</strong> (lâmina de látex; drena por <strong>capilaridade e gravidade</strong>); maior risco de infecção retrógrada.</li><li><strong>Fechados/ativos (aspiração)</strong>: <strong>Portovac</strong>, <strong>Jackson-Pratt</strong>, Blake: pressão negativa, sistema fechado, menos infecção.</li><li>Anotar <strong>aspecto e volume</strong>: mudança para bilioso, fecaloide ou purulento sugere fístula ou abscesso; débito sanguinolento alto sugere sangramento.</li></ul><h3>Drenagem de tórax</h3><ul><li>Indicações: pneumotórax (principalmente hipertensivo após descompressão, ou em ventilação mecânica), hemotórax, empiema, derrame volumoso.</li><li>Local: <strong>4º ou 5º espaço intercostal, entre as linhas axilares anterior e média</strong> (\"triângulo de segurança\"), na <strong>borda superior da costela de baixo</strong>: o feixe vasculonervoso corre na borda inferior de cada costela.</li><li><strong>Selo d'água</strong>: o tubo fica cerca de 2 cm submerso; <strong>oscilação</strong> com a respiração = dreno pérvio; <strong>borbulhamento</strong> contínuo = escape aéreo (fístula ou vazamento no sistema).</li><li>Frasco sempre <strong>abaixo do nível do tórax</strong>; não clampear de rotina (risco de pneumotórax hipertensivo).</li><li>Hemotórax: drenagem inicial &gt; 1.500 mL ou &gt; 200 mL/h por 2–4 h → toracotomia.</li></ul><h3>Acessos vasculares</h3><ul><li><strong>Periférico</strong>: o fluxo depende do calibre e do comprimento: <strong>menor número de gauge = maior calibre</strong> (14G &gt; 16G &gt; 18G &gt; 20G &gt; 22G &gt; 24G). No trauma/choque: <strong>dois acessos periféricos calibrosos</strong> (14–16G), que infundem mais rápido que o cateter central comum (mais longo).</li><li><strong>Central</strong>: indicações: drogas vasoativas, NPT, quimioterapia, acesso periférico impossível, monitorização (PVC), hemodiálise. Técnica de <strong>Seldinger</strong> (agulha → fio-guia → dilatador → cateter), de preferência <strong>guiada por ultrassom</strong>.</li></ul><table><thead><tr><th>Sítio central</th><th>Vantagem</th><th>Desvantagem</th></tr></thead><tbody><tr><td><strong>Jugular interna</strong></td><td>Fácil por USG, compressível</td><td>Desconforto, risco intermediário</td></tr><tr><td><strong>Subclávia</strong></td><td><strong>Menor taxa de infecção</strong> e trombose, confortável</td><td><strong>Maior risco de pneumotórax</strong>, não compressível</td></tr><tr><td><strong>Femoral</strong></td><td>Rápida na emergência/PCR, sem pneumotórax</td><td><strong>Maior infecção e trombose</strong></td></tr></tbody></table><ul><li>Após jugular ou subclávia: <strong>RX de tórax</strong> para ver a ponta (junção da veia cava superior com o átrio) e excluir pneumotórax.</li><li>Complicações: pneumotórax, punção arterial, hematoma, arritmia (fio-guia no coração), <strong>embolia gasosa</strong> (inserir/retirar em Trendelenburg, ocluir a via), infecção de corrente sanguínea, trombose.</li><li>Outros: <strong>PICC</strong> (inserção periférica, ponta central), cateteres de longa permanência (Port-a-cath totalmente implantado, Hickman), <strong>intraósseo</strong> quando o venoso falha na emergência.</li></ul><h3>Cânulas e via aérea</h3><ul><li><strong>Orofaríngea (Guedel)</strong>: só em paciente <strong>inconsciente, sem reflexo de vômito</strong>. Tamanho: da <strong>comissura labial ao ângulo da mandíbula</strong> (ou lóbulo da orelha).</li><li><strong>Nasofaríngea</strong>: tolerada pelo paciente semiconsciente; <strong>contraindicada na suspeita de fratura de base de crânio</strong>.</li><li><strong>Tubo orotraqueal</strong>: via aérea definitiva (cuff abaixo das cordas vocais).</li><li><strong>Traqueostomia</strong>: via aérea prolongada (cânula com cuff, cânula interna para limpeza).</li><li><strong>Cricotireoidostomia</strong>: via aérea cirúrgica de emergência quando não se consegue intubar nem ventilar; a <strong>cirúrgica é contraindicada em menores de ~12 anos</strong> → nelas, cricotireoidostomia <strong>por punção</strong>.</li></ul>"
+   "html": "<h3>6.1 Sondas</h3><p>A <strong>sonda nasogástrica</strong>, calibrosa (tipo Levine), é usada principalmente para descompressão e drenagem gástrica em obstrução intestinal, íleo e vômitos incoercíveis, para lavagem e, por pouco tempo, para alimentação. O comprimento a introduzir é estimado medindo da ponta do nariz ao lóbulo da orelha e daí ao apêndice xifoide. A posição deve ser confirmada antes do uso; a <strong>radiografia é o padrão-ouro</strong>, o pH do aspirado igual ou inferior a 5,5 é um indicador útil, e a ausculta do ar injetado no epigástrio não é confiável, porque o som pode ser produzido mesmo com a sonda no esôfago ou no pulmão. A <strong>sonda nasoenteral</strong>, fina e com fio-guia (tipo Dobbhoff), destina-se à alimentação por períodos mais longos, e sua posição deve ser confirmada por radiografia antes do início da dieta.</p><p>A via nasal é contraindicada na suspeita de <strong>fratura da base do crânio</strong>, reconhecida por equimose periorbitária bilateral (olhos de guaxinim), equimose retroauricular (sinal de Battle) e rinorreia ou otorreia liquórica, porque a sonda pode atravessar a lâmina crivosa e penetrar o crânio; nesses casos usa-se a <strong>sonda orogástrica</strong>, que também é a via preferida em recém-nascidos.</p><p>A <strong>sondagem vesical</strong> pode ser de alívio, intermitente, ou de demora, com sonda de Foley de duas vias, para diurese horária e retenção, ou de três vias, para irrigação. É feita com técnica asséptica, e o balão só é insuflado depois do retorno de urina, para não insuflá-lo na uretra. A sondagem é contraindicada na suspeita de <strong>lesão de uretra</strong>, sinalizada por sangue no meato uretral, hematoma perineal ou escrotal e próstata elevada ao toque retal; investiga-se com uretrocistografia retrógrada e, se for preciso drenar a bexiga, faz-se cistostomia. A sonda deve ser retirada assim que possível, porque cada dia aumenta o risco de infecção urinária.</p><h3>6.2 Drenos</h3><p>Os drenos retiram coleções de sangue, pus, bile, linfa, ar ou secreções e permitem vigiar complicações como sangramento e fístula. Os <strong>drenos abertos ou passivos</strong>, como o de Penrose, uma lâmina de látex, drenam por capilaridade e gravidade e têm maior risco de infecção retrógrada. Os <strong>drenos fechados com aspiração</strong>, como o Portovac, o Jackson-Pratt e o Blake, funcionam com pressão negativa em sistema fechado e reduzem o risco de infecção. O aspecto e o volume do débito devem ser registrados: mudança para conteúdo bilioso, fecaloide ou purulento sugere fístula ou abscesso, e débito sanguinolento elevado sugere sangramento.</p><h3>6.3 Drenagem torácica</h3><p>A drenagem torácica é indicada em pneumotórax, especialmente o hipertensivo após a descompressão e o de pacientes em ventilação mecânica, em hemotórax, empiema e derrames volumosos. O dreno é inserido no <strong>quarto ou quinto espaço intercostal, entre as linhas axilares anterior e média</strong>, região chamada triângulo de segurança, rente à <strong>borda superior da costela inferior</strong>, porque o feixe vasculonervoso intercostal corre na borda inferior de cada costela. O sistema de <strong>selo d'água</strong> mantém a extremidade do tubo cerca de 2 cm submersa, o que permite a saída de ar e líquido e impede seu retorno. A <strong>oscilação</strong> da coluna líquida com a respiração indica que o dreno está pérvio, e o <strong>borbulhamento</strong> contínuo indica escape de ar, por fístula broncopleural ou vazamento no sistema. O frasco deve ficar sempre abaixo do nível do tórax, e o dreno não deve ser clampeado rotineiramente, pelo risco de pneumotórax hipertensivo. No hemotórax, drenagem inicial acima de 1.500 mL ou débito acima de 200 mL por hora durante duas a quatro horas indica toracotomia.</p><h3>6.4 Acessos vasculares</h3><p>O fluxo através de um cateter é diretamente proporcional à quarta potência do raio e inversamente proporcional ao comprimento, como descreve a lei de Poiseuille. Por isso, no trauma e no choque, <strong>dois acessos periféricos calibrosos</strong>, de 14 ou 16 gauge, infundem volume mais rapidamente que um cateter venoso central comum, que é mais longo e mais fino. Na escala gauge, <strong>quanto menor o número, maior o calibre</strong>: 14 > 16 > 18 > 20 > 22 > 24.</p><p>O <strong>cateter venoso central</strong> é indicado para drogas vasoativas, nutrição parenteral, quimioterapia, monitorização da pressão venosa central, hemodiálise e impossibilidade de acesso periférico. É inserido pela técnica de Seldinger, em que a agulha guia a passagem de um fio, sobre o qual se introduzem o dilatador e o cateter, preferencialmente guiada por ultrassonografia. A escolha do sítio pondera vantagens e riscos (Tabela 6.1). Após a punção jugular ou subclávia, a radiografia de tórax confirma a posição da ponta, na junção da veia cava superior com o átrio direito, e exclui pneumotórax. As complicações incluem pneumotórax, punção arterial, hematoma, arritmia pelo fio-guia, embolia gasosa, prevenida inserindo e retirando o cateter com o paciente em Trendelenburg e mantendo as vias ocluídas, infecção da corrente sanguínea e trombose. Outras opções são o cateter central de inserção periférica (PICC), os cateteres de longa permanência, totalmente implantados (Port-a-cath) ou tunelizados (Hickman), e o acesso intraósseo, usado na emergência quando o venoso falha.</p><p class=\"tabtit\"><strong>Tabela 6.1</strong>Sítios de cateter venoso central</p><table><thead><tr><th>Sítio</th><th>Vantagens</th><th>Desvantagens</th></tr></thead><tbody><tr><td>Jugular interna</td><td>Fácil guiar por ultrassom; compressível</td><td>Desconforto; risco intermediário</td></tr><tr><td>Subclávia</td><td>Menor taxa de infecção e trombose; mais confortável</td><td>Maior risco de pneumotórax; não compressível</td></tr><tr><td>Femoral</td><td>Rápida na emergência; sem risco de pneumotórax</td><td>Maior taxa de infecção e trombose</td></tr></tbody></table><h3>6.5 Cânulas e via aérea</h3><p>A <strong>cânula orofaríngea</strong> (Guedel) impede que a língua obstrua a faringe e só é tolerada pelo paciente inconsciente e sem reflexo de vômito, porque no paciente acordado provoca vômito e aspiração; o tamanho corresponde à distância entre a comissura labial e o ângulo da mandíbula. A <strong>cânula nasofaríngea</strong> é mais bem tolerada pelo paciente semiconsciente, mas é contraindicada na suspeita de fratura da base do crânio. O <strong>tubo orotraqueal</strong>, com balonete insuflado abaixo das cordas vocais, constitui a via aérea definitiva. A <strong>traqueostomia</strong> é indicada para via aérea prolongada e usa cânula com balonete e cânula interna removível para limpeza. A <strong>cricotireoidostomia</strong> é a via aérea cirúrgica de emergência quando não se consegue intubar nem ventilar; em crianças com menos de cerca de 12 anos, a forma cirúrgica é contraindicada pelo risco de lesão da cartilagem cricoide, único anel completo da via aérea infantil, e realiza-se a cricotireoidostomia por punção.</p><div class=\"correl\"><p class=\"qtit\">Correlação clínica</p><p>Um motociclista chega rebaixado, com equimose periorbitária bilateral, sangue no meato uretral e hemotórax à direita com hipotensão. A suspeita de fratura de base de crânio contraindica cânula nasofaríngea e sonda nasogástrica, e a descompressão gástrica é feita por via oral. O sangue no meato impede a sondagem vesical às cegas. Dois acessos periféricos calibrosos garantem a reposição, e o dreno torácico é passado no quinto espaço intercostal, rente à borda superior da costela; saída imediata de 1.700 mL de sangue indica toracotomia.</p></div>"
+  },
+  {
+   "id": "rp",
+   "titulo": "Pontos-chave e referências",
+   "par": "g0",
+   "html": "<h3>Pontos-chave</h3><ol class=\"pontos\"><li>A avaliação pré-operatória estima o risco pela combinação de paciente, doença e procedimento; capacidade de 4 MET indica boa reserva.</li><li>ASA II é doença sistêmica leve controlada; III, grave com limitação; IV, ameaça constante à vida; a letra E indica emergência.</li><li>Exames pré-operatórios são indicados pela clínica, não por rotina.</li><li>Jejum: 2 horas para líquidos claros, 4 para leite materno, 6 para refeição leve e 8 para refeição gordurosa.</li><li>Betabloqueador e estatina são mantidos; clopidogrel e varfarina são suspensos cinco dias antes; inibidores de SGLT2, três dias antes.</li><li>A resposta metabólica ao trauma explica hiperglicemia, retenção de sódio e água e oligúria nas primeiras 24 a 48 horas.</li><li>A causa da febre pós-operatória é sugerida pelo dia: inflamação e pulmão, urina, ferida e anastomose, trombose e abscesso.</li><li>Líquido serossanguinolento pela ferida no quinto ao oitavo dia sugere deiscência de aponeurose; conteúdo entérico no dreno sugere fístula de anastomose.</li><li>A profilaxia antibiótica padrão é cefazolina 2 g até 60 minutos antes da incisão, repetida após quatro horas e mantida no máximo por 24 horas.</li><li>A ferida suja recebe antibiótico como tratamento; a ISC superficial é tratada com abertura e drenagem.</li><li>Pacientes com risco nutricional grave recebem terapia nutricional por 7 a 14 dias antes da cirurgia eletiva; a enteral é preferida à parenteral.</li><li>A síndrome de realimentação é marcada pela hipofosfatemia.</li><li>O checklist da OMS tem entrada antes da indução, pausa antes da incisão e saída antes de o paciente deixar a sala.</li><li>Fratura de base de crânio contraindica sonda e cânula nasais; sangue no meato contraindica sondagem vesical às cegas.</li><li>O dreno torácico passa rente à borda superior da costela; oscilação indica dreno pérvio e borbulhamento, escape de ar.</li></ol><h3>Referências</h3><ul class=\"refs\"><li>Townsend CM et al. Sabiston Tratado de Cirurgia. 21ª ed.</li><li>American Society of Anesthesiologists. ASA Physical Status Classification System; Practice Guidelines for Preoperative Fasting, 2017/2023.</li><li>Centers for Disease Control and Prevention / ANVISA. Critérios diagnósticos de infecção relacionada à assistência à saúde: sítio cirúrgico.</li><li>Bratzler DW et al. Clinical practice guidelines for antimicrobial prophylaxis in surgery. Am J Health Syst Pharm, 2013.</li><li>Weimann A et al. ESPEN guideline: clinical nutrition in surgery. Clin Nutr, 2021.</li><li>Organização Mundial da Saúde. Segundo desafio global para a segurança do paciente: Cirurgias seguras salvam vidas. 2009.</li><li>Brasil. Portaria MS 529/2013 e RDC ANVISA 36/2013.</li><li>American College of Surgeons. ATLS – Advanced Trauma Life Support. 10ª ed.</li><li>Ementa de Práticas Médicas II · Cirurgia, Faculdade Zarns (Drive da Turma 41).</li></ul><p class=\"refs\">Os slides das aulas 7 a 10 não estavam disponíveis; doses e protocolos devem ser conferidos com o material de aula e com o serviço.</p>",
+   "grupo": "Resumo de referência"
   },
   {
    "id": "g0",
@@ -513,7 +520,10 @@
    ],
    "certa": 2,
    "explica": "Doença sistêmica grave, mal controlada, com limitação = ASA III.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r1"
+   ]
   },
   {
    "tipo": "q",
@@ -527,7 +537,10 @@
    ],
    "certa": 1,
    "explica": "Líquidos claros: 2 h.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r1"
+   ]
   },
   {
    "tipo": "q",
@@ -541,7 +554,10 @@
    ],
    "certa": 1,
    "explica": "Leite materno: 4 h; fórmula: 6 h.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r1"
+   ]
   },
   {
    "tipo": "q",
@@ -555,7 +571,10 @@
    ],
    "certa": 3,
    "explica": "Betabloqueador e estatina são mantidos.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r1"
+   ]
   },
   {
    "tipo": "q",
@@ -569,7 +588,10 @@
    ],
    "certa": 1,
    "explica": "iSGLT2: 3 dias antes.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r1"
+   ]
   },
   {
    "tipo": "q",
@@ -583,7 +605,10 @@
    ],
    "certa": 1,
    "explica": "β-hCG em mulher em idade fértil.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r1"
+   ]
   },
   {
    "tipo": "q",
@@ -597,7 +622,10 @@
    ],
    "certa": 0,
    "explica": "3º–5º dia: água (urina) é o clássico, sobretudo com sonda.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r2"
+   ]
   },
   {
    "tipo": "q",
@@ -611,7 +639,10 @@
    ],
    "certa": 1,
    "explica": "5º–7º dia, secreção entérica no dreno = fístula.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r2"
+   ]
   },
   {
    "tipo": "q",
@@ -625,7 +656,10 @@
    ],
    "certa": 1,
    "explica": "\"Água de carne\" é sinal de alerta de deiscência.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r2"
+   ]
   },
   {
    "tipo": "q",
@@ -639,7 +673,10 @@
    ],
    "certa": 1,
    "explica": "Cólon em 48–72 h.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r2"
+   ]
   },
   {
    "tipo": "q",
@@ -653,7 +690,10 @@
    ],
    "certa": 1,
    "explica": "Abertura controlada do trato biliar.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
   },
   {
    "tipo": "q",
@@ -667,7 +707,10 @@
    ],
    "certa": 2,
    "explica": "Pus e víscera perfurada = suja; ATB é terapêutico.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
   },
   {
    "tipo": "q",
@@ -681,7 +724,10 @@
    ],
    "certa": 0,
    "explica": "Para ter nível tecidual no momento da incisão.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
   },
   {
    "tipo": "q",
@@ -695,7 +741,10 @@
    ],
    "certa": 3,
    "explica": "Redose após 4 h (ou sangramento > 1.500 mL).",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
   },
   {
    "tipo": "q",
@@ -709,7 +758,10 @@
    ],
    "certa": 3,
    "explica": "Prolongar não reduz ISC e aumenta resistência.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
   },
   {
    "tipo": "q",
@@ -723,7 +775,10 @@
    ],
    "certa": 0,
    "explica": "Drenagem é o tratamento.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
   },
   {
    "tipo": "q",
@@ -737,7 +792,10 @@
    ],
    "certa": 3,
    "explica": "Risco nutricional grave: nutrir antes da eletiva.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r4"
+   ]
   },
   {
    "tipo": "q",
@@ -751,7 +809,10 @@
    ],
    "certa": 3,
    "explica": "Síndrome de realimentação.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r4"
+   ]
   },
   {
    "tipo": "q",
@@ -765,7 +826,10 @@
    ],
    "certa": 0,
    "explica": "> 4–6 semanas: gastrostomia.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r4"
+   ]
   },
   {
    "tipo": "q",
@@ -779,7 +843,10 @@
    ],
    "certa": 1,
    "explica": "Time out, antes da incisão.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r5"
+   ]
   },
   {
    "tipo": "q",
@@ -793,7 +860,10 @@
    ],
    "certa": 2,
    "explica": "Sign out, antes de o paciente sair da sala.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r5"
+   ]
   },
   {
    "tipo": "q",
@@ -807,7 +877,10 @@
    ],
    "certa": 1,
    "explica": "Deu origem ao checklist em 2008.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r5"
+   ]
   },
   {
    "tipo": "q",
@@ -821,7 +894,10 @@
    ],
    "certa": 3,
    "explica": "Suspeita de fratura de base de crânio contraindica via nasal.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r6"
+   ]
   },
   {
    "tipo": "q",
@@ -835,7 +911,10 @@
    ],
    "certa": 1,
    "explica": "Suspeita de lesão de uretra.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r6"
+   ]
   },
   {
    "tipo": "q",
@@ -849,7 +928,10 @@
    ],
    "certa": 3,
    "explica": "Feixe vasculonervoso corre na borda inferior.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r6"
+   ]
   },
   {
    "tipo": "q",
@@ -863,7 +945,10 @@
    ],
    "certa": 1,
    "explica": "Oscilação = pérvio; borbulhamento = ar escapando.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r6"
+   ]
   },
   {
    "tipo": "q",
@@ -877,7 +962,10 @@
    ],
    "certa": 3,
    "explica": "Quanto menor o número, maior o calibre.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r6"
+   ]
   },
   {
    "tipo": "q",
@@ -891,7 +979,10 @@
    ],
    "certa": 1,
    "explica": "Subclávia: menos infecção, mais pneumotórax.",
-   "tempo": 20
+   "tempo": 20,
+   "secoes": [
+    "r6"
+   ]
   }
  ],
  "kahootInfo": {

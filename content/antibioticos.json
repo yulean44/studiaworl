@@ -1,1 +1,1431 @@
-{"id":"antibioticos","nome":"Farmacologia · Antibióticos","sigla":"ATB","sub":"Penicilinas, cefalosporinas, carbapenêmicos e parceiros","cor":"#5a9a7e","emoji":"","icone":"pilula","secoes":[{"id":"r0","grupo":"Resumo de referência","titulo":"Comece por aqui","par":"g0","html":"<p>Leia primeiro este <strong>resumo</strong>: ele explica cada classe do zero, com o raciocínio por trás. Depois passe para o <span class=\"xref\" data-sec=\"g0\">Guia prioritário</span>, que é a parte que mais cai (regras de bolso, pegadinhas e o que o professor marcou). Em seguida faça o quiz e os casos clínicos.</p><p>Em qualquer seção, use <strong>Lado a lado</strong> na barra de cima para abrir a parte correspondente do outro bloco.</p><h3>O mapa da matéria</h3><table><thead><tr><th>Parte</th><th>O que tem</th></tr></thead><tbody><tr><td>1. Bases</td><td>Parede, PBP, Gram-positivo × Gram-negativo, resistência, atípicos, tempo-dependência</td></tr><tr><td>2. Penicilinas</td><td>Cristalina, benzatina, oxacilina, amoxicilina, ampicilina, pipe-tazo</td></tr><tr><td>3. Cefalosporinas</td><td>As cinco gerações, a gangorra Gram+ / Gram−, ceftriaxona, cefepima, ceftarolina</td></tr><tr><td>4. Carbapenêmicos e superbactérias</td><td>Meropeném, imipeném, ertapeném; ESBL, grupo CESP, KPC, <em>Pseudomonas</em></td></tr><tr><td>5. Outras classes</td><td>Vancomicina, macrolídeos, doxiciclina, clindamicina, metronidazol, quinolonas, aminoglicosídeos</td></tr><tr><td>6. Raciocínio e associações</td><td>As 4 perguntas, o que somar à ceftriaxona em cada lugar do corpo</td></tr></tbody></table><p class=\"muted\">Fontes: aulas de Penicilinas (27/10) e de Cefalosporinas e Carbapenêmicos (09/11), dúvidas tiradas no estudo e Mapa Mental de Antibióticos (Estratégia MED, no seu Drive). Notas de revisão citam diretrizes.</p>"},{"id":"r1","grupo":"Resumo de referência","titulo":"1. Bases: parede, Gram e resistência","par":"g1","html":"<h3>Como os betalactâmicos matam</h3><p>A parede da bactéria é como um muro de tijolos (o peptidoglicano). Quem cola um tijolo no outro é um \"pedreiro\", a enzima <strong>PBP</strong> (proteína ligadora de penicilina), no seu domínio transpeptidase. O betalactâmico imita o tijolo (a ligação D-alanil-D-alanina): a PBP o pega, fica travada e não cola mais nada. A parede enfraquece, a água entra e a bactéria estoura (lise osmótica). Por isso são <strong>bactericidas</strong>.</p><p>Penicilinas, cefalosporinas, carbapenêmicos e monobactâmicos (aztreonam) são todos <strong>betalactâmicos</strong>: compartilham o <strong>anel betalactâmico</strong>, a \"boca\" que morde a PBP. O que muda entre as classes é o resto da molécula, que define quais bactérias alcançam, até onde entram no corpo e quanto resistem às enzimas da bactéria.</p><h3>Gram-positivo × Gram-negativo</h3><table><thead><tr><th></th><th>Gram-positivo</th><th>Gram-negativo</th></tr></thead><tbody><tr><td>Cor no Gram</td><td>Roxo</td><td>Vermelho</td></tr><tr><td>Parede</td><td>Espessa, mas exposta</td><td>Fina, escondida atrás de uma membrana externa</td></tr><tr><td>Como o antibiótico entra</td><td>Chega direto na PBP</td><td>Precisa passar por portas (porinas) e sobreviver às betalactamases do periplasma</td></tr><tr><td>Exemplos</td><td><em>S. aureus</em>, <em>S. pyogenes</em>, pneumococo, enterococo, <em>Listeria</em></td><td><em>E. coli</em>, <em>Klebsiella</em>, <em>Pseudomonas</em>, <em>H. influenzae</em>, <em>Moraxella</em>, <em>Neisseria</em></td></tr></tbody></table><h3>As três defesas da bactéria</h3><ul><li><strong>Betalactamase</strong> (a \"tesoura\"): corta o anel. Típica dos Gram-negativos; entre os Gram-positivos, o <em>S. aureus</em> é a exceção (penicilinase).</li><li><strong>Porinas escassas ou fechadas</strong>: a porta trancada. Só existe em Gram-negativos.</li><li><strong>PBP alterada</strong>: o pedreiro troca de forma e o antibiótico não encaixa mais. É o mecanismo do <strong>MRSA</strong> (PBP2a). A alteração <strong>diminui</strong> a afinidade.</li></ul><p>Além disso, bombas de efluxo jogam o antibiótico para fora.</p><h3>Bactérias atípicas</h3><p><em>Mycoplasma pneumoniae</em>, <em>Chlamydophila/Chlamydia</em> e <em>Legionella</em>. Fogem do padrão: o <em>Mycoplasma</em> não tem parede, e as outras vivem dentro da célula. <strong>Nenhum betalactâmico pega atípico</strong>, nem os carbapenêmicos. Quem pega: macrolídeos, doxiciclina e quinolonas.</p><h3>Tempo-dependência</h3><p>O betalactâmico funciona pelo <strong>tempo</strong> em que a concentração fica acima da concentração inibitória mínima, não pelo pico. Por isso se dá em várias doses ao dia ou em infusão prolongada (curva em platô). Aminoglicosídeos e quinolonas são concentração-dependentes (curva com pico).</p><blockquote><strong>Nota de revisão:</strong> A aula diz que nenhum betalactâmico deve correr em menos de 4 h. A infusão prolongada é recomendada sobretudo em pacientes graves; a infusão de 30 min ainda é padrão em muitos cenários.</blockquote><h3>Alergia</h3><p>O anel é muito alergênico; a alergia é o principal efeito adverso das penicilinas. Na gestação, as penicilinas são seguras.</p><blockquote><strong>Nota de revisão:</strong> A reação cruzada depende mais das cadeias laterais do que do anel: com carbapenêmicos e aztreonam fica abaixo de 1%; com cefalosporinas é baixa no geral, maior quando a cadeia lateral é igual (ex.: amoxicilina e cefalexina).</blockquote>"},{"id":"r2","grupo":"Resumo de referência","titulo":"2. Penicilinas","par":"g2","html":"<p>Cada penicilina surgiu para pegar as bactérias que sobreviveram à anterior. Sabendo a sequência, você deduz o espectro.</p><table><thead><tr><th>Droga</th><th>Via</th><th>Pega</th><th>Não pega</th><th>Uso principal</th></tr></thead><tbody><tr><td>Penicilina cristalina (G)</td><td>IV</td><td>Gram+ sensíveis, espiroquetas (<em>Treponema</em>, <em>Leptospira</em>)</td><td>Gram−, <em>S. aureus</em> com penicilinase, atípicos</td><td>Neurossífilis, leptospirose</td></tr><tr><td>Penicilina benzatina</td><td>IM</td><td>Igual à cristalina</td><td>Igual à cristalina</td><td>Sífilis (exceto neuro), faringite, profilaxia da febre reumática</td></tr><tr><td>Oxacilina</td><td>IV</td><td>Gram+ incluindo MSSA</td><td>MRSA, Gram−, anaeróbios, atípicos</td><td>Infecção grave por <em>S. aureus</em> sensível</td></tr><tr><td>Amoxicilina (± clavulanato)</td><td>VO</td><td>Gram+, Gram− comunitários, anaeróbios</td><td>MRSA, Gram− hospitalares, atípicos</td><td>Vias aéreas</td></tr><tr><td>Ampicilina (± sulbactam)</td><td>IV</td><td>Igual à amoxicilina + <em>Listeria</em>, <em>Shigella</em></td><td>Igual à amoxicilina</td><td>Internado; meningite ≥ 50 anos</td></tr><tr><td>Piperacilina-tazobactam</td><td>IV</td><td>Gram+, Gram− incluindo <em>Pseudomonas</em>, anaeróbios</td><td>MRSA, ESBL, KPC, atípicos</td><td>Infecção relacionada à assistência (IRAS)</td></tr></tbody></table><h3>Cristalina e benzatina</h3><p>Mesmo espectro, o mais estreito. A cristalina é IV (internação): primeira linha na <strong>neurossífilis</strong> e na <strong>leptospirose</strong>. A benzatina é IM e forma um depósito que dura cerca de 3 semanas, o que garante a adesão.</p><table><thead><tr><th>Sífilis</th><th>Esquema</th></tr></thead><tbody><tr><td>Primária, secundária, latente recente</td><td>Benzatina 2.400.000 UI IM, dose única (1.200.000 UI em cada glúteo)</td></tr><tr><td>Latente tardia, duração ignorada, terciária</td><td>Benzatina 2.400.000 UI semanal × 3 (7.200.000 UI)</td></tr><tr><td>Neurossífilis</td><td>Penicilina cristalina IV</td></tr><tr><td>Gestante alérgica</td><td>Dessensibilizar e usar penicilina</td></tr></tbody></table><p><strong>Profilaxia da febre reumática:</strong> benzatina 1.200.000 UI a cada 21 dias. Duração: sem cardite, 5 anos ou até 21 anos; cardite leve, 10 anos ou até 25; lesão moderada/grave, até 40 anos ou a vida toda. Vale o que durar mais.</p><h3>Oxacilina e a escada do <em>S. aureus</em></h3><p>Feita para o <strong>MSSA</strong> (estafilococo produtor de penicilinase). A escada: sensível à penicilina → MSSA (oxacilina) → MRSA (vancomicina, ceftarolina) → VISA/VRSA. Indicações: artrite séptica, abscessos, celulite grave, endocardite de valva nativa.</p><h3>Amoxicilina e o clavulanato</h3><p>Molécula menor e hidrofílica: atravessa as porinas dos Gram-negativos comunitários. O uso maciço selecionou <em>H. influenzae</em> e <em>Moraxella</em> produtores de betalactamase; daí o <strong>clavulanato</strong>, o \"escudo\". Clavulanato, sulbactam, tazobactam e avibactam são <strong>inibidores de betalactamase</strong>, não antibióticos.</p><table><thead><tr><th>Infecção</th><th>Agentes</th><th>Escolha</th></tr></thead><tbody><tr><td>Faringite</td><td><em>S. pyogenes</em> (não produz betalactamase)</td><td>Amoxicilina pura 10 dias ou benzatina</td></tr><tr><td>Otite e sinusite</td><td>Pneumococo + <em>H. influenzae</em> + <em>Moraxella</em></td><td>Amoxicilina + clavulanato</td></tr><tr><td>Pneumonia ambulatorial sem comorbidade</td><td>Pneumococo</td><td>Amoxicilina (ou amoxi-clav)</td></tr><tr><td>Pneumonia ambulatorial com comorbidade</td><td>+ atípicos</td><td>Amoxi-clav + macrolídeo</td></tr></tbody></table><p><strong>Mononucleose:</strong> amoxicilina numa faringite viral por Epstein-Barr precipita um exantema que não é alergia. Pistas: linfonodos cervicais posteriores, edema periorbitário, esplenomegalia.</p><h3>Ampicilina</h3><p>Pega tudo que a amoxicilina pega e mais <em>Listeria</em> (bacilo Gram-positivo) e <em>Shigella</em>. Na meningite em ≥ 50 anos, soma-se à ceftriaxona para cobrir <em>Listeria</em>.</p><h3>Piperacilina-tazobactam</h3><p>A penicilina mais potente e a única que pega <em>Pseudomonas</em>. Primeira linha na IRAS (≥ 48 h de internação), empatada com a cefepima. Vantagem sobre a cefepima: pega anaeróbios. Não serve para meningite nem para ESBL.</p>"},{"id":"r3","grupo":"Resumo de referência","titulo":"3. Cefalosporinas","par":"g3","html":"<p>Mesmo mecanismo da penicilina. São os antibióticos mais usados no hospital. A dificuldade principal, segundo o professor, é decorar nomes quase iguais.</p><h3>A gangorra das gerações</h3><p>Da 1ª para a 4ª geração, perdem ação contra Gram-positivo e ganham contra Gram-negativo. A 5ª \"volta às origens\" e pega até MRSA. <strong>Nenhuma cefalosporina pega enterococo, atípicos ou anaeróbios</strong> (exceção teórica: cefoxitina, anaeróbio).</p><table><thead><tr><th>Geração</th><th>Nomes</th><th>Pega</th><th>Uso</th></tr></thead><tbody><tr><td>1ª</td><td>Cefalexina, cefadroxila (VO); cefalotina, cefazolina (IV)</td><td>Gram+ e MSSA; de Gram−, só <em>E. coli</em></td><td>Pele e subcutâneo; profilaxia cirúrgica (cefazolina)</td></tr><tr><td>2ª</td><td>Cefuroxima, cefaclor, cefoxitina</td><td>Equilibrado; perde o MSSA</td><td>Vias aéreas, como 2ª linha</td></tr><tr><td>3ª</td><td>Ceftriaxona, ceftazidima (+ cefotaxima, cefdinir)</td><td>Gram− + pneumococo; ceftazidima pega <em>Pseudomonas</em></td><td>Internados: pneumonia, meningite, pielonefrite, PBE, colangite</td></tr><tr><td>4ª</td><td>Cefepima</td><td>Gram− incluindo <em>Pseudomonas</em></td><td>IRAS, neutropenia febril</td></tr><tr><td>5ª</td><td>Ceftarolina</td><td>Gram+ incluindo MRSA</td><td>MRSA documentado</td></tr></tbody></table><h3>1ª geração e a profilaxia cirúrgica</h3><p>A infecção cirúrgica costuma ocorrer na ferida, pela flora da pele (<em>S. pyogenes</em> e <em>S. aureus</em>, Gram+). Por isso a cefazolina é a profilaxia de todas as cirurgias, inclusive cardíaca. Penetra pele, subcutâneo e, no máximo, fáscia. A cefadroxila (12/12 h) tem posologia melhor que a cefalexina (6/6 h).</p><blockquote><strong>Nota de revisão:</strong> A aula fala em manter a profilaxia 24–48 h. As diretrizes atuais (SHEA/IDSA 2022) mandam suspender no fechamento da incisão; a dose usual de cefazolina é 2 g IV (3 g se > 120 kg).</blockquote><h3>2ª geração</h3><p>Penetração excelente em via aérea (seios da face, ouvido, faringe, pulmão). Cefuroxima é 2ª linha em otite, sinusite, faringite e pneumonia ambulatorial, depois de falhar a amoxicilina. Cefoxitina: única que pega anaeróbio, quase não usada porque <strong>induz betalactamases</strong> (AmpC) que a destroem.</p><h3>3ª geração: ceftriaxona</h3><p>Entra em quase todo lugar, inclusive no SNC. Pega a maioria dos Gram− (<em>E. coli</em>, <em>Klebsiella</em>, <em>Proteus</em>, <em>Salmonella</em>, <em>Shigella</em>, <em>Neisseria</em>, <em>H. influenzae</em>, <em>Moraxella</em>) e o pneumococo. Não pega: <em>Pseudomonas</em> (exceto a ceftazidima), ESBL, KPC, enterococo, MSSA, anaeróbios, atípicos.</p><p><strong>Ceftazidima + avibactam:</strong> o avibactam (inibidor de betalactamase, não betalactâmico) protege a ceftazidima e torna a associação a melhor droga contra <strong>KPC</strong>. Não funciona contra metalo-betalactamases (NDM).</p><p><strong>Efeito adverso: <em>Clostridioides difficile</em>.</strong> A ceftriaxona mata a flora Gram− do intestino; o <em>C. difficile</em>, que vivia ali em pouca quantidade, prolifera e causa colite pseudomembranosa (diarreia aquosa volumosa). É o 2º antibiótico mais associado (o 1º, tradicionalmente, é a clindamicina). Isolamento de contato; álcool gel não mata os esporos, só água e sabão. Tratamento (fora da aula): vancomicina oral ou fidaxomicina.</p><h3>4ª geração: cefepima</h3><p>Pega Gram− incluindo <em>Pseudomonas</em>. Primeira linha na IRAS e na neutropenia febril. Neurotóxica (confusão, ataxia, convulsão) em quem tem rim doente.</p><p><strong>Neutropenia febril:</strong> cefepima → se grave ou piora em 48 h, + vancomicina → se ainda não melhora, + antifúngico (equinocandina se grave; fluconazol se não). Por exclusão: já se cobriu Gram− e Gram+; sobra fungo.</p><blockquote><strong>Nota de revisão:</strong> Pela IDSA, neutropenia febril = neutrófilos < 500/mm³ (ou < 1.000 com queda prevista) + temperatura ≥ 38,3 °C ou ≥ 38 °C por 1 h. Na aula o corte citado foi 1.000. O antifúngico empírico costuma entrar após 4–7 dias de febre.</blockquote><h3>5ª geração: ceftarolina</h3><p>A única cefalosporina que pega MRSA (\"tem a chave da fechadura nova\", a PBP2a). Mais gentil com o rim que a vancomicina, mas rara nos hospitais da Bahia. Na prova: MRSA confirmado em cultura → ceftarolina.</p>"},{"id":"r4","grupo":"Resumo de referência","titulo":"4. Carbapenêmicos e superbactérias","par":"g4","html":"<h3>Os tanques de guerra</h3><p>Os betalactâmicos mais potentes. Duas vantagens: o anel resiste a cerca de 99% das betalactamases, e eles entram por portas extras dos Gram-negativos (na <em>Pseudomonas</em>, a porina OprD, que serve para aminoácidos).</p><table><thead><tr><th>Droga</th><th>O que tem de especial</th></tr></thead><tbody><tr><td>Meropeném</td><td>O mais potente. Primeira linha na ESBL. Escalonamento após falha de pipe-tazo/cefepima</td></tr><tr><td>Imipeném + cilastatina</td><td>A cilastatina inibe a desidropeptidase renal, que destruiria o imipeném. Melhor penetração no pâncreas: pancreatite necrosante infectada</td></tr><tr><td>Ertapeném</td><td>Não pega <em>Pseudomonas</em> nem <em>Acinetobacter</em>. IM ou IV, 1×/dia; pele e partes moles, tratamento em casa</td></tr></tbody></table><p><strong>Pegam:</strong> Gram+ (incluindo MSSA), Gram− (incluindo <em>Pseudomonas</em>, <em>Acinetobacter</em> e ESBL) e anaeróbios. <strong>Não pegam:</strong> MRSA, atípicos e KPC.</p><p><strong>Regra:</strong> nunca são primeira linha, exceto ESBL (meropeném) e infecção pancreática (imipeném).</p><blockquote><strong>Nota de revisão:</strong> A aula diz que a cilastatina causa acidose tubular. Na literatura, a cilastatina é nefroprotetora; o efeito adverso típico do imipeném é a convulsão.</blockquote><h3>As superbactérias</h3><table><thead><tr><th>Problema</th><th>O que é</th><th>Conduta</th></tr></thead><tbody><tr><td>ESBL</td><td>Betalactamase de espectro estendido: corta penicilinas e cefalosporinas</td><td>Meropeném, mesmo se o antibiograma mostrar pipe-tazo \"sensível\"</td></tr><tr><td>Grupo CESP</td><td><em>Citrobacter</em>, <em>Enterobacter</em>, <em>Serratia</em>, <em>Proteus</em> (+ <em>Morganella</em>, <em>Providencia</em>) com AmpC desligada, que a cefalosporina liga</td><td>Evitar 3ª geração mesmo com antibiograma sensível (sensível só <em>in vitro</em>)</td></tr><tr><td>KPC</td><td><em>Klebsiella</em> produtora de carbapenemase</td><td>Ceftazidima-avibactam; sem ela, polimixinas ou aminoglicosídeos (nefrotóxicos); resgate com duplo carbapenêmico</td></tr><tr><td><em>Pseudomonas</em></td><td>A vilã da IRAS, com todos os mecanismos de resistência</td><td>Pipe-tazo, cefepima, ceftazidima; meropeném após falha</td></tr><tr><td>MRSA</td><td><em>S. aureus</em> com PBP alterada</td><td>Ceftarolina (aula) ou vancomicina</td></tr></tbody></table><p><strong>Por que \"sensível\" engana:</strong> na placa, o antibiótico mata antes de a bactéria ligar a enzima. No corpo, ela tem tempo de produzir a enzima e destruir o remédio. É o ladrão com a faca no bolso.</p><p><strong>Duplo carbapenêmico (a isca):</strong> a carbapenemase prefere o ertapeném. Dá-se o ertapeném primeiro; as enzimas se ocupam dele; 1 h depois o meropeném passa e mata. Estratégia de resgate, nem sempre funciona.</p><blockquote><strong>Nota de revisão:</strong> Pela IDSA, para bactérias com AmpC (sobretudo <em>Enterobacter cloacae</em>, <em>Klebsiella aerogenes</em>, <em>Citrobacter freundii</em>) a cefepima costuma ser preferida; carbapenêmico se houver ESBL ou resistência maior.</blockquote>"},{"id":"r5","grupo":"Resumo de referência","titulo":"5. Outras classes: vancomicina, macrolídeos e companhia","par":"g5","html":"<p>Estas drogas aparecem nas aulas sobretudo como <strong>parceiras</strong> dos betalactâmicos, para tapar os buracos deles.</p><table><thead><tr><th>Droga (classe)</th><th>Como age</th><th>Pega</th><th>Efeitos e pontos de prova</th></tr></thead><tbody><tr><td>Vancomicina (glicopeptídeo)</td><td>Gruda no \"tijolo\" da parede</td><td>Só Gram+, incluindo MRSA</td><td>Nefrotóxica; síndrome do homem vermelho (infusão rápida, não é alergia); VO só age no intestino → <em>C. difficile</em></td></tr><tr><td>Azitromicina, claritromicina (macrolídeos)</td><td>Ribossomo 50S</td><td>Atípicos; claritro pega melhor o pneumococo</td><td>Prolongam QT; claritro inibe CYP3A4 (interações); azitro permite 3–5 dias</td></tr><tr><td>Doxiciclina (tetraciclina)</td><td>Ribossomo 30S</td><td>Atípicos (clamídia), riquétsias, leptospira, alguns MRSA comunitários</td><td>Evitar na gestação e em crianças pequenas (dentes e osso); fotossensibilidade; esofagite</td></tr><tr><td>Clindamicina (lincosamida)</td><td>Ribossomo 50S</td><td>Gram+ e anaeróbios</td><td>Antibiótico mais associado ao <em>C. difficile</em>; boa penetração óssea</td></tr><tr><td>Metronidazol (nitroimidazol)</td><td>Ativado só sem oxigênio; quebra o DNA</td><td>Só anaeróbios (+ giárdia, ameba, tricomonas)</td><td>Efeito antabuse com álcool; gosto metálico; opção para <em>C. difficile</em></td></tr><tr><td>Quinolonas (cipro, levo, moxi)</td><td>DNA girase</td><td>Gram−; levo e moxi pegam pneumococo e atípicos; cipro e levo pegam <em>Pseudomonas</em></td><td>Tendinite e ruptura de tendão, QT longo, aneurisma de aorta; evitar na gestação e em crianças. Norfloxacino: profilaxia de PBE</td></tr><tr><td>Aminoglicosídeos (gentamicina, amicacina)</td><td>Ribossomo 30S; concentração-dependentes</td><td>Gram−, incluindo <em>Pseudomonas</em>; opção contra KPC</td><td>Nefro e ototóxicos; bloqueio neuromuscular</td></tr><tr><td>Polimixinas (colistina)</td><td>\"Detergente\" da membrana externa</td><td>Gram− multirresistentes (KPC, <em>Acinetobacter</em>)</td><td>Nefro e neurotóxicas; última linha</td></tr></tbody></table><h3>Para não confundir nomes</h3><p>\"-ciclina\" = tetraciclina (doxi<strong>ciclina</strong>). \"-micina\" entre azitro e claritro = macrolídeo; mas vancomicina, clindamicina e gentamicina também terminam em \"-micina\" e não são macrolídeos.</p><p class=\"muted\">Quinolonas, aminoglicosídeos e polimixinas não tiveram aula própria: vêm do mapa mental do Drive e da literatura.</p>"},{"id":"r6","grupo":"Resumo de referência","titulo":"6. Raciocínio e associações","par":"g6","html":"<h3>As quatro perguntas</h3><ol><li>Onde está a infecção?</li><li>Que bactéria costuma viver ali?</li><li>Paciente em casa ou internado? Leve ou grave?</li><li>Qual a menor arma que pega essa bactéria e chega nesse lugar? Começa pela mais estreita e escala na falha.</li></ol><table><thead><tr><th>Lugar</th><th>Bactéria típica</th></tr></thead><tbody><tr><td>Pele, corte cirúrgico</td><td>Estafilo e estrepto (Gram+)</td></tr><tr><td>Garganta</td><td><em>S. pyogenes</em></td></tr><tr><td>Seios da face, ouvido</td><td>Pneumococo + <em>H. influenzae</em> e <em>Moraxella</em> (com betalactamase)</td></tr><tr><td>Pulmão</td><td>Pneumococo + atípicos</td></tr><tr><td>Urina, intestino, bile</td><td>Gram− (+ anaeróbios no intestino e na bile)</td></tr><tr><td>Hospital</td><td><em>Pseudomonas</em> e resistentes</td></tr></tbody></table><h3>O que somar à ceftriaxona</h3><p>O parceiro tapa o buraco da ceftriaxona naquele lugar do corpo: \"o que a ceftriaxona não pega e costuma estar aqui?\"</p><table><thead><tr><th>Buraco</th><th>Quando aparece</th><th>Parceiro</th></tr></thead><tbody><tr><td>Anaeróbio</td><td>Intestino, bile, apêndice, pelve, ferida profunda</td><td>Metronidazol ou clindamicina</td></tr><tr><td>Atípico</td><td>Pulmão</td><td>Macrolídeo (azitromicina)</td></tr><tr><td>Atípico (clamídia)</td><td>Pelve / IST</td><td>Doxiciclina</td></tr><tr><td><em>Listeria</em></td><td>Meningite em ≥ 50 anos</td><td>Ampicilina</td></tr><tr><td>MSSA</td><td>Válvula cardíaca</td><td>Oxacilina</td></tr><tr><td>Pneumococo resistente</td><td>Meningite em região com resistência</td><td>Vancomicina</td></tr></tbody></table><h3>Esquemas da aula</h3><table><thead><tr><th>Situação</th><th>Esquema</th></tr></thead><tbody><tr><td>Pielonefrite</td><td>Ceftriaxona</td></tr><tr><td>PBE (neutrófilos > 250 no líquido ascítico)</td><td>Ceftriaxona sozinha (bactérias Gram− do intestino; anaeróbios quase não chegam)</td></tr><tr><td>Meningite &lt; 50 anos</td><td>Ceftriaxona em dose dobrada</td></tr><tr><td>Meningite ≥ 50 anos</td><td>Ceftriaxona + ampicilina</td></tr><tr><td>Pneumonia que interna</td><td>Ceftriaxona + azitromicina</td></tr><tr><td>Colangite, apendicite supurada</td><td>Ceftriaxona + metronidazol</td></tr><tr><td>Pé diabético</td><td>Ceftriaxona + clindamicina</td></tr><tr><td>Endocardite (valva nativa)</td><td>Ceftriaxona + oxacilina</td></tr><tr><td>DIP</td><td>Ceftriaxona + metronidazol + doxiciclina</td></tr><tr><td>Aborto infectado</td><td>Oxacilina + ceftriaxona + metronidazol</td></tr><tr><td>Gonorreia</td><td>Ceftriaxona IM dose única</td></tr><tr><td>Leptospirose</td><td>Ceftriaxona ou penicilina cristalina</td></tr><tr><td>IRAS</td><td>Pipe-tazo ou cefepima; meropeném após falha</td></tr></tbody></table><blockquote><strong>Nota de revisão:</strong> Gonorreia: a aula citou 250 mg. O PCDT-IST 2022 recomenda ceftriaxona 500 mg IM + azitromicina 1 g VO, dose única.</blockquote>"},{"id":"g0","grupo":"Guia prioritário","titulo":"Como usar (comece por aqui)","par":"r0","html":"<p>Esta é a <strong>parte prioritária</strong>: o que mais cai, em regras curtas, com as pegadinhas que o professor apontou. Cada seção tem a explicação completa no <span class=\"xref\" data-sec=\"r0\">Resumo de referência</span> (use <strong>Lado a lado</strong>).</p><h3>O que o professor marcou como certo de cair</h3><ul><li>Penicilinas: duração da profilaxia da febre reumática, meningite com Gram do líquor, ação tempo-dependente.</li><li>Cefalosporinas: nomes e gerações (\"tem que decorar, não tem jeito\"), profilaxia cirúrgica, pneumonia que interna.</li><li>Carbapenêmicos: cerca de um quarto da prova (4 a 5 questões); praticamente tudo o que foi dito pode cair.</li></ul><h3>Ordem sugerida</h3><ol><li>Leia o resumo de cada parte.</li><li>Volte aqui e fixe as regras.</li><li>Faça o quiz.</li><li>Faça os casos clínicos (treinam o raciocínio, não a decoreba).</li></ol>"},{"id":"g1","grupo":"Guia prioritário","titulo":"Bases: o que não pode errar","par":"r1","html":"<ul><li>Betalactâmicos travam a <strong>PBP</strong> → parede fraca → lise. São <strong>bactericidas</strong> e <strong>tempo-dependentes</strong> (curva em platô).</li><li>Resistência: betalactamase e porinas (Gram−); <strong>PBP alterada</strong> (Gram+, MRSA), que <strong>diminui</strong> a afinidade.</li><li><strong>Nenhum betalactâmico pega atípico</strong> (<em>Mycoplasma</em>, <em>Chlamydia</em>, <em>Legionella</em>).</li><li>Clavulanato, sulbactam, tazobactam e avibactam <strong>não são antibióticos</strong>: são inibidores de betalactamase.</li><li>Penicilinas são seguras na gestação.</li></ul><blockquote><strong>Cai na prova:</strong> Gráfico concentração × tempo: o betalactâmico é a curva em platô; a curva com pico é de droga concentração-dependente (aminoglicosídeo, quinolona).</blockquote><blockquote><strong>Pegadinha:</strong> \"Penicilinas retiram cálcio e magnésio da membrana externa\" é falso: esse é o mecanismo das polimixinas.</blockquote><blockquote><strong>Pegadinha:</strong> Apareceu <em>Mycoplasma</em>, <em>Chlamydia</em> ou <em>Legionella</em>: elimine todos os betalactâmicos das alternativas.</blockquote>"},{"id":"g2","grupo":"Guia prioritário","titulo":"Penicilinas: regras de bolso","par":"r2","html":"<ul><li><strong>Neurossífilis</strong> → penicilina cristalina IV.</li><li><strong>Sífilis sem data</strong> (latente de duração ignorada, gestante com VDRL + sem lesão, doador de sangue) → benzatina 2.400.000 UI semanal × 3.</li><li><strong>Febre reumática</strong> → benzatina a cada 21 dias; sem cardite: 5 anos ou até 21; cardite leve: 10 anos ou até 25; vale o que durar mais.</li><li><strong>MSSA</strong> → oxacilina. \"Oxacilina pega MRSA\" é falso.</li><li><strong>Faringite</strong> → amoxicilina pura ou benzatina (sem clavulanato). <strong>Sinusite/otite</strong> → amoxicilina + clavulanato.</li><li><strong>Pneumonia em casa com comorbidade</strong> → amoxi-clav + azitromicina.</li><li><strong>Meningite ≥ 50 anos</strong> → a alternativa certa tem ampicilina (<em>Listeria</em>).</li><li><strong>IRAS</strong> (≥ 48 h internado) → cobrir <em>Pseudomonas</em>: pipe-tazo.</li></ul><h3>Gram do líquor</h3><table><thead><tr><th>Gram</th><th>Agente</th><th>Conduta</th></tr></thead><tbody><tr><td>Bacilo Gram+</td><td><em>Listeria</em></td><td>Garantir ampicilina</td></tr><tr><td>Diplococo Gram−</td><td>Meningococo</td><td>Só ceftriaxona</td></tr><tr><td>Diplococo Gram+</td><td>Pneumococo</td><td>Ceftriaxona (± vancomicina)</td></tr></tbody></table><blockquote><strong>Pegadinha:</strong> ESBL \"sensível\" a pipe-tazo no antibiograma: a resposta é meropeném.</blockquote><blockquote><strong>Pegadinha:</strong> Faringite com exsudato + linfonodo cervical posterior + baço palpável + rash após amoxicilina = mononucleose, não alergia.</blockquote>"},{"id":"g3","grupo":"Guia prioritário","titulo":"Cefalosporinas: nomes, gerações e indicações","par":"r3","html":"<h3>Ganchos para os nomes</h3><ul><li><strong>1ª</strong> \"CEFA-\": cefalexina, cefadroxila, cefalotina, cefazolina.</li><li><strong>2ª</strong> as do \"OX/CLOR\" que respiram: cefuroxima, cefoxitina, cefaclor.</li><li><strong>3ª</strong> \"TRI e TAZ\": ceftriaxona, ceftazidima (a Taz pega <em>Pseudomonas</em>).</li><li><strong>4ª</strong> cefePIMA, a do \"P\": <em>Pseudomonas</em>, paciente internado, paciente da quimio.</li><li><strong>5ª</strong> \"Carolina\": ceftarolina, pega MRSA.</li></ul><h3>Regras</h3><ul><li>Nenhuma pega <strong>enterococo, atípico ou anaeróbio</strong> (exceção: cefoxitina, anaeróbio).</li><li><strong>Profilaxia cirúrgica</strong> (qualquer cirurgia, inclusive cardíaca) → <strong>cefazolina</strong>.</li><li>Cefuroxima é <strong>2ª linha</strong> em vias aéreas.</li><li><strong>Pneumonia que interna</strong> → ceftriaxona + macrolídeo (azitromicina).</li><li>Ceftriaxona: meningite (dose dobrada), pielonefrite, PBE, colangite (+ metronidazol), gonorreia, DIP.</li><li><strong>Neutropenia febril</strong> → cefepima; grave/piora → + vancomicina; sem melhora → + antifúngico.</li><li><strong>MRSA</strong> documentado → ceftarolina.</li><li><strong><em>C. difficile</em></strong>: ceftriaxona é o 2º mais associado; álcool gel não mata, só água e sabão.</li></ul><blockquote><strong>Pegadinha:</strong> Profilaxia de cirurgia com \"3ª geração porque é mais forte\": errado. A 3ª é mais forte contra Gram−, e a flora da pele é Gram+.</blockquote><blockquote><strong>Pegadinha:</strong> \"Pneumonia com necessidade de internamento\" não é pneumonia hospitalar: é comunitária que interna (ceftriaxona + macrolídeo).</blockquote><blockquote><strong>Pegadinha:</strong> Cefotaxima e nomes comerciais não caem na prova do professor; cefoxitina pegar anaeróbio também não, mas cai em residência.</blockquote>"},{"id":"g4","grupo":"Guia prioritário","titulo":"Carbapenêmicos: um quarto da prova","par":"r4","html":"<ul><li><strong>Nunca são primeira linha</strong>, exceto <strong>ESBL → meropeném</strong> e <strong>pâncreas infectado → imipeném-cilastatina</strong>.</li><li>Entram após falha de <strong>pipe-tazo ou cefepima</strong> em 48–72 h.</li><li><strong>Ertapeném</strong> não pega <em>Pseudomonas</em>; IM/IV 1×/dia; pele e partes moles.</li><li><strong>Cilastatina</strong> inibe a desidropeptidase renal.</li><li>Não pegam <strong>MRSA, atípicos e KPC</strong>.</li><li><strong>KPC</strong> → ceftazidima-avibactam; sem ela, polimixina ou aminoglicosídeo; resgate: ertapeném (isca) e 1 h depois meropeném.</li><li><strong>Grupo CESP</strong> (<em>Citrobacter</em>, <em>Enterobacter</em>, <em>Serratia</em>, <em>Proteus</em>, <em>Morganella</em>, <em>Providencia</em>) → evitar 3ª geração mesmo \"sensível\".</li></ul><h3>Quem pega <em>Pseudomonas</em></h3><p>Pipe-tazo, ceftazidima, cefepima, meropeném, imipeném (+ fora da aula: aminoglicosídeos, cipro/levo, aztreonam, polimixinas). <strong>Não pegam:</strong> ceftriaxona e ertapeném.</p><blockquote><strong>Pegadinha:</strong> A questão cita <em>Providencia</em> ou <em>Morganella</em> com antibiograma sensível à ceftriaxona: não use. Sensibilidade <em>in vitro</em> não é <em>in vivo</em>.</blockquote><blockquote><strong>Pegadinha:</strong> MRSA → ceftarolina; ESBL → meropeném. Não troque.</blockquote>"},{"id":"g5","grupo":"Guia prioritário","titulo":"Outras classes em uma linha","par":"r5","html":"<ul><li><strong>Vancomicina</strong>: só Gram+, inclui MRSA; nefrotóxica; homem vermelho = infundir devagar; VO para <em>C. difficile</em>.</li><li><strong>Macrolídeo</strong> (azitro, claritro): atípicos. Sozinho → claritro; com ceftriaxona → azitro (menos diarreia). QT longo.</li><li><strong>Doxiciclina</strong> (tetraciclina, não macrolídeo): clamídia na DIP; evitar na gestação e em crianças.</li><li><strong>Clindamicina</strong>: Gram+ e anaeróbios; o mais associado ao <em>C. difficile</em>.</li><li><strong>Metronidazol</strong>: só anaeróbios; antabuse com álcool.</li><li><strong>Quinolonas</strong>: tendão, QT, aorta; norfloxacino na profilaxia de PBE.</li><li><strong>Aminoglicosídeos</strong> e <strong>polimixinas</strong>: Gram− resistentes, muito nefrotóxicos.</li></ul><blockquote><strong>Pegadinha:</strong> Metronidazol pega só anaeróbio; clindamicina pega anaeróbio e Gram+. No pé diabético, a clindamicina cobre a parte da pele.</blockquote>"},{"id":"g6","grupo":"Guia prioritário","titulo":"Associações: o que mais se erra","par":"r6","html":"<p>Pergunta-chave: <strong>\"o que a ceftriaxona não pega e costuma estar nesse lugar?\"</strong></p><ul><li>Intestino, bile, apêndice, pelve, ferida profunda → <strong>+ metronidazol</strong> (ou clindamicina).</li><li>Pulmão → <strong>+ azitromicina</strong>.</li><li>Pelve/IST → <strong>+ doxiciclina</strong> (clamídia).</li><li>Meningite ≥ 50 → <strong>+ ampicilina</strong>.</li><li>Válvula → <strong>+ oxacilina</strong>.</li></ul><table><thead><tr><th>Caso</th><th>Resposta</th></tr></thead><tbody><tr><td>Colangite</td><td>Ceftriaxona + metronidazol</td></tr><tr><td>Pé diabético</td><td>Ceftriaxona + clindamicina</td></tr><tr><td>DIP</td><td>Ceftriaxona + metronidazol + doxiciclina</td></tr><tr><td>Pneumonia que interna</td><td>Ceftriaxona + azitromicina</td></tr><tr><td>Endocardite</td><td>Ceftriaxona + oxacilina</td></tr><tr><td>PBE</td><td>Ceftriaxona sozinha</td></tr></tbody></table><blockquote><strong>Pegadinha:</strong> PBE não leva metronidazol: as bactérias que atravessam a parede do intestino são Gram− aeróbias. Muitos anaeróbios no líquido sugerem perfuração (peritonite secundária).</blockquote>"},{"id":"g7","grupo":"Guia prioritário","titulo":"Pegadinhas e regras de bolso","par":"r4","html":"<ul><li>\"Sensível\" no antibiograma nem sempre funciona: ESBL (pipe-tazo) e grupo CESP (ceftriaxona).</li><li>Amoxicilina na mononucleose → exantema que não é alergia.</li><li>Neomicina não é betalactâmico (aminoglicosídeo).</li><li>Penicilinas não são contraindicadas na gestação; doxiciclina e quinolonas são evitadas.</li><li>Alteração da PBP diminui a afinidade.</li><li>Primeira linha não é \"a única\": várias drogas podem ser primeira linha ao mesmo tempo (pipe-tazo e cefepima).</li><li>Avibactam não trava metalo-betalactamase (NDM).</li><li>PBE: neutrófilos > 250; linfócitos predominando → pensar em tuberculose ou carcinomatose.</li></ul>"}],"cards":[{"id":"atb00","secao":"g1","tag":"Bases","frente":"Como os betalactâmicos matam a bactéria?","verso":"Travam a <b>PBP</b> (transpeptidase), que monta a parede → parede fraca → <b>lise osmótica</b>. São bactericidas."},{"id":"atb01","secao":"g1","tag":"Bases","frente":"Betalactâmicos são tempo- ou concentração-dependentes?","verso":"<b>Tempo-dependentes</b>: importa o tempo acima da CIM (curva em platô)."},{"id":"atb02","secao":"g1","tag":"Bases","frente":"Alteração da PBP aumenta ou diminui a afinidade pelo betalactâmico?","verso":"<b>Diminui</b>. É o mecanismo do MRSA (PBP2a)."},{"id":"atb03","secao":"g1","tag":"Bases","frente":"Quais são os 3 atípicos principais e que classe nunca os pega?","verso":"<i>Mycoplasma</i>, <i>Chlamydia/Chlamydophila</i>, <i>Legionella</i>. <b>Nenhum betalactâmico</b> pega."},{"id":"atb04","secao":"g1","tag":"Bases","frente":"Clavulanato, sulbactam, tazobactam e avibactam são o quê?","verso":"<b>Inibidores de betalactamase</b> (escudos), não antibióticos."},{"id":"atb05","secao":"g1","tag":"Bases","frente":"Que defesas de resistência só existem em Gram-negativos?","verso":"Porinas escassas/fechadas (eles têm membrana externa) e, tipicamente, betalactamases no periplasma."},{"id":"atb06","secao":"g2","tag":"Penicilinas","frente":"Droga de escolha na neurossífilis","verso":"<b>Penicilina cristalina IV</b>."},{"id":"atb07","secao":"g2","tag":"Penicilinas","frente":"Sífilis latente de duração ignorada: esquema","verso":"Benzatina <b>2.400.000 UI semanal × 3</b> (7.200.000 UI)."},{"id":"atb08","secao":"g2","tag":"Penicilinas","frente":"Sífilis primária, secundária ou latente recente: esquema","verso":"Benzatina <b>2.400.000 UI IM dose única</b>."},{"id":"atb09","secao":"g2","tag":"Penicilinas","frente":"Profilaxia da febre reumática sem cardite: duração","verso":"<b>5 anos ou até 21 anos</b>, o que durar mais (benzatina a cada 21 dias)."},{"id":"atb10","secao":"g2","tag":"Penicilinas","frente":"Profilaxia da febre reumática com cardite leve: duração","verso":"<b>10 anos ou até 25 anos</b>, o que durar mais."},{"id":"atb11","secao":"g2","tag":"Penicilinas","frente":"Para qual bactéria a oxacilina foi feita?","verso":"<b>MSSA</b> (<i>S. aureus</i> produtor de penicilinase). Não pega MRSA."},{"id":"atb12","secao":"g2","tag":"Penicilinas","frente":"Faringite estreptocócica: amoxicilina com ou sem clavulanato? Por quê?","verso":"<b>Sem</b>: o <i>S. pyogenes</i> não produz betalactamase. Benzatina também é 1ª linha."},{"id":"atb13","secao":"g2","tag":"Penicilinas","frente":"Sinusite/otite: por que amoxicilina COM clavulanato?","verso":"<i>H. influenzae</i> e <i>Moraxella</i> produzem betalactamase."},{"id":"atb14","secao":"g2","tag":"Penicilinas","frente":"O que a ampicilina pega a mais que a amoxicilina?","verso":"<b><i>Listeria</i></b> (bacilo Gram+) e <i>Shigella</i>."},{"id":"atb15","secao":"g2","tag":"Penicilinas","frente":"Única penicilina que pega <i>Pseudomonas</i>","verso":"<b>Piperacilina-tazobactam</b>."},{"id":"atb16","secao":"g2","tag":"Penicilinas","frente":"Faringite + linfonodo cervical posterior + baço palpável + rash após amoxicilina","verso":"<b>Mononucleose</b> (EBV); o rash não é alergia."},{"id":"atb17","secao":"g2","tag":"Penicilinas","frente":"Bacilo Gram-positivo no líquor de idoso: agente e droga","verso":"<i>Listeria</i> → <b>ampicilina</b>."},{"id":"atb18","secao":"g3","tag":"Cefalosporinas","frente":"Regra da gangorra das cefalosporinas","verso":"Da 1ª à 4ª: perdem Gram+, ganham Gram−. A 5ª volta ao Gram+ e pega MRSA."},{"id":"atb19","secao":"g3","tag":"Cefalosporinas","frente":"Três grupos que nenhuma cefalosporina pega","verso":"<b>Enterococo, atípicos e anaeróbios</b> (exceção: cefoxitina pega anaeróbio)."},{"id":"atb20","secao":"g3","tag":"Cefalosporinas","frente":"Cefalosporinas de 1ª geração (gancho \"CEFA-\")","verso":"Cefalexina, cefadroxila (VO); cefalotina, cefazolina (IV)."},{"id":"atb21","secao":"g3","tag":"Cefalosporinas","frente":"Cefalosporinas de 2ª geração","verso":"Cefuroxima, cefaclor, cefoxitina."},{"id":"atb22","secao":"g3","tag":"Cefalosporinas","frente":"Principais cefalosporinas de 3ª geração","verso":"Ceftriaxona e ceftazidima (+ cefotaxima, cefdinir)."},{"id":"atb23","secao":"g3","tag":"Cefalosporinas","frente":"Cefalosporina de 4ª e de 5ª geração","verso":"4ª: <b>cefepima</b>. 5ª: <b>ceftarolina</b>."},{"id":"atb24","secao":"g3","tag":"Cefalosporinas","frente":"Profilaxia cirúrgica (qualquer cirurgia): droga e por quê","verso":"<b>Cefazolina</b>: a infecção é na ferida, por flora da pele (Gram+)."},{"id":"atb25","secao":"g3","tag":"Cefalosporinas","frente":"Cefuroxima em sinusite/otite é 1ª ou 2ª linha?","verso":"<b>2ª linha</b>, após falha da amoxicilina/amoxi-clav."},{"id":"atb26","secao":"g3","tag":"Cefalosporinas","frente":"Por que a cefoxitina quase não é usada?","verso":"É forte <b>indutora de betalactamase</b> (AmpC), que acaba destruindo a própria droga."},{"id":"atb27","secao":"g3","tag":"Cefalosporinas","frente":"Única cefalosporina de 3ª com ação antipseudomonas","verso":"<b>Ceftazidima</b>."},{"id":"atb28","secao":"g3","tag":"Cefalosporinas","frente":"Qual Gram+ a cefalosporina de 3ª geração pega?","verso":"<b>Pneumococo</b>."},{"id":"atb29","secao":"g3","tag":"Cefalosporinas","frente":"Efeito adverso intestinal clássico da ceftriaxona","verso":"Colite pseudomembranosa por <b><i>C. difficile</i></b> (2º antibiótico mais associado)."},{"id":"atb30","secao":"g3","tag":"Cefalosporinas","frente":"Higiene das mãos no <i>C. difficile</i>","verso":"<b>Água e sabão</b>; álcool gel não mata os esporos."},{"id":"atb31","secao":"g3","tag":"Cefalosporinas","frente":"Duas indicações da cefepima","verso":"<b>IRAS</b> e <b>neutropenia febril</b>."},{"id":"atb32","secao":"g3","tag":"Cefalosporinas","frente":"Neutropenia febril: escalonamento","verso":"Cefepima → grave/piora: + vancomicina → sem melhora: + antifúngico."},{"id":"atb33","secao":"g3","tag":"Cefalosporinas","frente":"Em quem a cefepima é neurotóxica?","verso":"Em quem tem <b>rim doente</b> (acúmulo)."},{"id":"atb34","secao":"g3","tag":"Cefalosporinas","frente":"Indicação da ceftarolina","verso":"<b>MRSA documentado</b> em cultura."},{"id":"atb35","secao":"g4","tag":"Carbapenêmicos","frente":"Em que 2 situações o carbapenêmico é 1ª linha?","verso":"<b>ESBL</b> (meropeném) e <b>infecção pancreática</b> (imipeném)."},{"id":"atb36","secao":"g4","tag":"Carbapenêmicos","frente":"O que os carbapenêmicos não pegam?","verso":"<b>MRSA, atípicos e KPC</b>."},{"id":"atb37","secao":"g4","tag":"Carbapenêmicos","frente":"Carbapenêmico que não pega <i>Pseudomonas</i>","verso":"<b>Ertapeném</b> (IM/IV, 1×/dia)."},{"id":"atb38","secao":"g4","tag":"Carbapenêmicos","frente":"Função da cilastatina","verso":"Inibe a <b>desidropeptidase renal</b>, que destruiria o imipeném."},{"id":"atb39","secao":"g4","tag":"Carbapenêmicos","frente":"Quando escalar para meropeném na IRAS?","verso":"Piora após 48–72 h de <b>pipe-tazo ou cefepima</b>."},{"id":"atb40","secao":"g4","tag":"Carbapenêmicos","frente":"Melhor droga contra KPC","verso":"<b>Ceftazidima-avibactam</b>."},{"id":"atb41","secao":"g4","tag":"Carbapenêmicos","frente":"Estratégia de duplo carbapenêmico contra KPC","verso":"<b>Ertapeném</b> primeiro (isca para a carbapenemase), <b>meropeném</b> 1 h depois."},{"id":"atb42","secao":"g4","tag":"Carbapenêmicos","frente":"ESBL \"sensível\" a pipe-tazo: o que usar?","verso":"<b>Meropeném</b> (sensibilidade só <i>in vitro</i>)."},{"id":"atb43","secao":"g4","tag":"Carbapenêmicos","frente":"Bactérias do grupo CESP","verso":"<i>Citrobacter</i>, <i>Enterobacter</i>, <i>Serratia</i>, <i>Proteus</i> + <i>Morganella</i>, <i>Providencia</i>."},{"id":"atb44","secao":"g4","tag":"Carbapenêmicos","frente":"Por que evitar ceftriaxona no grupo CESP?","verso":"AmpC desligada é <b>induzida</b>; sensibilidade <i>in vitro</i> não vale <i>in vivo</i>."},{"id":"atb45","secao":"g4","tag":"Carbapenêmicos","frente":"Quem pega <i>Pseudomonas</i> (aula)?","verso":"Pipe-tazo, ceftazidima, cefepima, meropeném, imipeném. <b>Não:</b> ceftriaxona e ertapeném."},{"id":"atb46","secao":"g5","tag":"Outras classes","frente":"Vancomicina: classe e espectro","verso":"<b>Glicopeptídeo</b>; só Gram+, incluindo MRSA."},{"id":"atb47","secao":"g5","tag":"Outras classes","frente":"Síndrome do homem vermelho: causa e conduta","verso":"Infusão rápida de vancomicina; não é alergia → <b>infundir mais devagar</b>."},{"id":"atb48","secao":"g5","tag":"Outras classes","frente":"Por que vancomicina VO trata <i>C. difficile</i>?","verso":"Não é absorvida: <b>age só no intestino</b>."},{"id":"atb49","secao":"g5","tag":"Outras classes","frente":"Macrolídeo sozinho ou com ceftriaxona: qual escolher?","verso":"Sozinho: <b>claritromicina</b> (pneumococo). Com ceftriaxona: <b>azitromicina</b> (menos diarreia)."},{"id":"atb50","secao":"g5","tag":"Outras classes","frente":"Doxiciclina é macrolídeo?","verso":"<b>Não</b>: é tetraciclina (ribossomo 30S)."},{"id":"atb51","secao":"g5","tag":"Outras classes","frente":"Clindamicina: espectro e efeito adverso clássico","verso":"Gram+ e anaeróbios; <b>mais associada ao <i>C. difficile</i></b>."},{"id":"atb52","secao":"g5","tag":"Outras classes","frente":"Metronidazol: espectro e interação","verso":"Só <b>anaeróbios</b> (e protozoários); <b>efeito antabuse</b> com álcool."},{"id":"atb53","secao":"g5","tag":"Outras classes","frente":"Efeitos adversos das quinolonas","verso":"Tendinite/ruptura de tendão, QT longo, aneurisma de aorta; evitar em gestantes e crianças."},{"id":"atb54","secao":"g6","tag":"Associações","frente":"Pergunta-chave para escolher o parceiro da ceftriaxona","verso":"\"O que a ceftriaxona <b>não pega</b> e costuma estar nesse lugar?\""},{"id":"atb55","secao":"g6","tag":"Associações","frente":"Colangite","verso":"Ceftriaxona + <b>metronidazol</b> (bile = intestino → anaeróbio)."},{"id":"atb56","secao":"g6","tag":"Associações","frente":"Pé diabético","verso":"Ceftriaxona + <b>clindamicina</b> (anaeróbio + Gram+)."},{"id":"atb57","secao":"g6","tag":"Associações","frente":"DIP","verso":"Ceftriaxona + <b>metronidazol + doxiciclina</b> (anaeróbio + clamídia)."},{"id":"atb58","secao":"g6","tag":"Associações","frente":"Pneumonia que interna","verso":"Ceftriaxona + <b>azitromicina</b> (atípicos)."},{"id":"atb59","secao":"g6","tag":"Associações","frente":"Endocardite de valva nativa (aula)","verso":"Ceftriaxona + <b>oxacilina</b> (MSSA)."},{"id":"atb60","secao":"g6","tag":"Associações","frente":"PBE: critério e tratamento","verso":"Neutrófilos <b>&gt; 250/mm³</b>; ceftriaxona <b>sozinha</b>."},{"id":"atb61","secao":"g6","tag":"Associações","frente":"Meningite em ≥ 50 anos","verso":"Ceftriaxona dose dobrada + <b>ampicilina</b> (<i>Listeria</i>)."}],"kahoot":[{"tipo":"q","n":1,"pergunta":"Qual o mecanismo de ação dos betalactâmicos?","opcoes":["Inibem o ribossomo 30S","Ligam-se à PBP e impedem a parede","Rompem a membrana externa","Inibem a DNA girase"],"certa":1,"explica":"Travam a PBP; a parede enfraquece e a bactéria sofre lise. Ribossomo é macrolídeo/tetraciclina; membrana é polimixina; DNA girase é quinolona.","tempo":20},{"tipo":"q","n":2,"pergunta":"Paciente com pneumonia por <i>Mycoplasma</i>. Qual droga NÃO funciona?","opcoes":["Azitromicina","Doxiciclina","Levofloxacino","Meropeném"],"certa":3,"explica":"Nenhum betalactâmico pega atípico, nem o carbapenêmico.","tempo":20},{"tipo":"q","n":3,"pergunta":"Neurossífilis: droga de escolha","opcoes":["Benzatina 7.200.000 UI","Penicilina cristalina IV","Ceftriaxona","Doxiciclina"],"certa":1,"explica":"A benzatina não atinge o SNC adequadamente. Ceftriaxona é alternativa.","tempo":20},{"tipo":"q","n":4,"pergunta":"Gestante, VDRL 1:64, treponêmico +, sem lesões, sem data da infecção","opcoes":["Benzatina 2.400.000 UI dose única","Benzatina 2.400.000 UI semanal × 3","Doxiciclina 15 dias","Cristalina IV"],"certa":1,"explica":"Sem data = latente tardia: 3 doses. Doxiciclina é contraindicada na gestação.","tempo":20},{"tipo":"q","n":5,"pergunta":"Faringite estreptocócica em adulto não alérgico","opcoes":["Amoxicilina + clavulanato","Amoxicilina pura ou benzatina","Cefuroxima","Azitromicina"],"certa":1,"explica":"<i>S. pyogenes</i> não produz betalactamase: clavulanato não acrescenta nada.","tempo":20},{"tipo":"q","n":6,"pergunta":"Idoso de 80 anos, febre baixa e prostração, líquor com bacilo Gram-positivo","opcoes":["Ceftriaxona isolada","Ceftriaxona + ampicilina","Vancomicina isolada","Meropeném"],"certa":1,"explica":"Bacilo Gram+ no idoso = <i>Listeria</i>: ampicilina.","tempo":20},{"tipo":"q","n":7,"pergunta":"Antibiótico de profilaxia para cirurgia cardíaca","opcoes":["Ceftriaxona","Cefazolina","Cefepima","Vancomicina"],"certa":1,"explica":"Flora da pele (Gram+): cefalosporina de 1ª geração venosa.","tempo":20},{"tipo":"q","n":8,"pergunta":"Sinusite no 3º dia de amoxi-clav sem melhora. Próximo passo (aula)","opcoes":["Meropeném","Cefuroxima","Ceftriaxona IM","Manter e esperar 10 dias"],"certa":1,"explica":"Cefuroxima é a 2ª linha nas infecções de vias aéreas.","tempo":20},{"tipo":"q","n":9,"pergunta":"Qual cefalosporina de 3ª geração pega <i>Pseudomonas</i>?","opcoes":["Ceftriaxona","Cefotaxima","Ceftazidima","Cefuroxima"],"certa":2,"explica":"\"A Taz\" é a única de 3ª antipseudomonas.","tempo":20},{"tipo":"q","n":10,"pergunta":"Pneumonia comunitária com indicação de internamento","opcoes":["Amoxicilina pura","Ceftriaxona + azitromicina","Pipe-tazo","Meropeném + vancomicina"],"certa":1,"explica":"Não é pneumonia hospitalar: cobre-se pneumococo (ceftriaxona) e atípicos (macrolídeo).","tempo":20},{"tipo":"q","n":11,"pergunta":"Paciente em uso de ceftriaxona evolui com 10 evacuações aquosas/dia. Higiene das mãos?","opcoes":["Álcool gel","Água e sabão","Clorexidina alcoólica","Não precisa isolamento"],"certa":1,"explica":"<i>C. difficile</i>: esporos não morrem com álcool.","tempo":20},{"tipo":"q","n":12,"pergunta":"Quimioterapia, febre, neutropenia, paciente estável","opcoes":["Cefepima","Cefepima + vancomicina","Ceftriaxona","Fluconazol"],"certa":0,"explica":"Primeira linha: cefepima isolada; vancomicina se grave ou piora.","tempo":20},{"tipo":"q","n":13,"pergunta":"Cefepima + vancomicina sem melhora na neutropenia febril. Próximo passo","opcoes":["Trocar por ceftriaxona","Acrescentar antifúngico","Suspender tudo","Acrescentar metronidazol"],"certa":1,"explica":"Gram− e Gram+ já cobertos: pensar em fungo.","tempo":20},{"tipo":"q","n":14,"pergunta":"Hemocultura com MRSA. Qual betalactâmico funciona?","opcoes":["Meropeném","Oxacilina","Ceftarolina","Pipe-tazo"],"certa":2,"explica":"Só a ceftarolina pega MRSA entre os betalactâmicos.","tempo":20},{"tipo":"q","n":15,"pergunta":"ESBL sensível a pipe-tazo, meropeném e amicacina no antibiograma","opcoes":["Pipe-tazo","Meropeném","Amicacina","Ceftriaxona"],"certa":1,"explica":"ESBL: carbapenêmico; a sensibilidade à pipe-tazo é só <i>in vitro</i>.","tempo":20},{"tipo":"q","n":16,"pergunta":"<i>Providencia</i> sensível à ceftriaxona no antibiograma. Conduta (aula)","opcoes":["Usar ceftriaxona","Evitar ceftriaxona","Ceftriaxona em dose dobrada","Associar clavulanato"],"certa":1,"explica":"Grupo CESP: AmpC induzível; evitar 3ª geração.","tempo":20},{"tipo":"q","n":17,"pergunta":"Qual carbapenêmico NÃO pega <i>Pseudomonas</i>?","opcoes":["Meropeném","Imipeném","Ertapeném","Nenhum"],"certa":2,"explica":"Ertapeném: 1×/dia, IM ou IV, pele e partes moles.","tempo":20},{"tipo":"q","n":18,"pergunta":"Pancreatite necrosante infectada","opcoes":["Ertapeném","Imipeném-cilastatina","Ceftriaxona","Ampicilina"],"certa":1,"explica":"Melhor penetração pancreática.","tempo":20},{"tipo":"q","n":19,"pergunta":"KPC isolada. Melhor droga","opcoes":["Meropeném","Pipe-tazo","Ceftazidima-avibactam","Cefepima"],"certa":2,"explica":"Carbapenêmicos não pegam KPC; o avibactam protege a ceftazidima.","tempo":20},{"tipo":"q","n":20,"pergunta":"Colangite (tríade de Charcot)","opcoes":["Ceftriaxona isolada","Ceftriaxona + metronidazol","Ceftriaxona + azitromicina","Vancomicina"],"certa":1,"explica":"Bile = intestino: Gram− + anaeróbios.","tempo":20},{"tipo":"q","n":21,"pergunta":"DIP: esquema","opcoes":["Ceftriaxona isolada","Ceftriaxona + metronidazol + doxiciclina","Amoxicilina","Azitromicina isolada"],"certa":1,"explica":"Anaeróbios (metronidazol) e clamídia (doxiciclina).","tempo":20},{"tipo":"q","n":22,"pergunta":"Pé diabético com ferida profunda e necrose","opcoes":["Cefalexina","Ceftriaxona + clindamicina","Metronidazol isolado","Azitromicina"],"certa":1,"explica":"Ceftriaxona para Gram−; clindamicina para Gram+ e anaeróbios.","tempo":20},{"tipo":"q","n":23,"pergunta":"Cirrótico, ascite, febre, PMN 480/mm³ no líquido","opcoes":["Ceftriaxona","Ceftriaxona + metronidazol","Vancomicina","Cirurgia de urgência"],"certa":0,"explica":"PBE: Gram− do intestino; ceftriaxona sozinha.","tempo":20},{"tipo":"q","n":24,"pergunta":"Infusão rápida de vancomicina causa vermelhidão no tronco. Conduta","opcoes":["Suspender por alergia","Infundir mais devagar","Trocar por oxacilina","Dar adrenalina"],"certa":1,"explica":"Síndrome do homem vermelho: não é alergia.","tempo":20}],"kahootInfo":{"titulo":"Quiz de revisão · Antibióticos","capa":"{n} perguntas de revisão feitas a partir das aulas de penicilinas, cefalosporinas e carbapenêmicos. Não é um Kahoot de professor. Quanto mais cedo acertar, mais pontos.","botao":"Começar o quiz"},"casos":[{"id":"a1","nivel":"Difícil","titulo":"Seu Antônio e a febre do terceiro dia","resumo":"Da pneumonia comunitária à infecção hospitalar e ao escalonamento.","tags":["Pneumonia","IRAS","Escalonamento"],"secoes":["g3","g4","r6"],"abertura":"<p><strong>Antônio, 68 anos</strong>, diabético e com DPOC, chega com febre, tosse produtiva e confusão leve. FR 32, PA 88/56, ureia elevada. RX: consolidação em lobo inferior direito.</p>","etapas":[{"titulo":"Onde tratar","pergunta":"CURB-65 alto e hipotensão. Qual o esquema inicial?","opcoes":["Amoxi-clav + azitromicina em casa","Ceftriaxona + azitromicina internado","Pipe-tazo","Meropeném"],"certa":1,"explica":"Pneumonia comunitária que interna: pneumococo (ceftriaxona) + atípicos (macrolídeo). Pipe-tazo é para infecção hospitalar."},{"titulo":"Macrolídeo","pergunta":"Por que azitromicina e não claritromicina aqui?","opcoes":["A azitro pega melhor o pneumococo","A ceftriaxona já pega o pneumococo e a azitro dá menos diarreia","A claritro não pega atípicos","Tanto faz"],"certa":1,"explica":"Associado à ceftriaxona, o macrolídeo entra só para atípicos; a azitro é mais tolerada."},{"titulo":"Nova febre","info":"<p>No 6º dia, já melhor, Antônio volta a ter febre e secreção purulenta na traqueostomia. Está internado há 6 dias.</p>","pergunta":"Que bactéria passa a ser obrigatório cobrir?","opcoes":["<i>Listeria</i>","<i>Pseudomonas</i>","<i>Mycoplasma</i>","<i>S. pyogenes</i>"],"certa":1,"explica":"≥ 48 h de internação = IRAS: cobrir <i>Pseudomonas</i>."},{"titulo":"Troca","pergunta":"Qual droga escolher agora?","opcoes":["Ceftriaxona em dose dobrada","Pipe-tazo ou cefepima","Ertapeném","Cefuroxima"],"certa":1,"explica":"Ceftriaxona e ertapeném não pegam <i>Pseudomonas</i>."},{"titulo":"Falha","info":"<p>72 h depois piora, com choque. Cultura ainda pendente.</p>","pergunta":"Próximo passo?","opcoes":["Manter e aguardar cultura","Escalar para meropeném","Trocar por ceftazidima-avibactam","Acrescentar metronidazol"],"certa":1,"explica":"Falha de pipe-tazo/cefepima em 48–72 h: meropeném. Ceftazidima-avibactam é reservada para KPC documentada."},{"titulo":"Cultura","info":"<p>Cultura: <i>Klebsiella pneumoniae</i> produtora de carbapenemase (KPC).</p>","pergunta":"E agora?","opcoes":["Manter meropeném","Ceftazidima-avibactam","Cefepima","Oxacilina"],"certa":1,"explica":"Carbapenêmicos não pegam KPC."}],"fechamento":"<h3>Pontos-chave</h3><ul><li>Pneumonia que interna ≠ pneumonia hospitalar.</li><li>IRAS obriga cobrir <i>Pseudomonas</i>.</li><li>Escalonar para carbapenêmico só após falha.</li><li>KPC → ceftazidima-avibactam.</li></ul><h3>Pegadinhas</h3><ul><li>Ceftriaxona \"forte\" não pega <i>Pseudomonas</i>.</li></ul>"},{"id":"a2","nivel":"Muito difícil","titulo":"Dona Lúcia e o antibiograma que mentiu","resumo":"Grupo CESP, ESBL e sensibilidade in vitro × in vivo.","tags":["CESP","ESBL","Antibiograma"],"secoes":["g4","r4"],"abertura":"<p><strong>Lúcia, 74 anos</strong>, sonda vesical há 2 semanas, febre e dor lombar. Urocultura: <i>Enterobacter cloacae</i> sensível à ceftriaxona, à cefepima e ao meropeném.</p>","etapas":[{"titulo":"A tentação","pergunta":"O antibiograma diz \"sensível\" à ceftriaxona. Usar?","opcoes":["Sim, é a mais barata","Não: grupo CESP com AmpC induzível","Sim, em dose dobrada","Sim, associada a clavulanato"],"certa":1,"explica":"<i>Enterobacter</i> é do grupo CESP: a ceftriaxona liga a AmpC e é destruída in vivo."},{"titulo":"O porquê","pergunta":"Por que o laboratório mostrou sensível?","opcoes":["Erro técnico","Na placa a droga mata antes de a bactéria ligar a enzima","A bactéria muda de espécie","O laboratório testou a dose errada"],"certa":1,"explica":"Sensibilidade in vitro ≠ in vivo."},{"titulo":"Escolha","pergunta":"Entre as opções sensíveis, qual faz mais sentido?","opcoes":["Ceftriaxona","Cefepima","Cefuroxima","Ertapeném IM em casa"],"certa":1,"explica":"Pela IDSA, a cefepima resiste melhor à AmpC e costuma ser preferida; o carbapenêmico fica para ESBL ou resistência maior. (Na aula, a ênfase é só evitar a 3ª geração.)"},{"titulo":"Segundo paciente","info":"<p>No leito ao lado, <i>E. coli</i> ESBL sensível a pipe-tazo, meropeném e amicacina.</p>","pergunta":"Qual droga?","opcoes":["Pipe-tazo","Meropeném","Ceftriaxona","Amoxi-clav"],"certa":1,"explica":"ESBL → meropeném, mesmo com pipe-tazo \"sensível\". Mais da metade da turma do ano anterior errou."}],"fechamento":"<h3>Pontos-chave</h3><ul><li>CESP: evitar 3ª geração.</li><li>ESBL: meropeném.</li><li>Antibiograma \"sensível\" nem sempre funciona no paciente.</li></ul>"},{"id":"a3","nivel":"Difícil","titulo":"Marina, a quimio e a febre que não cede","resumo":"Neutropenia febril e raciocínio por exclusão.","tags":["Neutropenia febril","Cefepima","Antifúngico"],"secoes":["g3","r3"],"abertura":"<p><strong>Marina, 34 anos</strong>, no 8º dia de quimioterapia para linfoma, tem febre de 38,6 °C. Neutrófilos 300/mm³. PA 118/72, sem foco aparente.</p>","etapas":[{"titulo":"Primeiro antibiótico","pergunta":"Qual a primeira escolha?","opcoes":["Ceftriaxona","Cefepima","Amoxi-clav","Vancomicina isolada"],"certa":1,"explica":"Neutropenia febril: droga antipseudomonas; a cefepima é a primeira linha da aula."},{"titulo":"Piora","info":"<p>Após 48 h, fica hipotensa e com hiperemia no local do cateter.</p>","pergunta":"O que acrescentar?","opcoes":["Metronidazol","Vancomicina","Azitromicina","Nada"],"certa":1,"explica":"Grave/piora: cobrir todos os Gram+, incluindo MRSA (o cateter reforça)."},{"titulo":"Ainda febril","info":"<p>Dias depois, ainda febril com cefepima + vancomicina; culturas negativas.</p>","pergunta":"Raciocínio?","opcoes":["Trocar por meropeném e parar","Gram+ e Gram− cobertos: pensar em fungo","É febre do tumor; suspender tudo","Acrescentar doxiciclina"],"certa":1,"explica":"Por exclusão, e porque o neutrófilo é quem segura fungos."},{"titulo":"Antifúngico","pergunta":"Ela está grave. Qual antifúngico (aula)?","opcoes":["Fluconazol","Equinocandina","Nistatina oral","Nenhum"],"certa":1,"explica":"Grave → equinocandina; estável → fluconazol."}],"fechamento":"<h3>Pontos-chave</h3><ul><li>Cefepima → + vancomicina → + antifúngico.</li></ul><h3>Nota</h3><ul><li>Pela IDSA, neutropenia = neutrófilos &lt; 500; antifúngico empírico em geral após 4–7 dias de febre.</li></ul>"},{"id":"a4","nivel":"Muito difícil","titulo":"O pronto-socorro de domingo","resumo":"Quatro pacientes, uma pergunta: o que somar à ceftriaxona?","tags":["Associações","Anaeróbios","Atípicos"],"secoes":["g6","r6"],"abertura":"<p>Plantão de domingo. Todos os pacientes vão receber ceftriaxona; sua tarefa é decidir o parceiro de cada um.</p>","etapas":[{"titulo":"Leito 1","info":"<p>Mulher de 52 anos: febre, icterícia e dor em hipocôndrio direito.</p>","pergunta":"Parceiro da ceftriaxona?","opcoes":["Azitromicina","Metronidazol","Ampicilina","Nenhum"],"certa":1,"explica":"Colangite: bile = intestino → anaeróbios."},{"titulo":"Leito 2","info":"<p>Mulher de 24 anos: dor pélvica, corrimento, dor à mobilização do colo.</p>","pergunta":"Esquema?","opcoes":["Ceftriaxona isolada","Ceftriaxona + metronidazol + doxiciclina","Ceftriaxona + azitromicina","Ceftriaxona + vancomicina"],"certa":1,"explica":"DIP: anaeróbios + clamídia."},{"titulo":"Leito 3","info":"<p>Cirrótico com ascite, febre; PMN 400/mm³ no líquido ascítico.</p>","pergunta":"Parceiro?","opcoes":["Metronidazol","Nenhum: ceftriaxona sozinha","Ampicilina","Clindamicina"],"certa":1,"explica":"PBE: Gram− aeróbios do intestino; anaeróbios quase não chegam."},{"titulo":"Leito 4","info":"<p>Homem de 71 anos: febre, rigidez de nuca, rebaixamento.</p>","pergunta":"Parceiro?","opcoes":["Ampicilina","Metronidazol","Doxiciclina","Nenhum"],"certa":0,"explica":"Meningite ≥ 50 anos: cobrir <i>Listeria</i>."},{"titulo":"Leito 5","info":"<p>Diabético com úlcera profunda e necrótica no pé, mau cheiro.</p>","pergunta":"Parceiro?","opcoes":["Clindamicina","Azitromicina","Ampicilina","Nenhum"],"certa":0,"explica":"Ferida profunda: anaeróbios + Gram+ da pele."}],"fechamento":"<h3>Pontos-chave</h3><ul><li>Pergunte: o que a ceftriaxona não pega e costuma estar aqui?</li></ul><h3>Pegadinhas</h3><ul><li>PBE não leva metronidazol; muitos anaeróbios sugerem perfuração.</li></ul>"},{"id":"a5","nivel":"Difícil","titulo":"Joana, 19 anos, e a garganta","resumo":"Faringite, mononucleose e febre reumática.","tags":["Faringite","Penicilinas","Febre reumática"],"secoes":["g2","r2"],"abertura":"<p><strong>Joana, 19 anos</strong>, odinofagia e febre há 3 dias. Amígdalas com exsudato, linfonodos cervicais posteriores aumentados, edema palpebral e baço palpável.</p>","etapas":[{"titulo":"Hipótese","pergunta":"Qual a principal hipótese?","opcoes":["Faringite estreptocócica","Mononucleose infecciosa","Difteria","Sífilis secundária"],"certa":1,"explica":"Linfonodo posterior + edema periorbitário + esplenomegalia = EBV."},{"titulo":"O erro","info":"<p>Ela tinha tomado amoxicilina por conta própria e surgiu rash difuso.</p>","pergunta":"O rash é…","opcoes":["Alergia à penicilina","Exantema da mononucleose precipitado pela amoxicilina","Escarlatina","Farmacodermia grave"],"certa":1,"explica":"Não é alergia; tratamento é sintomático."},{"titulo":"Outra paciente","info":"<p>Irmã de 10 anos: faringite com teste rápido positivo para estreptococo do grupo A.</p>","pergunta":"Tratamento?","opcoes":["Amoxi-clav","Amoxicilina pura ou benzatina","Ceftriaxona","Azitromicina"],"certa":1,"explica":"<i>S. pyogenes</i> não produz betalactamase."},{"titulo":"Depois","info":"<p>Meses depois, a irmã tem artrite migratória e sopro; eco com lesão mitral leve.</p>","pergunta":"Profilaxia secundária até quando?","opcoes":["Até os 21 anos","Até os 25 anos","5 anos","Por toda a vida"],"certa":1,"explica":"Cardite leve: 10 anos (até os 20) ou até 25: vale o que durar mais → 25."}],"fechamento":"<h3>Pontos-chave</h3><ul><li>Pus na amígdala não garante bactéria.</li><li>Febre reumática: o que durar mais.</li></ul>"},{"id":"a6","nivel":"Difícil","titulo":"Pedro, o pós-operatório e a diarreia","resumo":"Profilaxia cirúrgica, C. difficile e vancomicina.","tags":["Profilaxia","C. difficile","Vancomicina"],"secoes":["g3","g5","r3"],"abertura":"<p><strong>Pedro, 58 anos</strong>, vai fazer uma correção de aneurisma de aorta abdominal.</p>","etapas":[{"titulo":"Profilaxia","pergunta":"Qual antibiótico na indução?","opcoes":["Ceftriaxona, \"é mais forte\"","Cefazolina","Meropeném","Vancomicina de rotina"],"certa":1,"explica":"Flora da pele (Gram+): cefazolina."},{"titulo":"Infecção","info":"<p>No 5º dia, pneumonia hospitalar; recebe antibióticos de amplo espectro, incluindo ceftriaxona antes da troca.</p><p>Três dias depois: 12 evacuações aquosas/dia.</p>","pergunta":"Agente mais provável?","opcoes":["<i>Salmonella</i>","<i>Clostridioides difficile</i>","Rotavírus","<i>Shigella</i>"],"certa":1,"explica":"Antibiótico que destrói a flora → <i>C. difficile</i>."},{"titulo":"Isolamento","pergunta":"Que medida é obrigatória?","opcoes":["Álcool gel e máscara","Isolamento de contato e lavagem com água e sabão","Nenhuma","Isolamento respiratório"],"certa":1,"explica":"Esporos não morrem com álcool; principal causa de infecção cruzada em UTI."},{"titulo":"Tratamento","pergunta":"Qual tratamento (fora da aula)?","opcoes":["Vancomicina IV","Vancomicina oral","Ceftriaxona","Clindamicina"],"certa":1,"explica":"VO a vancomicina fica no intestino. IV não chega ao lúmen. Clindamicina é a mais associada ao <i>C. difficile</i>."}],"fechamento":"<h3>Pontos-chave</h3><ul><li>Profilaxia = cefazolina.</li><li><i>C. difficile</i>: contato + água e sabão + vancomicina oral.</li></ul>"}]}
+{
+ "id": "antibioticos",
+ "nome": "Farmacologia · Antibióticos",
+ "sigla": "ATB",
+ "sub": "Penicilinas, cefalosporinas, carbapenêmicos e parceiros",
+ "cor": "#5a9a7e",
+ "emoji": "",
+ "icone": "pilula",
+ "secoes": [
+  {
+   "id": "r0",
+   "grupo": "Resumo de referência",
+   "titulo": "Introdução",
+   "par": "g0",
+   "html": "<p><strong>Farmacologia · Antibióticos.</strong> Capítulo de referência das aulas de Penicilinas (27/10) e de Cefalosporinas e Carbapenêmicos (09/11), com as classes parceiras que aparecem nas associações.</p><h3>Introdução</h3><p>Escolher um antibiótico é responder, em sequência, onde está a infecção, quais bactérias costumam viver naquele lugar, se o paciente está em casa ou internado e qual é a menor arma capaz de alcançar essa bactéria naquele tecido. O raciocínio parte da estrutura da bactéria e do mecanismo do fármaco: quem entende por que a penicilina age na parede, por que o Gram-negativo resiste mais e por que as bactérias atípicas escapam dos betalactâmicos consegue deduzir o espectro de cada droga em vez de decorá-lo.</p><p>As aulas concentraram-se nos <strong>betalactâmicos</strong>, a classe mais usada na prática hospitalar e ambulatorial: penicilinas, cefalosporinas e carbapenêmicos. As demais classes aparecem como parceiras, para tapar as lacunas de espectro dos betalactâmicos em cada sítio de infecção. Ao final do capítulo, o leitor deve saber explicar o mecanismo e a resistência aos betalactâmicos, situar cada droga na sua posição de espectro, reconhecer as superbactérias e montar as associações clássicas.</p><p class=\"tabtit\"><strong>Tabela 0.1</strong>Seções do capítulo</p><table><thead><tr><th>Seção</th><th>Conteúdo</th></tr></thead><tbody><tr><td>1</td><td>Bases: parede, PBP, Gram-positivo e Gram-negativo, resistência, atípicos, tempo-dependência</td></tr><tr><td>2</td><td>Penicilinas: cristalina, benzatina, oxacilina, amoxicilina, ampicilina, piperacilina-tazobactam</td></tr><tr><td>3</td><td>Cefalosporinas: as cinco gerações e suas indicações</td></tr><tr><td>4</td><td>Carbapenêmicos e bactérias multirresistentes</td></tr><tr><td>5</td><td>Outras classes: vancomicina, macrolídeos, doxiciclina, clindamicina, metronidazol, quinolonas, aminoglicosídeos, polimixinas</td></tr><tr><td>6</td><td>Raciocínio clínico e associações</td></tr></tbody></table><p>Fontes: aulas da disciplina, dúvidas tiradas durante o estudo e o mapa mental de antibióticos do Drive. As notas de revisão indicam onde a literatura atual difere do que foi dito em aula.</p>"
+  },
+  {
+   "id": "r1",
+   "grupo": "Resumo de referência",
+   "titulo": "1. Bases: parede, Gram e resistência",
+   "par": "g1",
+   "html": "<h3>1.1 A parede bacteriana e o mecanismo dos betalactâmicos</h3><p>A parede celular bacteriana é formada pelo <strong>peptidoglicano</strong>, uma malha de cadeias de açúcares unidas por pontes peptídicas que confere rigidez à célula e a protege da pressão osmótica. As ligações cruzadas dessa malha são feitas por enzimas chamadas <strong>proteínas ligadoras de penicilina</strong> (PBP, do inglês <em>penicillin-binding proteins</em>), por meio de seu domínio transpeptidase, que reconhece a extremidade D-alanil-D-alanina dos peptídeos. A aula usa uma imagem útil: a parede é um muro de tijolos, e a PBP é o pedreiro que cola um tijolo no outro.</p><p>O anel betalactâmico imita estruturalmente a ligação D-alanil-D-alanina. A PBP liga-se ao antibiótico como se fosse seu substrato e fica inativada de forma covalente. Sem novas ligações cruzadas, a parede enfraquece enquanto a bactéria continua a crescer, a água entra e a célula sofre <strong>lise osmótica</strong>. Por isso os betalactâmicos são <strong>bactericidas</strong>. Penicilinas, cefalosporinas, carbapenêmicos e monobactâmicos (aztreonam) compartilham esse anel; o que os diferencia é o restante da molécula, que define quais bactérias alcançam, até onde penetram no organismo e quanto resistem às enzimas bacterianas.</p><h3>1.2 Gram-positivos e Gram-negativos</h3><p>A coloração de Gram reflete a arquitetura do envelope bacteriano, que determina o acesso do antibiótico à PBP (Tabela 1.1). Nos <strong>Gram-positivos</strong>, a parede é espessa, mas exposta, e o antibiótico chega diretamente às PBP. Nos <strong>Gram-negativos</strong>, a parede é fina e fica escondida atrás de uma membrana externa lipídica; o antibiótico precisa atravessar canais proteicos chamados <strong>porinas</strong> e sobreviver às betalactamases concentradas no espaço periplasmático, entre a membrana externa e a parede.</p><p class=\"tabtit\"><strong>Tabela 1.1</strong>Gram-positivos e Gram-negativos</p><table><thead><tr><th></th><th>Gram-positivo</th><th>Gram-negativo</th></tr></thead><tbody><tr><td>Cor na coloração</td><td>Roxo</td><td>Vermelho</td></tr><tr><td>Parede</td><td>Espessa e exposta</td><td>Fina, atrás de uma membrana externa</td></tr><tr><td>Acesso do antibiótico</td><td>Direto às PBP</td><td>Pelas porinas, enfrentando betalactamases no periplasma</td></tr><tr><td>Exemplos</td><td><em>S. aureus</em>, <em>S. pyogenes</em>, pneumococo, enterococo, <em>Listeria</em></td><td><em>E. coli</em>, <em>Klebsiella</em>, <em>Pseudomonas</em>, <em>H. influenzae</em>, <em>Moraxella</em>, <em>Neisseria</em></td></tr></tbody></table><h3>1.3 Mecanismos de resistência</h3><p>As bactérias resistem aos betalactâmicos por três mecanismos principais. As <strong>betalactamases</strong> são enzimas que hidrolisam o anel, a tesoura da analogia da aula; predominam nos Gram-negativos, e entre os Gram-positivos o <em>S. aureus</em> é a exceção importante, com sua penicilinase. A <strong>redução ou o fechamento das porinas</strong> impede a entrada do antibiótico e só existe nos Gram-negativos, porque apenas eles têm membrana externa. A <strong>alteração das PBP</strong> diminui a afinidade pelo antibiótico, de modo que o pedreiro muda de forma e a droga não encaixa mais; é o mecanismo do <em>S. aureus</em> resistente à meticilina (MRSA), que expressa a PBP2a. As bombas de efluxo, que expulsam o fármaco, completam o repertório.</p><h3>1.4 Bactérias atípicas</h3><p><em>Mycoplasma pneumoniae</em>, <em>Chlamydophila</em> e <em>Chlamydia</em> e <em>Legionella</em> são chamadas atípicas porque fogem do padrão: o <em>Mycoplasma</em> não tem parede celular, e as demais vivem dentro das células do hospedeiro, onde os betalactâmicos penetram mal. Por isso <strong>nenhum betalactâmico atua contra atípicos</strong>, nem mesmo os carbapenêmicos. As drogas ativas são os macrolídeos, a doxiciclina e as quinolonas respiratórias.</p><h3>1.5 Farmacodinâmica: tempo-dependência</h3><p>O efeito dos betalactâmicos depende do <strong>tempo</strong> durante o qual a concentração do fármaco permanece acima da concentração inibitória mínima, e não da altura do pico. Por isso são administrados em várias doses diárias ou em infusão prolongada, e o gráfico de concentração pelo tempo tem aspecto de platô. Aminoglicosídeos e quinolonas, ao contrário, são concentração-dependentes, com efeito proporcional ao pico.</p><blockquote><strong>Nota de revisão:</strong> A aula afirma que nenhum betalactâmico deve correr em menos de quatro horas. A infusão prolongada é recomendada sobretudo em pacientes graves; a infusão de 30 minutos ainda é padrão em muitos cenários.</blockquote><h3>1.6 Alergia</h3><p>O anel betalactâmico é muito alergênico, e a alergia é o principal efeito adverso das penicilinas. As penicilinas são seguras na gestação.</p><blockquote><strong>Nota de revisão:</strong> A reação cruzada depende mais das cadeias laterais do que do anel: com carbapenêmicos e aztreonam fica abaixo de 1%; com cefalosporinas é baixa no geral e maior quando a cadeia lateral é igual, como entre amoxicilina e cefalexina.</blockquote>"
+  },
+  {
+   "id": "r2",
+   "grupo": "Resumo de referência",
+   "titulo": "2. Penicilinas",
+   "par": "g2",
+   "html": "<h3>2.1 A lógica histórica</h3><p>Cada nova penicilina foi desenvolvida para alcançar as bactérias que sobreviviam à anterior. Conhecendo essa sequência, o espectro de cada droga pode ser deduzido: da penicilina natural, de espectro estreito, à oxacilina, resistente à penicilinase do estafilococo, às aminopenicilinas, que atravessam as porinas dos Gram-negativos comunitários, e à piperacilina-tazobactam, que alcança a <em>Pseudomonas</em>. A Tabela 2.1 resume o espectro e o uso de cada uma.</p><p class=\"tabtit\"><strong>Tabela 2.1</strong>Penicilinas: espectro e uso</p><table><thead><tr><th>Droga</th><th>Via</th><th>Atua contra</th><th>Não atua contra</th><th>Uso principal</th></tr></thead><tbody><tr><td>Penicilina G cristalina</td><td>IV</td><td>Gram-positivos sensíveis, espiroquetas (<em>Treponema</em>, <em>Leptospira</em>)</td><td>Gram-negativos, <em>S. aureus</em> produtor de penicilinase, atípicos</td><td>Neurossífilis, leptospirose</td></tr><tr><td>Penicilina G benzatina</td><td>IM</td><td>Igual à cristalina</td><td>Igual à cristalina</td><td>Sífilis (exceto neurossífilis), faringite, profilaxia da febre reumática</td></tr><tr><td>Oxacilina</td><td>IV</td><td>Gram-positivos, incluindo MSSA</td><td>MRSA, Gram-negativos, anaeróbios, atípicos</td><td>Infecção grave por <em>S. aureus</em> sensível</td></tr><tr><td>Amoxicilina (± clavulanato)</td><td>VO</td><td>Gram-positivos, Gram-negativos comunitários, anaeróbios (com clavulanato)</td><td>MRSA, Gram-negativos hospitalares, atípicos</td><td>Vias aéreas</td></tr><tr><td>Ampicilina (± sulbactam)</td><td>IV</td><td>Como a amoxicilina, mais <em>Listeria</em> e <em>Shigella</em></td><td>Como a amoxicilina</td><td>Paciente internado; meningite em maiores de 50 anos</td></tr><tr><td>Piperacilina-tazobactam</td><td>IV</td><td>Gram-positivos, Gram-negativos incluindo <em>Pseudomonas</em>, anaeróbios</td><td>MRSA, ESBL, KPC, atípicos</td><td>Infecção relacionada à assistência</td></tr></tbody></table><h3>2.2 Penicilinas naturais: cristalina e benzatina</h3><p>A penicilina G cristalina e a benzatina têm o mesmo espectro, o mais estreito entre as penicilinas. A cristalina é intravenosa, de uso hospitalar, e é a primeira linha na neurossífilis e na leptospirose. A benzatina é intramuscular e forma um depósito que libera o fármaco lentamente durante cerca de três semanas, o que garante a adesão. Seus usos clássicos são a sífilis, nos esquemas da Tabela 2.2, a faringite estreptocócica e a profilaxia secundária da febre reumática, com 1.200.000 UI a cada 21 dias; essa profilaxia dura cinco anos ou até os 21 anos na ausência de cardite, dez anos ou até os 25 anos na cardite leve e até os 40 anos ou por toda a vida na lesão moderada ou grave, valendo o prazo que durar mais.</p><p class=\"tabtit\"><strong>Tabela 2.2</strong>Tratamento da sífilis com penicilina</p><table><thead><tr><th>Estágio</th><th>Esquema</th></tr></thead><tbody><tr><td>Primária, secundária, latente recente</td><td>Benzatina 2.400.000 UI IM, dose única (1.200.000 UI em cada glúteo)</td></tr><tr><td>Latente tardia, duração ignorada, terciária</td><td>Benzatina 2.400.000 UI semanal por 3 semanas (7.200.000 UI)</td></tr><tr><td>Neurossífilis</td><td>Penicilina cristalina IV</td></tr><tr><td>Gestante alérgica</td><td>Dessensibilizar e usar penicilina</td></tr></tbody></table><h3>2.3 Oxacilina e a escada do Staphylococcus aureus</h3><p>A oxacilina foi desenvolvida para o <em>S. aureus</em> produtor de penicilinase, sensível à meticilina (MSSA), e é indicada em infecções graves por esse germe: artrite séptica, abscessos, celulite grave e endocardite de valva nativa. A resistência do estafilococo progride em degraus: sensível à penicilina, MSSA tratado com oxacilina, MRSA tratado com vancomicina ou ceftarolina e, no topo, as cepas com sensibilidade intermediária ou resistentes à vancomicina.</p><h3>2.4 Aminopenicilinas: amoxicilina e ampicilina</h3><p>A amoxicilina tem molécula menor e mais hidrofílica que a penicilina G, o que lhe permite atravessar as porinas dos Gram-negativos comunitários. O uso maciço selecionou <em>H. influenzae</em> e <em>Moraxella</em> produtores de betalactamase, e daí a associação com o <strong>clavulanato</strong>, que funciona como escudo. Clavulanato, sulbactam, tazobactam e avibactam são <strong>inibidores de betalactamase</strong>, sem ação antibacteriana relevante isolada. A escolha nas infecções respiratórias segue os agentes de cada sítio (Tabela 2.3).</p><p class=\"tabtit\"><strong>Tabela 2.3</strong>Aminopenicilinas nas infecções respiratórias</p><table><thead><tr><th>Infecção</th><th>Agentes</th><th>Escolha</th></tr></thead><tbody><tr><td>Faringite</td><td><em>S. pyogenes</em>, que não produz betalactamase</td><td>Amoxicilina pura por 10 dias ou benzatina</td></tr><tr><td>Otite e sinusite</td><td>Pneumococo, <em>H. influenzae</em>, <em>Moraxella</em></td><td>Amoxicilina com clavulanato</td></tr><tr><td>Pneumonia ambulatorial sem comorbidade</td><td>Pneumococo</td><td>Amoxicilina ou amoxicilina-clavulanato</td></tr><tr><td>Pneumonia ambulatorial com comorbidade</td><td>Pneumococo e atípicos</td><td>Amoxicilina-clavulanato com macrolídeo</td></tr></tbody></table><p>Na mononucleose infecciosa, faringite viral pelo vírus Epstein-Barr, a amoxicilina precipita um exantema que não é alergia; linfonodos cervicais posteriores, edema periorbitário e esplenomegalia sugerem o diagnóstico. A ampicilina, de uso intravenoso, tem o espectro da amoxicilina mais a <em>Listeria</em>, bacilo Gram-positivo, e a <em>Shigella</em>; na meningite em maiores de 50 anos é associada à ceftriaxona para cobrir a <em>Listeria</em>.</p><h3>2.5 Piperacilina-tazobactam</h3><p>É a penicilina mais potente e a única ativa contra <em>Pseudomonas</em>. É primeira linha nas infecções relacionadas à assistência, adquiridas após 48 horas de internação, ao lado da cefepima, sobre a qual tem a vantagem de cobrir anaeróbios. Não serve para meningite, por penetrar mal no sistema nervoso central, nem para bactérias produtoras de betalactamase de espectro estendido (ESBL).</p>"
+  },
+  {
+   "id": "r3",
+   "grupo": "Resumo de referência",
+   "titulo": "3. Cefalosporinas",
+   "par": "g3",
+   "html": "<h3>3.1 As gerações e a gangorra do espectro</h3><p>As cefalosporinas têm o mesmo mecanismo das penicilinas e são os antibióticos mais usados no hospital. Organizam-se em gerações que se comportam como uma gangorra: da primeira à quarta, perdem atividade contra Gram-positivos e ganham contra Gram-negativos; a quinta volta a atuar fortemente sobre Gram-positivos, inclusive o MRSA. Nenhuma cefalosporina atua contra enterococo, atípicos ou anaeróbios, com a exceção teórica da cefoxitina para anaeróbios. A Tabela 3.1 apresenta as gerações.</p><p class=\"tabtit\"><strong>Tabela 3.1</strong>Gerações de cefalosporinas</p><table><thead><tr><th>Geração</th><th>Representantes</th><th>Espectro</th><th>Uso</th></tr></thead><tbody><tr><td>1ª</td><td>Cefalexina, cefadroxila (VO); cefalotina, cefazolina (IV)</td><td>Gram-positivos e MSSA; entre Gram-negativos, só <em>E. coli</em></td><td>Pele e subcutâneo; profilaxia cirúrgica (cefazolina)</td></tr><tr><td>2ª</td><td>Cefuroxima, cefaclor, cefoxitina</td><td>Equilibrado; perde o MSSA</td><td>Vias aéreas, como segunda linha</td></tr><tr><td>3ª</td><td>Ceftriaxona, ceftazidima, cefotaxima</td><td>Gram-negativos e pneumococo; ceftazidima cobre <em>Pseudomonas</em></td><td>Pacientes internados: pneumonia, meningite, pielonefrite, peritonite bacteriana espontânea, colangite</td></tr><tr><td>4ª</td><td>Cefepima</td><td>Gram-negativos, incluindo <em>Pseudomonas</em></td><td>Infecção relacionada à assistência, neutropenia febril</td></tr><tr><td>5ª</td><td>Ceftarolina</td><td>Gram-positivos, incluindo MRSA</td><td>MRSA documentado</td></tr></tbody></table><h3>3.2 Primeira geração e profilaxia cirúrgica</h3><p>A infecção cirúrgica costuma ocorrer na ferida, pela flora da pele, formada sobretudo por <em>S. pyogenes</em> e <em>S. aureus</em>. Por isso a cefazolina, ativa contra esses germes, é a profilaxia de praticamente todas as cirurgias, inclusive as cardíacas. As cefalosporinas de primeira geração penetram bem na pele, no subcutâneo e, no máximo, na fáscia, e são usadas nas infecções de pele; a cefadroxila, administrada a cada 12 horas, tem posologia mais cômoda que a cefalexina, a cada seis horas.</p><blockquote><strong>Nota de revisão:</strong> A aula fala em manter a profilaxia por 24 a 48 horas. As diretrizes atuais recomendam suspender no fechamento da incisão ou, no máximo, em 24 horas; a dose usual de cefazolina é 2 g IV (3 g acima de 120 kg).</blockquote><h3>3.3 Segunda geração</h3><p>As cefalosporinas de segunda geração têm excelente penetração nas vias aéreas, incluindo seios da face, ouvido, faringe e pulmão. A cefuroxima é a segunda linha em otite, sinusite, faringite e pneumonia ambulatorial após falha da amoxicilina. A cefoxitina é a única com ação contra anaeróbios, mas é pouco usada porque induz betalactamases do tipo AmpC que a destroem.</p><h3>3.4 Terceira geração: ceftriaxona e ceftazidima</h3><p>A ceftriaxona penetra em quase todos os tecidos, inclusive o sistema nervoso central, e atua contra a maioria dos Gram-negativos comunitários (<em>E. coli</em>, <em>Klebsiella</em>, <em>Proteus</em>, <em>Salmonella</em>, <em>Shigella</em>, <em>Neisseria</em>, <em>H. influenzae</em>, <em>Moraxella</em>) e contra o pneumococo. Não atua contra <em>Pseudomonas</em>, bactérias produtoras de ESBL ou de carbapenemase (KPC), enterococo, MSSA, anaeróbios e atípicos. Entre as de terceira geração, apenas a ceftazidima cobre <em>Pseudomonas</em>. Associada ao avibactam, inibidor de betalactamase que não é um betalactâmico, a ceftazidima torna-se a melhor opção contra a KPC, mas não atua contra as metalobetalactamases, como a NDM.</p><p>Um efeito adverso importante da ceftriaxona é a <strong>colite por <em>Clostridioides difficile</em></strong>. Ao eliminar a flora Gram-negativa intestinal, o antibiótico permite a proliferação do <em>C. difficile</em>, que vivia ali em pequena quantidade, e a produção de toxinas que causam colite pseudomembranosa, com diarreia aquosa volumosa. A ceftriaxona é o segundo antibiótico mais associado, depois da clindamicina. O paciente fica em isolamento de contato, e a higiene das mãos deve ser feita com água e sabão, porque o álcool não destrói os esporos. O tratamento, fora do escopo da aula, usa vancomicina oral ou fidaxomicina.</p><h3>3.5 Quarta e quinta gerações</h3><p>A cefepima atua contra Gram-negativos, inclusive <em>Pseudomonas</em>, e é primeira linha nas infecções relacionadas à assistência e na neutropenia febril. Pode causar neurotoxicidade, com confusão, ataxia e convulsões, em pacientes com função renal reduzida. Na neutropenia febril, a sequência da aula é cefepima; se o paciente for grave ou piorar em 48 horas, acrescenta-se vancomicina; se ainda não melhorar, acrescenta-se antifúngico, equinocandina se grave ou fluconazol se não. O raciocínio é por exclusão: cobertos os Gram-negativos e os Gram-positivos, restam os fungos.</p><blockquote><strong>Nota de revisão:</strong> Pela IDSA, neutropenia febril é definida por neutrófilos abaixo de 500/mm³ (ou abaixo de 1.000 com queda prevista) e temperatura de 38,3 °C ou de 38 °C por uma hora. Na aula o corte citado foi 1.000. O antifúngico empírico costuma entrar após quatro a sete dias de febre.</blockquote><p>A ceftarolina é a única cefalosporina ativa contra o MRSA, porque se liga à PBP2a. É menos nefrotóxica que a vancomicina, mas pouco disponível nos hospitais. Na prova, MRSA confirmado em cultura leva à ceftarolina.</p>"
+  },
+  {
+   "id": "r4",
+   "grupo": "Resumo de referência",
+   "titulo": "4. Carbapenêmicos e superbactérias",
+   "par": "g4",
+   "html": "<h3>4.1 Por que os carbapenêmicos são os mais potentes</h3><p>Os carbapenêmicos são os betalactâmicos de espectro mais amplo. Têm duas vantagens estruturais: o anel resiste a cerca de 99% das betalactamases, e a molécula atravessa porinas adicionais dos Gram-negativos, como a OprD da <em>Pseudomonas</em>, que normalmente transporta aminoácidos. Atuam contra Gram-positivos, incluindo MSSA, Gram-negativos, incluindo <em>Pseudomonas</em>, <em>Acinetobacter</em> e produtores de ESBL, e anaeróbios. Não atuam contra MRSA, atípicos e bactérias produtoras de carbapenemase. A regra da aula é que <strong>nunca são primeira linha</strong>, com duas exceções: o meropeném para infecções por ESBL e o imipeném para infecção pancreática. A Tabela 4.1 compara os três principais.</p><p class=\"tabtit\"><strong>Tabela 4.1</strong>Carbapenêmicos</p><table><thead><tr><th>Droga</th><th>Características</th></tr></thead><tbody><tr><td>Meropeném</td><td>O mais potente; primeira linha para ESBL; escalonamento após falha de piperacilina-tazobactam ou cefepima</td></tr><tr><td>Imipeném com cilastatina</td><td>A cilastatina inibe a desidropeptidase renal, que degradaria o imipeném; melhor penetração no pâncreas, indicado na pancreatite necrosante infectada</td></tr><tr><td>Ertapeném</td><td>Não cobre <em>Pseudomonas</em> nem <em>Acinetobacter</em>; dose única diária, IM ou IV; útil em pele e partes moles e tratamento domiciliar</td></tr></tbody></table><blockquote><strong>Nota de revisão:</strong> A aula atribui à cilastatina acidose tubular. Na literatura, a cilastatina é nefroprotetora; o efeito adverso típico do imipeném é a convulsão.</blockquote><h3>4.2 Bactérias multirresistentes</h3><p>As <strong>betalactamases de espectro estendido</strong> (ESBL) hidrolisam penicilinas e cefalosporinas, inclusive as de terceira e quarta gerações. O tratamento é o meropeném, mesmo quando o antibiograma mostra piperacilina-tazobactam sensível. O <strong>grupo CESP</strong> (<em>Citrobacter</em>, <em>Enterobacter</em>, <em>Serratia</em>, <em>Proteus</em> e também <em>Morganella</em> e <em>Providencia</em>) possui betalactamase AmpC cromossômica que permanece desligada até ser induzida; as cefalosporinas a induzem, e por isso devem ser evitadas mesmo com antibiograma sensível. A <strong>KPC</strong>, carbapenemase de <em>Klebsiella pneumoniae</em>, destrói os carbapenêmicos; é tratada com ceftazidima-avibactam ou, na falta dela, com polimixinas ou aminoglicosídeos, nefrotóxicos. A <em>Pseudomonas</em> reúne todos os mecanismos de resistência e é tratada com piperacilina-tazobactam, cefepima ou ceftazidima, reservando o meropeném para a falha. O MRSA é tratado com ceftarolina ou vancomicina. A Tabela 4.2 resume essas condutas.</p><p class=\"tabtit\"><strong>Tabela 4.2</strong>Bactérias multirresistentes e conduta</p><table><thead><tr><th>Problema</th><th>O que é</th><th>Conduta</th></tr></thead><tbody><tr><td>ESBL</td><td>Betalactamase de espectro estendido</td><td>Meropeném, mesmo com piperacilina-tazobactam sensível</td></tr><tr><td>Grupo CESP</td><td>AmpC induzível pelas cefalosporinas</td><td>Evitar cefalosporina de 3ª geração mesmo se sensível</td></tr><tr><td>KPC</td><td>Carbapenemase de <em>Klebsiella</em></td><td>Ceftazidima-avibactam; sem ela, polimixina ou aminoglicosídeo; resgate com duplo carbapenêmico</td></tr><tr><td><em>Pseudomonas</em></td><td>Múltiplos mecanismos</td><td>Piperacilina-tazobactam, cefepima ou ceftazidima; meropeném após falha</td></tr><tr><td>MRSA</td><td>PBP alterada (PBP2a)</td><td>Ceftarolina ou vancomicina</td></tr></tbody></table><p>O resultado sensível no antibiograma pode enganar porque, na placa, o antibiótico mata a bactéria antes de ela expressar a enzima; no organismo, a bactéria tem tempo de produzi-la e destruir o fármaco. A aula compara essa situação a um ladrão com a faca no bolso. O <strong>duplo carbapenêmico</strong> é uma estratégia de resgate contra KPC baseada na preferência da carbapenemase pelo ertapeném: administra-se o ertapeném primeiro, as enzimas se ocupam dele como de uma isca, e uma hora depois o meropeném age; nem sempre funciona.</p><blockquote><strong>Nota de revisão:</strong> Pela IDSA, para bactérias com AmpC (sobretudo <em>Enterobacter cloacae</em>, <em>Klebsiella aerogenes</em> e <em>Citrobacter freundii</em>) a cefepima costuma ser preferida, reservando o carbapenêmico para ESBL ou resistência maior.</blockquote>"
+  },
+  {
+   "id": "r5",
+   "grupo": "Resumo de referência",
+   "titulo": "5. Outras classes: vancomicina, macrolídeos e companhia",
+   "par": "g5",
+   "html": "<h3>5.1 As parceiras dos betalactâmicos</h3><p>As demais classes aparecem nas aulas sobretudo como parceiras dos betalactâmicos, para cobrir lacunas de espectro: atípicos, anaeróbios, MRSA e multirresistentes. Cada uma atua num alvo diferente da célula bacteriana, o que explica seu espectro e seus efeitos adversos (Tabela 5.1). Quinolonas, aminoglicosídeos e polimixinas não tiveram aula própria e vêm do mapa mental do Drive e da literatura.</p><p class=\"tabtit\"><strong>Tabela 5.1</strong>Outras classes de antimicrobianos</p><table><thead><tr><th>Droga (classe)</th><th>Mecanismo</th><th>Espectro</th><th>Efeitos e pontos importantes</th></tr></thead><tbody><tr><td>Vancomicina (glicopeptídeo)</td><td>Liga-se ao D-alanil-D-alanina, bloqueando a montagem da parede</td><td>Só Gram-positivos, incluindo MRSA</td><td>Nefrotóxica; síndrome do homem vermelho por infusão rápida (não é alergia); por via oral só age no intestino, usada no <em>C. difficile</em></td></tr><tr><td>Azitromicina, claritromicina (macrolídeos)</td><td>Ribossomo 50S</td><td>Atípicos; claritromicina melhor contra pneumococo</td><td>Prolongam o QT; claritromicina inibe o CYP3A4; azitromicina permite cursos de 3 a 5 dias</td></tr><tr><td>Doxiciclina (tetraciclina)</td><td>Ribossomo 30S</td><td>Atípicos, clamídia, riquétsias, leptospira, parte do MRSA comunitário</td><td>Evitar na gestação e em crianças pequenas (dentes e ossos); fotossensibilidade; esofagite</td></tr><tr><td>Clindamicina (lincosamida)</td><td>Ribossomo 50S</td><td>Gram-positivos e anaeróbios</td><td>Mais associada ao <em>C. difficile</em>; boa penetração óssea</td></tr><tr><td>Metronidazol (nitroimidazol)</td><td>Ativado em anaerobiose, lesa o DNA</td><td>Só anaeróbios (e giárdia, ameba, tricomonas)</td><td>Efeito antabuse com álcool; gosto metálico</td></tr><tr><td>Quinolonas (cipro, levo, moxifloxacino)</td><td>DNA girase</td><td>Gram-negativos; levo e moxi cobrem pneumococo e atípicos; cipro e levo cobrem <em>Pseudomonas</em></td><td>Tendinite e ruptura de tendão, QT longo, aneurisma de aorta; evitar na gestação e em crianças; norfloxacino na profilaxia de PBE</td></tr><tr><td>Aminoglicosídeos (gentamicina, amicacina)</td><td>Ribossomo 30S; concentração-dependentes</td><td>Gram-negativos, incluindo <em>Pseudomonas</em>; opção contra KPC</td><td>Nefro e ototóxicos; bloqueio neuromuscular</td></tr><tr><td>Polimixinas (colistina)</td><td>Desestruturam a membrana externa como detergente</td><td>Gram-negativos multirresistentes</td><td>Nefro e neurotóxicas; última linha</td></tr></tbody></table><h3>5.2 Correlações com o mecanismo</h3><p>O metronidazol só é ativado em ambiente sem oxigênio, por isso seu espectro restringe-se aos anaeróbios e a alguns protozoários. A vancomicina, molécula grande, não atravessa a membrana externa dos Gram-negativos e atua apenas sobre Gram-positivos; administrada por via oral, não é absorvida e age apenas no lúmen intestinal, o que a torna útil contra o <em>C. difficile</em>. A síndrome do homem vermelho decorre da liberação de histamina pela infusão rápida, e não de alergia, e se resolve reduzindo a velocidade de infusão. Para não confundir os nomes, o sufixo \"-ciclina\" identifica as tetraciclinas; entre os terminados em \"-micina\", apenas azitromicina e claritromicina são macrolídeos, enquanto vancomicina, clindamicina e gentamicina pertencem a outras classes.</p>"
+  },
+  {
+   "id": "r6",
+   "grupo": "Resumo de referência",
+   "titulo": "6. Raciocínio e associações",
+   "par": "g6",
+   "html": "<h3>6.1 As quatro perguntas</h3><p>A escolha empírica de um antibiótico segue quatro perguntas encadeadas: onde está a infecção; que bactérias costumam viver naquele lugar; se o paciente está em casa ou internado, e se o quadro é leve ou grave; e qual é a menor arma que alcança essas bactérias naquele tecido. Começa-se pela opção de espectro mais estreito suficiente e escala-se em caso de falha. A Tabela 6.1 relaciona os sítios às bactérias típicas.</p><p class=\"tabtit\"><strong>Tabela 6.1</strong>Sítio da infecção e bactérias típicas</p><table><thead><tr><th>Sítio</th><th>Bactérias típicas</th></tr></thead><tbody><tr><td>Pele, ferida cirúrgica</td><td>Estafilococos e estreptococos (Gram-positivos)</td></tr><tr><td>Garganta</td><td><em>S. pyogenes</em></td></tr><tr><td>Seios da face, ouvido</td><td>Pneumococo, <em>H. influenzae</em> e <em>Moraxella</em> (com betalactamase)</td></tr><tr><td>Pulmão</td><td>Pneumococo e atípicos</td></tr><tr><td>Urina, intestino, vias biliares</td><td>Gram-negativos, com anaeróbios no intestino e na bile</td></tr><tr><td>Infecção hospitalar</td><td><em>Pseudomonas</em> e bactérias resistentes</td></tr></tbody></table><h3>6.2 O que somar à ceftriaxona</h3><p>A ceftriaxona é a base de muitos esquemas por cobrir os Gram-negativos comunitários e o pneumococo e penetrar em quase todos os tecidos. A pergunta-chave para montar a associação é o que a ceftriaxona não cobre e costuma estar naquele sítio. No intestino, nas vias biliares, no apêndice, na pelve e nas feridas profundas faltam os anaeróbios, cobertos por metronidazol ou clindamicina; no pulmão, os atípicos, cobertos por macrolídeo; na pelve e nas IST, a clamídia, coberta por doxiciclina; na meningite acima de 50 anos, a <em>Listeria</em>, coberta por ampicilina; na endocardite de valva nativa, o MSSA, coberto por oxacilina; e na meningite em regiões com pneumococo resistente, a vancomicina. A Tabela 6.2 reúne os esquemas citados em aula.</p><p class=\"tabtit\"><strong>Tabela 6.2</strong>Esquemas da aula</p><table><thead><tr><th>Situação</th><th>Esquema</th></tr></thead><tbody><tr><td>Pielonefrite</td><td>Ceftriaxona</td></tr><tr><td>Peritonite bacteriana espontânea (neutrófilos > 250/mm³ no líquido ascítico)</td><td>Ceftriaxona isolada (Gram-negativos entéricos; anaeróbios raramente participam)</td></tr><tr><td>Meningite abaixo de 50 anos</td><td>Ceftriaxona em dose dobrada</td></tr><tr><td>Meningite a partir de 50 anos</td><td>Ceftriaxona com ampicilina</td></tr><tr><td>Pneumonia que exige internação</td><td>Ceftriaxona com azitromicina</td></tr><tr><td>Colangite, apendicite supurada</td><td>Ceftriaxona com metronidazol</td></tr><tr><td>Pé diabético</td><td>Ceftriaxona com clindamicina</td></tr><tr><td>Endocardite de valva nativa</td><td>Ceftriaxona com oxacilina</td></tr><tr><td>Doença inflamatória pélvica</td><td>Ceftriaxona, metronidazol e doxiciclina</td></tr><tr><td>Aborto infectado</td><td>Oxacilina, ceftriaxona e metronidazol</td></tr><tr><td>Gonorreia</td><td>Ceftriaxona IM dose única</td></tr><tr><td>Leptospirose</td><td>Ceftriaxona ou penicilina cristalina</td></tr><tr><td>Infecção relacionada à assistência</td><td>Piperacilina-tazobactam ou cefepima; meropeném após falha</td></tr></tbody></table><blockquote><strong>Nota de revisão:</strong> Para gonorreia, a aula citou ceftriaxona 250 mg. O PCDT-IST de 2022 recomenda ceftriaxona 500 mg IM associada a azitromicina 1 g VO, em dose única.</blockquote><div class=\"correl\"><p class=\"qtit\">Correlação clínica</p><p>Um homem de 68 anos, diabético e com DPOC, tem pneumonia com hipotensão e confusão e é internado com ceftriaxona e azitromicina, que cobrem pneumococo e atípicos. No sexto dia de internação volta a ter febre: passa a ser infecção relacionada à assistência, e a <em>Pseudomonas</em> deve ser coberta com piperacilina-tazobactam ou cefepima. Se piorar em 72 horas, escala-se para meropeném; se a cultura mostrar <em>Klebsiella</em> produtora de KPC, a opção é ceftazidima-avibactam, porque os carbapenêmicos não atuam contra essa enzima.</p></div>"
+  },
+  {
+   "id": "rp",
+   "titulo": "Pontos-chave e referências",
+   "par": "g0",
+   "html": "<h3>Pontos-chave</h3><ol class=\"pontos\"><li>Betalactâmicos inativam as PBP, impedem as ligações cruzadas do peptidoglicano e causam lise osmótica; são bactericidas e tempo-dependentes.</li><li>Gram-negativos resistem mais porque a membrana externa exige passagem por porinas e expõe o antibiótico às betalactamases do periplasma.</li><li>As três defesas são betalactamase, porinas reduzidas e PBP alterada; o MRSA usa a PBP2a.</li><li>Nenhum betalactâmico atua contra atípicos; macrolídeos, doxiciclina e quinolonas atuam.</li><li>Clavulanato, sulbactam, tazobactam e avibactam são inibidores de betalactamase, não antibióticos.</li><li>Penicilina cristalina trata neurossífilis e leptospirose; benzatina trata sífilis e faringite e previne a febre reumática.</li><li>Ampicilina cobre <em>Listeria</em> e é somada à ceftriaxona na meningite a partir de 50 anos.</li><li>Piperacilina-tazobactam é a única penicilina que cobre <em>Pseudomonas</em> e também cobre anaeróbios.</li><li>Cefalosporinas perdem Gram-positivos e ganham Gram-negativos da 1ª à 4ª geração; nenhuma cobre enterococo, atípicos ou anaeróbios.</li><li>Cefazolina é a profilaxia cirúrgica; ceftazidima é a única de 3ª geração que cobre <em>Pseudomonas</em>; ceftarolina é a única que cobre MRSA.</li><li>Carbapenêmicos não são primeira linha, exceto meropeném para ESBL e imipeném para infecção pancreática; ertapeném não cobre <em>Pseudomonas</em>.</li><li>Antibiograma sensível engana em ESBL e no grupo CESP; KPC é tratada com ceftazidima-avibactam.</li><li>Para associar à ceftriaxona, pergunta-se o que ela não cobre naquele sítio: anaeróbios, atípicos, <em>Listeria</em> ou MSSA.</li></ol><h3>Referências</h3><ul class=\"refs\"><li>Goodman & Gilman. As Bases Farmacológicas da Terapêutica. 13ª ed.</li><li>Tamma PD et al. IDSA Guidance on the Treatment of Antimicrobial-Resistant Gram-Negative Infections, 2023/2024.</li><li>Freifeld AG et al. Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer (IDSA).</li><li>Bratzler DW et al. Clinical practice guidelines for antimicrobial prophylaxis in surgery, 2013; SHEA/IDSA/APIC 2022.</li><li>Brasil. Ministério da Saúde. PCDT-IST, 2022.</li><li>Aulas de Penicilinas (27/10) e Cefalosporinas e Carbapenêmicos (09/11), Faculdade Zarns; Mapa Mental de Antibióticos (Estratégia MED), no Drive.</li></ul><p class=\"refs\">Doses e esquemas devem ser conferidos com o protocolo do serviço.</p>",
+   "grupo": "Resumo de referência"
+  },
+  {
+   "id": "g0",
+   "grupo": "Guia prioritário",
+   "titulo": "Como usar (comece por aqui)",
+   "par": "r0",
+   "html": "<p>Esta é a <strong>parte prioritária</strong>: o que mais cai, em regras curtas, com as pegadinhas que o professor apontou. Cada seção tem a explicação completa no <span class=\"xref\" data-sec=\"r0\">Resumo de referência</span> (use <strong>Lado a lado</strong>).</p><h3>O que o professor marcou como certo de cair</h3><ul><li>Penicilinas: duração da profilaxia da febre reumática, meningite com Gram do líquor, ação tempo-dependente.</li><li>Cefalosporinas: nomes e gerações (\"tem que decorar, não tem jeito\"), profilaxia cirúrgica, pneumonia que interna.</li><li>Carbapenêmicos: cerca de um quarto da prova (4 a 5 questões); praticamente tudo o que foi dito pode cair.</li></ul><h3>Ordem sugerida</h3><ol><li>Leia o resumo de cada parte.</li><li>Volte aqui e fixe as regras.</li><li>Faça o quiz.</li><li>Faça os casos clínicos (treinam o raciocínio, não a decoreba).</li></ol>"
+  },
+  {
+   "id": "g1",
+   "grupo": "Guia prioritário",
+   "titulo": "Bases: o que não pode errar",
+   "par": "r1",
+   "html": "<ul><li>Betalactâmicos travam a <strong>PBP</strong> → parede fraca → lise. São <strong>bactericidas</strong> e <strong>tempo-dependentes</strong> (curva em platô).</li><li>Resistência: betalactamase e porinas (Gram−); <strong>PBP alterada</strong> (Gram+, MRSA), que <strong>diminui</strong> a afinidade.</li><li><strong>Nenhum betalactâmico pega atípico</strong> (<em>Mycoplasma</em>, <em>Chlamydia</em>, <em>Legionella</em>).</li><li>Clavulanato, sulbactam, tazobactam e avibactam <strong>não são antibióticos</strong>: são inibidores de betalactamase.</li><li>Penicilinas são seguras na gestação.</li></ul><blockquote><strong>Cai na prova:</strong> Gráfico concentração × tempo: o betalactâmico é a curva em platô; a curva com pico é de droga concentração-dependente (aminoglicosídeo, quinolona).</blockquote><blockquote><strong>Pegadinha:</strong> \"Penicilinas retiram cálcio e magnésio da membrana externa\" é falso: esse é o mecanismo das polimixinas.</blockquote><blockquote><strong>Pegadinha:</strong> Apareceu <em>Mycoplasma</em>, <em>Chlamydia</em> ou <em>Legionella</em>: elimine todos os betalactâmicos das alternativas.</blockquote>"
+  },
+  {
+   "id": "g2",
+   "grupo": "Guia prioritário",
+   "titulo": "Penicilinas: regras de bolso",
+   "par": "r2",
+   "html": "<ul><li><strong>Neurossífilis</strong> → penicilina cristalina IV.</li><li><strong>Sífilis sem data</strong> (latente de duração ignorada, gestante com VDRL + sem lesão, doador de sangue) → benzatina 2.400.000 UI semanal × 3.</li><li><strong>Febre reumática</strong> → benzatina a cada 21 dias; sem cardite: 5 anos ou até 21; cardite leve: 10 anos ou até 25; vale o que durar mais.</li><li><strong>MSSA</strong> → oxacilina. \"Oxacilina pega MRSA\" é falso.</li><li><strong>Faringite</strong> → amoxicilina pura ou benzatina (sem clavulanato). <strong>Sinusite/otite</strong> → amoxicilina + clavulanato.</li><li><strong>Pneumonia em casa com comorbidade</strong> → amoxi-clav + azitromicina.</li><li><strong>Meningite ≥ 50 anos</strong> → a alternativa certa tem ampicilina (<em>Listeria</em>).</li><li><strong>IRAS</strong> (≥ 48 h internado) → cobrir <em>Pseudomonas</em>: pipe-tazo.</li></ul><h3>Gram do líquor</h3><table><thead><tr><th>Gram</th><th>Agente</th><th>Conduta</th></tr></thead><tbody><tr><td>Bacilo Gram+</td><td><em>Listeria</em></td><td>Garantir ampicilina</td></tr><tr><td>Diplococo Gram−</td><td>Meningococo</td><td>Só ceftriaxona</td></tr><tr><td>Diplococo Gram+</td><td>Pneumococo</td><td>Ceftriaxona (± vancomicina)</td></tr></tbody></table><blockquote><strong>Pegadinha:</strong> ESBL \"sensível\" a pipe-tazo no antibiograma: a resposta é meropeném.</blockquote><blockquote><strong>Pegadinha:</strong> Faringite com exsudato + linfonodo cervical posterior + baço palpável + rash após amoxicilina = mononucleose, não alergia.</blockquote>"
+  },
+  {
+   "id": "g3",
+   "grupo": "Guia prioritário",
+   "titulo": "Cefalosporinas: nomes, gerações e indicações",
+   "par": "r3",
+   "html": "<h3>Ganchos para os nomes</h3><ul><li><strong>1ª</strong> \"CEFA-\": cefalexina, cefadroxila, cefalotina, cefazolina.</li><li><strong>2ª</strong> as do \"OX/CLOR\" que respiram: cefuroxima, cefoxitina, cefaclor.</li><li><strong>3ª</strong> \"TRI e TAZ\": ceftriaxona, ceftazidima (a Taz pega <em>Pseudomonas</em>).</li><li><strong>4ª</strong> cefePIMA, a do \"P\": <em>Pseudomonas</em>, paciente internado, paciente da quimio.</li><li><strong>5ª</strong> \"Carolina\": ceftarolina, pega MRSA.</li></ul><h3>Regras</h3><ul><li>Nenhuma pega <strong>enterococo, atípico ou anaeróbio</strong> (exceção: cefoxitina, anaeróbio).</li><li><strong>Profilaxia cirúrgica</strong> (qualquer cirurgia, inclusive cardíaca) → <strong>cefazolina</strong>.</li><li>Cefuroxima é <strong>2ª linha</strong> em vias aéreas.</li><li><strong>Pneumonia que interna</strong> → ceftriaxona + macrolídeo (azitromicina).</li><li>Ceftriaxona: meningite (dose dobrada), pielonefrite, PBE, colangite (+ metronidazol), gonorreia, DIP.</li><li><strong>Neutropenia febril</strong> → cefepima; grave/piora → + vancomicina; sem melhora → + antifúngico.</li><li><strong>MRSA</strong> documentado → ceftarolina.</li><li><strong><em>C. difficile</em></strong>: ceftriaxona é o 2º mais associado; álcool gel não mata, só água e sabão.</li></ul><blockquote><strong>Pegadinha:</strong> Profilaxia de cirurgia com \"3ª geração porque é mais forte\": errado. A 3ª é mais forte contra Gram−, e a flora da pele é Gram+.</blockquote><blockquote><strong>Pegadinha:</strong> \"Pneumonia com necessidade de internamento\" não é pneumonia hospitalar: é comunitária que interna (ceftriaxona + macrolídeo).</blockquote><blockquote><strong>Pegadinha:</strong> Cefotaxima e nomes comerciais não caem na prova do professor; cefoxitina pegar anaeróbio também não, mas cai em residência.</blockquote>"
+  },
+  {
+   "id": "g4",
+   "grupo": "Guia prioritário",
+   "titulo": "Carbapenêmicos: um quarto da prova",
+   "par": "r4",
+   "html": "<ul><li><strong>Nunca são primeira linha</strong>, exceto <strong>ESBL → meropeném</strong> e <strong>pâncreas infectado → imipeném-cilastatina</strong>.</li><li>Entram após falha de <strong>pipe-tazo ou cefepima</strong> em 48–72 h.</li><li><strong>Ertapeném</strong> não pega <em>Pseudomonas</em>; IM/IV 1×/dia; pele e partes moles.</li><li><strong>Cilastatina</strong> inibe a desidropeptidase renal.</li><li>Não pegam <strong>MRSA, atípicos e KPC</strong>.</li><li><strong>KPC</strong> → ceftazidima-avibactam; sem ela, polimixina ou aminoglicosídeo; resgate: ertapeném (isca) e 1 h depois meropeném.</li><li><strong>Grupo CESP</strong> (<em>Citrobacter</em>, <em>Enterobacter</em>, <em>Serratia</em>, <em>Proteus</em>, <em>Morganella</em>, <em>Providencia</em>) → evitar 3ª geração mesmo \"sensível\".</li></ul><h3>Quem pega <em>Pseudomonas</em></h3><p>Pipe-tazo, ceftazidima, cefepima, meropeném, imipeném (+ fora da aula: aminoglicosídeos, cipro/levo, aztreonam, polimixinas). <strong>Não pegam:</strong> ceftriaxona e ertapeném.</p><blockquote><strong>Pegadinha:</strong> A questão cita <em>Providencia</em> ou <em>Morganella</em> com antibiograma sensível à ceftriaxona: não use. Sensibilidade <em>in vitro</em> não é <em>in vivo</em>.</blockquote><blockquote><strong>Pegadinha:</strong> MRSA → ceftarolina; ESBL → meropeném. Não troque.</blockquote>"
+  },
+  {
+   "id": "g5",
+   "grupo": "Guia prioritário",
+   "titulo": "Outras classes em uma linha",
+   "par": "r5",
+   "html": "<ul><li><strong>Vancomicina</strong>: só Gram+, inclui MRSA; nefrotóxica; homem vermelho = infundir devagar; VO para <em>C. difficile</em>.</li><li><strong>Macrolídeo</strong> (azitro, claritro): atípicos. Sozinho → claritro; com ceftriaxona → azitro (menos diarreia). QT longo.</li><li><strong>Doxiciclina</strong> (tetraciclina, não macrolídeo): clamídia na DIP; evitar na gestação e em crianças.</li><li><strong>Clindamicina</strong>: Gram+ e anaeróbios; o mais associado ao <em>C. difficile</em>.</li><li><strong>Metronidazol</strong>: só anaeróbios; antabuse com álcool.</li><li><strong>Quinolonas</strong>: tendão, QT, aorta; norfloxacino na profilaxia de PBE.</li><li><strong>Aminoglicosídeos</strong> e <strong>polimixinas</strong>: Gram− resistentes, muito nefrotóxicos.</li></ul><blockquote><strong>Pegadinha:</strong> Metronidazol pega só anaeróbio; clindamicina pega anaeróbio e Gram+. No pé diabético, a clindamicina cobre a parte da pele.</blockquote>"
+  },
+  {
+   "id": "g6",
+   "grupo": "Guia prioritário",
+   "titulo": "Associações: o que mais se erra",
+   "par": "r6",
+   "html": "<p>Pergunta-chave: <strong>\"o que a ceftriaxona não pega e costuma estar nesse lugar?\"</strong></p><ul><li>Intestino, bile, apêndice, pelve, ferida profunda → <strong>+ metronidazol</strong> (ou clindamicina).</li><li>Pulmão → <strong>+ azitromicina</strong>.</li><li>Pelve/IST → <strong>+ doxiciclina</strong> (clamídia).</li><li>Meningite ≥ 50 → <strong>+ ampicilina</strong>.</li><li>Válvula → <strong>+ oxacilina</strong>.</li></ul><table><thead><tr><th>Caso</th><th>Resposta</th></tr></thead><tbody><tr><td>Colangite</td><td>Ceftriaxona + metronidazol</td></tr><tr><td>Pé diabético</td><td>Ceftriaxona + clindamicina</td></tr><tr><td>DIP</td><td>Ceftriaxona + metronidazol + doxiciclina</td></tr><tr><td>Pneumonia que interna</td><td>Ceftriaxona + azitromicina</td></tr><tr><td>Endocardite</td><td>Ceftriaxona + oxacilina</td></tr><tr><td>PBE</td><td>Ceftriaxona sozinha</td></tr></tbody></table><blockquote><strong>Pegadinha:</strong> PBE não leva metronidazol: as bactérias que atravessam a parede do intestino são Gram− aeróbias. Muitos anaeróbios no líquido sugerem perfuração (peritonite secundária).</blockquote>"
+  },
+  {
+   "id": "g7",
+   "grupo": "Guia prioritário",
+   "titulo": "Pegadinhas e regras de bolso",
+   "par": "r4",
+   "html": "<ul><li>\"Sensível\" no antibiograma nem sempre funciona: ESBL (pipe-tazo) e grupo CESP (ceftriaxona).</li><li>Amoxicilina na mononucleose → exantema que não é alergia.</li><li>Neomicina não é betalactâmico (aminoglicosídeo).</li><li>Penicilinas não são contraindicadas na gestação; doxiciclina e quinolonas são evitadas.</li><li>Alteração da PBP diminui a afinidade.</li><li>Primeira linha não é \"a única\": várias drogas podem ser primeira linha ao mesmo tempo (pipe-tazo e cefepima).</li><li>Avibactam não trava metalo-betalactamase (NDM).</li><li>PBE: neutrófilos > 250; linfócitos predominando → pensar em tuberculose ou carcinomatose.</li></ul>"
+  }
+ ],
+ "cards": [
+  {
+   "id": "atb00",
+   "secao": "g1",
+   "tag": "Bases",
+   "frente": "Como os betalactâmicos matam a bactéria?",
+   "verso": "Travam a <b>PBP</b> (transpeptidase), que monta a parede → parede fraca → <b>lise osmótica</b>. São bactericidas."
+  },
+  {
+   "id": "atb01",
+   "secao": "g1",
+   "tag": "Bases",
+   "frente": "Betalactâmicos são tempo- ou concentração-dependentes?",
+   "verso": "<b>Tempo-dependentes</b>: importa o tempo acima da CIM (curva em platô)."
+  },
+  {
+   "id": "atb02",
+   "secao": "g1",
+   "tag": "Bases",
+   "frente": "Alteração da PBP aumenta ou diminui a afinidade pelo betalactâmico?",
+   "verso": "<b>Diminui</b>. É o mecanismo do MRSA (PBP2a)."
+  },
+  {
+   "id": "atb03",
+   "secao": "g1",
+   "tag": "Bases",
+   "frente": "Quais são os 3 atípicos principais e que classe nunca os pega?",
+   "verso": "<i>Mycoplasma</i>, <i>Chlamydia/Chlamydophila</i>, <i>Legionella</i>. <b>Nenhum betalactâmico</b> pega."
+  },
+  {
+   "id": "atb04",
+   "secao": "g1",
+   "tag": "Bases",
+   "frente": "Clavulanato, sulbactam, tazobactam e avibactam são o quê?",
+   "verso": "<b>Inibidores de betalactamase</b> (escudos), não antibióticos."
+  },
+  {
+   "id": "atb05",
+   "secao": "g1",
+   "tag": "Bases",
+   "frente": "Que defesas de resistência só existem em Gram-negativos?",
+   "verso": "Porinas escassas/fechadas (eles têm membrana externa) e, tipicamente, betalactamases no periplasma."
+  },
+  {
+   "id": "atb06",
+   "secao": "g2",
+   "tag": "Penicilinas",
+   "frente": "Droga de escolha na neurossífilis",
+   "verso": "<b>Penicilina cristalina IV</b>."
+  },
+  {
+   "id": "atb07",
+   "secao": "g2",
+   "tag": "Penicilinas",
+   "frente": "Sífilis latente de duração ignorada: esquema",
+   "verso": "Benzatina <b>2.400.000 UI semanal × 3</b> (7.200.000 UI)."
+  },
+  {
+   "id": "atb08",
+   "secao": "g2",
+   "tag": "Penicilinas",
+   "frente": "Sífilis primária, secundária ou latente recente: esquema",
+   "verso": "Benzatina <b>2.400.000 UI IM dose única</b>."
+  },
+  {
+   "id": "atb09",
+   "secao": "g2",
+   "tag": "Penicilinas",
+   "frente": "Profilaxia da febre reumática sem cardite: duração",
+   "verso": "<b>5 anos ou até 21 anos</b>, o que durar mais (benzatina a cada 21 dias)."
+  },
+  {
+   "id": "atb10",
+   "secao": "g2",
+   "tag": "Penicilinas",
+   "frente": "Profilaxia da febre reumática com cardite leve: duração",
+   "verso": "<b>10 anos ou até 25 anos</b>, o que durar mais."
+  },
+  {
+   "id": "atb11",
+   "secao": "g2",
+   "tag": "Penicilinas",
+   "frente": "Para qual bactéria a oxacilina foi feita?",
+   "verso": "<b>MSSA</b> (<i>S. aureus</i> produtor de penicilinase). Não pega MRSA."
+  },
+  {
+   "id": "atb12",
+   "secao": "g2",
+   "tag": "Penicilinas",
+   "frente": "Faringite estreptocócica: amoxicilina com ou sem clavulanato? Por quê?",
+   "verso": "<b>Sem</b>: o <i>S. pyogenes</i> não produz betalactamase. Benzatina também é 1ª linha."
+  },
+  {
+   "id": "atb13",
+   "secao": "g2",
+   "tag": "Penicilinas",
+   "frente": "Sinusite/otite: por que amoxicilina COM clavulanato?",
+   "verso": "<i>H. influenzae</i> e <i>Moraxella</i> produzem betalactamase."
+  },
+  {
+   "id": "atb14",
+   "secao": "g2",
+   "tag": "Penicilinas",
+   "frente": "O que a ampicilina pega a mais que a amoxicilina?",
+   "verso": "<b><i>Listeria</i></b> (bacilo Gram+) e <i>Shigella</i>."
+  },
+  {
+   "id": "atb15",
+   "secao": "g2",
+   "tag": "Penicilinas",
+   "frente": "Única penicilina que pega <i>Pseudomonas</i>",
+   "verso": "<b>Piperacilina-tazobactam</b>."
+  },
+  {
+   "id": "atb16",
+   "secao": "g2",
+   "tag": "Penicilinas",
+   "frente": "Faringite + linfonodo cervical posterior + baço palpável + rash após amoxicilina",
+   "verso": "<b>Mononucleose</b> (EBV); o rash não é alergia."
+  },
+  {
+   "id": "atb17",
+   "secao": "g2",
+   "tag": "Penicilinas",
+   "frente": "Bacilo Gram-positivo no líquor de idoso: agente e droga",
+   "verso": "<i>Listeria</i> → <b>ampicilina</b>."
+  },
+  {
+   "id": "atb18",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Regra da gangorra das cefalosporinas",
+   "verso": "Da 1ª à 4ª: perdem Gram+, ganham Gram−. A 5ª volta ao Gram+ e pega MRSA."
+  },
+  {
+   "id": "atb19",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Três grupos que nenhuma cefalosporina pega",
+   "verso": "<b>Enterococo, atípicos e anaeróbios</b> (exceção: cefoxitina pega anaeróbio)."
+  },
+  {
+   "id": "atb20",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Cefalosporinas de 1ª geração (gancho \"CEFA-\")",
+   "verso": "Cefalexina, cefadroxila (VO); cefalotina, cefazolina (IV)."
+  },
+  {
+   "id": "atb21",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Cefalosporinas de 2ª geração",
+   "verso": "Cefuroxima, cefaclor, cefoxitina."
+  },
+  {
+   "id": "atb22",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Principais cefalosporinas de 3ª geração",
+   "verso": "Ceftriaxona e ceftazidima (+ cefotaxima, cefdinir)."
+  },
+  {
+   "id": "atb23",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Cefalosporina de 4ª e de 5ª geração",
+   "verso": "4ª: <b>cefepima</b>. 5ª: <b>ceftarolina</b>."
+  },
+  {
+   "id": "atb24",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Profilaxia cirúrgica (qualquer cirurgia): droga e por quê",
+   "verso": "<b>Cefazolina</b>: a infecção é na ferida, por flora da pele (Gram+)."
+  },
+  {
+   "id": "atb25",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Cefuroxima em sinusite/otite é 1ª ou 2ª linha?",
+   "verso": "<b>2ª linha</b>, após falha da amoxicilina/amoxi-clav."
+  },
+  {
+   "id": "atb26",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Por que a cefoxitina quase não é usada?",
+   "verso": "É forte <b>indutora de betalactamase</b> (AmpC), que acaba destruindo a própria droga."
+  },
+  {
+   "id": "atb27",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Única cefalosporina de 3ª com ação antipseudomonas",
+   "verso": "<b>Ceftazidima</b>."
+  },
+  {
+   "id": "atb28",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Qual Gram+ a cefalosporina de 3ª geração pega?",
+   "verso": "<b>Pneumococo</b>."
+  },
+  {
+   "id": "atb29",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Efeito adverso intestinal clássico da ceftriaxona",
+   "verso": "Colite pseudomembranosa por <b><i>C. difficile</i></b> (2º antibiótico mais associado)."
+  },
+  {
+   "id": "atb30",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Higiene das mãos no <i>C. difficile</i>",
+   "verso": "<b>Água e sabão</b>; álcool gel não mata os esporos."
+  },
+  {
+   "id": "atb31",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Duas indicações da cefepima",
+   "verso": "<b>IRAS</b> e <b>neutropenia febril</b>."
+  },
+  {
+   "id": "atb32",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Neutropenia febril: escalonamento",
+   "verso": "Cefepima → grave/piora: + vancomicina → sem melhora: + antifúngico."
+  },
+  {
+   "id": "atb33",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Em quem a cefepima é neurotóxica?",
+   "verso": "Em quem tem <b>rim doente</b> (acúmulo)."
+  },
+  {
+   "id": "atb34",
+   "secao": "g3",
+   "tag": "Cefalosporinas",
+   "frente": "Indicação da ceftarolina",
+   "verso": "<b>MRSA documentado</b> em cultura."
+  },
+  {
+   "id": "atb35",
+   "secao": "g4",
+   "tag": "Carbapenêmicos",
+   "frente": "Em que 2 situações o carbapenêmico é 1ª linha?",
+   "verso": "<b>ESBL</b> (meropeném) e <b>infecção pancreática</b> (imipeném)."
+  },
+  {
+   "id": "atb36",
+   "secao": "g4",
+   "tag": "Carbapenêmicos",
+   "frente": "O que os carbapenêmicos não pegam?",
+   "verso": "<b>MRSA, atípicos e KPC</b>."
+  },
+  {
+   "id": "atb37",
+   "secao": "g4",
+   "tag": "Carbapenêmicos",
+   "frente": "Carbapenêmico que não pega <i>Pseudomonas</i>",
+   "verso": "<b>Ertapeném</b> (IM/IV, 1×/dia)."
+  },
+  {
+   "id": "atb38",
+   "secao": "g4",
+   "tag": "Carbapenêmicos",
+   "frente": "Função da cilastatina",
+   "verso": "Inibe a <b>desidropeptidase renal</b>, que destruiria o imipeném."
+  },
+  {
+   "id": "atb39",
+   "secao": "g4",
+   "tag": "Carbapenêmicos",
+   "frente": "Quando escalar para meropeném na IRAS?",
+   "verso": "Piora após 48–72 h de <b>pipe-tazo ou cefepima</b>."
+  },
+  {
+   "id": "atb40",
+   "secao": "g4",
+   "tag": "Carbapenêmicos",
+   "frente": "Melhor droga contra KPC",
+   "verso": "<b>Ceftazidima-avibactam</b>."
+  },
+  {
+   "id": "atb41",
+   "secao": "g4",
+   "tag": "Carbapenêmicos",
+   "frente": "Estratégia de duplo carbapenêmico contra KPC",
+   "verso": "<b>Ertapeném</b> primeiro (isca para a carbapenemase), <b>meropeném</b> 1 h depois."
+  },
+  {
+   "id": "atb42",
+   "secao": "g4",
+   "tag": "Carbapenêmicos",
+   "frente": "ESBL \"sensível\" a pipe-tazo: o que usar?",
+   "verso": "<b>Meropeném</b> (sensibilidade só <i>in vitro</i>)."
+  },
+  {
+   "id": "atb43",
+   "secao": "g4",
+   "tag": "Carbapenêmicos",
+   "frente": "Bactérias do grupo CESP",
+   "verso": "<i>Citrobacter</i>, <i>Enterobacter</i>, <i>Serratia</i>, <i>Proteus</i> + <i>Morganella</i>, <i>Providencia</i>."
+  },
+  {
+   "id": "atb44",
+   "secao": "g4",
+   "tag": "Carbapenêmicos",
+   "frente": "Por que evitar ceftriaxona no grupo CESP?",
+   "verso": "AmpC desligada é <b>induzida</b>; sensibilidade <i>in vitro</i> não vale <i>in vivo</i>."
+  },
+  {
+   "id": "atb45",
+   "secao": "g4",
+   "tag": "Carbapenêmicos",
+   "frente": "Quem pega <i>Pseudomonas</i> (aula)?",
+   "verso": "Pipe-tazo, ceftazidima, cefepima, meropeném, imipeném. <b>Não:</b> ceftriaxona e ertapeném."
+  },
+  {
+   "id": "atb46",
+   "secao": "g5",
+   "tag": "Outras classes",
+   "frente": "Vancomicina: classe e espectro",
+   "verso": "<b>Glicopeptídeo</b>; só Gram+, incluindo MRSA."
+  },
+  {
+   "id": "atb47",
+   "secao": "g5",
+   "tag": "Outras classes",
+   "frente": "Síndrome do homem vermelho: causa e conduta",
+   "verso": "Infusão rápida de vancomicina; não é alergia → <b>infundir mais devagar</b>."
+  },
+  {
+   "id": "atb48",
+   "secao": "g5",
+   "tag": "Outras classes",
+   "frente": "Por que vancomicina VO trata <i>C. difficile</i>?",
+   "verso": "Não é absorvida: <b>age só no intestino</b>."
+  },
+  {
+   "id": "atb49",
+   "secao": "g5",
+   "tag": "Outras classes",
+   "frente": "Macrolídeo sozinho ou com ceftriaxona: qual escolher?",
+   "verso": "Sozinho: <b>claritromicina</b> (pneumococo). Com ceftriaxona: <b>azitromicina</b> (menos diarreia)."
+  },
+  {
+   "id": "atb50",
+   "secao": "g5",
+   "tag": "Outras classes",
+   "frente": "Doxiciclina é macrolídeo?",
+   "verso": "<b>Não</b>: é tetraciclina (ribossomo 30S)."
+  },
+  {
+   "id": "atb51",
+   "secao": "g5",
+   "tag": "Outras classes",
+   "frente": "Clindamicina: espectro e efeito adverso clássico",
+   "verso": "Gram+ e anaeróbios; <b>mais associada ao <i>C. difficile</i></b>."
+  },
+  {
+   "id": "atb52",
+   "secao": "g5",
+   "tag": "Outras classes",
+   "frente": "Metronidazol: espectro e interação",
+   "verso": "Só <b>anaeróbios</b> (e protozoários); <b>efeito antabuse</b> com álcool."
+  },
+  {
+   "id": "atb53",
+   "secao": "g5",
+   "tag": "Outras classes",
+   "frente": "Efeitos adversos das quinolonas",
+   "verso": "Tendinite/ruptura de tendão, QT longo, aneurisma de aorta; evitar em gestantes e crianças."
+  },
+  {
+   "id": "atb54",
+   "secao": "g6",
+   "tag": "Associações",
+   "frente": "Pergunta-chave para escolher o parceiro da ceftriaxona",
+   "verso": "\"O que a ceftriaxona <b>não pega</b> e costuma estar nesse lugar?\""
+  },
+  {
+   "id": "atb55",
+   "secao": "g6",
+   "tag": "Associações",
+   "frente": "Colangite",
+   "verso": "Ceftriaxona + <b>metronidazol</b> (bile = intestino → anaeróbio)."
+  },
+  {
+   "id": "atb56",
+   "secao": "g6",
+   "tag": "Associações",
+   "frente": "Pé diabético",
+   "verso": "Ceftriaxona + <b>clindamicina</b> (anaeróbio + Gram+)."
+  },
+  {
+   "id": "atb57",
+   "secao": "g6",
+   "tag": "Associações",
+   "frente": "DIP",
+   "verso": "Ceftriaxona + <b>metronidazol + doxiciclina</b> (anaeróbio + clamídia)."
+  },
+  {
+   "id": "atb58",
+   "secao": "g6",
+   "tag": "Associações",
+   "frente": "Pneumonia que interna",
+   "verso": "Ceftriaxona + <b>azitromicina</b> (atípicos)."
+  },
+  {
+   "id": "atb59",
+   "secao": "g6",
+   "tag": "Associações",
+   "frente": "Endocardite de valva nativa (aula)",
+   "verso": "Ceftriaxona + <b>oxacilina</b> (MSSA)."
+  },
+  {
+   "id": "atb60",
+   "secao": "g6",
+   "tag": "Associações",
+   "frente": "PBE: critério e tratamento",
+   "verso": "Neutrófilos <b>&gt; 250/mm³</b>; ceftriaxona <b>sozinha</b>."
+  },
+  {
+   "id": "atb61",
+   "secao": "g6",
+   "tag": "Associações",
+   "frente": "Meningite em ≥ 50 anos",
+   "verso": "Ceftriaxona dose dobrada + <b>ampicilina</b> (<i>Listeria</i>)."
+  }
+ ],
+ "kahoot": [
+  {
+   "tipo": "q",
+   "n": 1,
+   "pergunta": "Qual o mecanismo de ação dos betalactâmicos?",
+   "opcoes": [
+    "Inibem o ribossomo 30S",
+    "Ligam-se à PBP e impedem a parede",
+    "Rompem a membrana externa",
+    "Inibem a DNA girase"
+   ],
+   "certa": 1,
+   "explica": "Travam a PBP; a parede enfraquece e a bactéria sofre lise. Ribossomo é macrolídeo/tetraciclina; membrana é polimixina; DNA girase é quinolona.",
+   "tempo": 20,
+   "secoes": [
+    "r1"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 2,
+   "pergunta": "Paciente com pneumonia por <i>Mycoplasma</i>. Qual droga NÃO funciona?",
+   "opcoes": [
+    "Azitromicina",
+    "Doxiciclina",
+    "Levofloxacino",
+    "Meropeném"
+   ],
+   "certa": 3,
+   "explica": "Nenhum betalactâmico pega atípico, nem o carbapenêmico.",
+   "tempo": 20,
+   "secoes": [
+    "r1"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 3,
+   "pergunta": "Neurossífilis: droga de escolha",
+   "opcoes": [
+    "Benzatina 7.200.000 UI",
+    "Penicilina cristalina IV",
+    "Ceftriaxona",
+    "Doxiciclina"
+   ],
+   "certa": 1,
+   "explica": "A benzatina não atinge o SNC adequadamente. Ceftriaxona é alternativa.",
+   "tempo": 20,
+   "secoes": [
+    "r2"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 4,
+   "pergunta": "Gestante, VDRL 1:64, treponêmico +, sem lesões, sem data da infecção",
+   "opcoes": [
+    "Benzatina 2.400.000 UI dose única",
+    "Benzatina 2.400.000 UI semanal × 3",
+    "Doxiciclina 15 dias",
+    "Cristalina IV"
+   ],
+   "certa": 1,
+   "explica": "Sem data = latente tardia: 3 doses. Doxiciclina é contraindicada na gestação.",
+   "tempo": 20,
+   "secoes": [
+    "r2"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 5,
+   "pergunta": "Faringite estreptocócica em adulto não alérgico",
+   "opcoes": [
+    "Amoxicilina + clavulanato",
+    "Amoxicilina pura ou benzatina",
+    "Cefuroxima",
+    "Azitromicina"
+   ],
+   "certa": 1,
+   "explica": "<i>S. pyogenes</i> não produz betalactamase: clavulanato não acrescenta nada.",
+   "tempo": 20,
+   "secoes": [
+    "r2"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 6,
+   "pergunta": "Idoso de 80 anos, febre baixa e prostração, líquor com bacilo Gram-positivo",
+   "opcoes": [
+    "Ceftriaxona isolada",
+    "Ceftriaxona + ampicilina",
+    "Vancomicina isolada",
+    "Meropeném"
+   ],
+   "certa": 1,
+   "explica": "Bacilo Gram+ no idoso = <i>Listeria</i>: ampicilina.",
+   "tempo": 20,
+   "secoes": [
+    "r2"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 7,
+   "pergunta": "Antibiótico de profilaxia para cirurgia cardíaca",
+   "opcoes": [
+    "Ceftriaxona",
+    "Cefazolina",
+    "Cefepima",
+    "Vancomicina"
+   ],
+   "certa": 1,
+   "explica": "Flora da pele (Gram+): cefalosporina de 1ª geração venosa.",
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 8,
+   "pergunta": "Sinusite no 3º dia de amoxi-clav sem melhora. Próximo passo (aula)",
+   "opcoes": [
+    "Meropeném",
+    "Cefuroxima",
+    "Ceftriaxona IM",
+    "Manter e esperar 10 dias"
+   ],
+   "certa": 1,
+   "explica": "Cefuroxima é a 2ª linha nas infecções de vias aéreas.",
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 9,
+   "pergunta": "Qual cefalosporina de 3ª geração pega <i>Pseudomonas</i>?",
+   "opcoes": [
+    "Ceftriaxona",
+    "Cefotaxima",
+    "Ceftazidima",
+    "Cefuroxima"
+   ],
+   "certa": 2,
+   "explica": "\"A Taz\" é a única de 3ª antipseudomonas.",
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 10,
+   "pergunta": "Pneumonia comunitária com indicação de internamento",
+   "opcoes": [
+    "Amoxicilina pura",
+    "Ceftriaxona + azitromicina",
+    "Pipe-tazo",
+    "Meropeném + vancomicina"
+   ],
+   "certa": 1,
+   "explica": "Não é pneumonia hospitalar: cobre-se pneumococo (ceftriaxona) e atípicos (macrolídeo).",
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 11,
+   "pergunta": "Paciente em uso de ceftriaxona evolui com 10 evacuações aquosas/dia. Higiene das mãos?",
+   "opcoes": [
+    "Álcool gel",
+    "Água e sabão",
+    "Clorexidina alcoólica",
+    "Não precisa isolamento"
+   ],
+   "certa": 1,
+   "explica": "<i>C. difficile</i>: esporos não morrem com álcool.",
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 12,
+   "pergunta": "Quimioterapia, febre, neutropenia, paciente estável",
+   "opcoes": [
+    "Cefepima",
+    "Cefepima + vancomicina",
+    "Ceftriaxona",
+    "Fluconazol"
+   ],
+   "certa": 0,
+   "explica": "Primeira linha: cefepima isolada; vancomicina se grave ou piora.",
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 13,
+   "pergunta": "Cefepima + vancomicina sem melhora na neutropenia febril. Próximo passo",
+   "opcoes": [
+    "Trocar por ceftriaxona",
+    "Acrescentar antifúngico",
+    "Suspender tudo",
+    "Acrescentar metronidazol"
+   ],
+   "certa": 1,
+   "explica": "Gram− e Gram+ já cobertos: pensar em fungo.",
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 14,
+   "pergunta": "Hemocultura com MRSA. Qual betalactâmico funciona?",
+   "opcoes": [
+    "Meropeném",
+    "Oxacilina",
+    "Ceftarolina",
+    "Pipe-tazo"
+   ],
+   "certa": 2,
+   "explica": "Só a ceftarolina pega MRSA entre os betalactâmicos.",
+   "tempo": 20,
+   "secoes": [
+    "r3"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 15,
+   "pergunta": "ESBL sensível a pipe-tazo, meropeném e amicacina no antibiograma",
+   "opcoes": [
+    "Pipe-tazo",
+    "Meropeném",
+    "Amicacina",
+    "Ceftriaxona"
+   ],
+   "certa": 1,
+   "explica": "ESBL: carbapenêmico; a sensibilidade à pipe-tazo é só <i>in vitro</i>.",
+   "tempo": 20,
+   "secoes": [
+    "r4"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 16,
+   "pergunta": "<i>Providencia</i> sensível à ceftriaxona no antibiograma. Conduta (aula)",
+   "opcoes": [
+    "Usar ceftriaxona",
+    "Evitar ceftriaxona",
+    "Ceftriaxona em dose dobrada",
+    "Associar clavulanato"
+   ],
+   "certa": 1,
+   "explica": "Grupo CESP: AmpC induzível; evitar 3ª geração.",
+   "tempo": 20,
+   "secoes": [
+    "r4"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 17,
+   "pergunta": "Qual carbapenêmico NÃO pega <i>Pseudomonas</i>?",
+   "opcoes": [
+    "Meropeném",
+    "Imipeném",
+    "Ertapeném",
+    "Nenhum"
+   ],
+   "certa": 2,
+   "explica": "Ertapeném: 1×/dia, IM ou IV, pele e partes moles.",
+   "tempo": 20,
+   "secoes": [
+    "r4"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 18,
+   "pergunta": "Pancreatite necrosante infectada",
+   "opcoes": [
+    "Ertapeném",
+    "Imipeném-cilastatina",
+    "Ceftriaxona",
+    "Ampicilina"
+   ],
+   "certa": 1,
+   "explica": "Melhor penetração pancreática.",
+   "tempo": 20,
+   "secoes": [
+    "r4"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 19,
+   "pergunta": "KPC isolada. Melhor droga",
+   "opcoes": [
+    "Meropeném",
+    "Pipe-tazo",
+    "Ceftazidima-avibactam",
+    "Cefepima"
+   ],
+   "certa": 2,
+   "explica": "Carbapenêmicos não pegam KPC; o avibactam protege a ceftazidima.",
+   "tempo": 20,
+   "secoes": [
+    "r4"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 20,
+   "pergunta": "Colangite (tríade de Charcot)",
+   "opcoes": [
+    "Ceftriaxona isolada",
+    "Ceftriaxona + metronidazol",
+    "Ceftriaxona + azitromicina",
+    "Vancomicina"
+   ],
+   "certa": 1,
+   "explica": "Bile = intestino: Gram− + anaeróbios.",
+   "tempo": 20,
+   "secoes": [
+    "r6"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 21,
+   "pergunta": "DIP: esquema",
+   "opcoes": [
+    "Ceftriaxona isolada",
+    "Ceftriaxona + metronidazol + doxiciclina",
+    "Amoxicilina",
+    "Azitromicina isolada"
+   ],
+   "certa": 1,
+   "explica": "Anaeróbios (metronidazol) e clamídia (doxiciclina).",
+   "tempo": 20,
+   "secoes": [
+    "r6"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 22,
+   "pergunta": "Pé diabético com ferida profunda e necrose",
+   "opcoes": [
+    "Cefalexina",
+    "Ceftriaxona + clindamicina",
+    "Metronidazol isolado",
+    "Azitromicina"
+   ],
+   "certa": 1,
+   "explica": "Ceftriaxona para Gram−; clindamicina para Gram+ e anaeróbios.",
+   "tempo": 20,
+   "secoes": [
+    "r6"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 23,
+   "pergunta": "Cirrótico, ascite, febre, PMN 480/mm³ no líquido",
+   "opcoes": [
+    "Ceftriaxona",
+    "Ceftriaxona + metronidazol",
+    "Vancomicina",
+    "Cirurgia de urgência"
+   ],
+   "certa": 0,
+   "explica": "PBE: Gram− do intestino; ceftriaxona sozinha.",
+   "tempo": 20,
+   "secoes": [
+    "r6"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 24,
+   "pergunta": "Infusão rápida de vancomicina causa vermelhidão no tronco. Conduta",
+   "opcoes": [
+    "Suspender por alergia",
+    "Infundir mais devagar",
+    "Trocar por oxacilina",
+    "Dar adrenalina"
+   ],
+   "certa": 1,
+   "explica": "Síndrome do homem vermelho: não é alergia.",
+   "tempo": 20,
+   "secoes": [
+    "r5"
+   ]
+  }
+ ],
+ "kahootInfo": {
+  "titulo": "Quiz de revisão · Antibióticos",
+  "capa": "{n} perguntas de revisão feitas a partir das aulas de penicilinas, cefalosporinas e carbapenêmicos. Não é um Kahoot de professor. Quanto mais cedo acertar, mais pontos.",
+  "botao": "Começar o quiz"
+ },
+ "casos": [
+  {
+   "id": "a1",
+   "nivel": "Difícil",
+   "titulo": "Seu Antônio e a febre do terceiro dia",
+   "resumo": "Da pneumonia comunitária à infecção hospitalar e ao escalonamento.",
+   "tags": [
+    "Pneumonia",
+    "IRAS",
+    "Escalonamento"
+   ],
+   "secoes": [
+    "g3",
+    "g4",
+    "r6"
+   ],
+   "abertura": "<p><strong>Antônio, 68 anos</strong>, diabético e com DPOC, chega com febre, tosse produtiva e confusão leve. FR 32, PA 88/56, ureia elevada. RX: consolidação em lobo inferior direito.</p>",
+   "etapas": [
+    {
+     "titulo": "Onde tratar",
+     "pergunta": "CURB-65 alto e hipotensão. Qual o esquema inicial?",
+     "opcoes": [
+      "Amoxi-clav + azitromicina em casa",
+      "Ceftriaxona + azitromicina internado",
+      "Pipe-tazo",
+      "Meropeném"
+     ],
+     "certa": 1,
+     "explica": "Pneumonia comunitária que interna: pneumococo (ceftriaxona) + atípicos (macrolídeo). Pipe-tazo é para infecção hospitalar."
+    },
+    {
+     "titulo": "Macrolídeo",
+     "pergunta": "Por que azitromicina e não claritromicina aqui?",
+     "opcoes": [
+      "A azitro pega melhor o pneumococo",
+      "A ceftriaxona já pega o pneumococo e a azitro dá menos diarreia",
+      "A claritro não pega atípicos",
+      "Tanto faz"
+     ],
+     "certa": 1,
+     "explica": "Associado à ceftriaxona, o macrolídeo entra só para atípicos; a azitro é mais tolerada."
+    },
+    {
+     "titulo": "Nova febre",
+     "info": "<p>No 6º dia, já melhor, Antônio volta a ter febre e secreção purulenta na traqueostomia. Está internado há 6 dias.</p>",
+     "pergunta": "Que bactéria passa a ser obrigatório cobrir?",
+     "opcoes": [
+      "<i>Listeria</i>",
+      "<i>Pseudomonas</i>",
+      "<i>Mycoplasma</i>",
+      "<i>S. pyogenes</i>"
+     ],
+     "certa": 1,
+     "explica": "≥ 48 h de internação = IRAS: cobrir <i>Pseudomonas</i>."
+    },
+    {
+     "titulo": "Troca",
+     "pergunta": "Qual droga escolher agora?",
+     "opcoes": [
+      "Ceftriaxona em dose dobrada",
+      "Pipe-tazo ou cefepima",
+      "Ertapeném",
+      "Cefuroxima"
+     ],
+     "certa": 1,
+     "explica": "Ceftriaxona e ertapeném não pegam <i>Pseudomonas</i>."
+    },
+    {
+     "titulo": "Falha",
+     "info": "<p>72 h depois piora, com choque. Cultura ainda pendente.</p>",
+     "pergunta": "Próximo passo?",
+     "opcoes": [
+      "Manter e aguardar cultura",
+      "Escalar para meropeném",
+      "Trocar por ceftazidima-avibactam",
+      "Acrescentar metronidazol"
+     ],
+     "certa": 1,
+     "explica": "Falha de pipe-tazo/cefepima em 48–72 h: meropeném. Ceftazidima-avibactam é reservada para KPC documentada."
+    },
+    {
+     "titulo": "Cultura",
+     "info": "<p>Cultura: <i>Klebsiella pneumoniae</i> produtora de carbapenemase (KPC).</p>",
+     "pergunta": "E agora?",
+     "opcoes": [
+      "Manter meropeném",
+      "Ceftazidima-avibactam",
+      "Cefepima",
+      "Oxacilina"
+     ],
+     "certa": 1,
+     "explica": "Carbapenêmicos não pegam KPC."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Pneumonia que interna ≠ pneumonia hospitalar.</li><li>IRAS obriga cobrir <i>Pseudomonas</i>.</li><li>Escalonar para carbapenêmico só após falha.</li><li>KPC → ceftazidima-avibactam.</li></ul><h3>Pegadinhas</h3><ul><li>Ceftriaxona \"forte\" não pega <i>Pseudomonas</i>.</li></ul>"
+  },
+  {
+   "id": "a2",
+   "nivel": "Muito difícil",
+   "titulo": "Dona Lúcia e o antibiograma que mentiu",
+   "resumo": "Grupo CESP, ESBL e sensibilidade in vitro × in vivo.",
+   "tags": [
+    "CESP",
+    "ESBL",
+    "Antibiograma"
+   ],
+   "secoes": [
+    "g4",
+    "r4"
+   ],
+   "abertura": "<p><strong>Lúcia, 74 anos</strong>, sonda vesical há 2 semanas, febre e dor lombar. Urocultura: <i>Enterobacter cloacae</i> sensível à ceftriaxona, à cefepima e ao meropeném.</p>",
+   "etapas": [
+    {
+     "titulo": "A tentação",
+     "pergunta": "O antibiograma diz \"sensível\" à ceftriaxona. Usar?",
+     "opcoes": [
+      "Sim, é a mais barata",
+      "Não: grupo CESP com AmpC induzível",
+      "Sim, em dose dobrada",
+      "Sim, associada a clavulanato"
+     ],
+     "certa": 1,
+     "explica": "<i>Enterobacter</i> é do grupo CESP: a ceftriaxona liga a AmpC e é destruída in vivo."
+    },
+    {
+     "titulo": "O porquê",
+     "pergunta": "Por que o laboratório mostrou sensível?",
+     "opcoes": [
+      "Erro técnico",
+      "Na placa a droga mata antes de a bactéria ligar a enzima",
+      "A bactéria muda de espécie",
+      "O laboratório testou a dose errada"
+     ],
+     "certa": 1,
+     "explica": "Sensibilidade in vitro ≠ in vivo."
+    },
+    {
+     "titulo": "Escolha",
+     "pergunta": "Entre as opções sensíveis, qual faz mais sentido?",
+     "opcoes": [
+      "Ceftriaxona",
+      "Cefepima",
+      "Cefuroxima",
+      "Ertapeném IM em casa"
+     ],
+     "certa": 1,
+     "explica": "Pela IDSA, a cefepima resiste melhor à AmpC e costuma ser preferida; o carbapenêmico fica para ESBL ou resistência maior. (Na aula, a ênfase é só evitar a 3ª geração.)"
+    },
+    {
+     "titulo": "Segundo paciente",
+     "info": "<p>No leito ao lado, <i>E. coli</i> ESBL sensível a pipe-tazo, meropeném e amicacina.</p>",
+     "pergunta": "Qual droga?",
+     "opcoes": [
+      "Pipe-tazo",
+      "Meropeném",
+      "Ceftriaxona",
+      "Amoxi-clav"
+     ],
+     "certa": 1,
+     "explica": "ESBL → meropeném, mesmo com pipe-tazo \"sensível\". Mais da metade da turma do ano anterior errou."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>CESP: evitar 3ª geração.</li><li>ESBL: meropeném.</li><li>Antibiograma \"sensível\" nem sempre funciona no paciente.</li></ul>"
+  },
+  {
+   "id": "a3",
+   "nivel": "Difícil",
+   "titulo": "Marina, a quimio e a febre que não cede",
+   "resumo": "Neutropenia febril e raciocínio por exclusão.",
+   "tags": [
+    "Neutropenia febril",
+    "Cefepima",
+    "Antifúngico"
+   ],
+   "secoes": [
+    "g3",
+    "r3"
+   ],
+   "abertura": "<p><strong>Marina, 34 anos</strong>, no 8º dia de quimioterapia para linfoma, tem febre de 38,6 °C. Neutrófilos 300/mm³. PA 118/72, sem foco aparente.</p>",
+   "etapas": [
+    {
+     "titulo": "Primeiro antibiótico",
+     "pergunta": "Qual a primeira escolha?",
+     "opcoes": [
+      "Ceftriaxona",
+      "Cefepima",
+      "Amoxi-clav",
+      "Vancomicina isolada"
+     ],
+     "certa": 1,
+     "explica": "Neutropenia febril: droga antipseudomonas; a cefepima é a primeira linha da aula."
+    },
+    {
+     "titulo": "Piora",
+     "info": "<p>Após 48 h, fica hipotensa e com hiperemia no local do cateter.</p>",
+     "pergunta": "O que acrescentar?",
+     "opcoes": [
+      "Metronidazol",
+      "Vancomicina",
+      "Azitromicina",
+      "Nada"
+     ],
+     "certa": 1,
+     "explica": "Grave/piora: cobrir todos os Gram+, incluindo MRSA (o cateter reforça)."
+    },
+    {
+     "titulo": "Ainda febril",
+     "info": "<p>Dias depois, ainda febril com cefepima + vancomicina; culturas negativas.</p>",
+     "pergunta": "Raciocínio?",
+     "opcoes": [
+      "Trocar por meropeném e parar",
+      "Gram+ e Gram− cobertos: pensar em fungo",
+      "É febre do tumor; suspender tudo",
+      "Acrescentar doxiciclina"
+     ],
+     "certa": 1,
+     "explica": "Por exclusão, e porque o neutrófilo é quem segura fungos."
+    },
+    {
+     "titulo": "Antifúngico",
+     "pergunta": "Ela está grave. Qual antifúngico (aula)?",
+     "opcoes": [
+      "Fluconazol",
+      "Equinocandina",
+      "Nistatina oral",
+      "Nenhum"
+     ],
+     "certa": 1,
+     "explica": "Grave → equinocandina; estável → fluconazol."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Cefepima → + vancomicina → + antifúngico.</li></ul><h3>Nota</h3><ul><li>Pela IDSA, neutropenia = neutrófilos &lt; 500; antifúngico empírico em geral após 4–7 dias de febre.</li></ul>"
+  },
+  {
+   "id": "a4",
+   "nivel": "Muito difícil",
+   "titulo": "O pronto-socorro de domingo",
+   "resumo": "Quatro pacientes, uma pergunta: o que somar à ceftriaxona?",
+   "tags": [
+    "Associações",
+    "Anaeróbios",
+    "Atípicos"
+   ],
+   "secoes": [
+    "g6",
+    "r6"
+   ],
+   "abertura": "<p>Plantão de domingo. Todos os pacientes vão receber ceftriaxona; sua tarefa é decidir o parceiro de cada um.</p>",
+   "etapas": [
+    {
+     "titulo": "Leito 1",
+     "info": "<p>Mulher de 52 anos: febre, icterícia e dor em hipocôndrio direito.</p>",
+     "pergunta": "Parceiro da ceftriaxona?",
+     "opcoes": [
+      "Azitromicina",
+      "Metronidazol",
+      "Ampicilina",
+      "Nenhum"
+     ],
+     "certa": 1,
+     "explica": "Colangite: bile = intestino → anaeróbios."
+    },
+    {
+     "titulo": "Leito 2",
+     "info": "<p>Mulher de 24 anos: dor pélvica, corrimento, dor à mobilização do colo.</p>",
+     "pergunta": "Esquema?",
+     "opcoes": [
+      "Ceftriaxona isolada",
+      "Ceftriaxona + metronidazol + doxiciclina",
+      "Ceftriaxona + azitromicina",
+      "Ceftriaxona + vancomicina"
+     ],
+     "certa": 1,
+     "explica": "DIP: anaeróbios + clamídia."
+    },
+    {
+     "titulo": "Leito 3",
+     "info": "<p>Cirrótico com ascite, febre; PMN 400/mm³ no líquido ascítico.</p>",
+     "pergunta": "Parceiro?",
+     "opcoes": [
+      "Metronidazol",
+      "Nenhum: ceftriaxona sozinha",
+      "Ampicilina",
+      "Clindamicina"
+     ],
+     "certa": 1,
+     "explica": "PBE: Gram− aeróbios do intestino; anaeróbios quase não chegam."
+    },
+    {
+     "titulo": "Leito 4",
+     "info": "<p>Homem de 71 anos: febre, rigidez de nuca, rebaixamento.</p>",
+     "pergunta": "Parceiro?",
+     "opcoes": [
+      "Ampicilina",
+      "Metronidazol",
+      "Doxiciclina",
+      "Nenhum"
+     ],
+     "certa": 0,
+     "explica": "Meningite ≥ 50 anos: cobrir <i>Listeria</i>."
+    },
+    {
+     "titulo": "Leito 5",
+     "info": "<p>Diabético com úlcera profunda e necrótica no pé, mau cheiro.</p>",
+     "pergunta": "Parceiro?",
+     "opcoes": [
+      "Clindamicina",
+      "Azitromicina",
+      "Ampicilina",
+      "Nenhum"
+     ],
+     "certa": 0,
+     "explica": "Ferida profunda: anaeróbios + Gram+ da pele."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Pergunte: o que a ceftriaxona não pega e costuma estar aqui?</li></ul><h3>Pegadinhas</h3><ul><li>PBE não leva metronidazol; muitos anaeróbios sugerem perfuração.</li></ul>"
+  },
+  {
+   "id": "a5",
+   "nivel": "Difícil",
+   "titulo": "Joana, 19 anos, e a garganta",
+   "resumo": "Faringite, mononucleose e febre reumática.",
+   "tags": [
+    "Faringite",
+    "Penicilinas",
+    "Febre reumática"
+   ],
+   "secoes": [
+    "g2",
+    "r2"
+   ],
+   "abertura": "<p><strong>Joana, 19 anos</strong>, odinofagia e febre há 3 dias. Amígdalas com exsudato, linfonodos cervicais posteriores aumentados, edema palpebral e baço palpável.</p>",
+   "etapas": [
+    {
+     "titulo": "Hipótese",
+     "pergunta": "Qual a principal hipótese?",
+     "opcoes": [
+      "Faringite estreptocócica",
+      "Mononucleose infecciosa",
+      "Difteria",
+      "Sífilis secundária"
+     ],
+     "certa": 1,
+     "explica": "Linfonodo posterior + edema periorbitário + esplenomegalia = EBV."
+    },
+    {
+     "titulo": "O erro",
+     "info": "<p>Ela tinha tomado amoxicilina por conta própria e surgiu rash difuso.</p>",
+     "pergunta": "O rash é…",
+     "opcoes": [
+      "Alergia à penicilina",
+      "Exantema da mononucleose precipitado pela amoxicilina",
+      "Escarlatina",
+      "Farmacodermia grave"
+     ],
+     "certa": 1,
+     "explica": "Não é alergia; tratamento é sintomático."
+    },
+    {
+     "titulo": "Outra paciente",
+     "info": "<p>Irmã de 10 anos: faringite com teste rápido positivo para estreptococo do grupo A.</p>",
+     "pergunta": "Tratamento?",
+     "opcoes": [
+      "Amoxi-clav",
+      "Amoxicilina pura ou benzatina",
+      "Ceftriaxona",
+      "Azitromicina"
+     ],
+     "certa": 1,
+     "explica": "<i>S. pyogenes</i> não produz betalactamase."
+    },
+    {
+     "titulo": "Depois",
+     "info": "<p>Meses depois, a irmã tem artrite migratória e sopro; eco com lesão mitral leve.</p>",
+     "pergunta": "Profilaxia secundária até quando?",
+     "opcoes": [
+      "Até os 21 anos",
+      "Até os 25 anos",
+      "5 anos",
+      "Por toda a vida"
+     ],
+     "certa": 1,
+     "explica": "Cardite leve: 10 anos (até os 20) ou até 25: vale o que durar mais → 25."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Pus na amígdala não garante bactéria.</li><li>Febre reumática: o que durar mais.</li></ul>"
+  },
+  {
+   "id": "a6",
+   "nivel": "Difícil",
+   "titulo": "Pedro, o pós-operatório e a diarreia",
+   "resumo": "Profilaxia cirúrgica, C. difficile e vancomicina.",
+   "tags": [
+    "Profilaxia",
+    "C. difficile",
+    "Vancomicina"
+   ],
+   "secoes": [
+    "g3",
+    "g5",
+    "r3"
+   ],
+   "abertura": "<p><strong>Pedro, 58 anos</strong>, vai fazer uma correção de aneurisma de aorta abdominal.</p>",
+   "etapas": [
+    {
+     "titulo": "Profilaxia",
+     "pergunta": "Qual antibiótico na indução?",
+     "opcoes": [
+      "Ceftriaxona, \"é mais forte\"",
+      "Cefazolina",
+      "Meropeném",
+      "Vancomicina de rotina"
+     ],
+     "certa": 1,
+     "explica": "Flora da pele (Gram+): cefazolina."
+    },
+    {
+     "titulo": "Infecção",
+     "info": "<p>No 5º dia, pneumonia hospitalar; recebe antibióticos de amplo espectro, incluindo ceftriaxona antes da troca.</p><p>Três dias depois: 12 evacuações aquosas/dia.</p>",
+     "pergunta": "Agente mais provável?",
+     "opcoes": [
+      "<i>Salmonella</i>",
+      "<i>Clostridioides difficile</i>",
+      "Rotavírus",
+      "<i>Shigella</i>"
+     ],
+     "certa": 1,
+     "explica": "Antibiótico que destrói a flora → <i>C. difficile</i>."
+    },
+    {
+     "titulo": "Isolamento",
+     "pergunta": "Que medida é obrigatória?",
+     "opcoes": [
+      "Álcool gel e máscara",
+      "Isolamento de contato e lavagem com água e sabão",
+      "Nenhuma",
+      "Isolamento respiratório"
+     ],
+     "certa": 1,
+     "explica": "Esporos não morrem com álcool; principal causa de infecção cruzada em UTI."
+    },
+    {
+     "titulo": "Tratamento",
+     "pergunta": "Qual tratamento (fora da aula)?",
+     "opcoes": [
+      "Vancomicina IV",
+      "Vancomicina oral",
+      "Ceftriaxona",
+      "Clindamicina"
+     ],
+     "certa": 1,
+     "explica": "VO a vancomicina fica no intestino. IV não chega ao lúmen. Clindamicina é a mais associada ao <i>C. difficile</i>."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Profilaxia = cefazolina.</li><li><i>C. difficile</i>: contato + água e sabão + vancomicina oral.</li></ul>"
+  }
+ ]
+}

@@ -10,44 +10,51 @@
   {
    "id": "r0",
    "grupo": "Resumo de referência",
-   "titulo": "Comece por aqui",
-   "html": "<p>Leia primeiro este <strong>resumo</strong>: ele explica cada tema do zero. Depois passe para o <span class=\"xref\" data-sec=\"k0\">Kahoot destrinchado</span>, que é a parte prioritária (as 34 perguntas da aula com resposta, porquê e pegadinhas), e então jogue o Kahoot e faça os casos clínicos.</p><p>Em qualquer seção, use <strong>Lado a lado</strong> na barra de cima para abrir a parte correspondente do outro bloco sem sair da página.</p><p>Resumo de consulta, para tirar dúvidas do Kahoot. Fontes: Kahoot e slides de explicação da aula (fotos de 13/11), <strong>Aula 8 · Métodos de imagem nas emergências abdominais</strong>, <strong>Aula 2 · Anatomia radiológica e interpretação do RX de tórax</strong> e o Kahoot de revisão da turma anterior (pasta Diagnóstico por imagem do Drive).</p><p>A Aula 5 (Padrões patológicos à tomografia) está no Drive, mas o arquivo é grande demais para ser lido aqui. A parte de neuro deste resumo vem dos slides do Kahoot.</p>",
+   "titulo": "Introdução",
+   "html": "<p><strong>Diagnóstico por Imagem.</strong> Capítulo de referência para o Kahoot de 13/11, a Aula 8 (métodos de imagem nas emergências abdominais) e a Aula 2 (RX de tórax).</p><h3>Introdução</h3><p>O exame de imagem certo, pedido no momento certo, encurta o caminho até o diagnóstico; o exame errado expõe o paciente à radiação, atrasa a conduta ou dá uma falsa tranquilidade. A escolha depende de entender o princípio físico de cada método, porque é ele que define o que o método enxerga bem e onde falha: a radiografia vê ar e osso, a tomografia vê sangue agudo e cálculos, a ultrassonografia vê líquido e a vesícula sem radiação, e a ressonância vê partes moles e o encéfalo com detalhe incomparável.</p><p>O Kahoot da professora concentrou-se em situações de emergência: traumatismo cranioencefálico e hemorragias intracranianas, abdome agudo, trauma abdominal, cólica renal e lesões ósseas e musculares. Este capítulo segue essa ordem. Ao final, o leitor deve saber escolher o primeiro exame em cada cenário, reconhecer as hemorragias intracranianas pela forma, interpretar os achados clássicos do abdome agudo e ler uma radiografia de tórax de modo sistemático.</p><p class=\"tabtit\"><strong>Tabela 0.1</strong>Seções do capítulo</p><table><thead><tr><th>Seção</th><th>Conteúdo</th></tr></thead><tbody><tr><td>1</td><td>Princípios dos métodos de imagem</td></tr><tr><td>2</td><td>Neurorradiologia: meninges, hemorragias e edema</td></tr><tr><td>3</td><td>Abdome agudo (Aula 8)</td></tr><tr><td>4</td><td>Trauma abdominal, urinário e musculoesquelético</td></tr><tr><td>5</td><td>Radiografia de tórax: leitura sistemática (Aula 2)</td></tr></tbody></table><p>As figuras vêm de artigos revisados por pares com licença aberta e de livro-texto em domínio público, com a fonte em cada legenda; clique para ampliar. O resumo é complementado pelo <strong>Kahoot destrinchado</strong>, que explica as 34 perguntas da aula. A Aula 5 (padrões patológicos à tomografia) está no Drive, mas o arquivo é grande demais para leitura; a parte de neurorradiologia baseia-se nos slides do Kahoot.</p>",
    "par": "k0"
   },
   {
    "id": "r1",
    "grupo": "Resumo de referência",
    "titulo": "1. Princípios dos métodos de imagem",
-   "html": "<h3>Cada método, em uma linha</h3><table><thead><tr><th>Método</th><th>Princípio</th><th>Bom para</th><th>Limites</th></tr></thead><tbody><tr><td>Raio X</td><td>Radiação ionizante; imagem 2D de estruturas 3D (sobreposição)</td><td>Pneumoperitônio, obstrução, calcificações, corpo estranho, fraturas, tórax</td><td>Sobreposição; pouca informação de partes moles</td></tr><tr><td>TC</td><td>Radiação ionizante; cortes sem sobreposição</td><td>Método que mais define a etiologia do abdome agudo; trauma estável; sangue no crânio; cálculo urinário</td><td>Radiação; contraste iodado (alergia, função renal)</td></tr><tr><td>US</td><td>Ondas sonoras (sem radiação)</td><td>Vesícula, gestante, criança, FAST, partes moles</td><td>Operador-dependente; gás e obesidade atrapalham; vê mal o pâncreas</td></tr><tr><td>RM</td><td>Campo magnético e radiofrequência (sem radiação)</td><td>Neuro, partes moles, músculo, colangioRM, gestante após o US</td><td>Demorada, cara, menos disponível; quase não usada no abdome agudo</td></tr></tbody></table><h3>Densidades na TC (Unidades Hounsfield)</h3><table><thead><tr><th>Estrutura</th><th>UH aproximada</th><th>Aspecto</th></tr></thead><tbody><tr><td>Ar</td><td>−1000</td><td>Preto</td></tr><tr><td>Gordura</td><td>−100 a −50</td><td>Escuro</td></tr><tr><td>Água, urina, bile, LCR</td><td>0 (até ~15)</td><td>Cinza escuro</td></tr><tr><td>Tecidos moles</td><td>+20 a +60</td><td>Cinza</td></tr><tr><td>Sangue agudo</td><td>+50 a +80</td><td>Mais claro que o cérebro (hiperdenso)</td></tr><tr><td>Osso cortical</td><td>+400 a +1000</td><td>Branco</td></tr></tbody></table><p>Na TC fala-se em <strong>densidade</strong> (hipo/hiperdenso); no US, em <strong>ecogenicidade</strong> (anecoico, hiperecogênico, sombra acústica); no RX, em <strong>radiopaco</strong> (branco) e <strong>radiotransparente</strong> (preto); na RM, em <strong>sinal</strong> (hipo/hipersinal).</p><h3>Contraste endovenoso na TC</h3><ul><li>Com contraste, aorta, cava, veia porta e rins ficam brancos (realce).</li><li><strong>Sem contraste</strong>: sangue no crânio, cálculo urinário, pneumonia, vidro fosco.</li><li><strong>Contraste obrigatório</strong>: tromboembolismo pulmonar, dissecção e aneurisma de aorta, tumores, abdome agudo inflamatório e trauma estável.</li></ul><h3>Planos</h3><p>Axial (transversal, o corte “de baixo para cima”, o mais usado), coronal (de frente) e sagital (de lado).</p><h3>RM: como reconhecer a sequência</h3><p><strong>T1</strong>: líquido escuro, boa anatomia. <strong>T2</strong>: líquido branco. <strong>FLAIR</strong>: T2 com o líquor apagado, ótimo para edema e lesões perto dos ventrículos. <strong>Difusão (DWI)</strong>: restrição no AVC isquêmico agudo.</p>",
+   "html": "<h3>1.1 Princípios físicos dos métodos</h3><p>A <strong>radiografia</strong> usa radiação ionizante que atravessa o corpo e é absorvida em graus diferentes pelos tecidos, produzindo uma imagem bidimensional de estruturas tridimensionais. A sobreposição é sua principal limitação, mas o contraste natural entre ar, gordura, partes moles e osso a torna excelente para pneumoperitônio, obstrução intestinal, calcificações, corpos estranhos, fraturas e doenças do tórax. A <strong>tomografia computadorizada</strong> também usa radiação ionizante, mas reconstrói cortes sem sobreposição e mede a atenuação de cada ponto; é o método que mais define a causa do abdome agudo e é a escolha no trauma em paciente estável, na suspeita de sangramento intracraniano e na cólica renal.</p><p>A <strong>ultrassonografia</strong> forma imagens a partir do eco de ondas sonoras, sem radiação. É o método inicial para a vesícula, para gestantes e crianças, para o FAST no trauma e para partes moles, mas depende do operador, é prejudicada pelo gás intestinal e pela obesidade e avalia mal o pâncreas. A <strong>ressonância magnética</strong> usa campo magnético e radiofrequência, também sem radiação, e oferece o melhor contraste de partes moles, sendo a escolha em neurologia, musculoesquelético e colangiografia; é demorada, cara e pouco disponível, e por isso quase não se aplica ao abdome agudo. A Tabela 1.1 resume os quatro métodos.</p><p class=\"tabtit\"><strong>Tabela 1.1</strong>Métodos de imagem</p><table><thead><tr><th>Método</th><th>Princípio</th><th>Indicações</th><th>Limites</th></tr></thead><tbody><tr><td>Radiografia</td><td>Radiação ionizante; imagem 2D por sobreposição</td><td>Pneumoperitônio, obstrução, calcificações, corpo estranho, fraturas, tórax</td><td>Sobreposição; pouca informação de partes moles</td></tr><tr><td>Tomografia</td><td>Radiação ionizante; cortes sem sobreposição</td><td>Etiologia do abdome agudo, trauma estável, sangue intracraniano, cálculo urinário</td><td>Radiação; contraste iodado (alergia, função renal)</td></tr><tr><td>Ultrassonografia</td><td>Ondas sonoras, sem radiação</td><td>Vesícula, gestante, criança, FAST, partes moles</td><td>Operador-dependente; gás e obesidade; pâncreas</td></tr><tr><td>Ressonância</td><td>Campo magnético e radiofrequência, sem radiação</td><td>Neurologia, partes moles, músculo, colangiorressonância, gestante após ultrassom</td><td>Demorada, cara, pouco disponível</td></tr></tbody></table><h3>1.2 Densidade e vocabulário de cada método</h3><p>Na tomografia, a atenuação é medida em <strong>unidades Hounsfield</strong> (UH), uma escala em que a água vale zero e o ar, menos mil (Tabela 1.2). Quanto maior a atenuação, mais clara a estrutura. O sangue agudo, rico em proteína da hemoglobina, tem entre 50 e 80 UH e aparece mais claro que o cérebro, ou seja, hiperdenso; com os dias, a hemoglobina degrada-se e o hematoma torna-se iso e depois hipodenso. Cada método tem seu vocabulário: na tomografia fala-se em densidade (hipodenso, hiperdenso), na ultrassonografia em ecogenicidade (anecoico, hiperecogênico, sombra acústica), na radiografia em radiopaco (branco) e radiotransparente (preto) e na ressonância em sinal (hipossinal, hipersinal).</p><p class=\"tabtit\"><strong>Tabela 1.2</strong>Densidades na tomografia</p><table><thead><tr><th>Estrutura</th><th>UH aproximada</th><th>Aspecto</th></tr></thead><tbody><tr><td>Ar</td><td>-1000</td><td>Preto</td></tr><tr><td>Gordura</td><td>-100 a -50</td><td>Escuro</td></tr><tr><td>Água, urina, bile, liquor</td><td>0 a cerca de 15</td><td>Cinza-escuro</td></tr><tr><td>Partes moles</td><td>+20 a +60</td><td>Cinza</td></tr><tr><td>Sangue agudo</td><td>+50 a +80</td><td>Mais claro que o cérebro</td></tr><tr><td>Osso cortical</td><td>+400 a +1000</td><td>Branco</td></tr></tbody></table><h3>1.3 Contraste, planos e sequências</h3><p>O contraste iodado intravenoso torna brancas as estruturas vascularizadas, como aorta, veia cava, veia porta e rins, e evidencia inflamação e tumores pelo realce. Deve ser evitado quando ele mesmo esconderia o achado procurado: sangue intracraniano e cálculo urinário, ambos hiperdensos, são pesquisados sem contraste, assim como a pneumonia e o vidro fosco pulmonar. É obrigatório na suspeita de tromboembolismo pulmonar, dissecção e aneurisma de aorta, tumores, abdome agudo inflamatório e trauma estável. As imagens são vistas em três planos: axial ou transversal, o mais usado, coronal (de frente) e sagital (de lado).</p><p>Na ressonância, cada sequência destaca uma propriedade dos tecidos. Em T1 o líquido é escuro e a anatomia é bem definida; em T2 o líquido é branco; o FLAIR é um T2 com o sinal do liquor suprimido, ótimo para edema e lesões próximas aos ventrículos; e a difusão (DWI) mostra restrição à movimentação da água no AVC isquêmico agudo.</p>",
    "par": "k1"
   },
   {
    "id": "r2",
    "grupo": "Resumo de referência",
    "titulo": "2. Neuro: meninges, hemorragias e edema",
-   "html": "<h3>Meninges e espaços</h3><table><thead><tr><th>Espaço</th><th>Entre</th><th>Coleção típica</th></tr></thead><tbody><tr><td>Epidural</td><td>Osso e dura-máter</td><td>Hematoma epidural (arterial, lente)</td></tr><tr><td>Subdural</td><td>Dura-máter e aracnoide (virtual)</td><td>Hematoma subdural (venoso, crescente)</td></tr><tr><td>Subaracnoide</td><td>Aracnoide e pia-máter (tem LCR e artérias)</td><td>HSA (aneurisma, trauma)</td></tr></tbody></table><h3>Qual hemorragia é?</h3><table><thead><tr><th></th><th>Epidural</th><th>Subdural</th><th>Subaracnoide</th></tr></thead><tbody><tr><td>Forma na TC</td><td>Biconvexa (lente)</td><td>Crescente</td><td>Sangue nos sulcos, fissuras sylvianas e cisternas</td></tr><tr><td>Origem</td><td>Artéria meníngea média</td><td>Veias ponte</td><td>Aneurisma roto (não traumática)</td></tr><tr><td>Paciente</td><td>Jovem, trauma com fratura temporal</td><td>Idoso, anticoagulado, alcoólatra</td><td>Adulto com cefaleia súbita “a pior da vida”</td></tr><tr><td>Pista clínica</td><td>Intervalo lúcido</td><td>Piora lenta, confusão, imita demência</td><td>Rigidez de nuca, náuseas</td></tr></tbody></table><p><strong>Exame inicial em qualquer suspeita de sangramento intracraniano agudo: TC de crânio sem contraste.</strong> Depois, angio-TC ou arteriografia para procurar o aneurisma.</p><h3>Edema</h3><p><strong>Citotóxico</strong>: célula incha por falência da bomba Na⁺/K⁺, cinzenta e branca, território arterial, AVC isquêmico, restringe na difusão, geralmente irreversível. <strong>Vasogênico</strong>: barreira hematoencefálica rota, substância branca, ao redor de tumor/metástase/abscesso, reversível.</p><h3>Imagens de referência</h3><p class=\"muted\">Figuras de artigos revisados por pares com licença aberta e de livro-texto, com a fonte em cada uma. Clique para ampliar.</p><figure class=\"ref\"><img src=\"content/img/imagem/ref/meninges_gray.jpg\" alt=\"Corte esquemático do topo do crânio mostrando as meninges: dura-máter, aracnoide (com gran\" loading=\"lazy\"><figcaption>Corte esquemático do topo do crânio mostrando as meninges: dura-máter, aracnoide (com granulações aracnoides), espaço subaracnoide e pia-máter colada ao córtex, além do seio sagital superior.<span class=\"fonte\">Fonte: Gray H. <em>Anatomy of the Human Body</em>. 20ª ed. Philadelphia: Lea &amp; Febiger, 1918. Fig. 769. Domínio público.</span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/hed_tc.jpg\" alt=\"Hematoma epidural agudo na TC sem contraste, 2 h após trauma: coleção hiperdensa biconvexa\" loading=\"lazy\"><figcaption>Hematoma epidural agudo na TC sem contraste, 2 h após trauma: coleção hiperdensa biconvexa temporoparietal direita; as áreas hipodensas dentro dela (“sinal do redemoinho”) indicam sangramento ativo.<span class=\"fonte\">Fonte: Wang et al. Risk Factors and Prognostic Value of Swirl Sign in Traumatic Acute Epidural Hematoma. <em>Frontiers in Neurology</em>, 2020. Fig. 1. Licença CC BY. <a href=\"https://doi.org/10.3389/fneur.2020.543536\" target=\"_blank\" rel=\"noopener\">doi:10.3389/fneur.2020.543536</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/hsd_tc.jpg\" alt=\"Hematoma subdural crônico na TC sem contraste, em três pacientes: coleções em crescente ao\" loading=\"lazy\"><figcaption>Hematoma subdural crônico na TC sem contraste, em três pacientes: coleções em crescente ao longo da convexidade (setas), mais escuras que o cérebro por causa do sangue antigo.<span class=\"fonte\">Fonte: Chen et al. Advances in chronic subdural hematoma and membrane imaging. <em>Frontiers in Neurology</em>, 2024. Fig. 4. Licença CC BY. <a href=\"https://doi.org/10.3389/fneur.2024.1366238\" target=\"_blank\" rel=\"noopener\">doi:10.3389/fneur.2024.1366238</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/hsa_tc.jpg\" alt=\"Hemorragia subaracnoide típica na TC sem contraste: sangue hiperdenso na cisterna suprasse\" loading=\"lazy\"><figcaption>Hemorragia subaracnoide típica na TC sem contraste: sangue hiperdenso na cisterna suprasselar, nas cisternas da base e nas fissuras sylvianas (setas).<span class=\"fonte\">Fonte: Tetsuka e Matsumoto Diagnosis of a subarachnoid hemorrhage with only mild symptoms using computed tomography in Japan. <em>BMC Neurology</em>, 2016. Fig. 3. Licença CC BY. <a href=\"https://doi.org/10.1186/s12883-016-0726-9\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s12883-016-0726-9</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/hsa_angio.jpg\" alt=\"Angio-TC do mesmo paciente: aneurisma de cerca de 3 mm na artéria cerebral anterior esquer\" loading=\"lazy\"><figcaption>Angio-TC do mesmo paciente: aneurisma de cerca de 3 mm na artéria cerebral anterior esquerda (seta), a causa da HSA.<span class=\"fonte\">Fonte: Tetsuka e Matsumoto Diagnosis of a subarachnoid hemorrhage with only mild symptoms using computed tomography in Japan. <em>BMC Neurology</em>, 2016. Fig. 4. Licença CC BY. <a href=\"https://doi.org/10.1186/s12883-016-0726-9\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s12883-016-0726-9</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/avc_tc.jpg\" alt=\"AVC isquêmico agudo por oclusão da carótida interna e da cerebral média esquerdas: a TC se\" loading=\"lazy\"><figcaption>AVC isquêmico agudo por oclusão da carótida interna e da cerebral média esquerdas: a TC sem contraste ainda é praticamente normal (a), enquanto a perfusão já mostra a área sem fluxo.<span class=\"fonte\">Fonte: Vymazal et al. Comparison of CT and MR imaging in ischemic stroke. <em>Insights into Imaging</em>, 2012. Fig. 5. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-012-0185-9\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-012-0185-9</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/avc_dwi.jpg\" alt=\"RM em AVC: no T2 (a) há várias lesões antigas; a difusão (DWI, b) acende apenas a isquemia\" loading=\"lazy\"><figcaption>RM em AVC: no T2 (a) há várias lesões antigas; a difusão (DWI, b) acende apenas a isquemia aguda, que é o edema citotóxico.<span class=\"fonte\">Fonte: Vymazal et al. Comparison of CT and MR imaging in ischemic stroke. <em>Insights into Imaging</em>, 2012. Fig. 7. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-012-0185-9\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-012-0185-9</a></span></figcaption></figure><!--/refs-->",
+   "html": "<h3>2.1 Meninges e espaços</h3><p>O encéfalo é envolvido por três meninges: a dura-máter, aderida ao osso; a aracnoide; e a pia-máter, colada ao córtex (Figura 2.1). Entre elas há três espaços onde o sangue pode se acumular, e a forma da coleção depende das estruturas que a limitam (Tabela 2.1). O espaço <strong>epidural</strong>, entre o osso e a dura, é virtual e só se abre quando o sangue arterial descola a dura do crânio. O espaço <strong>subdural</strong>, entre a dura e a aracnoide, também é virtual e é atravessado pelas veias ponte. O espaço <strong>subaracnoide</strong>, entre a aracnoide e a pia, é real, contém o liquor e as grandes artérias do polígono de Willis.</p><figure class=\"ref\"><img src=\"content/img/imagem/ref/meninges_gray.jpg\" alt=\"Corte esquemático do topo do crânio mostrando as meninges: dura-máter, aracnoide (com gran\" loading=\"lazy\"><figcaption><strong>Figura 2.1.</strong> Corte esquemático do topo do crânio mostrando as meninges: dura-máter, aracnoide (com granulações aracnoides), espaço subaracnoide e pia-máter colada ao córtex, além do seio sagital superior.<span class=\"fonte\">Fonte: Gray H. <em>Anatomy of the Human Body</em>. 20ª ed. Philadelphia: Lea &amp; Febiger, 1918. Fig. 769. Domínio público.</span></figcaption></figure><p class=\"tabtit\"><strong>Tabela 2.1</strong>Espaços meníngeos</p><table><thead><tr><th>Espaço</th><th>Entre</th><th>Coleção típica</th></tr></thead><tbody><tr><td>Epidural</td><td>Osso e dura-máter</td><td>Hematoma epidural, arterial, em lente</td></tr><tr><td>Subdural</td><td>Dura-máter e aracnoide</td><td>Hematoma subdural, venoso, em crescente</td></tr><tr><td>Subaracnoide</td><td>Aracnoide e pia-máter (com liquor e artérias)</td><td>Hemorragia subaracnoide (aneurisma, trauma)</td></tr></tbody></table><h3>2.2 As hemorragias intracranianas</h3><p>O <strong>hematoma epidural</strong> resulta, em geral, de fratura temporal que lesa a artéria meníngea média, em pacientes jovens após trauma. A dura está firmemente presa às suturas cranianas, e o sangue sob pressão arterial descola-a apenas entre elas, formando uma coleção <strong>biconvexa, em lente</strong>, que não cruza as suturas (Figura 2.2). O quadro clássico inclui o <strong>intervalo lúcido</strong>: o paciente perde a consciência no impacto, recupera-se e volta a piorar à medida que o hematoma cresce. Áreas hipodensas dentro do hematoma, o sinal do redemoinho, indicam sangramento ativo.</p><p>O <strong>hematoma subdural</strong> resulta da ruptura das veias ponte, que se estiram quando o encéfalo se retrai, como no idoso, no alcoolista e no anticoagulado. O sangue venoso espalha-se livremente pelo espaço subdural, que não é limitado pelas suturas, e forma uma coleção em <strong>crescente</strong> que acompanha a convexidade (Figura 2.3). A piora é lenta, com confusão que pode imitar demência; no hematoma crônico, o sangue antigo fica mais escuro que o cérebro.</p><p>A <strong>hemorragia subaracnoide</strong> não traumática decorre, na maioria das vezes, da ruptura de um aneurisma do polígono de Willis. O sangue espalha-se pelo liquor e aparece nos sulcos, nas fissuras sylvianas e nas cisternas da base (Figura 2.4). O quadro típico é a cefaleia súbita, descrita como a pior da vida, com rigidez de nuca e náuseas. A Tabela 2.2 compara as três hemorragias.</p><figure class=\"ref\"><img src=\"content/img/imagem/ref/hed_tc.jpg\" alt=\"Hematoma epidural agudo na TC sem contraste, 2 h após trauma: coleção hiperdensa biconvexa\" loading=\"lazy\"><figcaption><strong>Figura 2.2.</strong> Hematoma epidural agudo na TC sem contraste, 2 h após trauma: coleção hiperdensa biconvexa temporoparietal direita; as áreas hipodensas dentro dela (“sinal do redemoinho”) indicam sangramento ativo.<span class=\"fonte\">Fonte: Wang et al. Risk Factors and Prognostic Value of Swirl Sign in Traumatic Acute Epidural Hematoma. <em>Frontiers in Neurology</em>, 2020. Fig. 1. Licença CC BY. <a href=\"https://doi.org/10.3389/fneur.2020.543536\" target=\"_blank\" rel=\"noopener\">doi:10.3389/fneur.2020.543536</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/hsd_tc.jpg\" alt=\"Hematoma subdural crônico na TC sem contraste, em três pacientes: coleções em crescente ao\" loading=\"lazy\"><figcaption><strong>Figura 2.3.</strong> Hematoma subdural crônico na TC sem contraste, em três pacientes: coleções em crescente ao longo da convexidade (setas), mais escuras que o cérebro por causa do sangue antigo.<span class=\"fonte\">Fonte: Chen et al. Advances in chronic subdural hematoma and membrane imaging. <em>Frontiers in Neurology</em>, 2024. Fig. 4. Licença CC BY. <a href=\"https://doi.org/10.3389/fneur.2024.1366238\" target=\"_blank\" rel=\"noopener\">doi:10.3389/fneur.2024.1366238</a></span></figcaption></figure><p class=\"tabtit\"><strong>Tabela 2.2</strong>Diferenciação das hemorragias intracranianas</p><table><thead><tr><th></th><th>Epidural</th><th>Subdural</th><th>Subaracnoide</th></tr></thead><tbody><tr><td>Forma na tomografia</td><td>Biconvexa (lente)</td><td>Crescente</td><td>Sangue nos sulcos, fissuras sylvianas e cisternas</td></tr><tr><td>Origem</td><td>Artéria meníngea média</td><td>Veias ponte</td><td>Aneurisma roto (não traumática)</td></tr><tr><td>Paciente típico</td><td>Jovem, trauma com fratura temporal</td><td>Idoso, anticoagulado, alcoolista</td><td>Adulto com cefaleia súbita</td></tr><tr><td>Pista clínica</td><td>Intervalo lúcido</td><td>Piora lenta, confusão</td><td>Rigidez de nuca, náuseas</td></tr></tbody></table><figure class=\"ref\"><img src=\"content/img/imagem/ref/hsa_tc.jpg\" alt=\"Hemorragia subaracnoide típica na TC sem contraste: sangue hiperdenso na cisterna suprasse\" loading=\"lazy\"><figcaption><strong>Figura 2.4.</strong> Hemorragia subaracnoide típica na TC sem contraste: sangue hiperdenso na cisterna suprasselar, nas cisternas da base e nas fissuras sylvianas (setas).<span class=\"fonte\">Fonte: Tetsuka e Matsumoto Diagnosis of a subarachnoid hemorrhage with only mild symptoms using computed tomography in Japan. <em>BMC Neurology</em>, 2016. Fig. 3. Licença CC BY. <a href=\"https://doi.org/10.1186/s12883-016-0726-9\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s12883-016-0726-9</a></span></figcaption></figure><p>Em qualquer suspeita de sangramento intracraniano agudo, o exame inicial é a <strong>tomografia de crânio sem contraste</strong>, porque o sangue agudo é hiperdenso e o contraste poderia confundir-se com ele. Confirmada a hemorragia subaracnoide, a angiotomografia ou a arteriografia procuram o aneurisma (Figura 2.5).</p><figure class=\"ref\"><img src=\"content/img/imagem/ref/hsa_angio.jpg\" alt=\"Angio-TC do mesmo paciente: aneurisma de cerca de 3 mm na artéria cerebral anterior esquer\" loading=\"lazy\"><figcaption><strong>Figura 2.5.</strong> Angio-TC do mesmo paciente: aneurisma de cerca de 3 mm na artéria cerebral anterior esquerda (seta), a causa da HSA.<span class=\"fonte\">Fonte: Tetsuka e Matsumoto Diagnosis of a subarachnoid hemorrhage with only mild symptoms using computed tomography in Japan. <em>BMC Neurology</em>, 2016. Fig. 4. Licença CC BY. <a href=\"https://doi.org/10.1186/s12883-016-0726-9\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s12883-016-0726-9</a></span></figcaption></figure><h3>2.3 Edema cerebral</h3><p>O <strong>edema citotóxico</strong> resulta da falência da bomba de sódio e potássio por falta de energia: a célula incha por dentro, acometendo substância cinzenta e branca no território de uma artéria, como no AVC isquêmico. Restringe a difusão da água, aparece precocemente na sequência DWI da ressonância e geralmente é irreversível. Nas primeiras horas do AVC, a tomografia sem contraste pode ser quase normal, enquanto a perfusão e a difusão já mostram a área isquêmica (Figuras 2.6 e 2.7). O <strong>edema vasogênico</strong> resulta da ruptura da barreira hematoencefálica: o líquido extravasa para o interstício, predomina na substância branca, forma digitações ao redor de tumores, metástases e abscessos e é reversível.</p><figure class=\"ref\"><img src=\"content/img/imagem/ref/avc_tc.jpg\" alt=\"AVC isquêmico agudo por oclusão da carótida interna e da cerebral média esquerdas: a TC se\" loading=\"lazy\"><figcaption><strong>Figura 2.6.</strong> AVC isquêmico agudo por oclusão da carótida interna e da cerebral média esquerdas: a TC sem contraste ainda é praticamente normal (a), enquanto a perfusão já mostra a área sem fluxo.<span class=\"fonte\">Fonte: Vymazal et al. Comparison of CT and MR imaging in ischemic stroke. <em>Insights into Imaging</em>, 2012. Fig. 5. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-012-0185-9\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-012-0185-9</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/avc_dwi.jpg\" alt=\"RM em AVC: no T2 (a) há várias lesões antigas; a difusão (DWI, b) acende apenas a isquemia\" loading=\"lazy\"><figcaption><strong>Figura 2.7.</strong> RM em AVC: no T2 (a) há várias lesões antigas; a difusão (DWI, b) acende apenas a isquemia aguda, que é o edema citotóxico.<span class=\"fonte\">Fonte: Vymazal et al. Comparison of CT and MR imaging in ischemic stroke. <em>Insights into Imaging</em>, 2012. Fig. 7. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-012-0185-9\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-012-0185-9</a></span></figcaption></figure><div class=\"correl\"><p class=\"qtit\">Correlação clínica</p><p>Um jovem cai de moto, perde a consciência por alguns minutos, recupera-se e conversa normalmente na sala de emergência; duas horas depois fica sonolento e com pupila dilatada do lado do trauma. O intervalo lúcido sugere hematoma epidural, e a tomografia sem contraste mostrará coleção biconvexa temporal, uma emergência neurocirúrgica.</p></div>",
    "par": "k2"
   },
   {
    "id": "r3",
    "grupo": "Resumo de referência",
    "titulo": "3. Abdome agudo (Aula 8)",
-   "html": "<p>Abdome agudo é a situação de dor abdominal de início abrupto que precisa de intervenção clínica ou cirúrgica de urgência. Jovens: mais apendicite. Idosos: obstrução, isquemia mesentérica, diverticulite.</p><h3>O papel de cada exame (slide da aula)</h3><ul><li><strong>RX</strong>: pneumoperitônio, obstrução, calcificações (apendicolito, íleo biliar, cálculos), corpos estranhos.</li><li><strong>US</strong>: investigação inicial das dores abdominais, <strong>exceto obstrução</strong>; método de escolha para vesícula.</li><li><strong>TC</strong>: o que mais define a etiologia; usada quando faltam informações, em paciente <strong>estável</strong>.</li><li><strong>RM</strong>: não se aplica ao abdome agudo (demora, custo, disponibilidade).</li></ul><table><thead><tr><th>Tipo</th><th>Quadro</th><th>Causas</th><th>Imagem</th></tr></thead><tbody><tr><td>Inflamatório (o mais comum)</td><td>Dor insidiosa progressiva, febre, peritonite</td><td>Apendicite, colecistite, diverticulite, pancreatite, pielonefrite, urolitíase</td><td>Depende do órgão (abaixo)</td></tr><tr><td>Obstrutivo</td><td>Distensão, parada de gases e fezes, vômitos</td><td>Bridas, hérnia, neoplasia, fecaloma, volvo, áscaris</td><td>RX inicial; TC para nível e causa</td></tr><tr><td>Perfurativo (3º mais comum)</td><td>Dor súbita intensa, peritonite, pode chocar</td><td>Úlcera péptica, diverticulite, trauma, corpo estranho</td><td>RX: ar fora de alça; TC localiza melhor</td></tr><tr><td>Vascular</td><td>Dor intensa, súbita, desproporcional ao exame físico</td><td>Isquemia mesentérica (arterial, venosa, não oclusiva)</td><td>Angio-TC arterial e venosa</td></tr><tr><td>Hemorrágico</td><td>Dor súbita e choque</td><td>Aneurisma roto, gineco-obstétrico, tumor</td><td>FAST inicial; TC se estável</td></tr></tbody></table><h3>Achados que caem</h3><ul><li><strong>Pancreatite</strong> (TC com contraste): pâncreas aumentado, gordura peripancreática densificada, realce heterogêneo, líquido livre.</li><li><strong>Colecistite</strong> (US): parede &gt; 3 mm, líquido perivesicular, <strong>Murphy ultrassonográfico</strong>. RX não está indicado.</li><li><strong>Apendicite</strong> (US inicial na FID): apêndice <strong>não compressível &gt; 6 mm</strong>; apendicolito. Limites do US: obesos, dor intensa, apêndice retrocecal. TC: apêndice &gt; 6 mm com inflamação ao redor.</li><li><strong>Diverticulite</strong> (TC é a escolha): parede &gt; 5 mm, densificação da gordura pericólica, abscessos e líquido nos graves.</li><li><strong>Obstrução no RX</strong>: alças dilatadas, níveis hidroaéreos, sem gás no reto. Alta: “empilhamento de moedas”. Volvo: “grão de café”. Diferencial principal: <strong>íleo paralítico</strong> (pós-operatório, distúrbio hidroeletrolítico, autolimitado).</li><li><strong>Isquemia mesentérica</strong> (angio-TC): falha de enchimento, parede espessada, pneumatose intestinal, gás no sistema porta.</li></ul><h3>Imagens de referência</h3><p class=\"muted\">Figuras de artigos revisados por pares com licença aberta e de livro-texto, com a fonte em cada uma. Clique para ampliar.</p><figure class=\"ref\"><img src=\"content/img/imagem/ref/apend_normal.jpg\" alt=\"Apêndice normal ao US, em corte longitudinal: diâmetro de 3 mm, compressível.\" loading=\"lazy\"><figcaption>Apêndice normal ao US, em corte longitudinal: diâmetro de 3 mm, compressível.<span class=\"fonte\">Fonte: Mostbeck et al. How to diagnose acute appendicitis: ultrasound first. <em>Insights into Imaging</em>, 2016. Fig. 1. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-016-0469-6\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-016-0469-6</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/apend_us.jpg\" alt=\"Apendicite aguda ao US: parede espessada, sinal do alvo, diâmetro acima de 6 mm e líquido \" loading=\"lazy\"><figcaption>Apendicite aguda ao US: parede espessada, sinal do alvo, diâmetro acima de 6 mm e líquido ao redor do apêndice.<span class=\"fonte\">Fonte: Mostbeck et al. How to diagnose acute appendicitis: ultrasound first. <em>Insights into Imaging</em>, 2016. Fig. 2. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-016-0469-6\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-016-0469-6</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/apendicolito.jpg\" alt=\"Apendicite complicada na TC: coleção no músculo psoas direito com um apendicolito dentro (\" loading=\"lazy\"><figcaption>Apendicite complicada na TC: coleção no músculo psoas direito com um apendicolito dentro (círculo).<span class=\"fonte\">Fonte: Coutureau et al. CT of acute abdomen in the elderly. <em>Insights into Imaging</em>, 2025. Fig. 11. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-025-01955-1\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-025-01955-1</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/colecist_tc.jpg\" alt=\"Colecistite gangrenosa na TC: parede da vesícula irregular e espessada, com falha de realc\" loading=\"lazy\"><figcaption>Colecistite gangrenosa na TC: parede da vesícula irregular e espessada, com falha de realce (ponta de seta).<span class=\"fonte\">Fonte: Coutureau et al. CT of acute abdomen in the elderly. <em>Insights into Imaging</em>, 2025. Fig. 9. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-025-01955-1\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-025-01955-1</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/polipo_us.jpg\" alt=\"Ultrassom da vesícula: pólipo de colesterol (seta), fixo à parede e sem sombra acústica, a\" loading=\"lazy\"><figcaption>Ultrassom da vesícula: pólipo de colesterol (seta), fixo à parede e sem sombra acústica, ao lado de um espessamento por adenomiomatose (linha).<span class=\"fonte\">Fonte: Bonatti et al. Gallbladder adenomyomatosis: imaging findings, tricks and pitfalls. <em>Insights into Imaging</em>, 2017. Fig. 7. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-017-0544-7\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-017-0544-7</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/pancr_tc.jpg\" alt=\"Pancreatite aguda na TC com contraste: coleções peripancreáticas, encapsuladas (A, B) e nã\" loading=\"lazy\"><figcaption>Pancreatite aguda na TC com contraste: coleções peripancreáticas, encapsuladas (A, B) e não encapsuladas (C, D), nos primeiros dias da doença.<span class=\"fonte\">Fonte: Ning et al. Early encapsulation of peripancreatic fluid/necrosis collections on imaging (CECT) in acute pancreatitis: influential factors and clinical significance for prognosis. <em>BMC Gastroenterology</em>, 2024. Fig. 1. Licença CC BY. <a href=\"https://doi.org/10.1186/s12876-024-03145-7\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s12876-024-03145-7</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/divert_tc.jpg\" alt=\"Diverticulite na TC com contraste: parede do sigmoide espessada e edemaciada, com divertíc\" loading=\"lazy\"><figcaption>Diverticulite na TC com contraste: parede do sigmoide espessada e edemaciada, com divertículos e uma pequena coleção ao lado (perfuração bloqueada).<span class=\"fonte\">Fonte: Onur et al. Diverticulitis: a comprehensive review with usual and unusual complications. <em>Insights into Imaging</em>, 2017. Fig. 1. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-016-0532-3\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-016-0532-3</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/divert_abscesso.jpg\" alt=\"Abscesso por diverticulite: coleção com gás e parede espessada, vista ao US endovaginal (a\" loading=\"lazy\"><figcaption>Abscesso por diverticulite: coleção com gás e parede espessada, vista ao US endovaginal (a) e na TC com contraste (b, c).<span class=\"fonte\">Fonte: Onur et al. Diverticulitis: a comprehensive review with usual and unusual complications. <em>Insights into Imaging</em>, 2017. Fig. 4. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-016-0532-3\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-016-0532-3</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/obst_tc.jpg\" alt=\"Obstrução do intestino grosso por câncer de sigmoide na TC: cólon distendido acima de um e\" loading=\"lazy\"><figcaption>Obstrução do intestino grosso por câncer de sigmoide na TC: cólon distendido acima de um espessamento curto e assimétrico (zona de transição, círculo).<span class=\"fonte\">Fonte: Coutureau et al. CT of acute abdomen in the elderly. <em>Insights into Imaging</em>, 2025. Fig. 7. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-025-01955-1\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-025-01955-1</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/volvo_tc.jpg\" alt=\"Volvo de sigmoide na TC: intestino grosso muito distendido acima do “sinal do bico” (círcu\" loading=\"lazy\"><figcaption>Volvo de sigmoide na TC: intestino grosso muito distendido acima do “sinal do bico” (círculo), o ponto de torção.<span class=\"fonte\">Fonte: Coutureau et al. CT of acute abdomen in the elderly. <em>Insights into Imaging</em>, 2025. Fig. 5. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-025-01955-1\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-025-01955-1</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/ulcera_perf.jpg\" alt=\"Úlcera duodenal perfurada na TC (reconstrução coronal com contraste oral): parede duodenal\" loading=\"lazy\"><figcaption>Úlcera duodenal perfurada na TC (reconstrução coronal com contraste oral): parede duodenal espessada, extravasamento de contraste e gás livre.<span class=\"fonte\">Fonte: Pouli et al. Gastrointestinal perforation: clinical and MDCT clues for identification of aetiology. <em>Insights into Imaging</em>, 2020. Fig. 6. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-019-0823-6\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-019-0823-6</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/divert_perf.jpg\" alt=\"Diverticulite perfurada: bolhas de gás junto ao cólon descendente e pneumoperitônio (p) na\" loading=\"lazy\"><figcaption>Diverticulite perfurada: bolhas de gás junto ao cólon descendente e pneumoperitônio (p) na TC.<span class=\"fonte\">Fonte: Pouli et al. Gastrointestinal perforation: clinical and MDCT clues for identification of aetiology. <em>Insights into Imaging</em>, 2020. Fig. 23. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-019-0823-6\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-019-0823-6</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/isq_trombo.jpg\" alt=\"Isquemia mesentérica arterial: trombo na artéria mesentérica superior na TC com contraste \" loading=\"lazy\"><figcaption>Isquemia mesentérica arterial: trombo na artéria mesentérica superior na TC com contraste (setas).<span class=\"fonte\">Fonte: Florim et al. Acute mesenteric ischaemia: a pictorial review. <em>Insights into Imaging</em>, 2018. Fig. 2. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-018-0641-2\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-018-0641-2</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/isq_pneumatose.jpg\" alt=\"Infarto mesentérico: gás na parede das alças (pneumatose intestinal, seta) na TC.\" loading=\"lazy\"><figcaption>Infarto mesentérico: gás na parede das alças (pneumatose intestinal, seta) na TC.<span class=\"fonte\">Fonte: Florim et al. Acute mesenteric ischaemia: a pictorial review. <em>Insights into Imaging</em>, 2018. Fig. 11. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-018-0641-2\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-018-0641-2</a></span></figcaption></figure><!--/refs-->",
+   "html": "<h3>3.1 Conceito e classificação do abdome agudo</h3><p>O <strong>abdome agudo</strong> é a dor abdominal de início abrupto que exige intervenção clínica ou cirúrgica de urgência. As causas variam com a idade: nos jovens predomina a apendicite; nos idosos ganham importância a obstrução intestinal, a isquemia mesentérica e a diverticulite. A classificação sindrômica em cinco tipos (Tabela 3.1) orienta o raciocínio e a escolha do exame.</p><p class=\"tabtit\"><strong>Tabela 3.1</strong>Tipos de abdome agudo e imagem</p><table><thead><tr><th>Tipo</th><th>Quadro</th><th>Causas</th><th>Imagem</th></tr></thead><tbody><tr><td>Inflamatório (o mais comum)</td><td>Dor insidiosa e progressiva, febre, peritonite</td><td>Apendicite, colecistite, diverticulite, pancreatite, pielonefrite, urolitíase</td><td>Depende do órgão</td></tr><tr><td>Obstrutivo</td><td>Distensão, parada de gases e fezes, vômitos</td><td>Bridas, hérnia, neoplasia, fecaloma, volvo, áscaris</td><td>Radiografia inicial; tomografia para nível e causa</td></tr><tr><td>Perfurativo</td><td>Dor súbita intensa, peritonite, choque</td><td>Úlcera péptica, diverticulite, trauma, corpo estranho</td><td>Radiografia: ar fora das alças; tomografia localiza</td></tr><tr><td>Vascular</td><td>Dor súbita, intensa, desproporcional ao exame físico</td><td>Isquemia mesentérica arterial, venosa ou não oclusiva</td><td>Angiotomografia arterial e venosa</td></tr><tr><td>Hemorrágico</td><td>Dor súbita e choque</td><td>Aneurisma roto, causas ginecológicas, tumor</td><td>FAST; tomografia se estável</td></tr></tbody></table><h3>3.2 O papel de cada exame</h3><p>Segundo a aula, a radiografia serve para pneumoperitônio, obstrução, calcificações, como apendicolito, íleo biliar e cálculos, e corpos estranhos. A ultrassonografia é a investigação inicial da maioria das dores abdominais, exceto a obstrução, e é o método de escolha para a vesícula. A tomografia é o exame que mais define a etiologia e é usada quando faltam informações, em paciente estável. A ressonância não se aplica ao abdome agudo pela demora, pelo custo e pela disponibilidade.</p><h3>3.3 Abdome agudo inflamatório</h3><p>Na <strong>apendicite</strong>, a ultrassonografia é o exame inicial na fossa ilíaca direita. O apêndice normal é compressível e mede cerca de 3 mm (Figura 3.1); o inflamado não é compressível, mede mais de 6 mm, tem parede espessada com sinal do alvo e líquido ao redor (Figura 3.2). A ultrassonografia é limitada em obesos, na dor intensa e no apêndice retrocecal, situações em que a tomografia mostra o apêndice acima de 6 mm com inflamação da gordura vizinha. O <strong>apendicolito</strong>, calcificação no lúmen, associa-se a perfuração e abscesso (Figura 3.3).</p><figure class=\"ref\"><img src=\"content/img/imagem/ref/apend_normal.jpg\" alt=\"Apêndice normal ao US, em corte longitudinal: diâmetro de 3 mm, compressível.\" loading=\"lazy\"><figcaption><strong>Figura 3.1.</strong> Apêndice normal ao US, em corte longitudinal: diâmetro de 3 mm, compressível.<span class=\"fonte\">Fonte: Mostbeck et al. How to diagnose acute appendicitis: ultrasound first. <em>Insights into Imaging</em>, 2016. Fig. 1. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-016-0469-6\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-016-0469-6</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/apend_us.jpg\" alt=\"Apendicite aguda ao US: parede espessada, sinal do alvo, diâmetro acima de 6 mm e líquido \" loading=\"lazy\"><figcaption><strong>Figura 3.2.</strong> Apendicite aguda ao US: parede espessada, sinal do alvo, diâmetro acima de 6 mm e líquido ao redor do apêndice.<span class=\"fonte\">Fonte: Mostbeck et al. How to diagnose acute appendicitis: ultrasound first. <em>Insights into Imaging</em>, 2016. Fig. 2. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-016-0469-6\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-016-0469-6</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/apendicolito.jpg\" alt=\"Apendicite complicada na TC: coleção no músculo psoas direito com um apendicolito dentro (\" loading=\"lazy\"><figcaption><strong>Figura 3.3.</strong> Apendicite complicada na TC: coleção no músculo psoas direito com um apendicolito dentro (círculo).<span class=\"fonte\">Fonte: Coutureau et al. CT of acute abdomen in the elderly. <em>Insights into Imaging</em>, 2025. Fig. 11. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-025-01955-1\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-025-01955-1</a></span></figcaption></figure><p>Na <strong>colecistite aguda</strong>, a ultrassonografia mostra parede da vesícula acima de 3 mm, líquido perivesicular e sinal de Murphy ultrassonográfico, dor à compressão com o transdutor; a radiografia não está indicada. A tomografia identifica complicações, como a colecistite gangrenosa, com parede irregular e falha de realce (Figura 3.4). Lesões polipoides da vesícula, como o pólipo de colesterol, fixo e sem sombra acústica, diferenciam-se do cálculo, que é móvel e produz sombra (Figura 3.5).</p><p>Na <strong>pancreatite aguda</strong>, o diagnóstico é clínico e laboratorial, e a tomografia com contraste, feita após 72 horas ou na dúvida, mostra pâncreas aumentado, densificação da gordura peripancreática, realce heterogêneo e coleções (Figura 3.6). Na <strong>diverticulite</strong>, a tomografia é a escolha: parede do cólon acima de 5 mm, densificação da gordura pericólica e, nos casos graves, abscessos e líquido (Figuras 3.7 e 3.8).</p><figure class=\"ref\"><img src=\"content/img/imagem/ref/colecist_tc.jpg\" alt=\"Colecistite gangrenosa na TC: parede da vesícula irregular e espessada, com falha de realc\" loading=\"lazy\"><figcaption><strong>Figura 3.4.</strong> Colecistite gangrenosa na TC: parede da vesícula irregular e espessada, com falha de realce (ponta de seta).<span class=\"fonte\">Fonte: Coutureau et al. CT of acute abdomen in the elderly. <em>Insights into Imaging</em>, 2025. Fig. 9. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-025-01955-1\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-025-01955-1</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/polipo_us.jpg\" alt=\"Ultrassom da vesícula: pólipo de colesterol (seta), fixo à parede e sem sombra acústica, a\" loading=\"lazy\"><figcaption><strong>Figura 3.5.</strong> Ultrassom da vesícula: pólipo de colesterol (seta), fixo à parede e sem sombra acústica, ao lado de um espessamento por adenomiomatose (linha).<span class=\"fonte\">Fonte: Bonatti et al. Gallbladder adenomyomatosis: imaging findings, tricks and pitfalls. <em>Insights into Imaging</em>, 2017. Fig. 7. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-017-0544-7\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-017-0544-7</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/pancr_tc.jpg\" alt=\"Pancreatite aguda na TC com contraste: coleções peripancreáticas, encapsuladas (A, B) e nã\" loading=\"lazy\"><figcaption><strong>Figura 3.6.</strong> Pancreatite aguda na TC com contraste: coleções peripancreáticas, encapsuladas (A, B) e não encapsuladas (C, D), nos primeiros dias da doença.<span class=\"fonte\">Fonte: Ning et al. Early encapsulation of peripancreatic fluid/necrosis collections on imaging (CECT) in acute pancreatitis: influential factors and clinical significance for prognosis. <em>BMC Gastroenterology</em>, 2024. Fig. 1. Licença CC BY. <a href=\"https://doi.org/10.1186/s12876-024-03145-7\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s12876-024-03145-7</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/divert_tc.jpg\" alt=\"Diverticulite na TC com contraste: parede do sigmoide espessada e edemaciada, com divertíc\" loading=\"lazy\"><figcaption><strong>Figura 3.7.</strong> Diverticulite na TC com contraste: parede do sigmoide espessada e edemaciada, com divertículos e uma pequena coleção ao lado (perfuração bloqueada).<span class=\"fonte\">Fonte: Onur et al. Diverticulitis: a comprehensive review with usual and unusual complications. <em>Insights into Imaging</em>, 2017. Fig. 1. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-016-0532-3\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-016-0532-3</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/divert_abscesso.jpg\" alt=\"Abscesso por diverticulite: coleção com gás e parede espessada, vista ao US endovaginal (a\" loading=\"lazy\"><figcaption><strong>Figura 3.8.</strong> Abscesso por diverticulite: coleção com gás e parede espessada, vista ao US endovaginal (a) e na TC com contraste (b, c).<span class=\"fonte\">Fonte: Onur et al. Diverticulitis: a comprehensive review with usual and unusual complications. <em>Insights into Imaging</em>, 2017. Fig. 4. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-016-0532-3\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-016-0532-3</a></span></figcaption></figure><h3>3.4 Abdome agudo obstrutivo e perfurativo</h3><p>Na <strong>obstrução intestinal</strong>, a radiografia mostra alças dilatadas, níveis hidroaéreos e ausência de gás no reto. Na obstrução alta, as válvulas coniventes do delgado dilatado lembram um empilhamento de moedas; no volvo de sigmoide, a alça torcida e distendida forma o sinal do grão de café. A tomografia localiza a zona de transição e define a causa, como um tumor de sigmoide (Figura 3.9) ou o sinal do bico no ponto de torção do volvo (Figura 3.10). O principal diagnóstico diferencial é o íleo paralítico, que ocorre no pós-operatório e nos distúrbios hidroeletrolíticos e é autolimitado.</p><p>No <strong>abdome agudo perfurativo</strong>, a radiografia pode mostrar ar livre sob o diafragma, e a tomografia localiza a perfuração pelo gás extraluminal, pelo extravasamento de contraste e pelo espessamento da parede, como na úlcera duodenal perfurada (Figura 3.11) e na diverticulite perfurada (Figura 3.12).</p><figure class=\"ref\"><img src=\"content/img/imagem/ref/obst_tc.jpg\" alt=\"Obstrução do intestino grosso por câncer de sigmoide na TC: cólon distendido acima de um e\" loading=\"lazy\"><figcaption><strong>Figura 3.9.</strong> Obstrução do intestino grosso por câncer de sigmoide na TC: cólon distendido acima de um espessamento curto e assimétrico (zona de transição, círculo).<span class=\"fonte\">Fonte: Coutureau et al. CT of acute abdomen in the elderly. <em>Insights into Imaging</em>, 2025. Fig. 7. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-025-01955-1\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-025-01955-1</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/volvo_tc.jpg\" alt=\"Volvo de sigmoide na TC: intestino grosso muito distendido acima do “sinal do bico” (círcu\" loading=\"lazy\"><figcaption><strong>Figura 3.10.</strong> Volvo de sigmoide na TC: intestino grosso muito distendido acima do “sinal do bico” (círculo), o ponto de torção.<span class=\"fonte\">Fonte: Coutureau et al. CT of acute abdomen in the elderly. <em>Insights into Imaging</em>, 2025. Fig. 5. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-025-01955-1\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-025-01955-1</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/ulcera_perf.jpg\" alt=\"Úlcera duodenal perfurada na TC (reconstrução coronal com contraste oral): parede duodenal\" loading=\"lazy\"><figcaption><strong>Figura 3.11.</strong> Úlcera duodenal perfurada na TC (reconstrução coronal com contraste oral): parede duodenal espessada, extravasamento de contraste e gás livre.<span class=\"fonte\">Fonte: Pouli et al. Gastrointestinal perforation: clinical and MDCT clues for identification of aetiology. <em>Insights into Imaging</em>, 2020. Fig. 6. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-019-0823-6\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-019-0823-6</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/divert_perf.jpg\" alt=\"Diverticulite perfurada: bolhas de gás junto ao cólon descendente e pneumoperitônio (p) na\" loading=\"lazy\"><figcaption><strong>Figura 3.12.</strong> Diverticulite perfurada: bolhas de gás junto ao cólon descendente e pneumoperitônio (p) na TC.<span class=\"fonte\">Fonte: Pouli et al. Gastrointestinal perforation: clinical and MDCT clues for identification of aetiology. <em>Insights into Imaging</em>, 2020. Fig. 23. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-019-0823-6\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-019-0823-6</a></span></figcaption></figure><h3>3.5 Abdome agudo vascular</h3><p>A <strong>isquemia mesentérica</strong> manifesta-se por dor intensa, súbita e desproporcional ao exame físico, frequentemente em idosos com fibrilação atrial ou aterosclerose. O exame de escolha é a angiotomografia nas fases arterial e venosa, que mostra falha de enchimento por trombo ou êmbolo na artéria mesentérica superior (Figura 3.13), espessamento da parede intestinal e, no infarto, gás na parede das alças, a pneumatose intestinal (Figura 3.14), e gás no sistema porta.</p><figure class=\"ref\"><img src=\"content/img/imagem/ref/isq_trombo.jpg\" alt=\"Isquemia mesentérica arterial: trombo na artéria mesentérica superior na TC com contraste \" loading=\"lazy\"><figcaption><strong>Figura 3.13.</strong> Isquemia mesentérica arterial: trombo na artéria mesentérica superior na TC com contraste (setas).<span class=\"fonte\">Fonte: Florim et al. Acute mesenteric ischaemia: a pictorial review. <em>Insights into Imaging</em>, 2018. Fig. 2. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-018-0641-2\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-018-0641-2</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/isq_pneumatose.jpg\" alt=\"Infarto mesentérico: gás na parede das alças (pneumatose intestinal, seta) na TC.\" loading=\"lazy\"><figcaption><strong>Figura 3.14.</strong> Infarto mesentérico: gás na parede das alças (pneumatose intestinal, seta) na TC.<span class=\"fonte\">Fonte: Florim et al. Acute mesenteric ischaemia: a pictorial review. <em>Insights into Imaging</em>, 2018. Fig. 11. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-018-0641-2\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-018-0641-2</a></span></figcaption></figure>",
    "par": "k3"
   },
   {
    "id": "r4",
    "grupo": "Resumo de referência",
    "titulo": "4. Trauma, urinário e musculoesquelético",
-   "html": "<h3>Trauma abdominal</h3><ul><li><strong>Instável</strong>: FAST na sala de emergência. FAST positivo (líquido nos espaços hepatorrenal, esplenorrenal, pelve) → <strong>laparotomia exploradora</strong>.</li><li><strong>Estável</strong>: <strong>TC com contraste</strong>, mesmo com FAST negativo se mantém dor ou o mecanismo é suspeito.</li></ul><h3>Urinário</h3><ul><li>Padrão-ouro para cálculo: <strong>TC sem contraste</strong>. Cálculo hiperdenso + hidronefrose acima.</li><li>Localização: pelve renal, ureter proximal, médio, distal (junção ureterovesical) e bexiga.</li><li>Coraliforme: cálculo grande que molda os cálices e a pelve.</li></ul><h3>Osso e músculo</h3><ul><li>Suspeita de fratura → <strong>RX</strong> primeiro (em duas incidências). Fratura = linha radiolucente atravessando a cortical.</li><li>Sinais de agressividade: <strong>destruição cortical</strong>, margens mal definidas, reação periosteal exuberante (ex.: osteossarcoma). Benignidade: margens escleróticas bem definidas, lesão geográfica (ex.: cisto ósseo).</li><li>Lesão lítica escurece o osso; lesão blástica embranquece.</li><li>Lesão muscular ou tendínea → <strong>US</strong> inicial; RM para detalhar.</li></ul><h3>Imagens de referência</h3><p class=\"muted\">Figuras de artigos revisados por pares com licença aberta e de livro-texto, com a fonte em cada uma. Clique para ampliar.</p><figure class=\"ref\"><img src=\"content/img/imagem/ref/baco_hematoma.jpg\" alt=\"Trauma esplênico após acidente de carro: hematomas hipodensos no baço e hemorragia ao redo\" loading=\"lazy\"><figcaption>Trauma esplênico após acidente de carro: hematomas hipodensos no baço e hemorragia ao redor dele na TC com contraste.<span class=\"fonte\">Fonte: Unal et al. Imaging findings of splenic emergencies: a pictorial review. <em>Insights into Imaging</em>, 2016. Fig. 1. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-016-0467-8\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-016-0467-8</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/baco_sangra.jpg\" alt=\"Laceração esplênica com sangramento ativo: o contraste extravasado aparece na fase precoce\" loading=\"lazy\"><figcaption>Laceração esplênica com sangramento ativo: o contraste extravasado aparece na fase precoce (a) e aumenta na tardia (b).<span class=\"fonte\">Fonte: Unal et al. Imaging findings of splenic emergencies: a pictorial review. <em>Insights into Imaging</em>, 2016. Fig. 3. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-016-0467-8\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-016-0467-8</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/cisto_osseo.jpg\" alt=\"Cisto ósseo simples (unicameral) no úmero proximal de um menino de 8 anos: lesão lítica, c\" loading=\"lazy\"><figcaption>Cisto ósseo simples (unicameral) no úmero proximal de um menino de 8 anos: lesão lítica, central e bem delimitada no RX.<span class=\"fonte\">Fonte: Zhang et al. Comparison of three treatment methods for simple bone cyst in children. <em>BMC Musculoskeletal Disorders</em>, 2021. Fig. 3. Licença CC BY. <a href=\"https://doi.org/10.1186/s12891-020-03933-8\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s12891-020-03933-8</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/osteossarcoma.jpg\" alt=\"Osteossarcoma da tíbia proximal em radiografias AP e perfil: lesão agressiva, de limites m\" loading=\"lazy\"><figcaption>Osteossarcoma da tíbia proximal em radiografias AP e perfil: lesão agressiva, de limites mal definidos.<span class=\"fonte\">Fonte: Shao et al. Deep learning for differentiation of osteolytic osteosarcoma and giant cell tumor around the knee joint on radiographs: a multicenter study. <em>Insights into Imaging</em>, 2024. Fig. 5. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-024-01610-1\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-024-01610-1</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/musculo_soleo.jpg\" alt=\"Lesões do músculo sóleo (panturrilha) na RM, sequência sensível a líquido: edema ao redor \" loading=\"lazy\"><figcaption>Lesões do músculo sóleo (panturrilha) na RM, sequência sensível a líquido: edema ao redor do tecido conectivo lesado e descontinuidade (setas).<span class=\"fonte\">Fonte: Isern-Kebschull et al. Sports-related lower limb muscle injuries: pattern recognition approach and MRI review. <em>Insights into Imaging</em>, 2020. Fig. 6. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-020-00912-4\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-020-00912-4</a></span></figcaption></figure><!--/refs-->",
+   "html": "<h3>4.1 Trauma abdominal</h3><p>No trauma abdominal, a estabilidade hemodinâmica define o caminho. No paciente <strong>instável</strong>, faz-se o FAST (<em>focused assessment with sonography for trauma</em>) na sala de emergência, ultrassonografia que procura líquido livre nos espaços hepatorrenal, esplenorrenal e pélvico e no pericárdio; FAST positivo em paciente instável indica laparotomia exploradora. O paciente instável não vai à tomografia. No paciente <strong>estável</strong>, a tomografia com contraste é o exame de escolha, mesmo com FAST negativo, se persistir dor ou o mecanismo for suspeito, porque mostra lesões de órgãos sólidos, como hematomas e lacerações do baço (Figura 4.1), e sangramento ativo pelo extravasamento de contraste (Figura 4.2).</p><figure class=\"ref\"><img src=\"content/img/imagem/ref/baco_hematoma.jpg\" alt=\"Trauma esplênico após acidente de carro: hematomas hipodensos no baço e hemorragia ao redo\" loading=\"lazy\"><figcaption><strong>Figura 4.1.</strong> Trauma esplênico após acidente de carro: hematomas hipodensos no baço e hemorragia ao redor dele na TC com contraste.<span class=\"fonte\">Fonte: Unal et al. Imaging findings of splenic emergencies: a pictorial review. <em>Insights into Imaging</em>, 2016. Fig. 1. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-016-0467-8\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-016-0467-8</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/baco_sangra.jpg\" alt=\"Laceração esplênica com sangramento ativo: o contraste extravasado aparece na fase precoce\" loading=\"lazy\"><figcaption><strong>Figura 4.2.</strong> Laceração esplênica com sangramento ativo: o contraste extravasado aparece na fase precoce (a) e aumenta na tardia (b).<span class=\"fonte\">Fonte: Unal et al. Imaging findings of splenic emergencies: a pictorial review. <em>Insights into Imaging</em>, 2016. Fig. 3. Licença CC BY. <a href=\"https://doi.org/10.1007/s13244-016-0467-8\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s13244-016-0467-8</a></span></figcaption></figure><h3>4.2 Sistema urinário</h3><p>Na suspeita de cálculo urinário, o padrão-ouro é a <strong>tomografia sem contraste</strong>, porque praticamente todos os cálculos são hiperdensos e o contraste excretado pelos rins poderia ocultá-los. O exame mostra o cálculo e a hidronefrose acima dele e permite localizá-lo na pelve renal, no ureter proximal, médio ou distal, este junto à junção ureterovesical, ou na bexiga. O cálculo coraliforme é grande e molda os cálices e a pelve renal.</p><h3>4.3 Ossos e músculos</h3><p>Na suspeita de fratura, a <strong>radiografia é o primeiro exame</strong>, sempre em pelo menos duas incidências, porque uma linha de fratura pode ser invisível numa única projeção. A fratura aparece como uma linha radiotransparente que atravessa a cortical. Nas lesões ósseas, a radiografia ajuda a separar padrões benignos de agressivos. Margens escleróticas bem definidas e aspecto geográfico sugerem benignidade, como no cisto ósseo simples (Figura 4.3); destruição cortical, margens mal definidas e reação periosteal exuberante sugerem agressividade, como no osteossarcoma (Figura 4.4). A lesão lítica escurece o osso, e a blástica o torna mais branco.</p><p>Nas lesões musculares e tendíneas, a ultrassonografia é o exame inicial, e a ressonância detalha a extensão, mostrando edema e descontinuidade das fibras nas sequências sensíveis a líquido (Figura 4.5).</p><figure class=\"ref\"><img src=\"content/img/imagem/ref/cisto_osseo.jpg\" alt=\"Cisto ósseo simples (unicameral) no úmero proximal de um menino de 8 anos: lesão lítica, c\" loading=\"lazy\"><figcaption><strong>Figura 4.3.</strong> Cisto ósseo simples (unicameral) no úmero proximal de um menino de 8 anos: lesão lítica, central e bem delimitada no RX.<span class=\"fonte\">Fonte: Zhang et al. Comparison of three treatment methods for simple bone cyst in children. <em>BMC Musculoskeletal Disorders</em>, 2021. Fig. 3. Licença CC BY. <a href=\"https://doi.org/10.1186/s12891-020-03933-8\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s12891-020-03933-8</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/osteossarcoma.jpg\" alt=\"Osteossarcoma da tíbia proximal em radiografias AP e perfil: lesão agressiva, de limites m\" loading=\"lazy\"><figcaption><strong>Figura 4.4.</strong> Osteossarcoma da tíbia proximal em radiografias AP e perfil: lesão agressiva, de limites mal definidos.<span class=\"fonte\">Fonte: Shao et al. Deep learning for differentiation of osteolytic osteosarcoma and giant cell tumor around the knee joint on radiographs: a multicenter study. <em>Insights into Imaging</em>, 2024. Fig. 5. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-024-01610-1\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-024-01610-1</a></span></figcaption></figure><figure class=\"ref\"><img src=\"content/img/imagem/ref/musculo_soleo.jpg\" alt=\"Lesões do músculo sóleo (panturrilha) na RM, sequência sensível a líquido: edema ao redor \" loading=\"lazy\"><figcaption><strong>Figura 4.5.</strong> Lesões do músculo sóleo (panturrilha) na RM, sequência sensível a líquido: edema ao redor do tecido conectivo lesado e descontinuidade (setas).<span class=\"fonte\">Fonte: Isern-Kebschull et al. Sports-related lower limb muscle injuries: pattern recognition approach and MRI review. <em>Insights into Imaging</em>, 2020. Fig. 6. Licença CC BY. <a href=\"https://doi.org/10.1186/s13244-020-00912-4\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s13244-020-00912-4</a></span></figcaption></figure><div class=\"correl\"><p class=\"qtit\">Correlação clínica</p><p>Um homem de 38 anos tem dor intensa em flanco esquerdo irradiada para a virilha. A tomografia sem contraste mostra cálculo de 3 mm na junção ureterovesical com discreta hidronefrose acima. O exame foi feito sem contraste porque o contraste excretado na urina, também hiperdenso, esconderia o cálculo.</p></div>",
    "par": "k4"
   },
   {
    "id": "r5",
    "grupo": "Resumo de referência",
    "titulo": "5. RX de tórax: leitura sistemática (Aula 2)",
-   "html": "<p>Caiu no Kahoot da turma anterior e vale saber.</p><ul><li>Projeção padrão: <strong>PA em pé</strong>, inspiração adequada, a 1,8 m (menos ampliação do coração).</li><li><strong>Inspiração adequada</strong>: hemidiafragma na altura ou abaixo da <strong>6ª costela anterior</strong> ou <strong>8ª–10ª posterior</strong>.</li><li><strong>Rotação</strong>: processos espinhosos no meio das extremidades mediais das clavículas.</li></ul><h3>ABCDE</h3><table><thead><tr><th>Letra</th><th>O que olhar</th></tr></thead><tbody><tr><td>A · Vias aéreas</td><td>Traqueia centrada, brônquios principais</td></tr><tr><td>B · Respiração</td><td>Pulmões expandidos e simétricos</td></tr><tr><td>C · Circulação</td><td>Tamanho do coração, vasos, mediastino e hilos</td></tr><tr><td>D · Ossos</td><td>Fraturas, costelas, cintura escapular</td></tr><tr><td>E · Todo o resto</td><td>Pneumoperitônio, enfisema subcutâneo, sombra de mama, corpos estranhos, sondas</td></tr></tbody></table>",
-   "par": "k1"
+   "html": "<h3>5.1 Técnica</h3><p>A radiografia de tórax padrão é feita em <strong>incidência posteroanterior</strong>, com o paciente em pé, em inspiração profunda e a cerca de 1,8 m da fonte. Nessa incidência o coração fica próximo ao filme e é pouco ampliado, o que permite avaliar seu tamanho; na incidência anteroposterior, usada no leito, o coração parece maior. Antes de interpretar os achados, verifica-se a qualidade técnica. A inspiração é adequada quando o hemidiafragma está na altura ou abaixo da sexta costela anterior, ou da oitava à décima posterior. A ausência de rotação é confirmada quando os processos espinhosos estão equidistantes das extremidades mediais das clavículas.</p><h3>5.2 Leitura sistemática</h3><p>A leitura segue uma ordem fixa para que nada seja esquecido, e a mnemônica ABCDE é uma das formas de organizá-la (Tabela 5.1). A última letra é a mais esquecida e inclui achados fora dos pulmões que podem ser decisivos, como o pneumoperitônio sob o diafragma num paciente com dor abdominal.</p><p class=\"tabtit\"><strong>Tabela 5.1</strong>Leitura sistemática da radiografia de tórax (ABCDE)</p><table><thead><tr><th>Letra</th><th>O que avaliar</th></tr></thead><tbody><tr><td>A · Vias aéreas</td><td>Traqueia centrada, brônquios principais</td></tr><tr><td>B · Respiração</td><td>Pulmões expandidos e simétricos, transparência, opacidades</td></tr><tr><td>C · Circulação</td><td>Tamanho do coração, vasos, mediastino e hilos</td></tr><tr><td>D · Ossos</td><td>Fraturas, costelas, cintura escapular</td></tr><tr><td>E · Todo o resto</td><td>Pneumoperitônio, enfisema subcutâneo, sombras mamárias, corpos estranhos, sondas e cateteres</td></tr></tbody></table><p>Este tema apareceu no Kahoot da turma anterior e é cobrado como conhecimento de base para a leitura de qualquer exame do tórax.</p>",
+   "par": "k6"
+  },
+  {
+   "id": "rp",
+   "titulo": "Pontos-chave e referências",
+   "par": "k0",
+   "html": "<h3>Pontos-chave</h3><ol class=\"pontos\"><li>Radiografia vê bem ar e osso; tomografia define a causa do abdome agudo; ultrassonografia é inicial para vesícula, gestante e FAST; ressonância é a melhor para partes moles e encéfalo.</li><li>Na tomografia, água vale 0 UH, ar -1000 e sangue agudo de 50 a 80 UH, mais claro que o cérebro.</li><li>Sangue intracraniano e cálculo urinário são pesquisados sem contraste; tromboembolismo pulmonar, aorta, tumores e trauma estável exigem contraste.</li><li>Hematoma epidural é biconvexo, arterial e cursa com intervalo lúcido; subdural é em crescente, venoso e típico do idoso.</li><li>Hemorragia subaracnoide ocupa sulcos e cisternas e geralmente decorre de aneurisma; o exame inicial é a tomografia sem contraste.</li><li>Edema citotóxico restringe a difusão e é típico do AVC isquêmico; vasogênico predomina na substância branca ao redor de tumores.</li><li>Apendicite ao ultrassom: apêndice não compressível acima de 6 mm.</li><li>Colecistite ao ultrassom: parede acima de 3 mm, líquido perivesicular e Murphy ultrassonográfico.</li><li>Diverticulite é diagnosticada por tomografia; obstrução mostra alças dilatadas e níveis hidroaéreos; o volvo de sigmoide forma o grão de café.</li><li>Isquemia mesentérica tem dor desproporcional ao exame e é investigada por angiotomografia.</li><li>Trauma instável faz FAST e, se positivo, laparotomia; trauma estável faz tomografia com contraste.</li><li>Fratura é investigada por radiografia em duas incidências; margens mal definidas e reação periosteal sugerem lesão agressiva.</li></ol><h3>Referências</h3><ul class=\"refs\"><li>Herring W. Learning Radiology: Recognizing the Basics. 4ª ed.</li><li>Brant WE, Helms CA. Fundamentals of Diagnostic Radiology. 5ª ed.</li><li>American College of Radiology. ACR Appropriateness Criteria.</li><li>American College of Surgeons. ATLS – Advanced Trauma Life Support. 10ª ed.</li><li>Artigos de acesso aberto citados nas legendas das figuras (Insights into Imaging, Frontiers in Neurology, BMC Neurology, BMC Gastroenterology, BMC Musculoskeletal Disorders) e Gray's Anatomy, 20ª ed.</li><li>Kahoot e slides de 13/11, Aula 8 e Aula 2 de Diagnóstico por Imagem, Faculdade Zarns (Drive da Turma 41).</li></ul>",
+   "grupo": "Resumo de referência"
   },
   {
    "id": "k0",
@@ -508,7 +515,10 @@
    "explica": "É TC (osso branco, ar preto). O X está dentro do estômago cheio, no quadrante superior esquerdo.",
    "tempo": 20,
    "desc": "Corte axial de TC do abdome superior, com osso branco e ar preto. O “X” marca uma grande víscera no quadrante superior esquerdo, à frente do baço.",
-   "img": "content/img/imagem/k01.jpg"
+   "img": "content/img/imagem/k01.jpg",
+   "secoes": [
+    "k1"
+   ]
   },
   {
    "tipo": "q",
@@ -523,7 +533,10 @@
    "certa": 0,
    "explica": "A TC mostra o abdome inteiro sem depender do operador, do gás ou da obesidade. As outras são vantagens do US.",
    "tempo": 20,
-   "img": "content/img/imagem/k02.jpg"
+   "img": "content/img/imagem/k02.jpg",
+   "secoes": [
+    "k1"
+   ]
   },
   {
    "tipo": "q",
@@ -538,7 +551,10 @@
    "explica": "Vasos com a densidade do músculo e rins homogêneos: exame sem contraste.",
    "tempo": 20,
    "desc": "Corte axial de TC na altura dos rins. Repare na densidade da aorta, da veia cava e dos rins.",
-   "img": "content/img/imagem/k03.jpg"
+   "img": "content/img/imagem/k03.jpg",
+   "secoes": [
+    "k1"
+   ]
   },
   {
    "tipo": "q",
@@ -554,7 +570,10 @@
    "explica": "Redonda, colada à frente da coluna, à esquerda: aorta.",
    "tempo": 20,
    "desc": "Corte axial de TC do abdome superior. A linha vermelha circunda um vaso redondo, colado à frente do corpo vertebral, levemente à esquerda.",
-   "img": "content/img/imagem/k04.jpg"
+   "img": "content/img/imagem/k04.jpg",
+   "secoes": [
+    "k1"
+   ]
   },
   {
    "tipo": "q",
@@ -570,7 +589,10 @@
    "explica": "À direita da aorta, encostada no fígado: veia cava inferior.",
    "tempo": 20,
    "desc": "Mesmo corte. A linha vermelha circunda um vaso à direita do anterior, encostado no fígado.",
-   "img": "content/img/imagem/k05.jpg"
+   "img": "content/img/imagem/k05.jpg",
+   "secoes": [
+    "k1"
+   ]
   },
   {
    "tipo": "q",
@@ -586,7 +608,10 @@
    "explica": "Entrando no hilo hepático, oblíqua: veia porta.",
    "tempo": 20,
    "desc": "Mesmo corte. A linha vermelha marca um vaso alongado e oblíquo que entra no hilo do fígado.",
-   "img": "content/img/imagem/k06.jpg"
+   "img": "content/img/imagem/k06.jpg",
+   "secoes": [
+    "k1"
+   ]
   },
   {
    "tipo": "q",
@@ -602,7 +627,10 @@
    "explica": "Alongado, retroperitoneal, atrás do estômago, cruzando a coluna: pâncreas.",
    "tempo": 20,
    "desc": "Corte axial de TC. A linha vermelha contorna um órgão alongado que cruza a frente da coluna, atrás do estômago, do duodeno até perto do baço.",
-   "img": "content/img/imagem/k07.jpg"
+   "img": "content/img/imagem/k07.jpg",
+   "secoes": [
+    "k1"
+   ]
   },
   {
    "tipo": "q",
@@ -618,7 +646,10 @@
    "explica": "Alça central com pregas em penas: intestino delgado.",
    "tempo": 20,
    "desc": "Corte axial do abdome médio. A linha vermelha contorna alças no centro do abdome, de calibre pequeno e com pregas finas.",
-   "img": "content/img/imagem/k08.jpg"
+   "img": "content/img/imagem/k08.jpg",
+   "secoes": [
+    "k1"
+   ]
   },
   {
    "tipo": "q",
@@ -634,7 +665,10 @@
    "explica": "Na periferia, com fezes e gás: intestino grosso.",
    "tempo": 20,
    "desc": "Mesmo nível. A linha vermelha contorna uma alça na periferia direita, com conteúdo mosqueado de fezes e gás.",
-   "img": "content/img/imagem/k09.jpg"
+   "img": "content/img/imagem/k09.jpg",
+   "secoes": [
+    "k1"
+   ]
   },
   {
    "tipo": "q",
@@ -650,7 +684,10 @@
    "explica": "Bexiga com urina ≈ água = 0 UH. Ar = −1000; osso ≈ +1000.",
    "tempo": 20,
    "desc": "Corte axial da pelve. A linha vermelha contorna a estrutura cheia de líquido logo à frente do reto.",
-   "img": "content/img/imagem/k10.jpg"
+   "img": "content/img/imagem/k10.jpg",
+   "secoes": [
+    "k1"
+   ]
   },
   {
    "tipo": "q",
@@ -664,7 +701,10 @@
    ],
    "certa": 1,
    "explica": "Biconvexo = hematoma epidural: artéria meníngea média, intervalo lúcido.",
-   "tempo": 40
+   "tempo": 40,
+   "secoes": [
+    "k2"
+   ]
   },
   {
    "tipo": "q",
@@ -679,7 +719,10 @@
    "certa": 1,
    "explica": "A dura é aderida às suturas: o epidural forma uma lente e não as cruza.",
    "tempo": 40,
-   "img": "content/img/imagem/k12.jpg"
+   "img": "content/img/imagem/k12.jpg",
+   "secoes": [
+    "k2"
+   ]
   },
   {
    "tipo": "q",
@@ -693,7 +736,10 @@
    ],
    "certa": 0,
    "explica": "Idoso + anticoagulante + semanas + crescente = subdural crônico, por ruptura das veias ponte.",
-   "tempo": 40
+   "tempo": 40,
+   "secoes": [
+    "k2"
+   ]
   },
   {
    "tipo": "slide",
@@ -722,7 +768,10 @@
    ],
    "certa": 0,
    "explica": "Sangue agudo é hiperdenso na TC sem contraste.",
-   "tempo": 40
+   "tempo": 40,
+   "secoes": [
+    "k2"
+   ]
   },
   {
    "tipo": "q",
@@ -737,7 +786,10 @@
    "certa": 2,
    "explica": "Cálculo mexe e faz sombra acústica; pólipo é fixo e sem sombra.",
    "tempo": 40,
-   "anot": "Grifado na foto: “aderida à <strong>parede</strong> da <strong>vesícula biliar</strong>”. Fixo e sem sombra = pólipo."
+   "anot": "Grifado na foto: “aderida à <strong>parede</strong> da <strong>vesícula biliar</strong>”. Fixo e sem sombra = pólipo.",
+   "secoes": [
+    "k3"
+   ]
   },
   {
    "tipo": "slide",
@@ -757,7 +809,10 @@
    "certa": 1,
    "explica": "Instável + FAST positivo = cirurgia. Instável não vai para a TC.",
    "tempo": 40,
-   "anot": "Escrito na foto: <strong>PA ↓, FC ↑ → não pode fazer TC</strong>. Instável vai para a cirurgia."
+   "anot": "Escrito na foto: <strong>PA ↓, FC ↑ → não pode fazer TC</strong>. Instável vai para a cirurgia.",
+   "secoes": [
+    "k3"
+   ]
   },
   {
    "tipo": "q",
@@ -772,7 +827,10 @@
    "certa": 3,
    "explica": "Estável pode fazer TC. FAST negativo não descarta lesão.",
    "tempo": 30,
-   "anot": "Escrito na foto: <strong>fez o US, mas deu negativo → passa para a TC</strong>. <strong>Paciente estável pode TC.</strong>"
+   "anot": "Escrito na foto: <strong>fez o US, mas deu negativo → passa para a TC</strong>. <strong>Paciente estável pode TC.</strong>",
+   "secoes": [
+    "k3"
+   ]
   },
   {
    "tipo": "q",
@@ -787,7 +845,10 @@
    "certa": 1,
    "explica": "Pancreatite: TC com contraste após 48–72 h mostra necrose e coleções.",
    "tempo": 40,
-   "anot": "Escrito na foto: <strong>pancreatite</strong> (dor em faixa + lipase alta)."
+   "anot": "Escrito na foto: <strong>pancreatite</strong> (dor em faixa + lipase alta).",
+   "secoes": [
+    "k3"
+   ]
   },
   {
    "tipo": "q",
@@ -802,7 +863,10 @@
    "certa": 2,
    "explica": "RX é o inicial; a TC mostra o ponto e a causa.",
    "tempo": 40,
-   "anot": "Escrito na foto: <strong>só fez raio X, o 1º de tudo</strong>. Grifado: “nível” e “causa da obstrução” → TC."
+   "anot": "Escrito na foto: <strong>só fez raio X, o 1º de tudo</strong>. Grifado: “nível” e “causa da obstrução” → TC.",
+   "secoes": [
+    "k3"
+   ]
   },
   {
    "tipo": "slide",
@@ -821,7 +885,10 @@
    ],
    "certa": 1,
    "explica": "Junção ureterovesical = ureter distal.",
-   "tempo": 40
+   "tempo": 40,
+   "secoes": [
+    "k4"
+   ]
   },
   {
    "tipo": "q",
@@ -836,7 +903,10 @@
    "certa": 1,
    "explica": "Foco hiperdenso = cálculo; hidronefrose acima. Cálculo: padrão-ouro é a TC sem contraste.",
    "tempo": 30,
-   "anot": "Escrito na foto: <strong>cálculo = padrão-ouro = TC sem contraste</strong>. Grifado: “ureter proximal”."
+   "anot": "Escrito na foto: <strong>cálculo = padrão-ouro = TC sem contraste</strong>. Grifado: “ureter proximal”.",
+   "secoes": [
+    "k4"
+   ]
   },
   {
    "tipo": "slide",
@@ -856,7 +926,10 @@
    "certa": 2,
    "explica": "Gestante: US primeiro; RM se inconclusivo.",
    "tempo": 40,
-   "anot": "Grifado na foto: “inicial”. Gestante → US primeiro."
+   "anot": "Grifado na foto: “inicial”. Gestante → US primeiro.",
+   "secoes": [
+    "k3"
+   ]
   },
   {
    "tipo": "q",
@@ -871,7 +944,10 @@
    "certa": 1,
    "explica": "AINE + dispepsia + dor súbita + ar livre = úlcera péptica perfurada (duodenal ou gástrica).",
    "tempo": 30,
-   "anot": "Escrito na foto: <strong>pneumoperitônio → úlcera péptica, duodenal ou gástrica</strong>."
+   "anot": "Escrito na foto: <strong>pneumoperitônio → úlcera péptica, duodenal ou gástrica</strong>.",
+   "secoes": [
+    "k3"
+   ]
   },
   {
    "tipo": "q",
@@ -885,7 +961,10 @@
    ],
    "certa": 0,
    "explica": "Ar livre sob o diafragma. (O enunciado completo não aparece na foto; as alternativas e o gabarito são os da tela.)",
-   "tempo": 30
+   "tempo": 30,
+   "secoes": [
+    "k3"
+   ]
   },
   {
    "tipo": "q",
@@ -900,7 +979,10 @@
    "certa": 0,
    "explica": "Romper a cortical indica lesão agressiva (ex.: osteossarcoma).",
    "tempo": 30,
-   "anot": "Escrito na foto: <strong>TC é padrão-ouro</strong>, com “destruição cortical” destacada no enunciado."
+   "anot": "Escrito na foto: <strong>TC é padrão-ouro</strong>, com “destruição cortical” destacada no enunciado.",
+   "secoes": [
+    "k5"
+   ]
   },
   {
    "tipo": "q",
@@ -915,7 +997,10 @@
    "certa": 2,
    "explica": "Linha escura cruzando a cortical, com desvio = fratura.",
    "tempo": 40,
-   "anot": "Escrito na foto: <strong>linha radiolucente = linha preta</strong>."
+   "anot": "Escrito na foto: <strong>linha radiolucente = linha preta</strong>.",
+   "secoes": [
+    "k5"
+   ]
   },
   {
    "tipo": "slide",
@@ -935,7 +1020,10 @@
    ],
    "certa": 3,
    "explica": "Qualquer sangramento intracraniano agudo começa pela TC sem contraste.",
-   "tempo": 40
+   "tempo": 40,
+   "secoes": [
+    "k2"
+   ]
   },
   {
    "tipo": "q",
@@ -950,7 +1038,10 @@
    "certa": 0,
    "explica": "Sangue nas cisternas e fissuras = espaço subaracnoide; causa mais comum: aneurisma roto.",
    "tempo": 40,
-   "anot": "Grifado na foto: “fissuras sylvianas” e “cisterna”. Na imagem seguinte: <strong>hemorragia subaracnoide</strong>."
+   "anot": "Grifado na foto: “fissuras sylvianas” e “cisterna”. Na imagem seguinte: <strong>hemorragia subaracnoide</strong>.",
+   "secoes": [
+    "k2"
+   ]
   },
   {
    "tipo": "slide",
@@ -970,7 +1061,10 @@
    ],
    "certa": 1,
    "explica": "Substância branca, ao redor de lesão: vasogênico (barreira hematoencefálica rota).",
-   "tempo": 30
+   "tempo": 30,
+   "secoes": [
+    "k2"
+   ]
   },
   {
    "tipo": "q",
@@ -985,7 +1079,10 @@
    "certa": 2,
    "explica": "Cinzenta + branca no AVC: citotóxico (bomba Na⁺/K⁺ falha).",
    "tempo": 40,
-   "anot": "No slide seguinte, circulado: <strong>substância cinzenta e branca</strong> (citotóxico)."
+   "anot": "No slide seguinte, circulado: <strong>substância cinzenta e branca</strong> (citotóxico).",
+   "secoes": [
+    "k2"
+   ]
   },
   {
    "tipo": "slide",
@@ -1014,7 +1111,10 @@
    ],
    "certa": 2,
    "explica": "De fora para dentro: dura → aracnoide → pia (colada no cérebro).",
-   "tempo": 40
+   "tempo": 40,
+   "secoes": [
+    "k2"
+   ]
   },
   {
    "tipo": "q",
@@ -1028,7 +1128,10 @@
    ],
    "certa": 2,
    "explica": "Entre aracnoide e pia, com LCR e as artérias do polígono de Willis.",
-   "tempo": 30
+   "tempo": 30,
+   "secoes": [
+    "k2"
+   ]
   },
   {
    "tipo": "q",
@@ -1043,7 +1146,10 @@
    "certa": 0,
    "explica": "Suspeita de fratura começa pelo RX.",
    "tempo": 20,
-   "anot": "Escrito na foto: <strong>RX</strong> para fratura; a TC/RM ficaria para depois, ou “se fosse muscular” (ver K34)."
+   "anot": "Escrito na foto: <strong>RX</strong> para fratura; a TC/RM ficaria para depois, ou “se fosse muscular” (ver K34).",
+   "secoes": [
+    "k5"
+   ]
   },
   {
    "tipo": "q",
@@ -1063,7 +1169,10 @@
     2
    ],
    "anot": "Na foto, a alternativa circulada foi a TC. A literatura indica US como exame inicial na lesão muscular; aqui as duas contam como certas.",
-   "img": "content/img/imagem/k34.jpg"
+   "img": "content/img/imagem/k34.jpg",
+   "secoes": [
+    "k5"
+   ]
   }
  ],
  "kahootInfo": {
