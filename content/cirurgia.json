@@ -1325,5 +1325,1759 @@
    ],
    "fechamento": "<h3>Pontos-chave</h3><ul><li>Base de crânio: nada pelo nariz.</li><li>Fluxo: curto e calibroso.</li><li>Dreno: 5º EIC, borda superior.</li><li>Sangue no meato: não sondar às cegas.</li></ul>"
   }
+ ],
+ "questoes": [
+  {
+   "id": "q-r1-01",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Quantos MET indicam boa reserva cardiopulmonar antes de cirurgia não cardíaca?",
+   "alternativas": [
+    {
+     "t": "Pelo menos 4 MET",
+     "certa": true,
+     "porque": "Subir dois lances de escada sem parar."
+    },
+    {
+     "t": "Pelo menos 1 MET",
+     "certa": false,
+     "porque": "É muito pouco."
+    },
+    {
+     "t": "Pelo menos 10 MET",
+     "certa": false,
+     "porque": "Não é o corte."
+    },
+    {
+     "t": "Pelo menos 2 MET",
+     "certa": false,
+     "porque": "Não é o corte."
+    }
+   ],
+   "explica": "Na maioria dos casos dispensa investigação cardíaca adicional.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "A capacidade de realizar atividades de pelo menos 4 MET , como subir dois lances de escada ou uma ladeira sem parar, indica boa reserva cardiopulmonar e, na maioria dos casos, dispensa investigação cardíaca adicional antes de cirurgias não cardíacas."
+   }
+  },
+  {
+   "id": "q-r1-02",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Paciente com diabetes mal controlado e DPOC. Qual a classe ASA?",
+   "alternativas": [
+    {
+     "t": "ASA II",
+     "certa": false,
+     "porque": "Seria doença leve e controlada."
+    },
+    {
+     "t": "ASA IV",
+     "certa": false,
+     "porque": "Ameaça constante à vida."
+    },
+    {
+     "t": "ASA III",
+     "certa": true,
+     "porque": "Doença sistêmica grave com limitação."
+    },
+    {
+     "t": "ASA I",
+     "certa": false,
+     "porque": "Saudável."
+    }
+   ],
+   "explica": "Hipertensão e diabetes controlados são ASA II; mal controlados, ASA III.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Diabetes ou hipertensão mal controlados, DPOC, IMC ≥ 40, infarto há mais de 3 meses, diálise"
+   }
+  },
+  {
+   "id": "q-r1-03",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "O que significa a letra E na classificação ASA?",
+   "alternativas": [
+    {
+     "t": "Paciente eletivo",
+     "certa": false,
+     "porque": "É o oposto."
+    },
+    {
+     "t": "Cirurgia de emergência",
+     "certa": true,
+     "porque": "A urgência por si aumenta o risco."
+    },
+    {
+     "t": "Estado físico excelente",
+     "certa": false,
+     "porque": "Não é o significado."
+    },
+    {
+     "t": "Endocrinopatia",
+     "certa": false,
+     "porque": "Não é o significado."
+    }
+   ],
+   "explica": "Acrescenta-se E quando a cirurgia é de emergência.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "A letra E é acrescentada quando a cirurgia é de emergência, porque a urgência por si só aumenta o risco."
+   }
+  },
+  {
+   "id": "q-r1-04",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "dificil",
+   "enunciado": "Qual destes é fator do índice de Lee?",
+   "alternativas": [
+    {
+     "t": "Hipertensão controlada",
+     "certa": false,
+     "porque": "Não está no índice."
+    },
+    {
+     "t": "Idade acima de 60 anos",
+     "certa": false,
+     "porque": "Não está no índice."
+    },
+    {
+     "t": "Tabagismo",
+     "certa": false,
+     "porque": "Não está no índice."
+    },
+    {
+     "t": "Creatinina acima de 2 mg/dL",
+     "certa": true,
+     "porque": "Um dos seis fatores."
+    }
+   ],
+   "explica": "Cirurgia de alto risco, coronariopatia, IC, cerebrovascular, diabetes com insulina e creatinina > 2.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "creatinina acima de 2 mg/dL"
+   }
+  },
+  {
+   "id": "q-r1-05",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que não pedir exames pré-operatórios de rotina para todos?",
+   "alternativas": [
+    {
+     "t": "Geram falso-positivos, atrasos e custos sem reduzir complicações",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque nenhum exame é útil",
+     "certa": false,
+     "porque": "Cada um responde a uma pergunta clínica."
+    },
+    {
+     "t": "Porque atrasam a anestesia",
+     "certa": false,
+     "porque": "Não é o argumento central."
+    },
+    {
+     "t": "Porque só o ECG importa",
+     "certa": false,
+     "porque": "Não é o descrito."
+    }
+   ],
+   "explica": "ASA I em cirurgia pequena pode não precisar de nenhum.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Exames sem indicação geram falso-positivos, atrasos, custos e novos exames, sem reduzir complicações."
+   }
+  },
+  {
+   "id": "q-r1-06",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual o jejum mínimo para líquidos claros?",
+   "alternativas": [
+    {
+     "t": "6 horas",
+     "certa": false,
+     "porque": "Para refeição leve."
+    },
+    {
+     "t": "8 horas",
+     "certa": false,
+     "porque": "Para refeição gordurosa."
+    },
+    {
+     "t": "4 horas",
+     "certa": false,
+     "porque": "Para leite materno."
+    },
+    {
+     "t": "2 horas",
+     "certa": true,
+     "porque": "Tabela ASA."
+    }
+   ],
+   "explica": "Protocolos ACERTO e ERAS liberam bebida com carboidrato até 2 h antes.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O jejum prolongado além do necessário aumenta a resistência à insulina e o catabolismo, e por isso os protocolos de recuperação acelerada, como o ACERTO e o ERAS, recomendam bebida com carboidrato até duas horas antes da anestesia."
+   }
+  },
+  {
+   "id": "q-r1-07",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Por que o betabloqueador não deve ser iniciado na véspera da cirurgia?",
+   "alternativas": [
+    {
+     "t": "Porque causa cetoacidose",
+     "certa": false,
+     "porque": "É dos inibidores de SGLT2."
+    },
+    {
+     "t": "Porque aumenta sangramento",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Essa prática aumentou AVC e mortalidade em ensaios clínicos",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Porque deve ser sempre suspenso",
+     "certa": false,
+     "porque": "Quem já usa deve manter."
+    }
+   ],
+   "explica": "Manter quem já usa; não iniciar às vésperas.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "prática que aumentou a incidência de AVC e a mortalidade"
+   }
+  },
+  {
+   "id": "q-r1-08",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Paciente em uso de dapagliflozina fará colecistectomia eletiva. Quando suspender?",
+   "alternativas": [
+    {
+     "t": "No dia da cirurgia",
+     "certa": false,
+     "porque": "É a regra da metformina."
+    },
+    {
+     "t": "Três dias antes",
+     "certa": true,
+     "porque": "Risco de cetoacidose euglicêmica."
+    },
+    {
+     "t": "Cinco dias antes",
+     "certa": false,
+     "porque": "É a regra do clopidogrel."
+    },
+    {
+     "t": "Não suspender",
+     "certa": false,
+     "porque": "Há risco de cetoacidose."
+    }
+   ],
+   "explica": "Inibidores de SGLT2 são suspensos três dias antes.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "A metformina é suspensa no dia da cirurgia, e os inibidores do cotransportador sódio-glicose tipo 2 (dapagliflozina, empagliflozina), três dias antes, pelo risco de cetoacidose euglicêmica ."
+   }
+  },
+  {
+   "id": "q-r1-09",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a tricotomia, quando necessária, é feita com tricotomizador elétrico logo antes da cirurgia?",
+   "alternativas": [
+    {
+     "t": "Porque o elétrico é estéril",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Para reduzir tempo cirúrgico",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Porque a lâmina causa alergia",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "A lâmina provoca microlesões que viram porta de entrada para bactérias",
+     "certa": true,
+     "porque": "Explicação do material."
+    }
+   ],
+   "explica": "Só se os pelos atrapalharem.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O banho na véspera é estimulado, e a tricotomia só é feita se os pelos atrapalharem o procedimento, com tricotomizador elétrico e imediatamente antes da cirurgia, porque a lâmina provoca microlesões que se tornam porta de entrada para bactérias."
+   }
+  },
+  {
+   "id": "q-r2-01",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o débito urinário cai nas primeiras 24 a 48 horas de pós-operatório?",
+   "alternativas": [
+    {
+     "t": "Sempre por hipovolemia",
+     "certa": false,
+     "porque": "É esperado e não deve ser interpretado isoladamente."
+    },
+    {
+     "t": "ADH e renina-angiotensina-aldosterona retêm água e sódio",
+     "certa": true,
+     "porque": "Resposta metabólica ao trauma."
+    },
+    {
+     "t": "Por lesão renal da anestesia",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Por retenção urinária obrigatória",
+     "certa": false,
+     "porque": "Não é o mecanismo."
+    }
+   ],
+   "explica": "Achado esperado da resposta ao trauma.",
+   "pegadinha": "Oligúria inicial não é sinônimo de hipovolemia.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "o que reduz o débito urinário nas primeiras 24 a 48 horas"
+   }
+  },
+  {
+   "id": "q-r2-02",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual segmento intestinal recupera a motilidade por último?",
+   "alternativas": [
+    {
+     "t": "Cólon, em 48 a 72 horas",
+     "certa": true,
+     "porque": "A eliminação de flatos marca essa recuperação."
+    },
+    {
+     "t": "Intestino delgado",
+     "certa": false,
+     "porque": "Recupera em poucas horas."
+    },
+    {
+     "t": "Estômago",
+     "certa": false,
+     "porque": "Recupera em 24 a 48 horas."
+    },
+    {
+     "t": "Esôfago",
+     "certa": false,
+     "porque": "Não é citado."
+    }
+   ],
+   "explica": "Flatos indicam que o cólon voltou a funcionar.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "O intestino delgado recupera a motilidade em poucas horas, o estômago em 24 a 48 horas e o cólon em 48 a 72 horas; por isso a eliminação de flatos marca a recuperação do cólon, a última a ocorrer."
+   }
+  },
+  {
+   "id": "q-r2-03",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a dor mal controlada aumenta complicações?",
+   "alternativas": [
+    {
+     "t": "Porque eleva a glicemia apenas",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Porque causa íleo obrigatório",
+     "certa": false,
+     "porque": "Não é o argumento."
+    },
+    {
+     "t": "Impede tosse, respiração profunda e deambulação",
+     "certa": true,
+     "porque": "Favorece atelectasia, pneumonia e trombose."
+    },
+    {
+     "t": "Porque a dipirona é contraindicada",
+     "certa": false,
+     "porque": "Não é o motivo."
+    }
+   ],
+   "explica": "Analgesia multimodal reserva opioides para dor intensa.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A dor mal controlada não é apenas sofrimento: impede a tosse e a respiração profunda, favorecendo atelectasia e pneumonia, e impede a deambulação, favorecendo trombose."
+   }
+  },
+  {
+   "id": "q-r2-04",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual destes é fator de Apfel para náuseas e vômitos pós-operatórios?",
+   "alternativas": [
+    {
+     "t": "Tabagismo",
+     "certa": false,
+     "porque": "O fator é não ser tabagista."
+    },
+    {
+     "t": "Sexo masculino",
+     "certa": false,
+     "porque": "Não é fator."
+    },
+    {
+     "t": "Idade acima de 70",
+     "certa": false,
+     "porque": "Não é fator citado."
+    },
+    {
+     "t": "Sexo feminino",
+     "certa": true,
+     "porque": "Um dos quatro fatores."
+    }
+   ],
+   "explica": "Feminino, não tabagista, história prévia ou cinetose e opioide pós-operatório.",
+   "pegadinha": "Não tabagismo é que é fator.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "As náuseas e vômitos pós-operatórios são previstos pelos fatores de Apfel, sexo feminino, não tabagismo, história de náuseas pós-operatórias ou cinetose e uso de opioide no pós-operatório, e podem ser prevenidos com ondansetrona e dexametasona."
+   }
+  },
+  {
+   "id": "q-r2-05",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Paciente com febre no 4º dia de pós-operatório, com sonda vesical. Qual causa é mais provável pela regra dos 5 W?",
+   "alternativas": [
+    {
+     "t": "Infecção urinária",
+     "certa": true,
+     "porque": "Water: 3º ao 5º dia."
+    },
+    {
+     "t": "Atelectasia",
+     "certa": false,
+     "porque": "Wind: 1º e 2º dias."
+    },
+    {
+     "t": "Trombose venosa profunda",
+     "certa": false,
+     "porque": "Walking: a partir do 5º ao 7º."
+    },
+    {
+     "t": "Infecção do sítio cirúrgico",
+     "certa": false,
+     "porque": "Wound: 5º ao 7º dia."
+    }
+   ],
+   "explica": "O momento da febre é a principal pista da causa.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Infecção urinária, flebite"
+   }
+  },
+  {
+   "id": "q-r2-06",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Durante a anestesia surgem hipercapnia, rigidez muscular, taquicardia e febre. Qual o tratamento?",
+   "alternativas": [
+    {
+     "t": "Paracetamol",
+     "certa": false,
+     "porque": "Não trata a causa."
+    },
+    {
+     "t": "Ondansetrona",
+     "certa": false,
+     "porque": "É antiemético."
+    },
+    {
+     "t": "Dantrolene",
+     "certa": true,
+     "porque": "Hipertermia maligna."
+    },
+    {
+     "t": "Biperideno",
+     "certa": false,
+     "porque": "É para distonia."
+    }
+   ],
+   "explica": "Doença genética desencadeada por inalatórios e succinilcolina.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "é tratada com dantrolene"
+   }
+  },
+  {
+   "id": "q-r2-07",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual a arritmia mais comum no pós-operatório?",
+   "alternativas": [
+    {
+     "t": "Taquicardia ventricular",
+     "certa": false,
+     "porque": "Não é a mais comum."
+    },
+    {
+     "t": "Fibrilação atrial",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Bloqueio AV total",
+     "certa": false,
+     "porque": "Não é a citada."
+    },
+    {
+     "t": "Bradicardia sinusal",
+     "certa": false,
+     "porque": "Não é a citada."
+    }
+   ],
+   "explica": "O infarto perioperatório costuma ser silencioso, revelado pela troponina.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Entre as complicações cardiovasculares, o infarto perioperatório é frequentemente silencioso, revelado apenas pela elevação da troponina, e a fibrilação atrial é a arritmia mais comum."
+   }
+  },
+  {
+   "id": "q-r2-08",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "No 6º dia, sai grande quantidade de líquido serossanguinolento, tipo água de carne, pela ferida aparentemente íntegra. O que suspeitar?",
+   "alternativas": [
+    {
+     "t": "Seroma simples",
+     "certa": false,
+     "porque": "Não é o padrão de alerta."
+    },
+    {
+     "t": "Infecção superficial",
+     "certa": false,
+     "porque": "Daria pus e sinais flogísticos."
+    },
+    {
+     "t": "Deiscência da aponeurose",
+     "certa": true,
+     "porque": "Sinal de alerta do material."
+    },
+    {
+     "t": "Fístula de anastomose",
+     "certa": false,
+     "porque": "Sairia conteúdo entérico pelo dreno."
+    }
+   ],
+   "explica": "Pode evoluir para evisceração.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "descrito como água de carne"
+   }
+  },
+  {
+   "id": "q-r2-09",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Paciente eviscerou na enfermaria. Qual a conduta imediata?",
+   "alternativas": [
+    {
+     "t": "Cobrir com compressa estéril umedecida e levar ao centro cirúrgico",
+     "certa": true,
+     "porque": "Conduta do material."
+    },
+    {
+     "t": "Recolocar as vísceras no leito",
+     "certa": false,
+     "porque": "Não é a conduta."
+    },
+    {
+     "t": "Cobrir com compressa seca e aguardar",
+     "certa": false,
+     "porque": "A compressa deve ser umedecida."
+    },
+    {
+     "t": "Suturar a pele à beira do leito",
+     "certa": false,
+     "porque": "Não é a conduta."
+    }
+   ],
+   "explica": "A evisceração é tratada no centro cirúrgico.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "cobrindo as vísceras com compressa estéril umedecida"
+   }
+  },
+  {
+   "id": "q-r2-10",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual a tromboprofilaxia farmacológica citada para risco moderado ou alto?",
+   "alternativas": [
+    {
+     "t": "AAS 100 mg",
+     "certa": false,
+     "porque": "Não é o esquema."
+    },
+    {
+     "t": "Varfarina com INR 2 a 3",
+     "certa": false,
+     "porque": "Não é o esquema."
+    },
+    {
+     "t": "Enoxaparina 1 mg/kg de 12/12 h",
+     "certa": false,
+     "porque": "É dose terapêutica."
+    },
+    {
+     "t": "Enoxaparina 40 mg SC uma vez ao dia",
+     "certa": true,
+     "porque": "Esquema do material."
+    }
+   ],
+   "explica": "Alternativa: heparina não fracionada 5.000 UI a cada 8 ou 12 h.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "enoxaparina 40 mg por via subcutânea uma vez ao dia"
+   }
+  },
+  {
+   "id": "q-r3-01",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Colecistectomia eletiva. Como se classifica a ferida?",
+   "alternativas": [
+    {
+     "t": "Limpa",
+     "certa": false,
+     "porque": "Não abre tratos."
+    },
+    {
+     "t": "Limpa-contaminada",
+     "certa": true,
+     "porque": "Abertura controlada do trato digestivo."
+    },
+    {
+     "t": "Contaminada",
+     "certa": false,
+     "porque": "Exige quebra de técnica ou inflamação aguda."
+    },
+    {
+     "t": "Suja",
+     "certa": false,
+     "porque": "Exige pus ou víscera perfurada."
+    }
+   ],
+   "explica": "Limpa-contaminada tem ISC aproximada de 3 a 11%.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Colecistectomia eletiva, gastrectomia, histerectomia, apendicectomia não perfurada"
+   }
+  },
+  {
+   "id": "q-r3-02",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Apendicite perfurada. Como se classifica a ferida?",
+   "alternativas": [
+    {
+     "t": "Contaminada",
+     "certa": false,
+     "porque": "É a apendicite inflamada."
+    },
+    {
+     "t": "Limpa-contaminada",
+     "certa": false,
+     "porque": "É a não perfurada."
+    },
+    {
+     "t": "Limpa",
+     "certa": false,
+     "porque": "Não abre tratos."
+    },
+    {
+     "t": "Suja ou infectada",
+     "certa": true,
+     "porque": "Víscera perfurada."
+    }
+   ],
+   "explica": "Na ferida suja o antibiótico é tratamento, não profilaxia.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Peritonite fecal, abscesso, apendicite perfurada"
+   }
+  },
+  {
+   "id": "q-r3-03",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que na ferida suja o antibiótico não é chamado de profilaxia?",
+   "alternativas": [
+    {
+     "t": "Porque a infecção já existe; o antibiótico é tratamento",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque não se usa antibiótico",
+     "certa": false,
+     "porque": "Usa-se, como tratamento."
+    },
+    {
+     "t": "Porque se usa só cefazolina",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Porque a dose é única",
+     "certa": false,
+     "porque": "Não é o motivo."
+    }
+   ],
+   "explica": "Profilaxia protege antes da contaminação.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Na ferida suja, a infecção já existe, e o antibiótico é tratamento , não profilaxia."
+   }
+  },
+  {
+   "id": "q-r3-04",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Quando administrar a cefazolina profilática?",
+   "alternativas": [
+    {
+     "t": "Na indução apenas se houver febre",
+     "certa": false,
+     "porque": "Não é a regra."
+    },
+    {
+     "t": "Até 60 minutos antes da incisão",
+     "certa": true,
+     "porque": "Concentração no tecido durante a contaminação."
+    },
+    {
+     "t": "Após o fechamento da pele",
+     "certa": false,
+     "porque": "Tarde demais."
+    },
+    {
+     "t": "24 horas antes",
+     "certa": false,
+     "porque": "Cedo demais."
+    }
+   ],
+   "explica": "Dose usual 2 g IV, 3 g acima de 120 kg.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Como a maioria das infecções incisionais é causada pela flora da pele, a droga padrão é a cefazolina 2 g por via intravenosa (3 g em pacientes com 120 kg ou mais), administrada até 60 minutos antes da incisão ."
+   }
+  },
+  {
+   "id": "q-r3-05",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Por que a vancomicina profilática deve começar 60 a 120 minutos antes?",
+   "alternativas": [
+    {
+     "t": "Porque age mais devagar no tecido",
+     "certa": false,
+     "porque": "Não é o motivo dado."
+    },
+    {
+     "t": "Porque precisa de dose de ataque oral",
+     "certa": false,
+     "porque": "Não é o caso."
+    },
+    {
+     "t": "Pelo tempo de infusão",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Para evitar síndrome do homem vermelho apenas",
+     "certa": false,
+     "porque": "O material justifica pelo tempo de infusão."
+    }
+   ],
+   "explica": "Usada em alergia grave ou colonização por MRSA.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A vancomicina, usada em alergia grave ou colonização por estafilococo resistente à meticilina, deve começar de 60 a 120 minutos antes, pelo tempo de infusão."
+   }
+  },
+  {
+   "id": "q-r3-06",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Cirurgia com cefazolina já dura 4 horas e meia. O que fazer?",
+   "alternativas": [
+    {
+     "t": "Nada, a dose única basta",
+     "certa": false,
+     "porque": "Deve-se repetir."
+    },
+    {
+     "t": "Trocar para vancomicina",
+     "certa": false,
+     "porque": "Não há indicação."
+    },
+    {
+     "t": "Repetir a dose",
+     "certa": true,
+     "porque": "Passou de quatro horas, duas meias-vidas."
+    },
+    {
+     "t": "Suspender o antibiótico",
+     "certa": false,
+     "porque": "Não é a conduta."
+    }
+   ],
+   "explica": "Repete-se também se o sangramento passar de 1.500 mL.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A dose é repetida se a cirurgia ultrapassar quatro horas, que corresponde a duas meias-vidas da cefazolina, ou se o sangramento passar de 1.500 mL."
+   }
+  },
+  {
+   "id": "q-r3-07",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que não prolongar a profilaxia além de 24 horas?",
+   "alternativas": [
+    {
+     "t": "Porque a cefazolina é nefrotóxica",
+     "certa": false,
+     "porque": "Não é o argumento."
+    },
+    {
+     "t": "Porque causa febre",
+     "certa": false,
+     "porque": "Não é o argumento."
+    },
+    {
+     "t": "Porque já houve cicatrização",
+     "certa": false,
+     "porque": "Não é o argumento."
+    },
+    {
+     "t": "Não reduz infecção e aumenta resistência e risco de C. difficile",
+     "certa": true,
+     "porque": "Dado do material."
+    }
+   ],
+   "explica": "Dose única ou no máximo 24 horas.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A duração deve ser de dose única ou, no máximo, 24 horas : prolongar a profilaxia não reduz a infecção e aumenta a resistência bacteriana e o risco de colite por Clostridioides difficile ."
+   }
+  },
+  {
+   "id": "q-r3-08",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual o agente mais comum da infecção do sítio cirúrgico?",
+   "alternativas": [
+    {
+     "t": "Staphylococcus aureus",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Pseudomonas",
+     "certa": false,
+     "porque": "Não é o mais comum."
+    },
+    {
+     "t": "E. coli",
+     "certa": false,
+     "porque": "Predomina só em cirurgias do trato digestivo, junto a anaeróbios."
+    },
+    {
+     "t": "Candida",
+     "certa": false,
+     "porque": "Não é citada."
+    }
+   ],
+   "explica": "Seguido dos estafilococos coagulase-negativos.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "O agente mais comum é o Staphylococcus aureus , seguido dos estafilococos coagulase-negativos; nas cirurgias do trato digestivo predominam bacilos Gram-negativos entéricos e anaeróbios."
+   }
+  },
+  {
+   "id": "q-r3-09",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "No 5º dia após colectomia, febre, taquicardia, dor difusa e saída de conteúdo fecaloide pelo dreno. Qual o diagnóstico e conduta?",
+   "alternativas": [
+    {
+     "t": "ISC superficial; abrir a ferida",
+     "certa": false,
+     "porque": "O pus vem do dreno, além da parede."
+    },
+    {
+     "t": "Deiscência de anastomose com peritonite; ressuscitação, antibiótico e reabordagem",
+     "certa": true,
+     "porque": "Infecção de órgão ou espaço."
+    },
+    {
+     "t": "Infecção urinária; trocar a sonda",
+     "certa": false,
+     "porque": "Não explica o dreno."
+    },
+    {
+     "t": "Íleo prolongado; sonda nasogástrica",
+     "certa": false,
+     "porque": "Não explica o conteúdo fecaloide."
+    }
+   ],
+   "explica": "A reoperação será classificada como suja.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Trata-se de deiscência de anastomose com peritonite, uma infecção de órgão ou espaço."
+   }
+  },
+  {
+   "id": "q-r3-10",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual antisséptico de pele é recomendado no intraoperatório?",
+   "alternativas": [
+    {
+     "t": "Água oxigenada",
+     "certa": false,
+     "porque": "Não é citada."
+    },
+    {
+     "t": "Clorexidina alcoólica",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "PVPI aquoso",
+     "certa": false,
+     "porque": "Não é o citado."
+    },
+    {
+     "t": "Álcool 70% isolado",
+     "certa": false,
+     "porque": "Não é o citado."
+    }
+   ],
+   "explica": "Também normotermia, oxigenação e controle glicêmico.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Durante a cirurgia: antissepsia da pele com clorexidina alcoólica , antibioticoprofilaxia no momento certo, normotermia, oxigenação adequada, técnica cuidadosa e tempo cirúrgico razoável."
+   }
+  },
+  {
+   "id": "q-r4-01",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Na NRS-2002, qual escore indica risco nutricional?",
+   "alternativas": [
+    {
+     "t": "Três ou mais",
+     "certa": true,
+     "porque": "Corte do material."
+    },
+    {
+     "t": "Um ou mais",
+     "certa": false,
+     "porque": "Não é o corte."
+    },
+    {
+     "t": "Cinco ou mais",
+     "certa": false,
+     "porque": "Indica risco grave."
+    },
+    {
+     "t": "Dez ou mais",
+     "certa": false,
+     "porque": "Não existe esse corte."
+    }
+   ],
+   "explica": "ASG classifica em A, B e C.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "A triagem pode ser feita pela NRS-2002 , em que um escore de três ou mais indica risco nutricional, ou pela avaliação subjetiva global , que classifica o paciente como bem nutrido (A), moderadamente desnutrido (B) ou gravemente desnutrido (C)."
+   }
+  },
+  {
+   "id": "q-r4-02",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "dificil",
+   "enunciado": "Paciente com perda de 15% do peso em 6 meses fará cirurgia eletiva. O que fazer?",
+   "alternativas": [
+    {
+     "t": "Operar imediatamente",
+     "certa": false,
+     "porque": "Aumenta complicações."
+    },
+    {
+     "t": "Dar só albumina IV",
+     "certa": false,
+     "porque": "Não é a conduta."
+    },
+    {
+     "t": "Terapia nutricional por 7 a 14 dias antes, mesmo adiando a cirurgia",
+     "certa": true,
+     "porque": "Risco nutricional grave."
+    },
+    {
+     "t": "Aguardar 6 meses",
+     "certa": false,
+     "porque": "Não é o prazo."
+    }
+   ],
+   "explica": "Desnutrição associa-se a infecções, deiscências e mortalidade.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Esses pacientes, quando candidatos a cirurgia eletiva, devem receber terapia nutricional por 7 a 14 dias antes da operação , mesmo que isso a adie."
+   }
+  },
+  {
+   "id": "q-r4-03",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a enteral é preferível à parenteral?",
+   "alternativas": [
+    {
+     "t": "Porque dispensa sonda",
+     "certa": false,
+     "porque": "Precisa de sonda ou ostomia."
+    },
+    {
+     "t": "Porque dá mais calorias",
+     "certa": false,
+     "porque": "Não é o argumento."
+    },
+    {
+     "t": "Porque não tem complicações",
+     "certa": false,
+     "porque": "Também tem riscos."
+    },
+    {
+     "t": "Preserva a mucosa e reduz a translocação bacteriana",
+     "certa": true,
+     "porque": "Menos infecções e menor custo."
+    }
+   ],
+   "explica": "Se o intestino funciona, use-o.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Ela preserva a integridade da mucosa intestinal e reduz a translocação bacteriana, o que se traduz em menos infecções em comparação com a parenteral, além de ser mais barata."
+   }
+  },
+  {
+   "id": "q-r4-04",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Previsão de nutrição enteral por 3 meses. Qual a via?",
+   "alternativas": [
+    {
+     "t": "Sonda nasoenteral indefinidamente",
+     "certa": false,
+     "porque": "Indicada para períodos menores."
+    },
+    {
+     "t": "Nutrição parenteral",
+     "certa": false,
+     "porque": "O intestino funciona."
+    },
+    {
+     "t": "Via oral pura",
+     "certa": false,
+     "porque": "Não atinge a meta."
+    },
+    {
+     "t": "Gastrostomia ou jejunostomia",
+     "certa": true,
+     "porque": "Mais de 4 a 6 semanas."
+    }
+   ],
+   "explica": "Ostomia quando o uso ultrapassa 4 a 6 semanas.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Deve ser iniciada precocemente, em 24 a 48 horas, por sonda nasoenteral, com posição pós-pilórica se houver risco de aspiração ou gastroparesia, ou por gastrostomia ou jejunostomia quando a previsão de uso ultrapassa quatro a seis semanas."
+   }
+  },
+  {
+   "id": "q-r4-05",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Desnutrido grave inicia dieta e no 2º dia tem arritmia e fraqueza respiratória. Qual distúrbio marca o quadro?",
+   "alternativas": [
+    {
+     "t": "Hipercalemia",
+     "certa": false,
+     "porque": "O potássio cai."
+    },
+    {
+     "t": "Hipofosfatemia",
+     "certa": true,
+     "porque": "Marca da síndrome de realimentação."
+    },
+    {
+     "t": "Hipernatremia",
+     "certa": false,
+     "porque": "Não é a marca."
+    },
+    {
+     "t": "Hiperglicemia isolada",
+     "certa": false,
+     "porque": "Não é a marca."
+    }
+   ],
+   "explica": "A insulina desloca fósforo, potássio e magnésio para dentro das células e consome tiamina.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "O resultado é a síndrome de realimentação , cuja marca é a hipofosfatemia , acompanhada de hipocalemia, hipomagnesemia, deficiência de tiamina e retenção hídrica, com risco de arritmias, insuficiência respiratória e insuficiência cardíaca."
+   }
+  },
+  {
+   "id": "q-r4-06",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Como prevenir a síndrome de realimentação?",
+   "alternativas": [
+    {
+     "t": "Começar com a meta calórica plena",
+     "certa": false,
+     "porque": "Precipita a síndrome."
+    },
+    {
+     "t": "Dar glicose antes da tiamina",
+     "certa": false,
+     "porque": "A tiamina é consumida."
+    },
+    {
+     "t": "Começar com oferta calórica baixa, aumentar aos poucos, repor tiamina e eletrólitos",
+     "certa": true,
+     "porque": "Prevenção do material."
+    },
+    {
+     "t": "Usar sempre parenteral",
+     "certa": false,
+     "porque": "Não previne."
+    }
+   ],
+   "explica": "Monitorar e repor fósforo, potássio e magnésio.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "A prevenção consiste em iniciar com oferta calórica baixa, aumentá-la progressivamente, repor tiamina e monitorar e repor os eletrólitos."
+   }
+  },
+  {
+   "id": "q-r5-01",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Em qual momento do checklist confirma-se a antibioticoprofilaxia nos últimos 60 minutos?",
+   "alternativas": [
+    {
+     "t": "Pausa cirúrgica (time out), antes da incisão",
+     "certa": true,
+     "porque": "Item do time out."
+    },
+    {
+     "t": "Entrada (sign in)",
+     "certa": false,
+     "porque": "Antes da indução, foca anestesia."
+    },
+    {
+     "t": "Saída (sign out)",
+     "certa": false,
+     "porque": "Antes de sair da sala."
+    },
+    {
+     "t": "Na recuperação anestésica",
+     "certa": false,
+     "porque": "Não é momento do checklist."
+    }
+   ],
+   "explica": "No time out todos se apresentam e confirmam paciente, sítio e procedimento.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "antibioticoprofilaxia nos últimos 60 minutos"
+   }
+  },
+  {
+   "id": "q-r5-02",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Em que momento do checklist é feita a contagem de compressas, instrumentais e agulhas?",
+   "alternativas": [
+    {
+     "t": "Entrada (sign in)",
+     "certa": false,
+     "porque": "Antes da indução."
+    },
+    {
+     "t": "Saída (sign out)",
+     "certa": true,
+     "porque": "Antes de o paciente deixar a sala."
+    },
+    {
+     "t": "Pausa cirúrgica (time out)",
+     "certa": false,
+     "porque": "Antes da incisão."
+    },
+    {
+     "t": "Antes do banho pré-operatório",
+     "certa": false,
+     "porque": "Não é momento do checklist."
+    }
+   ],
+   "explica": "A contagem é a barreira contra corpo estranho retido.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Registro do procedimento realizado; contagem de instrumentais, compressas e agulhas; identificação das peças e amostras; problemas com equipamentos; cuidados principais na recuperação"
+   }
+  },
+  {
+   "id": "q-r5-03",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "No fechamento, o instrumentador percebe que falta uma compressa na contagem. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Fechar e anotar no prontuário",
+     "certa": false,
+     "porque": "Risco de corpo estranho retido."
+    },
+    {
+     "t": "Contar de novo após o curativo",
+     "certa": false,
+     "porque": "Tarde demais."
+    },
+    {
+     "t": "Interromper o fechamento até esclarecer, se preciso com radiografia na sala",
+     "certa": true,
+     "porque": "Conduta do material."
+    },
+    {
+     "t": "Ignorar se o sangramento for pequeno",
+     "certa": false,
+     "porque": "Não é a conduta."
+    }
+   ],
+   "explica": "Retenção de corpo estranho é um never event.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Qualquer discrepância na contagem interrompe o fechamento até ser esclarecida, se necessário com radiografia na sala."
+   }
+  },
+  {
+   "id": "q-r5-04",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "O que propõe o modelo do queijo suíço?",
+   "alternativas": [
+    {
+     "t": "Acidentes ocorrem quando falhas de várias barreiras se alinham",
+     "certa": true,
+     "porque": "Modelo de James Reason."
+    },
+    {
+     "t": "Acidentes vêm de um único erro individual",
+     "certa": false,
+     "porque": "Raramente é assim."
+    },
+    {
+     "t": "A solução é punir o culpado",
+     "certa": false,
+     "porque": "Fortalecer o sistema."
+    },
+    {
+     "t": "Barreiras não têm falhas",
+     "certa": false,
+     "porque": "Todas têm furos."
+    }
+   ],
+   "explica": "Cultura justa estimula notificar sem punição automática.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "O modelo do queijo suíço , proposto por James Reason, explica que os acidentes raramente resultam de um único erro: cada barreira do sistema tem falhas, como os furos de uma fatia de queijo, e o dano ocorre quando os furos de várias barreiras se alinham."
+   }
+  },
+  {
+   "id": "q-r5-05",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual o desafio global da OMS que produziu a Lista de Verificação de Segurança Cirúrgica?",
+   "alternativas": [
+    {
+     "t": "Primeiro desafio, mãos limpas",
+     "certa": false,
+     "porque": "Focou higiene das mãos."
+    },
+    {
+     "t": "Terceiro desafio, medicação sem danos",
+     "certa": false,
+     "porque": "É de 2017."
+    },
+    {
+     "t": "Programa Nacional de 2013",
+     "certa": false,
+     "porque": "É brasileiro."
+    },
+    {
+     "t": "Segundo desafio, cirurgias seguras salvam vidas",
+     "certa": true,
+     "porque": "Dado do material."
+    }
+   ],
+   "explica": "Validação mostrou queda da mortalidade de 1,5% para 0,8%.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "O segundo desafio , de 2007 a 2008, \"cirurgias seguras salvam vidas\", produziu a Lista de Verificação de Segurança Cirúrgica ."
+   }
+  },
+  {
+   "id": "q-r6-01",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a ausculta do ar injetado não confirma a posição da sonda nasogástrica?",
+   "alternativas": [
+    {
+     "t": "O som pode ocorrer com a sonda no esôfago ou no pulmão",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque é cara",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Porque exige radiografia antes",
+     "certa": false,
+     "porque": "A radiografia é o padrão-ouro, mas não é o motivo."
+    },
+    {
+     "t": "Porque o ar lesa o estômago",
+     "certa": false,
+     "porque": "Não é o motivo."
+    }
+   ],
+   "explica": "Radiografia é o padrão-ouro; pH ≤ 5,5 ajuda.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "a ausculta do ar injetado no epigástrio não é confiável"
+   }
+  },
+  {
+   "id": "q-r6-02",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Trauma com olhos de guaxinim e sinal de Battle precisa de descompressão gástrica. Qual sonda?",
+   "alternativas": [
+    {
+     "t": "Nasogástrica",
+     "certa": false,
+     "porque": "Pode atravessar a lâmina crivosa."
+    },
+    {
+     "t": "Nasoenteral",
+     "certa": false,
+     "porque": "Também é nasal."
+    },
+    {
+     "t": "Cânula nasofaríngea",
+     "certa": false,
+     "porque": "Não descomprime o estômago e é contraindicada."
+    },
+    {
+     "t": "Orogástrica",
+     "certa": true,
+     "porque": "A via nasal é contraindicada."
+    }
+   ],
+   "explica": "Suspeita de fratura de base do crânio contraindica a via nasal.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "usa-se a sonda orogástrica"
+   }
+  },
+  {
+   "id": "q-r6-03",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Politraumatizado com sangue no meato uretral e hematoma perineal. Como drenar a bexiga se necessário?",
+   "alternativas": [
+    {
+     "t": "Sonda de Foley às cegas",
+     "certa": false,
+     "porque": "É contraindicada."
+    },
+    {
+     "t": "Cistostomia, após investigar com uretrocistografia retrógrada",
+     "certa": true,
+     "porque": "Suspeita de lesão de uretra."
+    },
+    {
+     "t": "Sonda de três vias",
+     "certa": false,
+     "porque": "Também é uretral."
+    },
+    {
+     "t": "Aguardar diurese espontânea sempre",
+     "certa": false,
+     "porque": "Não é a conduta descrita."
+    }
+   ],
+   "explica": "Sangue no meato, hematoma perineal e próstata alta sugerem lesão de uretra.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "faz-se cistostomia"
+   }
+  },
+  {
+   "id": "q-r6-04",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o dreno torácico é inserido rente à borda superior da costela inferior?",
+   "alternativas": [
+    {
+     "t": "Porque a pleura é mais fina ali",
+     "certa": false,
+     "porque": "Não é o motivo dado."
+    },
+    {
+     "t": "Para atingir o pulmão",
+     "certa": false,
+     "porque": "Não se quer atingir."
+    },
+    {
+     "t": "O feixe vasculonervoso corre na borda inferior de cada costela",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Para drenar melhor o ar",
+     "certa": false,
+     "porque": "Não é o motivo."
+    }
+   ],
+   "explica": "Quarto ou quinto espaço, entre axilares anterior e média.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "porque o feixe vasculonervoso intercostal corre na borda inferior"
+   }
+  },
+  {
+   "id": "q-r6-05",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "No selo d'água há borbulhamento contínuo. O que indica?",
+   "alternativas": [
+    {
+     "t": "Dreno pérvio normal",
+     "certa": false,
+     "porque": "A oscilação indica perviedade."
+    },
+    {
+     "t": "Dreno obstruído",
+     "certa": false,
+     "porque": "Não haveria borbulhamento."
+    },
+    {
+     "t": "Escape de ar, por fístula broncopleural ou vazamento",
+     "certa": true,
+     "porque": "Interpretação do material."
+    },
+    {
+     "t": "Hemotórax maciço",
+     "certa": false,
+     "porque": "Não é o sinal."
+    }
+   ],
+   "explica": "A oscilação com a respiração mostra que o dreno está pérvio.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "A oscilação da coluna líquida com a respiração indica que o dreno está pérvio, e o borbulhamento contínuo indica escape de ar, por fístula broncopleural ou vazamento no sistema."
+   }
+  },
+  {
+   "id": "q-r6-06",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Hemotórax drenado com saída imediata de 1.700 mL de sangue. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Clampear o dreno",
+     "certa": false,
+     "porque": "Risco de pneumotórax hipertensivo."
+    },
+    {
+     "t": "Toracotomia",
+     "certa": true,
+     "porque": "Drenagem inicial acima de 1.500 mL."
+    },
+    {
+     "t": "Observar o débito por 24 horas",
+     "certa": false,
+     "porque": "O volume já indica cirurgia."
+    },
+    {
+     "t": "Trocar o dreno",
+     "certa": false,
+     "porque": "Não é a conduta."
+    }
+   ],
+   "explica": "Também indica: mais de 200 mL/h por 2 a 4 horas.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "No hemotórax, drenagem inicial acima de 1.500 mL ou débito acima de 200 mL por hora durante duas a quatro horas indica toracotomia."
+   }
+  },
+  {
+   "id": "q-r6-07",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Por que dois acessos periféricos calibrosos infundem mais rápido que um cateter central comum?",
+   "alternativas": [
+    {
+     "t": "Porque a veia central tem maior pressão",
+     "certa": false,
+     "porque": "Não é o argumento."
+    },
+    {
+     "t": "Porque o central é mais grosso",
+     "certa": false,
+     "porque": "É mais fino e mais longo."
+    },
+    {
+     "t": "Porque o periférico usa bomba",
+     "certa": false,
+     "porque": "Não é o argumento."
+    },
+    {
+     "t": "O fluxo é proporcional à quarta potência do raio e inverso ao comprimento",
+     "certa": true,
+     "porque": "Lei de Poiseuille."
+    }
+   ],
+   "explica": "Na escala gauge, menor número, maior calibre: 14 > 16 > 18.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "O fluxo através de um cateter é diretamente proporcional à quarta potência do raio e inversamente proporcional ao comprimento, como descreve a lei de Poiseuille."
+   }
+  },
+  {
+   "id": "q-r6-08",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual sítio de cateter central tem menor taxa de infecção e trombose?",
+   "alternativas": [
+    {
+     "t": "Subclávia",
+     "certa": true,
+     "porque": "Dado da tabela."
+    },
+    {
+     "t": "Femoral",
+     "certa": false,
+     "porque": "Tem a maior taxa."
+    },
+    {
+     "t": "Jugular interna",
+     "certa": false,
+     "porque": "Risco intermediário."
+    },
+    {
+     "t": "Antecubital",
+     "certa": false,
+     "porque": "Não é sítio central da tabela."
+    }
+   ],
+   "explica": "A subclávia tem maior risco de pneumotórax e não é compressível.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "Menor taxa de infecção e trombose; mais confortável"
+   }
+  },
+  {
+   "id": "q-r6-09",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a cânula de Guedel só é usada no paciente inconsciente?",
+   "alternativas": [
+    {
+     "t": "No acordado provoca vômito e aspiração",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque obstrui a traqueia",
+     "certa": false,
+     "porque": "Desobstrui a faringe."
+    },
+    {
+     "t": "Porque é via aérea definitiva",
+     "certa": false,
+     "porque": "Não é."
+    },
+    {
+     "t": "Porque exige intubação prévia",
+     "certa": false,
+     "porque": "Não exige."
+    }
+   ],
+   "explica": "O tamanho vai da comissura labial ao ângulo da mandíbula.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "no paciente acordado provoca vômito e aspiração"
+   }
+  },
+  {
+   "id": "q-r6-10",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "dificil",
+   "enunciado": "Por que a cricotireoidostomia cirúrgica é contraindicada em menores de cerca de 12 anos?",
+   "alternativas": [
+    {
+     "t": "Porque a traqueia é muito larga",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Risco de lesar a cricoide, único anel completo da via aérea infantil",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque a criança não tolera tubo",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Porque sempre se prefere traqueostomia",
+     "certa": false,
+     "porque": "Não é o motivo dado."
+    }
+   ],
+   "explica": "Nessas crianças faz-se cricotireoidostomia por punção.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "único anel completo da via aérea infantil"
+   }
+  }
  ]
 }
