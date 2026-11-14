@@ -1,10 +1,11 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=50";
-import { ic, ICONES_MATERIA } from "./icons.js?v=50";
-import { FIG } from "./figuras.js?v=50";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=50";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=50";
-import { semanaDeEstudos } from "./relatorio.js?v=50";
-import { carregaMaterias } from "./conteudo.js?v=50";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=51";
+import { ic, ICONES_MATERIA } from "./icons.js?v=51";
+import { FIG } from "./figuras.js?v=51";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=51";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=51";
+import { semanaDeEstudos } from "./relatorio.js?v=51";
+import { carregaMaterias } from "./conteudo.js?v=51";
+import { criaDiaHora } from "./diahora.js?v=51";
 
 /* =========================================================
    utilidades
@@ -674,6 +675,7 @@ function atualiza() {
 document.addEventListener("click", e => { const g = e.target.closest("[data-go]"); if (g) { e.preventDefault(); show(g.dataset.go); } });
 $$(".navbtn[data-view]").forEach(b => b.addEventListener("click", () => { if (b.dataset.view === "materias" && atual === "materias") { sub = { tela: "lista" }; LS.set("sub", sub); } show(b.dataset.view); }));
 
+let diaHora = null, diaCorreu = false;
 function renderTopo() {
   const n = S.nivel, a = nivelXP(n), b = nivelXP(n + 1), pct = Math.round((S.xp - a) / (b - a) * 100);
   const mensagens = { erro: "Salvo neste aparelho; sincronização pendente", conflito: "Há versões diferentes do progresso. Abra sua conta", pendente: "Salvando progresso…", carregando: "Carregando progresso…" };
@@ -683,11 +685,14 @@ function renderTopo() {
     <span class="chipi" title="${S.xp} XP no total">${fig("estrela")} Nível ${n}<span class="lbar"><i style="width:${pct}%"></i></span></span>
     <span class="chipi" title="Dias seguidos estudando">${fig("chama")} ${sequencia()}</span>
     <button class="chipi ${LS.get("viuManual", false) ? "" : "novo"}" style="cursor:pointer" id="btAjuda" title="Como usar" aria-label="Como usar">?<span class="rot"> Como usar</span></button>
-    <button class="chipi" style="cursor:pointer" id="btTema" title="Aparência">${ic("brilho", "s")}<span class="rot"> Tema</span></button>
+    <span id="dhSlot"></span>
     ${modoConta ? `<button class="chipi" style="cursor:pointer" id="btConta" title="${esc(st[2])}">${conta?.foto ? `<img src="${esc(conta.foto)}" alt="" style="width:20px;height:20px;border-radius:50%;margin:-3px 0" referrerpolicy="no-referrer">` : `<span class="dot ${st[0]}"></span>`}<span class="rot">${conta ? st[1] : "Entrar"}</span></button>` : `<span class="chipi" title="${esc(st[2])}"><span class="dot ${st[0]}"></span>${st[1]}</span>`}
     ${souDono || modoTeste() ? `<button class="chipi" style="cursor:pointer" id="btAdmin" title="Painel de administrador">${ic("lapis", "s")}<span class="rot"> Admin</span></button>` : ""}`;
   $("#btAdmin")?.addEventListener("click", painelAdmin);
-  $("#btTema")?.addEventListener("click", escolheTema);
+  /* céu do dia: o mesmo elemento sempre (não reinicia a animação a cada render) */
+  diaHora ||= criaDiaHora(() => escolheTema());
+  $("#dhSlot")?.replaceWith(diaHora.el);
+  if (!diaCorreu && !document.body.classList.contains("iniciando")) { diaCorreu = true; diaHora.corre(); }
   $("#btAjuda")?.addEventListener("click", () => { LS.set("viuManual", true); $("#btAjuda")?.classList.remove("novo"); manual(); });
   $("#btConta")?.addEventListener("click", () => conta ? menuConta() : erroConta ? iniciaSistemaConta().then(ok => { if (ok) telaLogin(true); }) : telaLogin(true));
 }
@@ -700,7 +705,7 @@ temaMundo = () => mundo?.tema?.(temaAtivo());
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=50"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=51"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -1963,13 +1968,14 @@ function liberaApp() {
   document.body.classList.remove("iniciando");
   document.querySelector("main").inert = false; $("#nav").inert = false;
   $("#inicioApp").hidden = true;
+  if (typeof diaHora !== "undefined" && diaHora && !diaCorreu) { diaCorreu = true; setTimeout(() => diaHora.corre(), 250); }
 }
 let contaIniciando = null;
 async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=50");
+      const mod = await import("./conta.js?v=51");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }

@@ -20,6 +20,7 @@ Site estático, sem build: HTML + JS em módulos ES, three.js 0.160 via importma
 | `content/*.json` | Conteúdo das matérias (seções com `id`, `titulo`, `grupo`, `html`); imagens em `content/img/` |
 | `m/*.js` | Modelos 3D em base64 (o Pages não serve .glb do jeito certo) |
 | `kahoot.html` | Quiz estilo Kahoot por matéria |
+| `diahora.js` | Céu do dia no topo (sol e lua pela hora real; abre a aparência) |
 
 ## Regras obrigatórias
 

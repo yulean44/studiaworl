@@ -1,6 +1,6 @@
 /* Contas de usuário (Firebase): cada pessoa tem o próprio progresso salvo na nuvem.
    Só é usado fora do site do Claude (GitHub Pages / Netlify). */
-import { assinatura } from "./progresso.js?v=50";
+import { assinatura } from "./progresso.js?v=51";
 const CONFIG = {
   apiKey: "AIzaSyD8tSjt-XvZVrD5m4BbQWoMDkYhyCRGGRk",
   authDomain: "studiaworld-43ba4.firebaseapp.com",

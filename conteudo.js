@@ -3,7 +3,7 @@ export async function carregaMaterias(ids, buscar = fetch) {
   const resultados = await Promise.all(ids.map(async id => {
     const controle = new AbortController(), limite = setTimeout(() => controle.abort(), 15000);
     try {
-      const resposta = await buscar(`content/${id}.json?v=50`, { signal: controle.signal });
+      const resposta = await buscar(`content/${id}.json?v=51`, { signal: controle.signal });
       if (!resposta.ok) throw new Error("Conteúdo indisponível");
       const m = await resposta.json();
       if (m?.id !== id || !Array.isArray(m.secoes) || !Array.isArray(m.cards)) throw new Error("Conteúdo inválido");
