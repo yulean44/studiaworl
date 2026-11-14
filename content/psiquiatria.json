@@ -1,0 +1,1254 @@
+{
+ "id": "psiquiatria",
+ "nome": "Psiquiatria",
+ "sigla": "PSQ",
+ "sub": "2ª Unidade · Aulas 7 a 12 · Turma 41",
+ "cor": "#6f9f8c",
+ "emoji": "",
+ "icone": "cerebro",
+ "secoes": [
+  {
+   "id": "r0",
+   "grupo": "Resumo de referência",
+   "titulo": "Comece por aqui",
+   "par": "g0",
+   "html": "<p>A <strong>AV2 de Psiquiatria</strong> (semana de 23 a 28/11) cobra as <strong>aulas 7 a 12</strong> do cronograma 2026.2:</p><table><thead><tr><th>Aula</th><th>Tema</th></tr></thead><tbody><tr><td>7</td><td>Transtornos de ansiedade, medo, estresse e trauma</td></tr><tr><td>8</td><td>Sofrimento corporal (somático), dissociativos, sintomas neurológicos funcionais e factício</td></tr><tr><td>9</td><td>Transtornos por uso de substâncias, incluindo álcool</td></tr><tr><td>10</td><td>Transtornos mentais na infância e adolescência</td></tr><tr><td>11</td><td>Princípios da terapêutica psiquiátrica</td></tr><tr><td>12</td><td>Suicídio e comportamento autoagressivo</td></tr></tbody></table><p>Leia primeiro este <strong>resumo</strong> (explica do zero) e depois o <strong>guia prioritário</strong> ao lado (regras curtas do que mais cai). Os dois andam em par: cada parte do resumo tem a sua parte no guia.</p><p><strong>De onde veio:</strong> aulas 7 e 8 seguem os slides do Prof. William Dunningham que estão no Drive da turma (<em>Ansiedade, estresse e somáticos</em>). Para as aulas 9 a 12 ainda não há slides no Drive; o conteúdo segue o cronograma oficial e as referências da área (DSM-5-TR, ABP, Ministério da Saúde). Quando os slides chegarem, vale conferir e ajustar.</p><p>As simulações do laboratório da unidade foram: <strong>ansiedade</strong>, <strong>intoxicação por cocaína</strong> e <strong>ato suicida</strong>. Os casos clínicos desta matéria seguem esses três cenários.</p>"
+  },
+  {
+   "id": "r1",
+   "grupo": "Resumo de referência",
+   "titulo": "1. Ansiedade, medo, estresse e trauma (Aula 7)",
+   "par": "g1",
+   "html": "<h3>Normal × patológica</h3><p>Ansiedade é uma resposta normal ao perigo. A aula separa pela distância da ameaça: perigo <strong>iminente → medo</strong>; <strong>próximo → ansiedade</strong>; <strong>distante → preocupação</strong>. Vira doença quando é <strong>excessiva</strong>, <strong>desproporcional e persistente</strong> ou <strong>prejudica o funcionamento</strong>.</p><p>Toda ansiedade tem três componentes: <strong>comportamental</strong> (fuga, voz trêmula), <strong>fisiológico</strong> (taquicardia, dispneia, tensão muscular, desconforto GI) e <strong>subjetivo</strong> (pensamentos de dano, preocupação).</p><h3>Transtorno de ansiedade generalizada (TAG)</h3><ul><li>Fenômeno central: <strong>preocupação excessiva, difícil de controlar</strong>, sobre vários assuntos, na maioria dos dias.</li><li>DSM-5-TR: duração de <strong>≥ 6 meses</strong> e <strong>≥ 3 de 6 sintomas</strong>: inquietação, fadiga, dificuldade de concentração (\"brancos\"), irritabilidade, tensão muscular, alteração do sono.</li><li>Comorbidade com depressão em cerca de <strong>40%</strong>; a ansiedade antecede a depressão em <strong>2/3</strong> dos que têm os dois.</li></ul><h3>Transtorno de pânico</h3><ul><li>Ataque: início súbito, <strong>pico em até 10 minutos</strong>, dura 15–30 min. Palpitação, sudorese, tremor, falta de ar, dor torácica, náusea, tontura, parestesias, desrealização, medo de morrer ou enlouquecer.</li><li>Transtorno = ataques <strong>inesperados e recorrentes</strong> + ≥ 1 mês de <strong>preocupação com novos ataques</strong> ou mudança de comportamento.</li><li>Sequência típica (aula): ataques espontâneos → ataques situacionais → <strong>ansiedade antecipatória</strong> → esquiva agorafóbica restrita → esquiva extensa.</li><li>Sempre afastar causa orgânica na 1ª crise: SCA, arritmia, hipertireoidismo, hipoglicemia, intoxicação (cocaína, cafeína) e abstinência.</li></ul><h3>Fobias</h3><ul><li><strong>Medo irracional reconhecido pelo próprio paciente</strong>, que mesmo assim não consegue deixar de senti-lo, com esquiva.</li><li><strong>Agorafobia</strong>: medo de lugares de onde seria difícil escapar ou receber ajuda (multidão, fila, transporte, sair sozinho).</li><li><strong>Fobia social</strong>: medo de ser observado e avaliado negativamente (falar, comer, assinar em público); baixa autoestima.</li><li><strong>Fobias específicas</strong>: animal, ambiente natural, situacional (túnel, elevador) e <strong>sangue-injeção-ferimento</strong>, que tem padrão familiar e <strong>resposta vasovagal</strong> (desmaio), ao contrário das outras.</li></ul><h3>Tratamento (como na aula)</h3><ul><li><strong>ISRS/IRSN</strong> (escitalopram, sertralina, paroxetina, fluoxetina, venlafaxina) são a base de TAG e pânico.</li><li>A aula orienta iniciar com <strong>benzodiazepínico</strong> e acrescentar o antidepressivo, depois <strong>retirar o BZD gradualmente</strong>: o BZD cobre as 2–4 semanas de latência do antidepressivo.</li><li>Alternativas no TAG: <strong>buspirona</strong> e <strong>pregabalina</strong>.</li><li>Psicoterapia: <strong>TCC</strong> (exposição nas fobias e no pânico).</li></ul><h3>Estresse e trauma</h3><table><thead><tr><th></th><th>Gatilho</th><th>Tempo</th><th>Quadro</th></tr></thead><tbody><tr><td><strong>Reação aguda ao estresse</strong> (transtorno de estresse agudo)</td><td>Trauma: morte, ferimento grave, ameaça à integridade</td><td>2 dias a 1 mês (aula); DSM: 3 dias a 1 mês</td><td>Predominam sintomas <strong>dissociativos</strong>: anestesia afetiva, despersonalização, amnésia</td></tr><tr><td><strong>TEPT</strong></td><td>Trauma</td><td><strong>&gt; 1 mês</strong>; pode começar tardiamente</td><td><strong>Revivescência</strong> (flashbacks, pesadelos), <strong>esquiva</strong>, cognições negativas, <strong>hipervigilância</strong> e sustos, insônia</td></tr><tr><td><strong>Transtorno de adaptação</strong></td><td>Estressor <strong>comum</strong>, não precisa ser traumático (divórcio, demissão)</td><td>Começa em até <strong>3 meses</strong> do estressor</td><td>Tristeza, raiva ou irritação além do esperado ou com prejuízo funcional</td></tr></tbody></table><p>TEPT: tratamento de 1ª linha é <strong>psicoterapia focada no trauma</strong>; entre os remédios, <strong>ISRS/IRSN</strong> (cerca de 59% respondem × 38% com placebo, segundo a aula). Terapias focadas no trauma chegam a ~90% de recuperação ao fim do tratamento. Benzodiazepínico <strong>não</strong> é recomendado no TEPT.</p>"
+  },
+  {
+   "id": "r2",
+   "grupo": "Resumo de referência",
+   "titulo": "2. Sintomas somáticos, dissociativos e factício (Aula 8)",
+   "par": "g2",
+   "html": "<p>Ideia central: há <strong>sintoma físico real para o paciente</strong>, sofrimento e preocupação desproporcionais, e os exames <strong>não explicam</strong> o quadro (ou explicam muito menos do que o prejuízo). <strong>Não é simulado.</strong></p><p>Mais comuns em <strong>mulheres</strong> (2:1 a 10:1), população rural e pessoas pouco familiarizadas com conceitos médicos. Curso <strong>crônico e flutuante</strong>, com raras remissões completas; risco de abuso de medicamentos e comorbidade com personalidade borderline.</p><h3>Os quadros da aula</h3><table><thead><tr><th>Quadro</th><th>O que marca</th></tr></thead><tbody><tr><td><strong>Somatização</strong></td><td>Muitas queixas físicas em vários sistemas (GI, sexuais, dor) ao longo de anos, sem explicação médica suficiente</td></tr><tr><td><strong>Transtorno doloroso</strong></td><td>Dor é o foco; fatores psicológicos no início, piora e manutenção</td></tr><tr><td><strong>Conversivo</strong> (sintoma neurológico funcional)</td><td>Déficit motor ou sensorial que sugere doença neurológica (paralisia, afonia, cegueira, crise não epiléptica, \"nó na garganta\"), <strong>precedido por conflito ou estressor</strong></td></tr><tr><td><strong>Hipocondria</strong> (ansiedade de doença)</td><td>Medo ou ideia de ter <strong>doença grave</strong> apesar de exames normais e garantias médicas; é <strong>dúvida obsessiva</strong>, não convicção delirante</td></tr><tr><td><strong>Dismórfico corporal</strong></td><td>Preocupação com <strong>defeito imaginário ou mínimo</strong> na aparência, insight pobre. Na anorexia a preocupação é só com peso/forma</td></tr></tbody></table><h3>Dissociativos</h3><p>Ruptura da integração de consciência, memória, identidade e percepção, sem doença física que explique: <strong>amnésia dissociativa</strong>, <strong>despersonalização/desrealização</strong>, estado crepuscular, <strong>transtorno dissociativo de identidade</strong> e estados de transe ou possessão (fora do contexto cultural/religioso aceito).</p><h3>O diferencial que mais cai: quem produz o sintoma e por quê</h3><table><thead><tr><th></th><th>Produção do sintoma</th><th>Motivação</th><th>Ganho</th></tr></thead><tbody><tr><td>Somático / conversivo</td><td><strong>Inconsciente</strong></td><td>Inconsciente</td><td>—</td></tr><tr><td><strong>Factício</strong> (inclui Münchausen e Münchausen por procuração)</td><td><strong>Consciente</strong></td><td><strong>Inconsciente</strong></td><td><strong>Primário</strong>: psicológico, ser cuidado, papel de doente</td></tr><tr><td><strong>Simulação</strong> (não é doença mental)</td><td><strong>Consciente</strong></td><td><strong>Consciente</strong></td><td><strong>Secundário</strong>: dinheiro, afastamento, fugir da justiça</td></tr></tbody></table><p>O nome Münchausen vem do barão das histórias fantásticas e exageradas de Raspe (1785), livro que está na pasta de Saúde Mental.</p><h3>Manejo</h3><ul><li>Um médico de referência, <strong>consultas regulares agendadas</strong> (não só quando há sintoma).</li><li>Validar o sofrimento; não dizer que \"não é nada\".</li><li>Evitar exames e procedimentos repetidos sem nova indicação.</li><li>TCC; tratar depressão e ansiedade associadas.</li></ul>"
+  },
+  {
+   "id": "r3",
+   "grupo": "Resumo de referência",
+   "titulo": "3. Uso de substâncias e álcool (Aula 9)",
+   "par": "g3",
+   "html": "<h3>Conceitos</h3><ul><li>Todas as drogas de abuso ativam a <strong>via dopaminérgica mesolímbica</strong> (área tegmentar ventral → <strong>núcleo accumbens</strong>), o sistema de recompensa.</li><li><strong>Tolerância</strong>: precisa de doses maiores para o mesmo efeito. <strong>Abstinência</strong>: síndrome ao reduzir ou parar.</li><li><strong>Transtorno por uso (DSM-5-TR)</strong>: 11 critérios em 12 meses (perda de controle, prejuízo social, uso arriscado, tolerância e abstinência). <strong>2–3 = leve</strong>, <strong>4–5 = moderado</strong>, <strong>≥ 6 = grave</strong>. Na CID-10 ainda aparecem \"uso nocivo\" e \"síndrome de dependência\".</li></ul><h3>Álcool</h3><ul><li>Rastreio: <strong>CAGE</strong> (Cut down, Annoyed, Guilty, Eye-opener): <strong>≥ 2 respostas positivas</strong> sugerem problema. <strong>AUDIT</strong>: 10 perguntas, mais completo.</li><li>Sinais de uso crônico: <strong>VCM alto</strong>, <strong>GGT alta</strong>, AST/ALT &gt; 2.</li></ul><table><thead><tr><th>Tempo após a última dose</th><th>Abstinência alcoólica</th></tr></thead><tbody><tr><td>6–24 h</td><td>Tremor, ansiedade, sudorese, taquicardia, insônia, náusea</td></tr><tr><td>12–48 h</td><td><strong>Convulsões</strong> (tônico-clônicas) e alucinose (alucinações com consciência preservada)</td></tr><tr><td>48–96 h</td><td><strong>Delirium tremens</strong>: confusão, alucinações visuais (\"bichos\"), febre, instabilidade autonômica; pode matar</td></tr></tbody></table><ul><li>Tratamento da abstinência: <strong>benzodiazepínico</strong> (diazepam). Na hepatopatia ou no idoso: <strong>lorazepam</strong> (ou oxazepam), que não depende de metabolismo hepático oxidativo.</li><li><strong>Tiamina antes da glicose</strong>: glicose sem tiamina pode precipitar <strong>Wernicke</strong> (confusão, ataxia, oftalmoplegia; reversível). <strong>Korsakoff</strong>: amnésia anterógrada + <strong>confabulação</strong> (pouco reversível).</li><li>Manutenção da abstinência: <strong>naltrexona</strong> (reduz fissura; contraindicada com opioide e hepatite aguda), <strong>acamprosato</strong> (seguro no fígado, ajustar no rim), <strong>dissulfiram</strong> (reação aversiva com álcool; só com consentimento e sem beber há ≥ 12 h), topiramato.</li></ul><h3>Outras substâncias</h3><table><thead><tr><th>Droga</th><th>Intoxicação</th><th>Abstinência</th><th>Conduta-chave</th></tr></thead><tbody><tr><td><strong>Cocaína / crack</strong></td><td>Simpaticomimética: agitação, <strong>taquicardia, HAS, midríase, hipertermia</strong>, sudorese, dor torácica (vasoespasmo/IAM), convulsão, paranoia</td><td>\"Crash\": disforia, hipersonia, fome, fissura</td><td><strong>Benzodiazepínico</strong>; resfriar; tratar dor torácica como SCA. Evitar <strong>betabloqueador isolado</strong> (deixa a ação alfa sem oposição)</td></tr><tr><td><strong>Opioides</strong></td><td>Tríade: <strong>miose puntiforme</strong>, <strong>depressão respiratória</strong>, rebaixamento</td><td>Midríase, piloereção, bocejos, rinorreia, lacrimejamento, diarreia, dor; desconfortável mas raramente fatal</td><td><strong>Naloxona</strong>; manutenção com metadona ou buprenorfina</td></tr><tr><td><strong>Benzodiazepínicos</strong></td><td>Sedação, ataxia, fala arrastada; grave se com álcool</td><td>Ansiedade, tremor, <strong>convulsão</strong></td><td>Suporte; flumazenil com cautela (pode convulsionar); desmame lento</td></tr><tr><td><strong>Cannabis</strong></td><td><strong>Hiperemia conjuntival</strong>, fome, boca seca, taquicardia, ansiedade, psicose</td><td>Irritabilidade, insônia, perda de apetite</td><td>Suporte</td></tr></tbody></table><h3>Abordagem</h3><ul><li><strong>Entrevista motivacional</strong> e estágios de mudança (Prochaska): pré-contemplação → contemplação → preparação → ação → manutenção (recaída faz parte).</li><li><strong>Redução de danos</strong> e cuidado na RAPS: <strong>CAPS AD</strong>.</li></ul>"
+  },
+  {
+   "id": "r4",
+   "grupo": "Resumo de referência",
+   "titulo": "4. Infância e adolescência (Aula 10)",
+   "par": "g4",
+   "html": "<h3>TDAH</h3><ul><li><strong>Desatenção</strong> e/ou <strong>hiperatividade-impulsividade</strong>: ≥ 6 sintomas (≥ 5 a partir dos 17 anos), por ≥ 6 meses.</li><li>Sintomas <strong>antes dos 12 anos</strong> e em <strong>≥ 2 ambientes</strong> (casa e escola), com prejuízo. Pedir informação da escola.</li><li>Apresentações: desatenta, hiperativa-impulsiva, combinada. Meninas: mais desatenta (subdiagnosticada).</li><li>Tratamento: <strong>estimulante</strong> (metilfenidato, lisdexanfetamina) + orientação de pais/escola e TCC. Em <strong>pré-escolares</strong>, começar por treino parental. Efeitos dos estimulantes: perda de apetite, insônia, taquicardia, menor ganho de peso/altura.</li></ul><h3>Transtorno do espectro autista (TEA)</h3><ul><li>Dois domínios: <strong>déficit persistente na comunicação e interação social</strong> + <strong>padrões restritos e repetitivos</strong> (estereotipias, rigidez de rotina, interesses restritos, alterações sensoriais).</li><li>Início no <strong>desenvolvimento precoce</strong>. Rastreio com <strong>M-CHAT</strong> entre <strong>16 e 30 meses</strong>.</li><li>Base do tratamento: <strong>intervenção precoce e intensiva</strong> (comportamental, fono, TO). Remédio só para sintomas-alvo: <strong>risperidona ou aripiprazol</strong> para irritabilidade e agressividade.</li></ul><h3>Comportamento disruptivo</h3><ul><li><strong>TOD</strong> (opositor desafiante): raiva, irritabilidade, discussão e desafio a adultos, vingança. <strong>Não</strong> viola direitos graves.</li><li><strong>Transtorno de conduta</strong>: viola direitos dos outros e normas: agressão a pessoas/animais, destruição, furto, fugas. Após os 18 anos pode evoluir para personalidade antissocial.</li></ul><h3>Humor e ansiedade nos jovens</h3><ul><li>Na criança e no adolescente a depressão pode aparecer como <strong>irritabilidade</strong> em vez de tristeza, queda escolar e isolamento.</li><li>Tratamento: psicoterapia; quando há remédio, <strong>fluoxetina</strong> é a mais estudada. Alerta de aumento de <strong>ideação suicida no início de antidepressivo em menores de 25 anos</strong>: monitorar de perto nas primeiras semanas.</li><li><strong>Ansiedade de separação</strong>: medo excessivo de se separar das figuras de apego, recusa escolar, queixas somáticas.</li></ul><h3>Desenvolvimento</h3><ul><li><strong>Deficiência intelectual</strong>: déficit intelectual e adaptativo com início no desenvolvimento; gravidade definida pelo funcionamento adaptativo, não só pelo QI.</li><li><strong>Transtornos de aprendizagem</strong> (leitura, escrita, matemática) com inteligência normal.</li></ul>"
+  },
+  {
+   "id": "r5",
+   "grupo": "Resumo de referência",
+   "titulo": "5. Terapêutica psiquiátrica (Aula 11)",
+   "par": "g5",
+   "html": "<h3>Antidepressivos</h3><ul><li><strong>ISRS</strong> (fluoxetina, sertralina, escitalopram, citalopram, paroxetina): 1ª linha em depressão e ansiedade.</li><li><strong>Latência de 2–4 semanas</strong>; avaliar resposta em 4–6 semanas na dose adequada antes de trocar. No 1º episódio, manter <strong>6–12 meses após a remissão</strong>.</li><li>Efeitos: náusea, <strong>disfunção sexual</strong>, insônia ou ativação, <strong>hiponatremia</strong> (SIADH, sobretudo em idosos), sangramento (com AINE/anticoagulante). Paroxetina: mais anticolinérgica e com pior descontinuação.</li><li><strong>IRSN</strong>: venlafaxina (pode subir a PA), duloxetina (boa para dor crônica e neuropatia).</li><li><strong>Mirtazapina</strong>: sedação e <strong>ganho de apetite e peso</strong> (útil em idoso com insônia e inapetência).</li><li><strong>Bupropiona</strong>: sem disfunção sexual nem ganho de peso, ajuda a parar de fumar; <strong>baixa o limiar convulsivo</strong>: evitar em epilepsia, bulimia e anorexia.</li><li><strong>Tricíclicos</strong> (amitriptilina, nortriptilina, imipramina): anticolinérgicos, hipotensão, <strong>cardiotóxicos</strong>. Overdose: QRS alargado, arritmia, convulsão → <strong>bicarbonato de sódio</strong>. Letais em pequena quantidade.</li><li><strong>IMAO</strong>: crise hipertensiva com alimentos ricos em <strong>tiramina</strong> (queijos curados, embutidos, vinho).</li></ul><h3>Emergências dos antidepressivos e antipsicóticos</h3><table><thead><tr><th></th><th>Síndrome serotoninérgica</th><th>Síndrome neuroléptica maligna</th></tr></thead><tbody><tr><td>Causa</td><td>Combinação de serotoninérgicos (ISRS + IMAO, tramadol, triptano, linezolida)</td><td>Bloqueador D2 (antipsicótico), sobretudo típico de alta potência</td></tr><tr><td>Instalação</td><td><strong>Horas</strong></td><td><strong>Dias</strong></td></tr><tr><td>Neuromuscular</td><td><strong>Clônus, hiper-reflexia, mioclonias</strong></td><td><strong>Rigidez em cano de chumbo</strong>, bradirreflexia</td></tr><tr><td>Outros</td><td>Midríase, diarreia, agitação, hipertermia</td><td>Febre alta, rebaixamento, instabilidade autonômica, <strong>CPK muito alta</strong></td></tr><tr><td>Conduta</td><td>Suspender; BZD; <strong>ciproeptadina</strong></td><td>Suspender; suporte; <strong>dantrolene</strong> ou <strong>bromocriptina</strong></td></tr></tbody></table><h3>Antipsicóticos</h3><ul><li><strong>Típicos</strong> (haloperidol, clorpromazina): bloqueio D2 → mais <strong>sintomas extrapiramidais</strong> e <strong>hiperprolactinemia</strong>.</li><li>Extrapiramidais por tempo: <strong>distonia aguda</strong> (horas a dias; torcicolo, crise oculógira) → <strong>biperideno</strong>; <strong>acatisia</strong> (inquietação, não consegue ficar parado) → reduzir dose, <strong>propranolol</strong>; <strong>parkinsonismo</strong> (semanas) → biperideno; <strong>discinesia tardia</strong> (meses a anos; movimentos orofaciais) → difícil reversão, trocar para clozapina.</li><li><strong>Atípicos</strong>: risperidona (mais prolactina), olanzapina (mais <strong>ganho de peso e síndrome metabólica</strong>), quetiapina (sedação), aripiprazol (agonista parcial, menos metabólico, acatisia), ziprasidona (QT).</li><li><strong>Clozapina</strong>: esquizofrenia <strong>refratária</strong> (falha de ≥ 2 antipsicóticos em dose e tempo adequados) e a que mais <strong>reduz suicídio</strong> na esquizofrenia. Risco de <strong>agranulocitose</strong> (hemograma seriado), convulsão, miocardite, sialorreia, constipação.</li><li>Todo antipsicótico atípico: monitorar peso, glicemia e lipídios.</li></ul><h3>Estabilizadores de humor</h3><ul><li><strong>Lítio</strong>: padrão-ouro no bipolar; <strong>reduz suicídio</strong>. Faixa terapêutica estreita: <strong>0,6–1,2 mEq/L</strong>. Toxicidade (&gt; 1,5): tremor grosseiro, ataxia, disartria, vômitos, diarreia, confusão. Crônicos: <strong>hipotireoidismo</strong>, <strong>diabetes insipidus nefrogênico</strong>, lesão renal. Gestação: anomalia de <strong>Ebstein</strong>. Sobem o lítio: <strong>tiazídico, IECA/BRA, AINE</strong> e desidratação. Monitorar litemia, TSH, creatinina.</li><li><strong>Valproato</strong>: hepatotoxicidade, pancreatite, plaquetopenia, ganho de peso; <strong>teratogênico</strong> (defeito do tubo neural): evitar em mulher em idade fértil.</li><li><strong>Carbamazepina</strong>: indutor enzimático (baixa anticoncepcional), agranulocitose, hiponatremia, Stevens-Johnson.</li><li><strong>Lamotrigina</strong>: boa para a <strong>fase depressiva</strong> do bipolar; titulação lenta pelo risco de <strong>Stevens-Johnson</strong>.</li></ul><h3>Benzodiazepínicos</h3><ul><li>Potencializam o GABA-A: ansiolíticos, hipnóticos, anticonvulsivantes, relaxantes.</li><li>Problemas: tolerância, <strong>dependência</strong>, prejuízo cognitivo, <strong>quedas em idosos</strong>, depressão respiratória com álcool/opioide. Usar pelo menor tempo; retirada gradual.</li></ul><h3>Eletroconvulsoterapia (ECT)</h3><p>Rápida e eficaz: depressão grave com <strong>alto risco de suicídio</strong> ou psicose, <strong>catatonia</strong>, refratariedade, <strong>gestantes</strong> com quadro grave. Efeito adverso principal: alteração de memória transitória.</p>"
+  },
+  {
+   "id": "r6",
+   "grupo": "Resumo de referência",
+   "titulo": "6. Suicídio e comportamento autoagressivo (Aula 12)",
+   "par": "g6",
+   "html": "<h3>Dimensão do problema</h3><ul><li>Cerca de <strong>700 mil mortes por ano</strong> no mundo (OMS). <strong>Homens morrem</strong> por suicídio cerca de 3–4 vezes mais; <strong>mulheres tentam</strong> mais.</li><li>A maioria das pessoas que morreram por suicídio tinha transtorno mental e muitas consultaram um serviço de saúde no mês anterior: a consulta é oportunidade de prevenção.</li></ul><h3>Fatores de risco e de proteção</h3><table><thead><tr><th>Risco</th><th>Proteção</th></tr></thead><tbody><tr><td><ul><li><strong>Tentativa prévia</strong> (o maior preditor)</li><li>Transtorno mental: <strong>depressão</strong>, bipolar, <strong>uso de álcool/drogas</strong>, esquizofrenia, personalidade borderline</li><li>Sexo masculino; idosos e jovens de 15–29 anos</li><li>Desesperança, impulsividade</li><li>Isolamento, perdas recentes, desemprego</li><li>Doença crônica, dor, incapacidade</li><li><strong>Acesso a meios letais</strong></li><li>História familiar de suicídio</li></ul></td><td><ul><li>Suporte familiar e social</li><li>Filhos, responsabilidade com outros</li><li>Religiosidade/espiritualidade</li><li>Vínculo com serviço de saúde</li><li>Habilidade de resolver problemas</li><li>Restrição de acesso a meios</li></ul></td></tr></tbody></table><h3>Avaliação</h3><ul><li><strong>Perguntar diretamente</strong> sobre ideação suicida <strong>não induz</strong> o ato; ao contrário, alivia e abre espaço para ajuda. É um mito que \"quem fala não faz\".</li><li>Graduar: ideação <strong>passiva</strong> (\"seria melhor não acordar\") → <strong>ativa</strong> → <strong>plano</strong> (como, quando, onde) → <strong>intenção</strong> → <strong>acesso ao meio</strong> e <strong>preparativos</strong> (despedidas, cartas, doar pertences) → tentativa.</li><li>Investigar tentativas anteriores (letalidade, planejamento, arrependimento), uso de álcool/drogas, sintomas psicóticos, rede de apoio.</li><li>Escalas auxiliam mas não substituem a entrevista: <strong>C-SSRS</strong> (Columbia), SAD PERSONS.</li></ul><h3>Estratificação e conduta</h3><table><thead><tr><th>Risco</th><th>Quadro típico</th><th>Conduta</th></tr></thead><tbody><tr><td><strong>Baixo</strong></td><td>Ideação sem plano, sem tentativa prévia, boa rede de apoio</td><td>Ambulatório/APS, <strong>plano de segurança</strong>, tratar o transtorno, retorno próximo</td></tr><tr><td><strong>Moderado</strong></td><td>Ideação com plano vago, fatores de risco presentes, sem intenção imediata</td><td>Acompanhamento intensivo (CAPS), envolver família, <strong>restringir meios</strong>, retorno em poucos dias</td></tr><tr><td><strong>Alto</strong></td><td>Plano estruturado, intenção, acesso ao meio, tentativa recente de alta letalidade, psicose, agitação, sem suporte</td><td><strong>Não deixar sozinho</strong>; emergência e <strong>internação</strong> (involuntária se necessário, Lei 10.216/2001)</td></tr></tbody></table><h3>Plano de segurança</h3><ol><li>Reconhecer os próprios sinais de alerta.</li><li>Estratégias que a pessoa usa sozinha para se acalmar.</li><li>Pessoas e lugares que distraem.</li><li>Pessoas a quem pedir ajuda.</li><li>Profissionais e serviços: CAPS, UPA, SAMU 192, <strong>CVV 188</strong>.</li><li>Tornar o ambiente seguro: tirar armas, guardar remédios com um familiar.</li></ol><h3>Pontos práticos</h3><ul><li>Tentativa de suicídio (violência autoprovocada) é de <strong>notificação compulsória imediata</strong>, em até 24 h (Portaria MS e Lei 13.819/2019).</li><li>Prescrever <strong>pequenas quantidades</strong> de remédios potencialmente letais (tricíclicos, lítio) para quem tem risco.</li><li><strong>Lítio</strong> (transtornos do humor) e <strong>clozapina</strong> (esquizofrenia) reduzem suicídio.</li><li>Início de antidepressivo em jovens: vigiar ideação nas primeiras semanas; a melhora da energia pode vir antes da do humor.</li></ul>"
+  },
+  {
+   "id": "g0",
+   "grupo": "Guia prioritário",
+   "titulo": "Como usar (comece por aqui)",
+   "par": "r0",
+   "html": "<p>Esta é a <strong>parte prioritária</strong>: o que mais cai, em regras curtas, pareada com o resumo. Use assim:</p><ol><li>Leia a parte do resumo.</li><li>Leia aqui a parte correspondente e grife o que errar.</li><li>Faça os <strong>flashcards</strong> da seção.</li><li>No fim, jogue o <strong>quiz de revisão</strong> e resolva os <strong>casos</strong> (ansiedade, cocaína e risco de suicídio, os três cenários das simulações).</li></ol><p>Peso provável na prova, pelo número de aulas e simulações: <strong>terapêutica</strong> e <strong>suicídio</strong> (aulas 11 e 12, mais recentes e com simulação) &gt; <strong>ansiedade e trauma</strong> &gt; <strong>substâncias</strong> &gt; <strong>somáticos</strong> &gt; <strong>infância</strong>.</p>"
+  },
+  {
+   "id": "g1",
+   "grupo": "Guia prioritário",
+   "titulo": "Ansiedade e trauma: regras de bolso",
+   "par": "r1",
+   "html": "<ul><li>Medo = perigo iminente; ansiedade = próximo; preocupação = distante.</li><li><strong>TAG</strong>: preocupação excessiva e incontrolável, ≥ 6 meses, ≥ 3 sintomas (inquietação, fadiga, concentração, irritabilidade, tensão, sono).</li><li><strong>Pânico</strong>: pico em até 10 min; transtorno exige ataques inesperados + ≥ 1 mês de medo de novas crises.</li><li>1ª crise de pânico: <strong>excluir SCA, arritmia, tireoide, hipoglicemia e drogas</strong>.</li><li><strong>Agorafobia</strong> = medo de não conseguir escapar; <strong>fobia social</strong> = medo de ser avaliado.</li><li>Fobia de <strong>sangue-injeção-ferimento</strong> = única com <strong>desmaio vasovagal</strong>.</li><li>Tratamento: <strong>ISRS/IRSN + TCC</strong>; BZD só como ponte e retirado aos poucos.</li><li><strong>Estresse agudo &lt; 1 mês</strong>, dissociação; <strong>TEPT &gt; 1 mês</strong>: revivescência, esquiva, cognições negativas, hipervigilância.</li><li><strong>Adaptação</strong>: estressor comum, início em até 3 meses.</li><li>TEPT: psicoterapia focada no trauma + ISRS; <strong>BZD não</strong>.</li></ul><blockquote><strong>Cai na prova:</strong> Diferenciar estresse agudo de TEPT pelo tempo (1 mês) e TEPT de adaptação pelo tipo de estressor (trauma × estressor comum).</blockquote><blockquote><strong>Pegadinha:</strong> No TOC a ansiedade existe, mas não é o fenômeno primário: o núcleo são obsessões e compulsões.</blockquote>"
+  },
+  {
+   "id": "g2",
+   "grupo": "Guia prioritário",
+   "titulo": "Somáticos e factício: a tabela que decide a questão",
+   "par": "r2",
+   "html": "<ul><li>Somático/conversivo: <strong>nada é consciente</strong>.</li><li>Factício: produz <strong>conscientemente</strong>, motivação <strong>inconsciente</strong>, <strong>ganho primário</strong> (ser cuidado).</li><li>Simulação: produz e quer <strong>conscientemente</strong>, <strong>ganho secundário</strong> (dinheiro, atestado, justiça).</li><li>Conversivo: déficit neurológico <strong>após conflito/estressor</strong>, exame neurológico incongruente.</li><li>Hipocondria: medo de ter doença grave; <strong>dúvida</strong>, não delírio.</li><li>Dismórfico: defeito imaginário ou mínimo na aparência.</li><li>Mais em <strong>mulheres</strong>, curso <strong>crônico e flutuante</strong>.</li><li>Conduta: <strong>consultas agendadas com o mesmo médico</strong>, validar, evitar exames repetidos, TCC.</li></ul><blockquote><strong>Cai na prova:</strong> Münchausen por procuração: o cuidador produz sinais de doença em outra pessoa (geralmente a criança). É factício e também maus-tratos.</blockquote>"
+  },
+  {
+   "id": "g3",
+   "grupo": "Guia prioritário",
+   "titulo": "Substâncias: o que não pode errar",
+   "par": "r3",
+   "html": "<ul><li>Gravidade do transtorno por uso: <strong>2–3 leve, 4–5 moderado, ≥ 6 grave</strong>.</li><li><strong>CAGE ≥ 2</strong> = rastreio positivo.</li><li>Abstinência alcoólica: tremor 6–24 h → convulsão 12–48 h → <strong>delirium tremens 48–96 h</strong>.</li><li>Tratar com <strong>BZD</strong>; hepatopata/idoso: <strong>lorazepam</strong>.</li><li><strong>Tiamina antes da glicose</strong>. Wernicke: confusão + ataxia + oftalmoplegia.</li><li>Korsakoff: amnésia + <strong>confabulação</strong>.</li><li>Manutenção: naltrexona, acamprosato, dissulfiram (com consentimento).</li><li><strong>Cocaína</strong>: midríase, taquicardia, HAS, hipertermia, dor torácica → <strong>BZD</strong>; não usar betabloqueador isolado.</li><li><strong>Opioide</strong>: <strong>miose</strong> + depressão respiratória → <strong>naloxona</strong>.</li><li>Abstinência de opioide: <strong>midríase</strong>, piloereção, bocejos, diarreia.</li><li>Cannabis: olho vermelho e fome.</li></ul><blockquote><strong>Pegadinha:</strong> Pupila: cocaína e abstinência de opioide = midríase; intoxicação por opioide = miose.</blockquote><blockquote><strong>Pegadinha:</strong> Abstinência de álcool e de BZD podem matar (convulsão, delirium). A de opioide é muito desconfortável, mas raramente fatal.</blockquote>"
+  },
+  {
+   "id": "g4",
+   "grupo": "Guia prioritário",
+   "titulo": "Infância e adolescência em uma tela",
+   "par": "r4",
+   "html": "<ul><li><strong>TDAH</strong>: início antes dos 12 anos, ≥ 2 ambientes, ≥ 6 meses; estimulante + orientação.</li><li>Pré-escolar com TDAH: começar por <strong>treino parental</strong>.</li><li><strong>TEA</strong>: comunicação social + comportamentos restritos/repetitivos; <strong>M-CHAT 16–30 meses</strong>; intervenção precoce.</li><li>Irritabilidade no TEA: <strong>risperidona/aripiprazol</strong>.</li><li><strong>TOD</strong> desafia; <strong>conduta</strong> viola direitos (agressão, furto, crueldade).</li><li>Depressão no jovem pode ser <strong>irritabilidade</strong>; fluoxetina; vigiar ideação suicida.</li></ul>"
+  },
+  {
+   "id": "g5",
+   "grupo": "Guia prioritário",
+   "titulo": "Psicofármacos: regras e efeitos que caem",
+   "par": "r5",
+   "html": "<ul><li>Antidepressivo: <strong>latência 2–4 semanas</strong>; manter 6–12 meses após remissão.</li><li>ISRS: disfunção sexual, <strong>hiponatremia no idoso</strong>, sangramento.</li><li><strong>Mirtazapina</strong>: sono e apetite. <strong>Bupropiona</strong>: sem efeito sexual, ajuda no tabagismo, <strong>convulsão</strong> (evitar em bulimia/epilepsia).</li><li><strong>Tricíclico</strong> em overdose: QRS largo → <strong>bicarbonato</strong>.</li><li><strong>IMAO</strong> + tiramina = crise hipertensiva.</li><li>Serotoninérgica: horas, <strong>clônus/hiper-reflexia</strong> → ciproeptadina.</li><li>SNM: dias, <strong>rigidez</strong>, febre, CPK alta → dantrolene/bromocriptina.</li><li>Distonia aguda → biperideno; acatisia → propranolol; discinesia tardia é tardia e pouco reversível.</li><li>Olanzapina = síndrome metabólica; risperidona = prolactina; aripiprazol = acatisia.</li><li><strong>Clozapina</strong>: refratária (falha de 2), reduz suicídio, <strong>agranulocitose</strong>.</li><li><strong>Lítio</strong> 0,6–1,2; tóxico &gt; 1,5; hipotireoidismo, DI nefrogênico, Ebstein; sobe com <strong>tiazídico, IECA, AINE</strong>.</li><li><strong>Valproato</strong>: tubo neural, fígado, pâncreas. <strong>Lamotrigina</strong>: SJS, titular devagar.</li><li>BZD: quedas no idoso, dependência, nunca parar de repente.</li><li><strong>ECT</strong>: depressão grave com risco de suicídio, catatonia, gestante.</li></ul><blockquote><strong>Cai na prova:</strong> Diferenciar serotoninérgica de SNM: tempo (horas × dias) e exame neuromuscular (clônus × rigidez).</blockquote>"
+  },
+  {
+   "id": "g6",
+   "grupo": "Guia prioritário",
+   "titulo": "Suicídio: condutas que caem",
+   "par": "r6",
+   "html": "<ul><li>Maior preditor: <strong>tentativa prévia</strong>.</li><li>Homens morrem mais; mulheres tentam mais.</li><li><strong>Perguntar diretamente não induz</strong> o suicídio.</li><li>Gradação: ideação passiva → ativa → plano → intenção → meios/preparativos.</li><li>Alto risco (plano + intenção + meio, tentativa grave recente, psicose, sem suporte): <strong>não deixar sozinho, internar</strong> (involuntária se preciso).</li><li>Baixo risco: <strong>plano de segurança</strong>, tratar o transtorno, retorno próximo.</li><li><strong>Restringir meios letais</strong> é uma das medidas mais eficazes.</li><li>Tentativa = <strong>notificação compulsória imediata (24 h)</strong>.</li><li>Lítio e clozapina reduzem suicídio; prescrever pouca quantidade de tricíclico.</li><li>CVV <strong>188</strong>; SAMU 192; CAPS.</li></ul><blockquote><strong>Pegadinha:</strong> \"Quem fala não faz\" e \"perguntar dá a ideia\" são mitos. Melhora súbita e serenidade após depressão grave pode ser decisão tomada: reavaliar.</blockquote>"
+  }
+ ],
+ "cards": [
+  {
+   "id": "psq00",
+   "secao": "g1",
+   "tag": "Ansiedade",
+   "frente": "Medo, ansiedade e preocupação: qual a diferença pela distância do perigo?",
+   "verso": "Perigo <b>iminente → medo</b>; <b>próximo → ansiedade</b>; <b>distante → preocupação</b>."
+  },
+  {
+   "id": "psq01",
+   "secao": "g1",
+   "tag": "Ansiedade",
+   "frente": "Três critérios que tornam a ansiedade patológica (aula).",
+   "verso": "Ultrapassa determinado nível; é <b>desproporcional e persistente</b>; <b>interfere no funcionamento</b>."
+  },
+  {
+   "id": "psq02",
+   "secao": "g1",
+   "tag": "TAG",
+   "frente": "Critério de tempo e número de sintomas do TAG (DSM-5-TR).",
+   "verso": "Preocupação excessiva por <b>≥ 6 meses</b> e <b>≥ 3 de 6</b>: inquietação, fadiga, concentração, irritabilidade, tensão muscular, sono."
+  },
+  {
+   "id": "psq03",
+   "secao": "g1",
+   "tag": "TAG",
+   "frente": "Qual a relação entre TAG e depressão maior?",
+   "verso": "~<b>40%</b> têm as duas; a ansiedade <b>antecede</b> a depressão em 2/3 dos casos (pode ser pródromo)."
+  },
+  {
+   "id": "psq04",
+   "secao": "g1",
+   "tag": "Pânico",
+   "frente": "Em quanto tempo o ataque de pânico atinge o pico?",
+   "verso": "Em até <b>10 minutos</b>; dura cerca de 15–30 min."
+  },
+  {
+   "id": "psq05",
+   "secao": "g1",
+   "tag": "Pânico",
+   "frente": "O que, além dos ataques, define o transtorno de pânico?",
+   "verso": "Ataques <b>inesperados e recorrentes</b> + ≥ <b>1 mês</b> de medo de novas crises ou mudança de comportamento."
+  },
+  {
+   "id": "psq06",
+   "secao": "g1",
+   "tag": "Pânico",
+   "frente": "Sequência de evolução do pânico descrita na aula.",
+   "verso": "Ataques espontâneos → situacionais → <b>ansiedade antecipatória</b> → esquiva agorafóbica restrita → extensa."
+  },
+  {
+   "id": "psq07",
+   "secao": "g1",
+   "tag": "Fobias",
+   "frente": "Qual fobia específica tem padrão familiar e desmaio?",
+   "verso": "<b>Sangue-injeção-ferimento</b>: resposta <b>vasovagal</b>."
+  },
+  {
+   "id": "psq08",
+   "secao": "g1",
+   "tag": "Fobias",
+   "frente": "Agorafobia × fobia social.",
+   "verso": "Agorafobia: medo de lugares de onde é <b>difícil escapar</b> ou receber ajuda. Social: medo de ser <b>observado e avaliado</b>."
+  },
+  {
+   "id": "psq09",
+   "secao": "g1",
+   "tag": "Ansiedade",
+   "frente": "Tratamento farmacológico de base no TAG e no pânico.",
+   "verso": "<b>ISRS/IRSN</b>; BZD só no início como ponte, com retirada gradual. Alternativas no TAG: buspirona, pregabalina. + <b>TCC</b>."
+  },
+  {
+   "id": "psq10",
+   "secao": "g1",
+   "tag": "Trauma",
+   "frente": "Estresse agudo × TEPT: o que separa?",
+   "verso": "Tempo: estresse agudo dura até <b>1 mês</b> (com dissociação); TEPT dura <b>mais de 1 mês</b>."
+  },
+  {
+   "id": "psq11",
+   "secao": "g1",
+   "tag": "Trauma",
+   "frente": "Quatro grupos de sintomas do TEPT.",
+   "verso": "<b>Revivescência</b> (flashbacks, pesadelos), <b>esquiva</b>, <b>cognições negativas</b>/humor, <b>hiperexcitação</b> (hipervigilância, sustos, insônia)."
+  },
+  {
+   "id": "psq12",
+   "secao": "g1",
+   "tag": "Trauma",
+   "frente": "Transtorno de adaptação: tipo de estressor e prazo.",
+   "verso": "Estressor <b>comum</b> (divórcio, demissão), não precisa ser traumático; sintomas em até <b>3 meses</b>."
+  },
+  {
+   "id": "psq13",
+   "secao": "g1",
+   "tag": "Trauma",
+   "frente": "1ª linha no TEPT e o que evitar.",
+   "verso": "<b>Psicoterapia focada no trauma</b> ± ISRS/IRSN. Evitar <b>benzodiazepínico</b>."
+  },
+  {
+   "id": "psq14",
+   "secao": "g2",
+   "tag": "Somáticos",
+   "frente": "O que define o transtorno de sintomas somáticos?",
+   "verso": "Sintoma físico real para o paciente, com angústia e prejuízo <b>desproporcionais</b>, não explicado por doença; <b>não intencional</b>."
+  },
+  {
+   "id": "psq15",
+   "secao": "g2",
+   "tag": "Somáticos",
+   "frente": "Conversivo: o que precede o sintoma?",
+   "verso": "Um <b>conflito ou estressor psicológico</b>; o déficit sugere doença neurológica (paralisia, afonia, cegueira, crise)."
+  },
+  {
+   "id": "psq16",
+   "secao": "g2",
+   "tag": "Somáticos",
+   "frente": "Hipocondria tem convicção delirante?",
+   "verso": "Não. É <b>dúvida obsessiva</b> de ter doença grave, que persiste apesar de exames normais."
+  },
+  {
+   "id": "psq17",
+   "secao": "g2",
+   "tag": "Somáticos",
+   "frente": "Dismórfico corporal × anorexia.",
+   "verso": "Dismórfico: defeito imaginário ou mínimo na aparência. Anorexia: insatisfação restrita a <b>peso e forma</b>."
+  },
+  {
+   "id": "psq18",
+   "secao": "g2",
+   "tag": "Factício",
+   "frente": "Factício: produção, motivação e tipo de ganho.",
+   "verso": "Produção <b>consciente</b>, motivação <b>inconsciente</b>, ganho <b>primário</b> (psicológico, ser cuidado)."
+  },
+  {
+   "id": "psq19",
+   "secao": "g2",
+   "tag": "Factício",
+   "frente": "Simulação: produção, motivação e ganho.",
+   "verso": "Tudo <b>consciente</b>; ganho <b>secundário</b> (dinheiro, afastamento, justiça). Não é transtorno mental."
+  },
+  {
+   "id": "psq20",
+   "secao": "g2",
+   "tag": "Somáticos",
+   "frente": "Manejo do paciente com sintomas somáticos.",
+   "verso": "Médico de referência, <b>consultas regulares agendadas</b>, validar sofrimento, evitar exames repetidos, TCC."
+  },
+  {
+   "id": "psq21",
+   "secao": "g2",
+   "tag": "Dissociativos",
+   "frente": "Cite três formas de transtorno dissociativo.",
+   "verso": "Amnésia dissociativa; despersonalização/desrealização; transtorno dissociativo de identidade (também estado crepuscular e transe)."
+  },
+  {
+   "id": "psq22",
+   "secao": "g3",
+   "tag": "Substâncias",
+   "frente": "Via cerebral comum a todas as drogas de abuso.",
+   "verso": "Via <b>dopaminérgica mesolímbica</b>: área tegmentar ventral → <b>núcleo accumbens</b>."
+  },
+  {
+   "id": "psq23",
+   "secao": "g3",
+   "tag": "Substâncias",
+   "frente": "Gravidade do transtorno por uso (DSM-5-TR).",
+   "verso": "<b>2–3</b> critérios leve; <b>4–5</b> moderado; <b>≥ 6</b> grave."
+  },
+  {
+   "id": "psq24",
+   "secao": "g3",
+   "tag": "Álcool",
+   "frente": "O que é o CAGE e qual o ponto de corte?",
+   "verso": "Cut down, Annoyed, Guilty, Eye-opener. <b>≥ 2 positivas</b> = rastreio positivo."
+  },
+  {
+   "id": "psq25",
+   "secao": "g3",
+   "tag": "Álcool",
+   "frente": "Linha do tempo da abstinência alcoólica.",
+   "verso": "Tremor 6–24 h; <b>convulsão</b> e alucinose 12–48 h; <b>delirium tremens</b> 48–96 h."
+  },
+  {
+   "id": "psq26",
+   "secao": "g3",
+   "tag": "Álcool",
+   "frente": "BZD para abstinência em hepatopata.",
+   "verso": "<b>Lorazepam</b> (ou oxazepam): sem metabolismo oxidativo hepático."
+  },
+  {
+   "id": "psq27",
+   "secao": "g3",
+   "tag": "Álcool",
+   "frente": "Por que tiamina antes da glicose?",
+   "verso": "Glicose sem tiamina pode precipitar <b>encefalopatia de Wernicke</b>: confusão, ataxia, oftalmoplegia."
+  },
+  {
+   "id": "psq28",
+   "secao": "g3",
+   "tag": "Álcool",
+   "frente": "Korsakoff: duas marcas.",
+   "verso": "<b>Amnésia anterógrada</b> e <b>confabulação</b>."
+  },
+  {
+   "id": "psq29",
+   "secao": "g3",
+   "tag": "Álcool",
+   "frente": "Remédios para manter a abstinência do álcool.",
+   "verso": "<b>Naltrexona</b>, <b>acamprosato</b>, dissulfiram (com consentimento), topiramato."
+  },
+  {
+   "id": "psq30",
+   "secao": "g3",
+   "tag": "Cocaína",
+   "frente": "Quadro da intoxicação por cocaína.",
+   "verso": "Simpaticomimético: agitação, <b>midríase</b>, taquicardia, HAS, hipertermia, sudorese, dor torácica, convulsão."
+  },
+  {
+   "id": "psq31",
+   "secao": "g3",
+   "tag": "Cocaína",
+   "frente": "Droga de escolha na agitação/HAS por cocaína e o que evitar.",
+   "verso": "<b>Benzodiazepínico</b>. Evitar <b>betabloqueador isolado</b> (estímulo alfa sem oposição)."
+  },
+  {
+   "id": "psq32",
+   "secao": "g3",
+   "tag": "Opioides",
+   "frente": "Tríade da intoxicação por opioide e antídoto.",
+   "verso": "<b>Miose</b>, depressão respiratória, rebaixamento → <b>naloxona</b>."
+  },
+  {
+   "id": "psq33",
+   "secao": "g3",
+   "tag": "Opioides",
+   "frente": "Sinais da abstinência de opioide.",
+   "verso": "<b>Midríase</b>, piloereção, bocejos, rinorreia, lacrimejamento, diarreia, dor."
+  },
+  {
+   "id": "psq34",
+   "secao": "g3",
+   "tag": "Abordagem",
+   "frente": "Estágios de mudança de Prochaska.",
+   "verso": "Pré-contemplação → contemplação → preparação → ação → manutenção (recaída pode ocorrer)."
+  },
+  {
+   "id": "psq35",
+   "secao": "g4",
+   "tag": "TDAH",
+   "frente": "Critérios de idade e ambiente do TDAH.",
+   "verso": "Sintomas <b>antes dos 12 anos</b>, em <b>≥ 2 ambientes</b>, por ≥ 6 meses."
+  },
+  {
+   "id": "psq36",
+   "secao": "g4",
+   "tag": "TDAH",
+   "frente": "1ª conduta no TDAH em pré-escolar.",
+   "verso": "<b>Treino parental</b>/intervenção comportamental antes do estimulante."
+  },
+  {
+   "id": "psq37",
+   "secao": "g4",
+   "tag": "TEA",
+   "frente": "Os dois domínios do TEA.",
+   "verso": "Déficit de <b>comunicação e interação social</b> + <b>padrões restritos e repetitivos</b>."
+  },
+  {
+   "id": "psq38",
+   "secao": "g4",
+   "tag": "TEA",
+   "frente": "Rastreio do TEA: instrumento e idade.",
+   "verso": "<b>M-CHAT</b>, entre <b>16 e 30 meses</b>."
+  },
+  {
+   "id": "psq39",
+   "secao": "g4",
+   "tag": "TEA",
+   "frente": "Remédio para irritabilidade/agressividade no TEA.",
+   "verso": "<b>Risperidona</b> ou <b>aripiprazol</b>."
+  },
+  {
+   "id": "psq40",
+   "secao": "g4",
+   "tag": "Disruptivos",
+   "frente": "TOD × transtorno de conduta.",
+   "verso": "TOD: raiva e desafio a adultos. Conduta: <b>viola direitos</b> (agressão, crueldade, furto, destruição)."
+  },
+  {
+   "id": "psq41",
+   "secao": "g4",
+   "tag": "Humor",
+   "frente": "Como a depressão pode aparecer no adolescente?",
+   "verso": "<b>Irritabilidade</b>, queda escolar, isolamento. Remédio mais estudado: fluoxetina."
+  },
+  {
+   "id": "psq42",
+   "secao": "g5",
+   "tag": "Antidepressivos",
+   "frente": "Latência e duração do tratamento antidepressivo.",
+   "verso": "Efeito em <b>2–4 semanas</b>; manter <b>6–12 meses</b> após remissão no 1º episódio."
+  },
+  {
+   "id": "psq43",
+   "secao": "g5",
+   "tag": "Antidepressivos",
+   "frente": "Efeito do ISRS que cai em idoso.",
+   "verso": "<b>Hiponatremia</b> (SIADH)."
+  },
+  {
+   "id": "psq44",
+   "secao": "g5",
+   "tag": "Antidepressivos",
+   "frente": "Antidepressivo que ajuda no tabagismo e não causa disfunção sexual. Contraindicação?",
+   "verso": "<b>Bupropiona</b>; evitar em <b>epilepsia, bulimia e anorexia</b> (baixa limiar convulsivo)."
+  },
+  {
+   "id": "psq45",
+   "secao": "g5",
+   "tag": "Antidepressivos",
+   "frente": "Antidepressivo para idoso deprimido com insônia e perda de peso.",
+   "verso": "<b>Mirtazapina</b>."
+  },
+  {
+   "id": "psq46",
+   "secao": "g5",
+   "tag": "Antidepressivos",
+   "frente": "Overdose de tricíclico: achado no ECG e tratamento.",
+   "verso": "<b>QRS alargado</b>/arritmia → <b>bicarbonato de sódio</b>."
+  },
+  {
+   "id": "psq47",
+   "secao": "g5",
+   "tag": "Emergências",
+   "frente": "Serotoninérgica × SNM.",
+   "verso": "Serotoninérgica: horas, <b>clônus</b>, hiper-reflexia → ciproeptadina. SNM: dias, <b>rigidez</b>, febre, CPK alta → dantrolene/bromocriptina."
+  },
+  {
+   "id": "psq48",
+   "secao": "g5",
+   "tag": "Antipsicóticos",
+   "frente": "Distonia aguda e acatisia: tratamento.",
+   "verso": "Distonia → <b>biperideno</b>. Acatisia → reduzir dose, <b>propranolol</b>."
+  },
+  {
+   "id": "psq49",
+   "secao": "g5",
+   "tag": "Antipsicóticos",
+   "frente": "Indicação e risco principal da clozapina.",
+   "verso": "Esquizofrenia <b>refratária</b> (falha de 2) e risco de suicídio; <b>agranulocitose</b> (hemograma)."
+  },
+  {
+   "id": "psq50",
+   "secao": "g5",
+   "tag": "Antipsicóticos",
+   "frente": "Atípico com mais ganho de peso e mais prolactina.",
+   "verso": "Peso/metabólico: <b>olanzapina</b>. Prolactina: <b>risperidona</b>."
+  },
+  {
+   "id": "psq51",
+   "secao": "g5",
+   "tag": "Lítio",
+   "frente": "Faixa terapêutica e sinais de toxicidade do lítio.",
+   "verso": "<b>0,6–1,2 mEq/L</b>. &gt; 1,5: tremor grosseiro, ataxia, vômitos, diarreia, confusão."
+  },
+  {
+   "id": "psq52",
+   "secao": "g5",
+   "tag": "Lítio",
+   "frente": "Remédios que aumentam o lítio.",
+   "verso": "<b>Tiazídicos, IECA/BRA, AINE</b> (e desidratação)."
+  },
+  {
+   "id": "psq53",
+   "secao": "g5",
+   "tag": "Lítio",
+   "frente": "Efeitos crônicos e na gestação do lítio.",
+   "verso": "Hipotireoidismo, <b>DI nefrogênico</b>, lesão renal; anomalia de <b>Ebstein</b>."
+  },
+  {
+   "id": "psq54",
+   "secao": "g5",
+   "tag": "Estabilizadores",
+   "frente": "Valproato: risco na gestação.",
+   "verso": "<b>Defeito do tubo neural</b>; evitar em mulher em idade fértil."
+  },
+  {
+   "id": "psq55",
+   "secao": "g5",
+   "tag": "Estabilizadores",
+   "frente": "Por que titular a lamotrigina devagar?",
+   "verso": "Risco de <b>Stevens-Johnson</b>."
+  },
+  {
+   "id": "psq56",
+   "secao": "g5",
+   "tag": "ECT",
+   "frente": "Indicações clássicas de ECT.",
+   "verso": "Depressão grave com <b>risco de suicídio</b> ou psicose, <b>catatonia</b>, refratariedade, gestante com quadro grave."
+  },
+  {
+   "id": "psq57",
+   "secao": "g6",
+   "tag": "Suicídio",
+   "frente": "Maior preditor de suicídio.",
+   "verso": "<b>Tentativa prévia</b>."
+  },
+  {
+   "id": "psq58",
+   "secao": "g6",
+   "tag": "Suicídio",
+   "frente": "Perguntar sobre ideação suicida aumenta o risco?",
+   "verso": "<b>Não.</b> Perguntar diretamente alivia e permite intervir."
+  },
+  {
+   "id": "psq59",
+   "secao": "g6",
+   "tag": "Suicídio",
+   "frente": "Sinais de alto risco de suicídio.",
+   "verso": "Plano estruturado, <b>intenção</b>, acesso ao meio, preparativos, tentativa recente grave, psicose, sem suporte."
+  },
+  {
+   "id": "psq60",
+   "secao": "g6",
+   "tag": "Suicídio",
+   "frente": "Conduta no alto risco.",
+   "verso": "<b>Não deixar sozinho</b>, emergência e <b>internação</b> (involuntária se necessário)."
+  },
+  {
+   "id": "psq61",
+   "secao": "g6",
+   "tag": "Suicídio",
+   "frente": "Componentes do plano de segurança.",
+   "verso": "Sinais de alerta, estratégias próprias, pessoas que distraem, quem chamar, serviços (CAPS, 192, CVV 188), <b>restrição de meios</b>."
+  },
+  {
+   "id": "psq62",
+   "secao": "g6",
+   "tag": "Suicídio",
+   "frente": "Prazo de notificação da tentativa de suicídio.",
+   "verso": "<b>Imediata</b>, em até <b>24 h</b>."
+  },
+  {
+   "id": "psq63",
+   "secao": "g6",
+   "tag": "Suicídio",
+   "frente": "Dois psicofármacos que reduzem suicídio.",
+   "verso": "<b>Lítio</b> e <b>clozapina</b>."
+  }
+ ],
+ "kahoot": [
+  {
+   "tipo": "q",
+   "n": 1,
+   "pergunta": "Mulher, 34 anos, há 8 meses preocupada com trabalho, filhos e dinheiro, não consegue parar de pensar nisso, com tensão muscular, insônia e irritabilidade. Diagnóstico?",
+   "opcoes": [
+    "Fobia social",
+    "Transtorno de pânico",
+    "TAG",
+    "Transtorno de adaptação"
+   ],
+   "certa": 2,
+   "explica": "Preocupação excessiva e difusa ≥ 6 meses com ≥ 3 sintomas = TAG.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 2,
+   "pergunta": "O ataque de pânico atinge o pico de intensidade em até:",
+   "opcoes": [
+    "1 minuto",
+    "10 minutos",
+    "1 hora",
+    "24 horas"
+   ],
+   "certa": 1,
+   "explica": "Início súbito, pico em até 10 min, duração de 15–30 min.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 3,
+   "pergunta": "Qual fobia específica cursa com resposta vasovagal e desmaio?",
+   "opcoes": [
+    "Elevador",
+    "Altura",
+    "Animais",
+    "Sangue-injeção-ferimento"
+   ],
+   "certa": 3,
+   "explica": "É a única com bradicardia/hipotensão vasovagal.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 4,
+   "pergunta": "Bombeiro, há 3 meses de um incêndio com vítimas: pesadelos, flashbacks, evita o quartel e se assusta com qualquer barulho. Diagnóstico e 1ª linha?",
+   "opcoes": [
+    "Pânico; BZD contínuo",
+    "Estresse agudo; BZD",
+    "Adaptação; observação",
+    "TEPT; psicoterapia focada no trauma ± ISRS"
+   ],
+   "certa": 3,
+   "explica": "Mais de 1 mês com revivescência, esquiva e hipervigilância = TEPT. BZD não é recomendado.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 5,
+   "pergunta": "Homem, após divórcio há 6 semanas, tristeza e irritação que prejudicam o trabalho, sem critérios para depressão. Diagnóstico?",
+   "opcoes": [
+    "Transtorno de adaptação",
+    "Distimia",
+    "TEPT",
+    "Estresse agudo"
+   ],
+   "certa": 0,
+   "explica": "Estressor comum (não traumático), início em até 3 meses.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 6,
+   "pergunta": "Paciente provoca feridas em si mesma às escondidas para ser internada e cuidada, sem benefício financeiro. Diagnóstico?",
+   "opcoes": [
+    "Hipocondria",
+    "Transtorno conversivo",
+    "Simulação",
+    "Transtorno factício"
+   ],
+   "certa": 3,
+   "explica": "Produção consciente, motivação inconsciente, ganho primário.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 7,
+   "pergunta": "Réu apresenta \"cegueira\" que surge só antes das audiências e some depois. O ganho é:",
+   "opcoes": [
+    "Secundário, consciente (simulação)",
+    "Primário, consciente",
+    "Não há ganho",
+    "Primário, inconsciente"
+   ],
+   "certa": 0,
+   "explica": "Simulação: produção e motivação conscientes, ganho secundário.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 8,
+   "pergunta": "Após briga grave com o marido, mulher acorda sem conseguir mover o braço direito; exame neurológico incongruente e TC normal. Hipótese?",
+   "opcoes": [
+    "Simulação",
+    "AVC isquêmico",
+    "Transtorno conversivo (sintoma neurológico funcional)",
+    "Hipocondria"
+   ],
+   "certa": 2,
+   "explica": "Déficit neurológico precedido de conflito, não explicado por doença.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 9,
+   "pergunta": "Etilista internado há 3 dias, confuso, com alucinações visuais, febre e taquicardia. Diagnóstico e tratamento?",
+   "opcoes": [
+    "Intoxicação; flumazenil",
+    "Delirium tremens; BZD + tiamina",
+    "Alucinose; haloperidol isolado",
+    "Wernicke; glicose"
+   ],
+   "certa": 1,
+   "explica": "DT aparece 48–96 h após a última dose; BZD é a base, com tiamina.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 10,
+   "pergunta": "No alcoolista hipoglicêmico e confuso, a ordem correta é:",
+   "opcoes": [
+    "Tiamina antes da glicose",
+    "Só glicose",
+    "Glicose e depois tiamina",
+    "Só tiamina"
+   ],
+   "certa": 0,
+   "explica": "Glicose sem tiamina pode precipitar Wernicke.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 11,
+   "pergunta": "Jovem agitado, PA 190/110, FC 140, midríase, hipertermia e dor torácica após uso de cocaína. Primeira droga?",
+   "opcoes": [
+    "Benzodiazepínico",
+    "Haloperidol",
+    "Naloxona",
+    "Propranolol"
+   ],
+   "certa": 0,
+   "explica": "BZD controla agitação e efeitos simpáticos. Betabloqueador isolado deixa a ação alfa sem oposição.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 12,
+   "pergunta": "Rebaixado, FR 6 irpm e pupilas puntiformes. Conduta?",
+   "opcoes": [
+    "Tiamina",
+    "Bicarbonato",
+    "Flumazenil",
+    "Naloxona"
+   ],
+   "certa": 3,
+   "explica": "Tríade da intoxicação por opioide.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 13,
+   "pergunta": "Transtorno por uso de substância com 5 critérios do DSM-5-TR é classificado como:",
+   "opcoes": [
+    "Leve",
+    "Moderado",
+    "Grave",
+    "Uso nocivo"
+   ],
+   "certa": 1,
+   "explica": "2–3 leve, 4–5 moderado, ≥ 6 grave.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 14,
+   "pergunta": "Criança de 8 anos com desatenção e agitação só em casa; na escola vai bem. Pode ser TDAH?",
+   "opcoes": [
+    "Sim, se for menino",
+    "Sim, basta um ambiente",
+    "Só se houver baixo QI",
+    "Não fecha critério: exige ≥ 2 ambientes"
+   ],
+   "certa": 3,
+   "explica": "TDAH exige sintomas em pelo menos dois ambientes.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 15,
+   "pergunta": "Rastreio de TEA recomendado na puericultura:",
+   "opcoes": [
+    "CAGE",
+    "Denver aos 5 anos",
+    "M-CHAT entre 16 e 30 meses",
+    "AUDIT aos 12 anos"
+   ],
+   "certa": 2,
+   "explica": "M-CHAT é aplicado de 16 a 30 meses.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 16,
+   "pergunta": "Idoso em uso de sertralina chega confuso com sódio de 122. Causa provável?",
+   "opcoes": [
+    "SIADH pelo ISRS",
+    "Síndrome serotoninérgica",
+    "Intoxicação por lítio",
+    "Hipotireoidismo pelo ISRS"
+   ],
+   "certa": 0,
+   "explica": "ISRS causa SIADH e hiponatremia, sobretudo em idosos.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 17,
+   "pergunta": "Paciente com sertralina recebe tramadol e, em horas, tem agitação, diarreia, clônus e hiper-reflexia. Diagnóstico?",
+   "opcoes": [
+    "Hipertermia maligna",
+    "Síndrome serotoninérgica",
+    "Síndrome neuroléptica maligna",
+    "Abstinência de BZD"
+   ],
+   "certa": 1,
+   "explica": "Horas + clônus = serotoninérgica. Tratar com suspensão, BZD e ciproeptadina.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 18,
+   "pergunta": "Dias após iniciar haloperidol: febre de 40 °C, rigidez intensa, rebaixamento e CPK de 15.000. Conduta?",
+   "opcoes": [
+    "Suspender + suporte + dantrolene/bromocriptina",
+    "Ciproeptadina",
+    "Aumentar a dose",
+    "Biperideno e alta"
+   ],
+   "certa": 0,
+   "explica": "Síndrome neuroléptica maligna.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 19,
+   "pergunta": "Bipolar estável com lítio começa hidroclorotiazida e passa a ter tremor grosseiro, ataxia e diarreia. Explicação?",
+   "opcoes": [
+    "Intoxicação por lítio (tiazídico aumenta o nível)",
+    "Síndrome serotoninérgica",
+    "Acatisia",
+    "Hipotireoidismo"
+   ],
+   "certa": 0,
+   "explica": "Tiazídico, IECA e AINE elevam a litemia.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 20,
+   "pergunta": "Esquizofrenia sem resposta a risperidona e olanzapina em dose e tempo adequados. Próximo passo e exame obrigatório?",
+   "opcoes": [
+    "Haloperidol; ECG",
+    "Clozapina; hemograma seriado",
+    "Lítio; TSH",
+    "Quetiapina; nenhum"
+   ],
+   "certa": 1,
+   "explica": "Refratária = falha de 2. Clozapina exige vigilância de agranulocitose.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 21,
+   "pergunta": "Qual antidepressivo deve ser evitado em paciente com bulimia?",
+   "opcoes": [
+    "Fluoxetina",
+    "Sertralina",
+    "Bupropiona",
+    "Mirtazapina"
+   ],
+   "certa": 2,
+   "explica": "Bupropiona baixa o limiar convulsivo; risco maior em bulimia e anorexia.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 22,
+   "pergunta": "Qual é o maior preditor isolado de suicídio?",
+   "opcoes": [
+    "Religiosidade",
+    "Tentativa prévia",
+    "Ser jovem",
+    "Sexo feminino"
+   ],
+   "certa": 1,
+   "explica": "Tentativa prévia é o principal fator de risco.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 23,
+   "pergunta": "Perguntar diretamente ao paciente se ele pensa em se matar:",
+   "opcoes": [
+    "Não induz e ajuda a avaliar",
+    "Deve ser evitado na APS",
+    "Aumenta o risco",
+    "Só deve ser feito pelo psiquiatra"
+   ],
+   "certa": 0,
+   "explica": "Mito clássico. Perguntar abre espaço para ajuda.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 24,
+   "pergunta": "Homem de 55 anos, deprimido, etilista, com plano de se enforcar, corda comprada e cartas de despedida. Conduta?",
+   "opcoes": [
+    "Não deixar sozinho e internar (involuntária se preciso)",
+    "Encaminhar ao CAPS por e-mail",
+    "Iniciar ISRS e alta",
+    "Plano de segurança e retorno em 30 dias"
+   ],
+   "certa": 0,
+   "explica": "Plano + meio + preparativos = alto risco.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 25,
+   "pergunta": "Tentativa de suicídio atendida na UPA deve ser notificada:",
+   "opcoes": [
+    "De forma imediata (até 24 h)",
+    "Não é de notificação",
+    "Só se houver óbito",
+    "Semanalmente"
+   ],
+   "certa": 0,
+   "explica": "Violência autoprovocada é de notificação compulsória imediata.",
+   "tempo": 20
+  }
+ ],
+ "kahootInfo": {
+  "titulo": "Quiz de revisão · Psiquiatria AV2",
+  "capa": "{n} perguntas de revisão das aulas 7 a 12 (ansiedade, somáticos, substâncias, infância, psicofármacos e suicídio). Não é um Kahoot de professor. Quanto mais cedo acertar, mais pontos.",
+  "botao": "Começar o quiz"
+ },
+ "casos": [
+  {
+   "id": "p1",
+   "nivel": "Moderado",
+   "titulo": "Larissa e o coração disparado no ônibus",
+   "resumo": "Da 1ª crise de pânico na emergência ao tratamento e à agorafobia.",
+   "tags": [
+    "Pânico",
+    "Ansiedade",
+    "Agorafobia"
+   ],
+   "secoes": [
+    "g1",
+    "r1",
+    "g5"
+   ],
+   "abertura": "<p><strong>Larissa, 26 anos</strong>, chega à UPA dizendo que vai morrer: coração disparado, falta de ar, formigamento nas mãos e tremor, que começaram de repente no ônibus e pioraram em poucos minutos. Nega drogas, toma 4 cafés por dia.</p>",
+   "etapas": [
+    {
+     "titulo": "Primeiro passo",
+     "pergunta": "Antes de pensar em pânico, o que fazer?",
+     "opcoes": [
+      "Excluir causa orgânica: ECG, glicemia, sinais vitais, considerar TSH",
+      "Dar alta com diazepam",
+      "Encaminhar direto ao psiquiatra",
+      "Iniciar sertralina"
+     ],
+     "certa": 0,
+     "explica": "Na 1ª crise, afastar SCA, arritmia, hipoglicemia, tireoide e intoxicação."
+    },
+    {
+     "titulo": "Diagnóstico",
+     "info": "<p>Exames normais. Ela conta que é a 4ª crise em 2 meses, sempre inesperadas, e que agora tem medo constante de ter outra.</p>",
+     "pergunta": "Qual o diagnóstico?",
+     "opcoes": [
+      "Transtorno de pânico",
+      "TAG",
+      "Fobia específica",
+      "Hipocondria"
+     ],
+     "certa": 0,
+     "explica": "Ataques inesperados recorrentes + ≥ 1 mês de preocupação com novas crises."
+    },
+    {
+     "titulo": "Evolução",
+     "info": "<p>Larissa passou a evitar ônibus, shopping e filas, e só sai acompanhada.</p>",
+     "pergunta": "Esse comportamento indica:",
+     "opcoes": [
+      "TOC",
+      "Transtorno dissociativo",
+      "Fobia social",
+      "Agorafobia"
+     ],
+     "certa": 3,
+     "explica": "Medo de lugares de onde seria difícil escapar; é a esquiva agorafóbica da sequência do pânico."
+    },
+    {
+     "titulo": "Tratamento",
+     "pergunta": "Qual plano é o mais adequado?",
+     "opcoes": [
+      "Clonazepam contínuo por anos",
+      "ISRS + TCC; BZD só como ponte inicial com retirada gradual",
+      "Propranolol isolado",
+      "Haloperidol"
+     ],
+     "certa": 1,
+     "explica": "ISRS/IRSN + TCC (exposição). BZD cobre a latência e é retirado aos poucos."
+    },
+    {
+     "titulo": "Retorno",
+     "info": "<p>Após 10 dias de sertralina diz que \"não fez efeito\" e quer parar.</p>",
+     "pergunta": "O que orientar?",
+     "opcoes": [
+      "Suspender",
+      "Trocar por outro ISRS",
+      "A latência é de 2–4 semanas; manter e reavaliar em 4–6 semanas",
+      "Dobrar o BZD"
+     ],
+     "certa": 2,
+     "explica": "Avaliar resposta só após 4–6 semanas na dose adequada."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>1ª crise: excluir causa orgânica.</li><li>Pânico = ataques inesperados + medo de novas crises.</li><li>Agorafobia costuma seguir o pânico.</li><li>ISRS + TCC; BZD só como ponte.</li></ul>"
+  },
+  {
+   "id": "p2",
+   "nivel": "Difícil",
+   "titulo": "Rafael e a noite de crack",
+   "resumo": "Intoxicação por cocaína na emergência e a abordagem do uso de substâncias (simulação 3).",
+   "tags": [
+    "Cocaína",
+    "Emergência",
+    "Substâncias"
+   ],
+   "secoes": [
+    "g3",
+    "r3"
+   ],
+   "abertura": "<p><strong>Rafael, 24 anos</strong>, é trazido pelos amigos muito agitado e desconfiado, dizendo que estão atrás dele. PA 186/112, FC 138, T 38,9 °C, pupilas dilatadas, sudorese intensa. Refere dor no peito. Os amigos contam uso de crack há algumas horas.</p>",
+   "etapas": [
+    {
+     "titulo": "Síndrome",
+     "pergunta": "Qual síndrome tóxica?",
+     "opcoes": [
+      "Simpaticomimética",
+      "Opioide",
+      "Colinérgica",
+      "Anticolinérgica pura"
+     ],
+     "certa": 0,
+     "explica": "Agitação, midríase, taquicardia, HAS, hipertermia e sudorese."
+    },
+    {
+     "titulo": "Agitação e PA",
+     "pergunta": "Primeira medicação?",
+     "opcoes": [
+      "Propranolol IV",
+      "Haloperidol em dose alta",
+      "Naloxona",
+      "Benzodiazepínico (diazepam/midazolam)"
+     ],
+     "certa": 3,
+     "explica": "BZD trata agitação, HAS e taquicardia; betabloqueador isolado é evitado."
+    },
+    {
+     "titulo": "Dor torácica",
+     "pergunta": "Como conduzir a dor no peito?",
+     "opcoes": [
+      "Ignorar, é ansiedade",
+      "ECG e troponina: cocaína causa vasoespasmo e IAM",
+      "Alta após sedação",
+      "Só analgesia"
+     ],
+     "certa": 1,
+     "explica": "Dor torácica com cocaína deve ser tratada como possível SCA."
+    },
+    {
+     "titulo": "Temperatura",
+     "pergunta": "Hipertermia de 38,9 °C com agitação. O que fazer?",
+     "opcoes": [
+      "Nada",
+      "Antitérmico apenas",
+      "Resfriamento ativo + controle da agitação com BZD",
+      "Contenção mecânica prolongada sem sedação"
+     ],
+     "certa": 2,
+     "explica": "Hipertermia piora com agitação e contenção; resfriar e sedar."
+    },
+    {
+     "titulo": "Dias depois",
+     "info": "<p>Já estável, Rafael está sonolento, desanimado, com muita fome e fissura.</p>",
+     "pergunta": "Esse quadro é:",
+     "opcoes": [
+      "Intoxicação por opioide",
+      "Psicose persistente",
+      "Delirium tremens",
+      "Abstinência (\"crash\") de cocaína"
+     ],
+     "certa": 3,
+     "explica": "Disforia, hipersonia, hiperfagia e fissura."
+    },
+    {
+     "titulo": "Seguimento",
+     "info": "<p>Diz que \"usa só nos fins de semana e não vê problema\".</p>",
+     "pergunta": "Em que estágio de mudança está e qual a abordagem?",
+     "opcoes": [
+      "Preparação; dissulfiram",
+      "Manutenção; alta",
+      "Ação; internação compulsória",
+      "Pré-contemplação; entrevista motivacional e vínculo com CAPS AD"
+     ],
+     "certa": 3,
+     "explica": "Não reconhece o problema: pré-contemplação. Entrevista motivacional, redução de danos, CAPS AD."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Cocaína = simpaticomimético com midríase e hipertermia.</li><li>BZD primeiro; cautela com betabloqueador.</li><li>Dor torácica = investigar SCA.</li><li>Abordagem: entrevista motivacional, CAPS AD.</li></ul><h3>Pegadinha</h3><ul><li>Miose sugere opioide, não cocaína.</li></ul>"
+  },
+  {
+   "id": "p3",
+   "nivel": "Difícil",
+   "titulo": "Seu Joaquim e a frase no fim da consulta",
+   "resumo": "Avaliação e estratificação de risco de suicídio na APS (simulação 4).",
+   "tags": [
+    "Suicídio",
+    "Depressão",
+    "Álcool"
+   ],
+   "secoes": [
+    "g6",
+    "r6",
+    "g5"
+   ],
+   "abertura": "<p><strong>Joaquim, 62 anos</strong>, viúvo há 4 meses, aposentado, mora sozinho. Veio renovar a receita de anti-hipertensivo. Está emagrecido, dorme mal e bebe todas as noites. Ao se despedir diz: \"Pelo menos não vou dar trabalho por muito tempo.\"</p>",
+   "etapas": [
+    {
+     "titulo": "Abordagem",
+     "pergunta": "O que fazer diante da frase?",
+     "opcoes": [
+      "Encerrar e agendar retorno",
+      "Mudar de assunto para não induzir",
+      "Chamar o SAMU de imediato",
+      "Perguntar diretamente se ele pensa em se matar"
+     ],
+     "certa": 3,
+     "explica": "Perguntar diretamente não induz e permite avaliar o risco."
+    },
+    {
+     "titulo": "Fatores",
+     "pergunta": "Quais fatores de risco ele reúne?",
+     "opcoes": [
+      "Homem, idoso, viúvo recente, sozinho, uso de álcool e sintomas depressivos",
+      "Apenas a idade",
+      "Apenas a hipertensão",
+      "Nenhum relevante"
+     ],
+     "certa": 0,
+     "explica": "Sexo masculino, idade, perda recente, isolamento, álcool e depressão."
+    },
+    {
+     "titulo": "Gradação",
+     "info": "<p>Ele conta que pensa em morrer todos os dias, que guardou os comprimidos da esposa falecida \"para quando chegar a hora\" e que já escreveu uma carta para a filha.</p>",
+     "pergunta": "Qual o nível de risco?",
+     "opcoes": [
+      "Baixo",
+      "Moderado",
+      "Alto",
+      "Sem risco"
+     ],
+     "certa": 2,
+     "explica": "Ideação ativa, meio disponível e preparativos (carta) = alto risco."
+    },
+    {
+     "titulo": "Conduta",
+     "pergunta": "Conduta adequada?",
+     "opcoes": [
+      "Plano de segurança por escrito e alta",
+      "Prescrever ISRS e retorno em 30 dias",
+      "Pedir que volte se piorar",
+      "Não deixar sozinho, acionar família e encaminhar para emergência/internação"
+     ],
+     "certa": 3,
+     "explica": "Alto risco exige proteção imediata; internação involuntária se ele recusar."
+    },
+    {
+     "titulo": "Registro",
+     "pergunta": "Além da conduta clínica, é obrigatório:",
+     "opcoes": [
+      "Notificar se houver tentativa (imediata, até 24 h) e registrar a avaliação",
+      "Nada mais",
+      "Comunicar à polícia",
+      "Pedir autorização judicial"
+     ],
+     "certa": 0,
+     "explica": "Ideação se registra; tentativa (violência autoprovocada) é notificação compulsória imediata."
+    },
+    {
+     "titulo": "Depois da alta",
+     "info": "<p>Semanas depois, já com antidepressivo, volta para acompanhamento na unidade.</p>",
+     "pergunta": "Cuidado na prescrição para ele:",
+     "opcoes": [
+      "Receitar 6 meses de tricíclico de uma vez",
+      "Associar BZD em dose alta",
+      "Preferir ISRS, prescrever quantidades pequenas e pedir que um familiar guarde os remédios",
+      "Suspender o acompanhamento"
+     ],
+     "certa": 2,
+     "explica": "Restringir acesso a meios letais e evitar grandes quantidades de remédios tóxicos em overdose."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Pergunte diretamente.</li><li>Plano + meio + preparativos = alto risco → proteger e internar.</li><li>Restrição de meios e família envolvida.</li><li>Tentativa = notificação imediata.</li></ul><h3>Pegadinha</h3><ul><li>A frase \"não vou dar trabalho\" é sinal de alerta, não comentário casual.</li></ul>"
+  },
+  {
+   "id": "p4",
+   "nivel": "Moderado",
+   "titulo": "Dona Célia e o lítio",
+   "resumo": "Interações e toxicidade dos psicofármacos.",
+   "tags": [
+    "Lítio",
+    "Psicofármacos"
+   ],
+   "secoes": [
+    "g5",
+    "r5"
+   ],
+   "abertura": "<p><strong>Célia, 58 anos</strong>, bipolar, estável há 6 anos com carbonato de lítio. Foi a uma consulta por joelho doloroso e saiu com <strong>ibuprofeno</strong>; o cardiologista também iniciou <strong>hidroclorotiazida</strong>. Uma semana depois a filha a traz com tremor grosseiro, fala arrastada, desequilíbrio e diarreia.</p>",
+   "etapas": [
+    {
+     "titulo": "Hipótese",
+     "pergunta": "Qual a hipótese principal?",
+     "opcoes": [
+      "Crise de mania",
+      "AVC",
+      "Intoxicação por lítio",
+      "Hipoglicemia"
+     ],
+     "certa": 2,
+     "explica": "Tremor grosseiro, ataxia, disartria e GI = toxicidade."
+    },
+    {
+     "titulo": "Causa",
+     "pergunta": "O que elevou o lítio?",
+     "opcoes": [
+      "Nada, é coincidência",
+      "Só a idade",
+      "O joelho",
+      "AINE e tiazídico reduzem a excreção renal do lítio"
+     ],
+     "certa": 3,
+     "explica": "AINE, tiazídico e IECA/BRA aumentam a litemia."
+    },
+    {
+     "titulo": "Faixa",
+     "pergunta": "Qual a faixa terapêutica usual?",
+     "opcoes": [
+      "0,1–0,4 mEq/L",
+      "0,6–1,2 mEq/L",
+      "2–3 mEq/L",
+      "Não se dosa"
+     ],
+     "certa": 1,
+     "explica": "Acima de 1,5 já há toxicidade."
+    },
+    {
+     "titulo": "Seguimento crônico",
+     "pergunta": "Que exames acompanhar em quem usa lítio?",
+     "opcoes": [
+      "Litemia, TSH e função renal (creatinina)",
+      "Só hemograma",
+      "Só glicemia",
+      "CPK"
+     ],
+     "certa": 0,
+     "explica": "Hipotireoidismo e lesão renal/DI nefrogênico são efeitos crônicos."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Lítio: janela estreita.</li><li>Sobe com AINE, tiazídico, IECA e desidratação.</li><li>Monitorar litemia, TSH e creatinina.</li></ul>"
+  }
+ ]
+}

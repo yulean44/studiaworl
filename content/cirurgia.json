@@ -1,0 +1,1188 @@
+{
+ "id": "cirurgia",
+ "nome": "Práticas Médicas II · Cirurgia",
+ "sigla": "CIR",
+ "sub": "2ª Unidade · Aulas 7 a 12 · Turma 41",
+ "cor": "#5f9a86",
+ "emoji": "",
+ "icone": "bisturi",
+ "secoes": [
+  {
+   "id": "r0",
+   "grupo": "Resumo de referência",
+   "titulo": "Comece por aqui",
+   "par": "g0",
+   "html": "<p>A <strong>AV2 de Práticas Médicas II · Cirurgia</strong> (semana de 23 a 28/11) segue a segunda metade da ementa da disciplina:</p><table><thead><tr><th>Aula</th><th>Tema</th></tr></thead><tbody><tr><td>7</td><td>Pré-operatório (avaliação, ASA, exames, jejum, medicações, profilaxias)</td></tr><tr><td>8</td><td>Pós-operatório (dor, íleo, febre, complicações, tromboprofilaxia)</td></tr><tr><td>9</td><td>Infecção de sítio cirúrgico</td></tr><tr><td>10</td><td>Nutrição em cirurgia</td></tr><tr><td>11</td><td>Cirurgia segura (checklist da OMS)</td></tr><tr><td>12</td><td>Dispositivos cirúrgicos: drenos, sondas, cateteres e cânulas</td></tr></tbody></table><p>Leia primeiro o <strong>resumo</strong> e depois o <strong>guia prioritário</strong> pareado. Feche com flashcards, quiz e casos.</p><p><strong>De onde veio:</strong> temas e objetivos da <em>Ementa</em> de Cirurgia que está no Drive da turma. O último material enviado ao Drive (<em>check list · acesso · anestésico</em>, 11/11) cobre cirurgia segura, acessos e avaliação pré-anestésica, já incluídos aqui. Os slides das aulas 7 a 10 ainda não estão no Drive; o conteúdo segue as referências da área (Sabiston, ASA, CDC/ANVISA, OMS, ESPEN/ACERTO). Quando chegarem, vale conferir.</p><blockquote><strong>Cai na prova:</strong> Os números (jejum, tempo de antibioticoprofilaxia, faixas de sondas e cateteres) e as três etapas do checklist costumam virar questão direta.</blockquote>"
+  },
+  {
+   "id": "r1",
+   "grupo": "Resumo de referência",
+   "titulo": "1. Pré-operatório e avaliação pré-anestésica (Aula 7)",
+   "par": "g1",
+   "html": "<p>Objetivo: conhecer o paciente, a doença e a cirurgia para <strong>estimar o risco</strong>, <strong>otimizar</strong> o que for possível e decidir <strong>se, quando e onde</strong> operar.</p><h3>Avaliação clínica</h3><ul><li>Anamnese e exame dirigidos: cardiopatia, pneumopatia, DM, DRC, hepatopatia, coagulopatia, alergias, cirurgias e anestesias prévias (complicações, história familiar de <strong>hipertermia maligna</strong>), tabagismo, álcool, medicações.</li><li><strong>Capacidade funcional</strong>: ≥ <strong>4 METs</strong> (subir 2 lances de escada ou uma ladeira sem parar) = boa reserva; dispensa investigação cardíaca extra na maioria.</li><li><strong>Via aérea</strong>: Mallampati (I–IV), abertura de boca, distância tireomentoniana, mobilidade cervical.</li></ul><h3>Classificação ASA</h3><table><thead><tr><th>ASA</th><th>Paciente</th><th>Exemplo</th></tr></thead><tbody><tr><td>I</td><td>Saudável</td><td>Sem doença, não fuma</td></tr><tr><td>II</td><td>Doença sistêmica <strong>leve</strong>, sem limitação</td><td>HAS e DM controlados, fumante, gestante, obesidade IMC 30–40</td></tr><tr><td>III</td><td>Doença sistêmica <strong>grave</strong>, com limitação</td><td>DM/HAS mal controlados, DPOC, IMC ≥ 40, IAM &gt; 3 meses, diálise</td></tr><tr><td>IV</td><td>Doença grave com <strong>ameaça constante à vida</strong></td><td>IAM/AVC &lt; 3 meses, ICC descompensada, sepse</td></tr><tr><td>V</td><td>Moribundo, não sobrevive sem a cirurgia</td><td>Aneurisma roto</td></tr><tr><td>VI</td><td>Morte encefálica, doador de órgãos</td><td>—</td></tr></tbody></table><p>Acrescenta-se <strong>\"E\"</strong> quando a cirurgia é de <strong>emergência</strong> (ex.: ASA II-E).</p><p>Risco cardíaco: <strong>índice de Lee (RCRI)</strong>, 6 itens: cirurgia de alto risco (intraperitoneal, intratorácica, vascular suprainguinal), doença coronariana, insuficiência cardíaca, doença cerebrovascular, DM em uso de insulina, creatinina &gt; 2 mg/dL. Risco de TEV: <strong>Caprini</strong>.</p><h3>Exames pré-operatórios</h3><p><strong>Não existe \"rotina\" para todos.</strong> Peça conforme doença, idade, porte da cirurgia:</p><ul><li><strong>ECG</strong>: cardiopatia ou fatores de risco, cirurgia de risco intermediário/alto.</li><li><strong>Hemograma</strong>: perda sanguínea esperada, suspeita de anemia.</li><li><strong>Creatinina/eletrólitos</strong>: DRC, diurético, IECA, DM, cirurgia grande.</li><li><strong>Coagulograma</strong>: anticoagulante, hepatopatia, história de sangramento.</li><li><strong>Glicemia/HbA1c</strong>: diabéticos.</li><li><strong>β-hCG</strong>: mulher em idade fértil com possibilidade de gestação.</li><li>Paciente ASA I em cirurgia de pequeno porte pode não precisar de nenhum exame.</li></ul><h3>Jejum pré-operatório (ASA)</h3><table><thead><tr><th>O quê</th><th>Jejum mínimo</th></tr></thead><tbody><tr><td>Líquidos claros (água, chá, suco sem polpa, bebida com carboidrato)</td><td><strong>2 h</strong></td></tr><tr><td>Leite materno</td><td><strong>4 h</strong></td></tr><tr><td>Fórmula infantil, leite não humano, refeição leve</td><td><strong>6 h</strong></td></tr><tr><td>Refeição gordurosa, frituras, carne</td><td><strong>8 h</strong></td></tr></tbody></table><h3>Medicações de uso contínuo</h3><table><thead><tr><th>Manter</th><th>Suspender / ajustar</th></tr></thead><tbody><tr><td><ul><li><strong>Betabloqueador</strong> (não iniciar na véspera)</li><li><strong>Estatina</strong></li><li>Maioria dos anti-hipertensivos</li><li>AAS na maioria (prevenção secundária), exceto neurocirurgia, próstata e alguns procedimentos</li><li>Levotiroxina, anticonvulsivantes, inaladores</li><li>Corticoide crônico (considerar dose de estresse)</li></ul></td><td><ul><li><strong>Clopidogrel</strong>: 5 dias antes</li><li><strong>Varfarina</strong>: 5 dias antes (INR &lt; 1,5); ponte com heparina se alto risco trombótico</li><li><strong>DOACs</strong>: 24–48 h (mais se função renal ruim ou cirurgia de alto risco de sangramento)</li><li><strong>Metformina</strong>: no dia da cirurgia</li><li><strong>iSGLT2</strong> (dapagliflozina, empagliflozina): 3 dias antes pelo risco de <strong>cetoacidose euglicêmica</strong></li><li>IECA/BRA: muitos serviços suspendem 24 h antes (hipotensão na indução)</li><li>Insulina basal: reduzir a dose; hipoglicemiantes orais no dia: suspender</li></ul></td></tr></tbody></table><h3>Profilaxias e orientações</h3><ul><li><strong>Consentimento informado</strong> assinado (riscos, benefícios, alternativas).</li><li><strong>Tromboprofilaxia</strong> conforme Caprini.</li><li><strong>Antibioticoprofilaxia</strong> até 60 min antes da incisão (ver aula 9).</li><li>Parar de fumar idealmente ≥ 4–8 semanas antes.</li><li>Banho na véspera; tricotomia só se atrapalhar, com <strong>tricotomizador elétrico</strong>, logo antes da cirurgia (lâmina aumenta infecção).</li><li>Abreviar o jejum com bebida de carboidrato até 2 h antes (protocolo ACERTO/ERAS).</li></ul>"
+  },
+  {
+   "id": "r2",
+   "grupo": "Resumo de referência",
+   "titulo": "2. Pós-operatório (Aula 8)",
+   "par": "g2",
+   "html": "<p>Objetivo: monitorar a recuperação, separar o que é <strong>esperado</strong> do que é <strong>complicação</strong> e intervir cedo.</p><h3>O esperado</h3><ul><li><strong>Resposta metabólica ao trauma</strong>: catabolismo, hiperglicemia, retenção de sódio e água (ADH, aldosterona) e oligúria leve nas primeiras 24–48 h.</li><li>Febre baixa nas primeiras <strong>24–48 h</strong>, geralmente pela resposta inflamatória à cirurgia.</li><li>Íleo fisiológico: intestino delgado volta em <strong>horas (0–24 h)</strong>, estômago em <strong>24–48 h</strong>, cólon em <strong>48–72 h</strong>.</li></ul><h3>Dor</h3><ul><li><strong>Analgesia multimodal</strong>: dipirona/paracetamol + AINE (se sem contraindicação) + bloqueios/anestesia regional; opioide para resgate ou dor intensa.</li><li>Dor bem controlada permite deambular, tossir e respirar fundo (menos atelectasia e TEV).</li></ul><h3>Náusea e vômitos (NVPO)</h3><p>Fatores de Apfel: <strong>sexo feminino, não fumante, história de NVPO/cinetose, uso de opioide no pós-operatório</strong>. Profilaxia: ondansetrona, dexametasona.</p><h3>Íleo pós-operatório prolongado</h3><p>Distensão, náusea, sem eliminação de flatos por mais de 3–5 dias. Conduta: <strong>deambulação</strong>, corrigir <strong>K e Mg</strong>, reduzir opioide, <strong>SNG</strong> se vômitos ou distensão importante. Se não melhora, investigar obstrução, abscesso ou fístula (TC).</p><h3>Febre pós-operatória: os \"5 W\" pelo tempo</h3><table><thead><tr><th>Quando</th><th>Causa</th></tr></thead><tbody><tr><td>1º–2º dia</td><td><strong>Wind</strong>: resposta inflamatória, atelectasia; depois pneumonia (aspiração, ventilação)</td></tr><tr><td>3º–5º dia</td><td><strong>Water</strong>: infecção urinária (sonda vesical); também flebite de acesso</td></tr><tr><td>5º–7º dia</td><td><strong>Wound</strong>: infecção de sítio cirúrgico; <strong>fístula/deiscência de anastomose</strong></td></tr><tr><td>≥ 5º–7º dia</td><td><strong>Walking</strong>: TVP/TEP; abscesso intracavitário</td></tr><tr><td>Qualquer momento</td><td><strong>Wonder drugs</strong>: febre por medicamento, reação transfusional</td></tr></tbody></table><p>Febre muito precoce (horas) com instabilidade: pensar em <strong>hipertermia maligna</strong> (intraoperatória: hipercapnia, rigidez, taquicardia; tratar com <strong>dantrolene</strong>), infecção necrotizante por clostrídio/estreptococo ou reação transfusional.</p><h3>Complicações por sistema</h3><ul><li><strong>Respiratórias</strong>: atelectasia (prevenção com fisioterapia, espirometria de incentivo, analgesia), pneumonia hospitalar, TEP.</li><li><strong>Urinárias</strong>: <strong>retenção urinária</strong> (anestesia raquidiana, opioide, homem idoso) → sondagem de alívio; ITU associada a sonda.</li><li><strong>Cardiovasculares</strong>: IAM perioperatório (muitas vezes silencioso, só troponina), FA, hipotensão.</li><li><strong>Ferida</strong>: seroma, hematoma, ISC, <strong>deiscência</strong>. Sinal de alerta: saída de líquido <strong>serossanguinolento (\"água de carne\")</strong> pela ferida por volta do 5º–8º dia → pode virar <strong>evisceração</strong>: cobrir com compressa estéril úmida e levar ao centro cirúrgico.</li><li><strong>Anastomose</strong>: <strong>fístula/deiscência</strong> por volta do 5º–7º dia: febre, dor, taquicardia, saída de secreção entérica, fecaloide ou bile pelo dreno, peritonite.</li></ul><h3>Tromboprofilaxia</h3><ul><li>Todos: <strong>deambulação precoce</strong>.</li><li>Risco moderado/alto: <strong>enoxaparina 40 mg SC 1×/dia</strong> ou heparina não fracionada 5.000 UI SC 8/8 ou 12/12 h; compressão pneumática intermitente quando há risco de sangramento.</li><li>Cirurgia oncológica abdominopélvica de grande porte: estender por até 4 semanas.</li></ul><h3>Alta</h3><p>Dor controlada com medicação oral, tolerando dieta, deambulando, diurese presente, sem sinais de complicação e com orientação de retorno e sinais de alarme.</p>"
+  },
+  {
+   "id": "r3",
+   "grupo": "Resumo de referência",
+   "titulo": "3. Infecção de sítio cirúrgico (Aula 9)",
+   "par": "g3",
+   "html": "<h3>Classificação da ferida operatória pelo potencial de contaminação</h3><table><thead><tr><th>Classe</th><th>Definição</th><th>Exemplos</th><th>Taxa aprox. de ISC</th></tr></thead><tbody><tr><td><strong>Limpa</strong></td><td>Sem inflamação, <strong>sem abrir</strong> trato respiratório, digestivo, genital ou urinário</td><td>Herniorrafia, tireoidectomia, mastectomia, cirurgia ortopédica eletiva</td><td>1–5%</td></tr><tr><td><strong>Limpa-contaminada</strong></td><td>Abertura <strong>controlada</strong> desses tratos, sem contaminação fora do comum</td><td>Colecistectomia eletiva, gastrectomia, histerectomia, apendicectomia não perfurada</td><td>3–11%</td></tr><tr><td><strong>Contaminada</strong></td><td>Quebra importante da técnica, extravasamento grosseiro do TGI, inflamação aguda <strong>não purulenta</strong>, ferida traumática recente</td><td>Colectomia com extravasamento, apendicite aguda inflamada, trauma aberto recente</td><td>10–17%</td></tr><tr><td><strong>Suja / infectada</strong></td><td><strong>Pus</strong>, víscera perfurada, trauma antigo com tecido desvitalizado ou corpo estranho</td><td>Peritonite fecal, abscesso, apendicite perfurada</td><td>&gt; 27%</td></tr></tbody></table><h3>Antibioticoprofilaxia</h3><ul><li>Indicada em cirurgia <strong>limpa-contaminada</strong>, <strong>contaminada</strong> e na <strong>limpa com prótese/implante</strong> ou em que uma infecção seria catastrófica (cardíaca, neuro, vascular).</li><li>Na ferida <strong>suja</strong> o antibiótico é <strong>tratamento</strong>, não profilaxia.</li><li>Droga mais usada: <strong>cefazolina 2 g IV</strong> (3 g se ≥ 120 kg), <strong>até 60 min antes da incisão</strong>. Vancomicina (alergia grave ou MRSA): iniciar 60–120 min antes.</li><li>Cirurgia colorretal: cefazolina + <strong>metronidazol</strong> (ou cefoxitina) para anaeróbios.</li><li><strong>Repetir a dose</strong> de cefazolina se a cirurgia passar de <strong>4 h</strong> ou se o sangramento for &gt; 1.500 mL.</li><li>Duração: <strong>dose única ou no máximo 24 h</strong>. Prolongar não reduz infecção e aumenta resistência e <em>C. difficile</em>.</li></ul><h3>Critérios de ISC (CDC/ANVISA)</h3><p>Ocorre em até <strong>30 dias</strong> da cirurgia, ou até <strong>90 dias</strong> se houver implante (para as profundas e de órgão/espaço).</p><table><thead><tr><th>Tipo</th><th>Atinge</th><th>Achados</th><th>Tratamento</th></tr></thead><tbody><tr><td><strong>Incisional superficial</strong></td><td>Pele e subcutâneo</td><td>Drenagem purulenta, cultura positiva, dor, rubor, calor, edema; ferida aberta pelo cirurgião</td><td><strong>Abrir a ferida, drenar</strong>, curativo; ATB só se celulite extensa ou sinais sistêmicos</td></tr><tr><td><strong>Incisional profunda</strong></td><td>Fáscia e músculo</td><td>Pus da camada profunda, deiscência espontânea com febre, abscesso</td><td>Drenagem/debridamento + ATB</td></tr><tr><td><strong>Órgão/espaço</strong></td><td>Qualquer estrutura manipulada além da parede (cavidade)</td><td>Abscesso intra-abdominal, pus no dreno, achado em imagem</td><td><strong>Drenagem percutânea guiada por imagem</strong> ou reabordagem + ATB</td></tr></tbody></table><p>Agentes: pele → <strong><em>S. aureus</em></strong> (o mais comum) e estafilococos coagulase-negativos; cirurgias do TGI → <strong>Gram-negativos entéricos e anaeróbios</strong>.</p><h3>Prevenção</h3><ul><li>Antissepsia com <strong>clorexidina alcoólica</strong>; banho pré-operatório.</li><li>Tricotomia só se necessário, com tricotomizador, logo antes.</li><li><strong>Glicemia</strong> perioperatória &lt; 180–200 mg/dL; <strong>normotermia</strong>; oxigenação adequada.</li><li>Parar de fumar; tratar infecções à distância antes de cirurgia eletiva; tempo cirúrgico e técnica adequados.</li></ul>"
+  },
+  {
+   "id": "r4",
+   "grupo": "Resumo de referência",
+   "titulo": "4. Nutrição em cirurgia (Aula 10)",
+   "par": "g4",
+   "html": "<p>Desnutrição aumenta infecção, deiscência, tempo de internação e mortalidade. Por isso <strong>todo paciente cirúrgico deve ser triado</strong>.</p><h3>Avaliar</h3><ul><li>Triagem: <strong>NRS-2002</strong> (escore ≥ 3 = risco nutricional) ou <strong>ASG</strong> (avaliação subjetiva global: A bem nutrido, B moderado, C grave).</li><li>Sinais de <strong>risco nutricional grave</strong> (ESPEN): perda de peso &gt; 10–15% em 6 meses, IMC &lt; 18,5, ASG C ou NRS ≥ 5, albumina &lt; 3,0 g/dL (sem disfunção renal/hepática).</li><li>Nesses casos, em cirurgia eletiva: <strong>terapia nutricional por 7–14 dias antes</strong>, mesmo que adie a cirurgia.</li><li>Necessidades: <strong>25–30 kcal/kg/dia</strong> e <strong>1,5 g/kg/dia de proteína</strong> (até 2 g/kg no paciente grave).</li></ul><h3>Escolher a via: \"se o intestino funciona, use-o\"</h3><table><thead><tr><th>Via</th><th>Quando</th><th>Observações</th></tr></thead><tbody><tr><td><strong>Oral</strong> + suplemento</td><td>Come, mas não atinge a meta</td><td>Primeira opção</td></tr><tr><td><strong>Enteral</strong></td><td>TGI funciona, mas não come o suficiente (ingestão &lt; 50–60% da meta)</td><td><strong>Preserva a barreira intestinal</strong> (menos translocação), mais barata e com menos infecção. Iniciar <strong>precocemente (24–48 h)</strong>. Sonda nasoenteral (pós-pilórica se risco de aspiração ou gastroparesia); <strong>gastrostomia/jejunostomia se &gt; 4–6 semanas</strong></td></tr><tr><td><strong>Parenteral</strong></td><td>TGI <strong>não pode ser usado</strong> (obstrução, íleo prolongado, fístula de alto débito, intestino curto) ou enteral não atinge a meta</td><td>Acesso <strong>central</strong> (periférica só se osmolaridade &lt; 900 mOsm/L). Complicações: <strong>infecção de cateter</strong>, hiperglicemia, esteatose, distúrbios eletrolíticos</td></tr></tbody></table><h3>Síndrome de realimentação</h3><p>Desnutrido grave que recebe nutrição rápido demais: a insulina joga eletrólitos para dentro da célula → <strong>hipofosfatemia</strong> (marca principal), hipocalemia, hipomagnesemia, deficiência de tiamina, retenção hídrica; pode causar arritmia e insuficiência respiratória. Prevenção: iniciar com <strong>baixa oferta calórica</strong>, aumentar aos poucos, repor <strong>tiamina</strong> e eletrólitos.</p><h3>Imunonutrição e jejum</h3><ul><li><strong>Imunonutrição</strong> (arginina, ômega-3, nucleotídeos) por <strong>5–7 dias antes</strong> de cirurgia oncológica de grande porte do TGI (esôfago, estômago, pâncreas, cabeça e pescoço).</li><li><strong>Abreviação do jejum</strong> (ACERTO/ERAS): bebida com carboidrato (maltodextrina) até 2 h antes reduz resistência à insulina e catabolismo.</li><li><strong>Realimentação precoce</strong>: dieta oral nas primeiras 24 h após a maioria das cirurgias, inclusive com anastomose.</li></ul><h3>Urgência e emergência</h3><p>Paciente grave: iniciar <strong>enteral precoce</strong> (24–48 h) assim que estiver <strong>hemodinamicamente estável</strong>; parenteral se a enteral for impossível ou insuficiente.</p>"
+  },
+  {
+   "id": "r5",
+   "grupo": "Resumo de referência",
+   "titulo": "5. Cirurgia segura (Aula 11)",
+   "par": "g5",
+   "html": "<h3>Contexto histórico</h3><ul><li>2004: OMS cria a <strong>Aliança Mundial para a Segurança do Paciente</strong>.</li><li><strong>1º Desafio Global</strong> (2005): <strong>\"Uma assistência limpa é uma assistência mais segura\"</strong>, foco na <strong>higiene das mãos</strong> e infecção relacionada à assistência.</li><li><strong>2º Desafio Global</strong> (2007–2008): <strong>\"Cirurgias seguras salvam vidas\"</strong> → <strong>Lista de Verificação de Segurança Cirúrgica</strong> (checklist).</li><li>Estudo de validação em 8 países (Haynes, 2009): mortalidade caiu de ~1,5% para ~0,8% e complicações de ~11% para ~7%.</li><li>3º Desafio (2017): \"Medicação sem danos\".</li><li>No Brasil: <strong>Programa Nacional de Segurança do Paciente</strong> (Portaria MS 529/2013) e <strong>RDC 36/2013</strong> (Núcleo de Segurança do Paciente e notificação de eventos adversos).</li></ul><h3>O checklist da OMS: três momentos</h3><table><thead><tr><th>Momento</th><th>Quando</th><th>O que se confere</th></tr></thead><tbody><tr><td><strong>Entrada</strong> (sign in)</td><td>Antes da <strong>indução anestésica</strong></td><td>Identidade, sítio, procedimento e <strong>consentimento</strong> confirmados pelo paciente; <strong>sítio demarcado</strong>; checagem do equipamento e medicações anestésicas; <strong>oxímetro</strong> funcionando; <strong>alergias</strong>; <strong>via aérea difícil/risco de aspiração</strong>; risco de perda sanguínea &gt; 500 mL (7 mL/kg em criança)</td></tr><tr><td><strong>Pausa cirúrgica</strong> (time out)</td><td>Antes da <strong>incisão</strong></td><td>Todos se apresentam por nome e função; confirmação verbal de paciente, sítio e procedimento; eventos críticos previstos pelo cirurgião, anestesista e enfermagem (esterilização confirmada); <strong>antibioticoprofilaxia nos últimos 60 min</strong>; <strong>exames de imagem</strong> disponíveis</td></tr><tr><td><strong>Saída</strong> (sign out)</td><td>Antes de o paciente <strong>sair da sala</strong></td><td>Registro do procedimento realizado; <strong>contagem de instrumentais, compressas e agulhas</strong>; identificação das <strong>peças/amostras</strong>; problemas com equipamentos; cuidados principais na recuperação</td></tr></tbody></table><p>Um membro da equipe (geralmente a enfermagem circulante) <strong>coordena</strong> o checklist em voz alta; a equipe só segue quando cada item foi confirmado.</p><h3>As 6 metas internacionais de segurança do paciente</h3><ol><li>Identificar corretamente o paciente.</li><li>Melhorar a comunicação entre profissionais.</li><li>Segurança na prescrição, uso e administração de medicamentos (alta vigilância).</li><li><strong>Cirurgia segura</strong> (local, procedimento e paciente corretos).</li><li>Higiene das mãos.</li><li>Reduzir risco de quedas e lesões por pressão.</li></ol><h3>Cultura de segurança</h3><ul><li><strong>Modelo do queijo suíço</strong> (James Reason): o erro passa quando falhas em várias barreiras se alinham; a solução é reforçar sistemas, não só culpar pessoas.</li><li><strong>Cultura justa</strong>: notificar eventos adversos e quase-erros sem punição automática, para aprender com eles.</li><li><strong>Never events</strong>: cirurgia no lado/local/paciente errado, <strong>corpo estranho retido</strong>.</li><li>Comunicação estruturada: <strong>SBAR</strong> (Situação, Breve histórico, Avaliação, Recomendação) e confirmação de ordens verbais (\"read-back\").</li></ul>"
+  },
+  {
+   "id": "r6",
+   "grupo": "Resumo de referência",
+   "titulo": "6. Dispositivos: sondas, drenos, cateteres e cânulas (Aula 12)",
+   "par": "g6",
+   "html": "<h3>Sondas</h3><table><thead><tr><th>Sonda</th><th>Para quê</th><th>Pontos-chave</th></tr></thead><tbody><tr><td><strong>Nasogástrica</strong> (Levine, calibrosa)</td><td><strong>Descompressão/drenagem</strong> gástrica (obstrução, íleo, vômitos), lavagem; dieta por pouco tempo</td><td>Medida: <strong>ponta do nariz → lóbulo da orelha → apêndice xifoide</strong>. Confirmar posição: <strong>RX</strong> é o padrão-ouro; pH do aspirado ≤ 5,5 ajuda; ausculta do ar não é confiável</td></tr><tr><td><strong>Nasoenteral</strong> (Dobbhoff, fina, com fio-guia)</td><td><strong>Alimentação</strong> por mais tempo</td><td><strong>RX obrigatório</strong> antes de iniciar a dieta; posição pós-pilórica se risco de aspiração</td></tr><tr><td><strong>Orogástrica</strong></td><td>Mesmo uso da NG</td><td>Usar quando a via nasal é contraindicada: <strong>suspeita de fratura de base de crânio</strong> (olhos de guaxinim, sinal de Battle, rinorreia/otorreia liquórica) e em neonatos</td></tr><tr><td><strong>Vesical</strong></td><td><strong>Alívio</strong> (intermitente) ou <strong>demora</strong> (Foley de 2 ou 3 vias: diurese horária, retenção, irrigação)</td><td>Técnica <strong>asséptica</strong>; insuflar o balão só após sair urina. <strong>Contraindicada na suspeita de lesão de uretra</strong>: sangue no meato, hematoma perineal/escrotal, próstata alta ao toque → uretrocistografia retrógrada; se precisar drenar, <strong>cistostomia</strong>. Retirar o quanto antes (ITU)</td></tr></tbody></table><h3>Drenos</h3><ul><li>Servem para retirar sangue, pus, bile, linfa, ar ou secreções e para <strong>vigiar</strong> (sangramento, fístula).</li><li><strong>Abertos/passivos</strong>: <strong>Penrose</strong> (lâmina de látex; drena por <strong>capilaridade e gravidade</strong>); maior risco de infecção retrógrada.</li><li><strong>Fechados/ativos (aspiração)</strong>: <strong>Portovac</strong>, <strong>Jackson-Pratt</strong>, Blake: pressão negativa, sistema fechado, menos infecção.</li><li>Anotar <strong>aspecto e volume</strong>: mudança para bilioso, fecaloide ou purulento sugere fístula ou abscesso; débito sanguinolento alto sugere sangramento.</li></ul><h3>Drenagem de tórax</h3><ul><li>Indicações: pneumotórax (principalmente hipertensivo após descompressão, ou em ventilação mecânica), hemotórax, empiema, derrame volumoso.</li><li>Local: <strong>4º ou 5º espaço intercostal, entre as linhas axilares anterior e média</strong> (\"triângulo de segurança\"), na <strong>borda superior da costela de baixo</strong>: o feixe vasculonervoso corre na borda inferior de cada costela.</li><li><strong>Selo d'água</strong>: o tubo fica cerca de 2 cm submerso; <strong>oscilação</strong> com a respiração = dreno pérvio; <strong>borbulhamento</strong> contínuo = escape aéreo (fístula ou vazamento no sistema).</li><li>Frasco sempre <strong>abaixo do nível do tórax</strong>; não clampear de rotina (risco de pneumotórax hipertensivo).</li><li>Hemotórax: drenagem inicial &gt; 1.500 mL ou &gt; 200 mL/h por 2–4 h → toracotomia.</li></ul><h3>Acessos vasculares</h3><ul><li><strong>Periférico</strong>: o fluxo depende do calibre e do comprimento: <strong>menor número de gauge = maior calibre</strong> (14G &gt; 16G &gt; 18G &gt; 20G &gt; 22G &gt; 24G). No trauma/choque: <strong>dois acessos periféricos calibrosos</strong> (14–16G), que infundem mais rápido que o cateter central comum (mais longo).</li><li><strong>Central</strong>: indicações: drogas vasoativas, NPT, quimioterapia, acesso periférico impossível, monitorização (PVC), hemodiálise. Técnica de <strong>Seldinger</strong> (agulha → fio-guia → dilatador → cateter), de preferência <strong>guiada por ultrassom</strong>.</li></ul><table><thead><tr><th>Sítio central</th><th>Vantagem</th><th>Desvantagem</th></tr></thead><tbody><tr><td><strong>Jugular interna</strong></td><td>Fácil por USG, compressível</td><td>Desconforto, risco intermediário</td></tr><tr><td><strong>Subclávia</strong></td><td><strong>Menor taxa de infecção</strong> e trombose, confortável</td><td><strong>Maior risco de pneumotórax</strong>, não compressível</td></tr><tr><td><strong>Femoral</strong></td><td>Rápida na emergência/PCR, sem pneumotórax</td><td><strong>Maior infecção e trombose</strong></td></tr></tbody></table><ul><li>Após jugular ou subclávia: <strong>RX de tórax</strong> para ver a ponta (junção da veia cava superior com o átrio) e excluir pneumotórax.</li><li>Complicações: pneumotórax, punção arterial, hematoma, arritmia (fio-guia no coração), <strong>embolia gasosa</strong> (inserir/retirar em Trendelenburg, ocluir a via), infecção de corrente sanguínea, trombose.</li><li>Outros: <strong>PICC</strong> (inserção periférica, ponta central), cateteres de longa permanência (Port-a-cath totalmente implantado, Hickman), <strong>intraósseo</strong> quando o venoso falha na emergência.</li></ul><h3>Cânulas e via aérea</h3><ul><li><strong>Orofaríngea (Guedel)</strong>: só em paciente <strong>inconsciente, sem reflexo de vômito</strong>. Tamanho: da <strong>comissura labial ao ângulo da mandíbula</strong> (ou lóbulo da orelha).</li><li><strong>Nasofaríngea</strong>: tolerada pelo paciente semiconsciente; <strong>contraindicada na suspeita de fratura de base de crânio</strong>.</li><li><strong>Tubo orotraqueal</strong>: via aérea definitiva (cuff abaixo das cordas vocais).</li><li><strong>Traqueostomia</strong>: via aérea prolongada (cânula com cuff, cânula interna para limpeza).</li><li><strong>Cricotireoidostomia</strong>: via aérea cirúrgica de emergência quando não se consegue intubar nem ventilar; a <strong>cirúrgica é contraindicada em menores de ~12 anos</strong> → nelas, cricotireoidostomia <strong>por punção</strong>.</li></ul>"
+  },
+  {
+   "id": "g0",
+   "grupo": "Guia prioritário",
+   "titulo": "Como usar (comece por aqui)",
+   "par": "r0",
+   "html": "<p>Esta é a <strong>parte prioritária</strong>: regras curtas do que mais cai, pareadas com o resumo.</p><ol><li>Leia a parte do resumo.</li><li>Leia aqui a parte correspondente.</li><li>Faça os <strong>flashcards</strong>.</li><li>Termine com o <strong>quiz</strong> e os <strong>casos</strong>.</li></ol><p>Prioridade provável: <strong>pré e pós-operatório</strong> e <strong>ISC</strong> (temas de raciocínio clínico) &gt; <strong>cirurgia segura</strong> e <strong>dispositivos</strong> (números e etapas, questão direta; último material enviado pela turma) &gt; <strong>nutrição</strong>.</p>"
+  },
+  {
+   "id": "g1",
+   "grupo": "Guia prioritário",
+   "titulo": "Pré-operatório: números e condutas",
+   "par": "r1",
+   "html": "<ul><li><strong>ASA II</strong> = doença leve controlada (inclui fumante e gestante); <strong>III</strong> = grave com limitação; <strong>IV</strong> = ameaça à vida; <strong>V</strong> = moribundo; <strong>VI</strong> = morte encefálica. <strong>E</strong> = emergência.</li><li>≥ <strong>4 METs</strong> (2 lances de escada) = boa reserva.</li><li>Lee: cirurgia de alto risco, DAC, ICC, AVC, DM com insulina, Cr &gt; 2.</li><li>Exames <strong>guiados pela clínica</strong>, não de rotina; β-hCG na mulher em idade fértil.</li><li>Jejum: <strong>2 h</strong> líquidos claros, <strong>4 h</strong> leite materno, <strong>6 h</strong> leve/fórmula, <strong>8 h</strong> gordurosa.</li><li><strong>Manter</strong> betabloqueador e estatina. <strong>Suspender</strong>: clopidogrel e varfarina 5 dias, DOAC 24–48 h, metformina no dia, <strong>iSGLT2 3 dias</strong>.</li><li>Tricotomia só se necessário, com <strong>tricotomizador</strong>, logo antes.</li><li>Consentimento informado sempre.</li></ul><blockquote><strong>Pegadinha:</strong> Não se inicia betabloqueador na véspera da cirurgia para \"proteger o coração\" (aumenta AVC e mortalidade). Quem já usa, mantém.</blockquote><blockquote><strong>Pegadinha:</strong> História familiar de complicação grave com anestesia = pensar em hipertermia maligna (dantrolene).</blockquote>"
+  },
+  {
+   "id": "g2",
+   "grupo": "Guia prioritário",
+   "titulo": "Pós-operatório: o que é esperado e o que não é",
+   "par": "r2",
+   "html": "<ul><li>Volta do trânsito: delgado <strong>0–24 h</strong>, estômago <strong>24–48 h</strong>, cólon <strong>48–72 h</strong>.</li><li>Íleo prolongado: deambular, corrigir <strong>K e Mg</strong>, reduzir opioide, SNG se vomita.</li><li>Febre: <strong>1–2 d</strong> inflamatória/atelectasia → <strong>3–5 d</strong> urina → <strong>5–7 d</strong> ferida e anastomose → <strong>≥ 7 d</strong> TVP/TEP e abscesso → drogas a qualquer momento.</li><li>\"Água de carne\" na ferida no 5º–8º dia = <strong>deiscência</strong> → compressa úmida estéril e centro cirúrgico.</li><li>Secreção entérica/bile no dreno no 5º–7º dia = <strong>fístula de anastomose</strong>.</li><li>Retenção urinária após raqui → <strong>sondagem de alívio</strong>.</li><li>NVPO (Apfel): mulher, não fumante, história de NVPO/cinetose, opioide.</li><li>Tromboprofilaxia: deambular + <strong>enoxaparina 40 mg SC/dia</strong> no risco moderado/alto.</li><li>Dor: <strong>analgesia multimodal</strong>, poupar opioide.</li></ul><blockquote><strong>Cai na prova:</strong> Questões costumam dar o dia do pós-operatório e pedir a causa mais provável da febre.</blockquote>"
+  },
+  {
+   "id": "g3",
+   "grupo": "Guia prioritário",
+   "titulo": "ISC: classificação e profilaxia",
+   "par": "r3",
+   "html": "<ul><li><strong>Limpa</strong>: não abre tratos (hérnia, tireoide). <strong>Limpa-contaminada</strong>: abre de forma controlada (colecistectomia eletiva). <strong>Contaminada</strong>: extravasamento grosseiro, inflamação não purulenta, trauma recente. <strong>Suja</strong>: pus, perfuração.</li><li>Profilaxia: limpa-contaminada, contaminada e limpa com <strong>prótese</strong>. Suja = <strong>tratamento</strong>.</li><li><strong>Cefazolina 2 g até 60 min antes</strong> da incisão; repetir após <strong>4 h</strong> ou sangramento &gt; 1.500 mL; parar em até <strong>24 h</strong>.</li><li>Colorretal: + metronidazol.</li><li>ISC: até <strong>30 dias</strong> (<strong>90</strong> com implante).</li><li>Superficial → <strong>abrir e drenar</strong>; órgão/espaço → <strong>drenagem guiada por imagem</strong> ou reoperação.</li><li>Agente mais comum: <strong><em>S. aureus</em></strong>.</li><li>Prevenção: clorexidina alcoólica, glicemia &lt; 180–200, normotermia, sem lâmina.</li></ul><blockquote><strong>Pegadinha:</strong> Manter antibiótico \"por segurança\" até tirar os pontos ou o dreno não reduz infecção: profilaxia é dose única ou ≤ 24 h.</blockquote>"
+  },
+  {
+   "id": "g4",
+   "grupo": "Guia prioritário",
+   "titulo": "Nutrição: decisões rápidas",
+   "par": "r4",
+   "html": "<ul><li>Triar todos: <strong>NRS-2002 ≥ 3</strong> = risco; ASG C = desnutrição grave.</li><li>Risco grave (perda &gt; 10–15% em 6 meses, IMC &lt; 18,5, albumina &lt; 3): <strong>7–14 dias de terapia nutricional antes</strong> da eletiva.</li><li>Ordem: <strong>oral → enteral → parenteral</strong>. Intestino funcionando = use-o.</li><li>Enteral precoce (24–48 h); &gt; 4–6 semanas → <strong>gastrostomia/jejunostomia</strong>.</li><li>Parenteral: TGI inutilizável; acesso central; risco de infecção.</li><li>Realimentação: <strong>hipofosfatemia</strong>; começar devagar + tiamina.</li><li>Imunonutrição <strong>5–7 dias</strong> antes de cirurgia oncológica grande do TGI.</li><li>Carboidrato líquido até <strong>2 h</strong> antes; dieta oral precoce após a cirurgia.</li><li>Metas: 25–30 kcal/kg/dia; proteína 1,5 g/kg/dia.</li></ul>"
+  },
+  {
+   "id": "g5",
+   "grupo": "Guia prioritário",
+   "titulo": "Cirurgia segura: o checklist em uma tela",
+   "par": "r5",
+   "html": "<ul><li>1º desafio OMS: <strong>higiene das mãos</strong> (\"assistência limpa\"). 2º: <strong>\"Cirurgias seguras salvam vidas\"</strong> → checklist.</li><li><strong>Sign in</strong> (antes da <strong>indução</strong>): identidade, sítio demarcado, consentimento, oxímetro, alergias, via aérea difícil, perda &gt; 500 mL.</li><li><strong>Time out</strong> (antes da <strong>incisão</strong>): apresentação da equipe, confirmação verbal, eventos críticos, <strong>ATB nos últimos 60 min</strong>, imagens disponíveis.</li><li><strong>Sign out</strong> (antes de <strong>sair da sala</strong>): procedimento registrado, <strong>contagem</strong> de instrumentais, compressas e agulhas, <strong>amostras identificadas</strong>, problemas de equipamento.</li><li>Brasil: PNSP (Portaria 529/2013) e RDC 36/2013.</li><li>6 metas: identificação, comunicação, medicamentos, cirurgia segura, mãos, quedas/LPP.</li><li>Queijo suíço (Reason); never events: lado errado, corpo estranho retido.</li></ul><blockquote><strong>Pegadinha:</strong> A antibioticoprofilaxia e a apresentação da equipe são conferidas no time out, não no sign in. A contagem de compressas é no sign out.</blockquote>"
+  },
+  {
+   "id": "g6",
+   "grupo": "Guia prioritário",
+   "titulo": "Dispositivos: medidas e contraindicações",
+   "par": "r6",
+   "html": "<ul><li>SNG: <strong>nariz → lóbulo da orelha → xifoide</strong>; confirmar com <strong>RX</strong>.</li><li><strong>Fratura de base de crânio</strong> (guaxinim, Battle, liquorreia): nada pelo nariz → <strong>orogástrica</strong>; sem cânula nasofaríngea.</li><li>Nasoenteral: <strong>RX antes da dieta</strong>.</li><li>Sonda vesical contraindicada se <strong>sangue no meato</strong>, hematoma perineal ou próstata alta → uretrocistografia/cistostomia.</li><li><strong>Penrose</strong> = aberto, capilaridade. <strong>Portovac/Jackson-Pratt</strong> = fechado, aspiração.</li><li>Dreno de tórax: <strong>5º EIC, entre axilares anterior e média, borda superior da costela inferior</strong>.</li><li>Selo d'água: <strong>oscila</strong> = pérvio; <strong>borbulha</strong> = escape de ar; frasco abaixo do tórax.</li><li>Gauge: <strong>número menor = cateter mais calibroso</strong>; trauma: 2 acessos 14–16G.</li><li>Subclávia: menos infecção, mais pneumotórax. Femoral: mais infecção. RX após jugular/subclávia.</li><li>Guedel só no inconsciente sem reflexo; medida comissura → ângulo da mandíbula.</li><li>Cricotireoidostomia <strong>cirúrgica</strong> contraindicada em &lt; 12 anos → por punção.</li></ul><blockquote><strong>Pegadinha:</strong> Ausculta epigástrica do ar injetado não confirma posição da sonda; o padrão-ouro é o RX.</blockquote>"
+  }
+ ],
+ "cards": [
+  {
+   "id": "cir00",
+   "secao": "g1",
+   "tag": "Pré-op",
+   "frente": "Classifique: hipertenso controlado, fumante, sem limitação.",
+   "verso": "<b>ASA II</b> (doença sistêmica leve)."
+  },
+  {
+   "id": "cir01",
+   "secao": "g1",
+   "tag": "Pré-op",
+   "frente": "ASA III × ASA IV.",
+   "verso": "III: doença grave <b>com limitação</b>. IV: doença grave com <b>ameaça constante à vida</b> (IAM &lt; 3 meses, ICC descompensada)."
+  },
+  {
+   "id": "cir02",
+   "secao": "g1",
+   "tag": "Pré-op",
+   "frente": "O que significa a letra E na ASA?",
+   "verso": "Cirurgia de <b>emergência</b>."
+  },
+  {
+   "id": "cir03",
+   "secao": "g1",
+   "tag": "Pré-op",
+   "frente": "Quantos METs indicam boa capacidade funcional?",
+   "verso": "≥ <b>4 METs</b> (subir 2 lances de escada sem parar)."
+  },
+  {
+   "id": "cir04",
+   "secao": "g1",
+   "tag": "Pré-op",
+   "frente": "Seis itens do índice de Lee.",
+   "verso": "Cirurgia de alto risco, DAC, ICC, doença cerebrovascular, DM com insulina, creatinina &gt; 2."
+  },
+  {
+   "id": "cir05",
+   "secao": "g1",
+   "tag": "Pré-op",
+   "frente": "Jejum para líquidos claros, leite materno, refeição leve e gordurosa.",
+   "verso": "<b>2 h</b>, <b>4 h</b>, <b>6 h</b>, <b>8 h</b>."
+  },
+  {
+   "id": "cir06",
+   "secao": "g1",
+   "tag": "Pré-op",
+   "frente": "Quando suspender clopidogrel e varfarina?",
+   "verso": "<b>5 dias</b> antes (varfarina até INR &lt; 1,5)."
+  },
+  {
+   "id": "cir07",
+   "secao": "g1",
+   "tag": "Pré-op",
+   "frente": "Por que suspender iSGLT2 e com quanto tempo?",
+   "verso": "<b>3 dias</b> antes: risco de <b>cetoacidose euglicêmica</b>."
+  },
+  {
+   "id": "cir08",
+   "secao": "g1",
+   "tag": "Pré-op",
+   "frente": "Remédios que se mantêm no dia da cirurgia (exemplos).",
+   "verso": "<b>Betabloqueador</b>, <b>estatina</b>, maioria dos anti-hipertensivos, levotiroxina, anticonvulsivantes."
+  },
+  {
+   "id": "cir09",
+   "secao": "g1",
+   "tag": "Pré-op",
+   "frente": "Como fazer tricotomia?",
+   "verso": "Só se necessário, com <b>tricotomizador elétrico</b>, logo antes da cirurgia; lâmina aumenta infecção."
+  },
+  {
+   "id": "cir10",
+   "secao": "g1",
+   "tag": "Pré-op",
+   "frente": "Exames pré-operatórios de rotina para todos?",
+   "verso": "<b>Não.</b> Guiados por doença, idade e porte; ASA I em cirurgia pequena pode dispensar."
+  },
+  {
+   "id": "cir11",
+   "secao": "g2",
+   "tag": "Pós-op",
+   "frente": "Ordem de retorno do trânsito após cirurgia abdominal.",
+   "verso": "Delgado <b>0–24 h</b>, estômago <b>24–48 h</b>, cólon <b>48–72 h</b>."
+  },
+  {
+   "id": "cir12",
+   "secao": "g2",
+   "tag": "Pós-op",
+   "frente": "Conduta no íleo pós-operatório.",
+   "verso": "Deambular, corrigir <b>K e Mg</b>, reduzir opioide, <b>SNG</b> se vômitos/distensão."
+  },
+  {
+   "id": "cir13",
+   "secao": "g2",
+   "tag": "Pós-op",
+   "frente": "Febre no 3º–5º dia: causa clássica.",
+   "verso": "<b>Infecção urinária</b> (sonda vesical) e flebite."
+  },
+  {
+   "id": "cir14",
+   "secao": "g2",
+   "tag": "Pós-op",
+   "frente": "Febre no 5º–7º dia: causas clássicas.",
+   "verso": "<b>ISC</b> e <b>fístula/deiscência de anastomose</b>."
+  },
+  {
+   "id": "cir15",
+   "secao": "g2",
+   "tag": "Pós-op",
+   "frente": "Febre após o 7º dia: pensar em…",
+   "verso": "<b>TVP/TEP</b> e abscesso intracavitário."
+  },
+  {
+   "id": "cir16",
+   "secao": "g2",
+   "tag": "Pós-op",
+   "frente": "Saída de líquido \"água de carne\" pela ferida no 6º dia.",
+   "verso": "Sinal de <b>deiscência de aponeurose</b> (risco de evisceração): compressa úmida estéril e reoperar."
+  },
+  {
+   "id": "cir17",
+   "secao": "g2",
+   "tag": "Pós-op",
+   "frente": "Fatores de risco de Apfel para NVPO.",
+   "verso": "Mulher, não fumante, história de NVPO/cinetose, opioide no pós-op."
+  },
+  {
+   "id": "cir18",
+   "secao": "g2",
+   "tag": "Pós-op",
+   "frente": "Dose profilática de enoxaparina.",
+   "verso": "<b>40 mg SC 1×/dia</b>."
+  },
+  {
+   "id": "cir19",
+   "secao": "g2",
+   "tag": "Pós-op",
+   "frente": "Homem idoso sem urinar 8 h após raquianestesia, bexiga palpável.",
+   "verso": "<b>Retenção urinária</b> → sondagem de alívio."
+  },
+  {
+   "id": "cir20",
+   "secao": "g3",
+   "tag": "ISC",
+   "frente": "Classifique a colecistectomia eletiva.",
+   "verso": "<b>Limpa-contaminada</b>."
+  },
+  {
+   "id": "cir21",
+   "secao": "g3",
+   "tag": "ISC",
+   "frente": "Classifique a herniorrafia inguinal.",
+   "verso": "<b>Limpa</b>."
+  },
+  {
+   "id": "cir22",
+   "secao": "g3",
+   "tag": "ISC",
+   "frente": "Classifique a laparotomia por apendicite perfurada com pus.",
+   "verso": "<b>Suja/infectada</b>: antibiótico é tratamento."
+  },
+  {
+   "id": "cir23",
+   "secao": "g3",
+   "tag": "ISC",
+   "frente": "Em que cirurgia limpa se faz antibioticoprofilaxia?",
+   "verso": "Com <b>prótese/implante</b> ou em que a infecção seria catastrófica (cardíaca, neuro, vascular)."
+  },
+  {
+   "id": "cir24",
+   "secao": "g3",
+   "tag": "ISC",
+   "frente": "Droga, dose e momento da profilaxia padrão.",
+   "verso": "<b>Cefazolina 2 g IV</b> até <b>60 min antes</b> da incisão (3 g se ≥ 120 kg)."
+  },
+  {
+   "id": "cir25",
+   "secao": "g3",
+   "tag": "ISC",
+   "frente": "Quando repetir a dose de cefazolina?",
+   "verso": "Cirurgia &gt; <b>4 h</b> ou sangramento &gt; <b>1.500 mL</b>."
+  },
+  {
+   "id": "cir26",
+   "secao": "g3",
+   "tag": "ISC",
+   "frente": "Duração da antibioticoprofilaxia.",
+   "verso": "Dose única ou no máximo <b>24 h</b>."
+  },
+  {
+   "id": "cir27",
+   "secao": "g3",
+   "tag": "ISC",
+   "frente": "Prazo para considerar ISC.",
+   "verso": "Até <b>30 dias</b>; <b>90 dias</b> se houver implante."
+  },
+  {
+   "id": "cir28",
+   "secao": "g3",
+   "tag": "ISC",
+   "frente": "Tratamento da ISC incisional superficial.",
+   "verso": "<b>Abrir a ferida, drenar</b> e fazer curativo; ATB só se celulite/sinais sistêmicos."
+  },
+  {
+   "id": "cir29",
+   "secao": "g3",
+   "tag": "ISC",
+   "frente": "Agente mais comum de ISC.",
+   "verso": "<b><i>Staphylococcus aureus</i></b>."
+  },
+  {
+   "id": "cir30",
+   "secao": "g4",
+   "tag": "Nutrição",
+   "frente": "Ponto de corte do NRS-2002.",
+   "verso": "<b>≥ 3</b> = risco nutricional."
+  },
+  {
+   "id": "cir31",
+   "secao": "g4",
+   "tag": "Nutrição",
+   "frente": "Desnutrido grave para cirurgia eletiva: conduta.",
+   "verso": "Terapia nutricional por <b>7–14 dias</b> antes, mesmo adiando."
+  },
+  {
+   "id": "cir32",
+   "secao": "g4",
+   "tag": "Nutrição",
+   "frente": "Vantagem da enteral sobre a parenteral.",
+   "verso": "<b>Preserva a barreira intestinal</b>, menos infecção, mais barata."
+  },
+  {
+   "id": "cir33",
+   "secao": "g4",
+   "tag": "Nutrição",
+   "frente": "Quando trocar sonda por gastrostomia/jejunostomia?",
+   "verso": "Previsão de uso &gt; <b>4–6 semanas</b>."
+  },
+  {
+   "id": "cir34",
+   "secao": "g4",
+   "tag": "Nutrição",
+   "frente": "Marca laboratorial da síndrome de realimentação.",
+   "verso": "<b>Hipofosfatemia</b> (com hipoK e hipoMg)."
+  },
+  {
+   "id": "cir35",
+   "secao": "g4",
+   "tag": "Nutrição",
+   "frente": "Imunonutrição: o que e quando.",
+   "verso": "Arginina, ômega-3, nucleotídeos por <b>5–7 dias antes</b> de cirurgia oncológica grande do TGI."
+  },
+  {
+   "id": "cir36",
+   "secao": "g4",
+   "tag": "Nutrição",
+   "frente": "Metas de energia e proteína.",
+   "verso": "<b>25–30 kcal/kg/dia</b>; <b>1,5 g/kg/dia</b> de proteína."
+  },
+  {
+   "id": "cir37",
+   "secao": "g5",
+   "tag": "Cirurgia segura",
+   "frente": "Tema do 1º e do 2º Desafio Global da OMS.",
+   "verso": "1º: \"<b>Assistência limpa</b>\" (higiene das mãos). 2º: \"<b>Cirurgias seguras salvam vidas</b>\" (checklist)."
+  },
+  {
+   "id": "cir38",
+   "secao": "g5",
+   "tag": "Cirurgia segura",
+   "frente": "Três momentos do checklist e quando ocorrem.",
+   "verso": "<b>Sign in</b> antes da indução; <b>time out</b> antes da incisão; <b>sign out</b> antes de sair da sala."
+  },
+  {
+   "id": "cir39",
+   "secao": "g5",
+   "tag": "Cirurgia segura",
+   "frente": "O que se confere no sign in?",
+   "verso": "Identidade, sítio demarcado, procedimento, consentimento, equipamento anestésico, <b>oxímetro</b>, <b>alergias</b>, via aérea difícil, perda &gt; 500 mL."
+  },
+  {
+   "id": "cir40",
+   "secao": "g5",
+   "tag": "Cirurgia segura",
+   "frente": "O que se confere no time out?",
+   "verso": "Apresentação da equipe, confirmação verbal, eventos críticos, <b>ATB nos últimos 60 min</b>, imagens disponíveis."
+  },
+  {
+   "id": "cir41",
+   "secao": "g5",
+   "tag": "Cirurgia segura",
+   "frente": "O que se confere no sign out?",
+   "verso": "Procedimento registrado, <b>contagem de instrumentais, compressas e agulhas</b>, amostras identificadas, problemas de equipamento."
+  },
+  {
+   "id": "cir42",
+   "secao": "g5",
+   "tag": "Cirurgia segura",
+   "frente": "Normas brasileiras de segurança do paciente.",
+   "verso": "<b>Portaria MS 529/2013</b> (PNSP) e <b>RDC 36/2013</b> (Núcleo de Segurança do Paciente)."
+  },
+  {
+   "id": "cir43",
+   "secao": "g5",
+   "tag": "Cirurgia segura",
+   "frente": "Modelo do queijo suíço.",
+   "verso": "James Reason: o erro passa quando falhas em várias barreiras se alinham; foco no sistema."
+  },
+  {
+   "id": "cir44",
+   "secao": "g6",
+   "tag": "Dispositivos",
+   "frente": "Como medir a SNG?",
+   "verso": "<b>Ponta do nariz → lóbulo da orelha → apêndice xifoide</b>."
+  },
+  {
+   "id": "cir45",
+   "secao": "g6",
+   "tag": "Dispositivos",
+   "frente": "Padrão-ouro para confirmar posição de sonda.",
+   "verso": "<b>Radiografia</b>."
+  },
+  {
+   "id": "cir46",
+   "secao": "g6",
+   "tag": "Dispositivos",
+   "frente": "Contraindicação de sonda nasal e de cânula nasofaríngea.",
+   "verso": "<b>Suspeita de fratura de base de crânio</b>."
+  },
+  {
+   "id": "cir47",
+   "secao": "g6",
+   "tag": "Dispositivos",
+   "frente": "Sinais que contraindicam sondagem vesical no trauma.",
+   "verso": "<b>Sangue no meato</b>, hematoma perineal/escrotal, <b>próstata alta</b> ao toque."
+  },
+  {
+   "id": "cir48",
+   "secao": "g6",
+   "tag": "Dispositivos",
+   "frente": "Penrose × Portovac.",
+   "verso": "Penrose: <b>aberto</b>, capilaridade/gravidade. Portovac: <b>fechado</b>, aspiração."
+  },
+  {
+   "id": "cir49",
+   "secao": "g6",
+   "tag": "Dispositivos",
+   "frente": "Onde inserir o dreno de tórax?",
+   "verso": "<b>4º–5º EIC</b>, entre axilares anterior e média, <b>borda superior</b> da costela inferior."
+  },
+  {
+   "id": "cir50",
+   "secao": "g6",
+   "tag": "Dispositivos",
+   "frente": "Selo d'água: oscilação e borbulhamento.",
+   "verso": "Oscila = <b>pérvio</b>. Borbulha = <b>escape de ar</b>."
+  },
+  {
+   "id": "cir51",
+   "secao": "g6",
+   "tag": "Dispositivos",
+   "frente": "14G ou 22G: qual tem maior fluxo?",
+   "verso": "<b>14G</b> (menor número = maior calibre)."
+  },
+  {
+   "id": "cir52",
+   "secao": "g6",
+   "tag": "Dispositivos",
+   "frente": "Sítio central com menor infecção e o com mais pneumotórax.",
+   "verso": "<b>Subclávia</b> nos dois: menos infecção, mais pneumotórax. Femoral: mais infecção."
+  },
+  {
+   "id": "cir53",
+   "secao": "g6",
+   "tag": "Dispositivos",
+   "frente": "Como prevenir embolia gasosa no cateter central?",
+   "verso": "Inserir/retirar em <b>Trendelenburg</b> e manter as vias ocluídas."
+  },
+  {
+   "id": "cir54",
+   "secao": "g6",
+   "tag": "Dispositivos",
+   "frente": "Indicação e medida da cânula de Guedel.",
+   "verso": "Inconsciente <b>sem reflexo de vômito</b>; comissura labial → ângulo da mandíbula."
+  },
+  {
+   "id": "cir55",
+   "secao": "g6",
+   "tag": "Dispositivos",
+   "frente": "Via aérea cirúrgica em criança de 8 anos.",
+   "verso": "Cricotireoidostomia <b>por punção</b> (a cirúrgica é contraindicada em &lt; 12 anos)."
+  }
+ ],
+ "kahoot": [
+  {
+   "tipo": "q",
+   "n": 1,
+   "pergunta": "Paciente diabético em uso de insulina, com HbA1c 10% e limitação funcional. Classificação ASA?",
+   "opcoes": [
+    "V",
+    "II",
+    "III",
+    "I"
+   ],
+   "certa": 2,
+   "explica": "Doença sistêmica grave, mal controlada, com limitação = ASA III.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 2,
+   "pergunta": "Jejum mínimo para água ou chá antes da anestesia eletiva:",
+   "opcoes": [
+    "Zero",
+    "2 horas",
+    "6 horas",
+    "8 horas"
+   ],
+   "certa": 1,
+   "explica": "Líquidos claros: 2 h.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 3,
+   "pergunta": "Criança em aleitamento materno exclusivo: jejum mínimo de leite materno:",
+   "opcoes": [
+    "2 h",
+    "4 h",
+    "6 h",
+    "8 h"
+   ],
+   "certa": 1,
+   "explica": "Leite materno: 4 h; fórmula: 6 h.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 4,
+   "pergunta": "Qual medicação deve ser MANTIDA no dia da cirurgia?",
+   "opcoes": [
+    "Dapagliflozina",
+    "Metformina",
+    "Clopidogrel",
+    "Betabloqueador"
+   ],
+   "certa": 3,
+   "explica": "Betabloqueador e estatina são mantidos.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 5,
+   "pergunta": "Dapagliflozina antes de cirurgia eletiva deve ser suspensa:",
+   "opcoes": [
+    "Não precisa suspender",
+    "3 dias antes, pelo risco de cetoacidose euglicêmica",
+    "2 semanas antes",
+    "No dia"
+   ],
+   "certa": 1,
+   "explica": "iSGLT2: 3 dias antes.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 6,
+   "pergunta": "Mulher de 28 anos, saudável, para colecistectomia. Exame que não pode faltar se houver chance de gestação:",
+   "opcoes": [
+    "ECG",
+    "β-hCG",
+    "Coagulograma",
+    "RX de tórax"
+   ],
+   "certa": 1,
+   "explica": "β-hCG em mulher em idade fértil.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 7,
+   "pergunta": "4º dia de pós-operatório de colectomia, febre de 38,7 °C, com sonda vesical desde a cirurgia. Causa mais provável?",
+   "opcoes": [
+    "Infecção urinária",
+    "Atelectasia",
+    "Deiscência de anastomose",
+    "Febre medicamentosa"
+   ],
+   "certa": 0,
+   "explica": "3º–5º dia: água (urina) é o clássico, sobretudo com sonda.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 8,
+   "pergunta": "6º dia de pós-operatório de gastrectomia: taquicardia, febre, dor abdominal e saída de líquido bilioso pelo dreno. Hipótese?",
+   "opcoes": [
+    "TVP",
+    "Fístula/deiscência de anastomose",
+    "Pneumonia",
+    "ITU"
+   ],
+   "certa": 1,
+   "explica": "5º–7º dia, secreção entérica no dreno = fístula.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 9,
+   "pergunta": "7º dia após laparotomia: grande quantidade de líquido serossanguinolento pela ferida, que está íntegra. O que sugere?",
+   "opcoes": [
+    "Infecção superficial",
+    "Deiscência de aponeurose (risco de evisceração)",
+    "Seroma simples",
+    "Normal"
+   ],
+   "certa": 1,
+   "explica": "\"Água de carne\" é sinal de alerta de deiscência.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 10,
+   "pergunta": "Retorno do trânsito: qual segmento é o último a voltar?",
+   "opcoes": [
+    "Delgado",
+    "Cólon",
+    "Todos ao mesmo tempo",
+    "Estômago"
+   ],
+   "certa": 1,
+   "explica": "Cólon em 48–72 h.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 11,
+   "pergunta": "Colecistectomia eletiva é classificada como:",
+   "opcoes": [
+    "Contaminada",
+    "Limpa-contaminada",
+    "Suja",
+    "Limpa"
+   ],
+   "certa": 1,
+   "explica": "Abertura controlada do trato biliar.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 12,
+   "pergunta": "Laparotomia por úlcera perfurada com peritonite purulenta:",
+   "opcoes": [
+    "Limpa-contaminada",
+    "Contaminada",
+    "Suja/infectada",
+    "Limpa"
+   ],
+   "certa": 2,
+   "explica": "Pus e víscera perfurada = suja; ATB é terapêutico.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 13,
+   "pergunta": "Antibioticoprofilaxia padrão deve ser feita:",
+   "opcoes": [
+    "Até 60 min antes da incisão",
+    "Só se houver febre",
+    "Após o fechamento",
+    "Na véspera"
+   ],
+   "certa": 0,
+   "explica": "Para ter nível tecidual no momento da incisão.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 14,
+   "pergunta": "Cirurgia com cefazolina iniciada às 8 h ainda em andamento ao meio-dia. Conduta?",
+   "opcoes": [
+    "Nada",
+    "Trocar por vancomicina",
+    "Suspender",
+    "Repetir a dose de cefazolina"
+   ],
+   "certa": 3,
+   "explica": "Redose após 4 h (ou sangramento > 1.500 mL).",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 15,
+   "pergunta": "Duração adequada da antibioticoprofilaxia em cirurgia limpa-contaminada:",
+   "opcoes": [
+    "Até a alta",
+    "7 dias",
+    "Até retirar o dreno",
+    "Dose única ou até 24 h"
+   ],
+   "certa": 3,
+   "explica": "Prolongar não reduz ISC e aumenta resistência.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 16,
+   "pergunta": "ISC incisional superficial sem sinais sistêmicos. Tratamento principal:",
+   "opcoes": [
+    "Abrir a ferida e drenar",
+    "Reoperação",
+    "Antibiótico oral só",
+    "Observação"
+   ],
+   "certa": 0,
+   "explica": "Drenagem é o tratamento.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 17,
+   "pergunta": "Paciente com perda de 15% do peso em 6 meses, albumina 2,6, para gastrectomia eletiva. Conduta?",
+   "opcoes": [
+    "Operar amanhã",
+    "Só suplemento após a cirurgia",
+    "Parenteral por 3 meses",
+    "Terapia nutricional 7–14 dias antes"
+   ],
+   "certa": 3,
+   "explica": "Risco nutricional grave: nutrir antes da eletiva.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 18,
+   "pergunta": "Desnutrido grave inicia nutrição plena e no 2º dia tem fraqueza e arritmia. Qual eletrólito mais caracteriza o quadro?",
+   "opcoes": [
+    "Hipercalcemia",
+    "Hipercalemia",
+    "Hipernatremia",
+    "Hipofosfatemia"
+   ],
+   "certa": 3,
+   "explica": "Síndrome de realimentação.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 19,
+   "pergunta": "TGI funcionante, paciente que não consegue comer após AVC, previsão de 3 meses de dieta. Melhor via?",
+   "opcoes": [
+    "Gastrostomia",
+    "Nasoenteral por 3 meses",
+    "Jejum",
+    "Parenteral"
+   ],
+   "certa": 0,
+   "explica": "> 4–6 semanas: gastrostomia.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 20,
+   "pergunta": "Confirmação de que a antibioticoprofilaxia foi feita nos últimos 60 min ocorre em qual etapa do checklist?",
+   "opcoes": [
+    "Sign in",
+    "Time out",
+    "Sign out",
+    "Na enfermaria"
+   ],
+   "certa": 1,
+   "explica": "Time out, antes da incisão.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 21,
+   "pergunta": "A contagem de compressas, instrumentais e agulhas pertence a:",
+   "opcoes": [
+    "Sign in",
+    "Time out",
+    "Sign out",
+    "Avaliação pré-anestésica"
+   ],
+   "certa": 2,
+   "explica": "Sign out, antes de o paciente sair da sala.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 22,
+   "pergunta": "Tema do 2º Desafio Global da OMS:",
+   "opcoes": [
+    "Prevenção de quedas",
+    "Cirurgias seguras salvam vidas",
+    "Medicação sem danos",
+    "Higiene das mãos"
+   ],
+   "certa": 1,
+   "explica": "Deu origem ao checklist em 2008.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 23,
+   "pergunta": "Trauma de face com equimose periorbitária bilateral e rinorreia clara. Para descomprimir o estômago:",
+   "opcoes": [
+    "Nasoenteral",
+    "Sonda nasogástrica",
+    "Nada",
+    "Sonda orogástrica"
+   ],
+   "certa": 3,
+   "explica": "Suspeita de fratura de base de crânio contraindica via nasal.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 24,
+   "pergunta": "Politraumatizado com sangue no meato uretral. Antes de sondar:",
+   "opcoes": [
+    "Sondar com lubrificante extra",
+    "Uretrocistografia retrógrada; se necessário, cistostomia",
+    "Sonda de 3 vias",
+    "Sondar com Foley fino"
+   ],
+   "certa": 1,
+   "explica": "Suspeita de lesão de uretra.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 25,
+   "pergunta": "O dreno de tórax deve passar:",
+   "opcoes": [
+    "Na borda inferior da costela",
+    "No 2º EIC na linha hemiclavicular",
+    "No 8º EIC posterior",
+    "Na borda superior da costela inferior"
+   ],
+   "certa": 3,
+   "explica": "Feixe vasculonervoso corre na borda inferior.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 26,
+   "pergunta": "Selo d'água com borbulhamento contínuo indica:",
+   "opcoes": [
+    "Hemotórax",
+    "Escape aéreo (fístula ou vazamento)",
+    "Funcionamento normal",
+    "Dreno obstruído"
+   ],
+   "certa": 1,
+   "explica": "Oscilação = pérvio; borbulhamento = ar escapando.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 27,
+   "pergunta": "Qual cateter periférico oferece maior fluxo?",
+   "opcoes": [
+    "24G",
+    "22G",
+    "18G",
+    "14G"
+   ],
+   "certa": 3,
+   "explica": "Quanto menor o número, maior o calibre.",
+   "tempo": 20
+  },
+  {
+   "tipo": "q",
+   "n": 28,
+   "pergunta": "Acesso venoso central com menor risco de infecção:",
+   "opcoes": [
+    "Todos iguais",
+    "Subclávia",
+    "Jugular interna",
+    "Femoral"
+   ],
+   "certa": 1,
+   "explica": "Subclávia: menos infecção, mais pneumotórax.",
+   "tempo": 20
+  }
+ ],
+ "kahootInfo": {
+  "titulo": "Quiz de revisão · Cirurgia AV2",
+  "capa": "{n} perguntas de revisão de pré e pós-operatório, ISC, nutrição, cirurgia segura e dispositivos. Não é um Kahoot de professor. Quanto mais cedo acertar, mais pontos.",
+  "botao": "Começar o quiz"
+ },
+ "casos": [
+  {
+   "id": "c1",
+   "nivel": "Moderado",
+   "titulo": "Dona Rita e a colecistectomia de terça",
+   "resumo": "Do ambulatório pré-operatório ao centro cirúrgico.",
+   "tags": [
+    "Pré-operatório",
+    "ASA",
+    "Checklist"
+   ],
+   "secoes": [
+    "g1",
+    "r1",
+    "g5",
+    "g3"
+   ],
+   "abertura": "<p><strong>Rita, 64 anos</strong>, tem colelitíase sintomática e vai para colecistectomia videolaparoscópica eletiva. É hipertensa (losartana) e diabética tipo 2 (metformina e dapagliflozina), ambas controladas. Usa AAS 100 mg por prevenção primária e clopidogrel após um stent coronariano há 2 anos. Sobe 2 andares de escada sem parar.</p>",
+   "etapas": [
+    {
+     "titulo": "ASA",
+     "pergunta": "Se ela tivesse apenas a HAS e o DM, controlados e sem limitação, qual seria a ASA?",
+     "opcoes": [
+      "IV",
+      "II",
+      "III",
+      "I"
+     ],
+     "certa": 1,
+     "explica": "Doença sistêmica leve e controlada = ASA II. A doença coronariana com stent costuma levar a classificação para III."
+    },
+    {
+     "titulo": "Capacidade funcional",
+     "pergunta": "O que a capacidade de subir 2 andares indica?",
+     "opcoes": [
+      "Precisa de cintilografia",
+      "≥ 4 METs: boa reserva, sem necessidade de teste extra",
+      "Contraindica a cirurgia",
+      "Precisa de cateterismo"
+     ],
+     "certa": 1,
+     "explica": "Boa capacidade funcional dispensa investigação cardíaca adicional em cirurgia de risco intermediário."
+    },
+    {
+     "titulo": "Medicações",
+     "pergunta": "Qual orientação está correta?",
+     "opcoes": [
+      "Suspender clopidogrel na véspera",
+      "Manter dapagliflozina",
+      "Suspender tudo 7 dias antes",
+      "Dapagliflozina 3 dias antes, metformina no dia, clopidogrel 5 dias antes (com o cardiologista), manter estatina/losartana conforme protocolo"
+     ],
+     "certa": 3,
+     "explica": "iSGLT2 3 dias (cetoacidose euglicêmica); metformina no dia; clopidogrel 5 dias, decisão compartilhada com o cardiologista pelo stent."
+    },
+    {
+     "titulo": "Jejum",
+     "pergunta": "Ela pergunta até quando pode tomar água com o remédio.",
+     "opcoes": [
+      "Até meia-noite",
+      "Nada no dia",
+      "Até 2 h antes",
+      "Até 8 h antes"
+     ],
+     "certa": 2,
+     "explica": "Líquidos claros: 2 h."
+    },
+    {
+     "titulo": "Profilaxia",
+     "pergunta": "Antibioticoprofilaxia para colecistectomia eletiva (limpa-contaminada):",
+     "opcoes": [
+      "Ceftriaxona por 7 dias",
+      "Não há indicação nunca",
+      "Meropeném",
+      "Cefazolina 2 g até 60 min antes da incisão, dose única"
+     ],
+     "certa": 3,
+     "explica": "Cefazolina até 60 min antes; dose única. (Em colecistectomia laparoscópica de baixo risco muitos protocolos dispensam.)"
+    },
+    {
+     "titulo": "Sala",
+     "info": "<p>Na sala, a anestesista vai induzir. A circulante abre o checklist.</p>",
+     "pergunta": "Neste momento (sign in), o que se confere?",
+     "opcoes": [
+      "Identidade, sítio, consentimento, oxímetro, alergias e via aérea difícil",
+      "Apresentação da equipe",
+      "Contagem de compressas",
+      "Peça para anatomopatológico"
+     ],
+     "certa": 0,
+     "explica": "Sign in: antes da indução."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Capacidade funcional ≥ 4 METs = boa reserva.</li><li>iSGLT2 3 dias; metformina no dia; antiagregação com o cardiologista.</li><li>Jejum de líquidos claros: 2 h.</li><li>Sign in antes da indução.</li></ul>"
+  },
+  {
+   "id": "c2",
+   "nivel": "Difícil",
+   "titulo": "Seu Benedito e a febre do quinto dia",
+   "resumo": "Complicações do pós-operatório de cirurgia colorretal.",
+   "tags": [
+    "Pós-operatório",
+    "Febre",
+    "ISC",
+    "Fístula"
+   ],
+   "secoes": [
+    "g2",
+    "r2",
+    "g3",
+    "r3"
+   ],
+   "abertura": "<p><strong>Benedito, 71 anos</strong>, fez colectomia esquerda com anastomose primária por câncer. Recebeu cefazolina + metronidazol na indução. Está com sonda vesical, dreno Portovac e analgesia com morfina.</p>",
+   "etapas": [
+    {
+     "titulo": "1º dia",
+     "info": "<p>No 1º dia, T 37,9 °C, sem outras alterações, saturação 93%.</p>",
+     "pergunta": "Causa mais provável e conduta?",
+     "opcoes": [
+      "ITU; ciprofloxacino",
+      "Resposta inflamatória/atelectasia; fisioterapia, analgesia, deambular",
+      "TEP; anticoagular plena",
+      "Fístula; reoperar"
+     ],
+     "certa": 1,
+     "explica": "Febre baixa nas primeiras 24–48 h costuma ser inflamatória."
+    },
+    {
+     "titulo": "3º dia",
+     "info": "<p>No 3º dia: distendido, náuseas, sem flatos. K = 3,0.</p>",
+     "pergunta": "Conduta?",
+     "opcoes": [
+      "Reoperar",
+      "Parenteral total",
+      "Corrigir K (e Mg), reduzir morfina, deambular; SNG se vomitar",
+      "Iniciar laxante e manter morfina"
+     ],
+     "certa": 2,
+     "explica": "Íleo pós-operatório: corrigir eletrólitos e reduzir opioide."
+    },
+    {
+     "titulo": "Sonda",
+     "pergunta": "Ainda no 3º dia: o que fazer com a sonda vesical?",
+     "opcoes": [
+      "Retirar o quanto antes",
+      "Trocar por 3 vias",
+      "Clampear",
+      "Manter até a alta"
+     ],
+     "certa": 0,
+     "explica": "Cada dia de sonda aumenta o risco de ITU."
+    },
+    {
+     "titulo": "5º dia",
+     "info": "<p>No 5º dia: febre de 38,8 °C, FC 118, dor abdominal difusa e o dreno passa a ter conteúdo fecaloide.</p>",
+     "pergunta": "Diagnóstico?",
+     "opcoes": [
+      "Deiscência/fístula de anastomose",
+      "ITU",
+      "Pneumonia",
+      "Febre medicamentosa"
+     ],
+     "certa": 0,
+     "explica": "5º–7º dia com secreção entérica no dreno."
+    },
+    {
+     "titulo": "Conduta",
+     "pergunta": "Com sinais de peritonite e taquicardia, o que fazer?",
+     "opcoes": [
+      "Aguardar 48 h",
+      "Ressuscitação, antibiótico de amplo espectro e reabordagem/controle do foco",
+      "Retirar o dreno",
+      "Só antibiótico oral"
+     ],
+     "certa": 1,
+     "explica": "Peritonite por deiscência exige controle cirúrgico do foco."
+    },
+    {
+     "titulo": "Classificação",
+     "pergunta": "A reoperação por peritonite fecal será classificada como:",
+     "opcoes": [
+      "Limpa-contaminada",
+      "Contaminada",
+      "Suja/infectada",
+      "Limpa"
+     ],
+     "certa": 2,
+     "explica": "Pus/conteúdo fecal = suja; antibiótico é tratamento."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Febre pelo dia do pós-operatório orienta a causa.</li><li>Íleo: K, Mg, menos opioide.</li><li>Fecaloide no dreno = fístula.</li><li>Tirar a sonda cedo.</li></ul>"
+  },
+  {
+   "id": "c3",
+   "nivel": "Moderado",
+   "titulo": "Plantão no trauma: tubos e acessos",
+   "resumo": "Escolha e cuidados com sondas, drenos, cateteres e cânulas.",
+   "tags": [
+    "Dispositivos",
+    "Trauma",
+    "Via aérea"
+   ],
+   "secoes": [
+    "g6",
+    "r6"
+   ],
+   "abertura": "<p><strong>Homem de 35 anos</strong>, motociclista, chega rebaixado (Glasgow 7), com equimose periorbitária bilateral, sangue no meato uretral e murmúrio vesicular abolido à direita, com hipotensão.</p>",
+   "etapas": [
+    {
+     "titulo": "Via aérea",
+     "pergunta": "Qual cânula NÃO usar como ponte?",
+     "opcoes": [
+      "Orofaríngea (Guedel)",
+      "Nasofaríngea",
+      "Bolsa-válvula-máscara",
+      "Nenhuma"
+     ],
+     "certa": 1,
+     "explica": "Suspeita de fratura de base de crânio contraindica nasofaríngea."
+    },
+    {
+     "titulo": "Acesso",
+     "pergunta": "Melhor acesso inicial para reposição rápida?",
+     "opcoes": [
+      "Um 22G",
+      "Dois periféricos 14–16G",
+      "PICC",
+      "Subclávia de rotina antes de tudo"
+     ],
+     "certa": 1,
+     "explica": "Cateteres curtos e calibrosos dão mais fluxo."
+    },
+    {
+     "titulo": "Tórax",
+     "info": "<p>RX: hemotórax volumoso à direita.</p>",
+     "pergunta": "Onde passar o dreno?",
+     "opcoes": [
+      "5º EIC entre axilares anterior e média, borda superior da costela",
+      "2º EIC linha hemiclavicular",
+      "Borda inferior da costela",
+      "8º EIC posterior"
+     ],
+     "certa": 0,
+     "explica": "Triângulo de segurança, rente à borda superior da costela inferior."
+    },
+    {
+     "titulo": "Débito",
+     "info": "<p>Saem 1.700 mL de sangue logo na drenagem.</p>",
+     "pergunta": "Conduta?",
+     "opcoes": [
+      "Observar",
+      "Retirar o dreno",
+      "Clampear o dreno",
+      "Toracotomia"
+     ],
+     "certa": 3,
+     "explica": "> 1.500 mL inicial (ou > 200 mL/h) indica toracotomia."
+    },
+    {
+     "titulo": "Estômago",
+     "pergunta": "Para descomprimir o estômago:",
+     "opcoes": [
+      "Nasoenteral",
+      "Sonda orogástrica",
+      "Não é preciso",
+      "Sonda nasogástrica"
+     ],
+     "certa": 1,
+     "explica": "Sem via nasal na suspeita de fratura de base de crânio."
+    },
+    {
+     "titulo": "Bexiga",
+     "pergunta": "Para monitorar diurese:",
+     "opcoes": [
+      "Foley imediatamente",
+      "Nada",
+      "Uretrocistografia antes; se lesão, cistostomia",
+      "Sonda de alívio repetida"
+     ],
+     "certa": 2,
+     "explica": "Sangue no meato sugere lesão de uretra."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Base de crânio: nada pelo nariz.</li><li>Fluxo: curto e calibroso.</li><li>Dreno: 5º EIC, borda superior.</li><li>Sangue no meato: não sondar às cegas.</li></ul>"
+  }
+ ]
+}
