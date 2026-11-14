@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=34">
-<link rel="icon" type="image/png" href="favicon.png?v=34">
-<link rel="manifest" href="manifest.webmanifest?v=34">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=35">
+<link rel="icon" type="image/png" href="favicon.png?v=35">
+<link rel="manifest" href="manifest.webmanifest?v=35">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -117,7 +117,7 @@ svg.i.s{width:16px;height:16px;stroke-width:1.5}
 .btn{border:1px solid var(--line2);background:var(--glass2);color:var(--ink);font-weight:400;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;padding:10px 18px;border-radius:99px;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}
 .btn:hover{background:var(--glass3);border-color:rgba(255,255,255,.3)}
 .btn.pri{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
-.btn.pri:hover{background:#fff}
+.btn.pri:hover{background:var(--forte);color:var(--on-ink);border-color:var(--forte)}
 .btn.sm{padding:6px 12px;font-size:11px}
 .btn.bad{border-color:rgba(242,160,143,.5);color:var(--bad)}
 .btn.ic{padding:7px;border-radius:50%}
@@ -749,13 +749,42 @@ body.sem-grifos mark.grifo{background:none!important;border-bottom:0!important;c
 .nb-tit{display:block;border:0;background:none;padding:0;margin:14px 0 8px;cursor:pointer;text-align:left;font:inherit;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;font-size:12px}
 .nb-tit:hover{color:var(--ink)}
 @media (pointer:coarse){.fcor{min-height:40px}}
+/* Inicialização: nenhuma tela de estudo fica acessível sem o planeta renderizado. */
+#inicioApp{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:24px;background:var(--fundo)}
+#inicioApp .card{width:min(440px,100%);text-align:center;background:var(--modal-bg)}
+#inicioApp h1{font-size:26px;font-weight:400;letter-spacing:.04em;margin:0 0 14px}
+#inicioStatus{color:var(--muted);margin:0 0 20px}
+body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #consulta,body.iniciando #timerPill,body.iniciando #modalRoot{visibility:hidden;pointer-events:none}
+@media (min-width:901px){
+  body.estudo.com-consulta:not(.arv-oculta) .arvore{display:none}
+  body.estudo.com-consulta:not(.arv-oculta) .main{padding-left:110px}
+  body.estudo.com-consulta:not(.arv-oculta) .nav{display:flex}
+  body.estudo.com-consulta:not(.arv-oculta) .marca{display:block}
+}
+.leitura,.leitura .doc{min-width:0}
+.dois > *,.grid2 > *,.grid3 > *{min-width:0}
+@media (max-width:1100px){.dois{grid-template-columns:minmax(0,1fr)}}
+.btn{max-width:100%}
+@media (max-width:600px){
+  .btn:not(.ic){white-space:normal;overflow-wrap:anywhere}
+  .migalhas > b{flex-shrink:1}
+}
+@media (pointer:coarse){
+  .btn,.btn.sm,.btn.ic,.tabs button,.fcor,.gtool .gc,.gtool .btn.ic,.arv-btn,.arv-tg{min-width:44px;min-height:44px}
+  .navbtn{flex-shrink:0}
+  .gtool{flex-wrap:wrap;max-width:calc(100vw - 16px)}
+}
+@media (max-width:360px){
+  .nav{left:calc(4px + env(safe-area-inset-left));right:calc(4px + env(safe-area-inset-right));gap:0;padding:2px;justify-content:space-between}
+}
 </style>
 </head>
-<body>
+<body class="iniciando">
+<div id="inicioApp" role="status" aria-live="polite"><div class="vidro card"><h1>Planeta de Estudos</h1><p id="inicioStatus">Preparando seu planeta…</p><button class="btn pri" id="inicioTentar" hidden>Tentar novamente</button></div></div>
 <div id="espaco"></div>
 <div class="marca">Planeta de Estudos</div>
-<nav class="nav" aria-label="Navegação" id="nav"></nav>
-<main class="main">
+<nav class="nav" aria-label="Navegação" id="nav" inert></nav>
+<main class="main" inert>
   <div class="topo" id="topo"></div>
   <section class="view" id="view-inicio"></section>
   <section class="view" id="view-mundo" hidden></section>
@@ -769,6 +798,6 @@ body.sem-grifos mark.grifo{background:none!important;border-bottom:0!important;c
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=34"></script>
+<script type="module" src="app.js?v=35"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import * as SkeletonUtils from "three/addons/utils/SkeletonUtils.js";
-import { CRIATURAS, DECOS } from "./data.js?v=34";
+import { CRIATURAS, DECOS } from "./data.js?v=35";
 
 /* ---------- ruído ---------- */
 function hash(x, y, z) { let h = x * 374761393 + y * 668265263 + z * 2147483647; h = (h ^ (h >>> 13)) * 1274126177; return ((h ^ (h >>> 16)) >>> 0) / 4294967295; }
@@ -107,7 +107,7 @@ function fazDeco(k, seed) {
 const loader = new GLTFLoader();
 const cache = {};
 function carregaGLB(id) {
-  return (cache[id] ||= import(`./m/${id}.js`).then(mod => {
+  return (cache[id] ||= import(`./m/${id}.js?v=35`).then(mod => {
     const bin = atob(mod.default), buf = new Uint8Array(bin.length);
     for (let i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
     return new Promise((res, rej) => loader.parse(buf.buffer, "", res, rej));
@@ -157,12 +157,19 @@ export function miniatura(k) {
 
 /* ---------- mundo ---------- */
 export function criaMundo(host) {
+  let resolvePronto, rejeitaPronto, primeiroQuadro = true;
+  const pronto = new Promise((resolve, reject) => { resolvePronto = resolve; rejeitaPronto = reject; });
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setPixelRatio(Math.min(2, devicePixelRatio || 1));
   renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.1;
   const canvas = renderer.domElement; canvas.className = "mundo-canvas"; host.appendChild(canvas);
+  canvas.addEventListener("webglcontextlost", e => {
+    e.preventDefault(); vivo = false;
+    rejeitaPronto(new Error("O contexto 3D foi interrompido."));
+    dispatchEvent(new Event("planeta-indisponivel"));
+  });
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(36, 1, .05, 200);
@@ -391,33 +398,48 @@ export function criaMundo(host) {
   let deslAlvo = 0, desl = 0, deslYAlvo = 0, deslY = 0, dimAlvo = 1, distAlvo = null, parado = 0, vivo = true, quadro = 0, leve = false;
   controls.addEventListener("start", () => { controls.autoRotate = false; parado = 0; distAlvo = null; });
   function frame(now) {
-    if (!vivo) return; requestAnimationFrame(frame);
-    if (document.hidden) return;
-    quadro++; if (leve && quadro % 2) return;
-    const dt = Math.min(.05, (now - (frame.u || now)) / 1000) * (leve ? 2 : 1); frame.u = now; const t = now / 1000;
-    parado += dt; if (parado > 5 && !semMovimento.matches) controls.autoRotate = true;
-    desl += (deslAlvo - desl) * Math.min(1, dt * 4); deslY += (deslYAlvo - deslY) * Math.min(1, dt * 4);
-    if (distAlvo) { const l = camera.position.length(); camera.position.setLength(l + (distAlvo - l) * Math.min(1, dt * 3)); }
-    const w = host.clientWidth, h = host.clientHeight;
-    if (Math.abs(desl) > .001 || Math.abs(deslY) > .001) camera.setViewOffset(w, h, -desl * w, deslY * h, w, h); else camera.clearViewOffset();
-    controls.update();
-    sol.position.copy(camera.position).applyAxisAngle(UP, .8).add(new THREE.Vector3(0, 1.6, 0)).normalize().multiplyScalar(5);
-    contra.position.copy(camera.position).multiplyScalar(-1).add(new THREE.Vector3(0, .6, 0));
-    canvas.style.opacity = String(+(canvas.style.opacity || 1) + (dimAlvo - +(canvas.style.opacity || 1)) * Math.min(1, dt * 4));
-    nuvens.children.forEach(p => p.rotateX(p.userData.vel * dt));
-    luaPiv.rotation.y += dt * .08;
-    for (const o of bichos.children) if (o.visible) anda(o, dt, t);
-    if (borboletas.visible) for (const b of borboletas.children) voaBorboleta(b, dt, t);
-    for (let i = surgindo.length - 1; i >= 0; i--) {
-      const o = surgindo[i], p = Math.min(1, Math.max(0, (now - o.userData.t0) / 700));
-      const e = p < 1 ? 1 + 2.2 * Math.pow(p - 1, 3) + 1.2 * Math.pow(p - 1, 2) : 1;
-      o.scale.setScalar(Math.max(.001, o.userData.alvo * e)); if (p >= 1) surgindo.splice(i, 1);
+    if (!vivo) return;
+    if (document.hidden) { requestAnimationFrame(frame); return; }
+    quadro++; if (leve && quadro % 2) { requestAnimationFrame(frame); return; }
+    try {
+      const dt = Math.min(.05, (now - (frame.u || now)) / 1000) * (leve ? 2 : 1); frame.u = now; const t = now / 1000;
+      parado += dt; if (parado > 5 && !semMovimento.matches) controls.autoRotate = true;
+      const transicao = semMovimento.matches ? 1 : Math.min(1, dt * 4);
+      desl += (deslAlvo - desl) * transicao; deslY += (deslYAlvo - deslY) * transicao;
+      if (distAlvo) { const l = camera.position.length(); camera.position.setLength(l + (distAlvo - l) * (semMovimento.matches ? 1 : Math.min(1, dt * 3))); }
+      const w = host.clientWidth, h = host.clientHeight;
+      if (Math.abs(desl) > .001 || Math.abs(deslY) > .001) camera.setViewOffset(w, h, -desl * w, deslY * h, w, h); else camera.clearViewOffset();
+      controls.autoRotate = controls.autoRotate && !semMovimento.matches;
+      controls.update();
+      sol.position.copy(camera.position).applyAxisAngle(UP, .8).add(new THREE.Vector3(0, 1.6, 0)).normalize().multiplyScalar(5);
+      contra.position.copy(camera.position).multiplyScalar(-1).add(new THREE.Vector3(0, .6, 0));
+      canvas.style.opacity = String(+(canvas.style.opacity || 1) + (dimAlvo - +(canvas.style.opacity || 1)) * transicao);
+      if (!semMovimento.matches) {
+        nuvens.children.forEach(p => p.rotateX(p.userData.vel * dt));
+        luaPiv.rotation.y += dt * .08;
+        for (const o of bichos.children) if (o.visible) anda(o, dt, t);
+        if (borboletas.visible) for (const b of borboletas.children) voaBorboleta(b, dt, t);
+      } else {
+        for (const o of bichos.children) if (o.visible && !o.userData.posicionado) { anda(o, 0, 0); o.userData.posicionado = true; }
+      }
+      for (let i = surgindo.length - 1; i >= 0; i--) {
+        const o = surgindo[i], p = semMovimento.matches ? 1 : Math.min(1, Math.max(0, (now - o.userData.t0) / 700));
+        const e = p < 1 ? 1 + 2.2 * Math.pow(p - 1, 3) + 1.2 * Math.pow(p - 1, 2) : 1;
+        o.scale.setScalar(Math.max(.001, o.userData.alvo * e)); if (p >= 1) surgindo.splice(i, 1);
+      }
+      if (!semMovimento.matches) {
+        estrelas.rotation.y += dt * .003;
+        texCach.offset.y -= dt * 1.4;
+        decoGrupo.traverse(o => { if (o.userData.chama) { const f = 1 + Math.sin(t * 13 + o.id) * .12 + Math.sin(t * 7.3 + o.id * 2) * .08; o.scale.y = (o.isSprite ? .09 : 1) * f; if (o.isSprite) o.material.opacity = .28 + Math.sin(t * 9 + o.id) * .08; } });
+        for (const e of cachoeiras.children) if (e.userData.f !== undefined) e.scale.setScalar(.8 + Math.sin(t * 6 + e.userData.f) * .3);
+      }
+      renderer.render(scene, camera);
+      if (renderer.getContext().isContextLost()) throw new Error("Não foi possível renderizar o planeta.");
+      if (primeiroQuadro) { primeiroQuadro = false; resolvePronto(); }
+      requestAnimationFrame(frame);
+    } catch (e) {
+      vivo = false; rejeitaPronto(e); dispatchEvent(new Event("planeta-indisponivel"));
     }
-    estrelas.rotation.y += dt * .003;
-    texCach.offset.y -= dt * 1.4;
-    decoGrupo.traverse(o => { if (o.userData.chama) { const f = 1 + Math.sin(t * 13 + o.id) * .12 + Math.sin(t * 7.3 + o.id * 2) * .08; o.scale.y = (o.isSprite ? .09 : 1) * f; if (o.isSprite) o.material.opacity = .28 + Math.sin(t * 9 + o.id) * .08; } });
-    for (const e of cachoeiras.children) if (e.userData.f !== undefined) e.scale.setScalar(.8 + Math.sin(t * 6 + e.userData.f) * .3);
-    renderer.render(scene, camera);
   }
   requestAnimationFrame(frame);
   function encaixa() {
@@ -427,6 +449,7 @@ export function criaMundo(host) {
   new ResizeObserver(encaixa).observe(host); encaixa();
 
   return {
+    pronto,
     aplica,
     /* modo: "centro" (início), "mundo" (interativo), "lado" (atrás das páginas), "fundo" (leitura) */
     layout(modo) {

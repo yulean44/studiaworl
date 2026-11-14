@@ -1,6 +1,7 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=34";
-import { ic, ICONES_MATERIA } from "./icons.js?v=34";
-import { FIG } from "./figuras.js?v=34";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=35";
+import { ic, ICONES_MATERIA } from "./icons.js?v=35";
+import { FIG } from "./figuras.js?v=35";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=35";
 
 /* =========================================================
    utilidades
@@ -17,7 +18,7 @@ const fmtMin = m => m < 60 ? `${m} min` : `${Math.floor(m / 60)}h${m % 60 ? pad(
 const textoDe = html => { const d = document.createElement("div"); d.innerHTML = html; return d.textContent || ""; };
 const LS = {
   get(k, d) { try { const v = localStorage.getItem("pe:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
-  set(k, v) { try { localStorage.setItem("pe:" + k, JSON.stringify(v)); } catch {} },
+  set(k, v) { try { localStorage.setItem("pe:" + k, JSON.stringify(v)); return true; } catch { return false; } },
   del(k) { try { localStorage.removeItem("pe:" + k); } catch {} },
 };
 const ICONE_EFEITO = { broto: "broto", agua: "gota", nuvens: "nuvem", borboletas: "borboleta", lua: "lua", anel: "anel", aurora: "aurora" };
@@ -95,12 +96,42 @@ let tSalvar = null, salvando = false, pendente = false;
 const modoTeste = () => !!LS.get("backupReal", null);
 const modoConta = !(window.claude && typeof window.claude.use === "function");
 let conta = null, contaMod = null, tConta = null, contaOk = false;
+let appPronto = false, planetaPronto = false, estadoPronto = true, sessaoConta = 0, gravandoConta = false;
+let gravaPendente = null, precisaSincronizar = false, erroConta = false;
 const chaveEstado = () => conta ? "estado:" + conta.uid : "estado";
 function salvar() {
+  if (!estadoPronto) return;
+  if (modoTeste()) { LS.set("estadoTeste:" + (conta?.uid || "local"), S); return; }
   S.upd = Date.now();
-  LS.set(chaveEstado(), S);
-  if (conta && contaOk && !modoTeste()) { clearTimeout(tConta); tConta = setTimeout(async () => { try { await contaMod.salva(conta.uid, JSON.parse(JSON.stringify(S))); nuvem = "ok"; } catch (e) { console.warn(e); nuvem = "erro"; } renderTopo(); }, 1200); }
+  if (!LS.set(chaveEstado(), S)) { toast("Sem espaço para salvar neste navegador. Exporte seu progresso pela conta."); }
+  if (conta && !modoTeste()) {
+    precisaSincronizar = true;
+    if (contaOk) {
+      gravaPendente = { uid: conta.uid, sessao: sessaoConta, estado: JSON.parse(JSON.stringify(S)) };
+      nuvem = "pendente";
+      clearTimeout(tConta); tConta = setTimeout(gravaConta, 1200);
+    }
+  }
   if (db && uid && nuvem !== "so-local" && !modoTeste()) { clearTimeout(tSalvar); tSalvar = setTimeout(enviaNuvem, 1200); }
+}
+async function gravaConta() {
+  if (gravandoConta || !gravaPendente) return;
+  const item = gravaPendente; gravaPendente = null;
+  if (!contaOk || item.uid !== conta?.uid || item.sessao !== sessaoConta || modoTeste()) return;
+  gravandoConta = true;
+  try {
+    await contaMod.salva(item.uid, item.estado);
+    if (item.sessao === sessaoConta) { precisaSincronizar = !!gravaPendente; nuvem = gravaPendente ? "pendente" : "ok"; }
+  } catch (e) {
+    console.warn(e);
+    if (item.sessao === sessaoConta) {
+      contaOk = false; nuvem = e.code === "progresso/conflito" ? "conflito" : "erro";
+      toast(e.code === "progresso/conflito" ? "Outro aparelho atualizou o progresso. Abra sua conta para revisar as versões." : "Progresso salvo neste aparelho. Abra sua conta para tentar sincronizar.");
+    }
+  } finally {
+    gravandoConta = false; renderTopo();
+    if (gravaPendente && contaOk) gravaConta();
+  }
 }
 async function enviaNuvem() {
   if (salvando) { pendente = true; return; }
@@ -350,11 +381,32 @@ function toast(t) { const el = document.createElement("div"); el.className = "to
 let modalAberto = false;
 function modal(html, { onClose } = {}) {
   const root = $("#modalRoot");
-  root.innerHTML = `<div class="modal-bg"><div class="modal vidro" role="dialog">${html}</div></div>`;
+  const anterior = document.activeElement;
+  root.innerHTML = `<div class="modal-bg"><div class="modal vidro" role="dialog" aria-modal="true" tabindex="-1">${html}</div></div>`;
   modalAberto = true;
-  const bg = root.firstChild, fecha = () => { root.innerHTML = ""; modalAberto = false; onClose?.(); setTimeout(proximaFesta, 60); };
+  const bg = root.firstChild, dialogo = bg.firstChild, titulo = $("h3", dialogo);
+  if (titulo) { titulo.id ||= "tituloDialogo"; dialogo.setAttribute("aria-labelledby", titulo.id); }
+  const main = document.querySelector("main"), nav = $("#nav"), mainInert = main.inert, navInert = nav.inert;
+  main.inert = true; nav.inert = true;
+  let fechado = false;
+  const fecha = () => {
+    if (fechado || root.firstChild !== bg) return; fechado = true;
+    root.innerHTML = ""; modalAberto = false; main.inert = mainInert; nav.inert = navInert;
+    if (anterior?.isConnected && !anterior.closest("[inert]")) anterior.focus();
+    onClose?.(); setTimeout(proximaFesta, 60);
+  };
+  bg.addEventListener("keydown", e => {
+    if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); fecha(); }
+    if (e.key !== "Tab") return;
+    const alvos = $$("button:not(:disabled),input:not(:disabled),select:not(:disabled),textarea:not(:disabled),a[href],[tabindex='0']", dialogo).filter(el => el.getClientRects().length);
+    const primeiro = alvos[0], ultimo = alvos.at(-1);
+    if (!primeiro) { e.preventDefault(); dialogo.focus(); }
+    else if (e.shiftKey && (document.activeElement === primeiro || document.activeElement === dialogo)) { e.preventDefault(); ultimo.focus(); }
+    else if (!e.shiftKey && (document.activeElement === ultimo || document.activeElement === dialogo)) { e.preventDefault(); primeiro.focus(); }
+  });
   bg.addEventListener("click", e => { if (e.target === bg) fecha(); });
   $$("[data-fecha]", bg).forEach(b => b.addEventListener("click", fecha));
+  queueMicrotask(() => { if (dialogo.isConnected) ($("input,button,select,textarea", dialogo) || dialogo).focus(); });
   return { el: bg.firstChild, fecha };
 }
 function confirma(titulo, texto, ok = "Confirmar", perigo = false) {
@@ -441,7 +493,8 @@ $$(".navbtn[data-view]").forEach(b => b.addEventListener("click", () => { if (b.
 
 function renderTopo() {
   const n = S.nivel, a = nivelXP(n), b = nivelXP(n + 1), pct = Math.round((S.xp - a) / (b - a) * 100);
-  const st = conta ? (nuvem === "erro" ? ["", "Erro ao salvar", "Não consegui salvar agora; vou tentar de novo na próxima ação"] : ["on", esc(conta.nome || "Conta"), "Progresso salvo na sua conta"]) : nuvem === "ok" ? ["on", "Na conta", "Progresso salvo na sua conta"] : nuvem === "so-local" ? ["", "Local", "Progresso salvo só neste navegador"] : db ? ["", "Sincronizando", ""] : ["", "Local", "Progresso salvo neste navegador"];
+  const mensagens = { erro: "Salvo neste aparelho; sincronização pendente", conflito: "Há versões diferentes do progresso. Abra sua conta", pendente: "Salvando progresso…", carregando: "Carregando progresso…" };
+  const st = conta ? [nuvem === "ok" ? "on" : "", esc(conta.nome || "Conta"), mensagens[nuvem] || "Progresso salvo na sua conta"] : nuvem === "ok" ? ["on", "Na conta", "Progresso salvo na sua conta"] : nuvem === "so-local" ? ["", "Local", "Progresso salvo só neste navegador"] : db ? ["", "Sincronizando", ""] : ["", "Local", "Progresso salvo neste navegador"];
   $("#topo").innerHTML = `
     ${modoTeste() ? `<span class="chipi" style="border-color:rgba(242,196,110,.5);color:var(--gold)">Modo teste</span>` : ""}
     <span class="chipi" title="${S.xp} XP no total">${fig("estrela")} Nível ${n}<span class="lbar"><i style="width:${pct}%"></i></span></span>
@@ -453,7 +506,7 @@ function renderTopo() {
   $("#btAdmin")?.addEventListener("click", painelAdmin);
   $("#btTema")?.addEventListener("click", escolheTema);
   $("#btAjuda")?.addEventListener("click", () => { LS.set("viuManual", true); $("#btAjuda")?.classList.remove("novo"); manual(); });
-  $("#btConta")?.addEventListener("click", () => conta ? menuConta() : telaLogin(true));
+  $("#btConta")?.addEventListener("click", () => conta ? menuConta() : erroConta ? iniciaSistemaConta().then(ok => { if (ok) telaLogin(true); }) : telaLogin(true));
 }
 
 /* =========================================================
@@ -464,7 +517,7 @@ temaMundo = () => mundo?.tema?.(tema);
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=34"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=35"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -478,8 +531,9 @@ setInterval(() => {
   if (document.body.classList.contains("explorando") && !segurando && Date.now() - ultimoGesto > 1500) document.body.classList.remove("explorando");
 }, 250);
 async function iniciaMundo() {
-  const m = await garanteMod(); if (!m) return;
+  const m = await garanteMod(); if (!m) throw new Error("Não foi possível carregar o planeta.");
   mundo = m.criaMundo($("#espaco"));
+  await mundo.pronto;
   const esp = $("#espaco");
   esp.addEventListener("pointerdown", () => { segurando = true; explorando(); });
   esp.addEventListener("pointermove", e => { if (segurando && e.buttons) explorando(); });
@@ -488,7 +542,7 @@ async function iniciaMundo() {
   document.addEventListener("pointerup", () => { segurando = false; });
   // reposiciona itens antigos que estavam sem lugar
   S.decos.forEach(d => { if (d.d[0] === 0 && d.d[1] === 1 && d.d[2] === 0) d.d = sorteioP(!!S.efeitos.agua); });
-  layoutMundo(); aplicaTema(); aplicaMundo();
+  layoutMundo(); aplicaTema(); await mundo.aplica(estadoMundo());
 }
 function aplicaMundo() { if (mundo) mundo.aplica(estadoMundo()); document.body.classList.toggle("aurora", !!S.efeitos.aurora); }
 
@@ -570,11 +624,12 @@ const decorrido = () => !S.timer ? 0 : S.timer.acc + (S.timer.pausa ? 0 : Date.n
 function iniciaFoco() { S.timer = { mat: focoMat, dur: focoDur, ini: Date.now(), acc: 0, pausa: false }; salvar(); render(); tick(); }
 function pausaFoco() { if (!S.timer) return; if (S.timer.pausa) { S.timer.pausa = false; S.timer.ini = Date.now(); } else { S.timer.acc = decorrido(); S.timer.pausa = true; } salvar(); render(); }
 function encerraFoco(salva = true) {
-  if (!S.timer) return; const min = Math.floor(decorrido() / 60000), mat = S.timer.mat; S.timer = null; salvar(); document.title = "Planeta de Estudos";
+  if (!S.timer) return; const min = minutosDaSessao(S.timer), mat = S.timer.mat; S.timer = null; salvar(); document.title = "Planeta de Estudos";
   if (salva && min >= 1) registraFoco(min, mat); else if (salva) toast("Menos de 1 minuto: não foi registrado.");
   render();
 }
 function tick() {
+  if (!appPronto || !estadoPronto) return;
   const pill = $("#timerPill");
   if (!S.timer) { pill.hidden = true; return; }
   const ms = decorrido(), dur = S.timer.dur * 60000, falta = dur ? Math.max(0, dur - ms) : ms;
@@ -1193,7 +1248,7 @@ function renderNotasMat(corpo, m) {
 function renderKahootMat(corpo, m) {
   const f = kSec && kSec.mat === m.id ? kSec : null;
   corpo.innerHTML = (f ? `<div class="vidro filtroq"><span class="kicker" style="flex:1">Só as questões de · ${esc(f.nome)}</span><button class="btn sm" id="kTodas">Ver todas as questões</button></div>` : "")
-    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=33${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
+    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=35${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
   $("#kTodas")?.addEventListener("click", () => { kSec = null; renderKahootMat(corpo, m); });
 }
 function zoomImg(src) { const z = document.createElement("div"); z.className = "zoomP"; z.innerHTML = `<img src="${esc(src)}" alt="">`; z.addEventListener("click", () => z.remove()); document.body.append(z); }
@@ -1493,34 +1548,85 @@ function telaLogin(podeFechar = false) {
 function menuConta() {
   const m = modal(`<h3>Sua conta</h3>
     <div style="display:flex;align-items:center;gap:14px;margin:8px 0 16px">${conta.foto ? `<img src="${esc(conta.foto)}" alt="" referrerpolicy="no-referrer" style="width:52px;height:52px;border-radius:50%">` : `<div class="ico">${ic("estrela")}</div>`}<div><b style="font-weight:400">${esc(conta.nome || "")}</b><br><small class="muted">${esc(conta.email || "")}</small></div></div>
-    <p class="muted" style="font-weight:300;margin:0">${nuvem === "erro" ? "Houve um erro ao salvar. Vamos tentar de novo na próxima ação." : "Seu progresso está salvo na sua conta e aparece em qualquer aparelho em que você entrar."}</p>
+    <p class="muted" role="status" style="font-weight:300;margin:0">${nuvem === "ok" ? "Seu progresso está salvo na conta." : nuvem === "conflito" ? "Há versões diferentes. As duas serão preservadas antes de você escolher." : nuvem === "carregando" ? "Carregando progresso…" : nuvem === "pendente" ? "Salvando progresso…" : "Seu progresso está neste aparelho. Tente sincronizar novamente."}</p>
+    <div class="acts"><button class="btn" id="cExportar">Exportar cópias</button>${nuvem !== "ok" ? '<button class="btn" id="cSync">Sincronizar</button>' : ""}</div>
     <div class="acts"><button class="btn bad" id="cSair">Sair da conta</button><button class="btn pri" data-fecha>Fechar</button></div>`);
+  $("#cExportar", m.el).addEventListener("click", exportaProgresso);
+  $("#cSync", m.el)?.addEventListener("click", () => { m.fecha(); revisaSincronizacao(); });
   $("#cSair", m.el).addEventListener("click", async () => { m.fecha(); await contaMod.sai(); });
 }
+function exportaProgresso() {
+  const chave = chaveEstado();
+  const dados = { formato: "planeta-progresso-v2", uid: conta?.uid || null, estado: S, copias: LS.get("copias:" + chave, []) };
+  const url = URL.createObjectURL(new Blob([JSON.stringify(dados, null, 2)], { type: "application/json" }));
+  const a = document.createElement("a"); a.href = url; a.download = "planeta-progresso-" + hoje() + ".json"; a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+async function revisaSincronizacao() {
+  if (!conta || modoTeste()) return;
+  if (!estadoPronto) return aoMudarConta(conta);
+  if (gravandoConta) { toast("Aguarde o salvamento atual."); return; }
+  const alvo = conta.uid, sessao = sessaoConta, chave = chaveEstado();
+  clearTimeout(tConta); gravaPendente = null; contaOk = false;
+  try {
+    const remoto = await contaMod.carrega(alvo);
+    if (sessao !== sessaoConta) return;
+    // Preserva ambas as versões antes de oferecer qualquer substituição.
+    copiaSegura(localStorage, chave, S); copiaSegura(localStorage, chave, remoto);
+    if (!remoto || assinatura(remoto) === assinatura(S)) { contaOk = true; salvar(); renderTopo(); return; }
+    nuvem = "conflito"; renderTopo();
+    const resumo = s => `${s.xp || 0} XP · ${fmtMin(s.totMin || 0)} · ${s.totCards || 0} cards`;
+    const m = modal(`<h3>Versões do progresso</h3><p class="muted">As duas versões ficam nas cópias exportáveis deste aparelho.</p><p><b>Neste aparelho</b><br>${esc(resumo(S))}</p><p><b>Na conta</b><br>${esc(resumo(remoto))}</p><div class="acts"><button class="btn" id="syncExporta">Exportar cópias</button><button class="btn" data-fecha>Decidir depois</button><button class="btn" id="syncNuvem">Usar da conta</button><button class="btn pri" id="syncLocal">Usar deste aparelho</button></div>`);
+    $("#syncExporta", m.el).addEventListener("click", exportaProgresso);
+    $("#syncNuvem", m.el).addEventListener("click", () => {
+      if (sessao !== sessaoConta) { m.fecha(); return; }
+      try {
+        copiaSegura(localStorage, chave, S);
+        const escolhido = Object.assign(novoEstado(), JSON.parse(JSON.stringify(remoto)));
+        if (!LS.set(chave, escolhido)) throw new Error("Sem espaço para salvar a versão.");
+        S = escolhido; contaOk = true; precisaSincronizar = false; nuvem = "ok"; m.fecha(); aplicaMundo(); render();
+      } catch { toast("Não foi possível preservar a cópia. Exporte seu progresso antes de continuar."); }
+    });
+    $("#syncLocal", m.el).addEventListener("click", () => { if (sessao !== sessaoConta) { m.fecha(); return; } contaOk = true; m.fecha(); salvar(); renderTopo(); });
+  } catch (e) { if (sessao === sessaoConta) { console.warn(e); nuvem = "erro"; renderTopo(); toast("Não foi possível sincronizar. Seu progresso atual foi mantido."); } }
+}
 async function aoMudarConta(u) {
-  const antes = conta?.uid;
+  const antes = conta?.uid, sessao = ++sessaoConta;
+  clearTimeout(tConta); gravaPendente = null; contaOk = false;
+  filaFesta = [];
   if (!u) {
-    conta = null; contaOk = false; nuvem = "local";
+    conta = null; estadoPronto = true; precisaSincronizar = false; nuvem = "local";
     if (antes) { S = Object.assign(novoEstado(), LS.get("estado", {})); toast("Você saiu da conta"); aplicaMundo(); render(); }
     else if (!LS.get("semConta", false)) setTimeout(() => telaLogin(false), 400);
-    renderTopo(); return;
+    liberaApp(); renderTopo(); return;
   }
-  conta = u; contaOk = false; renderTopo();
+  const chave = "estado:" + u.uid, local = LS.get(chave, null);
+  conta = u; estadoPronto = !!local; precisaSincronizar = false; nuvem = "carregando";
+  S = Object.assign(novoEstado(), JSON.parse(JSON.stringify(local || {})));
+  if (!estadoPronto) bloqueiaApp("Carregando seu progresso…");
+  renderTopo();
   try {
     const remoto = await contaMod.carrega(u.uid);
-    let local = LS.get("estado:" + u.uid, null);
-    if (!local && !remoto) local = LS.get("estado", null);   // primeira vez: leva o progresso feito sem conta
-    const base = remoto && (!local || (remoto.upd || 0) >= (local.upd || 0)) ? remoto : local;
-    const timer = S.timer;
+    if (sessao !== sessaoConta) return;
+    const atualLocal = estadoPronto ? S : local;
+    const diferente = remoto && atualLocal && assinatura(remoto) !== assinatura(atualLocal);
+    if (diferente) { copiaSegura(localStorage, chave, atualLocal); copiaSegura(localStorage, chave, remoto); }
+    // Migra o progresso anônimo apenas para uma conta que ainda não tem estado.
+    const base = atualLocal || remoto || LS.get("estado", null);
     S = Object.assign(novoEstado(), JSON.parse(JSON.stringify(base || {})));
-    if (!S.timer && timer) S.timer = timer;
-    contaOk = true; nuvem = "ok";
-    LS.set("estado:" + u.uid, S);
-    if (!remoto || base !== remoto) salvar();
-    if (!antes) toast(`Olá, ${u.nome || "bem-vindo"}! Progresso sincronizado.`);
+    estadoPronto = true; contaOk = !diferente; nuvem = diferente ? "conflito" : "ok";
+    if (!LS.set(chave, S)) toast("Não foi possível salvar a cópia local. Exporte seu progresso.");
+    if (!diferente && (!remoto || precisaSincronizar)) salvar();
+    if (!antes) toast(diferente ? "Há versões diferentes do progresso. Abra sua conta para revisar." : `Olá, ${u.nome || "bem-vindo"}!`);
     if (!base) festa({ icone: "planeta_vazio", titulo: "Seu planeta", texto: "Cada minuto de foco, card respondido e seção concluída faz surgir algo novo nele. Comece com 3 minutos de foco." });
-    diarias(); checaTudo(); aplicaMundo(); render();
-  } catch (e) { console.warn(e); nuvem = "erro"; toast("Não consegui carregar seu progresso da nuvem."); renderTopo(); }
+    diarias(); checaTudo(); aplicaMundo(); render(); liberaApp();
+  } catch (e) {
+    if (sessao !== sessaoConta) return;
+    console.warn(e); nuvem = "erro";
+    if (estadoPronto) { toast("Sem sincronização. Seu progresso deste aparelho foi mantido."); aplicaMundo(); render(); liberaApp(); }
+    else bloqueiaApp("Não foi possível carregar seu progresso. Tente novamente.", () => aoMudarConta(u));
+    renderTopo();
+  }
 }
 
 /* acessibilidade: botões só com ícone ganham nome; cartões clicáveis funcionam com Tab + Enter */
@@ -1544,7 +1650,7 @@ document.querySelector(".marca").style.cursor = "default";
    ========================================================= */
 const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
 async function carregaFabrica() {
-  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=34`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
+  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=35`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
   FABRICA = r.filter(Boolean);
 }
 async function conectaNuvem() {
@@ -1575,16 +1681,52 @@ async function conectaNuvem() {
 let tConteudo = null;
 function atualizaConteudo() { clearTimeout(tConteudo); tConteudo = setTimeout(() => { if (atual === "materias" || atual === "inicio") render(); }, 150); }
 
+function bloqueiaApp(texto, tentar = null) {
+  document.body.classList.add("iniciando");
+  document.querySelector("main").inert = true; $("#nav").inert = true;
+  $("#inicioApp").hidden = false; $("#inicioStatus").textContent = texto;
+  const b = $("#inicioTentar"); b.hidden = !tentar; b.onclick = tentar;
+}
+function liberaApp() {
+  if (!appPronto && planetaPronto && estadoPronto) {
+    diarias();
+    const vh = lerHash(), v0 = vh || LS.get("view", "inicio");
+    viaHash = true; show(VIEWS.some(x => x[0] === v0) ? v0 : "inicio"); viaHash = false;
+    appPronto = true; checaTudo(); atualiza();
+  }
+  if (!appPronto || !estadoPronto) return;
+  document.body.classList.remove("iniciando");
+  document.querySelector("main").inert = false; $("#nav").inert = false;
+  $("#inicioApp").hidden = true;
+}
+let contaIniciando = null;
+async function iniciaSistemaConta() {
+  if (contaIniciando) return contaIniciando;
+  contaIniciando = (async () => {
+    try {
+      const mod = await import("./conta.js?v=35");
+      contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
+    } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
+    finally { contaIniciando = null; }
+  })();
+  return contaIniciando;
+}
+addEventListener("planeta-indisponivel", () => {
+  appPronto = false; planetaPronto = false;
+  bloqueiaApp("O planeta foi interrompido. Seu progresso foi mantido.", () => location.reload());
+});
 (async function inicio() {
-  await carregaFabrica();
-  diarias();
-  const vh = lerHash(), v0 = vh || LS.get("view", "inicio");
-  viaHash = true; show(VIEWS.some(x => x[0] === v0) ? v0 : "inicio"); viaHash = false;
-  await iniciaMundo();
-  checaTudo(); atualiza();
-  if (S.timer) tick();
-  if (!S.upd && !modoConta) setTimeout(() => festa({ icone: "planeta_vazio", titulo: "Seu planeta", texto: "Cada minuto de foco, card respondido e seção concluída faz surgir algo novo nele. Comece com 5 minutos de foco." }), 900);
-  if (modoConta) {
-    import("./conta.js?v=34").then(async mod => { contaMod = mod; await mod.iniciaConta(aoMudarConta); }).catch(e => { console.warn("contas indisponíveis", e); });
-  } else conectaNuvem();
+  try {
+    bloqueiaApp("Preparando seu planeta…");
+    await carregaFabrica();
+    await iniciaMundo(); // O aplicativo só é liberado após o primeiro quadro 3D.
+    planetaPronto = true;
+    if (modoConta) await iniciaSistemaConta(); else await conectaNuvem();
+    if (!estadoPronto) return; // Uma conta sem cache aguarda recuperar o progresso.
+    liberaApp();
+    if (S.timer) tick();
+  } catch (e) {
+    console.warn("Não foi possível iniciar", e); appPronto = false;
+    bloqueiaApp("Não foi possível iniciar o planeta 3D. Seu progresso foi mantido.", () => location.reload());
+  }
 })();

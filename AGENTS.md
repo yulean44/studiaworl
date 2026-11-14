@@ -14,6 +14,7 @@ Site estático, sem build: HTML + JS em módulos ES, three.js 0.160 via importma
 | `world.js` | O planeta 3D (`criaMundo`), terreno, água, modelos, câmera e layouts |
 | `data.js` | Criaturas, enfeites, jornada, conquistas, missões diárias, curva de XP |
 | `conta.js` | Login e salvamento no Firebase (Auth + Firestore, doc `usuarios/{uid}`) |
+| `progresso.js` | Assinatura estável do estado, cópias locais e limite de tempo das sessões |
 | `icons.js` | Ícones SVG de traço fino: `ic(nome, classe)` |
 | `figuras.js` | Ícones 3D em webp (data URI) |
 | `content/*.json` | Conteúdo das matérias (seções com `id`, `titulo`, `grupo`, `html`); imagens em `content/img/` |
@@ -26,6 +27,12 @@ Site estático, sem build: HTML + JS em módulos ES, three.js 0.160 via importma
 2. **Antes de mexer:** `git pull`. Mais de um agente trabalha neste repositório.
 3. **Estado do usuário** fica em `localStorage` com prefixo `pe:` e no Firestore. Nunca apague nem renomeie chaves existentes sem migração.
 4. Nada de segredos no código. A config do Firebase em `conta.js` é pública por natureza e pode ficar.
+5. **O app só abre após o primeiro quadro do planeta 3D.** Falha de carregamento ou perda de contexto bloqueia o app e oferece nova tentativa, sem zerar progresso.
+6. **Preservar contas e versões do progresso:** manter projeto Firebase, UIDs, documento `usuarios/{uid}` e estado v2. Antes de substituir versões divergentes, preservar cópias em `pe:copias:estado:<uid>`. Não sobrescrever outra versão da nuvem sem conferir a base lida; a transação deve recusar conflitos. Cópias são exportáveis pelo menu da conta.
+
+## Verificações
+
+`node --test tests/regressoes.mjs` verifica preservação de estado, troca de conta, conflitos no Firestore com SDK simulado e limite do timer, sem acessar contas reais. Não precisa de `package.json` nem dependências.
 
 ## Estilo (o dono é exigente com isso)
 
