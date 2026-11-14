@@ -5,15 +5,15 @@
   "3": "world.js",
   "4": "questoes.mjs",
   "5": "regressoes.mjs",
-  "6": "renderQuestoes",
-  "7": "esc",
+  "6": "qJoga",
+  "7": "renderNotasMat",
   "8": "publicar",
   "9": "data.js",
   "10": "Instruções para agentes (Codex, Claude e outros)",
-  "11": "renderMundo",
+  "11": "renderFoco",
   "12": "avisaConteudo",
-  "13": "abasMat",
+  "13": "aplicaTema",
   "14": "icons.js",
   "15": "Planeta de Estudos",
-  "17": "renderRevisao"
+  "16": "arrastavel"
 }
