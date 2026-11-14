@@ -66,6 +66,7 @@ function manual() {
       ${ln("relogio", "Foco", "cronômetro de estudo")}
       ${ln("livro", "Matérias", "o conteúdo, por seções")}
       ${ln("cards", "Flashcards", "pergunta e resposta")}
+      ${ln("check", "Questões", "treino e simulado por matéria")}
       ${ln("bandeira", "Missões", "metas e conquistas")}
       ${ln("grafico", "Progresso", "tempo, acertos e erros")}
     </div>
@@ -198,6 +199,7 @@ const bancoDoAssunto = (mat, ids) => questoesDe(mat).filter(q => tocaAssunto(q, 
 const qChave = (mat, id) => `${mat}--${id}`;
 const qReg = (mat, id) => (S.questoes || {})[qChave(mat, id)];
 let qCfg = LS.get("qCfg", {});      // por matéria: {secs, secNome, tipos, niveis, so}
+let matQuestoes = LS.get("qMateria", null);
 let qSessao = null;                 // {mat, modo, lista, i, resp, ini, dur, fim}
 let qTimer = null;
 function qFiltro(m) { return qCfg[m.id] || (qCfg[m.id] = { secs: null, secNome: "", tipos: [], niveis: [], so: "" }); }
@@ -212,6 +214,19 @@ function qRegistra(m, q, k) {
   S.questoes[c] = { r: k, ok, n: ((ant && ant.n) || 0) + 1, t: Date.now(), ja: (ant && ant.ja) || ok };
   if (ok && !(ant && ant.ja)) ganhaXP(2);
   return ok;
+}
+function renderBancoQuestoes() {
+  const v = $("#view-questoes"), ms = materias().filter(m => questoesDe(m.id).length);
+  const m = ms.find(m => m.id === matQuestoes) || ms.find(m => m.id === qSessao?.mat) || ms[0];
+  matQuestoes = m?.id || null;
+  v.innerHTML = `<div class="fc-wrap"><h1 class="titulo p">Questões</h1>
+    ${m ? `<div class="fc-top"><label class="kicker" for="qMateria">Matéria</label><select class="f" id="qMateria" name="materia">${ms.map(x => `<option value="${esc(x.id)}" ${x.id === m.id ? "selected" : ""}>${esc(x.nome)} · ${questoesDe(x.id).length}</option>`).join("")}</select></div><div class="vidro card" id="qCorpo"></div>` : `<div class="vidro card empty">Nenhuma matéria com questões disponível.</div>`}</div>`;
+  if (!m) return;
+  $("#qMateria", v).addEventListener("change", e => {
+    matQuestoes = e.target.value; LS.set("qMateria", matQuestoes);
+    renderBancoQuestoes(); sincronizaHash(); $("#qMateria", v).focus({ preventScroll: true });
+  });
+  renderQuestoes($("#qCorpo", v), m);
 }
 function renderQuestoes(corpo, m) {
   clearInterval(qTimer);
@@ -329,8 +344,8 @@ function qResultado(corpo, m) {
   $("#qNova", corpo).addEventListener("click", () => { qSessao = null; renderQuestoes(corpo, m); });
 }
 document.addEventListener("keydown", e => {
-  if (!qSessao || qSessao.fim || atual !== "materias" || abaMat !== "questoes" || e.target.closest("input,textarea,select,[contenteditable]") || e.metaKey || e.ctrlKey || e.altKey) return;
-  const corpo = $("#matCorpo"); if (!corpo) return;
+  if (!qSessao || qSessao.fim || (atual !== "questoes" && (atual !== "materias" || abaMat !== "questoes")) || e.target.closest("input,textarea,select,[contenteditable]") || e.metaKey || e.ctrlKey || e.altKey) return;
+  const corpo = $(atual === "questoes" ? "#qCorpo" : "#matCorpo"); if (!corpo) return;
   const l = e.key.toUpperCase(), i = "12345".includes(e.key) ? +e.key - 1 : LETRAS.indexOf(l);
   if (i >= 0 && e.key.length === 1) { const b = $(`[data-qa="${i}"]`, corpo); if (b && !b.disabled) { e.preventDefault(); b.click(); } }
   else if (e.key === "Enter") { const b = $("#qProx", corpo) || $("#qSeg", corpo); if (b && document.activeElement?.tagName !== "BUTTON") { e.preventDefault(); b.click(); } }
@@ -603,28 +618,34 @@ async function proximaFesta() {
 /* =========================================================
    navegação
    ========================================================= */
-const VIEWS = [["inicio", "casa", "Início"], ["mundo", "planeta", "Meu mundo"], ["foco", "relogio", "Foco"], ["materias", "livro", "Matérias"], ["revisao", "cards", "Flashcards"], ["missoes", "bandeira", "Missões"], ["progresso", "grafico", "Progresso"]];
+const VIEWS = [["inicio", "casa", "Início"], ["mundo", "planeta", "Meu mundo"], ["foco", "relogio", "Foco"], ["materias", "livro", "Matérias"], ["revisao", "cards", "Flashcards"], ["questoes", "check", "Questões"], ["missoes", "bandeira", "Missões"], ["progresso", "grafico", "Progresso"]];
 $("#nav").innerHTML = VIEWS.map(([k, i, t]) => `<button class="navbtn" data-view="${k}" aria-label="${t}">${ic(i)}<span class="tip">${t}</span></button>`).join("");
 let atual = null, sub = LS.get("sub", { tela: "lista" }), editando = false;
 function show(v, opts = {}) {
   if (!VIEWS.some(x => x[0] === v)) v = "inicio";
+  if (v !== atual) {
+    clearInterval(qTimer);
+    if (atual === "questoes") $("#qCorpo")?.replaceChildren();
+    if (atual === "materias" && abaMat === "questoes") $("#matCorpo")?.replaceChildren();
+  }
   if (editando && v !== "materias") editando = false;
   atual = v; LS.set("view", v); document.body.classList.toggle("estudo", v === "materias"); if (v !== "materias") fechaArvore();
   VIEWS.forEach(([k]) => { $("#view-" + k).hidden = k !== v; });
-  $$(".navbtn[data-view]").forEach(b => b.classList.toggle("active", b.dataset.view === v));
+  $$(".navbtn[data-view]").forEach(b => { const on = b.dataset.view === v; b.classList.toggle("active", on); if (on) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
   layoutMundo(); render(); renderConsulta(); sincronizaHash();
   if (!opts.manterScroll) window.scrollTo(0, 0);
 }
 function layoutMundo() {
   if (!mundo) return;
   const leitura = atual === "materias" && sub.tela === "sec";
-  mundo.layout(atual === "inicio" ? "centro" : atual === "mundo" ? "mundo" : leitura || atual === "materias" || atual === "revisao" ? "fundo" : "lado");
+  mundo.layout(atual === "inicio" ? "centro" : atual === "mundo" ? "mundo" : leitura || atual === "materias" || atual === "revisao" || atual === "questoes" ? "fundo" : "lado");
 }
 /* endereço da página acompanha a tela: dá para salvar o link de uma seção e o "voltar" funciona */
 let viaHash = false;
 function hashDe() {
   let h = "#" + atual;
   if (atual === "materias" && sub.tela !== "lista" && sub.mat) h += "/" + sub.mat + (sub.tela === "sec" && sub.sid ? "/" + sub.sid : "");
+  if (atual === "questoes" && matQuestoes) h += "/" + matQuestoes;
   return h;
 }
 function sincronizaHash() {
@@ -635,13 +656,14 @@ function sincronizaHash() {
 function lerHash() {
   const [v, mat, sid] = decodeURIComponent(location.hash.slice(1)).split("/");
   if (!VIEWS.some(x => x[0] === v)) return null;
+  if (v === "questoes") matQuestoes = mat || null;
   if (v === "materias") sub = mat ? (sid ? { tela: "sec", mat, sid } : { tela: "mat", mat }) : { tela: "lista" };
   return v;
 }
 window.addEventListener("popstate", () => { const v = lerHash(); if (!v) return; viaHash = true; editando = false; LS.set("sub", sub); show(v); viaHash = false; });
 function render() {
   renderTopo(); avisaConteudo();
-  ({ inicio: renderInicio, mundo: renderMundo, foco: renderFoco, materias: renderMaterias, revisao: renderRevisao, missoes: renderMissoes, progresso: renderProgresso })[atual]?.();
+  ({ inicio: renderInicio, mundo: renderMundo, foco: renderFoco, materias: renderMaterias, revisao: renderRevisao, questoes: renderBancoQuestoes, missoes: renderMissoes, progresso: renderProgresso })[atual]?.();
 }
 function atualiza() {
   renderTopo();
@@ -1473,7 +1495,7 @@ function renderNotasMat(corpo, m) {
 function renderKahootMat(corpo, m) {
   const f = kSec && kSec.mat === m.id ? kSec : null;
   corpo.innerHTML = (f ? `<div class="vidro filtroq"><span class="kicker" style="flex:1">Só as questões de · ${esc(f.nome)}</span><button class="btn sm" id="kTodas">Ver todas as questões</button></div>` : "")
-    + `<iframe class="kframe" data-sessao="${sessaoConta}" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=46${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
+    + `<iframe class="kframe" data-sessao="${sessaoConta}" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=49${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
   $("#kTodas")?.addEventListener("click", () => { kSec = null; renderKahootMat(corpo, m); });
 }
 function zoomImg(src, alt = "Imagem ampliada") {
