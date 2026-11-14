@@ -395,14 +395,16 @@ export function criaMundo(host) {
   }
 
   /* layout: o planeta pode ficar no centro, de lado ou ao fundo */
-  let deslAlvo = 0, desl = 0, deslYAlvo = 0, deslY = 0, dimAlvo = 1, distAlvo = null, parado = 0, vivo = true, quadro = 0, leve = false;
+  let deslAlvo = 0, desl = 0, deslYAlvo = 0, deslY = 0, dimAlvo = 1, distAlvo = null, parado = 0, vivo = true, quadro = 0, leve = false, oculto = false;
   controls.addEventListener("start", () => { controls.autoRotate = false; parado = 0; distAlvo = null; });
   function frame(now) {
     if (!vivo) return;
     if (document.hidden) { requestAnimationFrame(frame); return; }
-    quadro++; if (leve && quadro % 2) { requestAnimationFrame(frame); return; }
+    /* desempenho: sem desenhar quando o planeta está escondido; ao fundo da leitura, 1 a cada 3 quadros */
+    quadro++; if (quadro % 30 === 0) oculto = !!host.checkVisibility && !host.checkVisibility({ visibilityProperty: true, opacityProperty: true });
+    if (!primeiroQuadro && (oculto || (leve && quadro % 3))) { requestAnimationFrame(frame); return; }
     try {
-      const dt = Math.min(.05, (now - (frame.u || now)) / 1000) * (leve ? 2 : 1); frame.u = now; const t = now / 1000;
+      const dt = Math.min(.06, (now - (frame.u || now)) / 1000); frame.u = now; const t = now / 1000;
       parado += dt; if (parado > 5 && !semMovimento.matches) controls.autoRotate = true;
       const transicao = semMovimento.matches ? 1 : Math.min(1, dt * 4);
       desl += (deslAlvo - desl) * transicao; deslY += (deslYAlvo - deslY) * transicao;
@@ -457,7 +459,7 @@ export function criaMundo(host) {
       const cfg = { centro: [estreito ? 0 : -.14, 1, estreito ? 7.4 : 6], mundo: [estreito ? 0 : .12, 1, 5], lado: [estreito ? 0 : -.3, estreito ? .25 : .55, 6.4], fundo: [estreito ? 0 : -.32, estreito ? .15 : .3, 7] }[modo] || [0, 1, 4.4];
       const celular = host.clientWidth < 1100 && host.clientHeight > host.clientWidth * .9;
       deslYAlvo = celular ? ({ centro: .12, mundo: .1 }[modo] || 0) : 0;
-      deslAlvo = cfg[0]; dimAlvo = cfg[1]; distAlvo = cfg[2]; controls.enabled = modo === "mundo" || modo === "centro"; controls.enableZoom = modo === "mundo"; leve = modo === "fundo";
+      deslAlvo = cfg[0]; dimAlvo = cfg[1]; distAlvo = cfg[2]; controls.enabled = modo === "mundo" || modo === "centro"; controls.enableZoom = modo === "mundo"; leve = modo === "fundo"; oculto = false;
     },
     tema(t) {
       const claro = t === "amanhecer" || t === "claro";

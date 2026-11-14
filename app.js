@@ -160,6 +160,8 @@ const fab = id => FABRICA.find(m => m.id === id) || {};
 const temKahoot = id => Array.isArray(fab(id).kahoot) && fab(id).kahoot.length > 0;
 const casosDe = id => fab(id).casos || [];
 function parDe(mat, sid) { const m = materia(mat); if (!m) return null; const s = m.secoes.find(x => x.id === sid); let p = s && (s.par || ((fab(mat).secoes || []).find(x => x.id === sid) || {}).par); return p && m.secoes.find(x => x.id === p) ? p : null; }
+/* leitura: imagens do conteúdo só carregam perto da tela (não altera o que é salvo) */
+const htmlLeitura = h => (h || "").replace(/<img(?![^>]*\bloading=)/g, '<img loading="lazy" decoding="async"');
 function htmlSecao(mat, sid) {
   const o = CONT.secoes[`${mat}--${sid}`]; if (o && typeof o.html === "string") return o.html;
   const f = FABRICA.find(m => m.id === mat); const s = f && f.secoes.find(x => x.id === sid);
@@ -1226,7 +1228,7 @@ function renderConsulta() {
       ${grupos.length > 1 || siglas ? `<div class="tabs" aria-label="Conteúdo da consulta lateral">${grupos.map(g => `<button type="button" class="${!emSiglas && g === gAtual ? "on" : ""}" aria-pressed="${!emSiglas && g === gAtual}" data-cg="${esc(g)}">${esc(g)}</button>`).join("")}${siglas ? `<button type="button" id="cnSiglas" class="${emSiglas ? "on" : ""}" aria-pressed="${emSiglas}">Siglas</button>` : ""}</div>` : ""}
       <select class="f" id="cnSec">${doGrupo.map(x => `<option value="${esc(x.id)}" ${x.id === consulta.sid ? "selected" : ""}>${esc(x.titulo)}</option>`).join("")}</select>
     </div>
-    <div class="corpo doc" id="cnCorpo">${htmlSecao(m.id, consulta.sid) || '<p class="muted">Seção vazia.</p>'}</div>`;
+    <div class="corpo doc" id="cnCorpo">${htmlLeitura(htmlSecao(m.id, consulta.sid)) || '<p class="muted">Seção vazia.</p>'}</div>`;
   melhoraDoc($("#cnCorpo"), m.id, true); aplicaGrifos($("#cnCorpo"), `${m.id}--${consulta.sid}`);
   $("#cnFecha").addEventListener("click", () => { fechaConsulta(); if (atual === "materias") render(); });
   $("#cnAcomp").addEventListener("change", e => { acompanhar = e.target.checked; LS.set("acompanhar", acompanhar); });
@@ -1256,7 +1258,7 @@ function renderLeitura(v) {
         <div style="display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap"><div style="flex:1;min-width:220px"><div class="kicker">${esc(s.grupo || m.sigla || "")}</div><h1 class="doc-tit">${esc(s.titulo)}</h1></div>
         ${souDono ? `<button class="btn sm" id="btEditar2">${ic("lapis", "s")}Editar</button>` : ""}</div>
         <div class="linha"></div>
-        <div id="pane">${html || '<p class="muted">Seção vazia.</p>'}</div>
+        <div id="pane">${htmlLeitura(html) || '<p class="muted">Seção vazia.</p>'}</div>
         <div class="leiturafim"><div class="ico ${lida ? "ok" : ""}">${ic(lida ? "check" : "livro", "s")}</div><div class="t"><b style="font-weight:400">${lida ? "Seção concluída" : "Terminou de ler?"}</b><br><small class="muted">${lida ? "Desmarque se quiser rever." : "Marque como concluída e ganhe 20 XP."}</small></div>
           <button class="btn ${lida ? "" : "pri"}" id="btLida">${lida ? "Desmarcar" : "Concluir seção"}</button></div>
         <div class="pratica" id="pratica"></div>
