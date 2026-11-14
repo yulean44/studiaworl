@@ -40,7 +40,7 @@ Rodar tudo: `for t in tests/*.mjs; do node --test $t; done`.
 
 ## Skills do projeto (`.claude/skills/`)
 
-O Claude Code carrega sozinho; outros agentes leiam o `SKILL.md` correspondente.
+O Claude Code carrega sozinho; outros agentes leiam o `SKILL.md` correspondente. **ChatGPT/Codex:** comece por `docs/CHATGPT.md` (ordem de leitura e prompt pronto).
 
 - **Comece pelo mapa:** `graphify-out/GRAPH_REPORT.md` mostra as funções centrais e os grupos do código. Depois de mexer no código, rode `graphify update .` (o `.graphifyignore` já deixa de fora modelos, figuras e conteúdo).
 - **Escolher a etapa:** `using-agent-skills` indica qual das skills do Agent Skills usar (planejar, implementar, testar, revisar, publicar).
@@ -55,6 +55,7 @@ O Claude Code carrega sozinho; outros agentes leiam o `SKILL.md` correspondente.
 - Fonte **Jost**. Rótulos pequenos em maiúsculas espaçadas; títulos de documento em caixa normal.
 - **Tema claro é o padrão**; temas escuros são opcionais. Use sempre as variáveis CSS (`--ink`, `--muted`, `--faint`, `--acc`, `--acc2`, `--solid`, `--line`, `--glass2`, `--glass3`, `--forte`, `--doc`, `--modal-bg`, `--veu`), nunca cores fixas.
 - Vidro/transparência discreta, tons de verde suaves, nada saturado.
+- Ajustes finos de visual vão no bloco "refino leve" no fim do CSS de `index.html`, sem mudar fonte, cores dos temas nem ícones.
 - A área de Matérias segue o estilo de documentos: menu lateral fixo em pastas (matéria › grupo › seção), trilha "Matérias › … " no topo e a seção como página.
 
 ## Celular, iPad e computador
