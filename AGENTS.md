@@ -1,0 +1,52 @@
+# Instruções para agentes (Codex, Claude e outros)
+
+Site de estudo pessoal **Planeta de Estudos**, publicado no GitHub Pages:
+https://yulean44.github.io/studiaworl/ — um planeta 3D low-poly que vai se enchendo de criaturas e enfeites conforme o dono estuda (missões, foco, flashcards, matérias com seções).
+
+Site estático, sem build: HTML + JS em módulos ES, three.js 0.160 via importmap (jsdelivr). Não adicionar bundler, framework nem `package.json`.
+
+## Arquivos
+
+| Arquivo | O que tem |
+|---|---|
+| `index.html` | Todo o CSS (temas por `:root[data-tema=...]`), importmap e a casca da página |
+| `app.js` | Toda a lógica: telas (`VIEWS`), matérias/seções, menu lateral em árvore, grifos e notas, foco, flashcards, missões, admin, contas |
+| `world.js` | O planeta 3D (`criaMundo`), terreno, água, modelos, câmera e layouts |
+| `data.js` | Criaturas, enfeites, jornada, conquistas, missões diárias, curva de XP |
+| `conta.js` | Login e salvamento no Firebase (Auth + Firestore, doc `usuarios/{uid}`) |
+| `icons.js` | Ícones SVG de traço fino: `ic(nome, classe)` |
+| `figuras.js` | Ícones 3D em webp (data URI) |
+| `content/*.json` | Conteúdo das matérias (seções com `id`, `titulo`, `grupo`, `html`); imagens em `content/img/` |
+| `m/*.js` | Modelos 3D em base64 (o Pages não serve .glb do jeito certo) |
+| `kahoot.html` | Quiz estilo Kahoot por matéria |
+
+## Regras obrigatórias
+
+1. **Cache:** todo import e a tag `<script>` usam `?v=N`. A cada mudança publicada, aumente o N em **todos** os arquivos de uma vez (ex.: `grep -rl '?v=31' --include=*.js --include=*.html . | xargs sed -i 's/?v=31/?v=32/g'`). Sem isso o iPhone continua com a versão antiga.
+2. **Antes de mexer:** `git pull`. Mais de um agente trabalha neste repositório.
+3. **Estado do usuário** fica em `localStorage` com prefixo `pe:` e no Firestore. Nunca apague nem renomeie chaves existentes sem migração.
+4. Nada de segredos no código. A config do Firebase em `conta.js` é pública por natureza e pode ficar.
+
+## Estilo (o dono é exigente com isso)
+
+- **Bom gosto, limpo, pouco texto.** Instruções curtas; nada de blocos explicativos longos, chips de "em poucas palavras" ou passo a passo enfeitado.
+- **Sem emojis** na interface. Ícones de traço fino de `icons.js`; os ícones 3D só quando o estilo 3D está ligado.
+- Fonte **Jost**. Rótulos pequenos em maiúsculas espaçadas; títulos de documento em caixa normal.
+- **Tema claro é o padrão**; temas escuros são opcionais. Use sempre as variáveis CSS (`--ink`, `--muted`, `--faint`, `--acc`, `--acc2`, `--solid`, `--line`, `--glass2`, `--glass3`, `--forte`, `--doc`, `--modal-bg`, `--veu`), nunca cores fixas.
+- Vidro/transparência discreta, tons de verde suaves, nada saturado.
+- A área de Matérias segue o estilo de documentos: menu lateral fixo em pastas (matéria › grupo › seção), trilha "Matérias › … " no topo e a seção como página.
+
+## Celular, iPad e computador
+
+- Tem que funcionar bem em **iPhone (390px), iPad e computador**. Testar também 320px.
+- Sem rolagem lateral; alvos de toque ≥ 44px em `pointer:coarse`; respeitar `env(safe-area-inset-*)` e usar `100dvh`.
+- Respeitar `prefers-reduced-motion`.
+- Acessibilidade: botões reais (`<button>`), `aria-label` em botões só com ícone, foco visível, Enter/Espaço funcionando.
+
+## Conteúdo novo de matéria
+
+Novo arquivo em `content/<id>.json`, no mesmo formato dos existentes, e registro onde as outras matérias são carregadas em `app.js`. Seções agrupadas por `grupo` (ex.: "Guia de estudo", "Resumo completo").
+
+## Commits
+
+Mensagens curtas em português, descrevendo a mudança para o usuário (ex.: "Grifos: borracha e desfazer").
