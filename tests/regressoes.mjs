@@ -111,3 +111,19 @@ test('Firestore recusa gravação sem leitura inicial ou após sair da conta',as
   const f=firebaseSimulado({xp:500});await assert.rejects(f.api.salva('A',{xp:0}));
   await f.api.carrega('A');f.sai();await assert.rejects(f.api.salva('A',{xp:0}));assert.equal(f.escritas(),0);
 });
+
+test('abertura exige planeta renderizado e estado pronto; falha bloqueia sem zerar estado',()=>{
+  const elementos={nav:{inert:true},inicioApp:{hidden:false},inicioStatus:{textContent:''},inicioTentar:{hidden:true}};
+  const main={inert:true}, classes=new Set(['iniciando']);let telas=0;
+  const c=vm.createContext({
+    appPronto:false,planetaPronto:false,estadoPronto:true,S:{xp:500},
+    document:{body:{classList:{add:x=>classes.add(x),remove:x=>classes.delete(x)}},querySelector:()=>main},
+    $:s=>elementos[s.slice(1)],diarias(){},lerHash:()=>null,LS:{get:()=> 'inicio'},VIEWS:[['inicio']],
+    viaHash:false,show:()=>telas++,checaTudo(){},atualiza(){},
+  });
+  vm.runInContext(trecho('function bloqueiaApp(', 'let contaIniciando ='),c);
+  c.liberaApp();assert.ok(classes.has('iniciando'));assert.equal(telas,0);
+  c.planetaPronto=true;c.estadoPronto=false;c.liberaApp();assert.equal(telas,0);
+  c.estadoPronto=true;c.liberaApp();assert.equal(telas,1);assert.equal(main.inert,false);assert.equal(elementos.inicioApp.hidden,true);
+  c.bloqueiaApp('Planeta indisponível',()=>{});assert.equal(main.inert,true);assert.equal(c.S.xp,500);assert.equal(elementos.inicioTentar.hidden,false);
+});
