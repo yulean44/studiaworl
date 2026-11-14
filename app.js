@@ -1,13 +1,10 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=46";
-import { ic, ICONES_MATERIA } from "./icons.js?v=46";
-import { FIG } from "./figuras.js?v=46";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=46";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=46";
-import { semanaDeEstudos } from "./relatorio.js?v=46";
-<<<<<<< Updated upstream
-import { carregaMaterias } from "./conteudo.js?v=46";
-=======
->>>>>>> Stashed changes
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=47";
+import { ic, ICONES_MATERIA } from "./icons.js?v=47";
+import { FIG } from "./figuras.js?v=47";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=47";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=47";
+import { semanaDeEstudos } from "./relatorio.js?v=47";
+import { carregaMaterias } from "./conteudo.js?v=47";
 
 /* =========================================================
    utilidades
@@ -669,7 +666,7 @@ temaMundo = () => mundo?.tema?.(tema);
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=46"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=47"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -1870,7 +1867,6 @@ document.querySelector(".marca").style.cursor = "default";
    início do app
    ========================================================= */
 const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
-<<<<<<< Updated upstream
 async function carregaFabrica(ids = CONTEUDOS) {
   const r = await carregaMaterias(ids);
   FABRICA = CONTEUDOS.map(id => r.materias.find(m => m.id === id) || FABRICA.find(m => m.id === id)).filter(Boolean);
@@ -1887,11 +1883,6 @@ function avisaConteudo() {
     try { await carregaFabrica([...conteudosFalhos]); }
     finally { recarregandoConteudo = false; render(); }
   });
-=======
-async function carregaFabrica() {
-  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=46`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
-  FABRICA = r.filter(Boolean);
->>>>>>> Stashed changes
 }
 async function conectaNuvem() {
   if (!window.claude || typeof window.claude.use !== "function") return;
@@ -1944,7 +1935,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=46");
+      const mod = await import("./conta.js?v=47");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }
