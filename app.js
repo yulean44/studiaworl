@@ -1,6 +1,6 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=31";
-import { ic, ICONES_MATERIA } from "./icons.js?v=31";
-import { FIG } from "./figuras.js?v=31";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=34";
+import { ic, ICONES_MATERIA } from "./icons.js?v=34";
+import { FIG } from "./figuras.js?v=34";
 
 /* =========================================================
    utilidades
@@ -85,7 +85,7 @@ const iconeMat = m => m.icone || (m.id === "mfc" ? "estetoscopio" : "livro");
 function novoEstado() {
   return { v: 2, upd: 0, xp: 0, nivel: 1, totMin: 0, totCards: 0, totOk: 0, totErr: 0, rev: 0, criados: 0,
     dias: {}, cards: {}, lidas: {}, premLidas: {}, checks: {}, decos: [], criaturas: [], efeitos: {}, verde: 0,
-    jornada: 0, conq: {}, diarias: null, diasCompletos: 0, log: [], maxSess: 0, meus: {}, mats: {}, ultimo: null, timer: null, notas: {}, casos: {}, kahootDia: {} };
+    jornada: 0, conq: {}, diarias: null, diasCompletos: 0, log: [], maxSess: 0, meus: {}, mats: {}, ultimo: null, timer: null, notas: {}, casos: {}, kahootDia: {}, ordem: {} };
 }
 let S = Object.assign(novoEstado(), LS.get("estado", {}));
 if (S.inv) { for (const [k, n] of Object.entries(S.inv)) for (let i = 0; i < n; i++) S.decos.push({ id: uid6(), k, d: [0, 1, 0], r: Math.random() * 6.28, s: Math.floor(Math.random() * 1e6) }); delete S.inv; }
@@ -464,7 +464,7 @@ temaMundo = () => mundo?.tema?.(tema);
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=31"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=34"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -635,7 +635,7 @@ function renderMaterias() {
   renderConsulta();
   if (sub.tela === "mat" && materia(sub.mat)) return renderMateria(v);
   renderArvore();
-  const ms = materias();
+  const ms = ordena(materias(), "_m", m => m.id);
   v.innerHTML = `<div class="pagina">
     ${trilha([{ t: "Matérias" }])}
     <h1 class="doc-tit">Matérias</h1>
@@ -669,47 +669,133 @@ document.addEventListener("click", e => {
   if (document.body.classList.contains("arv-aberta") && !e.target.closest("#arvore")) fechaArvore();
 });
 document.addEventListener("keydown", e => { if (e.key === "Escape" && document.body.classList.contains("arv-aberta")) fechaArvore(); });
+/* ordem pessoal (arrastar no menu): S.ordem[lista] = [ids] */
+function ordena(arr, lista, idf) {
+  const o = (S.ordem || {})[lista]; if (!o || !o.length) return arr;
+  const pos = new Map(o.map((k, i) => [k, i]));
+  return arr.map((x, i) => [x, i]).sort((a, b) => (pos.get(idf(a[0])) ?? 1e6 + a[1]) - (pos.get(idf(b[0])) ?? 1e6 + b[1])).map(a => a[0]);
+}
+let arvAuto = null, arvRecem = "";
+const arvTroca = (k, v) => { arvAbertas[k] = v ?? !arvAbertas[k]; if (arvAbertas[k]) arvRecem = k; else delete arvAbertas[k]; LS.set("arvAbertas", arvAbertas); renderArvore(); };
 function renderArvore() {
-  const el = $("#arvore"); if (!el) return;
+  const el = $("#arvore"); if (!el || dg?.ativo) return;
   const rol = el.scrollTop;
-  if (sub.tela !== "lista" && materia(sub.mat)) {
+  /* abre a pasta do assunto atual só quando você navega até ele; depois dá para fechar à vontade */
+  const alvo = sub.tela !== "lista" && materia(sub.mat) ? sub.mat + "/" + (sub.tela === "sec" ? sub.sid : "") : "";
+  let rolarAtual = false;
+  if (alvo && alvo !== arvAuto) {
     arvAbertas[sub.mat] = true;
     if (sub.tela === "sec") { const g = grupoDe(materia(sub.mat), sub.sid); if (g) arvAbertas[sub.mat + "|" + g] = true; }
+    LS.set("arvAbertas", arvAbertas); rolarAtual = true;
   }
+  arvAuto = alvo;
+  const recem = arvRecem; arvRecem = "";
+  const filhos = (k, html) => `<div class="arv-filhos${k === recem ? " novo" : ""}">${html}</div>`;
   const pasta = m => {
     const aberto = !!arvAbertas[m.id], tot = m.secoes.length, li = m.secoes.filter(s => S.lidas[`${m.id}--${s.id}`]).length;
-    const grupos = []; m.secoes.forEach(s => { const g = s.grupo || ""; let G = grupos.find(x => x.g === g); if (!G) grupos.push(G = { g, l: [] }); G.l.push(s); });
-    const item = s => { const lida = !!S.lidas[`${m.id}--${s.id}`], on = sub.tela === "sec" && sub.mat === m.id && sub.sid === s.id;
-      return `<button class="arv-it arv-d ${on ? "on" : ""} ${lida ? "lida" : ""}" data-arv-sec="${esc(s.id)}" data-arv-mat="${esc(m.id)}" title="${esc(s.titulo)}" ${on ? 'aria-current="page"' : ""}>${ic("doc", "s")}<span>${esc(s.titulo)}</span>${lida ? `<i class="arv-ok" aria-label="concluída">${ic("check", "s")}</i>` : ""}</button>`; };
-    const corpo = grupos.map(G => { if (!G.g) return G.l.map(item).join("");
-      const k = m.id + "|" + G.g, ab = !!arvAbertas[k];
-      return `<button class="arv-it pasta" data-arv-tog="${esc(k)}" aria-expanded="${ab}">${ic("chev", "s chev")}${ic("pasta", "s")}<span>${esc(G.g)}</span><em>${G.l.length}</em></button>${ab ? `<div class="arv-filhos">${G.l.map(item).join("")}</div>` : ""}`; }).join("");
+    let grupos = []; m.secoes.forEach(s => { const g = s.grupo || ""; let G = grupos.find(x => x.g === g); if (!G) grupos.push(G = { g, l: [] }); G.l.push(s); });
+    grupos = ordena(grupos, "g:" + m.id, G => G.g); grupos.forEach(G => { G.l = ordena(G.l, `s:${m.id}|${G.g}`, s => s.id); });
+    const item = (s, ls) => { const lida = !!S.lidas[`${m.id}--${s.id}`], on = sub.tela === "sec" && sub.mat === m.id && sub.sid === s.id;
+      return `<button class="arv-it arv-d ${on ? "on" : ""} ${lida ? "lida" : ""}" data-dg-l="${esc(ls)}" data-dg="${esc(s.id)}" data-arv-sec="${esc(s.id)}" data-arv-mat="${esc(m.id)}" title="${esc(s.titulo)}" ${on ? 'aria-current="page"' : ""}>${ic("doc", "s")}<span>${esc(s.titulo)}</span>${lida ? `<i class="arv-ok" aria-label="concluída">${ic("check", "s")}</i>` : ""}</button>`; };
+    const corpo = grupos.map(G => { const ls = `s:${m.id}|${G.g}`;
+      if (!G.g) return `<div class="arv-bloco" data-dg-l="g:${esc(m.id)}" data-dg="">${G.l.map(s => item(s, ls)).join("")}</div>`;
+      const k = m.id + "|" + G.g, ab = !!arvAbertas[k], li2 = G.l.filter(s => S.lidas[`${m.id}--${s.id}`]).length;
+      return `<div class="arv-bloco" data-dg-l="g:${esc(m.id)}" data-dg="${esc(G.g)}"><button class="arv-it pasta" data-arv-tog="${esc(k)}" aria-expanded="${ab}">${ic("chev", "s chev")}${ic("pasta", "s")}<span>${esc(G.g)}</span><em>${li2 ? li2 + "/" : ""}${G.l.length}</em></button>${ab ? filhos(k, G.l.map(s => item(s, ls)).join("")) : ""}</div>`; }).join("");
     const nCards = cardsCompartilhados(m.id).length + (S.meus[m.id] || []).length;
     const extras = abasMat(m, nCards).filter(a => a[0] !== "secoes").map(([k, t, i]) => { const [nm, n] = t.split(" · ");
       return `<button class="arv-it extra ${sub.tela === "mat" && sub.mat === m.id && abaMat === k ? "on" : ""}" data-arv-aba="${k}" data-arv-mat="${esc(m.id)}">${ic(i, "s")}<span>${esc(nm)}</span>${n ? `<em>${esc(n)}</em>` : ""}</button>`; }).join("");
-    return `<div class="arv-linha"><button class="arv-tg" data-arv-tog="${esc(m.id)}" aria-expanded="${aberto}" aria-label="${aberto ? "Recolher" : "Abrir"} ${esc(m.nome)}">${ic("chev", "s chev")}</button>
-      <button class="arv-it arv-m ${sub.tela === "mat" && sub.mat === m.id && abaMat === "secoes" ? "on" : ""}" data-arv-abre="${esc(m.id)}" title="${esc(m.nome)}">${ic("pasta", "s")}<span>${esc(m.nome)}</span><em>${li}/${tot}</em></button></div>
-      ${aberto ? `<div class="arv-filhos">${corpo || '<p class="arv-vazio">Nenhuma seção ainda.</p>'}${extras ? `<div class="arv-sep"></div>${extras}` : ""}</div>` : ""}`;
+    return `<div class="arv-bloco" data-dg-l="_m" data-dg="${esc(m.id)}"><div class="arv-linha"><button class="arv-tg" data-arv-tog="${esc(m.id)}" aria-expanded="${aberto}" aria-label="${aberto ? "Recolher" : "Abrir"} ${esc(m.nome)}">${ic("chev", "s chev")}</button>
+      <button class="arv-it arv-m ${sub.tela === "mat" && sub.mat === m.id && abaMat === "secoes" ? "on" : ""}" data-arv-abre="${esc(m.id)}" aria-expanded="${aberto}" title="${esc(m.nome)}">${ic("pasta", "s")}<span>${esc(m.nome)}</span><em>${li}/${tot}</em></button></div>
+      ${aberto ? filhos(m.id, (corpo || '<p class="arv-vazio">Nenhuma seção ainda.</p>') + (extras ? `<div class="arv-sep"></div>${extras}` : "")) : ""}</div>`;
   };
-  el.innerHTML = `<div class="arv-topo"><span class="arv-marca">Planeta de Estudos</span><span class="arv-tit">Matérias</span><button class="arv-btn arv-x" id="arvFecha" title="Fechar" aria-label="Fechar menu">${ic("x", "s")}</button><button class="arv-btn arv-rec" id="arvRecolhe" title="Recolher menu" aria-label="Recolher menu">${ic("painel", "s")}</button></div>
+  const algoAberto = Object.keys(arvAbertas).some(k => arvAbertas[k]);
+  el.innerHTML = `<div class="arv-topo"><span class="arv-marca">Planeta de Estudos</span><span class="arv-tit">Matérias</span><button class="arv-btn" id="arvTudo" title="${algoAberto ? "Fechar todas as pastas" : "Abrir todas as pastas"}" aria-label="${algoAberto ? "Fechar todas as pastas" : "Abrir todas as pastas"}">${ic(algoAberto ? "recolhe" : "expande", "s")}</button><button class="arv-btn arv-x" id="arvFecha" title="Fechar" aria-label="Fechar menu">${ic("x", "s")}</button><button class="arv-btn arv-rec" id="arvRecolhe" title="Recolher menu" aria-label="Recolher menu">${ic("painel", "s")}</button></div>
     <div class="arv-apps" role="navigation" aria-label="Ir para">${VIEWS.map(([k, i, t]) => `<button class="arv-btn ${k === "materias" ? "on" : ""}" data-arv-view="${k}" title="${t}" aria-label="${t}">${ic(i, "s")}</button>`).join("")}</div>
     <div class="arv-sec">Matérias</div>
     <label class="arv-busca">${ic("lupa", "s")}<input id="busca" type="search" placeholder="Buscar em tudo" aria-label="Buscar em todas as seções" autocomplete="off" value="${esc(buscaMat)}"></label>
     <div id="resBusca"></div>
     <button class="arv-it raiz ${sub.tela === "lista" ? "on" : ""}" data-arv-raiz>${ic("casa", "s")}<span>Todas as matérias</span></button>
-    ${materias().map(pasta).join("")}
+    ${ordena(materias(), "_m", m => m.id).map(pasta).join("")}
     ${souDono ? `<button class="arv-it novo" id="arvNova">${ic("mais", "s")}<span>Nova matéria</span></button>` : ""}`;
-  $$("[data-arv-tog]", el).forEach(b => b.addEventListener("click", () => { const k = b.dataset.arvTog; arvAbertas[k] = !arvAbertas[k]; LS.set("arvAbertas", arvAbertas); renderArvore(); }));
+  $$("[data-arv-tog]", el).forEach(b => b.addEventListener("click", () => arvTroca(b.dataset.arvTog)));
   $$("[data-arv-sec]", el).forEach(b => b.addEventListener("click", () => { fechaArvore(); abreSecao(b.dataset.arvMat, b.dataset.arvSec); }));
-  $$("[data-arv-abre]", el).forEach(b => b.addEventListener("click", () => { arvAbertas[b.dataset.arvAbre] = true; LS.set("arvAbertas", arvAbertas); abaMat = "secoes"; LS.set("abaMat", abaMat); fechaArvore(); abreMateria(b.dataset.arvAbre); }));
+  /* clicar na matéria em que você já está abre/fecha a pasta; em outra, vai até ela */
+  $$("[data-arv-abre]", el).forEach(b => b.addEventListener("click", () => { const id = b.dataset.arvAbre;
+    if (sub.tela === "mat" && sub.mat === id && abaMat === "secoes") return arvTroca(id);
+    arvAbertas[id] = true; LS.set("arvAbertas", arvAbertas); abaMat = "secoes"; LS.set("abaMat", abaMat); fechaArvore(); abreMateria(id); }));
   $$("[data-arv-aba]", el).forEach(b => b.addEventListener("click", () => { abaMat = b.dataset.arvAba; LS.set("abaMat", abaMat); fechaArvore(); abreMateria(b.dataset.arvMat); }));
   $("[data-arv-raiz]", el).addEventListener("click", () => { fechaArvore(); sub = { tela: "lista" }; LS.set("sub", sub); render(); sincronizaHash(); });
+  $("#arvTudo", el).addEventListener("click", () => {
+    if (algoAberto) arvAbertas = {};
+    else { arvAbertas = {}; materias().forEach(m => { arvAbertas[m.id] = true; m.secoes.forEach(s => { if (s.grupo) arvAbertas[m.id + "|" + s.grupo] = true; }); }); }
+    LS.set("arvAbertas", arvAbertas); renderArvore();
+  });
   $("#arvNova", el)?.addEventListener("click", novaMateria);
   $("#arvFecha", el).addEventListener("click", fechaArvore);
   $$("[data-arv-view]", el).forEach(b => b.addEventListener("click", () => { if (b.dataset.arvView !== "materias") show(b.dataset.arvView); }));
   const inp = $("#busca", el); inp.addEventListener("input", () => { buscaMat = inp.value; mostraBusca(); }); mostraBusca();
   el.scrollTop = rol;
+  if (rolarAtual) $(".arv-it.on", el)?.scrollIntoView({ block: "nearest" });
+  if (!el.dataset.dgOk) arrastavel(el);
 }
+/* ---------- arrastar para reorganizar (mouse: arrastar; toque: segurar e arrastar) ---------- */
+let dg = null, dgBloqClique = false;
+function arrastavel(el) {
+  el.dataset.dgOk = "1";
+  el.addEventListener("pointerdown", e => {
+    if (e.button > 0 || e.target.closest("input")) return;
+    const row = e.target.closest(".arv-it,.arv-tg"); if (!row) return;
+    const blk = row.closest("[data-dg-l]");
+    if (!blk || (blk !== row && !blk.firstElementChild.contains(row))) return;
+    if ([...blk.parentElement.children].filter(x => x.dataset.dgL === blk.dataset.dgL).length < 2) return;
+    dg = { blk, x: e.clientX, y: e.clientY, id: e.pointerId, toque: e.pointerType !== "mouse", ativo: false };
+    if (dg.toque) dg.t = setTimeout(dgComeca, 380);
+  });
+  el.addEventListener("touchmove", e => { if (dg?.ativo) e.preventDefault(); }, { passive: false });
+  el.addEventListener("contextmenu", e => { if (dg) e.preventDefault(); });
+  el.addEventListener("click", e => { if (dgBloqClique) { e.preventDefault(); e.stopPropagation(); dgBloqClique = false; } }, true);
+  el.addEventListener("keydown", e => {   // setas: → abre, ← fecha
+    if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+    const b = e.target.closest("[data-arv-tog],[data-arv-abre]"); if (!b) return;
+    const k = b.dataset.arvTog || b.dataset.arvAbre; e.preventDefault();
+    arvTroca(k, e.key === "ArrowRight");
+    $(`[data-arv-${b.dataset.arvTog ? "tog" : "abre"}="${CSS.escape(k)}"]`, el)?.focus();
+  });
+}
+function dgComeca() {
+  if (!dg) return; dg.ativo = true;
+  dg.blk.classList.add("arrastando"); $("#arvore")?.classList.add("ordenando"); document.body.classList.add("dg-on");
+  navigator.vibrate?.(10);
+}
+window.addEventListener("pointermove", e => {
+  if (!dg || e.pointerId !== dg.id) return;
+  if (!dg.ativo) {
+    if (Math.hypot(e.clientX - dg.x, e.clientY - dg.y) < 7) return;
+    if (dg.toque) { clearTimeout(dg.t); dg = null; return; }
+    dgComeca();
+  }
+  e.preventDefault();
+  const blk = dg.blk, pai = blk.parentElement, irm = [...pai.children].filter(x => x !== blk && x.dataset.dgL === blk.dataset.dgL);
+  const antes = irm.find(x => { const r = x.getBoundingClientRect(); return e.clientY < r.top + Math.min(r.height, 36) / 2; });
+  if (antes) { if (blk.nextElementSibling !== antes) pai.insertBefore(blk, antes); }
+  else if (irm.length && irm[irm.length - 1].nextElementSibling !== blk) irm[irm.length - 1].after(blk);
+  const arv = $("#arvore"), r = arv.getBoundingClientRect();
+  if (arv.scrollHeight > arv.clientHeight) { if (e.clientY < r.top + 44) arv.scrollTop -= 12; else if (e.clientY > r.bottom - 44) arv.scrollTop += 12; }
+  else { if (e.clientY < 60) scrollBy(0, -12); else if (e.clientY > innerHeight - 60) scrollBy(0, 12); }
+}, { passive: false });
+function dgFim(e) {
+  if (!dg || (e && e.pointerId !== dg.id)) return;
+  clearTimeout(dg.t); const d = dg; dg = null;
+  if (!d.ativo) return;
+  d.blk.classList.remove("arrastando"); $("#arvore")?.classList.remove("ordenando"); document.body.classList.remove("dg-on");
+  dgBloqClique = true; setTimeout(() => { dgBloqClique = false; }, 350);
+  const l = d.blk.dataset.dgL, ids = [...d.blk.parentElement.children].filter(x => x.dataset.dgL === l).map(x => x.dataset.dg);
+  const antes = (S.ordem || {})[l];
+  if (!antes || antes.join("\n") !== ids.join("\n")) { (S.ordem ||= {})[l] = ids; salvar(); }
+  if (l === "_m" && atual === "materias" && sub.tela === "lista") render(); else renderArvore();
+}
+window.addEventListener("pointerup", dgFim);
+window.addEventListener("pointercancel", dgFim);
 function mostraBusca() {
   const box = $("#resBusca"); if (!box) return;
   const q = buscaMat.trim().toLowerCase(); if (q.length < 2) { box.innerHTML = ""; return; }
@@ -1458,7 +1544,7 @@ document.querySelector(".marca").style.cursor = "default";
    ========================================================= */
 const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
 async function carregaFabrica() {
-  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=33`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
+  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=34`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
   FABRICA = r.filter(Boolean);
 }
 async function conectaNuvem() {
@@ -1499,6 +1585,6 @@ function atualizaConteudo() { clearTimeout(tConteudo); tConteudo = setTimeout(()
   if (S.timer) tick();
   if (!S.upd && !modoConta) setTimeout(() => festa({ icone: "planeta_vazio", titulo: "Seu planeta", texto: "Cada minuto de foco, card respondido e seção concluída faz surgir algo novo nele. Comece com 5 minutos de foco." }), 900);
   if (modoConta) {
-    import("./conta.js?v=31").then(async mod => { contaMod = mod; await mod.iniciaConta(aoMudarConta); }).catch(e => { console.warn("contas indisponíveis", e); });
+    import("./conta.js?v=34").then(async mod => { contaMod = mod; await mod.iniciaConta(aoMudarConta); }).catch(e => { console.warn("contas indisponíveis", e); });
   } else conectaNuvem();
 })();
