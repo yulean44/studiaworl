@@ -43,13 +43,27 @@ await p.goto(base+'/#materias/imagem');await p.locator('[data-am="questoes"]').c
 assert.equal(await p.evaluate(()=>document.activeElement.id),'qFeedback');await p.keyboard.press('Tab');assert.equal(await p.evaluate(()=>document.activeElement.id),'qReler');
 await p.locator('#qProx').click();assert.equal(await p.evaluate(()=>document.activeElement.id),'qEnunciado');console.log('PASS foco no resultado e na próxima questão');
 await p.screenshot({path:out+'/questoes-foco.png'});
+await p.locator('#arvore [data-arv-view="questoes"]').click();await p.locator('#qMateria').waitFor();
+assert.match(p.url(),/#questoes\//);assert.equal(await p.locator('#qMateria option').count(),6);
+assert.ok(await p.locator('#qSair').isVisible());await p.locator('#qSair').click();await p.getByRole('dialog').getByRole('button',{name:'Sair',exact:true}).click();
+for(const mat of ['mfc','imagem','antibioticos','psiquiatria','cirurgia','saude-mulher']){
+ await p.locator('#qMateria').selectOption(mat);assert.ok(p.url().endsWith('#questoes/'+mat));assert.ok(await p.locator('#qTreino').isEnabled());
+}
+await p.locator('#qMateria').selectOption('mfc');await p.locator('#qTreino').click();await p.keyboard.press('1');assert.equal(await p.evaluate(()=>document.activeElement.id),'qFeedback');
+await p.keyboard.press('Enter');assert.equal(await p.evaluate(()=>document.activeElement.id),'qEnunciado');
+await p.goto(base+'/#questoes/imagem');await p.locator('#qMateria').waitFor();assert.equal(await p.locator('#qMateria').inputValue(),'imagem');
+console.log('PASS aba Questões: seis matérias, URL própria e respostas por teclado');
 for(const width of [320,390,768,1280]){
  await p.setViewportSize({width,height:900});
- for(const hash of ['#inicio','#materias','#materias/mfc/g1','#foco','#revisao','#missoes','#progresso']){
+ for(const hash of ['#inicio','#materias','#materias/mfc/g1','#foco','#revisao','#questoes/mfc','#missoes','#progresso']){
   await p.goto(base+'/'+hash);await p.locator('body:not(.iniciando)').waitFor({timeout:45000});await p.evaluate(()=>document.fonts.ready);
   assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`overflow ${width} ${hash}`);
  }
- console.log('PASS 7 áreas sem overflow em',width);
+ await p.goto(base+'/#questoes/mfc');await p.locator('#qMateria').waitFor();
+ const nav=await p.locator('#nav .navbtn').evaluateAll(bs=>bs.map(e=>{const r=e.getBoundingClientRect();return {x:r.x,right:r.right,y:r.y,bottom:r.bottom,w:r.width,h:r.height}}));
+ assert.equal(nav.length,8);for(const r of nav){assert.ok(r.x>=0 && r.right<=width+1);assert.ok(r.w>=44 && r.h>=44);}
+ await p.screenshot({path:out+'/aba-questoes-'+width+'.png'});
+ console.log('PASS 8 áreas e oito destinos acessíveis em',width);
 }
 const f=await b.newPage({viewport:{width:390,height:844}});await prepara(f);let bloqueia=true;
 await f.route('**/content/mfc.json?*',r=>bloqueia?r.abort():r.continue());

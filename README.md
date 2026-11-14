@@ -6,7 +6,7 @@ Publicado em https://yulean44.github.io/studiaworl/. Site estático, sem build, 
 
 ## Conteúdo e contas
 
-Seis matérias: Medicina de Família e Comunidade, Diagnóstico por Imagem, Antibióticos, Saúde da Mulher, Psiquiatria e Cirurgia. Questões próprias, Kahoot e flashcards são bancos separados. As questões indicam o trecho do material usado como fonte.
+Seis matérias: Medicina de Família e Comunidade, Diagnóstico por Imagem, Antibióticos, Saúde da Mulher, Psiquiatria e Cirurgia. Questões próprias, Kahoot e flashcards são bancos separados. As questões indicam o trecho do material usado como fonte. A aba Questões na navegação principal reúne os bancos por matéria, com os mesmos filtros, treino, simulado e histórico disponíveis dentro das matérias.
 
 O progresso fica no navegador e, para quem entra, no Firebase Auth/Firestore (`usuarios/{uid}`). O estado v2, as chaves `pe:` e as contas existentes devem ser preservados. Versões divergentes ficam em cópias exportáveis pelo menu da conta. O app só abre após o primeiro quadro do planeta 3D; falhas oferecem nova tentativa sem zerar dados.
 

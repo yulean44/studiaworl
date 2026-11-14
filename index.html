@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=47">
-<link rel="icon" type="image/png" href="favicon.png?v=47">
-<link rel="manifest" href="manifest.webmanifest?v=47">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=48">
+<link rel="icon" type="image/png" href="favicon.png?v=48">
+<link rel="manifest" href="manifest.webmanifest?v=48">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -446,8 +446,8 @@ mark.grifo.pisca{outline:2px solid var(--ink);outline-offset:2px}
 .caso .tags i{font-style:normal;font-size:11px;letter-spacing:.06em;padding:3px 9px;border-radius:99px;border:1px solid var(--line);color:var(--muted)}
 .okchip{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--ok)}
 .casoTopo{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
-#matCorpo .prog{height:3px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:16px}
-#matCorpo .prog i{display:block;height:100%;background:var(--acc);transition:width .4s}
+#matCorpo .prog,#qCorpo .prog{height:3px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:16px}
+#matCorpo .prog i,#qCorpo .prog i{display:block;height:100%;background:var(--acc);transition:width .4s}
 .abertura{padding:16px 18px;border-radius:16px;background:rgba(255,255,255,.035);border:1px solid var(--line);margin-bottom:14px}
 .etapa{padding:16px 0;border-top:1px solid var(--line)}
 .etapa .info{padding:12px 16px;border-left:2px solid var(--acc2);background:rgba(143,214,255,.06);border-radius:10px;margin:8px 0}
@@ -844,8 +844,8 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 .qbarra{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
 .qrelogio{font-variant-numeric:tabular-nums;font-size:15px;padding:6px 12px;border-radius:999px;border:1px solid var(--line)}
 .qrelogio.pouco{border-color:var(--bad);color:var(--bad)}
-#matCorpo .prog{height:3px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:16px}
-#matCorpo .prog i{display:block;height:100%;background:var(--acc);transition:width .4s}
+#matCorpo .prog,#qCorpo .prog{height:3px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:16px}
+#matCorpo .prog i,#qCorpo .prog i{display:block;height:100%;background:var(--acc);transition:width .4s}
 .qcard{display:block}
 .qtags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
 .qtags span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:3px 10px;border-radius:999px;border:1px solid var(--line)}
@@ -887,10 +887,13 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 .qgi.ok summary em{color:var(--ok)}.qgi.no summary em{color:var(--bad)}
 .qgi .qalts{margin-top:10px}
 .qex{color:var(--doc);font-weight:300;font-size:14.5px}
-@media (prefers-reduced-motion:reduce){.qalt,.atalho,#matCorpo .prog i{transition:none}}
+@media (prefers-reduced-motion:reduce){.qalt,.atalho,#matCorpo .prog i,#qCorpo .prog i{transition:none}}
 
 /* ================= refino leve (nov/2026): mesma identidade, menos ruído ================= */
 .conteudo-status{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px;font-size:14px;color:var(--ink)}
+/* Oito destinos acessíveis sem diminuir os alvos de toque. */
+@media (min-width:901px){.arv-apps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}.arv-apps .arv-btn{justify-self:center}}
+@media (max-width:400px){.nav{display:grid;grid-template-columns:repeat(4,minmax(44px,1fr));justify-items:center}.main{padding-bottom:calc(132px + env(safe-area-inset-bottom))}}
 /* celular: na área de estudo a marca some, então o topo não precisa de faixa vazia */
 @media (max-width:760px){body.estudo .main{padding-top:calc(14px + env(safe-area-inset-top))}}
 /* Prioritário · Resumo · Siglas: aba ativa com fundo suave em vez de moldura */
@@ -924,6 +927,7 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
   <section class="view" id="view-foco" hidden></section>
   <section class="view" id="view-materias" hidden></section>
   <section class="view" id="view-revisao" hidden></section>
+  <section class="view" id="view-questoes" hidden></section>
   <section class="view" id="view-missoes" hidden></section>
   <section class="view" id="view-progresso" hidden></section>
 </main>
@@ -931,6 +935,6 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=47"></script>
+<script type="module" src="app.js?v=48"></script>
 </body>
 </html>
