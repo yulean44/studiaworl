@@ -1,11 +1,11 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=52";
-import { ic, ICONES_MATERIA } from "./icons.js?v=52";
-import { FIG } from "./figuras.js?v=52";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=52";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=52";
-import { semanaDeEstudos } from "./relatorio.js?v=52";
-import { carregaMaterias } from "./conteudo.js?v=52";
-import { criaDiaHora } from "./diahora.js?v=52";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=53";
+import { ic, ICONES_MATERIA } from "./icons.js?v=53";
+import { FIG } from "./figuras.js?v=53";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=53";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=53";
+import { semanaDeEstudos } from "./relatorio.js?v=53";
+import { carregaMaterias } from "./conteudo.js?v=53";
+import { criaDiaHora } from "./diahora.js?v=53";
 
 /* =========================================================
    utilidades
@@ -705,7 +705,7 @@ temaMundo = () => mundo?.tema?.(temaAtivo());
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=52"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=53"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -721,6 +721,7 @@ setInterval(() => {
 async function iniciaMundo() {
   const m = await garanteMod(); if (!m) throw new Error("Não foi possível carregar o planeta.");
   mundo = m.criaMundo($("#espaco"));
+  aplicaCeu();
   await mundo.pronto;
   const esp = $("#espaco");
   esp.addEventListener("pointerdown", () => { segurando = true; explorando(); });
@@ -806,6 +807,28 @@ function comoGanhar(k) {
   return "Ovo surpresa";
 }
 let colAberta = LS.get("colAberta", false);
+/* céu do planeta: hora (agora ou escolhida) e nuvens; fica salvo neste aparelho */
+let ceuMundo = { auto: true, h: 12, nuvens: .45, ...LS.get("ceuMundo", {}) };
+const fmtHora = h => { const r = Math.floor(h), m = Math.round((h - r) * 60) % 60; return `${String(r % 24).padStart(2, "0")}h${m ? String(m).padStart(2, "0") : ""}`; };
+const horaReal = () => { const d = new Date(); return d.getHours() + d.getMinutes() / 60; };
+const aplicaCeu = () => mundo?.ceu?.({ hora: ceuMundo.auto ? "auto" : ceuMundo.h, nuvens: ceuMundo.nuvens });
+function painelCeu() {
+  const h = ceuMundo.auto ? horaReal() : ceuMundo.h, temNuvem = !!S.efeitos.nuvens;
+  return `<div class="ceu-ctl" role="group" aria-label="Céu do planeta">
+    <label class="ceu-l"><span>Hora</span><input type="range" class="ceu-r hora" id="ceuHora" min="0" max="23.75" step="0.25" value="${h.toFixed(2)}" aria-valuetext="${fmtHora(h)}"><b id="ceuHoraV">${ceuMundo.auto ? "Agora" : fmtHora(h)}</b></label>
+    <button type="button" class="btn sm ${ceuMundo.auto ? "on" : ""}" id="ceuAgora" aria-pressed="${ceuMundo.auto}">Agora</button>
+    <label class="ceu-l ${temNuvem ? "" : "lock"}" title="${temNuvem ? "" : "Desbloqueie Atmosfera e nuvens na Jornada"}"><span>Nuvens</span><input type="range" class="ceu-r nuv" id="ceuNuv" min="0" max="1" step="0.05" value="${ceuMundo.nuvens}" ${temNuvem ? "" : "disabled"} aria-valuetext="${Math.round(ceuMundo.nuvens * 100)}%"><b id="ceuNuvV">${temNuvem ? Math.round(ceuMundo.nuvens * 100) + "%" : ic("cadeado", "s")}</b></label>
+  </div>`;
+}
+function ligaPainelCeu() {
+  const hr = $("#ceuHora"), nv = $("#ceuNuv"), ag = $("#ceuAgora"); if (!hr) return;
+  const salva = () => LS.set("ceuMundo", ceuMundo);
+  hr.addEventListener("input", () => { ceuMundo.auto = false; ceuMundo.h = +hr.value; $("#ceuHoraV").textContent = fmtHora(ceuMundo.h); hr.setAttribute("aria-valuetext", fmtHora(ceuMundo.h)); ag.classList.remove("on"); ag.setAttribute("aria-pressed", "false"); aplicaCeu(); });
+  hr.addEventListener("change", salva);
+  ag.addEventListener("click", () => { ceuMundo.auto = true; hr.value = horaReal().toFixed(2); $("#ceuHoraV").textContent = "Agora"; ag.classList.add("on"); ag.setAttribute("aria-pressed", "true"); aplicaCeu(); salva(); });
+  nv?.addEventListener("input", () => { ceuMundo.nuvens = +nv.value; $("#ceuNuvV").textContent = Math.round(ceuMundo.nuvens * 100) + "%"; nv.setAttribute("aria-valuetext", $("#ceuNuvV").textContent); aplicaCeu(); });
+  nv?.addEventListener("change", salva);
+}
 function renderMundo() {
   const ks = Object.keys(CRIATURAS).sort((a, b) => (S.criaturas.includes(b) - S.criaturas.includes(a)) || RARO_ORDEM.indexOf(CRIATURAS[a].r) - RARO_ORDEM.indexOf(CRIATURAS[b].r));
   $("#view-mundo").innerHTML = `
@@ -816,6 +839,7 @@ function renderMundo() {
         <p class="intro" style="max-width:420px"><b>Estude</b> e ele cresce. <b>Arraste</b> para girar.</p>
       </div>
       <div class="vidro painel-mundo">
+        ${painelCeu()}
         <div class="efeitos">${Object.entries(EFEITOS).map(([k, e]) => `<span class="efe ${S.efeitos[k] ? "on" : ""}" title="${S.efeitos[k] ? "Ativo" : esc((JORNADA.find(x => x.premio.efeitos?.includes(k)) || {}).titulo || "")}">${S.efeitos[k] ? fig(ICONE_EFEITO[k]) : ic("cadeado", "s")}${e.nome}</span>`).join("")}</div>
         <h2 class="h-sec" style="margin-top:10px;cursor:pointer" id="togCol">Coleção · ${S.criaturas.length} de ${ks.length}<span class="grow"></span><span class="hs-meta">${ic(colAberta ? "baixo" : "cima", "s")}</span></h2>
         <div class="colecao" ${colAberta ? "" : "hidden"}>${ks.map(k => { const c = CRIATURAS[k], tem = S.criaturas.includes(k);
@@ -824,6 +848,7 @@ function renderMundo() {
     </div>`;
   $$("[data-foco]").forEach(b => b.addEventListener("click", () => { mundo?.foco(b.dataset.foco); explorando(); }));
   $("#togCol").addEventListener("click", () => { colAberta = !colAberta; LS.set("colAberta", colAberta); renderMundo(); });
+  ligaPainelCeu();
   garanteMod().then(mod => { if (!mod) return; $$("[data-mini]").forEach(async el => { const k = el.dataset.mini; if (!k) return; const u = await mod.miniatura(k); if (u && el.isConnected) el.innerHTML = `<img src="${u}" alt="">`; }); });
 }
 
@@ -1975,7 +2000,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=52");
+      const mod = await import("./conta.js?v=53");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }

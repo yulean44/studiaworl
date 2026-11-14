@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=52">
-<link rel="icon" type="image/png" href="favicon.png?v=52">
-<link rel="manifest" href="manifest.webmanifest?v=52">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=53">
+<link rel="icon" type="image/png" href="favicon.png?v=53">
+<link rel="manifest" href="manifest.webmanifest?v=53">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -952,7 +952,7 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 .diahora:focus-visible{outline:2px solid var(--acc2);outline-offset:3px}
 @media (pointer:coarse){.diahora{height:44px;width:96px}}
 @media (max-width:760px){.diahora{width:58px}}
-@media (max-width:400px){.chipi .lbar{width:54px}.topo{gap:5px}}
+@media (max-width:400px){.chipi .lbar{width:38px}.topo{gap:5px}.topo .chipi{padding-left:11px;padding-right:11px}}
 @media (prefers-reduced-motion:reduce){.diahora,.diahora *{transition:none}.diahora:active{transform:none}}
 
 /* raios de luz vindos do canto (sol); mais quentes na golden hour, só um fio de luar à noite */
@@ -967,6 +967,26 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 :root:not([data-tema]) .raios,:root[data-tema="meianoite"] .raios,:root[data-tema="cristal"] .raios,:root[data-tema="aurora"] .raios,:root[data-tema="floresta"] .raios{--raio-cor:rgba(180,205,255,.10);--raio-op:1}
 body.iniciando .raios{visibility:hidden}
 @media (prefers-reduced-motion:reduce){.raios i{animation:none}}
+
+/* painel do céu em Meu mundo: hora e nuvens */
+.ceu-ctl{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;padding:2px 0 10px;margin-bottom:10px;border-bottom:1px solid var(--line)}
+.ceu-l{display:flex;align-items:center;gap:10px;flex:1 1 220px;min-width:0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.ceu-l > span{flex:none;width:58px}
+.ceu-l b{flex:none;min-width:48px;text-align:right;font-weight:500;letter-spacing:.04em;text-transform:none;font-size:13px;color:var(--ink);font-variant-numeric:tabular-nums}
+.ceu-l.lock{opacity:.55}
+.ceu-ctl .btn.on{background:var(--acc-soft);border-color:var(--acc);color:var(--forte)}
+.ceu-r{flex:1;min-width:0;height:28px;margin:0;background:transparent;-webkit-appearance:none;appearance:none;cursor:pointer}
+.ceu-r:disabled{cursor:not-allowed}
+.ceu-r::-webkit-slider-runnable-track{height:8px;border-radius:99px;border:1px solid var(--line2);background:var(--trilho)}
+.ceu-r::-moz-range-track{height:8px;border-radius:99px;border:1px solid var(--line2);background:var(--trilho)}
+.ceu-r::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;margin-top:-8px;border-radius:50%;background:var(--solid);border:1px solid var(--line2);box-shadow:0 2px 8px rgba(20,40,70,.18),inset 0 1px 0 rgba(255,255,255,.8)}
+.ceu-r::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--solid);border:1px solid var(--line2);box-shadow:0 2px 8px rgba(20,40,70,.18)}
+.ceu-r:focus-visible{outline:none}
+.ceu-r:focus-visible::-webkit-slider-thumb{outline:2px solid var(--acc2);outline-offset:2px}
+.ceu-r:focus-visible::-moz-range-thumb{outline:2px solid var(--acc2);outline-offset:2px}
+.ceu-r.hora{--trilho:linear-gradient(90deg,#1c2847 0%,#2e3c60 18%,#f3cfb0 23%,#bcd9f0 30%,#a9d3f0 50%,#f8eedb 60%,#f0c58c 70%,#f5b47e 76%,#4a4f86 80%,#1c2847 86%,#1c2847 100%)}
+.ceu-r.nuv{--trilho:linear-gradient(90deg,var(--glass2),#c9d0da)}
+@media (pointer:coarse){.ceu-r{height:44px}.ceu-r::-webkit-slider-thumb{width:26px;height:26px;margin-top:-10px}}
 </style>
 </head>
 <body class="iniciando">
@@ -991,6 +1011,6 @@ body.iniciando .raios{visibility:hidden}
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=52"></script>
+<script type="module" src="app.js?v=53"></script>
 </body>
 </html>

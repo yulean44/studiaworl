@@ -11,7 +11,7 @@ Site estático, sem build: HTML + JS em módulos ES, three.js 0.160 via importma
 |---|---|
 | `index.html` | Todo o CSS (temas por `:root[data-tema=...]`), importmap e a casca da página |
 | `app.js` | Toda a lógica: telas (`VIEWS`), matérias/seções, menu lateral em árvore, grifos e notas, foco, flashcards, missões, admin, contas |
-| `world.js` | O planeta 3D (`criaMundo`), terreno, água, modelos, câmera e layouts |
+| `world.js` | O planeta 3D (`criaMundo`), terreno, água, grama e pedrinhas, modelos, câmera, layouts e `ceu({hora, nuvens})` (luz pela hora e cobertura de nuvens) |
 | `data.js` | Criaturas, enfeites, jornada, conquistas, missões diárias, curva de XP |
 | `conta.js` | Login e salvamento no Firebase (Auth + Firestore, doc `usuarios/{uid}`) |
 | `progresso.js` | Assinatura estável do estado, cópias locais e limite de tempo das sessões |

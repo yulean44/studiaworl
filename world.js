@@ -3,7 +3,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import * as SkeletonUtils from "three/addons/utils/SkeletonUtils.js";
-import { CRIATURAS, DECOS } from "./data.js?v=52";
+import { CRIATURAS, DECOS } from "./data.js?v=53";
 
 /* ---------- ruído ---------- */
 function hash(x, y, z) { let h = x * 374761393 + y * 668265263 + z * 2147483647; h = (h ^ (h >>> 13)) * 1274126177; return ((h ^ (h >>> 16)) >>> 0) / 4294967295; }
@@ -107,7 +107,7 @@ function fazDeco(k, seed) {
 const loader = new GLTFLoader();
 const cache = {};
 function carregaGLB(id) {
-  return (cache[id] ||= import(`./m/${id}.js?v=52`).then(mod => {
+  return (cache[id] ||= import(`./m/${id}.js?v=53`).then(mod => {
     const bin = atob(mod.default), buf = new Uint8Array(bin.length);
     for (let i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
     return new Promise((res, rej) => loader.parse(buf.buffer, "", res, rej));
@@ -179,9 +179,9 @@ export function criaMundo(host) {
   const semMovimento = matchMedia("(prefers-reduced-motion: reduce)");
   controls.minDistance = 1.5; controls.maxDistance = 10; controls.autoRotate = !matchMedia("(prefers-reduced-motion: reduce)").matches; controls.autoRotateSpeed = .45; controls.rotateSpeed = .55; controls.zoomSpeed = .7;
 
-  scene.add(new THREE.HemisphereLight("#dff1ff", "#2a3550", 1.1));
+  const hemi = new THREE.HemisphereLight("#dff1ff", "#2a3550", 1.1); scene.add(hemi);
   const sol = new THREE.DirectionalLight("#fff3e0", 2.3); sol.castShadow = true;
-  sol.shadow.mapSize.set(1024, 1024); Object.assign(sol.shadow.camera, { left: -1.6, right: 1.6, top: 1.6, bottom: -1.6, near: .5, far: 12 }); sol.shadow.bias = -.0015; sol.shadow.normalBias = .01;
+  sol.shadow.mapSize.setScalar(Math.min(innerWidth, innerHeight) > 700 ? 2048 : 1024); Object.assign(sol.shadow.camera, { left: -1.6, right: 1.6, top: 1.6, bottom: -1.6, near: .5, far: 12 }); sol.shadow.bias = -.0015; sol.shadow.normalBias = .01;
   scene.add(sol, sol.target);
   const contra = new THREE.DirectionalLight("#7fc8ff", 1.1); scene.add(contra);
   const raiz = new THREE.Group(); scene.add(raiz);
@@ -192,6 +192,18 @@ export function criaMundo(host) {
   geo.setAttribute("color", new THREE.BufferAttribute(new Float32Array(base.length), 3));
   const matPlaneta = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: .8, flatShading: true, emissive: "#16324a", emissiveIntensity: .25 });
   const planeta = new THREE.Mesh(geo, matPlaneta); planeta.receiveShadow = true; planeta.castShadow = true; raiz.add(planeta);
+
+  /* água: superfície brilhante e translúcida sobre os lagos (aparece com o efeito Lagos) */
+  const agua = new THREE.Mesh(new THREE.IcosahedronGeometry(.991, 9), new THREE.MeshStandardMaterial({ color: "#5fb4dc", transparent: true, opacity: .58, roughness: .12, metalness: .08, flatShading: true, depthWrite: false }));
+  agua.renderOrder = 1; agua.visible = false; raiz.add(agua);
+
+  /* tufos de grama e pedrinhas espalhados (instâncias: leve para o celular) */
+  const N_TUFO = 520, N_PEDRA = 110;
+  const geoTufo = new THREE.ConeGeometry(.0065, .022, 3); geoTufo.translate(0, .011, 0);
+  const tufos = new THREE.InstancedMesh(geoTufo, new THREE.MeshStandardMaterial({ roughness: .9, flatShading: true }), N_TUFO);
+  const geoPedra = new THREE.DodecahedronGeometry(.009, 0); geoPedra.scale(1, .6, 1);
+  const pedras = new THREE.InstancedMesh(geoPedra, new THREE.MeshStandardMaterial({ roughness: .85, flatShading: true }), N_PEDRA);
+  tufos.castShadow = pedras.castShadow = true; tufos.receiveShadow = pedras.receiveShadow = true; raiz.add(tufos, pedras);
 
   /* halo de atmosfera e casca de vidro */
   const halo = (() => {
@@ -208,8 +220,37 @@ export function criaMundo(host) {
     fragmentShader: "uniform vec3 cor; uniform float forca; varying vec3 vN; varying vec3 vV; void main(){ float f = pow(1. - max(dot(vN, vV), 0.), 3.); gl_FragColor = vec4(cor*f*forca, f*forca); }",
   })); raiz.add(casca);
 
+  const UP0 = new THREE.Vector3(0, 1, 0);
   let st = { verdor: -1, efeitos: {} }, corCasca = "#8fd6ff", fatorCasca = 1;
   const tmp = new THREE.Vector3(), cen = new THREE.Vector3(), cor = new THREE.Color();
+  const gramaEm = (d, ag, verdor) => {
+    const t = terreno(d, ag); if (verdor <= 0 || t.lago || t.monte) return { t, gr: 0 };
+    const g = fbm(d.x * 2.1 - 5, d.y * 2.1 + 1, d.z * 2.1 + 4, 3), lim = -1 + 2.4 * verdor;
+    return { t, gr: sm(lim + .06, lim - .06, g) };
+  };
+  const qObj = new THREE.Object3D(), corI = new THREE.Color(), dirI = new THREE.Vector3();
+  function espalhaDetalhes() {
+    const ag = !!st.efeitos.agua, verdor = st.verdor, R = rnd(97);
+    let n = 0;
+    for (let i = 0; i < 9000 && n < N_TUFO; i++) {
+      dirI.set(R() * 2 - 1, R() * 2 - 1, R() * 2 - 1); if (dirI.lengthSq() < .05) continue; dirI.normalize();
+      const { t, gr } = gramaEm(dirI, ag, verdor); if (gr < .6 || (ag && t.h < -.02)) continue;
+      qObj.position.copy(dirI).multiplyScalar(t.r - .002); qObj.quaternion.setFromUnitVectors(UP0, dirI); qObj.rotateY(R() * 6.3);
+      qObj.scale.set(1, .7 + R() * .9, 1); qObj.updateMatrix(); tufos.setMatrixAt(n, qObj.matrix);
+      tufos.setColorAt(n, corI.copy(C.grama2).lerp(C.floresta, R() * .7).offsetHSL(0, 0, (R() - .5) * .06)); n++;
+    }
+    tufos.count = n; tufos.instanceMatrix.needsUpdate = true; if (tufos.instanceColor) tufos.instanceColor.needsUpdate = true;
+    n = 0;
+    for (let i = 0; i < 6000 && n < N_PEDRA; i++) {
+      dirI.set(R() * 2 - 1, R() * 2 - 1, R() * 2 - 1); if (dirI.lengthSq() < .05) continue; dirI.normalize();
+      const t = terreno(dirI, ag); if (t.lago || (!t.monte && R() > .25) || t.h > .5) continue;
+      qObj.position.copy(dirI).multiplyScalar(t.r - .001); qObj.quaternion.setFromUnitVectors(UP0, dirI); qObj.rotateY(R() * 6.3);
+      qObj.scale.setScalar(.6 + R() * 1.1); qObj.updateMatrix(); pedras.setMatrixAt(n, qObj.matrix);
+      pedras.setColorAt(n, corI.copy(C.rocha).lerp(C.rocha2, R()).offsetHSL(0, 0, (R() - .5) * .08)); n++;
+    }
+    pedras.count = verdor > 0 ? n : 0; pedras.instanceMatrix.needsUpdate = true; if (pedras.instanceColor) pedras.instanceColor.needsUpdate = true;
+    agua.visible = ag;
+  }
   function pintaPlaneta() {
     const pos = geo.attributes.position, col = geo.attributes.color, ag = !!st.efeitos.agua, verdor = st.verdor;
     for (let i = 0; i < pos.count; i++) { tmp.set(base[i * 3], base[i * 3 + 1], base[i * 3 + 2]).normalize(); const r = terreno(tmp, ag).r; pos.setXYZ(i, tmp.x * r, tmp.y * r, tmp.z * r); }
@@ -231,6 +272,7 @@ export function criaMundo(host) {
           if (ag) cor.lerp(C.areia, sm(-.01, -.035, t.h) * .85);
         }
       }
+      if (!t.lago) cor.offsetHSL(0, 0, (hash(f, 7, 3) - .5) * .045 - (t.monte ? 0 : sm(.05, -.05, t.h) * .03));
       for (let j = 0; j < 3; j++) col.setXYZ(f + j, cor.r, cor.g, cor.b);
     }
     pos.needsUpdate = true; col.needsUpdate = true; geo.computeVertexNormals();
@@ -245,10 +287,12 @@ export function criaMundo(host) {
     return new THREE.Points(g, new THREE.PointsMaterial({ size: .16, vertexColors: true, transparent: true, opacity: .85, depthWrite: false }));
   })(); scene.add(estrelas);
   const nuvens = new THREE.Group(); raiz.add(nuvens);
-  { const R = rnd(3), m = new THREE.MeshStandardMaterial({ color: "#ffffff", roughness: 1, flatShading: true, transparent: true, opacity: .95 });
-    for (let i = 0; i < 10; i++) {
+  const matNuvem = new THREE.MeshStandardMaterial({ color: "#ffffff", roughness: 1, flatShading: true, transparent: true, opacity: .95 });
+  { const R = rnd(3), m = matNuvem;
+    for (let i = 0; i < 26; i++) {
       const c = new THREE.Group();
-      for (let j = 0; j < 4; j++) { const b = new THREE.Mesh(new THREE.IcosahedronGeometry(.03 + R() * .025, 0), m); b.position.set(j * .038 - .057, R() * .02, (R() - .5) * .03); b.castShadow = true; c.add(b); }
+      const nb = 3 + Math.floor(R() * 3);
+      for (let j = 0; j < nb; j++) { const b = new THREE.Mesh(new THREE.IcosahedronGeometry(.026 + R() * .028, 0), m); b.position.set(j * .036 - nb * .018, R() * .022, (R() - .5) * .034); b.rotation.set(R() * 3, R() * 3, R() * 3); b.castShadow = true; c.add(b); }
       tmp.set(R() - .5, R() - .5, R() - .5).normalize();
       const piv = new THREE.Group(); piv.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), tmp.clone());
       c.position.y = 1.26 + R() * .1; piv.add(c); piv.userData.vel = .03 + R() * .04; nuvens.add(piv);
@@ -340,9 +384,9 @@ export function criaMundo(host) {
     const meu = ++sync;
     const mudouCor = e.verdor !== st.verdor, mudouTerreno = !!e.efeitos.agua !== !!st.efeitos.agua || st.verdor < 0;
     st = { verdor: e.verdor, efeitos: { ...e.efeitos } };
-    if (mudouCor || mudouTerreno) { pintaPlaneta(); montaCachoeiras(); }
+    if (mudouCor || mudouTerreno) { pintaPlaneta(); montaCachoeiras(); espalhaDetalhes(); }
     const f = st.efeitos;
-    nuvens.visible = !!f.nuvens; lua.visible = !!f.lua; anel.visible = !!f.anel; borboletas.visible = !!f.borboletas;
+    nuvens.visible = !!f.nuvens; aplicaLuz(); lua.visible = !!f.lua; anel.visible = !!f.anel; borboletas.visible = !!f.borboletas;
     casca.material.uniforms.forca.value = (f.nuvens ? .95 : .6) * fatorCasca;
     casca.material.uniforms.cor.value.set(f.aurora ? "#a8f0c8" : corCasca);
     const anim = carregou;
@@ -394,6 +438,36 @@ export function criaMundo(host) {
     const a = Math.sin(t * 18 + u.f) * 1.1; u.a1.rotation.z = a; u.a2.rotation.z = -a; u.a1.rotation.x = u.a2.rotation.x = -Math.PI / 2;
   }
 
+  /* céu do planeta: a luz segue a hora (real ou escolhida) e as nuvens cobrem mais ou menos */
+  const ceuSt = { auto: true, h: 12, nuvens: .45 };
+  let ceuAng = .8, ceuElev = 1.6;
+  const corSolDia = new THREE.Color("#fff3e0"), corSolBaixo = new THREE.Color("#ffad66"), corLuar = new THREE.Color("#a9c2ff");
+  const ceuDia = new THREE.Color("#dff1ff"), ceuBaixo = new THREE.Color("#ffd8b0"), cinza = new THREE.Color("#b4bcc8"), nuvemNoite = new THREE.Color("#8c96b4");
+  const horaAgora = () => { const d = new Date(); return d.getHours() + d.getMinutes() / 60; };
+  function aplicaLuz() {
+    const h = ceuSt.auto ? horaAgora() : ceuSt.h, e = Math.sin(Math.PI * (h - 6) / 12);
+    const cob = st.efeitos.nuvens ? ceuSt.nuvens : 0, nubla = 1 - cob * .35;
+    if (e > -.04) {
+      const k = Math.max(0, e), alto = sm(0, .55, k);
+      sol.color.copy(corSolBaixo).lerp(corSolDia, alto); sol.intensity = (.95 + 1.45 * alto) * nubla;
+      hemi.color.copy(ceuBaixo).lerp(ceuDia, alto); hemi.groundColor.set("#2a3550"); hemi.intensity = (.8 + .35 * alto) * (1 - cob * .15);
+      contra.color.set(alto > .5 ? "#7fc8ff" : "#ffc08a"); contra.intensity = .7 + .4 * alto;
+      ceuAng = 1.35 - 2.7 * Math.min(1, Math.max(0, (h - 6) / 12)); ceuElev = .3 + 1.8 * k;
+      renderer.toneMappingExposure = 1.1;
+      matNuvem.color.set("#ffffff").lerp(cinza, sm(.45, 1, cob)).lerp(corSolBaixo, (1 - alto) * .25);
+    } else {
+      sol.color.copy(corLuar); sol.intensity = .8 * nubla;
+      hemi.color.set("#8394c8"); hemi.groundColor.set("#151b2e"); hemi.intensity = .6;
+      contra.color.set("#5d6fb0"); contra.intensity = .6;
+      ceuAng = .5; ceuElev = 1.3; renderer.toneMappingExposure = .98;
+      matNuvem.color.copy(nuvemNoite).lerp(cinza, cob * .3);
+    }
+    const tot = nuvens.children.length, vis = Math.round(cob * tot);
+    nuvens.children.forEach((p, i) => { p.visible = i < vis; });
+    matNuvem.opacity = .82 + cob * .15;
+  }
+  let quadroLuz = 0; const tmpSol = new THREE.Vector3();
+
   /* layout: o planeta pode ficar no centro, de lado ou ao fundo */
   let deslAlvo = 0, desl = 0, deslYAlvo = 0, deslY = 0, dimAlvo = 1, distAlvo = null, parado = 0, vivo = true, quadro = 0, leve = false, oculto = false;
   controls.addEventListener("start", () => { controls.autoRotate = false; parado = 0; distAlvo = null; });
@@ -413,11 +487,13 @@ export function criaMundo(host) {
       if (Math.abs(desl) > .001 || Math.abs(deslY) > .001) camera.setViewOffset(w, h, -desl * w, deslY * h, w, h); else camera.clearViewOffset();
       controls.autoRotate = controls.autoRotate && !semMovimento.matches;
       controls.update();
-      sol.position.copy(camera.position).applyAxisAngle(UP, .8).add(new THREE.Vector3(0, 1.6, 0)).normalize().multiplyScalar(5);
+      if (ceuSt.auto && ++quadroLuz % 600 === 0) aplicaLuz();
+      sol.position.copy(camera.position).applyAxisAngle(UP, ceuAng).add(tmpSol.set(0, ceuElev, 0)).normalize().multiplyScalar(5);
       contra.position.copy(camera.position).multiplyScalar(-1).add(new THREE.Vector3(0, .6, 0));
       canvas.style.opacity = String(+(canvas.style.opacity || 1) + (dimAlvo - +(canvas.style.opacity || 1)) * transicao);
       if (!semMovimento.matches) {
         nuvens.children.forEach(p => p.rotateX(p.userData.vel * dt));
+        if (agua.visible) agua.rotation.y += dt * .012;
         luaPiv.rotation.y += dt * .08;
         for (const o of bichos.children) if (o.visible) anda(o, dt, t);
         if (borboletas.visible) for (const b of borboletas.children) voaBorboleta(b, dt, t);
@@ -461,13 +537,18 @@ export function criaMundo(host) {
       deslYAlvo = celular ? ({ centro: .12, mundo: .1 }[modo] || 0) : 0;
       deslAlvo = cfg[0]; dimAlvo = cfg[1]; distAlvo = cfg[2]; controls.enabled = modo === "mundo" || modo === "centro"; controls.enableZoom = modo === "mundo"; leve = modo === "fundo"; oculto = false;
     },
+    /* hora: número 0–24 ou "auto"; nuvens: 0–1 (só aparecem com o efeito Atmosfera e nuvens) */
+    ceu({ hora, nuvens: nv } = {}) {
+      if (hora === "auto") ceuSt.auto = true; else if (typeof hora === "number") { ceuSt.auto = false; ceuSt.h = ((hora % 24) + 24) % 24; }
+      if (typeof nv === "number") ceuSt.nuvens = Math.min(1, Math.max(0, nv));
+      aplicaLuz();
+    },
     tema(t) {
       const claro = t === "amanhecer" || t === "claro" || t === "dourado";
       const c = { meianoite: "#7fa8e0", noite: "#a0d7ff", cristal: "#9ff0ff", aurora: "#c9b3f0", floresta: "#b5e48c", amanhecer: "#ffffff", claro: "#cfe6f5", dourado: "#ffe3b8" }[t] || "#a0d7ff";
       halo.material.color.set(c); estrelas.visible = !claro; halo.material.opacity = claro ? .55 : t === "meianoite" ? .55 : 1;
       halo.material.blending = claro ? THREE.NormalBlending : THREE.AdditiveBlending; halo.material.needsUpdate = true;
       fatorCasca = claro ? .5 : 1; casca.material.uniforms.forca.value = (st.efeitos.nuvens ? .95 : .6) * fatorCasca;
-      sol.color.set(t === "dourado" ? "#ffd9a8" : "#fff3e0"); contra.color.set(t === "dourado" ? "#ffc68a" : "#7fc8ff");
       corCasca = t === "dourado" ? "#ffd29a" : t === "aurora" ? "#c9b3f0" : t === "floresta" ? "#b5e48c" : t === "cristal" ? "#9ff0ff" : "#8fd6ff"; if (!st.efeitos.aurora) casca.material.uniforms.cor.value.set(corCasca);
     },
     foco(k) { const o = bichoObjs.get(k); if (!o) return; const p = o.getWorldPosition(new THREE.Vector3()).normalize(); camera.position.copy(p.multiplyScalar(2.1)); distAlvo = null; controls.autoRotate = false; parado = 0; },
