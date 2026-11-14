@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=39">
-<link rel="icon" type="image/png" href="favicon.png?v=39">
-<link rel="manifest" href="manifest.webmanifest?v=39">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=40">
+<link rel="icon" type="image/png" href="favicon.png?v=40">
+<link rel="manifest" href="manifest.webmanifest?v=40">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -812,6 +812,82 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 @media (max-width:360px){
   .nav{left:calc(4px + env(safe-area-inset-left));right:calc(4px + env(safe-area-inset-right));gap:0;padding:2px;justify-content:space-between}
 }
+
+/* ---- atalhos da matéria (canto) ---- */
+.atalhos{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
+.atalho{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--glass2);color:var(--ink);font:400 13px var(--font);cursor:pointer;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:border-color .2s,background .2s}
+.atalho:hover{border-color:var(--acc)}
+.atalho.on{background:var(--solid);color:var(--forte);border-color:var(--solid)}
+.atalho img{width:20px;height:20px;object-fit:contain;margin:-3px 0}
+.atalho em{font-style:normal;font-size:11.5px;color:var(--muted)}
+.atalho.on em{color:inherit;opacity:.75}
+@media (max-width:700px){.atalhos{width:100%;margin-left:0}.atalho{flex:1 1 0;justify-content:center;padding:8px 10px}}
+@media (pointer:coarse){.atalho{min-height:44px}}
+/* ---- questões ---- */
+.qtopo{display:flex;gap:26px;flex-wrap:wrap;margin-bottom:16px}
+.qnum b{display:block;font-size:30px;font-weight:300;line-height:1.1}
+.qnum span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.qfiltros{display:grid;gap:12px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.qlin{display:grid;grid-template-columns:110px 1fr;align-items:center;gap:10px}
+.qlin select.f{max-width:420px}
+@media (max-width:560px){.qlin{grid-template-columns:1fr;gap:6px}}
+.qchips{display:flex;gap:6px;flex-wrap:wrap}
+.qchip{min-height:34px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font:400 13px var(--font);cursor:pointer}
+.qchip.on{background:var(--solid);color:var(--forte);border-color:var(--solid)}
+@media (pointer:coarse){.qchip{min-height:44px}}
+.qmodos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+@media (max-width:700px){.qmodos{grid-template-columns:1fr}}
+.qmodo{display:flex;flex-direction:column;gap:12px;justify-content:space-between;padding:16px;border-radius:18px;border:1px solid var(--line);background:var(--glass2)}
+.qmodo b{display:block;font-weight:400;font-size:16px}
+.qmodo .muted{font-size:13.5px;font-weight:300}
+.qsim{display:flex;gap:8px;flex-wrap:wrap}.qsim select.f{flex:1;min-width:150px}
+.qbarra{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.qrelogio{font-variant-numeric:tabular-nums;font-size:15px;padding:6px 12px;border-radius:999px;border:1px solid var(--line)}
+.qrelogio.pouco{border-color:var(--bad);color:var(--bad)}
+#matCorpo .prog{height:3px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:16px}
+#matCorpo .prog i{display:block;height:100%;background:var(--acc);transition:width .4s}
+.qcard{display:block}
+.qtags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.qtags span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:3px 10px;border-radius:999px;border:1px solid var(--line)}
+.qenun{font-size:17px;line-height:1.6;margin-bottom:14px;color:var(--ink)}
+.qenun strong{font-weight:500}
+.qimg{display:block;max-width:100%;max-height:420px;margin:6px auto 14px;border-radius:14px;border:1px solid var(--line);cursor:zoom-in}
+.qalts{display:grid;gap:8px}
+.qalt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;min-height:52px;padding:12px 14px;border-radius:16px;border:1px solid var(--line);background:var(--glass2);color:var(--ink);font:400 15.5px/1.5 var(--font);cursor:pointer;transition:border-color .15s,background .15s}
+.qalt > b{flex:0 0 28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:500;font-size:13px;border:1px solid var(--line)}
+.qalt > span{display:flex;flex-direction:column;gap:4px}
+.qalt:hover:not([disabled]){border-color:var(--acc)}
+.qalt.marcada{border-color:var(--solid)}.qalt.marcada > b{background:var(--solid);color:var(--forte);border-color:var(--solid)}
+.qalt.certa{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,transparent)}.qalt.certa > b{background:var(--ok);color:var(--forte);border-color:transparent}
+.qalt.errada{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 10%,transparent)}.qalt.errada > b{background:var(--bad);color:var(--forte);border-color:transparent}
+.qalt.apaga{opacity:.62}
+.qalt[disabled]{cursor:default}
+.qpq{font-size:13.5px;color:var(--muted);font-weight:300}
+.qdica{background:none;border:0;padding:8px 0;color:var(--acc2);font:400 13.5px var(--font);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.qdicat{font-size:14px;color:var(--muted);margin:4px 0 0}
+.qfb{margin-top:14px;padding:14px 16px;border-radius:16px;border:1px solid var(--line)}
+.qfb > b{font-weight:500}.qfb.ok > b{color:var(--ok)}.qfb.no > b{color:var(--bad)}
+.qfb p{margin:8px 0 0;color:var(--doc);font-weight:300;font-size:15px}
+.qpeg{padding:8px 12px;border-left:2px solid var(--acc);border-radius:6px;background:var(--glass2)}
+.qfora{font-size:13.5px}
+.qfonte{font-size:13px;color:var(--muted)!important;font-style:italic}
+.qacoes{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:14px}
+.qmapa{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.qmapa button{width:34px;height:34px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--ink);font:400 13px var(--font);cursor:pointer}
+.qmapa button.feita{background:var(--glass3)}.qmapa button.on{border-color:var(--solid);outline:1px solid var(--solid)}
+@media (pointer:coarse){.qmapa button{width:44px;height:44px}}
+.qportipo{display:flex;gap:16px;flex-wrap:wrap;font-size:13.5px;color:var(--muted);margin-bottom:12px}.qportipo b{color:var(--ink);font-weight:500}
+.qreler{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.qgab{margin-top:10px;display:grid;gap:8px}
+.qgi{border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.qgi summary{display:flex;gap:10px;align-items:baseline;cursor:pointer;list-style:none;min-height:30px}
+.qgi summary::-webkit-details-marker{display:none}
+.qgi summary span{flex:1;font-weight:300;font-size:14.5px}
+.qgi summary em{font-style:normal;font-size:12px;color:var(--muted);white-space:nowrap}
+.qgi.ok summary em{color:var(--ok)}.qgi.no summary em{color:var(--bad)}
+.qgi .qalts{margin-top:10px}
+.qex{color:var(--doc);font-weight:300;font-size:14.5px}
+@media (prefers-reduced-motion:reduce){.qalt,.atalho,#matCorpo .prog i{transition:none}}
 </style>
 </head>
 <body class="iniciando">
@@ -833,6 +909,6 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=39"></script>
+<script type="module" src="app.js?v=40"></script>
 </body>
 </html>
