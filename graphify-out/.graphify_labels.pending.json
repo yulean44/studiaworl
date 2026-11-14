@@ -6,7 +6,7 @@
   "4": "questoes.mjs",
   "5": "regressoes.mjs",
   "6": "qJoga",
-  "7": "renderNotasMat",
+  "7": "aplicaGrifos",
   "8": "publicar",
   "9": "data.js",
   "10": "Instruções para agentes (Codex, Claude e outros)",
@@ -14,5 +14,7 @@
   "12": "avisaConteudo",
   "13": "arrastavel",
   "14": "icons.js",
-  "15": "Planeta de Estudos"
+  "15": "Planeta de Estudos",
+  "16": "renderInicio",
+  "17": "renderRevisao"
 }

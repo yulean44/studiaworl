@@ -1,14 +1,14 @@
 {
   "app.js": {
-    "mtime": 1794686051.2064226,
-    "seen": 1794686086.806959,
-    "ast_hash": "1fed01a501ab62380c4d9c71dba5a6a0",
+    "mtime": 1794686248.4206083,
+    "seen": 1794686479.1361094,
+    "ast_hash": "6257caeb1b1c9162dad921221e2bed81",
     "semantic_hash": ""
   },
   "conta.js": {
-    "mtime": 1794686051.2074249,
-    "seen": 1794686086.806964,
-    "ast_hash": "5176adeaf232313725d29f79b72816cb",
+    "mtime": 1794686248.4206083,
+    "seen": 1794686479.1361122,
+    "ast_hash": "2a6074e8143d66c61ba84b854fb597d8",
     "semantic_hash": ""
   },
   "data.js": {
@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   "tests/regressoes.mjs": {
-    "mtime": 1794685430.438075,
-    "seen": 1794686086.8070295,
+    "mtime": 1794686248.426709,
+    "seen": 1794686479.1361327,
     "ast_hash": "5d84bc657fc36aca625f7d3192829537",
     "semantic_hash": ""
   },
@@ -72,62 +72,62 @@
     "semantic_hash": ""
   },
   "world.js": {
-    "mtime": 1794686051.2102785,
-    "seen": 1794686086.8070335,
-    "ast_hash": "eba508824fc7644271897648c0be2811",
+    "mtime": 1794686248.426709,
+    "seen": 1794686479.136135,
+    "ast_hash": "860ad49701b376ba770241014db1ba1d",
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1794685992.629275,
-    "seen": 1794686086.8070354,
-    "ast_hash": "e7bfec06612d0f4aba422a299dc03642",
+    "mtime": 1794686248.4206083,
+    "seen": 1794686479.1361363,
+    "ast_hash": "e79cb1ae8a055adeddd24a53d4d752a8",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1794685788.2880661,
-    "seen": 1794686086.8070374,
-    "ast_hash": "4ae23a64631d8bc67e642657aee9da10",
+    "mtime": 1794686447.9944706,
+    "seen": 1794686479.1361375,
+    "ast_hash": "dfcf6f5a0fdd993e994f84d6c37cd2e2",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1794686051.2111244,
-    "seen": 1794686086.8070393,
-    "ast_hash": "9a346fa1ac3a12c8dca9cbe9fc1406e1",
+    "mtime": 1794686248.426709,
+    "seen": 1794686479.1361382,
+    "ast_hash": "c8c3c12740c197bde365e13b75fc230b",
     "semantic_hash": ""
   },
   "kahoot.html": {
-    "mtime": 1794686051.2095428,
-    "seen": 1794686086.807041,
-    "ast_hash": "92c0fb227120dbb8aa0631e606050ae9",
+    "mtime": 1794686248.426709,
+    "seen": 1794686479.1361392,
+    "ast_hash": "5038eb3317a6964541196806f021b2f3",
     "semantic_hash": ""
   },
   ".github/workflows/verificacoes.yml": {
-    "mtime": 1794685705.882882,
-    "seen": 1794686086.8069465,
-    "ast_hash": "afa6b634994fd188a365d8963460db43",
+    "mtime": 1794686447.9942093,
+    "seen": 1794686479.1361024,
+    "ast_hash": "af9a99a819dbe17486e4dfae3aa7a00f",
     "semantic_hash": ""
   },
   "conteudo.js": {
-    "mtime": 1794686051.2106242,
-    "seen": 1794686086.8069673,
-    "ast_hash": "42e30c02f6ec4954c46654aed0ec10a1",
+    "mtime": 1794686248.4227092,
+    "seen": 1794686479.1361144,
+    "ast_hash": "caac82fe73907e8bd7ba46a6ff394db6",
     "semantic_hash": ""
   },
   "tests/conteudo.mjs": {
-    "mtime": 1794685534.6769223,
-    "seen": 1794686086.8070142,
+    "mtime": 1794686248.426709,
+    "seen": 1794686479.1361248,
     "ast_hash": "9870a541e287f6007c5b89ba8edf5dc8",
     "semantic_hash": ""
   },
   "tests/fluxos.mjs": {
-    "mtime": 1794685705.8830647,
-    "seen": 1794686086.8070164,
+    "mtime": 1794686248.426709,
+    "seen": 1794686479.1361263,
     "ast_hash": "5afe1c78c1e826a08adc5875d5506e0a",
     "semantic_hash": ""
   },
   "tests/navegador.cjs": {
-    "mtime": 1794685904.3455293,
-    "seen": 1794686086.8070235,
+    "mtime": 1794686248.426709,
+    "seen": 1794686479.13613,
     "ast_hash": "4228b78c20082a75214eafa7e40d3304",
     "semantic_hash": ""
   }
