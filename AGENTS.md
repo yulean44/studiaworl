@@ -34,7 +34,7 @@ Site estático, sem build: HTML + JS em módulos ES, three.js 0.160 via importma
 
 `node --test tests/questoes.mjs` valida o banco de questões (campo `questoes`): estrutura, 1 alternativa certa e se o `fonte.trecho` está mesmo no texto da seção citada. `node tests/questoes.mjs` mostra a distribuição por tipo, nível e gabarito.
 
-Rodar tudo: `for t in tests/*.mjs; do node --test $t; done`.
+Rodar tudo: `node --test tests/*.mjs`.
 
 `node --test tests/regressoes.mjs` verifica preservação de estado, troca de conta, conflitos no Firestore com SDK simulado e limite do timer, sem acessar contas reais. Não precisa de `package.json` nem dependências.
 

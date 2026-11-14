@@ -25,7 +25,7 @@ Regras que não podem falhar:
 - não mudar a identidade visual: Jost, tema claro, verdes suaves, ícones finos, sem emoji.
 - usar só as variáveis CSS (--ink, --muted, --acc...), nunca cor fixa.
 - conferir em 390px (iPhone), iPad e computador.
-- rodar: for t in tests/*.mjs; do node --test $t; done
+- rodar: node --test tests/*.mjs
 ```
 
 ## Atualizar o Kahoot de uma matéria

@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=45">
-<link rel="icon" type="image/png" href="favicon.png?v=45">
-<link rel="manifest" href="manifest.webmanifest?v=45">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=46">
+<link rel="icon" type="image/png" href="favicon.png?v=46">
+<link rel="manifest" href="manifest.webmanifest?v=46">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -890,6 +890,7 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 @media (prefers-reduced-motion:reduce){.qalt,.atalho,#matCorpo .prog i{transition:none}}
 
 /* ================= refino leve (nov/2026): mesma identidade, menos ruído ================= */
+.conteudo-status{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px;font-size:14px;color:var(--ink)}
 /* celular: na área de estudo a marca some, então o topo não precisa de faixa vazia */
 @media (max-width:760px){body.estudo .main{padding-top:calc(14px + env(safe-area-inset-top))}}
 /* Prioritário · Resumo · Siglas: aba ativa com fundo suave em vez de moldura */
@@ -911,6 +912,7 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 <nav class="nav" aria-label="Navegação" id="nav" inert></nav>
 <main class="main" inert>
   <div class="topo" id="topo"></div>
+  <div id="conteudoStatus" class="vidro card conteudo-status" hidden></div>
   <section class="view" id="view-inicio"></section>
   <section class="view" id="view-mundo" hidden></section>
   <section class="view" id="view-foco" hidden></section>
@@ -923,6 +925,6 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=45"></script>
+<script type="module" src="app.js?v=46"></script>
 </body>
 </html>
