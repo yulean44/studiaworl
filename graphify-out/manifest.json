@@ -1,43 +1,43 @@
 {
   "app.js": {
-    "mtime": 1794686248.4206083,
-    "seen": 1794686479.1361094,
-    "ast_hash": "6257caeb1b1c9162dad921221e2bed81",
+    "mtime": 1794687271.074703,
+    "seen": 1794687306.1322362,
+    "ast_hash": "3ad11e6112c1211972babc9a02c1bab2",
     "semantic_hash": ""
   },
   "conta.js": {
-    "mtime": 1794686248.4206083,
-    "seen": 1794686479.1361122,
-    "ast_hash": "2a6074e8143d66c61ba84b854fb597d8",
+    "mtime": 1794687271.065617,
+    "seen": 1794687306.1322412,
+    "ast_hash": "96c3b18cf3e430da9a836903913ab614",
     "semantic_hash": ""
   },
   "data.js": {
-    "mtime": 1794685621.1975062,
-    "seen": 1794686086.806971,
+    "mtime": 1794687271.0668924,
+    "seen": 1794687306.132246,
     "ast_hash": "1e7546e6891e549e4160b25f16e323cb",
     "semantic_hash": ""
   },
   "icons.js": {
-    "mtime": 1794685621.1966612,
-    "seen": 1794686086.8069737,
+    "mtime": 1794687271.0659513,
+    "seen": 1794687306.1322484,
     "ast_hash": "a1158261a873579bfe3d19203082ea8f",
     "semantic_hash": ""
   },
   "navegacao.js": {
-    "mtime": 1794685621.2012835,
-    "seen": 1794686086.8069763,
+    "mtime": 1794687271.0715625,
+    "seen": 1794687306.1322503,
     "ast_hash": "66201d9f221967ce5bbea4dc8b59afdb",
     "semantic_hash": ""
   },
   "progresso.js": {
-    "mtime": 1794685621.1970918,
-    "seen": 1794686086.8069785,
+    "mtime": 1794687271.0662708,
+    "seen": 1794687306.1322522,
     "ast_hash": "64b80b99652cc52fbfc1a6b64881ac0d",
     "semantic_hash": ""
   },
   "relatorio.js": {
-    "mtime": 1794685621.1963763,
-    "seen": 1794686086.8070118,
+    "mtime": 1794687271.0651646,
+    "seen": 1794687306.1322541,
     "ast_hash": "278496c9e9bc0e813de425baf7d6d67c",
     "semantic_hash": ""
   },
@@ -72,9 +72,9 @@
     "semantic_hash": ""
   },
   "world.js": {
-    "mtime": 1794686248.426709,
-    "seen": 1794686479.136135,
-    "ast_hash": "860ad49701b376ba770241014db1ba1d",
+    "mtime": 1794687271.0678048,
+    "seen": 1794687306.1322765,
+    "ast_hash": "0bf37dc1130f52ba7f7d959a25fed4bf",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -84,21 +84,21 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1794686447.9944706,
-    "seen": 1794686479.1361375,
-    "ast_hash": "dfcf6f5a0fdd993e994f84d6c37cd2e2",
+    "mtime": 1794687078.8942616,
+    "seen": 1794687306.13228,
+    "ast_hash": "be0f5912f0449884f0ddfca64e45d5a2",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1794686248.426709,
-    "seen": 1794686479.1361382,
-    "ast_hash": "c8c3c12740c197bde365e13b75fc230b",
+    "mtime": 1794687271.075774,
+    "seen": 1794687306.132282,
+    "ast_hash": "a7833ec14939e1dfce042fcf77bad6e2",
     "semantic_hash": ""
   },
   "kahoot.html": {
-    "mtime": 1794686248.426709,
-    "seen": 1794686479.1361392,
-    "ast_hash": "5038eb3317a6964541196806f021b2f3",
+    "mtime": 1794687271.076368,
+    "seen": 1794687306.132284,
+    "ast_hash": "9bfc6637dc474aae2190622ca833a71f",
     "semantic_hash": ""
   },
   ".github/workflows/verificacoes.yml": {
@@ -108,9 +108,9 @@
     "semantic_hash": ""
   },
   "conteudo.js": {
-    "mtime": 1794686248.4227092,
-    "seen": 1794686479.1361144,
-    "ast_hash": "caac82fe73907e8bd7ba46a6ff394db6",
+    "mtime": 1794687271.0716798,
+    "seen": 1794687306.1322436,
+    "ast_hash": "35cbcdba9a7aaf4a990e5185a78f43f2",
     "semantic_hash": ""
   },
   "tests/conteudo.mjs": {
@@ -126,9 +126,15 @@
     "semantic_hash": ""
   },
   "tests/navegador.cjs": {
-    "mtime": 1794686248.426709,
-    "seen": 1794686479.13613,
-    "ast_hash": "4228b78c20082a75214eafa7e40d3304",
+    "mtime": 1794687271.0768225,
+    "seen": 1794687306.132269,
+    "ast_hash": "291dc15c96bf3c92a6f4aeb9575a6cae",
+    "semantic_hash": ""
+  },
+  "tests/aba-questoes.mjs": {
+    "mtime": 1794686790.5923054,
+    "seen": 1794687306.1322567,
+    "ast_hash": "faabfce575a74a2371fc42d9834ed7b9",
     "semantic_hash": ""
   }
 }

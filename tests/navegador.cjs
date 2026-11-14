@@ -62,6 +62,7 @@ for(const width of [320,390,768,1280]){
  await p.goto(base+'/#questoes/mfc');await p.locator('#qMateria').waitFor();
  const nav=await p.locator('#nav .navbtn').evaluateAll(bs=>bs.map(e=>{const r=e.getBoundingClientRect();return {x:r.x,right:r.right,y:r.y,bottom:r.bottom,w:r.width,h:r.height}}));
  assert.equal(nav.length,8);for(const r of nav){assert.ok(r.x>=0 && r.right<=width+1);assert.ok(r.w>=44 && r.h>=44);}
+ await p.locator('#nav [aria-current=page]').evaluate(async el=>Promise.all(el.getAnimations().map(a=>a.finished.catch(()=>{}))));
  await p.screenshot({path:out+'/aba-questoes-'+width+'.png'});
  console.log('PASS 8 áreas e oito destinos acessíveis em',width);
 }
