@@ -1,9 +1,10 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=43";
-import { ic, ICONES_MATERIA } from "./icons.js?v=43";
-import { FIG } from "./figuras.js?v=43";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=43";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=43";
-import { semanaDeEstudos } from "./relatorio.js?v=43";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=44";
+import { ic, ICONES_MATERIA } from "./icons.js?v=44";
+import { FIG } from "./figuras.js?v=44";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=44";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=44";
+import { semanaDeEstudos } from "./relatorio.js?v=44";
+import { carregaMaterias } from "./conteudo.js?v=44";
 
 /* =========================================================
    utilidades
@@ -147,7 +148,7 @@ async function enviaNuvem() {
 /* =========================================================
    conteúdo das matérias
    ========================================================= */
-let FABRICA = [];
+let FABRICA = [], conteudosFalhos = [], recarregandoConteudo = false;
 const CONT = { indice: null, secoes: {}, cards: {} };
 function materias() {
   if (CONT.indice && Array.isArray(CONT.indice.materias)) return CONT.indice.materias;
@@ -193,6 +194,7 @@ function qAplica(m) {
   return questoesDe(m.id).filter(q => (!f.secs || tocaAssunto(q, f.secs)) && (!f.tipos.length || f.tipos.includes(q.tipo)) && (!f.niveis.length || f.niveis.includes(q.nivel))
     && (f.so !== "novas" || !qReg(m.id, q.id)) && (f.so !== "erradas" || (qReg(m.id, q.id) && !qReg(m.id, q.id).ok)));
 }
+function qAtiva(st) { return !!st && st === qSessao && st.sessao === sessaoConta && estadoPronto; }
 function qRegistra(m, q, k) {
   S.questoes ||= {}; const c = qChave(m.id, q.id), ant = S.questoes[c], ok = !!(q.alternativas[k] || {}).certa;
   S.questoes[c] = { r: k, ok, n: ((ant && ant.n) || 0) + 1, t: Date.now(), ja: (ant && ant.ja) || ok };
@@ -227,11 +229,12 @@ function renderQuestoes(corpo, m) {
   $$("[data-qf]", corpo).forEach(b => b.addEventListener("click", () => { const g = f[b.dataset.qf], v = b.dataset.v; const i = g.indexOf(v); i < 0 ? g.push(v) : g.splice(i, 1); salvaF(); }));
   $$("[data-qso]", corpo).forEach(b => b.addEventListener("click", () => { f.so = b.dataset.qso; salvaF(); }));
   const embaralha = a => { a = [...a]; for (let k = a.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; } return a; };
-  $("#qTreino", corpo).addEventListener("click", () => { qSessao = { mat: m.id, modo: "treino", lista: embaralha(lista).map(q => q.id), i: 0, resp: {}, ini: Date.now() }; renderQuestoes(corpo, m); });
-  $("#qSim", corpo).addEventListener("click", () => { const n = +$("#qQtd", corpo).value; qSessao = { mat: m.id, modo: "simulado", lista: embaralha(lista).slice(0, n).map(q => q.id), i: 0, resp: {}, ini: Date.now(), dur: Math.max(5, Math.round(n * 1.5)) * 60000 }; renderQuestoes(corpo, m); });
+  $("#qTreino", corpo).addEventListener("click", () => { qSessao = { sessao: sessaoConta, mat: m.id, modo: "treino", lista: embaralha(lista).map(q => q.id), i: 0, resp: {}, ini: Date.now() }; renderQuestoes(corpo, m); });
+  $("#qSim", corpo).addEventListener("click", () => { const n = +$("#qQtd", corpo).value; qSessao = { sessao: sessaoConta, mat: m.id, modo: "simulado", lista: embaralha(lista).slice(0, n).map(q => q.id), i: 0, resp: {}, ini: Date.now(), dur: Math.max(5, Math.round(n * 1.5)) * 60000 }; renderQuestoes(corpo, m); });
 }
-function qJoga(corpo, m) {
-  const st = qSessao, mapa = Object.fromEntries(questoesDe(m.id).map(q => [q.id, q]));
+function qJoga(corpo, m, foco = null) {
+  const st = qSessao; if (!qAtiva(st)) return;
+  const mapa = Object.fromEntries(questoesDe(m.id).map(q => [q.id, q]));
   st.lista = st.lista.filter(id => mapa[id]); if (!st.lista.length) { qSessao = null; return renderQuestoes(corpo, m); }
   const q = mapa[st.lista[st.i]], k = st.resp[q.id], treino = st.modo === "treino", respondida = treino && k !== undefined;
   const sec = m.secoes.find(s => s.id === ((q.fonte && q.fonte.secao) || q.secao));
@@ -241,13 +244,13 @@ function qJoga(corpo, m) {
     <div class="prog"><i style="width:${(st.i + (respondida ? 1 : 0)) / st.lista.length * 100}%"></i></div>
     <article class="qcard">
       <div class="qtags">${tipo ? `<span>${tipo}</span>` : ""}${nivel ? `<span>${nivel}</span>` : ""}${sec ? `<span>${esc(sec.titulo)}</span>` : ""}</div>
-      <div class="qenun">${q.enunciado}</div>
+      <div class="qenun" id="qEnunciado" tabindex="-1">${q.enunciado}</div>
       ${q.img ? `<img class="qimg" src="${esc(q.img)}" alt="Imagem da questão" loading="lazy">` : ""}
       <div class="qalts" role="group" aria-label="Alternativas">${q.alternativas.map((a, i) => {
         const est = respondida ? (a.certa ? "certa" : i === k ? "errada" : "apaga") : (!treino && i === k ? "marcada" : "");
         return `<button class="qalt ${est}" data-qa="${i}" ${respondida ? "disabled" : ""} aria-pressed="${i === k}"><b>${LETRAS[i]}</b><span><span class="qt">${a.t}</span>${respondida && a.porque ? `<span class="qpq">${a.porque}</span>` : ""}</span></button>`; }).join("")}</div>
       ${treino && !respondida && q.dica ? `<button class="link qdica" id="qDica">Ver dica</button><p class="qdicat oculto" id="qDicaT">${q.dica}</p>` : ""}
-      ${respondida ? `<div class="qfb ${q.alternativas[k].certa ? "ok" : "no"}"><b>${q.alternativas[k].certa ? "Certo." : `Errado. A resposta é ${LETRAS[q.alternativas.findIndex(a => a.certa)]}.`}</b>
+      ${respondida ? `<div class="qfb ${q.alternativas[k].certa ? "ok" : "no"}"><b id="qFeedback" tabindex="-1" role="status">${q.alternativas[k].certa ? "Certo." : `Errado. A resposta é ${LETRAS[q.alternativas.findIndex(a => a.certa)]}.`}</b>
           ${q.explica ? `<p>${q.explica}</p>` : ""}${q.pegadinha ? `<p class="qpeg"><strong>Pegadinha:</strong> ${q.pegadinha}</p>` : ""}
           ${q.fora ? `<p class="qfora"><strong>Fora do material:</strong> ${q.fora}</p>` : ""}
           ${q.fonte && q.fonte.trecho ? `<p class="qfonte">No material: “${esc(q.fonte.trecho)}”</p>` : ""}
@@ -256,31 +259,35 @@ function qJoga(corpo, m) {
         <div class="qmapa">${st.lista.map((id, i) => `<button class="${i === st.i ? "on" : ""} ${st.resp[id] !== undefined ? "feita" : ""}" data-qir="${i}" aria-label="Ir para a questão ${i + 1}">${i + 1}</button>`).join("")}</div>` : ""}
     </article>`;
   $$(".qimg", corpo).forEach(im => im.addEventListener("click", () => zoomImg(im.src)));
-  $("#qSair", corpo).addEventListener("click", async () => { if (Object.keys(st.resp).length && !(await confirma("Sair desta rodada?", treino ? "As respostas já dadas ficam salvas." : "O simulado não será corrigido.", "Sair"))) return; qSessao = null; clearInterval(qTimer); salvar(); renderQuestoes(corpo, m); });
+  $("#qSair", corpo).addEventListener("click", async () => { if (!qAtiva(st)) return; if (Object.keys(st.resp).length && !(await confirma("Sair desta rodada?", treino ? "As respostas já dadas ficam salvas." : "O simulado não será corrigido.", "Sair"))) return; if (!qAtiva(st)) return; qSessao = null; clearInterval(qTimer); salvar(); renderQuestoes(corpo, m); });
   $$("[data-qa]", corpo).forEach(b => b.addEventListener("click", () => {
+    if (!qAtiva(st)) return;
     const i = +b.dataset.qa;
     if (treino) { if (st.resp[q.id] !== undefined) return; st.resp[q.id] = i; qRegistra(m, q, i); salvar(); renderTopo(); }
     else st.resp[q.id] = i;
-    qJoga(corpo, m);
+    qJoga(corpo, m, treino ? "qFeedback" : null);
   }));
   $("#qDica", corpo)?.addEventListener("click", e => { e.target.remove(); $("#qDicaT", corpo).classList.remove("oculto"); });
   $("#qReler", corpo)?.addEventListener("click", () => abreSecao(m.id, sec.id));
-  $("#qProx", corpo)?.addEventListener("click", () => { if (st.i + 1 < st.lista.length) { st.i++; qJoga(corpo, m); qTopo(corpo); } else { st.fim = Date.now(); qResultado(corpo, m); } });
-  $("#qAnt", corpo)?.addEventListener("click", () => { st.i--; qJoga(corpo, m); });
-  $("#qSeg", corpo)?.addEventListener("click", () => { if (st.i + 1 < st.lista.length) { st.i++; qJoga(corpo, m); qTopo(corpo); } else qEntrega(corpo, m); });
-  $$("[data-qir]", corpo).forEach(b => b.addEventListener("click", () => { st.i = +b.dataset.qir; qJoga(corpo, m); }));
+  $("#qProx", corpo)?.addEventListener("click", () => { if (st.i + 1 < st.lista.length) { st.i++; qJoga(corpo, m, "qEnunciado"); qTopo(corpo); } else { st.fim = Date.now(); qResultado(corpo, m); } });
+  $("#qAnt", corpo)?.addEventListener("click", () => { st.i--; qJoga(corpo, m, "qEnunciado"); });
+  $("#qSeg", corpo)?.addEventListener("click", () => { if (st.i + 1 < st.lista.length) { st.i++; qJoga(corpo, m, "qEnunciado"); qTopo(corpo); } else qEntrega(corpo, m); });
+  $$("[data-qir]", corpo).forEach(b => b.addEventListener("click", () => { st.i = +b.dataset.qir; qJoga(corpo, m, "qEnunciado"); }));
   $("#qEntrega", corpo)?.addEventListener("click", () => qEntrega(corpo, m));
   clearInterval(qTimer);
-  if (!treino) { const tic = () => { const r = Math.max(0, st.dur - (Date.now() - st.ini)), el = $("#qRel"); if (el) { el.textContent = `${Math.floor(r / 60000)}:${String(Math.floor(r / 1000) % 60).padStart(2, "0")}`; el.classList.toggle("pouco", r < 120000); } if (r <= 0) { clearInterval(qTimer); st.fim = Date.now(); qCorrige(m); qResultado(corpo, m); } }; tic(); qTimer = setInterval(tic, 1000); }
+  if (foco) $("#" + foco, corpo)?.focus({ preventScroll: true });
+  if (!treino) { const tic = () => { if (!qAtiva(st)) return; const r = Math.max(0, st.dur - (Date.now() - st.ini)), el = $("#qRel"); if (el) { el.textContent = `${Math.floor(r / 60000)}:${String(Math.floor(r / 1000) % 60).padStart(2, "0")}`; el.classList.toggle("pouco", r < 120000); } if (r <= 0) { clearInterval(qTimer); st.fim = Date.now(); qCorrige(m); qResultado(corpo, m); } }; tic(); qTimer = setInterval(tic, 1000); }
 }
 function qTopo(corpo) { const y = corpo.getBoundingClientRect().top + scrollY - 90; if (scrollY > y) scrollTo({ top: y, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }
 async function qEntrega(corpo, m) {
-  const st = qSessao, branco = st.lista.filter(id => st.resp[id] === undefined).length;
+  const st = qSessao; if (!qAtiva(st)) return;
+  const branco = st.lista.filter(id => st.resp[id] === undefined).length;
   if (branco && !(await confirma("Entregar o simulado?", `${branco} ${branco === 1 ? "questão está" : "questões estão"} em branco.`, "Entregar"))) return;
+  if (!qAtiva(st)) return; // A conta pode mudar enquanto a confirmação está aberta.
   clearInterval(qTimer); st.fim = Date.now(); qCorrige(m); qResultado(corpo, m);
 }
 function qCorrige(m) {
-  const st = qSessao; if (st.corrigido) return; st.corrigido = true;
+  const st = qSessao; if (!qAtiva(st) || st.corrigido) return; st.corrigido = true;
   const mapa = Object.fromEntries(questoesDe(m.id).map(q => [q.id, q]));
   st.lista.forEach(id => { if (st.resp[id] !== undefined) qRegistra(m, mapa[id], st.resp[id]); });
   S.questoesDia ||= {}; const k = `${m.id}:${hoje()}`;
@@ -289,7 +296,8 @@ function qCorrige(m) {
 }
 function qResultado(corpo, m) {
   clearInterval(qTimer);
-  const st = qSessao, mapa = Object.fromEntries(questoesDe(m.id).map(q => [q.id, q])), qs = st.lista.map(id => mapa[id]).filter(Boolean);
+  const st = qSessao; if (!qAtiva(st)) return;
+  const mapa = Object.fromEntries(questoesDe(m.id).map(q => [q.id, q])), qs = st.lista.map(id => mapa[id]).filter(Boolean);
   const ok = qs.filter(q => st.resp[q.id] !== undefined && q.alternativas[st.resp[q.id]].certa), err = qs.filter(q => st.resp[q.id] !== undefined && !q.alternativas[st.resp[q.id]].certa), br = qs.filter(q => st.resp[q.id] === undefined);
   const porTipo = TIPOS_Q.map(([v, t]) => { const l = qs.filter(q => q.tipo === v); return l.length ? `<span>${t} <b>${l.filter(q => ok.includes(q)).length}/${l.length}</b></span>` : ""; }).join("");
   const reler = [...new Set(err.concat(br).map(q => (q.fonte && q.fonte.secao) || q.secao))].map(id => m.secoes.find(s => s.id === id)).filter(Boolean).slice(0, 3);
@@ -305,7 +313,7 @@ function qResultado(corpo, m) {
         <div class="qalts">${q.alternativas.map((a, i) => `<div class="qalt ${a.certa ? "certa" : i === k ? "errada" : "apaga"}"><b>${LETRAS[i]}</b><span><span class="qt">${a.t}</span>${a.porque ? `<span class="qpq">${a.porque}</span>` : ""}</span></div>`).join("")}</div>
         ${q.explica ? `<p class="qex">${q.explica}</p>` : ""}${q.pegadinha ? `<p class="qpeg"><strong>Pegadinha:</strong> ${q.pegadinha}</p>` : ""}</details>`; }).join("")}</div>` : ""}`;
   $$("[data-qrl]", corpo).forEach(b => b.addEventListener("click", () => { qSessao = null; abreSecao(m.id, b.dataset.qrl); }));
-  $("#qRefaz", corpo)?.addEventListener("click", () => { qSessao = { mat: m.id, modo: "treino", lista: err.concat(br).map(q => q.id), i: 0, resp: {}, ini: Date.now() }; renderQuestoes(corpo, m); });
+  $("#qRefaz", corpo)?.addEventListener("click", () => { qSessao = { sessao: sessaoConta, mat: m.id, modo: "treino", lista: err.concat(br).map(q => q.id), i: 0, resp: {}, ini: Date.now() }; renderQuestoes(corpo, m); });
   $("#qNova", corpo).addEventListener("click", () => { qSessao = null; renderQuestoes(corpo, m); });
 }
 document.addEventListener("keydown", e => {
@@ -620,7 +628,7 @@ function lerHash() {
 }
 window.addEventListener("popstate", () => { const v = lerHash(); if (!v) return; viaHash = true; editando = false; LS.set("sub", sub); show(v); viaHash = false; });
 function render() {
-  renderTopo();
+  renderTopo(); avisaConteudo();
   ({ inicio: renderInicio, mundo: renderMundo, foco: renderFoco, materias: renderMaterias, revisao: renderRevisao, missoes: renderMissoes, progresso: renderProgresso })[atual]?.();
 }
 function atualiza() {
@@ -658,7 +666,7 @@ temaMundo = () => mundo?.tema?.(tema);
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=43"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=44"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -1453,7 +1461,7 @@ function renderNotasMat(corpo, m) {
 function renderKahootMat(corpo, m) {
   const f = kSec && kSec.mat === m.id ? kSec : null;
   corpo.innerHTML = (f ? `<div class="vidro filtroq"><span class="kicker" style="flex:1">Só as questões de · ${esc(f.nome)}</span><button class="btn sm" id="kTodas">Ver todas as questões</button></div>` : "")
-    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=41${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
+    + `<iframe class="kframe" data-sessao="${sessaoConta}" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=44${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
   $("#kTodas")?.addEventListener("click", () => { kSec = null; renderKahootMat(corpo, m); });
 }
 function zoomImg(src, alt = "Imagem ampliada") {
@@ -1463,6 +1471,7 @@ function zoomImg(src, alt = "Imagem ampliada") {
 addEventListener("message", e => {
   if (e.origin !== location.origin) return; const d = e.data || {};
   const f = $(".kframe");
+  if (!f || e.source !== f.contentWindow || f.dataset.sessao !== String(sessaoConta) || !estadoPronto) return;
   if (d.tipo === "kahoot-altura" && f) f.style.height = Math.max(560, d.h) + "px";
   if (d.tipo === "kahoot-topo" && f) { const y = f.getBoundingClientRect().top + scrollY - 90; if (scrollY > y) scrollTo({ top: y, behavior: "smooth" }); }
   if (d.tipo === "kahoot-zoom") zoomImg(d.src);
@@ -1558,7 +1567,7 @@ function baralho() {
 }
 function novaRodada() {
   const l = baralho().map(c => ({ c, p: (S.cards[c.id]?.b || 0) * 10 - (S.cards[c.id]?.err || 0) * 3 + Math.random() * 8 })).sort((a, b) => a.p - b.p);
-  rodada = { cards: l.slice(0, 20).map(x => x.c), i: 0, ok: 0, err: 0, virado: false, fim: false };
+  rodada = { sessao: sessaoConta, cards: l.slice(0, 20).map(x => x.c), i: 0, ok: 0, err: 0, virado: false, fim: false };
 }
 function renderRevisao() {
   const v = $("#view-revisao"), ms = materias();
@@ -1598,12 +1607,12 @@ function renderRevisao() {
   $("#rOk")?.addEventListener("click", () => responde(true)); $("#rErr")?.addEventListener("click", () => responde(false));
 }
 function vira() {
-  if (!rodada || rodada.fim) return; rodada.virado = !rodada.virado;
+  if (!rodada || rodada.sessao !== sessaoConta || !estadoPronto || rodada.fim) return; rodada.virado = !rodada.virado;
   $("#fcCard")?.classList.toggle("flipped", rodada.virado);
   $("#rVira") && ($("#rVira").hidden = rodada.virado); $("#rOk") && ($("#rOk").hidden = !rodada.virado); $("#rErr") && ($("#rErr").hidden = !rodada.virado);
 }
 function responde(ok) {
-  const R = rodada; if (!R || R.fim || !R.virado) return;
+  const R = rodada; if (!R || R.sessao !== sessaoConta || !estadoPronto || R.fim || !R.virado) return;
   registraCard(R.cards[R.i], ok); if (ok) R.ok++; else R.err++;
   R.i++; R.virado = false;
   if (R.i >= R.cards.length) { R.fim = true; const n = R.ok + R.err; if (n >= 10 && R.ok / n >= .85) conquista("precisao"); salvar(); }
@@ -1611,7 +1620,7 @@ function responde(ok) {
 }
 document.addEventListener("keydown", e => {
   if (atual !== "revisao" || modalAberto || /INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName) || document.activeElement.isContentEditable) return;
-  if (e.key === " " || e.key === "Enter") { e.preventDefault(); vira(); }
+  if ((e.key === " " || e.key === "Enter") && !e.target.closest("button,a,[role=button]:not(#fcCard)")) { e.preventDefault(); vira(); }
   if (e.key === "1") responde(false); if (e.key === "2") responde(true);
 });
 
@@ -1801,6 +1810,7 @@ async function revisaSincronizacao() {
 async function aoMudarConta(u) {
   const antes = conta?.uid, sessao = ++sessaoConta;
   clearTimeout(tConta); gravaPendente = null; contaOk = false;
+  clearInterval(qTimer); qTimer = null; qSessao = null; rodada = null; casoAberto = null;
   filaFesta = [];
   if (!u) {
     conta = null; estadoPronto = true; precisaSincronizar = false; nuvem = "local";
@@ -1857,9 +1867,22 @@ document.querySelector(".marca").style.cursor = "default";
    início do app
    ========================================================= */
 const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
-async function carregaFabrica() {
-  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=43`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
-  FABRICA = r.filter(Boolean);
+async function carregaFabrica(ids = CONTEUDOS) {
+  const r = await carregaMaterias(ids);
+  FABRICA = CONTEUDOS.map(id => r.materias.find(m => m.id === id) || FABRICA.find(m => m.id === id)).filter(Boolean);
+  conteudosFalhos = [...new Set(conteudosFalhos.filter(id => !ids.includes(id)).concat(r.falhas))];
+}
+function avisaConteudo() {
+  const el = $("#conteudoStatus");
+  el.hidden = !conteudosFalhos.length;
+  if (el.hidden) { el.replaceChildren(); return; }
+  el.innerHTML = `<span role="status">${recarregandoConteudo ? "Tentando carregar as matérias…" : "Algumas matérias não carregaram. Seu progresso foi mantido."}</span><button class="btn sm" id="conteudoTentar" ${recarregandoConteudo ? "disabled" : ""}>Tentar novamente</button>`;
+  $("#conteudoTentar", el).addEventListener("click", async () => {
+    if (recarregandoConteudo) return;
+    recarregandoConteudo = true; avisaConteudo();
+    try { await carregaFabrica([...conteudosFalhos]); }
+    finally { recarregandoConteudo = false; render(); }
+  });
 }
 async function conectaNuvem() {
   if (!window.claude || typeof window.claude.use !== "function") return;
@@ -1912,7 +1935,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=43");
+      const mod = await import("./conta.js?v=44");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }

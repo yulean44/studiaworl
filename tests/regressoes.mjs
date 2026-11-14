@@ -19,7 +19,7 @@ function contexto(inicial = {}, modulo = {}) {
     S:{xp:0,upd:0,timer:null}, conta:null, contaOk:false, contaMod:modulo,
     sessaoConta:0, estadoPronto:true, appPronto:true, nuvem:'local',
     tConta:null, tSalvar:null, gravandoConta:false, gravaPendente:null, precisaSincronizar:false,
-    db:null, uid:null, filaFesta:[], novoEstado:()=>({xp:0,upd:0,timer:null}),
+    db:null, uid:null, filaFesta:[], qSessao:null, qTimer:null, rodada:null, casoAberto:null, clearInterval:id=>agendados.delete(id), novoEstado:()=>({xp:0,upd:0,timer:null}),
     modoTeste:()=>false, chaveEstado:()=>c.conta?'estado:'+c.conta.uid:'estado',
     setTimeout:(fn)=>{agendados.set(++n,fn);return n;},clearTimeout:id=>agendados.delete(id),
     renderTopo(){},render(){},toast(){},aplicaMundo(){},diarias(){},checaTudo(){},festa(){},telaLogin(){},liberaApp(){},bloqueiaApp(){},
@@ -75,6 +75,27 @@ test('envio agendado captura UID e estado; logout cancela envios pendentes',asyn
   c.S.xp=99; await c.gravaConta();
   assert.equal(enviados[0][0],'A');assert.equal(enviados[0][1].xp,10);
   c.salvar();await c.aoMudarConta(null); await c.gravaConta();assert.equal(enviados.length,1);
+});
+test('trocar de identidade encerra exercícios e timers sem alterar o histórico salvo',async()=>{
+  for (const destino of [{uid:'B'},null]) {
+    const anterior={xp:300,upd:1,questoes:{'imagem--q-1':{ok:true}},notas:{a:'preservada'}};
+    const remoto={xp:800,upd:2,questoes:{}};
+    const {c,storage,agendados}=contexto({'estado:A':anterior},{carrega:async()=>remoto});
+    c.conta={uid:'A'};c.qSessao={mat:'imagem',resp:{'q-2':0}};
+    c.rodada={cards:[{id:'privado-A',meu:true}],i:0,virado:true};c.casoAberto={i:1};
+    agendados.set(99,()=>{});c.qTimer=99;
+    await c.aoMudarConta(destino);
+    assert.equal(c.qSessao,null);assert.equal(c.rodada,null);assert.equal(c.casoAberto,null);
+    assert.equal(agendados.has(99),false);
+    assert.deepEqual(JSON.parse(storage.getItem('pe:estado:A')),anterior);
+    assert.deepEqual(clone(c.S.questoes || {}),{});
+  }
+});
+test('entrar em conta existente encerra a rodada anônima',async()=>{
+  const {c}=contexto({estado:{xp:100}},{carrega:async()=>({xp:700,upd:2})});
+  c.qSessao={mat:'imagem',resp:{a:1}};c.rodada={cards:[{id:'anonimo'}]};
+  await c.aoMudarConta({uid:'B'});
+  assert.equal(c.qSessao,null);assert.equal(c.rodada,null);assert.equal(c.S.xp,700);
 });
 test('modo teste não substitui o estado real',()=>{
   const {c,storage}=contexto({'estado:A':{xp:500}});
