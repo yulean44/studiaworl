@@ -1388,5 +1388,1689 @@
    ],
    "fechamento": "<h3>Pontos-chave</h3><ul><li>Lítio: janela estreita.</li><li>Sobe com AINE, tiazídico, IECA e desidratação.</li><li>Monitorar litemia, TSH e creatinina.</li></ul>"
   }
+ ],
+ "questoes": [
+  {
+   "id": "q-r1-01",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Pela distância da ameaça, que reação surge diante de um perigo iminente?",
+   "alternativas": [
+    {
+     "t": "Ansiedade",
+     "certa": false,
+     "porque": "É diante de perigo próximo."
+    },
+    {
+     "t": "Preocupação",
+     "certa": false,
+     "porque": "É diante de perigo distante."
+    },
+    {
+     "t": "Pânico",
+     "certa": false,
+     "porque": "Não é a gradação do material."
+    },
+    {
+     "t": "Medo",
+     "certa": true,
+     "porque": "Perigo iminente gera medo."
+    }
+   ],
+   "explica": "Iminente: medo. Próximo: ansiedade. Distante: preocupação.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "A aula distingue três intensidades conforme a distância da ameaça: diante de um perigo iminente surge o medo ; diante de um perigo próximo, a ansiedade ; diante de um perigo distante, a preocupação ."
+   }
+  },
+  {
+   "id": "q-r1-02",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Quando a ansiedade se torna patológica?",
+   "alternativas": [
+    {
+     "t": "Sempre que há taquicardia",
+     "certa": false,
+     "porque": "Taquicardia faz parte da resposta normal."
+    },
+    {
+     "t": "Quando é desproporcional, persistente ou interfere no funcionamento global",
+     "certa": true,
+     "porque": "Critério do material."
+    },
+    {
+     "t": "Quando há ativação simpática",
+     "certa": false,
+     "porque": "A resposta adaptativa também ativa o simpático."
+    },
+    {
+     "t": "Só quando há ataque de pânico",
+     "certa": false,
+     "porque": "Não é o critério."
+    }
+   ],
+   "explica": "A ansiedade é adaptativa; vira doença pelo excesso, desproporção ou prejuízo.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "A ansiedade torna-se patológica quando ultrapassa determinado nível, quando é desproporcional às causas aparentes e persistente, ou quando interfere de maneira significativa no funcionamento global do indivíduo."
+   }
+  },
+  {
+   "id": "q-r1-03",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Pelo DSM-5-TR, quanto tempo de preocupação excessiva exige o TAG?",
+   "alternativas": [
+    {
+     "t": "Ao menos seis meses",
+     "certa": true,
+     "porque": "Critério do material."
+    },
+    {
+     "t": "Um mês",
+     "certa": false,
+     "porque": "É o tempo do pânico."
+    },
+    {
+     "t": "Duas semanas",
+     "certa": false,
+     "porque": "Não é o critério do TAG."
+    },
+    {
+     "t": "Três meses",
+     "certa": false,
+     "porque": "É o prazo do transtorno de adaptação."
+    }
+   ],
+   "explica": "Seis meses e pelo menos três de seis sintomas.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Pelo DSM-5-TR, a preocupação deve durar ao menos seis meses e associar-se a pelo menos três de seis sintomas: inquietação, fadiga, dificuldade de concentração, irritabilidade, tensão muscular e alteração do sono."
+   }
+  },
+  {
+   "id": "q-r1-04",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Por que a aula sugere que o TAG pode funcionar como pródromo depressivo?",
+   "alternativas": [
+    {
+     "t": "Porque o TAG sempre evolui para bipolar",
+     "certa": false,
+     "porque": "Não é o que diz o material."
+    },
+    {
+     "t": "Porque os dois têm os mesmos critérios",
+     "certa": false,
+     "porque": "Não têm."
+    },
+    {
+     "t": "Quando coexistem, a ansiedade precede a depressão em dois terços dos casos",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Porque o TAG dura menos que a depressão",
+     "certa": false,
+     "porque": "Não é o argumento."
+    }
+   ],
+   "explica": "Cerca de 40% dos pacientes com TAG têm depressão maior concomitante.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "a ansiedade precede a depressão em dois terços dos casos"
+   }
+  },
+  {
+   "id": "q-r1-05",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Em quanto tempo o ataque de pânico atinge o pico?",
+   "alternativas": [
+    {
+     "t": "Em até 10 minutos",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Em horas",
+     "certa": false,
+     "porque": "É lento demais."
+    },
+    {
+     "t": "Em 2 a 3 dias",
+     "certa": false,
+     "porque": "Não é crise súbita."
+    },
+    {
+     "t": "Em 30 a 60 minutos",
+     "certa": false,
+     "porque": "A duração média é de 15 a 30 minutos."
+    }
+   ],
+   "explica": "Início súbito, pico em até 10 minutos, duração média de 15 a 30.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O ataque de pânico é uma crise de início súbito, que atinge o pico de intensidade em até 10 minutos e dura, em média, de 15 a 30 minutos."
+   }
+  },
+  {
+   "id": "q-r1-06",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Mulher de 26 anos tem palpitações, falta de ar e formigamento súbitos no ônibus. Qual a primeira conduta?",
+   "alternativas": [
+    {
+     "t": "Iniciar ISRS de imediato",
+     "certa": false,
+     "porque": "Antes, excluir causa orgânica."
+    },
+    {
+     "t": "Diagnosticar pânico e dar alta",
+     "certa": false,
+     "porque": "Pânico exige recorrência e exclusão orgânica."
+    },
+    {
+     "t": "Encaminhar à TCC sem exames",
+     "certa": false,
+     "porque": "Exclusão orgânica vem antes."
+    },
+    {
+     "t": "Afastar causa orgânica",
+     "certa": true,
+     "porque": "Primeira conduta da correlação clínica."
+    }
+   ],
+   "explica": "Síndrome coronariana, arritmia, hipertireoidismo, hipoglicemia, feocromocitoma e drogas podem mimetizar.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "A combinação de ataques inesperados, medo persistente de novas crises e esquiva agorafóbica caracteriza o transtorno de pânico, mas a primeira conduta foi afastar causa orgânica."
+   }
+  },
+  {
+   "id": "q-r1-07",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Qual a particularidade fisiológica da fobia do tipo sangue-injeção-ferimento?",
+   "alternativas": [
+    {
+     "t": "Taquicardia intensa",
+     "certa": false,
+     "porque": "É a resposta habitual das outras fobias."
+    },
+    {
+     "t": "Hipertensão grave",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Resposta vasovagal, com bradicardia, hipotensão e desmaio",
+     "certa": true,
+     "porque": "Em vez de taquicardia."
+    },
+    {
+     "t": "Ausência de padrão familiar",
+     "certa": false,
+     "porque": "Tem padrão familiar."
+    }
+   ],
+   "explica": "É a única fobia que derruba a pressão em vez de acelerar o coração.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Este último tem padrão familiar e uma fisiologia própria: em vez da taquicardia habitual, provoca resposta vasovagal , com bradicardia, hipotensão e desmaio."
+   }
+  },
+  {
+   "id": "q-r1-08",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que se inicia benzodiazepínico junto com o antidepressivo no pânico?",
+   "alternativas": [
+    {
+     "t": "Porque o benzodiazepínico é o tratamento de longo prazo",
+     "certa": false,
+     "porque": "Deve ser retirado gradualmente."
+    },
+    {
+     "t": "Para cobrir o período de latência de duas a quatro semanas do antidepressivo",
+     "certa": true,
+     "porque": "Orientação da aula."
+    },
+    {
+     "t": "Porque o ISRS causa convulsão",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Porque a TCC é contraindicada",
+     "certa": false,
+     "porque": "A TCC é eficaz."
+    }
+   ],
+   "explica": "O benzodiazepínico cobre só a latência e depois é retirado aos poucos.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Como seu efeito demora de duas a quatro semanas, a aula orienta iniciar com um benzodiazepínico , acrescentar o antidepressivo e retirar o benzodiazepínico de forma gradual, para que ele cubra apenas o período de latência."
+   }
+  },
+  {
+   "id": "q-r1-09",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual o tratamento de primeira linha do TEPT?",
+   "alternativas": [
+    {
+     "t": "Benzodiazepínico",
+     "certa": false,
+     "porque": "Não é recomendado no TEPT."
+    },
+    {
+     "t": "Antipsicótico",
+     "certa": false,
+     "porque": "Não é o citado."
+    },
+    {
+     "t": "Lítio",
+     "certa": false,
+     "porque": "Não é o citado."
+    },
+    {
+     "t": "Psicoterapia focada no trauma",
+     "certa": true,
+     "porque": "Primeira linha segundo o material."
+    }
+   ],
+   "explica": "ISRS e IRSN ajudam; benzodiazepínicos podem prejudicar o processamento do trauma.",
+   "pegadinha": "Benzodiazepínico não trata o TEPT.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O tratamento de primeira linha é a psicoterapia focada no trauma, com recuperação de até 90% ao fim do tratamento; entre os medicamentos, os ISRS e IRSN reduzem a ansiedade e os pensamentos intrusivos, com resposta em cerca de 59% contra 38% com placebo."
+   }
+  },
+  {
+   "id": "q-r1-10",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Após um divórcio, homem tem tristeza e irritação desproporcionais que começaram em 1 mês. Qual o diagnóstico mais provável?",
+   "alternativas": [
+    {
+     "t": "TEPT",
+     "certa": false,
+     "porque": "Exige estressor traumático."
+    },
+    {
+     "t": "Reação aguda ao estresse",
+     "certa": false,
+     "porque": "Exige estressor traumático e quadro dissociativo."
+    },
+    {
+     "t": "Transtorno de adaptação",
+     "certa": true,
+     "porque": "Estressor comum, início em até 3 meses."
+    },
+    {
+     "t": "TAG",
+     "certa": false,
+     "porque": "Não depende de um estressor."
+    }
+   ],
+   "explica": "O estressor do transtorno de adaptação não precisa ser traumático.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O transtorno de adaptação difere dos anteriores pelo tipo de estressor: não precisa ser traumático, podendo ser um evento comum, como divórcio, perda de emprego ou cuidar de um familiar dependente."
+   }
+  },
+  {
+   "id": "q-r2-01",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "No transtorno de sintomas somáticos, o sintoma é produzido de forma intencional?",
+   "alternativas": [
+    {
+     "t": "Não, é real para o paciente e não intencional",
+     "certa": true,
+     "porque": "Definição do material."
+    },
+    {
+     "t": "Sim, de forma consciente",
+     "certa": false,
+     "porque": "Isso é factício ou simulação."
+    },
+    {
+     "t": "Sim, para ganho financeiro",
+     "certa": false,
+     "porque": "Isso é simulação."
+    },
+    {
+     "t": "Só quando há doença associada",
+     "certa": false,
+     "porque": "Não é intencional em nenhum caso."
+    }
+   ],
+   "explica": "Produção e motivação são inconscientes.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "O sintoma é real para o paciente e não é produzido de forma intencional"
+   }
+  },
+  {
+   "id": "q-r2-02",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Após discussão com o marido, mulher acorda sem mover o braço; TC normal e exame que não segue território vascular. Qual o diagnóstico?",
+   "alternativas": [
+    {
+     "t": "Simulação",
+     "certa": false,
+     "porque": "Não há ganho consciente."
+    },
+    {
+     "t": "Transtorno conversivo",
+     "certa": true,
+     "porque": "Déficit precedido por conflito, sem causa orgânica e não intencional."
+    },
+    {
+     "t": "Transtorno factício",
+     "certa": false,
+     "porque": "Não há produção consciente."
+    },
+    {
+     "t": "AVC isquêmico",
+     "certa": false,
+     "porque": "O exame não segue território vascular."
+    }
+   ],
+   "explica": "O exame neurológico costuma ser incongruente com a anatomia.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "O déficit neurológico precedido por um conflito, sem explicação orgânica e não produzido intencionalmente, configura transtorno conversivo."
+   }
+  },
+  {
+   "id": "q-r2-03",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "O que diferencia a hipocondria de um delírio?",
+   "alternativas": [
+    {
+     "t": "Na hipocondria o paciente tem certeza absoluta",
+     "certa": false,
+     "porque": "Não há convicção delirante."
+    },
+    {
+     "t": "Não há convicção delirante, mas uma dúvida obsessiva",
+     "certa": true,
+     "porque": "Definição do material."
+    },
+    {
+     "t": "A hipocondria tem alucinações",
+     "certa": false,
+     "porque": "Não é descrito."
+    },
+    {
+     "t": "A hipocondria melhora com garantias médicas",
+     "certa": false,
+     "porque": "Persiste apesar delas."
+    }
+   ],
+   "explica": "O medo de doença grave persiste apesar de avaliações adequadas.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Não há convicção delirante, mas uma dúvida obsessiva e torturante."
+   }
+  },
+  {
+   "id": "q-r2-04",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Paciente provoca lesões em si para ser internado e cuidado, sem ganho material. Qual o diagnóstico?",
+   "alternativas": [
+    {
+     "t": "Transtorno factício",
+     "certa": true,
+     "porque": "Produção consciente, motivação inconsciente, ganho primário."
+    },
+    {
+     "t": "Simulação",
+     "certa": false,
+     "porque": "Exige ganho secundário concreto."
+    },
+    {
+     "t": "Transtorno conversivo",
+     "certa": false,
+     "porque": "A produção é inconsciente."
+    },
+    {
+     "t": "Hipocondria",
+     "certa": false,
+     "porque": "Não há produção de sinais."
+    }
+   ],
+   "explica": "Factício busca o papel de doente; Münchausen é a forma grave.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "No transtorno factício , o paciente produz ou simula sinais e sintomas de forma consciente, mas a motivação é inconsciente: busca um ganho primário , puramente psicológico, como ser cuidado e ocupar o papel de doente."
+   }
+  },
+  {
+   "id": "q-r2-05",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Réu apresenta cegueira apenas na véspera das audiências. Qual a hipótese?",
+   "alternativas": [
+    {
+     "t": "Transtorno conversivo",
+     "certa": false,
+     "porque": "Seria inconsciente."
+    },
+    {
+     "t": "Transtorno factício",
+     "certa": false,
+     "porque": "O ganho seria psicológico."
+    },
+    {
+     "t": "Simulação",
+     "certa": true,
+     "porque": "Produção e motivação conscientes, ganho secundário."
+    },
+    {
+     "t": "Amnésia dissociativa",
+     "certa": false,
+     "porque": "Não é o quadro."
+    }
+   ],
+   "explica": "Simulação não é transtorno mental.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Se, em vez disso, um réu apresentasse cegueira apenas na véspera das audiências, o quadro seria de simulação."
+   }
+  },
+  {
+   "id": "q-r2-06",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "dificil",
+   "enunciado": "Na síndrome de Münchausen por procuração, quem produz os sinais?",
+   "alternativas": [
+    {
+     "t": "O próprio paciente, em si",
+     "certa": false,
+     "porque": "É a Münchausen clássica."
+    },
+    {
+     "t": "O médico",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Ninguém, os sinais são reais",
+     "certa": false,
+     "porque": "São produzidos."
+    },
+    {
+     "t": "O cuidador, em outra pessoa, geralmente uma criança",
+     "certa": true,
+     "porque": "Definição do material."
+    }
+   ],
+   "explica": "Constitui também maus-tratos.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A síndrome de Münchausen é a forma grave, com hospitalizações e procedimentos repetidos, e na síndrome de Münchausen por procuração o cuidador produz os sinais em outra pessoa, geralmente uma criança, o que constitui também maus-tratos."
+   }
+  },
+  {
+   "id": "q-r2-07",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "No manejo dos sintomas somáticos, como devem ser as consultas?",
+   "alternativas": [
+    {
+     "t": "Só quando surgirem sintomas",
+     "certa": false,
+     "porque": "Reforça a busca por atendimento."
+    },
+    {
+     "t": "Com novos exames a cada consulta",
+     "certa": false,
+     "porque": "Reforça a crença de doença."
+    },
+    {
+     "t": "Dizendo que o paciente não tem nada",
+     "certa": false,
+     "porque": "Deve-se validar o sofrimento."
+    },
+    {
+     "t": "Regulares e agendadas com um médico de referência",
+     "certa": true,
+     "porque": "Reduz a busca por pronto-socorro."
+    }
+   ],
+   "explica": "Validar sem repetir exames sem indicação; TCC e tratar depressão e ansiedade.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "consultas regulares agendadas"
+   }
+  },
+  {
+   "id": "q-r3-01",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual via cerebral é ativada por todas as drogas de abuso?",
+   "alternativas": [
+    {
+     "t": "Via mesolímbica",
+     "certa": true,
+     "porque": "Aumentam a dopamina no sistema de recompensa."
+    },
+    {
+     "t": "Via nigroestriatal",
+     "certa": false,
+     "porque": "Relacionada a efeitos extrapiramidais."
+    },
+    {
+     "t": "Via tuberoinfundibular",
+     "certa": false,
+     "porque": "Relacionada à prolactina."
+    },
+    {
+     "t": "Via corticoespinhal",
+     "certa": false,
+     "porque": "É motora."
+    }
+   ],
+   "explica": "Liga a área tegmentar ventral ao núcleo accumbens.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Todas as drogas de abuso, por mecanismos diferentes, aumentam a liberação de dopamina na via mesolímbica , que liga a área tegmentar ventral ao núcleo accumbens e constitui o sistema de recompensa."
+   }
+  },
+  {
+   "id": "q-r3-02",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Pelo DSM-5-TR, quantos critérios indicam transtorno por uso de substância moderado?",
+   "alternativas": [
+    {
+     "t": "Dois ou três",
+     "certa": false,
+     "porque": "É leve."
+    },
+    {
+     "t": "Seis ou mais",
+     "certa": false,
+     "porque": "É grave."
+    },
+    {
+     "t": "Quatro ou cinco",
+     "certa": true,
+     "porque": "Gravidade pelo número de critérios."
+    },
+    {
+     "t": "Um",
+     "certa": false,
+     "porque": "Não fecha diagnóstico."
+    }
+   ],
+   "explica": "11 critérios em 12 meses.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A gravidade é definida pelo número de critérios: dois ou três indicam transtorno leve, quatro ou cinco moderado e seis ou mais grave."
+   }
+  },
+  {
+   "id": "q-r3-03",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "No CAGE, quantas respostas positivas sugerem problema com álcool?",
+   "alternativas": [
+    {
+     "t": "Uma",
+     "certa": false,
+     "porque": "Não é o corte."
+    },
+    {
+     "t": "Duas",
+     "certa": true,
+     "porque": "Corte do material."
+    },
+    {
+     "t": "Três",
+     "certa": false,
+     "porque": "Não é o corte."
+    },
+    {
+     "t": "Quatro",
+     "certa": false,
+     "porque": "Não é o corte."
+    }
+   ],
+   "explica": "Cut down, annoyed, guilty e eye-opener.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "duas respostas positivas sugerem problema"
+   }
+  },
+  {
+   "id": "q-r3-04",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Por que a retirada do álcool causa hiperexcitação?",
+   "alternativas": [
+    {
+     "t": "Porque o álcool inibe o GABA",
+     "certa": false,
+     "porque": "Ele potencializa o GABA."
+    },
+    {
+     "t": "O uso crônico reduz receptores GABA e aumenta glutamatérgicos",
+     "certa": true,
+     "porque": "Adaptação inversa descrita no material."
+    },
+    {
+     "t": "Por falta de dopamina",
+     "certa": false,
+     "porque": "Não é o mecanismo descrito."
+    },
+    {
+     "t": "Por excesso de serotonina",
+     "certa": false,
+     "porque": "Não é o mecanismo."
+    }
+   ],
+   "explica": "Sem o álcool sobra glutamato e falta GABA funcional.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "O uso crônico leva a uma adaptação inversa, com menos receptores GABA funcionais e mais receptores glutamatérgicos; quando o álcool é retirado, o cérebro fica em estado de hiperexcitação."
+   }
+  },
+  {
+   "id": "q-r3-05",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Em quanto tempo após a última dose surge o delirium tremens?",
+   "alternativas": [
+    {
+     "t": "6 a 24 horas",
+     "certa": false,
+     "porque": "Tremor e ansiedade."
+    },
+    {
+     "t": "12 a 48 horas",
+     "certa": false,
+     "porque": "Convulsões e alucinose."
+    },
+    {
+     "t": "48 a 96 horas",
+     "certa": true,
+     "porque": "Dado da tabela."
+    },
+    {
+     "t": "Após 2 semanas",
+     "certa": false,
+     "porque": "Não é o descrito."
+    }
+   ],
+   "explica": "É a forma mais grave e pode ser fatal.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "48 a 96 horas"
+   }
+  },
+  {
+   "id": "q-r3-06",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Etilista desnutrido chega confuso e hipoglicêmico. Qual a ordem correta?",
+   "alternativas": [
+    {
+     "t": "Tiamina antes da glicose",
+     "certa": true,
+     "porque": "A glicose consome tiamina e precipita Wernicke."
+    },
+    {
+     "t": "Glicose antes da tiamina",
+     "certa": false,
+     "porque": "Pode precipitar Wernicke."
+    },
+    {
+     "t": "Só glicose",
+     "certa": false,
+     "porque": "Falta tiamina."
+    },
+    {
+     "t": "Só benzodiazepínico",
+     "certa": false,
+     "porque": "Não corrige a hipoglicemia."
+    }
+   ],
+   "explica": "Wernicke: confusão, ataxia e oftalmoplegia, potencialmente reversível.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A tiamina deve ser administrada antes da glicose, porque a glicose consome as reservas de tiamina e pode precipitar a encefalopatia de Wernicke , caracterizada pela tríade confusão, ataxia e oftalmoplegia e potencialmente reversível."
+   }
+  },
+  {
+   "id": "q-r3-07",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Hepatopata em abstinência alcoólica. Qual benzodiazepínico preferir?",
+   "alternativas": [
+    {
+     "t": "Diazepam",
+     "certa": false,
+     "porque": "É o usual, mas não no hepatopata."
+    },
+    {
+     "t": "Flumazenil",
+     "certa": false,
+     "porque": "É antagonista."
+    },
+    {
+     "t": "Clonazepam",
+     "certa": false,
+     "porque": "Não é o citado."
+    },
+    {
+     "t": "Lorazepam ou oxazepam",
+     "certa": true,
+     "porque": "Não dependem do metabolismo oxidativo hepático."
+    }
+   ],
+   "explica": "Em hepatopatas e idosos prefere-se lorazepam ou oxazepam.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A abstinência é tratada com benzodiazepínico , que substitui o efeito GABAérgico perdido, em geral diazepam; em hepatopatas e idosos prefere-se lorazepam ou oxazepam, que não dependem do metabolismo oxidativo hepático."
+   }
+  },
+  {
+   "id": "q-r3-08",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual medicamento para manter a abstinência é contraindicado em usuário de opioide?",
+   "alternativas": [
+    {
+     "t": "Acamprosato",
+     "certa": false,
+     "porque": "Seguro no fígado."
+    },
+    {
+     "t": "Topiramato",
+     "certa": false,
+     "porque": "Não tem essa contraindicação."
+    },
+    {
+     "t": "Naltrexona",
+     "certa": true,
+     "porque": "Contraindicada em opioides e hepatite aguda."
+    },
+    {
+     "t": "Dissulfiram",
+     "certa": false,
+     "porque": "Exige consentimento e 12 h sem beber."
+    }
+   ],
+   "explica": "A naltrexona reduz a fissura.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "é contraindicada em usuários de opioides"
+   }
+  },
+  {
+   "id": "q-r3-09",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Jovem agitado após crack, PA 186/112, FC 138, 38,9 °C, midríase e dor no peito. Qual a primeira medicação?",
+   "alternativas": [
+    {
+     "t": "Betabloqueador isolado",
+     "certa": false,
+     "porque": "Deixa o alfa sem oposição."
+    },
+    {
+     "t": "Naloxona",
+     "certa": false,
+     "porque": "É para opioide."
+    },
+    {
+     "t": "Flumazenil",
+     "certa": false,
+     "porque": "É para benzodiazepínico."
+    },
+    {
+     "t": "Benzodiazepínico",
+     "certa": true,
+     "porque": "Controla agitação e descarga simpática."
+    }
+   ],
+   "explica": "Associa resfriamento e investigação de síndrome coronariana.",
+   "pegadinha": "Evitar betabloqueador isolado.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A síndrome simpaticomimética indica intoxicação por cocaína: a conduta inicial é benzodiazepínico, resfriamento e investigação de síndrome coronariana, sem betabloqueador isolado."
+   }
+  },
+  {
+   "id": "q-r3-10",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Paciente rebaixado, com pupilas puntiformes e respiração lenta. Qual o antídoto?",
+   "alternativas": [
+    {
+     "t": "Flumazenil",
+     "certa": false,
+     "porque": "É para benzodiazepínico."
+    },
+    {
+     "t": "Naloxona",
+     "certa": true,
+     "porque": "Tríade da intoxicação por opioides."
+    },
+    {
+     "t": "Tiamina",
+     "certa": false,
+     "porque": "É para Wernicke."
+    },
+    {
+     "t": "Bicarbonato de sódio",
+     "certa": false,
+     "porque": "É para tricíclico."
+    }
+   ],
+   "explica": "Miose, depressão respiratória e rebaixamento: opioide.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A intoxicação por opioides produz a tríade de miose puntiforme, depressão respiratória e rebaixamento do nível de consciência ; o antídoto é a naloxona ."
+   }
+  },
+  {
+   "id": "q-r3-11",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Por que usar flumazenil com cautela?",
+   "alternativas": [
+    {
+     "t": "Pode precipitar convulsões em usuários crônicos",
+     "certa": true,
+     "porque": "Alerta do material."
+    },
+    {
+     "t": "Porque causa depressão respiratória",
+     "certa": false,
+     "porque": "Ele reverte o benzodiazepínico."
+    },
+    {
+     "t": "Porque é hepatotóxico",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Porque não reverte o benzodiazepínico",
+     "certa": false,
+     "porque": "Ele reverte."
+    }
+   ],
+   "explica": "A abstinência de benzodiazepínico pode convulsionar; a retirada é gradual.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "O flumazenil reverte o efeito, mas deve ser usado com cautela, porque pode precipitar convulsões em usuários crônicos."
+   }
+  },
+  {
+   "id": "q-r3-12",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "No modelo de Prochaska, qual o estágio em que a pessoa reconhece o problema, mas está ambivalente?",
+   "alternativas": [
+    {
+     "t": "Pré-contemplação",
+     "certa": false,
+     "porque": "Não reconhece o problema."
+    },
+    {
+     "t": "Ação",
+     "certa": false,
+     "porque": "Já mudou o comportamento."
+    },
+    {
+     "t": "Contemplação",
+     "certa": true,
+     "porque": "Definição do material."
+    },
+    {
+     "t": "Manutenção",
+     "certa": false,
+     "porque": "Fase após a ação."
+    }
+   ],
+   "explica": "A entrevista motivacional trabalha essa ambivalência sem confronto.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "O modelo de estágios de mudança de Prochaska descreve a pré-contemplação, em que a pessoa não reconhece o problema; a contemplação, em que reconhece mas está ambivalente; a preparação; a ação; e a manutenção, com a recaída como parte do processo."
+   }
+  },
+  {
+   "id": "q-r4-01",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o TDAH exige sintomas em dois ou mais ambientes?",
+   "alternativas": [
+    {
+     "t": "Para não diagnosticar dificuldades restritas a um contexto",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque só a escola consegue avaliar",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Para diferenciar de autismo",
+     "certa": false,
+     "porque": "Não é o motivo dado."
+    },
+    {
+     "t": "Porque os sintomas começam após os 12 anos",
+     "certa": false,
+     "porque": "Começam antes dos 12."
+    }
+   ],
+   "explica": "Ex.: um conflito familiar pode gerar sintomas só em casa.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "A exigência de dois ambientes protege contra o diagnóstico de dificuldades restritas a um contexto, por exemplo um conflito familiar."
+   }
+  },
+  {
+   "id": "q-r4-02",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual a primeira linha farmacológica do TDAH?",
+   "alternativas": [
+    {
+     "t": "Risperidona",
+     "certa": false,
+     "porque": "É para irritabilidade no TEA."
+    },
+    {
+     "t": "Fluoxetina",
+     "certa": false,
+     "porque": "É para depressão."
+    },
+    {
+     "t": "Benzodiazepínico",
+     "certa": false,
+     "porque": "Não é o tratamento."
+    },
+    {
+     "t": "Estimulantes: metilfenidato e lisdexanfetamina",
+     "certa": true,
+     "porque": "Primeira linha do material."
+    }
+   ],
+   "explica": "Em pré-escolares começa-se pelo treino parental.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "são a primeira linha farmacológica"
+   }
+  },
+  {
+   "id": "q-r4-03",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual instrumento rastreia autismo entre 16 e 30 meses?",
+   "alternativas": [
+    {
+     "t": "CAGE",
+     "certa": false,
+     "porque": "É para álcool."
+    },
+    {
+     "t": "M-CHAT",
+     "certa": true,
+     "porque": "Rastreamento na puericultura."
+    },
+    {
+     "t": "AUDIT",
+     "certa": false,
+     "porque": "É para álcool."
+    },
+    {
+     "t": "C-SSRS",
+     "certa": false,
+     "porque": "É para suicídio."
+    }
+   ],
+   "explica": "A base do tratamento é a intervenção precoce e intensiva.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "O rastreamento na puericultura usa o M-CHAT entre 16 e 30 meses."
+   }
+  },
+  {
+   "id": "q-r4-04",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Criança furta, agride animais e destrói propriedade. Qual o diagnóstico?",
+   "alternativas": [
+    {
+     "t": "Oposição desafiante",
+     "certa": false,
+     "porque": "Não há violação grave de direitos."
+    },
+    {
+     "t": "TDAH",
+     "certa": false,
+     "porque": "Não é o marcador."
+    },
+    {
+     "t": "Transtorno de conduta",
+     "certa": true,
+     "porque": "Viola direitos de outros."
+    },
+    {
+     "t": "Ansiedade de separação",
+     "certa": false,
+     "porque": "Não é o quadro."
+    }
+   ],
+   "explica": "Após os 18 anos pode evoluir para personalidade antissocial.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "O transtorno de conduta é mais grave: envolve violação de direitos básicos de outras pessoas e de normas sociais, com agressão a pessoas ou animais, destruição de propriedade, furto e fugas."
+   }
+  },
+  {
+   "id": "q-r4-05",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Como a depressão pode aparecer na criança?",
+   "alternativas": [
+    {
+     "t": "Sempre com tristeza intensa",
+     "certa": false,
+     "porque": "Pode não haver tristeza evidente."
+    },
+    {
+     "t": "Com hiperatividade em dois ambientes",
+     "certa": false,
+     "porque": "Isso é TDAH."
+    },
+    {
+     "t": "Com estereotipias",
+     "certa": false,
+     "porque": "Isso é TEA."
+    },
+    {
+     "t": "Por irritabilidade em vez de tristeza",
+     "certa": true,
+     "porque": "Dado do material."
+    }
+   ],
+   "explica": "Também queda do rendimento escolar e isolamento.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Na criança e no adolescente, a depressão pode manifestar-se por irritabilidade em vez de tristeza, além de queda do rendimento escolar e isolamento."
+   }
+  },
+  {
+   "id": "q-r5-01",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que avaliar a resposta ao ISRS só após quatro a seis semanas?",
+   "alternativas": [
+    {
+     "t": "O efeito clínico depende de adaptações dos receptores, que levam semanas",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque o bloqueio da recaptação leva semanas",
+     "certa": false,
+     "porque": "O bloqueio ocorre em horas."
+    },
+    {
+     "t": "Porque o ISRS é retirado nesse prazo",
+     "certa": false,
+     "porque": "Mantém-se 6 a 12 meses após remissão."
+    },
+    {
+     "t": "Porque a dose inicial é tóxica",
+     "certa": false,
+     "porque": "Não é o motivo."
+    }
+   ],
+   "explica": "Trocar antes do tempo leva a falsos fracassos.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "o efeito clínico demora de duas a quatro semanas"
+   }
+  },
+  {
+   "id": "q-r5-02",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Idoso deprimido com insônia e inapetência. Qual antidepressivo é útil?",
+   "alternativas": [
+    {
+     "t": "Bupropiona",
+     "certa": false,
+     "porque": "Não causa ganho de peso e reduz o limiar convulsivo."
+    },
+    {
+     "t": "Mirtazapina",
+     "certa": true,
+     "porque": "Sedativa e aumenta apetite e peso."
+    },
+    {
+     "t": "Venlafaxina",
+     "certa": false,
+     "porque": "Pode elevar a pressão."
+    },
+    {
+     "t": "Paroxetina",
+     "certa": false,
+     "porque": "Mais anticolinérgica."
+    }
+   ],
+   "explica": "Os efeitos colaterais da mirtazapina viram vantagem nesse perfil.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A mirtazapina é sedativa e aumenta o apetite e o peso, o que a torna útil no idoso deprimido com insônia e inapetência."
+   }
+  },
+  {
+   "id": "q-r5-03",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "dificil",
+   "enunciado": "Em qual paciente a bupropiona deve ser evitada?",
+   "alternativas": [
+    {
+     "t": "Paciente com bulimia",
+     "certa": true,
+     "porque": "Reduz o limiar convulsivo; evitar em epilepsia, bulimia e anorexia."
+    },
+    {
+     "t": "Tabagista",
+     "certa": false,
+     "porque": "Ajuda a cessar o tabagismo."
+    },
+    {
+     "t": "Paciente com disfunção sexual por ISRS",
+     "certa": false,
+     "porque": "Não causa disfunção sexual."
+    },
+    {
+     "t": "Paciente preocupado com ganho de peso",
+     "certa": false,
+     "porque": "Não causa ganho de peso."
+    }
+   ],
+   "explica": "O risco convulsivo restringe seu uso nos transtornos alimentares.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A bupropiona inibe a recaptação de dopamina e noradrenalina, não causa disfunção sexual nem ganho de peso e ajuda a cessar o tabagismo, mas reduz o limiar convulsivo e deve ser evitada em epilepsia, bulimia e anorexia."
+   }
+  },
+  {
+   "id": "q-r5-04",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Intoxicação por amitriptilina com QRS alargado. Qual o tratamento?",
+   "alternativas": [
+    {
+     "t": "Naloxona",
+     "certa": false,
+     "porque": "É para opioides."
+    },
+    {
+     "t": "Bicarbonato de sódio",
+     "certa": true,
+     "porque": "Tricíclicos bloqueiam canais de sódio."
+    },
+    {
+     "t": "Flumazenil",
+     "certa": false,
+     "porque": "É para benzodiazepínicos."
+    },
+    {
+     "t": "Ciproeptadina",
+     "certa": false,
+     "porque": "É para síndrome serotoninérgica."
+    }
+   ],
+   "explica": "Tricíclicos são letais em pequena quantidade: QRS largo, arritmias e convulsões.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Bloqueiam ainda os canais de sódio cardíacos e são letais em pequena quantidade; a intoxicação causa alargamento do QRS, arritmias e convulsões e é tratada com bicarbonato de sódio ."
+   }
+  },
+  {
+   "id": "q-r5-05",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Como diferenciar a síndrome serotoninérgica da neuroléptica maligna no exame neuromuscular?",
+   "alternativas": [
+    {
+     "t": "As duas têm rigidez em cano de chumbo",
+     "certa": false,
+     "porque": "Só a neuroléptica."
+    },
+    {
+     "t": "A serotoninérgica tem bradirreflexia",
+     "certa": false,
+     "porque": "Tem hiper-reflexia."
+    },
+    {
+     "t": "A neuroléptica tem clônus",
+     "certa": false,
+     "porque": "Clônus é da serotoninérgica."
+    },
+    {
+     "t": "Serotoninérgica: clônus e hiper-reflexia; neuroléptica: rigidez em cano de chumbo e bradirreflexia",
+     "certa": true,
+     "porque": "Dado da tabela."
+    }
+   ],
+   "explica": "A serotoninérgica instala-se em horas; a neuroléptica em dias, com CPK muito elevada.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Clônus, hiper-reflexia, mioclonias"
+   }
+  },
+  {
+   "id": "q-r5-06",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Paciente em uso de haloperidol há 2 dias apresenta torcicolo e crise oculógira. Qual o tratamento?",
+   "alternativas": [
+    {
+     "t": "Propranolol",
+     "certa": false,
+     "porque": "É para acatisia."
+    },
+    {
+     "t": "Dantrolene",
+     "certa": false,
+     "porque": "É para síndrome neuroléptica maligna."
+    },
+    {
+     "t": "Biperideno",
+     "certa": true,
+     "porque": "Distonia aguda."
+    },
+    {
+     "t": "Aumentar a dose",
+     "certa": false,
+     "porque": "Pioraria."
+    }
+   ],
+   "explica": "Distonia aguda surge em horas a dias e responde ao biperideno.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A distonia aguda surge em horas a dias, com contrações musculares sustentadas como torcicolo e crise oculógira, e responde ao biperideno."
+   }
+  },
+  {
+   "id": "q-r5-07",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual antipsicótico é indicado na esquizofrenia refratária?",
+   "alternativas": [
+    {
+     "t": "Haloperidol",
+     "certa": false,
+     "porque": "É típico."
+    },
+    {
+     "t": "Risperidona",
+     "certa": false,
+     "porque": "É a que mais eleva prolactina."
+    },
+    {
+     "t": "Clozapina",
+     "certa": true,
+     "porque": "Falha de pelo menos dois antipsicóticos."
+    },
+    {
+     "t": "Aripiprazol",
+     "certa": false,
+     "porque": "Agonista parcial."
+    }
+   ],
+   "explica": "Exige hemograma seriado pelo risco de agranulocitose e reduz o risco de suicídio.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A clozapina é indicada na esquizofrenia refratária"
+   }
+  },
+  {
+   "id": "q-r5-08",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Paciente bipolar em uso de lítio começa hidroclorotiazida e surge tremor grosseiro, ataxia e confusão. O que ocorreu?",
+   "alternativas": [
+    {
+     "t": "Síndrome serotoninérgica",
+     "certa": false,
+     "porque": "Não há serotoninérgico."
+    },
+    {
+     "t": "Intoxicação por lítio pelo diurético",
+     "certa": true,
+     "porque": "Tiazídicos elevam o lítio."
+    },
+    {
+     "t": "Hipotireoidismo pelo lítio",
+     "certa": false,
+     "porque": "É efeito crônico, não agudo."
+    },
+    {
+     "t": "Distonia aguda",
+     "certa": false,
+     "porque": "É de antipsicótico."
+    }
+   ],
+   "explica": "Tudo o que aumenta a reabsorção de sódio eleva o lítio.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Como é eliminado pelo rim junto com o sódio, tudo o que aumenta a reabsorção de sódio eleva o lítio: diuréticos tiazídicos, inibidores da enzima conversora e bloqueadores do receptor de angiotensina, anti-inflamatórios e desidratação."
+   }
+  },
+  {
+   "id": "q-r5-09",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual estabilizador do humor deve ser evitado em mulheres em idade fértil por defeitos do tubo neural?",
+   "alternativas": [
+    {
+     "t": "Lamotrigina",
+     "certa": false,
+     "porque": "Risco é Stevens-Johnson."
+    },
+    {
+     "t": "Lítio",
+     "certa": false,
+     "porque": "Associa-se a anomalia de Ebstein."
+    },
+    {
+     "t": "Carbamazepina",
+     "certa": false,
+     "porque": "Não é a citada para tubo neural."
+    },
+    {
+     "t": "Valproato",
+     "certa": true,
+     "porque": "Teratogênico."
+    }
+   ],
+   "explica": "Também causa hepatotoxicidade, pancreatite e plaquetopenia.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "O valproato causa hepatotoxicidade, pancreatite, plaquetopenia e ganho de peso e é teratogênico, com defeitos do tubo neural, devendo ser evitado em mulheres em idade fértil."
+   }
+  },
+  {
+   "id": "q-r6-01",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual o maior preditor isolado de suicídio?",
+   "alternativas": [
+    {
+     "t": "Tentativa prévia",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Sexo feminino",
+     "certa": false,
+     "porque": "Mulheres tentam mais, mas homens morrem mais."
+    },
+    {
+     "t": "Religiosidade",
+     "certa": false,
+     "porque": "É fator de proteção."
+    },
+    {
+     "t": "Idade de 40 anos",
+     "certa": false,
+     "porque": "Não é o descrito."
+    }
+   ],
+   "explica": "Acesso a meios letais também é decisivo.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "O maior preditor isolado de suicídio é a tentativa prévia ."
+   }
+  },
+  {
+   "id": "q-r6-02",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Perguntar diretamente sobre ideação suicida aumenta o risco?",
+   "alternativas": [
+    {
+     "t": "Sim, induz o comportamento",
+     "certa": false,
+     "porque": "É mito."
+    },
+    {
+     "t": "Não, costuma aliviar e abre espaço para ajuda",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Sim, só em jovens",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Só se o paciente não tocar no assunto",
+     "certa": false,
+     "porque": "Deve-se perguntar diretamente."
+    }
+   ],
+   "explica": "Quem fala não faz é mito.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "Perguntar diretamente sobre ideação suicida não induz o comportamento; ao contrário, costuma aliviar o paciente e abre espaço para a ajuda."
+   }
+  },
+  {
+   "id": "q-r6-03",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Homem de 62 anos, viúvo, mora sozinho, bebe, guardou comprimidos e escreveu carta. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Não deixar sozinho, acionar família e encaminhar para internação",
+     "certa": true,
+     "porque": "Alto risco."
+    },
+    {
+     "t": "Ambulatório com retorno em um mês",
+     "certa": false,
+     "porque": "É risco baixo."
+    },
+    {
+     "t": "CAPS com retorno em poucos dias",
+     "certa": false,
+     "porque": "É risco moderado."
+    },
+    {
+     "t": "Prescrever antidepressivo e dar alta",
+     "certa": false,
+     "porque": "Insuficiente."
+    }
+   ],
+   "explica": "Ideação ativa, acesso ao meio e preparativos configuram alto risco.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "Ideação ativa, acesso ao meio e preparativos configuram alto risco: ele não deve sair sozinho, a família é acionada e o encaminhamento é para internação."
+   }
+  },
+  {
+   "id": "q-r6-04",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Em quanto tempo a tentativa de suicídio deve ser notificada?",
+   "alternativas": [
+    {
+     "t": "Em até 7 dias",
+     "certa": false,
+     "porque": "Não é o prazo."
+    },
+    {
+     "t": "Não é notificável",
+     "certa": false,
+     "porque": "É compulsória."
+    },
+    {
+     "t": "Em até 30 dias",
+     "certa": false,
+     "porque": "Não é o prazo."
+    },
+    {
+     "t": "Em até 24 horas",
+     "certa": true,
+     "porque": "Notificação compulsória imediata."
+    }
+   ],
+   "explica": "Lei 13.819/2019 e portaria do Ministério da Saúde.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "A tentativa de suicídio, como violência autoprovocada, é de notificação compulsória imediata , em até 24 horas, conforme portaria do Ministério da Saúde e a Lei 13.819/2019."
+   }
+  },
+  {
+   "id": "q-r6-05",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Após depressão grave, paciente fica subitamente sereno. Por que reavaliar?",
+   "alternativas": [
+    {
+     "t": "Indica cura e permite alta",
+     "certa": false,
+     "porque": "Pode ser decisão tomada."
+    },
+    {
+     "t": "É efeito da mirtazapina",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Pode significar decisão tomada",
+     "certa": true,
+     "porque": "Alerta do material."
+    },
+    {
+     "t": "Mostra que o antidepressivo falhou",
+     "certa": false,
+     "porque": "Não é a interpretação."
+    }
+   ],
+   "explica": "No início do antidepressivo a energia pode melhorar antes do humor.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "No início do tratamento antidepressivo, sobretudo em jovens, a energia pode melhorar antes do humor, e uma melhora súbita com serenidade após depressão grave pode significar decisão tomada, exigindo reavaliação."
+   }
+  }
  ]
 }

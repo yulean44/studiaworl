@@ -1482,5 +1482,1519 @@
    ],
    "fechamento": "<h3>Pontos-chave</h3><ul><li>Profilaxia = cefazolina.</li><li><i>C. difficile</i>: contato + água e sabão + vancomicina oral.</li></ul>"
   }
+ ],
+ "questoes": [
+  {
+   "id": "q-r1-01",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual é o alvo dos betalactâmicos na parede bacteriana?",
+   "alternativas": [
+    {
+     "t": "O ribossomo 50S",
+     "certa": false,
+     "porque": "É o alvo dos macrolídeos e da clindamicina."
+    },
+    {
+     "t": "A DNA girase",
+     "certa": false,
+     "porque": "É o alvo das quinolonas."
+    },
+    {
+     "t": "As proteínas ligadoras de penicilina (PBP)",
+     "certa": true,
+     "porque": "O anel imita o D-alanil-D-alanina e inativa a PBP."
+    },
+    {
+     "t": "A membrana externa, como detergente",
+     "certa": false,
+     "porque": "É o mecanismo das polimixinas."
+    }
+   ],
+   "explica": "A PBP faz as ligações cruzadas do peptidoglicano. O betalactâmico se liga a ela como se fosse o substrato e a inativa.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O anel betalactâmico imita estruturalmente a ligação D-alanil-D-alanina."
+   }
+  },
+  {
+   "id": "q-r1-02",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que os betalactâmicos são bactericidas?",
+   "alternativas": [
+    {
+     "t": "Porque bloqueiam a síntese de proteínas",
+     "certa": false,
+     "porque": "Isso é ação no ribossomo, de outras classes."
+    },
+    {
+     "t": "Porque lesam o DNA da bactéria",
+     "certa": false,
+     "porque": "É o mecanismo do metronidazol."
+    },
+    {
+     "t": "Porque impedem a bactéria de crescer, sem matá-la",
+     "certa": false,
+     "porque": "Ela continua crescendo e se rompe."
+    },
+    {
+     "t": "Sem ligações cruzadas a parede enfraquece, a água entra e a célula sofre lise osmótica",
+     "certa": true,
+     "porque": "É a sequência descrita no material."
+    }
+   ],
+   "explica": "A bactéria continua crescendo com uma parede fraca e estoura pela pressão osmótica.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Sem novas ligações cruzadas, a parede enfraquece enquanto a bactéria continua a crescer, a água entra e a célula sofre lise osmótica ."
+   }
+  },
+  {
+   "id": "q-r1-03",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que os Gram-negativos resistem mais aos betalactâmicos?",
+   "alternativas": [
+    {
+     "t": "Porque têm parede espessa e exposta",
+     "certa": false,
+     "porque": "Esse é o Gram-positivo."
+    },
+    {
+     "t": "A membrana externa obriga a passagem por porinas e expõe a droga às betalactamases do periplasma",
+     "certa": true,
+     "porque": "É a explicação do material."
+    },
+    {
+     "t": "Porque não têm parede celular",
+     "certa": false,
+     "porque": "Isso é o Mycoplasma."
+    },
+    {
+     "t": "Porque vivem dentro das células",
+     "certa": false,
+     "porque": "Isso descreve os atípicos."
+    }
+   ],
+   "explica": "No Gram-negativo a parede é fina, mas fica escondida atrás da membrana externa.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "o antibiótico precisa atravessar canais proteicos"
+   }
+  },
+  {
+   "id": "q-r1-04",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual mecanismo de resistência só existe nos Gram-negativos?",
+   "alternativas": [
+    {
+     "t": "Redução ou fechamento das porinas",
+     "certa": true,
+     "porque": "Só eles têm membrana externa com porinas."
+    },
+    {
+     "t": "Betalactamase",
+     "certa": false,
+     "porque": "O S. aureus também produz penicilinase."
+    },
+    {
+     "t": "Alteração das PBP",
+     "certa": false,
+     "porque": "É o mecanismo do MRSA, Gram-positivo."
+    },
+    {
+     "t": "Bombas de efluxo",
+     "certa": false,
+     "porque": "O material não as restringe aos Gram-negativos."
+    }
+   ],
+   "explica": "Porinas fazem parte da membrana externa, que só os Gram-negativos têm.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "A redução ou o fechamento das porinas impede a entrada do antibiótico e só existe nos Gram-negativos, porque apenas eles têm membrana externa."
+   }
+  },
+  {
+   "id": "q-r1-05",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual é o mecanismo de resistência do MRSA?",
+   "alternativas": [
+    {
+     "t": "Betalactamase de espectro estendido",
+     "certa": false,
+     "porque": "ESBL é de Gram-negativos."
+    },
+    {
+     "t": "Fechamento das porinas",
+     "certa": false,
+     "porque": "Só existe em Gram-negativos."
+    },
+    {
+     "t": "PBP alterada (PBP2a)",
+     "certa": true,
+     "porque": "O pedreiro muda de forma e a droga não encaixa."
+    },
+    {
+     "t": "Carbapenemase",
+     "certa": false,
+     "porque": "É a KPC."
+    }
+   ],
+   "explica": "O MRSA expressa a PBP2a, com baixa afinidade pelos betalactâmicos.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "A alteração das PBP diminui a afinidade pelo antibiótico, de modo que o pedreiro muda de forma e a droga não encaixa mais; é o mecanismo do S. aureus resistente à meticilina (MRSA), que expressa a PBP2a."
+   }
+  },
+  {
+   "id": "q-r1-06",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que nenhum betalactâmico atua contra os atípicos?",
+   "alternativas": [
+    {
+     "t": "O Mycoplasma não tem parede e os demais vivem dentro das células, onde os betalactâmicos penetram mal",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque produzem carbapenemase",
+     "certa": false,
+     "porque": "Não é o motivo descrito."
+    },
+    {
+     "t": "Porque têm parede espessa demais",
+     "certa": false,
+     "porque": "O Mycoplasma não tem parede."
+    },
+    {
+     "t": "Porque só os carbapenêmicos os alcançam",
+     "certa": false,
+     "porque": "Nem os carbapenêmicos atuam."
+    }
+   ],
+   "explica": "Atípicos fogem do alvo dos betalactâmicos; usam-se macrolídeos, doxiciclina ou quinolonas respiratórias.",
+   "pegadinha": "Nem o carbapenêmico, o mais amplo, cobre atípicos.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Mycoplasma pneumoniae , Chlamydophila e Chlamydia e Legionella são chamadas atípicas porque fogem do padrão: o Mycoplasma não tem parede celular, e as demais vivem dentro das células do hospedeiro, onde os betalactâmicos penetram mal."
+   }
+  },
+  {
+   "id": "q-r1-07",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Por que os betalactâmicos são dados em várias doses diárias ou em infusão prolongada?",
+   "alternativas": [
+    {
+     "t": "Porque o efeito depende do pico de concentração",
+     "certa": false,
+     "porque": "Pico/CIM é dos aminoglicosídeos."
+    },
+    {
+     "t": "O efeito depende do tempo acima da CIM, não do pico",
+     "certa": true,
+     "porque": "São tempo-dependentes."
+    },
+    {
+     "t": "Porque o índice principal é a AUC/CIM",
+     "certa": false,
+     "porque": "É o índice das quinolonas."
+    },
+    {
+     "t": "Para diminuir a alergia",
+     "certa": false,
+     "porque": "Não é o motivo do material."
+    }
+   ],
+   "explica": "O que importa é manter a concentração livre acima da CIM pelo maior tempo possível.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O efeito dos betalactâmicos depende do tempo durante o qual a concentração do fármaco permanece acima da concentração inibitória mínima, e não da altura do pico."
+   }
+  },
+  {
+   "id": "q-r1-08",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual é o principal efeito adverso das penicilinas?",
+   "alternativas": [
+    {
+     "t": "Nefrotoxicidade",
+     "certa": false,
+     "porque": "É da vancomicina e dos aminoglicosídeos."
+    },
+    {
+     "t": "Prolongamento do QT",
+     "certa": false,
+     "porque": "É dos macrolídeos e quinolonas."
+    },
+    {
+     "t": "Ruptura de tendão",
+     "certa": false,
+     "porque": "É das quinolonas."
+    },
+    {
+     "t": "Alergia",
+     "certa": true,
+     "porque": "O anel é muito alergênico."
+    }
+   ],
+   "explica": "O anel betalactâmico é muito alergênico. As penicilinas são seguras na gestação.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O anel betalactâmico é muito alergênico, e a alergia é o principal efeito adverso das penicilinas."
+   }
+  },
+  {
+   "id": "q-r2-01",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual a penicilina de escolha na neurossífilis?",
+   "alternativas": [
+    {
+     "t": "Penicilina G cristalina IV",
+     "certa": true,
+     "porque": "Primeira linha na neurossífilis e na leptospirose."
+    },
+    {
+     "t": "Penicilina G benzatina IM",
+     "certa": false,
+     "porque": "Não é usada na neurossífilis."
+    },
+    {
+     "t": "Amoxicilina VO",
+     "certa": false,
+     "porque": "Não está no esquema da sífilis."
+    },
+    {
+     "t": "Oxacilina IV",
+     "certa": false,
+     "porque": "É para S. aureus sensível."
+    }
+   ],
+   "explica": "A benzatina trata a sífilis, exceto a neurossífilis, que exige a cristalina venosa.",
+   "pegadinha": "Benzatina serve para sífilis, mas não para neurossífilis.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A cristalina é intravenosa, de uso hospitalar, e é a primeira linha na neurossífilis e na leptospirose."
+   }
+  },
+  {
+   "id": "q-r2-02",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Sífilis latente de duração ignorada. Qual o esquema?",
+   "alternativas": [
+    {
+     "t": "Benzatina 2.400.000 UI dose única",
+     "certa": false,
+     "porque": "É para primária, secundária e latente recente."
+    },
+    {
+     "t": "Benzatina 2.400.000 UI semanal por 3 semanas",
+     "certa": true,
+     "porque": "Esquema para latente tardia ou duração ignorada."
+    },
+    {
+     "t": "Penicilina cristalina IV",
+     "certa": false,
+     "porque": "É para neurossífilis."
+    },
+    {
+     "t": "Amoxicilina por 10 dias",
+     "certa": false,
+     "porque": "É para faringite."
+    }
+   ],
+   "explica": "Duração ignorada é tratada como latente tardia: três doses semanais, total 7.200.000 UI.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Benzatina 2.400.000 UI semanal por 3 semanas (7.200.000 UI)"
+   }
+  },
+  {
+   "id": "q-r2-03",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Gestante com sífilis secundária refere alergia à penicilina. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Trocar por amoxicilina",
+     "certa": false,
+     "porque": "Também é penicilina e não está no esquema."
+    },
+    {
+     "t": "Trocar por doxiciclina",
+     "certa": false,
+     "porque": "Deve ser evitada na gestação."
+    },
+    {
+     "t": "Dessensibilizar e usar penicilina",
+     "certa": true,
+     "porque": "É a conduta da tabela para gestante alérgica."
+    },
+    {
+     "t": "Não tratar até o parto",
+     "certa": false,
+     "porque": "Não é conduta do material."
+    }
+   ],
+   "explica": "Na gestante a penicilina é insubstituível: dessensibiliza-se e trata-se com ela.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Dessensibilizar e usar penicilina"
+   }
+  },
+  {
+   "id": "q-r2-04",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Na profilaxia secundária da febre reumática, qual o esquema de benzatina?",
+   "alternativas": [
+    {
+     "t": "2.400.000 UI semanal",
+     "certa": false,
+     "porque": "É esquema da sífilis tardia."
+    },
+    {
+     "t": "1.200.000 UI a cada 6 meses",
+     "certa": false,
+     "porque": "Não é o intervalo do material."
+    },
+    {
+     "t": "600.000 UI por ano",
+     "certa": false,
+     "porque": "Não é o esquema do material."
+    },
+    {
+     "t": "1.200.000 UI a cada 21 dias",
+     "certa": true,
+     "porque": "Valor do material."
+    }
+   ],
+   "explica": "O depósito libera a droga por cerca de três semanas; daí o intervalo de 21 dias.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "com 1.200.000 UI a cada 21 dias"
+   }
+  },
+  {
+   "id": "q-r2-05",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Para qual germe a oxacilina foi desenvolvida?",
+   "alternativas": [
+    {
+     "t": "MRSA",
+     "certa": false,
+     "porque": "A oxacilina não atua contra MRSA."
+    },
+    {
+     "t": "Pseudomonas",
+     "certa": false,
+     "porque": "Só a piperacilina-tazobactam alcança."
+    },
+    {
+     "t": "Listeria",
+     "certa": false,
+     "porque": "É coberta pela ampicilina."
+    },
+    {
+     "t": "S. aureus produtor de penicilinase, sensível à meticilina (MSSA)",
+     "certa": true,
+     "porque": "É o objetivo da oxacilina."
+    }
+   ],
+   "explica": "A oxacilina resiste à penicilinase do estafilococo. MRSA exige vancomicina ou ceftarolina.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A oxacilina foi desenvolvida para o S. aureus produtor de penicilinase, sensível à meticilina (MSSA), e é indicada em infecções graves por esse germe: artrite séptica, abscessos, celulite grave e endocardite de valva nativa."
+   }
+  },
+  {
+   "id": "q-r2-06",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que se associa clavulanato à amoxicilina?",
+   "alternativas": [
+    {
+     "t": "Porque o clavulanato cobre atípicos",
+     "certa": false,
+     "porque": "É inibidor de betalactamase, sem ação relevante isolada."
+    },
+    {
+     "t": "Porque H. influenzae e Moraxella passaram a produzir betalactamase, e o clavulanato serve de escudo",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque o clavulanato cobre MRSA",
+     "certa": false,
+     "porque": "Não cobre."
+    },
+    {
+     "t": "Para a amoxicilina atingir o sistema nervoso",
+     "certa": false,
+     "porque": "Não é o motivo."
+    }
+   ],
+   "explica": "Inibidores de betalactamase protegem o anel. Sozinhos não têm ação antibacteriana relevante.",
+   "pegadinha": "Clavulanato não é antibiótico.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "O uso maciço selecionou H. influenzae e Moraxella produtores de betalactamase, e daí a associação com o clavulanato , que funciona como escudo."
+   }
+  },
+  {
+   "id": "q-r2-07",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Faringite por S. pyogenes, sem alergia. Qual a escolha?",
+   "alternativas": [
+    {
+     "t": "Amoxicilina com clavulanato",
+     "certa": false,
+     "porque": "Desnecessário: não há betalactamase."
+    },
+    {
+     "t": "Azitromicina sempre",
+     "certa": false,
+     "porque": "Não é a escolha da tabela."
+    },
+    {
+     "t": "Amoxicilina pura por 10 dias ou benzatina",
+     "certa": true,
+     "porque": "O S. pyogenes não produz betalactamase."
+    },
+    {
+     "t": "Ceftriaxona IV",
+     "certa": false,
+     "porque": "Não é a escolha."
+    }
+   ],
+   "explica": "Como o S. pyogenes não produz betalactamase, não precisa de clavulanato.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Amoxicilina pura por 10 dias ou benzatina"
+   }
+  },
+  {
+   "id": "q-r2-08",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Adolescente com faringite, linfonodos cervicais posteriores, edema periorbitário e baço aumentado recebe amoxicilina e surge exantema. O que é?",
+   "alternativas": [
+    {
+     "t": "Exantema da mononucleose, que não é alergia",
+     "certa": true,
+     "porque": "Quadro do vírus Epstein-Barr."
+    },
+    {
+     "t": "Alergia à penicilina",
+     "certa": false,
+     "porque": "O material diz que não é alergia."
+    },
+    {
+     "t": "Síndrome do homem vermelho",
+     "certa": false,
+     "porque": "É da vancomicina."
+    },
+    {
+     "t": "Colite por C. difficile",
+     "certa": false,
+     "porque": "Daria diarreia."
+    }
+   ],
+   "explica": "Na mononucleose a amoxicilina precipita exantema que não é alergia.",
+   "pegadinha": "Não rotular como alérgico.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Na mononucleose infecciosa, faringite viral pelo vírus Epstein-Barr, a amoxicilina precipita um exantema que não é alergia; linfonodos cervicais posteriores, edema periorbitário e esplenomegalia sugerem o diagnóstico."
+   }
+  },
+  {
+   "id": "q-r2-09",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Meningite bacteriana em paciente de 65 anos. O que se soma à ceftriaxona?",
+   "alternativas": [
+    {
+     "t": "Ampicilina, para cobrir a Listeria",
+     "certa": true,
+     "porque": "Esquema a partir de 50 anos."
+    },
+    {
+     "t": "Metronidazol",
+     "certa": false,
+     "porque": "Cobre anaeróbios."
+    },
+    {
+     "t": "Azitromicina",
+     "certa": false,
+     "porque": "Cobre atípicos."
+    },
+    {
+     "t": "Oxacilina",
+     "certa": false,
+     "porque": "Cobre MSSA na endocardite."
+    }
+   ],
+   "explica": "A ceftriaxona não cobre Listeria, bacilo Gram-positivo comum após os 50 anos.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A ampicilina, de uso intravenoso, tem o espectro da amoxicilina mais a Listeria , bacilo Gram-positivo, e a Shigella ; na meningite em maiores de 50 anos é associada à ceftriaxona para cobrir a Listeria ."
+   }
+  },
+  {
+   "id": "q-r2-10",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual é a única penicilina ativa contra Pseudomonas?",
+   "alternativas": [
+    {
+     "t": "Ampicilina-sulbactam",
+     "certa": false,
+     "porque": "Não cobre Pseudomonas."
+    },
+    {
+     "t": "Piperacilina-tazobactam",
+     "certa": true,
+     "porque": "É a mais potente das penicilinas."
+    },
+    {
+     "t": "Oxacilina",
+     "certa": false,
+     "porque": "Não cobre Gram-negativos."
+    },
+    {
+     "t": "Amoxicilina-clavulanato",
+     "certa": false,
+     "porque": "Cobre Gram-negativos comunitários."
+    }
+   ],
+   "explica": "Piperacilina-tazobactam também cobre anaeróbios, vantagem sobre a cefepima.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "É a penicilina mais potente e a única ativa contra Pseudomonas ."
+   }
+  },
+  {
+   "id": "q-r2-11",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Por que a piperacilina-tazobactam não serve para meningite?",
+   "alternativas": [
+    {
+     "t": "Porque não cobre Gram-negativos",
+     "certa": false,
+     "porque": "Ela cobre."
+    },
+    {
+     "t": "Porque é concentração-dependente",
+     "certa": false,
+     "porque": "Betalactâmicos são tempo-dependentes."
+    },
+    {
+     "t": "Porque induz AmpC",
+     "certa": false,
+     "porque": "Isso é das cefalosporinas no grupo CESP."
+    },
+    {
+     "t": "Penetra mal no sistema nervoso central",
+     "certa": true,
+     "porque": "Motivo do material."
+    }
+   ],
+   "explica": "Espectro amplo não basta: o fármaco precisa chegar ao tecido.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Não serve para meningite, por penetrar mal no sistema nervoso central, nem para bactérias produtoras de betalactamase de espectro estendido (ESBL)."
+   }
+  },
+  {
+   "id": "q-r3-01",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Como se comporta o espectro das cefalosporinas da 1ª à 4ª geração?",
+   "alternativas": [
+    {
+     "t": "Ganham Gram-positivos e perdem Gram-negativos",
+     "certa": false,
+     "porque": "Inverte a gangorra."
+    },
+    {
+     "t": "Todas cobrem anaeróbios",
+     "certa": false,
+     "porque": "Nenhuma, salvo a cefoxitina em teoria."
+    },
+    {
+     "t": "Perdem atividade contra Gram-positivos e ganham contra Gram-negativos",
+     "certa": true,
+     "porque": "A gangorra do material."
+    },
+    {
+     "t": "Ganham atividade contra atípicos",
+     "certa": false,
+     "porque": "Nenhuma cobre atípicos."
+    }
+   ],
+   "explica": "A 5ª geração volta a cobrir Gram-positivos, inclusive MRSA.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Organizam-se em gerações que se comportam como uma gangorra: da primeira à quarta, perdem atividade contra Gram-positivos e ganham contra Gram-negativos; a quinta volta a atuar fortemente sobre Gram-positivos, inclusive o MRSA."
+   }
+  },
+  {
+   "id": "q-r3-02",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual germe nenhuma cefalosporina cobre?",
+   "alternativas": [
+    {
+     "t": "E. coli",
+     "certa": false,
+     "porque": "É coberta desde a 1ª geração."
+    },
+    {
+     "t": "Enterococo",
+     "certa": true,
+     "porque": "Nenhuma cobre enterococo, atípicos ou anaeróbios."
+    },
+    {
+     "t": "Pneumococo",
+     "certa": false,
+     "porque": "Coberto pela ceftriaxona."
+    },
+    {
+     "t": "MRSA",
+     "certa": false,
+     "porque": "A ceftarolina cobre."
+    }
+   ],
+   "explica": "Enterococo, atípicos e anaeróbios ficam fora de todas as gerações.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Nenhuma cefalosporina atua contra enterococo, atípicos ou anaeróbios, com a exceção teórica da cefoxitina para anaeróbios."
+   }
+  },
+  {
+   "id": "q-r3-03",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a cefazolina é a profilaxia de quase todas as cirurgias?",
+   "alternativas": [
+    {
+     "t": "Porque cobre Pseudomonas",
+     "certa": false,
+     "porque": "Não cobre."
+    },
+    {
+     "t": "Porque cobre anaeróbios",
+     "certa": false,
+     "porque": "Não cobre."
+    },
+    {
+     "t": "A infecção cirúrgica vem da flora da pele, S. pyogenes e S. aureus, que ela cobre",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque penetra no sistema nervoso",
+     "certa": false,
+     "porque": "Não é o motivo."
+    }
+   ],
+   "explica": "A ferida se infecta pela pele; a 1ª geração cobre esses Gram-positivos.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Por isso a cefazolina, ativa contra esses germes, é a profilaxia de praticamente todas as cirurgias, inclusive as cardíacas."
+   }
+  },
+  {
+   "id": "q-r3-04",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual cefalosporina de 3ª geração cobre Pseudomonas?",
+   "alternativas": [
+    {
+     "t": "Ceftazidima",
+     "certa": true,
+     "porque": "É a única da 3ª geração."
+    },
+    {
+     "t": "Ceftriaxona",
+     "certa": false,
+     "porque": "Não cobre Pseudomonas."
+    },
+    {
+     "t": "Cefotaxima",
+     "certa": false,
+     "porque": "Não é a citada."
+    },
+    {
+     "t": "Cefuroxima",
+     "certa": false,
+     "porque": "É de 2ª geração."
+    }
+   ],
+   "explica": "Entre as de terceira geração, apenas a ceftazidima cobre Pseudomonas.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Entre as de terceira geração, apenas a ceftazidima cobre Pseudomonas ."
+   }
+  },
+  {
+   "id": "q-r3-05",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Paciente em uso de ceftriaxona há 5 dias tem diarreia aquosa volumosa. Que cuidado de higiene é necessário?",
+   "alternativas": [
+    {
+     "t": "Álcool gel basta",
+     "certa": false,
+     "porque": "Não destrói os esporos."
+    },
+    {
+     "t": "Nenhum, é diarreia viral",
+     "certa": false,
+     "porque": "O antibiótico sugere C. difficile."
+    },
+    {
+     "t": "Trocar para clindamicina",
+     "certa": false,
+     "porque": "É a mais associada ao C. difficile."
+    },
+    {
+     "t": "Lavar as mãos com água e sabão, pois o álcool não destrói os esporos",
+     "certa": true,
+     "porque": "Suspeita de C. difficile."
+    }
+   ],
+   "explica": "A ceftriaxona elimina a flora Gram-negativa e permite a proliferação do C. difficile.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "O paciente fica em isolamento de contato, e a higiene das mãos deve ser feita com água e sabão, porque o álcool não destrói os esporos."
+   }
+  },
+  {
+   "id": "q-r3-06",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Neutropenia febril. Qual antibiótico iniciar?",
+   "alternativas": [
+    {
+     "t": "Ceftriaxona",
+     "certa": false,
+     "porque": "Não cobre Pseudomonas."
+    },
+    {
+     "t": "Ertapeném",
+     "certa": false,
+     "porque": "Não cobre Pseudomonas."
+    },
+    {
+     "t": "Cefepima",
+     "certa": true,
+     "porque": "Primeira linha na neutropenia febril."
+    },
+    {
+     "t": "Vancomicina isolada",
+     "certa": false,
+     "porque": "Só entra se grave ou piora."
+    }
+   ],
+   "explica": "Sequência: cefepima; se grave ou piora em 48 h, vancomicina; depois antifúngico.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Na neutropenia febril, a sequência da aula é cefepima; se o paciente for grave ou piorar em 48 horas, acrescenta-se vancomicina; se ainda não melhorar, acrescenta-se antifúngico, equinocandina se grave ou fluconazol se não."
+   }
+  },
+  {
+   "id": "q-r3-07",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Paciente renal crônico em uso de cefepima fica confuso, atáxico e convulsiona. Qual a explicação?",
+   "alternativas": [
+    {
+     "t": "Síndrome do homem vermelho",
+     "certa": false,
+     "porque": "É da vancomicina."
+    },
+    {
+     "t": "Neurotoxicidade da cefepima",
+     "certa": true,
+     "porque": "Ocorre com função renal reduzida."
+    },
+    {
+     "t": "Efeito antabuse",
+     "certa": false,
+     "porque": "É do metronidazol com álcool."
+    },
+    {
+     "t": "Colite pseudomembranosa",
+     "certa": false,
+     "porque": "Causa diarreia."
+    }
+   ],
+   "explica": "Na função renal reduzida a cefepima acumula e causa confusão, ataxia e convulsões.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Pode causar neurotoxicidade, com confusão, ataxia e convulsões, em pacientes com função renal reduzida."
+   }
+  },
+  {
+   "id": "q-r3-08",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual a única cefalosporina ativa contra MRSA?",
+   "alternativas": [
+    {
+     "t": "Cefepima",
+     "certa": false,
+     "porque": "Não cobre MRSA."
+    },
+    {
+     "t": "Cefazolina",
+     "certa": false,
+     "porque": "Cobre MSSA."
+    },
+    {
+     "t": "Ceftriaxona",
+     "certa": false,
+     "porque": "Não cobre estafilococo."
+    },
+    {
+     "t": "Ceftarolina",
+     "certa": true,
+     "porque": "Liga-se à PBP2a."
+    }
+   ],
+   "explica": "MRSA confirmado em cultura leva à ceftarolina, menos nefrotóxica que a vancomicina.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A ceftarolina é a única cefalosporina ativa contra o MRSA, porque se liga à PBP2a."
+   }
+  },
+  {
+   "id": "q-r4-01",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Quais as duas vantagens estruturais dos carbapenêmicos?",
+   "alternativas": [
+    {
+     "t": "O anel resiste a cerca de 99% das betalactamases e atravessa porinas adicionais",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Cobrem atípicos e MRSA",
+     "certa": false,
+     "porque": "Não cobrem."
+    },
+    {
+     "t": "Não causam alergia e entram no SNC",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "São concentração-dependentes e orais",
+     "certa": false,
+     "porque": "Não é o descrito."
+    }
+   ],
+   "explica": "A molécula usa até a porina OprD da Pseudomonas.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Têm duas vantagens estruturais: o anel resiste a cerca de 99% das betalactamases, e a molécula atravessa porinas adicionais dos Gram-negativos, como a OprD da Pseudomonas , que normalmente transporta aminoácidos."
+   }
+  },
+  {
+   "id": "q-r4-02",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Quando um carbapenêmico é primeira linha?",
+   "alternativas": [
+    {
+     "t": "Pneumonia comunitária",
+     "certa": false,
+     "porque": "É ceftriaxona com azitromicina."
+    },
+    {
+     "t": "Infecção de pele",
+     "certa": false,
+     "porque": "É 1ª geração."
+    },
+    {
+     "t": "Sempre que o paciente é grave",
+     "certa": false,
+     "porque": "Nunca são primeira linha, salvo exceções."
+    },
+    {
+     "t": "Meropeném para ESBL e imipeném para infecção pancreática",
+     "certa": true,
+     "porque": "As duas exceções do material."
+    }
+   ],
+   "explica": "Regra: carbapenêmico nunca é primeira linha, com essas duas exceções.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "A regra da aula é que nunca são primeira linha , com duas exceções: o meropeném para infecções por ESBL e o imipeném para infecção pancreática."
+   }
+  },
+  {
+   "id": "q-r4-03",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual carbapenêmico não cobre Pseudomonas nem Acinetobacter?",
+   "alternativas": [
+    {
+     "t": "Meropeném",
+     "certa": false,
+     "porque": "É o mais potente."
+    },
+    {
+     "t": "Imipeném",
+     "certa": false,
+     "porque": "Cobre Pseudomonas."
+    },
+    {
+     "t": "Ertapeném",
+     "certa": true,
+     "porque": "Dose única diária."
+    },
+    {
+     "t": "Nenhum, todos cobrem",
+     "certa": false,
+     "porque": "O ertapeném não cobre."
+    }
+   ],
+   "explica": "O ertapeném serve para pele e partes moles e tratamento domiciliar.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Não cobre Pseudomonas nem Acinetobacter ; dose única diária, IM ou IV; útil em pele e partes moles e tratamento domiciliar"
+   }
+  },
+  {
+   "id": "q-r4-04",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Klebsiella produtora de ESBL; o antibiograma mostra piperacilina-tazobactam sensível. Qual o tratamento?",
+   "alternativas": [
+    {
+     "t": "Meropeném",
+     "certa": true,
+     "porque": "Na ESBL usa-se meropeném mesmo com sensibilidade."
+    },
+    {
+     "t": "Piperacilina-tazobactam, pois está sensível",
+     "certa": false,
+     "porque": "O resultado pode enganar."
+    },
+    {
+     "t": "Ceftriaxona",
+     "certa": false,
+     "porque": "Hidrolisada pela ESBL."
+    },
+    {
+     "t": "Cefepima",
+     "certa": false,
+     "porque": "ESBL hidrolisa até 4ª geração."
+    }
+   ],
+   "explica": "Na placa a droga mata antes da enzima ser expressa; no organismo a bactéria a produz.",
+   "pegadinha": "Antibiograma sensível engana.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Meropeném, mesmo com piperacilina-tazobactam sensível"
+   }
+  },
+  {
+   "id": "q-r4-05",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Por que evitar cefalosporina no grupo CESP mesmo com antibiograma sensível?",
+   "alternativas": [
+    {
+     "t": "Porque o grupo CESP é anaeróbio",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "As cefalosporinas induzem a AmpC cromossômica",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque são atípicos",
+     "certa": false,
+     "porque": "Não são."
+    },
+    {
+     "t": "Porque produzem KPC",
+     "certa": false,
+     "porque": "AmpC não é KPC."
+    }
+   ],
+   "explica": "A AmpC fica desligada até ser induzida pela cefalosporina.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "as cefalosporinas a induzem"
+   }
+  },
+  {
+   "id": "q-r4-06",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Klebsiella produtora de KPC. Qual a opção?",
+   "alternativas": [
+    {
+     "t": "Meropeném",
+     "certa": false,
+     "porque": "Destruído pela carbapenemase."
+    },
+    {
+     "t": "Ertapeném isolado",
+     "certa": false,
+     "porque": "Também é carbapenêmico."
+    },
+    {
+     "t": "Ceftazidima-avibactam",
+     "certa": true,
+     "porque": "Melhor opção contra KPC."
+    },
+    {
+     "t": "Ceftriaxona",
+     "certa": false,
+     "porque": "Não cobre KPC."
+    }
+   ],
+   "explica": "Sem ceftazidima-avibactam: polimixina ou aminoglicosídeo, nefrotóxicos.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "A KPC , carbapenemase de Klebsiella pneumoniae , destrói os carbapenêmicos; é tratada com ceftazidima-avibactam ou, na falta dela, com polimixinas ou aminoglicosídeos, nefrotóxicos."
+   }
+  },
+  {
+   "id": "q-r4-07",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Como funciona o duplo carbapenêmico contra KPC?",
+   "alternativas": [
+    {
+     "t": "O meropeném vem primeiro e o ertapeném potencializa",
+     "certa": false,
+     "porque": "A ordem é o ertapeném primeiro."
+    },
+    {
+     "t": "O ertapeném serve de isca para a carbapenemase e depois o meropeném age",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Os dois juntos inibem a PBP2a",
+     "certa": false,
+     "porque": "PBP2a é do MRSA."
+    },
+    {
+     "t": "O ertapeném cobre os anaeróbios",
+     "certa": false,
+     "porque": "Não é o raciocínio."
+    }
+   ],
+   "explica": "A carbapenemase prefere o ertapeném. Nem sempre funciona.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "O duplo carbapenêmico é uma estratégia de resgate contra KPC baseada na preferência da carbapenemase pelo ertapeném: administra-se o ertapeném primeiro, as enzimas se ocupam dele como de uma isca, e uma hora depois o meropeném age; nem sempre funciona."
+   }
+  },
+  {
+   "id": "q-r5-01",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a vancomicina só atua sobre Gram-positivos?",
+   "alternativas": [
+    {
+     "t": "É uma molécula grande que não atravessa a membrana externa dos Gram-negativos",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque age no ribossomo 30S",
+     "certa": false,
+     "porque": "Liga-se ao D-alanil-D-alanina."
+    },
+    {
+     "t": "Porque é ativada só sem oxigênio",
+     "certa": false,
+     "porque": "Isso é do metronidazol."
+    },
+    {
+     "t": "Porque é concentração-dependente",
+     "certa": false,
+     "porque": "Não é o motivo."
+    }
+   ],
+   "explica": "Por via oral não é absorvida e age só no intestino, útil no C. difficile.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A vancomicina, molécula grande, não atravessa a membrana externa dos Gram-negativos e atua apenas sobre Gram-positivos; administrada por via oral, não é absorvida e age apenas no lúmen intestinal, o que a torna útil contra o C. difficile ."
+   }
+  },
+  {
+   "id": "q-r5-02",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Durante infusão rápida de vancomicina, o paciente fica vermelho no rosto e no tronco. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Suspender: é alergia grave",
+     "certa": false,
+     "porque": "Não é alergia."
+    },
+    {
+     "t": "Trocar por oxacilina",
+     "certa": false,
+     "porque": "Não é o caso."
+    },
+    {
+     "t": "Aumentar a dose",
+     "certa": false,
+     "porque": "Não faz sentido."
+    },
+    {
+     "t": "Reduzir a velocidade de infusão",
+     "certa": true,
+     "porque": "Síndrome do homem vermelho, por histamina."
+    }
+   ],
+   "explica": "A liberação de histamina pela infusão rápida se resolve reduzindo a velocidade.",
+   "pegadinha": "Não rotular como alergia.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A síndrome do homem vermelho decorre da liberação de histamina pela infusão rápida, e não de alergia, e se resolve reduzindo a velocidade de infusão."
+   }
+  },
+  {
+   "id": "q-r5-03",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o metronidazol só cobre anaeróbios?",
+   "alternativas": [
+    {
+     "t": "Porque não atravessa porinas",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Só é ativado em ambiente sem oxigênio",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque age na PBP",
+     "certa": false,
+     "porque": "Lesa o DNA."
+    },
+    {
+     "t": "Porque é betalactâmico",
+     "certa": false,
+     "porque": "Não é."
+    }
+   ],
+   "explica": "Ativado na anaerobiose, lesa o DNA; cobre também giárdia, ameba e tricomonas.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "O metronidazol só é ativado em ambiente sem oxigênio, por isso seu espectro restringe-se aos anaeróbios e a alguns protozoários."
+   }
+  },
+  {
+   "id": "q-r5-04",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual destas drogas é um macrolídeo?",
+   "alternativas": [
+    {
+     "t": "Azitromicina",
+     "certa": true,
+     "porque": "Entre os -micina, só azitro e claritro são macrolídeos."
+    },
+    {
+     "t": "Clindamicina",
+     "certa": false,
+     "porque": "É lincosamida."
+    },
+    {
+     "t": "Gentamicina",
+     "certa": false,
+     "porque": "É aminoglicosídeo."
+    },
+    {
+     "t": "Vancomicina",
+     "certa": false,
+     "porque": "É glicopeptídeo."
+    }
+   ],
+   "explica": "O sufixo -micina engana.",
+   "pegadinha": "Nem todo -micina é macrolídeo.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Para não confundir os nomes, o sufixo \"-ciclina\" identifica as tetraciclinas; entre os terminados em \"-micina\", apenas azitromicina e claritromicina são macrolídeos, enquanto vancomicina, clindamicina e gentamicina pertencem a outras classes."
+   }
+  },
+  {
+   "id": "q-r6-01",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Pé diabético infectado. Com o que se associa a ceftriaxona?",
+   "alternativas": [
+    {
+     "t": "Ampicilina",
+     "certa": false,
+     "porque": "É para Listeria."
+    },
+    {
+     "t": "Azitromicina",
+     "certa": false,
+     "porque": "É para atípicos."
+    },
+    {
+     "t": "Doxiciclina",
+     "certa": false,
+     "porque": "É para clamídia."
+    },
+    {
+     "t": "Clindamicina",
+     "certa": true,
+     "porque": "Esquema da aula."
+    }
+   ],
+   "explica": "Ferida profunda: falta cobrir anaeróbios.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "Ceftriaxona com clindamicina"
+   }
+  },
+  {
+   "id": "q-r6-02",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Pneumonia que exige internação. Qual o esquema?",
+   "alternativas": [
+    {
+     "t": "Ceftriaxona isolada",
+     "certa": false,
+     "porque": "Não cobre atípicos."
+    },
+    {
+     "t": "Ceftriaxona com metronidazol",
+     "certa": false,
+     "porque": "Cobre anaeróbios."
+    },
+    {
+     "t": "Ceftriaxona com azitromicina",
+     "certa": true,
+     "porque": "Cobre pneumococo e atípicos."
+    },
+    {
+     "t": "Meropeném",
+     "certa": false,
+     "porque": "Não é primeira linha."
+    }
+   ],
+   "explica": "No pulmão, falta à ceftriaxona cobrir os atípicos.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "Ceftriaxona com azitromicina"
+   }
+  },
+  {
+   "id": "q-r6-03",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Paciente internado há 6 dias com pneumonia volta a ter febre. Qual cobertura passa a ser necessária?",
+   "alternativas": [
+    {
+     "t": "Manter ceftriaxona e azitromicina",
+     "certa": false,
+     "porque": "Não cobre Pseudomonas."
+    },
+    {
+     "t": "Pseudomonas, com piperacilina-tazobactam ou cefepima",
+     "certa": true,
+     "porque": "Passou a ser infecção relacionada à assistência."
+    },
+    {
+     "t": "Meropeném de imediato",
+     "certa": false,
+     "porque": "Fica para a falha."
+    },
+    {
+     "t": "Ceftarolina",
+     "certa": false,
+     "porque": "Só para MRSA documentado."
+    }
+   ],
+   "explica": "Após 48 h de internação a infecção é relacionada à assistência.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "No sexto dia de internação volta a ter febre: passa a ser infecção relacionada à assistência, e a Pseudomonas deve ser coberta com piperacilina-tazobactam ou cefepima."
+   }
+  },
+  {
+   "id": "q-r6-04",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Doença inflamatória pélvica. Qual o esquema da aula?",
+   "alternativas": [
+    {
+     "t": "Ceftriaxona isolada",
+     "certa": false,
+     "porque": "Falta anaeróbio e clamídia."
+    },
+    {
+     "t": "Oxacilina e ceftriaxona",
+     "certa": false,
+     "porque": "Não é o esquema."
+    },
+    {
+     "t": "Ceftriaxona, metronidazol e doxiciclina",
+     "certa": true,
+     "porque": "Esquema da tabela."
+    },
+    {
+     "t": "Ampicilina e gentamicina",
+     "certa": false,
+     "porque": "Não é o esquema."
+    }
+   ],
+   "explica": "Na pelve faltam anaeróbios e clamídia.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "Ceftriaxona, metronidazol e doxiciclina"
+   }
+  },
+  {
+   "id": "q-r6-05",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "facil",
+   "enunciado": "Qual o primeiro passo das quatro perguntas na escolha empírica?",
+   "alternativas": [
+    {
+     "t": "Onde está a infecção",
+     "certa": true,
+     "porque": "Primeira pergunta."
+    },
+    {
+     "t": "Qual o antibiótico mais potente",
+     "certa": false,
+     "porque": "Começa-se pelo mais estreito suficiente."
+    },
+    {
+     "t": "Qual o preço",
+     "certa": false,
+     "porque": "Não é pergunta do material."
+    },
+    {
+     "t": "Se o paciente é alérgico",
+     "certa": false,
+     "porque": "Não é uma das quatro."
+    }
+   ],
+   "explica": "Local, bactérias do local, gravidade e menor arma que alcança.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "onde está a infecção"
+   }
+  }
  ]
 }
