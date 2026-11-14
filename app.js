@@ -1,8 +1,8 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=37";
-import { ic, ICONES_MATERIA } from "./icons.js?v=37";
-import { FIG } from "./figuras.js?v=37";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=37";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=37";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=38";
+import { ic, ICONES_MATERIA } from "./icons.js?v=38";
+import { FIG } from "./figuras.js?v=38";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=38";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=38";
 
 /* =========================================================
    utilidades
@@ -518,7 +518,7 @@ temaMundo = () => mundo?.tema?.(tema);
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=37"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=38"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -1018,20 +1018,22 @@ function renderConsulta() {
   const ativo = !!(lendo && m && m.secoes.find(x => x.id === consulta.sid));
   el.classList.toggle("aberta", ativo); document.body.classList.toggle("com-consulta", ativo);
   if (!ativo) return;
-  const grupos = [...new Set(m.secoes.map(x => x.grupo || "Seções"))], gAtual = grupoDe(m, consulta.sid) || "Seções";
-  const doGrupo = m.secoes.filter(x => (x.grupo || "Seções") === gAtual);
+  const siglas = m.secoes.find(x => x.id === "gsiglas"), emSiglas = consulta.sid === siglas?.id;
+  const grupos = [...new Set(m.secoes.filter(x => x.id !== "gsiglas").map(x => x.grupo || "Seções"))], gAtual = grupoDe(m, consulta.sid) || "Seções";
+  const doGrupo = emSiglas ? [siglas] : m.secoes.filter(x => x.id !== "gsiglas" && (x.grupo || "Seções") === gAtual);
   el.innerHTML = `<div class="cab">
       <div class="lin"><span class="kicker" style="flex:1">Ao lado</span><label class="acomp" title="Ao trocar de seção, abre aqui a parte correspondente"><input type="checkbox" id="cnAcomp" ${acompanhar ? "checked" : ""}> Acompanhar</label><button class="btn sm" id="cnTroca" title="Trocar de lado: abrir esta no centro">${ic("setad", "s")}Abrir no centro</button><button class="btn ic sm" id="cnFecha" title="Fechar">${ic("x", "s")}</button></div>
-      ${grupos.length > 1 ? `<div class="tabs">${grupos.map(g => `<button class="${g === gAtual ? "on" : ""}" data-cg="${esc(g)}">${esc(g)}</button>`).join("")}</div>` : ""}
+      ${grupos.length > 1 || siglas ? `<div class="tabs" aria-label="Conteúdo da consulta lateral">${grupos.map(g => `<button type="button" class="${!emSiglas && g === gAtual ? "on" : ""}" aria-pressed="${!emSiglas && g === gAtual}" data-cg="${esc(g)}">${esc(g)}</button>`).join("")}${siglas ? `<button type="button" id="cnSiglas" class="${emSiglas ? "on" : ""}" aria-pressed="${emSiglas}">Siglas</button>` : ""}</div>` : ""}
       <select class="f" id="cnSec">${doGrupo.map(x => `<option value="${esc(x.id)}" ${x.id === consulta.sid ? "selected" : ""}>${esc(x.titulo)}</option>`).join("")}</select>
     </div>
     <div class="corpo doc" id="cnCorpo">${htmlSecao(m.id, consulta.sid) || '<p class="muted">Seção vazia.</p>'}</div>`;
   melhoraDoc($("#cnCorpo"), m.id, true); aplicaGrifos($("#cnCorpo"), `${m.id}--${consulta.sid}`);
   $("#cnFecha").addEventListener("click", () => { fechaConsulta(); if (atual === "materias") render(); });
   $("#cnAcomp").addEventListener("change", e => { acompanhar = e.target.checked; LS.set("acompanhar", acompanhar); });
+  $("#cnSiglas")?.addEventListener("click", () => abreConsulta(m.id, siglas.id));
   $("#cnTroca").addEventListener("click", () => { const antes = sub.sid, alvo = consulta.sid; consulta = { mat: m.id, sid: antes }; LS.set("consulta", consulta); trocando = true; abreSecao(m.id, alvo); });
   $("#cnSec").addEventListener("change", e => abreConsulta(m.id, e.target.value));
-  $$("[data-cg]", el).forEach(b => b.addEventListener("click", () => { const p = m.secoes.find(x => (x.grupo || "Seções") === b.dataset.cg); if (p) abreConsulta(m.id, p.id); }));
+  $$("[data-cg]", el).forEach(b => b.addEventListener("click", () => { const p = m.secoes.find(x => x.id !== "gsiglas" && (x.grupo || "Seções") === b.dataset.cg); if (p) abreConsulta(m.id, p.id); }));
 }
 function renderLeitura(v) {
   const m = materia(sub.mat), s = m.secoes.find(x => x.id === sub.sid);
@@ -1040,7 +1042,7 @@ function renderLeitura(v) {
   const html = htmlSecao(m.id, s.id);
   if (editando && souDono) return renderEditor(v, m, s, html);
   const gruposL = [...new Set(m.secoes.map(x => x.grupo || "Seções"))], gAt = s.grupo || "Seções", nGr = ((S.notas[k] || {}).g || []).length;
-  if (consulta && consulta.mat === m.id && acompanhar && !trocando) { const p = parDe(m.id, s.id); if (p && p !== consulta.sid) { consulta = { mat: m.id, sid: p }; LS.set("consulta", consulta); } }
+  if (consulta && consulta.mat === m.id && consulta.sid !== "gsiglas" && acompanhar && !trocando) { const p = parDe(m.id, s.id); if (p && p !== consulta.sid) { consulta = { mat: m.id, sid: p }; LS.set("consulta", consulta); } }
   trocando = false;
   v.innerHTML = `<div class="pagina larga">
     <div class="leitura-topo">
@@ -1280,7 +1282,7 @@ function renderNotasMat(corpo, m) {
 function renderKahootMat(corpo, m) {
   const f = kSec && kSec.mat === m.id ? kSec : null;
   corpo.innerHTML = (f ? `<div class="vidro filtroq"><span class="kicker" style="flex:1">Só as questões de · ${esc(f.nome)}</span><button class="btn sm" id="kTodas">Ver todas as questões</button></div>` : "")
-    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=37${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
+    + `<iframe class="kframe" src="kahoot.html?mat=${encodeURIComponent(m.id)}&embed=1&v=38${f ? "&sec=" + encodeURIComponent(f.ids.join(",")) + "&nome=" + encodeURIComponent(f.nome) : ""}" title="Kahoot de ${esc(m.nome)}"></iframe>`;
   $("#kTodas")?.addEventListener("click", () => { kSec = null; renderKahootMat(corpo, m); });
 }
 function zoomImg(src, alt = "Imagem ampliada") {
@@ -1685,7 +1687,7 @@ document.querySelector(".marca").style.cursor = "default";
    ========================================================= */
 const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
 async function carregaFabrica() {
-  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=37`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
+  const r = await Promise.all(CONTEUDOS.map(id => fetch(`content/${id}.json?v=38`).then(x => x.ok ? x.json() : null).catch(e => { console.warn("conteúdo", id, e); return null; })));
   FABRICA = r.filter(Boolean);
 }
 async function conectaNuvem() {
@@ -1739,7 +1741,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=37");
+      const mod = await import("./conta.js?v=38");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }
