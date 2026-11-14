@@ -1,5 +1,6 @@
 /* Contas de usuário (Firebase): cada pessoa tem o próprio progresso salvo na nuvem.
    Só é usado fora do site do Claude (GitHub Pages / Netlify). */
+import { assinatura } from "./progresso.js?v=35";
 const CONFIG = {
   apiKey: "AIzaSyD8tSjt-XvZVrD5m4BbQWoMDkYhyCRGGRk",
   authDomain: "studiaworld-43ba4.firebaseapp.com",
@@ -10,6 +11,7 @@ const CONFIG = {
 };
 const V = "10.13.2";
 let fb = null;
+const bases = new Map();
 
 export async function iniciaConta(aoMudar) {
   const [appM, authM, fsM] = await Promise.all([
@@ -17,14 +19,17 @@ export async function iniciaConta(aoMudar) {
     import(`https://www.gstatic.com/firebasejs/${V}/firebase-auth.js`),
     import(`https://www.gstatic.com/firebasejs/${V}/firebase-firestore.js`),
   ]);
-  const app = appM.initializeApp(CONFIG);
+  const app = appM.getApps().length ? appM.getApp() : appM.initializeApp(CONFIG);
   const auth = authM.getAuth(app);
   auth.languageCode = "pt";
   const db = fsM.getFirestore(app);
   fb = { authM, fsM, auth, db };
   authM.getRedirectResult(auth).catch(() => {});
-  authM.onAuthStateChanged(auth, u => aoMudar(u ? { uid: u.uid, nome: u.displayName || (u.email || "").split("@")[0], email: u.email, foto: u.photoURL } : null));
-  return true;
+  return new Promise((resolve, reject) => {
+    authM.onAuthStateChanged(auth, u => {
+      Promise.resolve(aoMudar(u ? { uid: u.uid, nome: u.displayName || (u.email || "").split("@")[0], email: u.email, foto: u.photoURL } : null)).then(() => resolve(true), reject);
+    }, reject);
+  });
 }
 
 export async function entraGoogle() {
@@ -46,11 +51,25 @@ export async function sai() { return fb.authM.signOut(fb.auth); }
 export async function carrega(uid) {
   const { fsM, db } = fb;
   const s = await fsM.getDoc(fsM.doc(db, "usuarios", uid));
-  return s.exists() ? s.data().estado || null : null;
+  const estado = s.exists() ? s.data().estado || null : null;
+  bases.set(uid, assinatura(estado));
+  return estado;
 }
 export async function salva(uid, estado) {
-  const { fsM, db } = fb;
-  await fsM.setDoc(fsM.doc(db, "usuarios", uid), { estado, atualizado: Date.now() });
+  const { fsM, db, auth } = fb;
+  if (auth.currentUser?.uid !== uid || !bases.has(uid)) throw new Error("Conta ainda não carregada.");
+  const base = bases.get(uid), ref = fsM.doc(db, "usuarios", uid);
+  await fsM.runTransaction(db, async tx => {
+    const snap = await tx.get(ref);
+    const remoto = snap.exists() ? snap.data().estado || null : null;
+    if (assinatura(remoto) !== base) {
+      const erro = new Error("Há progresso mais recente em outro aparelho.");
+      erro.code = "progresso/conflito"; throw erro;
+    }
+    if (auth.currentUser?.uid !== uid) throw new Error("A conta mudou durante o salvamento.");
+    tx.set(ref, { estado, atualizado: Date.now() }, { merge: true });
+  });
+  bases.set(uid, assinatura(estado));
 }
 
 export function mensagemErro(e) {
