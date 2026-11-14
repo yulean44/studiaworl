@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=53">
-<link rel="icon" type="image/png" href="favicon.png?v=53">
-<link rel="manifest" href="manifest.webmanifest?v=53">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=54">
+<link rel="icon" type="image/png" href="favicon.png?v=54">
+<link rel="manifest" href="manifest.webmanifest?v=54">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -987,6 +987,16 @@ body.iniciando .raios{visibility:hidden}
 .ceu-r.hora{--trilho:linear-gradient(90deg,#1c2847 0%,#2e3c60 18%,#f3cfb0 23%,#bcd9f0 30%,#a9d3f0 50%,#f8eedb 60%,#f0c58c 70%,#f5b47e 76%,#4a4f86 80%,#1c2847 86%,#1c2847 100%)}
 .ceu-r.nuv{--trilho:linear-gradient(90deg,var(--glass2),#c9d0da)}
 @media (pointer:coarse){.ceu-r{height:44px}.ceu-r::-webkit-slider-thumb{width:26px;height:26px;margin-top:-10px}}
+
+/* estudo: superfícies opacas para leitura sem interferência do fundo */
+:root{--papel:#131b2d}
+:root[data-tema="meianoite"]{--papel:#07090f}:root[data-tema="cristal"]{--papel:#0f2230}:root[data-tema="aurora"]{--papel:#19152e}:root[data-tema="floresta"]{--papel:#0f2117}
+:root[data-tema="claro"],:root[data-tema="amanhecer"]{--papel:#ffffff}:root[data-tema="dourado"]{--papel:#fffcf6}
+body.estudo .ws .doc,body.estudo .leitura-topo,body.estudo .trilha,body.estudo .consulta,body.estudo .arvore,body.estudo .ws-main > .vidro,body.estudo .ws-main .card{background:var(--papel);backdrop-filter:none;-webkit-backdrop-filter:none}
+body.com-consulta .consulta{background:var(--papel);backdrop-filter:none;-webkit-backdrop-filter:none}
+body.estudo .raios{display:none}
+body.estudo #espaco{opacity:.35}
+body.estudo .nav{background:color-mix(in srgb,var(--papel) 94%,transparent)}
 </style>
 </head>
 <body class="iniciando">
@@ -1011,6 +1021,6 @@ body.iniciando .raios{visibility:hidden}
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=53"></script>
+<script type="module" src="app.js?v=54"></script>
 </body>
 </html>

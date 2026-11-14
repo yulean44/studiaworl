@@ -1,11 +1,11 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=53";
-import { ic, ICONES_MATERIA } from "./icons.js?v=53";
-import { FIG } from "./figuras.js?v=53";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=53";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=53";
-import { semanaDeEstudos } from "./relatorio.js?v=53";
-import { carregaMaterias } from "./conteudo.js?v=53";
-import { criaDiaHora } from "./diahora.js?v=53";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=54";
+import { ic, ICONES_MATERIA } from "./icons.js?v=54";
+import { FIG } from "./figuras.js?v=54";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=54";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=54";
+import { semanaDeEstudos } from "./relatorio.js?v=54";
+import { carregaMaterias } from "./conteudo.js?v=54";
+import { criaDiaHora } from "./diahora.js?v=54";
 
 /* =========================================================
    utilidades
@@ -705,7 +705,7 @@ temaMundo = () => mundo?.tema?.(temaAtivo());
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=53"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=54"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -2000,7 +2000,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=53");
+      const mod = await import("./conta.js?v=54");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }
