@@ -2363,5 +2363,2285 @@
    ],
    "fechamento": "<h3>Pontos-chave</h3><ul><li>DNA-HPV 25–64, a cada 5 anos.</li><li>16/18 → colposcopia; outros → citologia reflexa.</li><li>NIC 2/3 → EZT.</li></ul>"
   }
+ ],
+ "questoes": [
+  {
+   "id": "q-r1-01",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual o pH vaginal normal na idade reprodutiva?",
+   "alternativas": [
+    {
+     "t": "Entre 3,8 e 4,5",
+     "certa": true,
+     "porque": "Mantido pelos lactobacilos."
+    },
+    {
+     "t": "Entre 5,5 e 6,5",
+     "certa": false,
+     "porque": "É alcalino demais."
+    },
+    {
+     "t": "Acima de 7",
+     "certa": false,
+     "porque": "Não é o normal."
+    },
+    {
+     "t": "Entre 2 e 3",
+     "certa": false,
+     "porque": "Não é o descrito."
+    }
+   ],
+   "explica": "Lactobacilos transformam glicogênio em ácido lático.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Os lactobacilos , também chamados bacilos de Döderlein, metabolizam esse glicogênio em ácido lático e mantêm o pH vaginal entre 3,8 e 4,5."
+   }
+  },
+  {
+   "id": "q-r1-02",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a vaginose bacteriana não causa prurido nem leucócitos abundantes?",
+   "alternativas": [
+    {
+     "t": "Porque é causada por fungo",
+     "certa": false,
+     "porque": "É flora de anaeróbios."
+    },
+    {
+     "t": "Porque é uma IST",
+     "certa": false,
+     "porque": "Não é IST."
+    },
+    {
+     "t": "Não há processo inflamatório evidente",
+     "certa": true,
+     "porque": "Daí o nome vaginose."
+    },
+    {
+     "t": "Porque o pH fica ácido",
+     "certa": false,
+     "porque": "Fica acima de 4,5."
+    }
+   ],
+   "explica": "Vaginose é desequilíbrio da microbiota sem inflamação.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "A distinção não é apenas semântica: a ausência de inflamação na vaginose explica a falta de prurido e de leucócitos, e a localização endocervical da cervicite explica por que ela é assintomática na maioria das mulheres."
+   }
+  },
+  {
+   "id": "q-r1-03",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o toque bimanual é obrigatório na mulher com corrimento?",
+   "alternativas": [
+    {
+     "t": "Para medir o pH",
+     "certa": false,
+     "porque": "O pH é medido com fita."
+    },
+    {
+     "t": "Dor à mobilização do colo ou anexial indica infecção do trato superior",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Para colher citologia",
+     "certa": false,
+     "porque": "Não é o objetivo."
+    },
+    {
+     "t": "Para ver o aspecto do corrimento",
+     "certa": false,
+     "porque": "Isso é o exame especular."
+    }
+   ],
+   "explica": "Pode revelar DIP.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "termina com o toque bimanual, obrigatório"
+   }
+  },
+  {
+   "id": "q-r1-04",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Mulher sem prurido refere odor de peixe pior após as relações; corrimento acinzentado, pH 5,0, aminas positivas e clue cells. Qual o tratamento?",
+   "alternativas": [
+    {
+     "t": "Fluconazol 150 mg dose única",
+     "certa": false,
+     "porque": "É para candidíase."
+    },
+    {
+     "t": "Ceftriaxona com azitromicina",
+     "certa": false,
+     "porque": "É para cervicite."
+    },
+    {
+     "t": "Metronidazol e tratar o parceiro",
+     "certa": false,
+     "porque": "Na vaginose a parceria não é tratada."
+    },
+    {
+     "t": "Metronidazol 500 mg 12/12 h por 7 dias, sem tratar o parceiro",
+     "certa": true,
+     "porque": "Vaginose bacteriana."
+    }
+   ],
+   "explica": "Os quatro critérios de Amsel estão presentes.",
+   "pegadinha": "Vaginose não é IST.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Os quatro critérios de Amsel estão presentes: trata-se de vaginose bacteriana."
+   }
+  },
+  {
+   "id": "q-r1-05",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o odor da vaginose piora após o coito e a menstruação?",
+   "alternativas": [
+    {
+     "t": "Sêmen e sangue alcalinizam o meio e volatilizam as aminas",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque há mais fungos",
+     "certa": false,
+     "porque": "Não é fungo."
+    },
+    {
+     "t": "Porque o protozoário se multiplica",
+     "certa": false,
+     "porque": "Não é tricomoníase."
+    },
+    {
+     "t": "Porque o estrogênio cai",
+     "certa": false,
+     "porque": "Não é a explicação."
+    }
+   ],
+   "explica": "Putrescina e cadaverina dão o odor de peixe.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O odor piora após a relação sexual e a menstruação porque o sêmen e o sangue alcalinizam o meio e volatilizam as aminas."
+   }
+  },
+  {
+   "id": "q-r1-06",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Quantos critérios de Amsel fecham o diagnóstico de vaginose bacteriana?",
+   "alternativas": [
+    {
+     "t": "Dois dos quatro",
+     "certa": false,
+     "porque": "Insuficiente."
+    },
+    {
+     "t": "Todos os quatro",
+     "certa": false,
+     "porque": "Bastam três."
+    },
+    {
+     "t": "Três dos quatro",
+     "certa": true,
+     "porque": "Critério do material."
+    },
+    {
+     "t": "Um, se houver clue cells",
+     "certa": false,
+     "porque": "Não basta."
+    }
+   ],
+   "explica": "pH > 4,5, corrimento acinzentado, aminas positivas e clue cells.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O diagnóstico clínico usa os critérios de Amsel , dos quais três dos quatro devem estar presentes: pH acima de 4,5, corrimento acinzentado e homogêneo, teste das aminas positivo e clue cells (células epiteliais recobertas de bactérias) à microscopia."
+   }
+  },
+  {
+   "id": "q-r1-07",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Corrimento branco grumoso, prurido intenso, pH 4,0 e pseudo-hifas. Qual o tratamento de primeira linha?",
+   "alternativas": [
+    {
+     "t": "Metronidazol oral",
+     "certa": false,
+     "porque": "É para vaginose ou tricomoníase."
+    },
+    {
+     "t": "Ceftriaxona IM",
+     "certa": false,
+     "porque": "É para cervicite."
+    },
+    {
+     "t": "Tratar também o parceiro assintomático",
+     "certa": false,
+     "porque": "Não é necessário."
+    },
+    {
+     "t": "Miconazol creme 2% vaginal por 7 noites",
+     "certa": true,
+     "porque": "Candidíase: azólico tópico."
+    }
+   ],
+   "explica": "Fluconazol 150 mg dose única é alternativa; na gestante, só tópico.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O tratamento de primeira linha é um azólico tópico, como o miconazol creme a 2% por via vaginal durante sete noites, ou nistatina por 14 noites; o fluconazol 150 mg por via oral em dose única é alternativa."
+   }
+  },
+  {
+   "id": "q-r1-08",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Gestante com candidíase vulvovaginal. Qual a via de tratamento?",
+   "alternativas": [
+    {
+     "t": "Fluconazol oral dose única",
+     "certa": false,
+     "porque": "Não na gestante."
+    },
+    {
+     "t": "Apenas tópica",
+     "certa": true,
+     "porque": "Regra do material."
+    },
+    {
+     "t": "Fluconazol semanal por 6 meses",
+     "certa": false,
+     "porque": "É para recorrente fora da gestação."
+    },
+    {
+     "t": "Não tratar até o parto",
+     "certa": false,
+     "porque": "Não é a conduta."
+    }
+   ],
+   "explica": "Na gestante usa-se apenas o tratamento tópico.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Na gestante usa-se apenas o tratamento tópico."
+   }
+  },
+  {
+   "id": "q-r1-09",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Corrimento amarelo-esverdeado bolhoso e fétido, colo em morango e protozoário móvel ao exame. Qual a conduta com o parceiro?",
+   "alternativas": [
+    {
+     "t": "Tratar sempre, mesmo sem sintomas",
+     "certa": true,
+     "porque": "Tricomoníase é IST."
+    },
+    {
+     "t": "Não tratar",
+     "certa": false,
+     "porque": "A tricomoníase exige tratar a parceria."
+    },
+    {
+     "t": "Tratar só se tiver sintomas",
+     "certa": false,
+     "porque": "Trata-se mesmo sem sintomas."
+    },
+    {
+     "t": "Só pedir sorologias",
+     "certa": false,
+     "porque": "É insuficiente."
+    }
+   ],
+   "explica": "Abstinência até 7 dias após o fim do tratamento e testar sífilis, HIV e hepatites.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Por ser IST, a parceria deve ser tratada mesmo sem sintomas, a paciente deve manter abstinência sexual até sete dias após o fim do tratamento e devem ser oferecidos testes para sífilis, HIV e hepatites B e C."
+   }
+  },
+  {
+   "id": "q-r1-10",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a maioria das cervicites é assintomática?",
+   "alternativas": [
+    {
+     "t": "Porque são causadas por fungo",
+     "certa": false,
+     "porque": "São bacterianas."
+    },
+    {
+     "t": "O epitélio colunar endocervical não produz sintomas exuberantes",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque regridem sozinhas",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Porque o pH fica normal",
+     "certa": false,
+     "porque": "Não é o motivo."
+    }
+   ],
+   "explica": "70% a 80% das cervicites são assintomáticas.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O epitélio colunar endocervical não produz sintomas exuberantes, e por isso 70% a 80% das cervicites são assintomáticas ."
+   }
+  },
+  {
+   "id": "q-r1-11",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Mulher de 22 anos com mucopus endocervical e colo friável. O que fazer?",
+   "alternativas": [
+    {
+     "t": "Aguardar o teste molecular",
+     "certa": false,
+     "porque": "Não se espera o resultado."
+    },
+    {
+     "t": "Metronidazol por 7 dias",
+     "certa": false,
+     "porque": "Não cobre gonococo e clamídia."
+    },
+    {
+     "t": "Tratar na mesma consulta com ceftriaxona 500 mg IM e azitromicina 1 g VO",
+     "certa": true,
+     "porque": "Conduta sindrômica."
+    },
+    {
+     "t": "Fluconazol oral",
+     "certa": false,
+     "porque": "É para candidíase."
+    }
+   ],
+   "explica": "Cervicite não tratada ascende e causa DIP.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O esquema do Ministério da Saúde é ceftriaxona 500 mg intramuscular em dose única associada a azitromicina 1 g por via oral em dose única ."
+   }
+  },
+  {
+   "id": "q-r2-01",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Na sífilis, quando a duração é ignorada, como se trata?",
+   "alternativas": [
+    {
+     "t": "Como sífilis recente",
+     "certa": false,
+     "porque": "Não é a regra."
+    },
+    {
+     "t": "Como neurossífilis",
+     "certa": false,
+     "porque": "Só se houver acometimento neurológico."
+    },
+    {
+     "t": "Não se trata até saber a fase",
+     "certa": false,
+     "porque": "Trata-se como tardia."
+    },
+    {
+     "t": "Como sífilis tardia",
+     "certa": true,
+     "porque": "Regra do material."
+    }
+   ],
+   "explica": "Benzatina 2,4 milhões UI semanal por 3 semanas.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Quando não se sabe há quanto tempo a pessoa está infectada, a sífilis é considerada latente de duração ignorada e tratada como tardia ."
+   }
+  },
+  {
+   "id": "q-r2-02",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o teste treponêmico não serve para acompanhar o tratamento da sífilis?",
+   "alternativas": [
+    {
+     "t": "Porque é muito caro",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Permanece reagente por toda a vida, mesmo após a cura",
+     "certa": true,
+     "porque": "Cicatriz sorológica."
+    },
+    {
+     "t": "Porque fica negativo logo após a dose",
+     "certa": false,
+     "porque": "Fica reagente."
+    },
+    {
+     "t": "Porque não detecta a fase primária",
+     "certa": false,
+     "porque": "Não é o motivo."
+    }
+   ],
+   "explica": "O VDRL, quantitativo, é que acompanha a resposta.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Os testes treponêmicos , como o teste rápido, detectam anticorpos contra o treponema e permanecem reagentes por toda a vida, mesmo após a cura (cicatriz sorológica)."
+   }
+  },
+  {
+   "id": "q-r2-03",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Teste rápido treponêmico reagente e VDRL não reagente. Qual o próximo passo?",
+   "alternativas": [
+    {
+     "t": "Tratar como sífilis ativa",
+     "certa": false,
+     "porque": "VDRL não reagente não confirma atividade."
+    },
+    {
+     "t": "Dar alta sem mais exames",
+     "certa": false,
+     "porque": "Precisa esclarecer."
+    },
+    {
+     "t": "Segundo teste treponêmico de metodologia diferente",
+     "certa": true,
+     "porque": "Distingue cicatriz de falso-reagente."
+    },
+    {
+     "t": "Repetir o mesmo teste rápido",
+     "certa": false,
+     "porque": "Precisa de metodologia diferente."
+    }
+   ],
+   "explica": "Segundo reagente: cicatriz sorológica; não reagente: falso-reagente.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "VDRL reagente confirma sífilis ativa; VDRL não reagente com treponêmico reagente exige um segundo teste treponêmico de metodologia diferente, que distingue cicatriz sorológica (segundo teste reagente) de falso-reagente (segundo teste não reagente)."
+   }
+  },
+  {
+   "id": "q-r2-04",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Poucas horas após a benzatina, paciente tem febre, mialgia e cefaleia. O que é?",
+   "alternativas": [
+    {
+     "t": "Reação de Jarisch-Herxheimer",
+     "certa": true,
+     "porque": "Liberação de antígenos dos treponemas mortos."
+    },
+    {
+     "t": "Alergia à penicilina",
+     "certa": false,
+     "porque": "Não é alergia."
+    },
+    {
+     "t": "Neurossífilis",
+     "certa": false,
+     "porque": "Não é o quadro."
+    },
+    {
+     "t": "Falha terapêutica",
+     "certa": false,
+     "porque": "Não é o caso."
+    }
+   ],
+   "explica": "Trata-se apenas com sintomáticos.",
+   "pegadinha": "Não suspender a penicilina.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Nas primeiras 24 horas após a primeira dose pode ocorrer a reação de Jarisch-Herxheimer , com febre, mialgia e cefaleia, causada pela liberação de antígenos dos treponemas mortos; não é alergia e trata-se apenas com sintomáticos."
+   }
+  },
+  {
+   "id": "q-r2-05",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Após tratar sífilis recente, qual a resposta adequada no VDRL?",
+   "alternativas": [
+    {
+     "t": "Negativação em um mês",
+     "certa": false,
+     "porque": "Não é exigido."
+    },
+    {
+     "t": "Queda de uma diluição em 12 meses",
+     "certa": false,
+     "porque": "Insuficiente."
+    },
+    {
+     "t": "Elevação de duas diluições",
+     "certa": false,
+     "porque": "Indica reinfecção ou falha."
+    },
+    {
+     "t": "Queda de duas diluições em até seis meses",
+     "certa": true,
+     "porque": "Critério do material."
+    }
+   ],
+   "explica": "Ex.: de 1:32 para 1:8.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A resposta adequada é a queda de duas diluições (por exemplo, de 1:32 para 1:8) em até seis meses na sífilis recente e em até 12 meses na tardia."
+   }
+  },
+  {
+   "id": "q-r2-06",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Por que a gestante alérgica à penicilina deve ser dessensibilizada?",
+   "alternativas": [
+    {
+     "t": "Porque a doxiciclina é mais cara",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Porque a azitromicina causa malformação",
+     "certa": false,
+     "porque": "Não é o argumento."
+    },
+    {
+     "t": "A penicilina é a única droga que atravessa a placenta em concentração suficiente para tratar o feto",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque a alergia passa na gestação",
+     "certa": false,
+     "porque": "Não passa."
+    }
+   ],
+   "explica": "O tratamento deve terminar pelo menos 30 dias antes do parto.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A penicilina é a única droga que atravessa a placenta em concentração suficiente para tratar o feto; diante de alergia, a conduta é a dessensibilização , e não a troca de antibiótico."
+   }
+  },
+  {
+   "id": "q-r2-07",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Como se confirma o diagnóstico de HIV na APS?",
+   "alternativas": [
+    {
+     "t": "Dois testes rápidos de fabricantes diferentes, ambos reagentes",
+     "certa": true,
+     "porque": "Fluxo do material."
+    },
+    {
+     "t": "Um único teste rápido reagente",
+     "certa": false,
+     "porque": "Precisa do segundo."
+    },
+    {
+     "t": "Contagem de CD4 baixa",
+     "certa": false,
+     "porque": "Não é diagnóstico."
+    },
+    {
+     "t": "Sorologia para sífilis",
+     "certa": false,
+     "porque": "Não tem relação."
+    }
+   ],
+   "explica": "Discordantes exigem teste molecular.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Na APS o diagnóstico é feito com dois testes rápidos de fabricantes diferentes; ambos reagentes confirmam a infecção, e resultados discordantes exigem investigação com teste molecular."
+   }
+  },
+  {
+   "id": "q-r2-08",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual o esquema antirretroviral inicial citado?",
+   "alternativas": [
+    {
+     "t": "Tenofovir e entricitabina",
+     "certa": false,
+     "porque": "É a PrEP."
+    },
+    {
+     "t": "Tenofovir, lamivudina e dolutegravir",
+     "certa": true,
+     "porque": "Esquema do material."
+    },
+    {
+     "t": "Aciclovir e lamivudina",
+     "certa": false,
+     "porque": "Não é esquema."
+    },
+    {
+     "t": "Zidovudina isolada",
+     "certa": false,
+     "porque": "Não é o esquema."
+    }
+   ],
+   "explica": "Iniciado o mais cedo possível, independentemente do CD4.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A terapia antirretroviral é iniciada o mais cedo possível, independentemente do CD4, com o esquema tenofovir, lamivudina e dolutegravir ."
+   }
+  },
+  {
+   "id": "q-r2-09",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Até quanto tempo após a exposição a PEP pode ser iniciada?",
+   "alternativas": [
+    {
+     "t": "Até 7 dias",
+     "certa": false,
+     "porque": "Tarde demais."
+    },
+    {
+     "t": "Até 24 horas apenas",
+     "certa": false,
+     "porque": "O limite é 72 h."
+    },
+    {
+     "t": "Qualquer momento",
+     "certa": false,
+     "porque": "Não é o caso."
+    },
+    {
+     "t": "No máximo 72 horas",
+     "certa": true,
+     "porque": "Limite do material."
+    }
+   ],
+   "explica": "Dura 28 dias com três drogas.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A profilaxia pós-exposição (PEP) é indicada após exposição sexual de risco, violência sexual ou acidente ocupacional, deve começar o mais cedo possível, no máximo em 72 horas, e dura 28 dias com o mesmo esquema de três drogas."
+   }
+  },
+  {
+   "id": "q-r2-10",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual a faixa de vacinação de HPV em dose única no SUS?",
+   "alternativas": [
+    {
+     "t": "25 a 64 anos",
+     "certa": false,
+     "porque": "É a faixa do rastreamento."
+    },
+    {
+     "t": "9 a 14 anos",
+     "certa": true,
+     "porque": "Meninas e meninos."
+    },
+    {
+     "t": "15 a 45 anos",
+     "certa": false,
+     "porque": "Não é a faixa."
+    },
+    {
+     "t": "Só meninas de 12 anos",
+     "certa": false,
+     "porque": "Inclui meninos."
+    }
+   ],
+   "explica": "Imunossuprimidos, PVHIV e vítimas de violência sexual recebem três doses.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A vacina quadrivalente (tipos 6, 11, 16 e 18) é aplicada no SUS em dose única dos 9 aos 14 anos , em meninas e meninos, com resgate de jovens de 15 a 19 anos não vacinados até 31/12/2026."
+   }
+  },
+  {
+   "id": "q-r2-11",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Úlcera genital única, indolor, de base endurecida e fundo limpo. Qual o tratamento?",
+   "alternativas": [
+    {
+     "t": "Benzatina 2,4 milhões UI dose única",
+     "certa": true,
+     "porque": "Sífilis primária."
+    },
+    {
+     "t": "Aciclovir 400 mg 8/8 h",
+     "certa": false,
+     "porque": "É para herpes."
+    },
+    {
+     "t": "Doxiciclina por 21 dias",
+     "certa": false,
+     "porque": "É para linfogranuloma."
+    },
+    {
+     "t": "Azitromicina semanal",
+     "certa": false,
+     "porque": "É para donovanose."
+    }
+   ],
+   "explica": "Cancro duro com adenopatia regional.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Única, indolor, base endurecida, fundo limpo"
+   }
+  },
+  {
+   "id": "q-r2-12",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "dificil",
+   "enunciado": "Úlcera fugaz seguida de bubão inguinal que fistuliza. O que não fazer com o bubão?",
+   "alternativas": [
+    {
+     "t": "Aspirar",
+     "certa": false,
+     "porque": "É o recomendado."
+    },
+    {
+     "t": "Tratar com doxiciclina",
+     "certa": false,
+     "porque": "É o tratamento."
+    },
+    {
+     "t": "Incisar",
+     "certa": true,
+     "porque": "Deve-se aspirar, nunca incisar."
+    },
+    {
+     "t": "Investigar outras IST",
+     "certa": false,
+     "porque": "É adequado."
+    }
+   ],
+   "explica": "Linfogranuloma venéreo: doxiciclina 100 mg 12/12 h por 21 dias.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Doxiciclina 100 mg 12/12 h por 21 dias; aspirar o bubão, nunca incisar"
+   }
+  },
+  {
+   "id": "q-r2-13",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Na hepatite B, qual marcador indica infecção presente?",
+   "alternativas": [
+    {
+     "t": "Anti-HBs",
+     "certa": false,
+     "porque": "Indica imunidade."
+    },
+    {
+     "t": "Anti-HBc",
+     "certa": false,
+     "porque": "Indica contato prévio."
+    },
+    {
+     "t": "Anti-HCV",
+     "certa": false,
+     "porque": "É hepatite C."
+    },
+    {
+     "t": "HBsAg",
+     "certa": true,
+     "porque": "Definição do material."
+    }
+   ],
+   "explica": "Anti-HBs vem da vacina ou cura.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Sua sorologia básica tem três marcadores: o HBsAg indica infecção presente, o anti-HBs indica imunidade (por vacina ou cura) e o anti-HBc indica contato prévio com o vírus."
+   }
+  },
+  {
+   "id": "q-r3-01",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a dor à mobilização do colo é intensa na DIP?",
+   "alternativas": [
+    {
+     "t": "Porque o colo está ulcerado",
+     "certa": false,
+     "porque": "Não é a explicação."
+    },
+    {
+     "t": "O exsudato purulento acumula-se no fundo de saco de Douglas",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque o útero está aumentado",
+     "certa": false,
+     "porque": "Não é a explicação."
+    },
+    {
+     "t": "Porque há cálculo ureteral",
+     "certa": false,
+     "porque": "Não tem relação."
+    }
+   ],
+   "explica": "Douglas é a porção mais declive da pelve.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "O exsudato purulento acumula-se por gravidade no fundo de saco de Douglas, a porção mais declive da pelve, o que explica a dor intensa à mobilização do colo."
+   }
+  },
+  {
+   "id": "q-r3-02",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o tratamento da DIP sempre cobre gonococo, clamídia e anaeróbios?",
+   "alternativas": [
+    {
+     "t": "Porque o teste sempre identifica os três",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Porque anaeróbios iniciam a infecção",
+     "certa": false,
+     "porque": "Os iniciadores são em geral IST."
+    },
+    {
+     "t": "Para prevenir candidíase",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "A etiologia é polimicrobiana",
+     "certa": true,
+     "porque": "Mesmo com um agente no teste, outros são recrutados."
+    }
+   ],
+   "explica": "A flora vaginal participa e forma abscessos.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A etiologia é polimicrobiana ."
+   }
+  },
+  {
+   "id": "q-r3-03",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Por que a DIP aumenta o risco de gravidez ectópica?",
+   "alternativas": [
+    {
+     "t": "A oclusão tubária parcial faz o óvulo progredir mal e implantar fora do útero",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque aumenta o estrogênio",
+     "certa": false,
+     "porque": "Não é o mecanismo."
+    },
+    {
+     "t": "Porque o DIU migra",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Porque o útero perde o endométrio",
+     "certa": false,
+     "porque": "Não é o mecanismo."
+    }
+   ],
+   "explica": "Oclusão completa leva à infertilidade tubária.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Quando a fibrose oclui completamente a tuba, o resultado é infertilidade por fator tubário; quando a oclusão é parcial, o óvulo fecundado progride mal e implanta-se fora do útero, daí o risco aumentado de gravidez ectópica."
+   }
+  },
+  {
+   "id": "q-r3-04",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Até quando o DIU aumenta o risco de DIP?",
+   "alternativas": [
+    {
+     "t": "Durante todo o uso",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Só após 5 anos",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Nas primeiras três semanas após a inserção",
+     "certa": true,
+     "porque": "Depois disso o DIU não causa DIP."
+    },
+    {
+     "t": "Nunca",
+     "certa": false,
+     "porque": "Há risco nas primeiras semanas."
+    }
+   ],
+   "explica": "O risco vem da passagem por colo colonizado por IST não diagnosticada.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Em relação ao dispositivo intrauterino , o risco se restringe às primeiras três semanas após a inserção, porque decorre da passagem do dispositivo por um colo eventualmente colonizado por IST não diagnosticada; depois desse período, o DIU não causa DIP."
+   }
+  },
+  {
+   "id": "q-r3-05",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "A febre é necessária para diagnosticar DIP?",
+   "alternativas": [
+    {
+     "t": "Sim, sempre acima de 38 °C",
+     "certa": false,
+     "porque": "Atrasa o tratamento."
+    },
+    {
+     "t": "Sim, é critério maior",
+     "certa": false,
+     "porque": "É critério menor."
+    },
+    {
+     "t": "Só nas gestantes",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Não, está presente em menos de 30% das pacientes",
+     "certa": true,
+     "porque": "Condicionar à febre é erro grave."
+    }
+   ],
+   "explica": "A dor pélvica está em mais de 90% e é o sintoma-guia.",
+   "pegadinha": "Não esperar febre para tratar.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A febre está presente em menos de 30% das pacientes; condicionar o diagnóstico à febre é um erro grave que atrasa o tratamento."
+   }
+  },
+  {
+   "id": "q-r3-06",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Pelo PCDT-IST, qual combinação fecha o diagnóstico de DIP?",
+   "alternativas": [
+    {
+     "t": "Três critérios maiores e um menor, ou um elaborado",
+     "certa": true,
+     "porque": "Regra do material."
+    },
+    {
+     "t": "Dois maiores apenas",
+     "certa": false,
+     "porque": "Insuficiente."
+    },
+    {
+     "t": "Febre e leucocitose",
+     "certa": false,
+     "porque": "São menores."
+    },
+    {
+     "t": "Ultrassonografia normal",
+     "certa": false,
+     "porque": "Não exclui nem confirma."
+    }
+   ],
+   "explica": "Critérios mínimos do CDC já justificam tratamento empírico.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "O protocolo do Ministério da Saúde, apresentado em aula, agrupa os achados em critérios maiores, menores e elaborados (Tabela 3.1) e exige três critérios maiores e um menor, ou um critério elaborado ."
+   }
+  },
+  {
+   "id": "q-r3-07",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Mulher em idade fértil com dor pélvica. Qual exame é obrigatório antes de outra hipótese?",
+   "alternativas": [
+    {
+     "t": "Ultrassonografia transvaginal",
+     "certa": false,
+     "porque": "Não é obrigatória."
+    },
+    {
+     "t": "Laparoscopia",
+     "certa": false,
+     "porque": "Só em dúvida ou gravidade."
+    },
+    {
+     "t": "β-hCG",
+     "certa": true,
+     "porque": "Excluir gravidez ectópica."
+    },
+    {
+     "t": "Urocultura",
+     "certa": false,
+     "porque": "Não é a prioridade descrita."
+    }
+   ],
+   "explica": "A gravidez ectópica deve ser excluída primeiro.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "O β-hCG é obrigatório em toda mulher em idade fértil com dor pélvica, porque a gravidez ectópica deve ser excluída antes de qualquer outra hipótese."
+   }
+  },
+  {
+   "id": "q-r3-08",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "DIP leve em ambulatório. Qual o esquema?",
+   "alternativas": [
+    {
+     "t": "Azitromicina dose única",
+     "certa": false,
+     "porque": "Insuficiente."
+    },
+    {
+     "t": "Ceftriaxona 500 mg IM + doxiciclina e metronidazol por 14 dias",
+     "certa": true,
+     "porque": "Esquema ambulatorial."
+    },
+    {
+     "t": "Metronidazol isolado",
+     "certa": false,
+     "porque": "Não cobre gonococo e clamídia."
+    },
+    {
+     "t": "Ceftriaxona isolada",
+     "certa": false,
+     "porque": "Não cobre clamídia e anaeróbios."
+    }
+   ],
+   "explica": "Reavaliar em 72 horas.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Ceftriaxona 500 mg IM dose única + doxiciclina 100 mg VO 12/12 h por 14 dias + metronidazol 500 mg VO 12/12 h por 14 dias"
+   }
+  },
+  {
+   "id": "q-r3-09",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Gestante de 14 semanas com DIP. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Internação e clindamicina com gentamicina IV",
+     "certa": true,
+     "porque": "Doxiciclina é contraindicada."
+    },
+    {
+     "t": "Tratamento ambulatorial com doxiciclina",
+     "certa": false,
+     "porque": "Contraindicada na gestação."
+    },
+    {
+     "t": "Aguardar o parto",
+     "certa": false,
+     "porque": "Não é conduta."
+    },
+    {
+     "t": "Só metronidazol",
+     "certa": false,
+     "porque": "Não cobre o espectro."
+    }
+   ],
+   "explica": "Gestação é critério de internação.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Gestante de 14 semanas com DIP: internação obrigatória e clindamicina com gentamicina por via intravenosa."
+   }
+  },
+  {
+   "id": "q-r3-10",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Paciente em tratamento ambulatorial de DIP sem melhora em 72 horas. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Manter o esquema por mais 14 dias",
+     "certa": false,
+     "porque": "Não é a conduta."
+    },
+    {
+     "t": "Dar alta com analgésico",
+     "certa": false,
+     "porque": "Não é a conduta."
+    },
+    {
+     "t": "Trocar só para fluconazol",
+     "certa": false,
+     "porque": "Não faz sentido."
+    },
+    {
+     "t": "Internar, antibiótico IV e nova ultrassonografia para procurar abscesso",
+     "certa": true,
+     "porque": "Falha terapêutica."
+    }
+   ],
+   "explica": "Ausência de melhora em 72 horas é critério de internação.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Paciente sem melhora após 72 horas de tratamento ambulatorial: falha terapêutica, com internação, antibiótico intravenoso e nova ultrassonografia para procurar abscesso."
+   }
+  },
+  {
+   "id": "q-r3-11",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Mulher com DIP prévia tem dor no hipocôndrio direito irradiada ao ombro, pior à inspiração; USG de vias biliares normal. O que suspeitar?",
+   "alternativas": [
+    {
+     "t": "Colecistite aguda",
+     "certa": false,
+     "porque": "USG biliar seria alterada."
+    },
+    {
+     "t": "Pneumonia",
+     "certa": false,
+     "porque": "Não é o quadro."
+    },
+    {
+     "t": "Síndrome de Fitz-Hugh-Curtis",
+     "certa": true,
+     "porque": "Peri-hepatite pela disseminação da clamídia."
+    },
+    {
+     "t": "Apendicite",
+     "certa": false,
+     "porque": "Dor em fossa ilíaca direita."
+    }
+   ],
+   "explica": "Aderências em corda de violino na laparoscopia; tratamento igual ao da DIP.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "A síndrome de Fitz-Hugh-Curtis é uma peri-hepatite causada pela disseminação peritoneal ascendente, sobretudo da clamídia, que inflama a cápsula de Glisson."
+   }
+  },
+  {
+   "id": "q-r3-12",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Por quanto tempo antes do diagnóstico as parcerias da paciente com DIP são tratadas?",
+   "alternativas": [
+    {
+     "t": "Últimos 90 dias",
+     "certa": false,
+     "porque": "É o prazo da sífilis."
+    },
+    {
+     "t": "Últimos 60 dias",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Últimos 7 dias",
+     "certa": false,
+     "porque": "Não é o prazo."
+    },
+    {
+     "t": "Últimos 12 meses",
+     "certa": false,
+     "porque": "Não é o prazo."
+    }
+   ],
+   "explica": "Ceftriaxona 500 mg IM e azitromicina 1 g VO dose única.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "As parcerias sexuais dos últimos 60 dias são tratadas empiricamente para gonococo e clamídia, com ceftriaxona 500 mg intramuscular e azitromicina 1 g por via oral em dose única, sem aguardar exames, e o casal mantém abstinência até o fim do tratamento."
+   }
+  },
+  {
+   "id": "q-r4-01",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que os LARC têm falha inferior a 1%?",
+   "alternativas": [
+    {
+     "t": "Não dependem da adesão diária",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque contêm mais hormônio",
+     "certa": false,
+     "porque": "O DIU de cobre não tem hormônio."
+    },
+    {
+     "t": "Porque protegem contra IST",
+     "certa": false,
+     "porque": "Não protegem."
+    },
+    {
+     "t": "Porque são definitivos",
+     "certa": false,
+     "porque": "São reversíveis."
+    }
+   ],
+   "explica": "DIU e implante são os mais eficazes no uso típico.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "A Tabela 4.1 mostra que os métodos reversíveis de longa duração (LARC, do inglês long-acting reversible contraception ), DIU e implante, têm falha inferior a 1% porque não dependem da adesão diária."
+   }
+  },
+  {
+   "id": "q-r4-02",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual o principal risco dos contraceptivos combinados?",
+   "alternativas": [
+    {
+     "t": "Câncer de ovário",
+     "certa": false,
+     "porque": "O risco diminui com o uso."
+    },
+    {
+     "t": "Tromboembolismo venoso",
+     "certa": true,
+     "porque": "O estrogênio aumenta fatores de coagulação."
+    },
+    {
+     "t": "Anemia",
+     "certa": false,
+     "porque": "Reduzem o fluxo e a anemia."
+    },
+    {
+     "t": "Ganho ósseo",
+     "certa": false,
+     "porque": "Não é o descrito."
+    }
+   ],
+   "explica": "O mesmo mecanismo explica as contraindicações.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "O principal risco é o tromboembolismo venoso , porque o estrogênio aumenta a síntese hepática de fatores de coagulação."
+   }
+  },
+  {
+   "id": "q-r4-03",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Usuária de pílula combinada começa a ter enxaqueca com aura. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Manter e dar analgésico",
+     "certa": false,
+     "porque": "Categoria 4."
+    },
+    {
+     "t": "Trocar por outra pílula combinada",
+     "certa": false,
+     "porque": "Também tem estrogênio."
+    },
+    {
+     "t": "Reduzir a dose pela metade",
+     "certa": false,
+     "porque": "Não resolve."
+    },
+    {
+     "t": "Suspender o método imediatamente",
+     "certa": true,
+     "porque": "Risco de AVC isquêmico."
+    }
+   ],
+   "explica": "Aura com estrogênio aumenta o risco de AVC isquêmico.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "A enxaqueca com aura merece atenção especial: a aura reflete alteração do fluxo cerebral, e a associação com estrogênio aumenta o risco de acidente vascular cerebral isquêmico; por isso, se a aura surgir durante o uso, o método deve ser suspenso imediatamente."
+   }
+  },
+  {
+   "id": "q-r4-04",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Lactante deseja método hormonal oral. Qual a opção?",
+   "alternativas": [
+    {
+     "t": "Pílula combinada",
+     "certa": false,
+     "porque": "Evita-se estrogênio antes de 6 semanas."
+    },
+    {
+     "t": "Adesivo combinado",
+     "certa": false,
+     "porque": "Tem estrogênio."
+    },
+    {
+     "t": "Minipílula",
+     "certa": true,
+     "porque": "Não contém estrogênio."
+    },
+    {
+     "t": "Anel vaginal",
+     "certa": false,
+     "porque": "Tem estrogênio."
+    }
+   ],
+   "explica": "A minipílula é usada continuamente, sem pausa.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "A minipílula é usada continuamente, sem pausa, e tem janela curta de tolerância a atrasos (três horas para a noretisterona, 12 horas para o desogestrel); como não contém estrogênio, é opção na lactação."
+   }
+  },
+  {
+   "id": "q-r4-05",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "O que discutir com quem pretende engravidar em breve e quer o injetável trimestral?",
+   "alternativas": [
+    {
+     "t": "Que o método é definitivo",
+     "certa": false,
+     "porque": "É reversível."
+    },
+    {
+     "t": "Que causa câncer de mama",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Que aumenta o fluxo menstrual",
+     "certa": false,
+     "porque": "Costuma causar amenorreia."
+    },
+    {
+     "t": "O retorno da fertilidade pode demorar vários meses",
+     "certa": true,
+     "porque": "Dado do material."
+    }
+   ],
+   "explica": "DMPA também pode causar ganho de peso e perda óssea reversível.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "o retorno da fertilidade após a suspensão pode demorar vários meses"
+   }
+  },
+  {
+   "id": "q-r4-06",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Mulher anticoagulada com fluxo intenso quer contracepção. Qual opção é útil?",
+   "alternativas": [
+    {
+     "t": "SIU de levonorgestrel",
+     "certa": true,
+     "porque": "Reduz fluxo e é útil em anticoaguladas."
+    },
+    {
+     "t": "DIU de cobre",
+     "certa": false,
+     "porque": "Pode aumentar o fluxo."
+    },
+    {
+     "t": "Pílula combinada",
+     "certa": false,
+     "porque": "Não é a escolha citada para anticoagulada."
+    },
+    {
+     "t": "Preservativo isolado",
+     "certa": false,
+     "porque": "Não trata o fluxo."
+    }
+   ],
+   "explica": "O SIU-LNG frequentemente leva à amenorreia.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "útil no sangramento uterino aumentado e em mulheres anticoaguladas"
+   }
+  },
+  {
+   "id": "q-r4-07",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Mulher com câncer de mama atual quer contracepção. Qual opção?",
+   "alternativas": [
+    {
+     "t": "SIU de levonorgestrel",
+     "certa": false,
+     "porque": "Também é hormonal."
+    },
+    {
+     "t": "Implante de etonogestrel",
+     "certa": false,
+     "porque": "É hormonal."
+    },
+    {
+     "t": "DIU de cobre",
+     "certa": true,
+     "porque": "Contraindica todos os hormonais."
+    },
+    {
+     "t": "Minipílula",
+     "certa": false,
+     "porque": "É hormonal."
+    }
+   ],
+   "explica": "Câncer de mama atual é categoria 4 para todos os hormonais.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Câncer de mama atual : contraindica todos os métodos hormonais, inclusive o SIU-LNG; o DIU de cobre é a opção"
+   }
+  },
+  {
+   "id": "q-r4-08",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Marina, 19 anos, nulípara, quer um método que possa esquecer. O DIU é adequado?",
+   "alternativas": [
+    {
+     "t": "Não, nulíparas não podem usar DIU",
+     "certa": false,
+     "porque": "Nuliparidade não contraindica."
+    },
+    {
+     "t": "Sim; nuliparidade não contraindica, mas cervicite não tratada sim",
+     "certa": true,
+     "porque": "Caso da aula."
+    },
+    {
+     "t": "Não, adolescentes não podem usar",
+     "certa": false,
+     "porque": "LARC é primeira linha para elas."
+    },
+    {
+     "t": "Só após ultrassonografia obrigatória",
+     "certa": false,
+     "porque": "Não é obrigatória."
+    }
+   ],
+   "explica": "Para adolescentes, LARC é primeira linha, com sigilo e dupla proteção.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Luiza: Marina, 19 anos, nulípara, quer um método que possa esquecer; o DIU é adequado, e nuliparidade não o contraindica, enquanto cervicite não tratada sim."
+   }
+  },
+  {
+   "id": "q-r4-09",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "dificil",
+   "enunciado": "Mulher em uso de carbamazepina quer contracepção. O que preferir?",
+   "alternativas": [
+    {
+     "t": "DIU ou DMPA",
+     "certa": true,
+     "porque": "Indutores enzimáticos aceleram o metabolismo hormonal."
+    },
+    {
+     "t": "Pílula combinada de baixa dose",
+     "certa": false,
+     "porque": "Perde eficácia."
+    },
+    {
+     "t": "Minipílula",
+     "certa": false,
+     "porque": "Perde eficácia."
+    },
+    {
+     "t": "Contracepção de emergência rotineira",
+     "certa": false,
+     "porque": "Não é método regular."
+    }
+   ],
+   "explica": "Carbamazepina, fenitoína e fenobarbital são indutores.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Mulheres com hipertensão, tromboembolismo ou enxaqueca com aura usam métodos sem estrogênio, e as que tomam anticonvulsivantes indutores enzimáticos (carbamazepina, fenitoína, fenobarbital), que aceleram o metabolismo dos hormônios, devem preferir DIU ou DMPA."
+   }
+  },
+  {
+   "id": "q-r4-10",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Jéssica, vítima de violência sexual há 48 horas. Qual a contracepção de emergência mais eficaz?",
+   "alternativas": [
+    {
+     "t": "Levonorgestrel 1,5 mg",
+     "certa": false,
+     "porque": "Eficácia menor e decrescente."
+    },
+    {
+     "t": "Pílula combinada",
+     "certa": false,
+     "porque": "Não é a opção citada."
+    },
+    {
+     "t": "DIU de cobre",
+     "certa": true,
+     "porque": "O mais eficaz, até 120 horas."
+    },
+    {
+     "t": "Nenhuma, passou de 24 horas",
+     "certa": false,
+     "porque": "Ainda dá tempo."
+    }
+   ],
+   "explica": "Somam-se profilaxias de IST e HIV.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Jéssica, vítima de violência sexual há 48 horas, tem no DIU de cobre a contracepção de emergência mais eficaz, além das profilaxias de IST e HIV."
+   }
+  },
+  {
+   "id": "q-r4-11",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "A contracepção de emergência é abortiva?",
+   "alternativas": [
+    {
+     "t": "Sim, impede a implantação sempre",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Não, retarda ou impede a ovulação",
+     "certa": true,
+     "porque": "Não interrompe gestação implantada."
+    },
+    {
+     "t": "Sim, se usada após 72 horas",
+     "certa": false,
+     "porque": "Não é abortiva."
+    },
+    {
+     "t": "Só o DIU é abortivo",
+     "certa": false,
+     "porque": "Não é o descrito."
+    }
+   ],
+   "explica": "Também não protege contra IST.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "A contracepção de emergência atua retardando ou impedindo a ovulação ; não interrompe uma gestação já implantada, portanto não é abortiva, e não protege contra IST."
+   }
+  },
+  {
+   "id": "q-r4-12",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Pela Lei 14.443/2022, qual exigência para a esterilização?",
+   "alternativas": [
+    {
+     "t": "Consentimento do cônjuge",
+     "certa": false,
+     "porque": "Foi dispensado."
+    },
+    {
+     "t": "35 anos e três filhos",
+     "certa": false,
+     "porque": "Não é a regra."
+    },
+    {
+     "t": "Laqueadura só fora do parto",
+     "certa": false,
+     "porque": "Pode ser no parto se pedida 60 dias antes."
+    },
+    {
+     "t": "21 anos ou mais, ou dois filhos vivos, com 60 dias entre o pedido e a cirurgia",
+     "certa": true,
+     "porque": "Regra do material."
+    }
+   ],
+   "explica": "O método deve ser considerado irreversível.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "dispensa o consentimento do cônjuge"
+   }
+  },
+  {
+   "id": "q-r5-01",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o câncer de colo é um dos mais preveníveis?",
+   "alternativas": [
+    {
+     "t": "Porque não tem relação com o HPV",
+     "certa": false,
+     "porque": "Mais de 99% se associa ao HPV."
+    },
+    {
+     "t": "A progressão leva de 10 a 20 anos, com janela para detectar lesões precursoras",
+     "certa": true,
+     "porque": "Explicação do material."
+    },
+    {
+     "t": "Porque sempre regride",
+     "certa": false,
+     "porque": "Não regride sempre."
+    },
+    {
+     "t": "Porque só ocorre após os 70 anos",
+     "certa": false,
+     "porque": "Não é o descrito."
+    }
+   ],
+   "explica": "Lesões precursoras podem ser detectadas e tratadas.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Como a progressão da infecção ao carcinoma invasivo leva em geral de 10 a 20 anos, há uma longa janela em que lesões precursoras podem ser detectadas e tratadas, o que torna esse câncer um dos mais preveníveis."
+   }
+  },
+  {
+   "id": "q-r5-02",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Qual o papel da oncoproteína E6 do HPV?",
+   "alternativas": [
+    {
+     "t": "Inativa a pRb",
+     "certa": false,
+     "porque": "É a E7."
+    },
+    {
+     "t": "Elimina o vírus",
+     "certa": false,
+     "porque": "Não é o papel."
+    },
+    {
+     "t": "Protege contra o câncer",
+     "certa": false,
+     "porque": "É o contrário."
+    },
+    {
+     "t": "Promove a degradação da p53",
+     "certa": true,
+     "porque": "Mecanismo do material."
+    }
+   ],
+   "explica": "E6 degrada p53; E7 inativa pRb.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A E6 promove a degradação da proteína supressora tumoral p53 , e a E7 inativa a proteína do retinoblastoma (pRb) , o que libera a proliferação celular e gera instabilidade genômica."
+   }
+  },
+  {
+   "id": "q-r5-03",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que a coleta precisa alcançar a zona de transformação?",
+   "alternativas": [
+    {
+     "t": "Porque é onde fica o endométrio",
+     "certa": false,
+     "porque": "Não é."
+    },
+    {
+     "t": "Porque ali não há HPV",
+     "certa": false,
+     "porque": "É o contrário."
+    },
+    {
+     "t": "Quase todas as lesões precursoras surgem ali",
+     "certa": true,
+     "porque": "Células metaplásicas imaturas são vulneráveis."
+    },
+    {
+     "t": "Porque o lugol só cora ali",
+     "certa": false,
+     "porque": "Não é o motivo."
+    }
+   ],
+   "explica": "É a região entre a junção escamocolunar original e a atual.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "As células metaplásicas imaturas são as mais vulneráveis, e por isso quase todas as lesões precursoras surgem ali; a coleta adequada precisa alcançar essa região."
+   }
+  },
+  {
+   "id": "q-r5-04",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual o novo exame primário de rastreamento do colo no SUS?",
+   "alternativas": [
+    {
+     "t": "Teste de DNA-HPV oncogênico, a cada 5 anos se negativo",
+     "certa": true,
+     "porque": "Portaria Conjunta 13/2025."
+    },
+    {
+     "t": "Citologia anual",
+     "certa": false,
+     "porque": "Não é o modelo."
+    },
+    {
+     "t": "Colposcopia de rotina",
+     "certa": false,
+     "porque": "Não é rastreamento primário."
+    },
+    {
+     "t": "Citologia a cada 5 anos",
+     "certa": false,
+     "porque": "A citologia passa a reflexa."
+    }
+   ],
+   "explica": "Faixa de 25 a 64 anos, com convocação ativa.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A Portaria Conjunta nº 13/2025 adotou o teste de DNA-HPV oncogênico como exame primário , na mesma faixa etária, com repetição a cada cinco anos se negativo, em modelo organizado com convocação ativa; a citologia passa a ser apenas exame reflexo."
+   }
+  },
+  {
+   "id": "q-r5-05",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Teste de DNA-HPV detecta HPV 16. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Citologia reflexa",
+     "certa": false,
+     "porque": "É para outros tipos oncogênicos."
+    },
+    {
+     "t": "Repetir em 5 anos",
+     "certa": false,
+     "porque": "É para não detectado."
+    },
+    {
+     "t": "Repetir em 12 meses",
+     "certa": false,
+     "porque": "É para citologia reflexa normal."
+    },
+    {
+     "t": "Colposcopia direta",
+     "certa": true,
+     "porque": "HPV 16 e 18 têm maior risco."
+    }
+   ],
+   "explica": "Sem passar pela citologia.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "HPV 16 e/ou 18 → colposcopia direta"
+   }
+  },
+  {
+   "id": "q-r5-06",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "DNA-HPV detecta outros tipos oncogênicos e a citologia reflexa é normal. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Colposcopia imediata",
+     "certa": false,
+     "porque": "Só se alterada ou persistência por 24 meses."
+    },
+    {
+     "t": "Alta e repetir em 5 anos",
+     "certa": false,
+     "porque": "Não é a conduta."
+    },
+    {
+     "t": "Repetir DNA-HPV em 12 meses",
+     "certa": true,
+     "porque": "Fluxo do material."
+    },
+    {
+     "t": "Excisão da zona de transformação",
+     "certa": false,
+     "porque": "Não há lesão."
+    }
+   ],
+   "explica": "Persistência por 24 meses indica colposcopia mesmo com citologia normal.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "se for normal, repete-se o DNA-HPV em 12 meses"
+   }
+  },
+  {
+   "id": "q-r5-07",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Mulher de 22 anos sexualmente ativa pede o preventivo. Qual a orientação?",
+   "alternativas": [
+    {
+     "t": "Rastrear anualmente desde a sexarca",
+     "certa": false,
+     "porque": "Não é a regra geral."
+    },
+    {
+     "t": "Não rastrear antes dos 25 anos",
+     "certa": true,
+     "porque": "Infecções são em geral transitórias."
+    },
+    {
+     "t": "Fazer DNA-HPV agora",
+     "certa": false,
+     "porque": "Abaixo de 25 não se rastreia."
+    },
+    {
+     "t": "Colposcopia",
+     "certa": false,
+     "porque": "Sem indicação."
+    }
+   ],
+   "explica": "Tratar lesões que regrediriam causa dano, como parto prematuro.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Abaixo dos 25 anos não se rastreia, porque as infecções são majoritariamente transitórias e o tratamento de lesões que regrediriam causa dano, como maior risco de parto prematuro."
+   }
+  },
+  {
+   "id": "q-r5-08",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Mulher vivendo com HIV, 19 anos, sexualmente ativa. Quando rastrear?",
+   "alternativas": [
+    {
+     "t": "Após a primeira relação sexual, em qualquer idade",
+     "certa": true,
+     "porque": "Exceção para imunossuprimidas."
+    },
+    {
+     "t": "Só a partir dos 25",
+     "certa": false,
+     "porque": "A regra geral não se aplica."
+    },
+    {
+     "t": "Só a partir dos 30",
+     "certa": false,
+     "porque": "Não é a regra."
+    },
+    {
+     "t": "Não precisa rastrear",
+     "certa": false,
+     "porque": "Precisa."
+    }
+   ],
+   "explica": "Mantém o rastreamento por tempo indeterminado.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Imunossuprimidas e mulheres vivendo com HIV começam após a primeira relação sexual, em qualquer idade, e mantêm o rastreamento por tempo indeterminado."
+   }
+  },
+  {
+   "id": "q-r5-09",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "O que significa o teste de Schiller positivo na colposcopia?",
+   "alternativas": [
+    {
+     "t": "Área castanha normal",
+     "certa": false,
+     "porque": "É o epitélio normal."
+    },
+    {
+     "t": "Área acetobranca",
+     "certa": false,
+     "porque": "É o teste do ácido acético."
+    },
+    {
+     "t": "Ausência de HPV",
+     "certa": false,
+     "porque": "Não é o significado."
+    },
+    {
+     "t": "Área iodo-negativa, que não cora com lugol e é suspeita",
+     "certa": true,
+     "porque": "Definição do material."
+    }
+   ],
+   "explica": "O epitélio escamoso normal, rico em glicogênio, cora em castanho.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A solução de lugol (teste de Schiller) cora em castanho o epitélio escamoso normal, rico em glicogênio; áreas que não coram são chamadas iodo-negativas, ou Schiller positivo, e são suspeitas."
+   }
+  },
+  {
+   "id": "q-r5-10",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Como se trata habitualmente a NIC 2 ou 3?",
+   "alternativas": [
+    {
+     "t": "Excisão da zona de transformação com cirurgia de alta frequência",
+     "certa": true,
+     "porque": "Tratamento do material."
+    },
+    {
+     "t": "Apenas acompanhamento",
+     "certa": false,
+     "porque": "É a conduta na NIC 1."
+    },
+    {
+     "t": "Histerectomia sempre",
+     "certa": false,
+     "porque": "Não é o habitual."
+    },
+    {
+     "t": "Vacina de HPV",
+     "certa": false,
+     "porque": "Não trata infecção existente."
+    }
+   ],
+   "explica": "Teste de cura: DNA-HPV em 12 meses.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "NIC 2, NIC 3 e adenocarcinoma in situ são tratados, habitualmente por excisão da zona de transformação com cirurgia de alta frequência, procedimento ambulatorial sob anestesia local que permite avaliar as margens e excluir microinvasão."
+   }
+  },
+  {
+   "id": "q-r6-01",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual o principal fator de risco para câncer de mama?",
+   "alternativas": [
+    {
+     "t": "Amamentação",
+     "certa": false,
+     "porque": "É protetora."
+    },
+    {
+     "t": "Idade",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Atividade física",
+     "certa": false,
+     "porque": "É protetora."
+    },
+    {
+     "t": "Menopausa precoce",
+     "certa": false,
+     "porque": "Não é fator de risco citado."
+    }
+   ],
+   "explica": "Cerca de 60% dos casos entre 50 e 74 anos.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "O principal fator de risco é a idade : cerca de 60% dos casos ocorrem entre 50 e 74 anos, e aproximadamente 23% entre 40 e 49 anos."
+   }
+  },
+  {
+   "id": "q-r6-02",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Pela orientação do Ministério da Saúde de 2025, qual o rastreamento ativo do câncer de mama?",
+   "alternativas": [
+    {
+     "t": "Mamografia anual a partir dos 40",
+     "certa": false,
+     "porque": "É a recomendação da SBM."
+    },
+    {
+     "t": "Autoexame mensal",
+     "certa": false,
+     "porque": "Não é rastreamento."
+    },
+    {
+     "t": "Mamografia bienal de 50 a 74 anos",
+     "certa": true,
+     "porque": "Faixa atualizada."
+    },
+    {
+     "t": "Mamografia bienal de 50 a 69",
+     "certa": false,
+     "porque": "Foi ampliada até 74."
+    }
+   ],
+   "explica": "Entre 40 e 49, por decisão compartilhada.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "O rastreamento ativo , com mamografia a cada dois anos em mulheres assintomáticas, passou a abranger a faixa de 50 a 74 anos , antes limitada a 69."
+   }
+  },
+  {
+   "id": "q-r6-03",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Por que o autoexame não é método de rastreamento?",
+   "alternativas": [
+    {
+     "t": "Não reduziu mortalidade e aumentou biópsias desnecessárias",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Porque é caro",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Porque só serve para homens",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Porque substitui a mamografia",
+     "certa": false,
+     "porque": "Não substitui."
+    }
+   ],
+   "explica": "Estimula-se a conscientização sobre as próprias mamas.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "O autoexame não é método de rastreamento, porque não reduziu a mortalidade nos estudos e aumentou biópsias desnecessárias; estimula-se a conscientização, isto é, que a mulher conheça suas mamas e procure atendimento diante de alterações."
+   }
+  },
+  {
+   "id": "q-r6-04",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Mamografia BI-RADS 3. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Biópsia imediata",
+     "certa": false,
+     "porque": "É para 4 e 5."
+    },
+    {
+     "t": "Rastreamento de rotina",
+     "certa": false,
+     "porque": "É para 1 e 2."
+    },
+    {
+     "t": "Tratamento oncológico",
+     "certa": false,
+     "porque": "É para 6."
+    },
+    {
+     "t": "Controle em 6 meses",
+     "certa": true,
+     "porque": "Provavelmente benigno, até 2%."
+    }
+   ],
+   "explica": "Prolonga-se o controle por dois a três anos.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "A categoria 3, provavelmente benigna, tem risco de malignidade de até 2% e é acompanhada com controle em seis meses, prolongado por dois a três anos; as categorias 4 e 5 exigem biópsia."
+   }
+  },
+  {
+   "id": "q-r6-05",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Mamografia BI-RADS 4. Qual a conduta?",
+   "alternativas": [
+    {
+     "t": "Controle em 6 meses",
+     "certa": false,
+     "porque": "É para 3."
+    },
+    {
+     "t": "Complementar com ultrassom",
+     "certa": false,
+     "porque": "É para 0."
+    },
+    {
+     "t": "Biópsia",
+     "certa": true,
+     "porque": "Suspeito."
+    },
+    {
+     "t": "Rotina",
+     "certa": false,
+     "porque": "É para 1 e 2."
+    }
+   ],
+   "explica": "Categorias 4 e 5 exigem biópsia.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "A categoria 3, provavelmente benigna, tem risco de malignidade de até 2% e é acompanhada com controle em seis meses, prolongado por dois a três anos; as categorias 4 e 5 exigem biópsia."
+   }
+  },
+  {
+   "id": "q-r6-06",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Puérpera com mama vermelha, quente, dolorosa e febre. Qual a conduta com a amamentação?",
+   "alternativas": [
+    {
+     "t": "Suspender a amamentação",
+     "certa": false,
+     "porque": "Deve ser mantida."
+    },
+    {
+     "t": "Manter a amamentação e esvaziar a mama",
+     "certa": true,
+     "porque": "Mastite lactacional."
+    },
+    {
+     "t": "Amamentar só do outro lado",
+     "certa": false,
+     "porque": "Não é o descrito."
+    },
+    {
+     "t": "Suspender até terminar o antibiótico",
+     "certa": false,
+     "porque": "Não é o descrito."
+    }
+   ],
+   "explica": "Cefalexina e analgésico; flutuação indica abscesso.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "A mastite lactacional manifesta-se na puérpera com mama vermelha, quente e dolorosa e febre, geralmente por Staphylococcus aureus ; trata-se com esvaziamento da mama, manutenção da amamentação , analgésico e cefalexina."
+   }
+  },
+  {
+   "id": "q-r6-07",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual a causa mais comum de descarga papilar sanguinolenta?",
+   "alternativas": [
+    {
+     "t": "Galactorreia",
+     "certa": false,
+     "porque": "É leitosa e bilateral."
+    },
+    {
+     "t": "Mastite",
+     "certa": false,
+     "porque": "Não é a citada."
+    },
+    {
+     "t": "Papiloma intraductal",
+     "certa": true,
+     "porque": "Dado do material."
+    },
+    {
+     "t": "Descarga fisiológica",
+     "certa": false,
+     "porque": "É bilateral e só à expressão."
+    }
+   ],
+   "explica": "Descarga patológica: espontânea, unilateral, uniductal.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "A causa mais comum de descarga sanguinolenta é o papiloma intraductal ."
+   }
+  }
  ]
 }
