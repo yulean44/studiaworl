@@ -16,7 +16,7 @@ Execute `node --test tests/*.mjs`. Não são necessárias dependências para ess
 
 Para repetir a verificação de interface, execute `node tests/navegador.cjs` com o servidor local aberto e Playwright disponível no ambiente. `PLAYWRIGHT_MODULE` indica um módulo já instalado; `CHROMIUM_PATH` indica o navegador. O teste usa contas fictícias, cobre teclado, foco, quatro larguras e recuperação de conteúdo. Nunca usa uma conta real.
 
-O workflow `.github/workflows/verificacoes.yml` roda em cada pull request e em main. O job de publicação depende do sucesso dos testes e envia ao Pages apenas os arquivos públicos. O Pages deve usar a origem **GitHub Actions**, em vez da publicação legacy por branch.
+O workflow `.github/workflows/verificacoes.yml` roda em cada pull request e em main. O job de publicação depende do sucesso dos testes e envia ao Pages apenas os arquivos públicos. O Pages deve usar a origem **GitHub Actions**, em vez da publicação legacy por branch. Essa seleção é feita por quem administra o repositório em Settings → Pages → Build and deployment → Source. Enquanto a origem permanecer legacy, ela também pode publicar fora deste workflow; o job mostra um aviso.
 
 Para reverter uma publicação, reverta o commit pelo Git e deixe o mesmo workflow testar e publicar a reversão. Nunca restaure arquivos de progresso de usuários como parte de um rollback do site. A versão de cache deve aumentar em todos os imports/URLs a cada alteração publicada, conforme `AGENTS.md`.
 

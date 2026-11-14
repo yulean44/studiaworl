@@ -38,13 +38,13 @@ jobs:
       url: ${{ steps.publicacao.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Usar publicação por Actions
+      - name: Conferir origem da publicação
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           origem=$(gh api "repos/$GITHUB_REPOSITORY/pages" --jq .build_type)
           if [ "$origem" != workflow ]; then
-            gh api --method PUT "repos/$GITHUB_REPOSITORY/pages" -f build_type=workflow --silent
+            echo "::warning::No repositório, abra Settings > Pages > Build and deployment > Source e selecione GitHub Actions. A origem legacy ainda permite publicação fora destes testes."
           fi
       - uses: actions/configure-pages@v5
       - name: Preparar somente os arquivos públicos
