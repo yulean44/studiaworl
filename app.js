@@ -1,13 +1,13 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=59";
-import { ic, ICONES_MATERIA } from "./icons.js?v=59";
-import { FIG } from "./figuras.js?v=59";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=59";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=59";
-import { semanaDeEstudos } from "./relatorio.js?v=59";
-import { carregaMaterias } from "./conteudo.js?v=59";
-import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=59";
-import { abrePacote } from "./pacote.js?v=59";
-import { criaDiaHora } from "./diahora.js?v=59";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=60";
+import { ic, ICONES_MATERIA } from "./icons.js?v=60";
+import { FIG } from "./figuras.js?v=60";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=60";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=60";
+import { semanaDeEstudos } from "./relatorio.js?v=60";
+import { carregaMaterias } from "./conteudo.js?v=60";
+import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=60";
+import { abrePacote } from "./pacote.js?v=60";
+import { criaDiaHora } from "./diahora.js?v=60";
 
 /* =========================================================
    utilidades
@@ -622,7 +622,7 @@ async function proximaFesta() {
       aoFechar: () => { pacoteAberto = false; if (!modalAberto) { main.inert = false; nav.inert = false; } setTimeout(proximaFesta, 60); } };
     /* 3D quando o aparelho permite; senão a versão em HTML */
     let abriu = false;
-    try { const p3 = await import("./pacote3d.js?v=59"); if (p3.podePacote3d()) abriu = p3.abrePacote3d(dados); } catch (e) { console.warn("pacote 3D indisponível", e); }
+    try { const p3 = await import("./pacote3d.js?v=60"); if (p3.podePacote3d()) abriu = p3.abrePacote3d(dados); } catch (e) { console.warn("pacote 3D indisponível", e); }
     if (!abriu) abrePacote(dados);
     return;
   }
@@ -722,7 +722,7 @@ temaMundo = () => mundo?.tema?.(temaAtivo());
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=59"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=60"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -2022,7 +2022,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=59");
+      const mod = await import("./conta.js?v=60");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }

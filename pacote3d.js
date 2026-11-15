@@ -138,6 +138,7 @@ function materialHolo(map) {
         c += iri*m*.16*forca + faixa*.32*forca*(.4+.6*m) + pisca*m*.9*forca;
         float fres = pow(1.-max(dot(vN,vV),0.),3.); c += fres*.12;
         gl_FragColor=vec4(c,1.);
+        #include <tonemapping_fragment>
         #include <colorspace_fragment>
       }`,
   });
@@ -194,6 +195,18 @@ export function abrePacote3d({ titulo, nome, raridade, rar = "comum", numero, to
   const carta = new THREE.Group(); carta.add(frente, verso, borda);
   carta.scale.setScalar(.94); carta.position.set(0, -.1, 0); carta.rotation.y = Math.PI; raiz.add(carta);
 
+  /* aura atrás da carta (aparece na revelação; mais forte em raro e lendário) */
+  const forteRar = rar === "lendario" ? 1 : rar === "raro" ? .75 : rar === "incomum" ? .5 : .35;
+  const auraTex = (() => { const c = document.createElement("canvas"); c.width = c.height = 256; const g = c.getContext("2d"); const r = g.createRadialGradient(128, 128, 0, 128, 128, 128); r.addColorStop(0, "rgba(255,255,255,1)"); r.addColorStop(.25, "rgba(255,255,255,.55)"); r.addColorStop(1, "rgba(255,255,255,0)"); g.fillStyle = r; g.fillRect(0, 0, 256, 256); const t = new THREE.CanvasTexture(c); return t; })();
+  const aura = new THREE.Mesh(new THREE.PlaneGeometry(3.2, 3.2), new THREE.MeshBasicMaterial({ map: auraTex, color: cores[1], transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending }));
+  aura.position.z = -.25; raiz.add(aura);
+  const NB = rar === "lendario" ? 60 : rar === "raro" ? 36 : 0, brilhos = [];
+  const geoB = new THREE.BufferGeometry(), posB = new Float32Array(Math.max(1, NB) * 3);
+  geoB.setAttribute("position", new THREE.BufferAttribute(posB, 3));
+  const matB = new THREE.PointsMaterial({ color: rar === "lendario" ? "#ffe6a3" : "#d6e6ff", size: .035, transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true });
+  const pontos = new THREE.Points(geoB, matB); pontos.frustumCulled = false; raiz.add(pontos);
+  for (let i = 0; i < NB; i++) brilhos.push({ a: Math.random() * 6.28, r: .75 + Math.random() * .45, y: (Math.random() - .5) * 1.5, v: .25 + Math.random() * .45, f: Math.random() * 6.28 });
+
   /* sombra de contato */
   const sombra = new THREE.Mesh(new THREE.PlaneGeometry(1.8, .5), new THREE.MeshBasicMaterial({ map: texSombra(), transparent: true, depthWrite: false }));
   sombra.position.set(0, -PH / 2 - .14, -.2); sombra.rotation.x = -Math.PI / 2.4; raiz.add(sombra);
@@ -216,7 +229,7 @@ export function abrePacote3d({ titulo, nome, raridade, rar = "comum", numero, to
   enquadra(); addEventListener("resize", enquadra);
 
   /* estado */
-  let p = 0, fase = "entra", t0 = performance.now(), ultimo = t0, arrasto = null, laco = 0;
+  let p = 0, fase = "entra", t0 = performance.now(), ultimo = t0, arrasto = null;
   const incl = { x: 0, y: 0, ax: 0, ay: 0 }, tiraVel = new THREE.Vector3(), tiraRot = new THREE.Vector3();
   let tFase = 0, revelouConf = false;
 
@@ -231,7 +244,7 @@ export function abrePacote3d({ titulo, nome, raridade, rar = "comum", numero, to
         const a = Math.min(1.25, d * 2.6), dy = y - yL;
         pos.setXYZ(i, x - d * .05, yL + dy * Math.cos(a) - z * Math.sin(a) * .3, z * Math.cos(a) + dy * Math.sin(a) + d * .12);
       }
-      pos.needsUpdate = true; m.geometry.computeVertexNormals();
+      pos.needsUpdate = true; m.geometry.computeVertexNormals(); m.geometry.computeBoundingSphere();
     }
   }
 
@@ -259,10 +272,10 @@ export function abrePacote3d({ titulo, nome, raridade, rar = "comum", numero, to
 
   function rasga() {
     if (fase === "rasga" || fase === "voa" || fase === "revela" || fase === "pronto") return;
-    fase = "rasga"; tFase = 0; dica.textContent = ""; $("#pkAbrir").disabled = true;
+    fase = "rasga"; tFase = 0; dica.textContent = ""; $("#pkAbrir").disabled = true; veu.classList.add("abrindo");
   }
   function soltaTira() {
-    fase = "voa"; tFase = 0;
+    fase = "voa"; tFase = 0; navigator.vibrate?.(12);
     tira.updateMatrixWorld(); tiraVel.set(.9, 2.6, 1.6); tiraRot.set(-2.2, .6, 2.8);
     [mF, mV].forEach(m => { m.transparent = true; });
   }
@@ -287,6 +300,7 @@ export function abrePacote3d({ titulo, nome, raridade, rar = "comum", numero, to
     const dt = Math.min(.05, (now - ultimo) / 1000); ultimo = now; tFase += dt;
     const tt = (now - t0) / 1000;
     incl.ax += (incl.x - incl.ax) * Math.min(1, dt * 7); incl.ay += (incl.y - incl.ay) * Math.min(1, dt * 7);
+    key.position.set(1.5 + incl.ax * 1.6, 2.2 - incl.ay * 1.2, 3);
 
     if (fase === "entra") {
       const k = clamp(tFase / .75, 0, 1), e = easeBack(k);
@@ -295,7 +309,8 @@ export function abrePacote3d({ titulo, nome, raridade, rar = "comum", numero, to
     }
     if (fase === "espera" || fase === "volta" || fase === "rasga") {
       const bob = Math.sin(tt * 1.6) * .018;
-      pacote.position.y = bob; pacote.rotation.y = incl.ax * .32 + Math.sin(tt * .9) * .05; pacote.rotation.x = incl.ay * .18;
+      const ciclo = (tt % 4.2) - 3.4, cutuca = fase === "espera" && !arrasto && p === 0 && ciclo > 0 ? Math.sin(ciclo * 14) * Math.exp(-ciclo * 5) * .07 : 0;
+      pacote.position.y = bob; pacote.rotation.y = incl.ax * .32 + Math.sin(tt * .9) * .05; pacote.rotation.x = incl.ay * .18; pacote.rotation.z = cutuca;
     }
     if (fase === "volta") { p = Math.max(0, p - dt * 5 * Math.max(.2, p)); curvaTira(); if (p <= 0) fase = "espera"; }
     if (fase === "rasga") { p = Math.min(1, p + dt * 5.5); curvaTira(); if (p >= 1) soltaTira(); }
@@ -327,6 +342,16 @@ export function abrePacote3d({ titulo, nome, raridade, rar = "comum", numero, to
       carta.position.y = -.08 + Math.sin(tt * 1.4) * .012;
     }
     holo.uniforms.t.value = tt; holo.uniforms.incl.value.set(carta.rotation.y, carta.rotation.x);
+    if (fase === "revela" || fase === "pronto") {
+      const alvo = (fase === "pronto" ? .35 + Math.sin(tt * 1.8) * .06 : .55) * forteRar;
+      aura.material.opacity += (alvo - aura.material.opacity) * Math.min(1, dt * 4);
+      aura.position.set(carta.position.x, carta.position.y, carta.position.z - .25);
+      if (NB) {
+        matB.opacity += (.9 - matB.opacity) * Math.min(1, dt * 3);
+        for (let i = 0; i < NB; i++) { const b = brilhos[i]; b.a += b.v * dt; posB[i * 3] = carta.position.x + Math.cos(b.a) * b.r; posB[i * 3 + 1] = carta.position.y + b.y + Math.sin(tt * 1.3 + b.f) * .05; posB[i * 3 + 2] = carta.position.z + Math.sin(b.a) * b.r * .35 - .1; }
+        geoB.attributes.position.needsUpdate = true; matB.size = .03 + Math.sin(tt * 4) * .006;
+      }
+    }
     flash.intensity *= Math.exp(-dt * 5);
 
     /* confete com gravidade, arrasto do ar e giro */
@@ -342,14 +367,18 @@ export function abrePacote3d({ titulo, nome, raridade, rar = "comum", numero, to
     if (vivos || revelouConf) conf.instanceMatrix.needsUpdate = true;
 
     renderer.render(scene, camera);
-    laco = requestAnimationFrame(quadro);
+    /* resolução adaptativa: se os primeiros quadros pesarem, baixa a densidade de pixels */
+    if (amostras < 40) { amostras++; somaDt += dt; if (amostras === 40 && somaDt / 40 > .024 && renderer.getPixelRatio() > 1.25) { renderer.setPixelRatio(1.25); enquadra(); } }
   }
-  laco = requestAnimationFrame(quadro);
+  let amostras = 0, somaDt = 0;
+  cv.style.opacity = "0";
+  const comeca = () => { ultimo = t0 = performance.now(); cv.style.opacity = ""; renderer.setAnimationLoop(quadro); };
+  (renderer.compileAsync ? renderer.compileAsync(scene, camera).catch(() => {}) : Promise.resolve()).then(comeca);
 
   function fecha(depois) {
     veu.removeEventListener("keydown", tecla);
     veu.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 180, easing: "ease-out", fill: "forwards" }).finished.then(() => {
-      cancelAnimationFrame(laco); removeEventListener("resize", enquadra);
+      renderer.setAnimationLoop(null); removeEventListener("resize", enquadra);
       scene.traverse(o => { o.geometry?.dispose?.(); const ms = Array.isArray(o.material) ? o.material : o.material ? [o.material] : []; ms.forEach(m => { Object.values(m).forEach(v => v?.isTexture && v.dispose()); m.dispose(); }); });
       env.dispose(); pmrem.dispose(); renderer.dispose(); renderer.forceContextLoss?.();
       veu.remove(); if (anterior?.isConnected) anterior.focus?.({ preventScroll: true });
