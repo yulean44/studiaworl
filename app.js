@@ -1,11 +1,11 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=55";
-import { ic, ICONES_MATERIA } from "./icons.js?v=55";
-import { FIG } from "./figuras.js?v=55";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=55";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=55";
-import { semanaDeEstudos } from "./relatorio.js?v=55";
-import { carregaMaterias } from "./conteudo.js?v=55";
-import { criaDiaHora } from "./diahora.js?v=55";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=56";
+import { ic, ICONES_MATERIA } from "./icons.js?v=56";
+import { FIG } from "./figuras.js?v=56";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=56";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=56";
+import { semanaDeEstudos } from "./relatorio.js?v=56";
+import { carregaMaterias } from "./conteudo.js?v=56";
+import { criaDiaHora } from "./diahora.js?v=56";
 
 /* =========================================================
    utilidades
@@ -36,7 +36,7 @@ const temaAtivo = () => tema === "auto" ? temaDaHora() : tema;
 let temaAplicado = null;
 function aplicaTema() {
   const t = temaAtivo(); temaAplicado = t;
-  const tc = { claro: "#f5f8fb", amanhecer: "#e9f2f9", dourado: "#fbf4e6", meianoite: "#05070d", cristal: "#10283a", aurora: "#191433", floresta: "#11261a" }[t] || "#141d31";
+  const tc = { claro: "#f5f8fb", amanhecer: "#eef6fa", dourado: "#fcf6ec", meianoite: "#05070d", cristal: "#10283a", aurora: "#191433", floresta: "#11261a" }[t] || "#121a2d";
   document.querySelector('meta[name="theme-color"]')?.setAttribute("content", tc);
   if (t === "noite") document.documentElement.removeAttribute("data-tema"); else document.documentElement.setAttribute("data-tema", t);
   temaMundo();
@@ -705,7 +705,7 @@ temaMundo = () => mundo?.tema?.(temaAtivo());
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=55"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=56"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -2000,7 +2000,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=55");
+      const mod = await import("./conta.js?v=56");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }

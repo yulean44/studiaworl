@@ -9,14 +9,14 @@
 (()=>{try{let t=localStorage.getItem("pe:temaV4")?JSON.parse(localStorage.getItem("pe:tema2")||'"auto"'):"auto";
 if(t==="auto"){const h=new Date().getHours();t=h>=5&&h<12?"amanhecer":h>=12&&h<18?"dourado":"noite";}
 if(t!=="noite")document.documentElement.setAttribute("data-tema",t);
-document.querySelector('meta[name="theme-color"]').setAttribute("content",{claro:"#f5f8fb",amanhecer:"#e9f2f9",dourado:"#fbf4e6",meianoite:"#05070d",cristal:"#10283a",aurora:"#191433",floresta:"#11261a"}[t]||"#141d31");}catch(e){}})();
+document.querySelector('meta[name="theme-color"]').setAttribute("content",{claro:"#f5f8fb",amanhecer:"#eef6fa",dourado:"#fcf6ec",meianoite:"#05070d",cristal:"#10283a",aurora:"#191433",floresta:"#11261a"}[t]||"#121a2d");}catch(e){}})();
 </script>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=55">
-<link rel="icon" type="image/png" href="favicon.png?v=55">
-<link rel="manifest" href="manifest.webmanifest?v=55">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=56">
+<link rel="icon" type="image/png" href="favicon.png?v=56">
+<link rel="manifest" href="manifest.webmanifest?v=56">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -962,18 +962,6 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 @media (max-width:400px){.chipi .lbar{width:38px}.topo{gap:5px}.topo .chipi{padding-left:11px;padding-right:11px}}
 @media (prefers-reduced-motion:reduce){.diahora,.diahora *{transition:none}.diahora:active{transform:none}}
 
-/* raios de luz vindos do canto (sol); mais quentes na golden hour, só um fio de luar à noite */
-.raios{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden;--raio-cor:rgba(255,255,255,.55);--raio-op:.55}
-.raios i{position:absolute;width:220vmax;height:220vmax;left:calc(86% - 110vmax);top:calc(-8% - 110vmax);opacity:var(--raio-op);
-  background:conic-gradient(from 180deg,transparent 0deg,transparent 18deg,var(--raio-cor) 24deg,transparent 31deg,transparent 40deg,var(--raio-cor) 43deg,transparent 47deg,transparent 58deg,var(--raio-cor) 66deg,transparent 78deg,transparent 88deg,var(--raio-cor) 92deg,transparent 97deg,transparent 110deg,var(--raio-cor) 117deg,transparent 126deg,transparent 360deg);
-  -webkit-mask:radial-gradient(closest-side,#000 0%,rgba(0,0,0,.6) 30%,transparent 66%);mask:radial-gradient(closest-side,#000 0%,rgba(0,0,0,.6) 30%,transparent 66%);
-  filter:blur(12px);animation:raios 38s ease-in-out infinite alternate;will-change:transform}
-@keyframes raios{from{transform:rotate(-4deg)}to{transform:rotate(5deg)}}
-:root[data-tema="dourado"] .raios{--raio-cor:rgba(255,186,100,.42);--raio-op:1}
-:root[data-tema="amanhecer"] .raios,:root[data-tema="claro"] .raios{--raio-cor:rgba(255,255,255,.85);--raio-op:1}
-:root:not([data-tema]) .raios,:root[data-tema="meianoite"] .raios,:root[data-tema="cristal"] .raios,:root[data-tema="aurora"] .raios,:root[data-tema="floresta"] .raios{--raio-cor:rgba(180,205,255,.10);--raio-op:1}
-body.iniciando .raios{visibility:hidden}
-@media (prefers-reduced-motion:reduce){.raios i{animation:none}}
 
 /* painel do céu em Meu mundo: hora e nuvens */
 .ceu-ctl{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;padding:2px 0 10px;margin-bottom:10px;border-bottom:1px solid var(--line)}
@@ -1001,20 +989,38 @@ body.iniciando .raios{visibility:hidden}
 :root[data-tema="claro"],:root[data-tema="amanhecer"]{--papel:#ffffff}:root[data-tema="dourado"]{--papel:#fffcf6}
 body.estudo .ws .doc,body.estudo .leitura-topo,body.estudo .trilha,body.estudo .consulta,body.estudo .arvore,body.estudo .ws-main > .vidro,body.estudo .ws-main .card{background:var(--papel);backdrop-filter:none;-webkit-backdrop-filter:none}
 body.com-consulta .consulta{background:var(--papel);backdrop-filter:none;-webkit-backdrop-filter:none}
-body.estudo .raios{display:none}
 body.estudo #espaco{opacity:.35}
 body.estudo .nav{background:color-mix(in srgb,var(--papel) 94%,transparent)}
 
 /* fundo da página por baixo da barra do iPhone e do "elástico" da rolagem: mesma cor do topo do tema */
-html{background-color:#141d31}
+html{background-color:#121a2d}
 html[data-tema="meianoite"]{background-color:#05070d}html[data-tema="cristal"]{background-color:#10283a}html[data-tema="aurora"]{background-color:#191433}html[data-tema="floresta"]{background-color:#11261a}
-html[data-tema="claro"]{background-color:#f5f8fb}html[data-tema="amanhecer"]{background-color:#e9f2f9}html[data-tema="dourado"]{background-color:#fbf4e6}
+html[data-tema="claro"]{background-color:#f5f8fb}html[data-tema="amanhecer"]{background-color:#eef6fa}html[data-tema="dourado"]{background-color:#fcf6ec}
+
+/* ================= períodos do dia, refinados (manhã · tarde · noite) ================= */
+/* manhã: ar fresco, céu limpo, um brilho de nascer do sol baixo à esquerda */
+:root[data-tema="amanhecer"]{
+  --glass:rgba(255,255,255,.68); --line:rgba(30,60,90,.10); --line2:rgba(30,60,90,.17);
+  --fundo:radial-gradient(60% 55% at 32% 42%,#ffffff 0%,rgba(255,255,255,0) 70%),radial-gradient(55% 45% at 6% 104%,rgba(255,212,186,.42),transparent 70%),radial-gradient(50% 40% at 90% 6%,rgba(196,234,218,.55),transparent 70%),linear-gradient(180deg,#eef6fa 0%,#d8e7f1 100%);
+}
+:root[data-tema="amanhecer"] .vidro{box-shadow:0 1px 2px rgba(30,60,90,.05),0 14px 36px rgba(40,80,120,.09),inset 0 1px 0 rgba(255,255,255,.9)}
+/* tarde: luz de golden hour mais macia e menos amarelada */
+:root[data-tema="dourado"]{
+  --glass:rgba(255,252,246,.8);
+  --fundo:radial-gradient(60% 55% at 32% 42%,#fffbf4 0%,rgba(255,251,244,0) 70%),radial-gradient(55% 50% at 94% 2%,rgba(255,198,132,.40),transparent 70%),radial-gradient(50% 45% at 4% 102%,rgba(212,226,188,.42),transparent 70%),linear-gradient(180deg,#fcf6ec 0%,#f3e7d2 100%);
+}
+:root[data-tema="dourado"] .vidro{box-shadow:0 1px 2px rgba(110,80,30,.06),0 14px 36px rgba(130,95,40,.09),inset 0 1px 0 rgba(255,255,255,.9)}
+/* noite: azul profundo, brilho de lua no alto e um horizonte leve embaixo */
+:root:not([data-tema]){
+  --glass:rgba(20,30,50,.62); --line:rgba(190,210,255,.10); --line2:rgba(190,210,255,.17);
+  --fundo:radial-gradient(60% 50% at 30% 42%,#1f2e4b 0%,rgba(31,46,75,0) 70%),radial-gradient(38% 30% at 88% 8%,rgba(160,184,236,.13),transparent 70%),radial-gradient(70% 38% at 50% 112%,rgba(76,106,168,.22),transparent 70%),linear-gradient(180deg,#121a2d 0%,#0a0f1c 100%);
+}
+:root:not([data-tema]) .vidro{box-shadow:0 1px 0 rgba(0,0,0,.2),0 18px 44px rgba(0,0,0,.32),inset 0 1px 0 rgba(200,220,255,.07)}
 </style>
 </head>
 <body class="iniciando">
 <div id="inicioApp" role="status" aria-live="polite"><div class="vidro card"><h1>Planeta de Estudos</h1><p id="inicioStatus">Preparando seu planeta…</p><button class="btn pri" id="inicioTentar" hidden>Tentar novamente</button></div></div>
 <div id="espaco"></div>
-<div class="raios" aria-hidden="true"><i></i></div>
 <div class="marca">Planeta de Estudos</div>
 <nav class="nav" aria-label="Navegação" id="nav" inert></nav>
 <main class="main" inert>
@@ -1033,6 +1039,6 @@ html[data-tema="claro"]{background-color:#f5f8fb}html[data-tema="amanhecer"]{bac
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=55"></script>
+<script type="module" src="app.js?v=56"></script>
 </body>
 </html>

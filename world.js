@@ -3,7 +3,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import * as SkeletonUtils from "three/addons/utils/SkeletonUtils.js";
-import { CRIATURAS, DECOS } from "./data.js?v=55";
+import { CRIATURAS, DECOS } from "./data.js?v=56";
 
 /* ---------- ruído ---------- */
 function hash(x, y, z) { let h = x * 374761393 + y * 668265263 + z * 2147483647; h = (h ^ (h >>> 13)) * 1274126177; return ((h ^ (h >>> 16)) >>> 0) / 4294967295; }
@@ -107,7 +107,7 @@ function fazDeco(k, seed) {
 const loader = new GLTFLoader();
 const cache = {};
 function carregaGLB(id) {
-  return (cache[id] ||= import(`./m/${id}.js?v=55`).then(mod => {
+  return (cache[id] ||= import(`./m/${id}.js?v=56`).then(mod => {
     const bin = atob(mod.default), buf = new Uint8Array(bin.length);
     for (let i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
     return new Promise((res, rej) => loader.parse(buf.buffer, "", res, rej));
@@ -449,12 +449,14 @@ export function criaMundo(host) {
     const cob = st.efeitos.nuvens ? ceuSt.nuvens : 0, nubla = 1 - cob * .35;
     if (e > -.04) {
       const k = Math.max(0, e), alto = sm(0, .55, k);
-      sol.color.copy(corSolBaixo).lerp(corSolDia, alto); sol.intensity = (.95 + 1.45 * alto) * nubla;
-      hemi.color.copy(ceuBaixo).lerp(ceuDia, alto); hemi.groundColor.set("#2a3550"); hemi.intensity = (.8 + .35 * alto) * (1 - cob * .15);
+      /* calor do período: dourado cresce na tarde (13h→17h30) e um pouco no começo da manhã */
+      const calor = Math.max(1 - alto, sm(13, 17.5, h) * .7, sm(8.5, 6, h) * .5);
+      sol.color.copy(corSolDia).lerp(corSolBaixo, calor); sol.intensity = (.95 + 1.1 * alto) * nubla;
+      hemi.color.copy(ceuDia).lerp(ceuBaixo, calor); hemi.groundColor.set(calor > .4 ? "#3a3326" : "#2a3550"); hemi.intensity = (.78 + .22 * alto) * (1 - cob * .15);
       contra.color.set(alto > .5 ? "#7fc8ff" : "#ffc08a"); contra.intensity = .7 + .4 * alto;
       ceuAng = 1.35 - 2.7 * Math.min(1, Math.max(0, (h - 6) / 12)); ceuElev = .3 + 1.8 * k;
-      renderer.toneMappingExposure = 1.1;
-      matNuvem.color.set("#ffffff").lerp(cinza, sm(.45, 1, cob)).lerp(corSolBaixo, (1 - alto) * .25);
+      renderer.toneMappingExposure = 1.04;
+      matNuvem.color.set("#ffffff").lerp(cinza, sm(.45, 1, cob)).lerp(corSolBaixo, calor * .25);
     } else {
       sol.color.copy(corLuar); sol.intensity = .8 * nubla;
       hemi.color.set("#8394c8"); hemi.groundColor.set("#151b2e"); hemi.intensity = .6;
@@ -546,9 +548,9 @@ export function criaMundo(host) {
     tema(t) {
       const claro = t === "amanhecer" || t === "claro" || t === "dourado";
       const c = { meianoite: "#7fa8e0", noite: "#a0d7ff", cristal: "#9ff0ff", aurora: "#c9b3f0", floresta: "#b5e48c", amanhecer: "#ffffff", claro: "#cfe6f5", dourado: "#ffe3b8" }[t] || "#a0d7ff";
-      halo.material.color.set(c); estrelas.visible = !claro; halo.material.opacity = claro ? .55 : t === "meianoite" ? .55 : 1;
+      halo.material.color.set(c); estrelas.visible = !claro; halo.material.opacity = claro ? .55 : t === "meianoite" ? .55 : t === "noite" ? .8 : 1;
       halo.material.blending = claro ? THREE.NormalBlending : THREE.AdditiveBlending; halo.material.needsUpdate = true;
-      fatorCasca = claro ? .5 : 1; casca.material.uniforms.forca.value = (st.efeitos.nuvens ? .95 : .6) * fatorCasca;
+      fatorCasca = claro ? .5 : t === "noite" ? .72 : 1; casca.material.uniforms.forca.value = (st.efeitos.nuvens ? .95 : .6) * fatorCasca;
       corCasca = t === "dourado" ? "#ffd29a" : t === "aurora" ? "#c9b3f0" : t === "floresta" ? "#b5e48c" : t === "cristal" ? "#9ff0ff" : "#8fd6ff"; if (!st.efeitos.aurora) casca.material.uniforms.cor.value.set(corCasca);
     },
     foco(k) { const o = bichoObjs.get(k); if (!o) return; const p = o.getWorldPosition(new THREE.Vector3()).normalize(); camera.position.copy(p.multiplyScalar(2.1)); distAlvo = null; controls.autoRotate = false; parado = 0; },
