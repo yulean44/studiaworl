@@ -14,9 +14,9 @@ document.querySelector('meta[name="theme-color"]').setAttribute("content",{claro
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=63">
-<link rel="icon" type="image/png" href="favicon.png?v=63">
-<link rel="manifest" href="manifest.webmanifest?v=63">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=64">
+<link rel="icon" type="image/png" href="favicon.png?v=64">
+<link rel="manifest" href="manifest.webmanifest?v=64">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -216,7 +216,7 @@ body.explorando #view-mundo .painel-mundo{opacity:.15}
 #view-mundo .painel-mundo{transition:opacity .45s}
 /* guia de uso: três passos em tipografia fina, no mesmo estilo do título */
 .guia{display:flex;align-items:flex-end;gap:18px;margin-top:0;flex-wrap:wrap}
-.g-item{display:flex;flex-direction:column;gap:2px;text-decoration:none;color:var(--muted);transition:color .2s}
+.g-item{border:0;background:none;padding:0;font:inherit;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:2px;text-decoration:none;color:var(--muted);transition:color .2s}
 .g-item:hover{color:var(--ink)}
 .g-n{font-weight:200;font-size:30px;line-height:1;letter-spacing:.06em;color:var(--faint);transition:color .2s}
 .g-item:hover .g-n{color:var(--acc2)}
@@ -316,7 +316,8 @@ li.task.done > span{color:var(--faint);text-decoration:line-through}
 
 /* consulta lateral: outra seção sempre ao lado da leitura */
 .consulta{position:fixed;top:14px;right:14px;bottom:14px;width:min(560px,44vw);z-index:30;display:flex;flex-direction:column;background:var(--solid);transform:translateX(110%);transition:transform .3s ease}
-.consulta.aberta{transform:none}
+.consulta{visibility:hidden;transition:transform .3s ease,visibility 0s linear .3s}
+.consulta.aberta{transform:none;visibility:visible;transition:transform .3s ease,visibility 0s}
 .consulta .cab{display:flex;flex-direction:column;gap:10px;padding:16px 18px 12px;border-bottom:1px solid var(--line)}
 .consulta .cab .lin{display:flex;align-items:center;gap:8px}
 .consulta .cab .tabs{flex-wrap:wrap}
@@ -576,7 +577,7 @@ button,a,.sec,.mat,.passo{-webkit-tap-highlight-color:transparent;touch-action:m
 /* números alinhados */
 .stat b,.tempo-big,.chipi,.g-n,table.tb td,.rw{font-variant-numeric:tabular-nums}
 /* um só estilo de foco, visível no teclado */
-:focus{outline:none}
+:focus:not(:focus-visible){outline:none}
 :focus-visible{outline:2px solid var(--acc2);outline-offset:3px}
 input.f:focus-visible,select.f:focus-visible,textarea.f:focus-visible{outline:none;border-color:var(--acc2);box-shadow:0 0 0 3px color-mix(in srgb,var(--acc2) 22%,transparent)}
 /* selects nativos legíveis em qualquer tema */
@@ -976,7 +977,7 @@ body.iniciando .main,body.iniciando .nav,body.iniciando .marca,body.iniciando #c
 .ceu-r::-moz-range-track{height:8px;border-radius:99px;border:1px solid var(--line2);background:var(--trilho)}
 .ceu-r::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;margin-top:-8px;border-radius:50%;background:var(--solid);border:1px solid var(--line2);box-shadow:0 2px 8px rgba(20,40,70,.18),inset 0 1px 0 rgba(255,255,255,.8)}
 .ceu-r::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--solid);border:1px solid var(--line2);box-shadow:0 2px 8px rgba(20,40,70,.18)}
-.ceu-r:focus-visible{outline:none}
+.ceu-r:focus-visible{outline:2px solid var(--acc2);outline-offset:2px;border-radius:99px}
 .ceu-r:focus-visible::-webkit-slider-thumb{outline:2px solid var(--acc2);outline-offset:2px}
 .ceu-r:focus-visible::-moz-range-thumb{outline:2px solid var(--acc2);outline-offset:2px}
 .ceu-r.hora{--trilho:linear-gradient(90deg,#1c2847 0%,#2e3c60 18%,#f3cfb0 23%,#bcd9f0 30%,#a9d3f0 50%,#f8eedb 60%,#f0c58c 70%,#f5b47e 76%,#4a4f86 80%,#1c2847 86%,#1c2847 100%)}
@@ -1179,7 +1180,7 @@ body.estudo .atalhos-estudo button[aria-current=page]{background:var(--n-sel);co
 @media (prefers-reduced-motion:reduce){.mais-folha{animation:none}}
 /* início: um próximo passo claro (Zeigarnik, gradiente de meta, Von Restorff) */
 .continuar{padding:20px 22px}
-.continuar .kicker{margin:0 0 6px}
+.continuar .kicker{margin:0 0 6px;font-weight:inherit}
 .ct-tit{margin:0;font-size:22px;font-weight:400;line-height:1.25;color:var(--forte);text-wrap:balance}
 .ct-sub{margin:6px 0 10px;font-size:13px;color:var(--muted)}
 .ct-bar{margin-bottom:16px}
@@ -1208,7 +1209,7 @@ body.estudo .atalhos-estudo button[aria-current=page]{background:var(--n-sel);co
   .marca{position:absolute;font-size:13px;font-weight:500;color:var(--muted)}
   .titulo{font-weight:400;font-size:32px;letter-spacing:-.015em;line-height:1.1;color:var(--forte)}
   .titulo.p{font-size:28px}
-  .sub{font-size:14px;font-weight:400;line-height:1.45}
+  .sub{font-size:14px;font-weight:400;line-height:1.45;color:color-mix(in srgb,var(--ink) 88%,transparent)}
   .kicker{font-size:13px;font-weight:500}
   .h-sec{font-size:16px;font-weight:500;color:var(--forte)}
   .hs-meta{font-size:13px;letter-spacing:normal;text-transform:none}
@@ -1266,6 +1267,6 @@ body.estudo .atalhos-estudo button[aria-current=page]{background:var(--n-sel);co
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=63"></script>
+<script type="module" src="app.js?v=64"></script>
 </body>
 </html>

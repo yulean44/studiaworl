@@ -1,13 +1,13 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=63";
-import { ic, ICONES_MATERIA } from "./icons.js?v=63";
-import { FIG } from "./figuras.js?v=63";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=63";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=63";
-import { semanaDeEstudos } from "./relatorio.js?v=63";
-import { carregaMaterias } from "./conteudo.js?v=63";
-import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=63";
-import { abrePacote } from "./pacote.js?v=63";
-import { criaDiaHora } from "./diahora.js?v=63";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=64";
+import { ic, ICONES_MATERIA } from "./icons.js?v=64";
+import { FIG } from "./figuras.js?v=64";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=64";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=64";
+import { semanaDeEstudos } from "./relatorio.js?v=64";
+import { carregaMaterias } from "./conteudo.js?v=64";
+import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=64";
+import { abrePacote } from "./pacote.js?v=64";
+import { criaDiaHora } from "./diahora.js?v=64";
 
 /* =========================================================
    utilidades
@@ -622,7 +622,7 @@ async function proximaFesta() {
       aoFechar: () => { pacoteAberto = false; if (!modalAberto) { main.inert = false; nav.inert = false; } setTimeout(proximaFesta, 60); } };
     /* 3D quando o aparelho permite; senão a versão em HTML */
     let abriu = false;
-    try { const p3 = await import("./pacote3d.js?v=63"); if (p3.podePacote3d()) abriu = p3.abrePacote3d(dados); } catch (e) { console.warn("pacote 3D indisponível", e); }
+    try { const p3 = await import("./pacote3d.js?v=64"); if (p3.podePacote3d()) abriu = p3.abrePacote3d(dados); } catch (e) { console.warn("pacote 3D indisponível", e); }
     if (!abriu) abrePacote(dados);
     return;
   }
@@ -732,7 +732,7 @@ temaMundo = () => mundo?.tema?.(temaAtivo());
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=63"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=64"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -788,8 +788,8 @@ function cartaoContinuar(ult) {
   const tot = M ? M.secoes.length : 0, li = M ? M.secoes.filter(x => S.lidas[`${M.id}--${x.id}`]).length : 0;
   const pend = todosCards().filter(c => (S.cards[c.id]?.b || 0) < 3).length, rodadaN = Math.min(20, pend), min = Math.max(1, Math.round(rodadaN * 15 / 60));
   return `<div class="vidro card continuar">
-    <p class="kicker">${ult ? "Continue de onde parou" : "Comece por aqui"}</p>
-    <h2 class="ct-tit">${ult ? esc(ult.titulo) : "Abra uma matéria"}</h2>
+    <h2 class="kicker ct-kick">${ult ? "Continue de onde parou" : "Comece por aqui"}</h2>
+    <p class="ct-tit">${ult ? esc(ult.titulo) : "Abra uma matéria"}</p>
     ${M ? `<p class="ct-sub">${esc(M.nome)} · ${li} de ${tot} seções lidas</p><div class="bar ct-bar"><i style="width:${tot ? li / tot * 100 : 0}%"></i></div>` : `<p class="ct-sub">Leia uma seção e ela aparece aqui.</p>`}
     <div class="ct-acts"><button class="btn pri ct-pri" id="ctCont">${ic("livro", "s")}${ult ? "Continuar leitura" : "Ver matérias"}</button>
     ${pend ? `<button class="btn" data-go="revisao">${ic("cards", "s")}Revisar ${rodadaN} cards · ~${min} min</button>` : ""}</div>
@@ -812,7 +812,7 @@ function renderInicio() {
             ["01", "Matéria", ult ? "continuar leitura" : "abra e leia", ult ? "cont" : "materias", !!(h.lidas || ult)],
             ["02", "Foco", S.timer ? "rodando agora" : "o tempo vira XP", "foco", h.min > 0],
             ["03", "Cards", "teste o que leu", "revisao", h.cards > 0],
-          ].map(([n, t, d, go, ok]) => `<a href="#" class="g-item ${ok ? "ok" : ""}" ${go === "cont" ? 'id="btCont"' : `data-go="${go}"`}><span class="g-n">${n}</span><span class="g-t">${t}</span><span class="g-d">${d}</span></a>`).join('<span class="g-sep"></span>')}</nav>
+          ].map(([n, t, d, go, ok]) => `<button type="button" class="g-item ${ok ? "ok" : ""}" ${go === "cont" ? 'id="btCont"' : `data-go="${go}"`}><span class="g-n">${n}</span><span class="g-t">${t}</span><span class="g-d">${d}</span></button>`).join('<span class="g-sep"></span>')}</nav>
           <p class="sub" style="margin-top:22px">${fmtMin(h.min)} hoje · ${plural(h.cards, "card", "cards")} · ${plural(S.criaturas.length, "criatura", "criaturas")} · arraste para girar</p>
         </div>
       </div>
@@ -2049,7 +2049,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=63");
+      const mod = await import("./conta.js?v=64");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }
