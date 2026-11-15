@@ -3,7 +3,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import * as SkeletonUtils from "three/addons/utils/SkeletonUtils.js";
-import { CRIATURAS, DECOS } from "./data.js?v=57";
+import { CRIATURAS, DECOS } from "./data.js?v=58";
 
 /* ---------- ruído ---------- */
 function hash(x, y, z) { let h = x * 374761393 + y * 668265263 + z * 2147483647; h = (h ^ (h >>> 13)) * 1274126177; return ((h ^ (h >>> 16)) >>> 0) / 4294967295; }
@@ -107,7 +107,7 @@ function fazDeco(k, seed) {
 const loader = new GLTFLoader();
 const cache = {};
 function carregaGLB(id) {
-  return (cache[id] ||= import(`./m/${id}.js?v=57`).then(mod => {
+  return (cache[id] ||= import(`./m/${id}.js?v=58`).then(mod => {
     const bin = atob(mod.default), buf = new Uint8Array(bin.length);
     for (let i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
     return new Promise((res, rej) => loader.parse(buf.buffer, "", res, rej));

@@ -21,6 +21,8 @@ Site estático, sem build: HTML + JS em módulos ES, three.js 0.160 via importma
 | `m/*.js` | Modelos 3D em base64 (o Pages não serve .glb do jeito certo) |
 | `kahoot.html` | Quiz estilo Kahoot por matéria |
 | `diahora.js` | Céu do dia no topo (sol e lua pela hora real; abre a aparência) |
+| `pacote.js` | Pacote de criatura: rasgar arrastando, carta holográfica e confete (abre nas festas de criatura nova) |
+| `mapa-revisoes.js` | Mapa de revisões dos flashcards: blocos por estado, partículas ao mudar, contador "para dominar" |
 
 ## Regras obrigatórias
 
@@ -47,8 +49,9 @@ O Claude Code carrega sozinho; outros agentes leiam o `SKILL.md` correspondente.
 - **Escolher a etapa:** `using-agent-skills` indica qual das skills do Agent Skills usar (planejar, implementar, testar, revisar, publicar).
 - **Mudança enxuta:** `ponytail` (menor mudança que resolve; reaproveitar o que já existe).
 - **Visual:** `frontend-design` para direção estética (sem trocar a identidade abaixo) e `web-design-guidelines` para conferir antes de publicar.
+- **Animação:** `animate`, `choreograph`, `gestures` e `animation-performance` (Emil Kowalski) e `motion-design` (LottieFiles): curvas, durações, gestos e desempenho.
 - **Antes de publicar:** `ponytail-review` ou `code-review-and-quality`, rodando todos os testes de `tests/`.
-- Fontes: addyosmani/agent-skills (MIT), DietrichGebert/ponytail (MIT), Graphify-Labs/graphify (Apache 2.0/MIT), anthropics/skills (Apache 2.0), vercel-labs/agent-skills e web-interface-guidelines (MIT); licenças dentro de cada pasta.
+- Fontes: addyosmani/agent-skills (MIT), DietrichGebert/ponytail (MIT), Graphify-Labs/graphify (Apache 2.0/MIT), anthropics/skills (Apache 2.0), vercel-labs/agent-skills e web-interface-guidelines (MIT), emilkowalski/skills (MIT), LottieFiles/motion-design-skill (MIT); licenças dentro de cada pasta.
 
 ## Estilo (o dono é exigente com isso)
 

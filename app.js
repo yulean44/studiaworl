@@ -1,11 +1,13 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=57";
-import { ic, ICONES_MATERIA } from "./icons.js?v=57";
-import { FIG } from "./figuras.js?v=57";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=57";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=57";
-import { semanaDeEstudos } from "./relatorio.js?v=57";
-import { carregaMaterias } from "./conteudo.js?v=57";
-import { criaDiaHora } from "./diahora.js?v=57";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=58";
+import { ic, ICONES_MATERIA } from "./icons.js?v=58";
+import { FIG } from "./figuras.js?v=58";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=58";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=58";
+import { semanaDeEstudos } from "./relatorio.js?v=58";
+import { carregaMaterias } from "./conteudo.js?v=58";
+import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=58";
+import { abrePacote } from "./pacote.js?v=58";
+import { criaDiaHora } from "./diahora.js?v=58";
 
 /* =========================================================
    utilidades
@@ -606,9 +608,20 @@ function formulario(titulo, campos, ok = "Salvar") {
     m.el.addEventListener("keydown", e => { if (e.key === "Enter" && e.target.tagName === "INPUT") go(); });
   });
 }
+let pacoteAberto = false;
 async function proximaFesta() {
-  if (modalAberto || !filaFesta.length) return;
+  if (modalAberto || pacoteAberto || !filaFesta.length) return;
   const f = filaFesta.shift();
+  if (f.cria && CRIATURAS[f.cria]) {
+    const c = CRIATURAS[f.cria], todas = Object.keys(CRIATURAS).filter(k => !CRIATURAS[k].ex);
+    pacoteAberto = true;
+    const main = document.querySelector("main"), nav = $("#nav"); main.inert = true; nav.inert = true;
+    const img = garanteMod().then(() => mundoMod?.miniatura(f.cria)).catch(() => null);
+    abrePacote({ titulo: esc(f.titulo), nome: c.nome, raridade: RARIDADE[c.r].nome, rar: c.r, numero: S.criaturas.length, total: todas.length, img,
+      aoVer: () => { show("mundo"); setTimeout(() => mundo?.foco(f.cria), 900); },
+      aoFechar: () => { pacoteAberto = false; if (!modalAberto) { main.inert = false; nav.inert = false; } setTimeout(proximaFesta, 60); } });
+    return;
+  }
   const m = modal(`<div class="festa"><div class="im" id="fIm">${estiloIcone === "3d" && FIG[f.icone] ? `<img class="fig" src="${FIG[f.icone]}" alt="">` : ic(f.icone || "estrela")}</div><div class="kicker">${f.cria ? "Nova criatura" : "Recompensa"}</div><h3 style="margin-top:6px">${esc(f.titulo)}</h3><p class="muted" style="margin:6px 0 10px;font-weight:300">${esc(f.texto || "")}</p>
     <div class="premios" style="justify-content:center">${(f.chips || []).map(c => `<span>${esc(c)}</span>`).join("")}</div></div>
     <div class="acts" style="justify-content:center"><button class="btn" id="mVer">Ver no planeta</button><button class="btn pri" data-fecha>Continuar</button></div>`);
@@ -705,7 +718,7 @@ temaMundo = () => mundo?.tema?.(temaAtivo());
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=57"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=58"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -1633,6 +1646,7 @@ function novaRodada() {
   const l = baralho().map(c => ({ c, p: (S.cards[c.id]?.b || 0) * 10 - (S.cards[c.id]?.err || 0) * 3 + Math.random() * 8 })).sort((a, b) => a.p - b.p);
   rodada = { sessao: sessaoConta, cards: l.slice(0, 20).map(x => x.c), i: 0, ok: 0, err: 0, virado: false, fim: false };
 }
+let mapaRev = null;
 function renderRevisao() {
   const v = $("#view-revisao"), ms = materias();
   if (!rodada) novaRodada();
@@ -1662,7 +1676,11 @@ function renderRevisao() {
       <select class="f" id="rFil">${[["rec", "Para dominar"], ["err", "Só os que errei"], ["novos", "Nunca vistos"], ["todos", "Todos"]].map(([k, t]) => `<option value="${k}" ${revCfg.filtro === k ? "selected" : ""}>${t}</option>`).join("")}</select>
       ${revCfg.secs && revCfg.secs.length ? `<button class="btn sm on" id="rSecX" title="Voltar a todos os cards da matéria">${esc(revCfg.secNome || "Assunto")}${ic("x", "s")}</button>` : ""}
       <span class="kicker">${baralho().length} cards</span>
-    </div>${corpo}</div>`;
+    </div><div id="mrSlot"></div>${corpo}</div>`;
+  mapaRev ||= criaMapaRevisoes();
+  $("#mrSlot").replaceWith(mapaRev.el);
+  let base = todosCards(revCfg.mat); if (revCfg.secs && revCfg.secs.length) base = base.filter(c => tocaAssunto(c, revCfg.secs));
+  mapaRev.atualiza(base.map(c => ({ id: c.id, cat: estadoCard(S.cards[c.id]) })));
   const reCfg = () => { revCfg = { mat: $("#rMat").value, filtro: $("#rFil").value }; LS.set("revCfg", revCfg); rodada = null; renderRevisao(); };
   $("#rMat").addEventListener("change", reCfg); $("#rFil").addEventListener("change", reCfg);
   $("#rSecX")?.addEventListener("click", () => { revCfg = { mat: revCfg.mat, filtro: revCfg.filtro }; LS.set("revCfg", revCfg); rodada = null; renderRevisao(); });
@@ -2000,7 +2018,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=57");
+      const mod = await import("./conta.js?v=58");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }
