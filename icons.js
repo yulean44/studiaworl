@@ -50,6 +50,7 @@ const P = {
   pilula: '<rect x="3" y="8.5" width="18" height="7" rx="3.5" transform="rotate(-35 12 12)"/><path d="m9.5 8.5 5 7"/>',
   osso: '<path d="M8 8 16 16M6 9.5a2.2 2.2 0 1 1 3.5-3.5 2.2 2.2 0 1 1 3 3L9 12.5a2.2 2.2 0 1 1-3-3zM18 14.5a2.2 2.2 0 1 1-3.5 3.5 2.2 2.2 0 1 1-3-3l3.5-3.5a2.2 2.2 0 1 1 3 3z"/>',
   seta: '<path d="M19 12H5M11 6l-6 6 6 6"/>',
+  grade: '<rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/>',
   setad: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   mais: '<path d="M12 5v14M5 12h14"/>',
   lixo: '<path d="M4.5 7h15M9.5 7V4.5h5V7M6.5 7l1 13h9l1-13"/>',

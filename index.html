@@ -14,9 +14,9 @@ document.querySelector('meta[name="theme-color"]').setAttribute("content",{claro
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=61">
-<link rel="icon" type="image/png" href="favicon.png?v=61">
-<link rel="manifest" href="manifest.webmanifest?v=61">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=62">
+<link rel="icon" type="image/png" href="favicon.png?v=62">
+<link rel="manifest" href="manifest.webmanifest?v=62">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1154,6 +1154,47 @@ body.estudo .atalhos-estudo button[aria-current=page]{background:var(--n-sel);co
 .pk3 .pk-cab{transition:opacity .25s ease-out}.pk3.abrindo:not(.revelado) .pk-cab{opacity:0}.pk3.abrindo .pk-acts{opacity:0;transition:opacity .2s ease-out}.pk3.revelado .pk-acts{opacity:1}
 .pk3{cursor:grab;touch-action:none}.pk3.arrastando{cursor:grabbing}.pk3.revelado{cursor:default}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ================= Leis de UX ================= */
+/* navegação: divisor entre estudo e planeta (proximidade / região comum); rótulos e "Mais" só no celular */
+.nav-div{display:block;width:22px;height:1px;margin:4px auto;background:var(--line2)}
+.nav-rot,.nav-mais{display:none}
+.mais-veu{position:fixed;inset:0;z-index:60;background:color-mix(in srgb,var(--veu) 70%,transparent)}
+.mais-veu[hidden]{display:none}
+.mais-folha{position:absolute;left:10px;right:10px;bottom:calc(84px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:10px;border-radius:22px;background:var(--modal-bg);border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.18);animation:maisSobe .22s cubic-bezier(0.23,1,0.32,1)}
+@keyframes maisSobe{from{opacity:0;transform:translateY(8px)}}
+.mais-it{display:flex;align-items:center;gap:10px;min-height:56px;padding:0 16px;border:1px solid var(--line);border-radius:16px;background:var(--glass2);color:var(--ink);font:400 15px var(--font);cursor:pointer}
+.mais-it svg{width:20px;height:20px;color:var(--muted)}
+.mais-it.on{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}.mais-it.on svg{color:var(--on-ink)}
+@media (max-width:760px){
+  .nav,.nav.nav{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;padding:6px 6px calc(6px + env(safe-area-inset-bottom) * .3)}
+  .nav-div,.nav-extra{display:none!important}
+  .nav-mais{display:grid}
+  .navbtn{width:auto;height:54px;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px}
+  .navbtn svg{width:21px;height:21px}
+  .nav-rot{display:block;font-size:10px;letter-spacing:.04em;line-height:1}
+  .main{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+}
+@media (prefers-reduced-motion:reduce){.mais-folha{animation:none}}
+/* início: um próximo passo claro (Zeigarnik, gradiente de meta, Von Restorff) */
+.continuar{padding:20px 22px}
+.continuar .kicker{margin:0 0 6px}
+.ct-tit{margin:0;font-size:22px;font-weight:400;line-height:1.25;color:var(--forte);text-wrap:balance}
+.ct-sub{margin:6px 0 10px;font-size:13px;color:var(--muted)}
+.ct-bar{margin-bottom:16px}
+.ct-acts{display:flex;flex-wrap:wrap;gap:8px}
+.ct-pri{min-height:48px;padding-inline:22px;font-size:14px}
+@media (max-width:760px){.ct-acts .btn{flex:1 1 100%;justify-content:center;min-height:50px}}
+/* flashcards no celular: botões de resposta grandes, lado a lado, logo abaixo do cartão (Fitts);
+   atalho de teclado some no toque (atenção seletiva) */
+@media (max-width:760px){
+  .fc-nav{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .fc-nav .grow,.fc-nav > .kicker{display:none}
+  .fc-nav .btn{min-height:54px;justify-content:center;font-size:14px}
+  .fc-nav #rVira{grid-column:1/-1}
+  .fc-nav [hidden]{display:none}
+}
+@media (pointer:coarse){.fc-hint{display:none}}
 </style>
 </head>
 <body class="iniciando">
@@ -1177,6 +1218,6 @@ body.estudo .atalhos-estudo button[aria-current=page]{background:var(--n-sel);co
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=61"></script>
+<script type="module" src="app.js?v=62"></script>
 </body>
 </html>

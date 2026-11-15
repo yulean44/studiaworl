@@ -67,6 +67,13 @@ O Claude Code carrega sozinho; outros agentes leiam o `SKILL.md` correspondente.
 - Ajustes finos de visual vão no bloco "refino leve" no fim do CSS de `index.html`, sem mudar fonte, cores dos temas nem ícones.
 - A área de Matérias usa a paleta de caderno (`--n-*`, bloco "estudo em estilo de documento" no fim do CSS: cinza de papel, texto #37352f, azul #0075de para links) e segue o estilo de documentos: menu lateral fixo em pastas (matéria › grupo › seção), trilha "Matérias › … " no topo e a seção como página.
 
+## Leis de UX (lawsofux.com) que o site segue
+
+- **Navegação:** estudo primeiro e junto (Início, Matérias, Flashcards, Questões, Foco), planeta depois de um divisor (proximidade, posição serial). No celular, 4 abas com rótulo + "Mais" (Hick, Jakob, Fitts).
+- **Início:** um cartão "Continuar" com onde parou, quanto falta e "Revisar N cards · ~M min" (Zeigarnik, gradiente de meta, Tesler, Parkinson). Um só botão principal por tela (Von Restorff).
+- **Alvos de toque grandes perto do polegar** (Fitts); atalhos de teclado não aparecem no toque (atenção seletiva).
+- **Busca aceita com ou sem acento** (Postel). Resposta visual imediata a toda ação (Doherty, < 400 ms). Fechamentos marcantes no fim de rodadas e sessões (pico-fim).
+
 ## Celular, iPad e computador
 
 - Tem que funcionar bem em **iPhone (390px), iPad e computador**. Testar também 320px.

@@ -1,13 +1,13 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=61";
-import { ic, ICONES_MATERIA } from "./icons.js?v=61";
-import { FIG } from "./figuras.js?v=61";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=61";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=61";
-import { semanaDeEstudos } from "./relatorio.js?v=61";
-import { carregaMaterias } from "./conteudo.js?v=61";
-import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=61";
-import { abrePacote } from "./pacote.js?v=61";
-import { criaDiaHora } from "./diahora.js?v=61";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=62";
+import { ic, ICONES_MATERIA } from "./icons.js?v=62";
+import { FIG } from "./figuras.js?v=62";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=62";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=62";
+import { semanaDeEstudos } from "./relatorio.js?v=62";
+import { carregaMaterias } from "./conteudo.js?v=62";
+import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=62";
+import { abrePacote } from "./pacote.js?v=62";
+import { criaDiaHora } from "./diahora.js?v=62";
 
 /* =========================================================
    utilidades
@@ -622,7 +622,7 @@ async function proximaFesta() {
       aoFechar: () => { pacoteAberto = false; if (!modalAberto) { main.inert = false; nav.inert = false; } setTimeout(proximaFesta, 60); } };
     /* 3D quando o aparelho permite; senão a versão em HTML */
     let abriu = false;
-    try { const p3 = await import("./pacote3d.js?v=61"); if (p3.podePacote3d()) abriu = p3.abrePacote3d(dados); } catch (e) { console.warn("pacote 3D indisponível", e); }
+    try { const p3 = await import("./pacote3d.js?v=62"); if (p3.podePacote3d()) abriu = p3.abrePacote3d(dados); } catch (e) { console.warn("pacote 3D indisponível", e); }
     if (!abriu) abrePacote(dados);
     return;
   }
@@ -636,8 +636,17 @@ async function proximaFesta() {
 /* =========================================================
    navegação
    ========================================================= */
-const VIEWS = [["inicio", "casa", "Início"], ["mundo", "planeta", "Meu mundo"], ["foco", "relogio", "Foco"], ["materias", "livro", "Matérias"], ["revisao", "cards", "Flashcards"], ["questoes", "check", "Questões"], ["missoes", "bandeira", "Missões"], ["progresso", "grafico", "Progresso"]];
-$("#nav").innerHTML = VIEWS.map(([k, i, t]) => `<button class="navbtn" data-view="${k}" aria-label="${t}">${ic(i)}<span class="tip">${t}</span></button>`).join("");
+/* Leis de UX na navegação: estudo junto e primeiro (proximidade, posição serial), planeta depois;
+   no celular, 4 abas + "Mais" (Hick, Jakob: barra de abas padrão, Fitts: alvos grandes perto do polegar) */
+const VIEWS = [["inicio", "casa", "Início"], ["materias", "livro", "Matérias"], ["revisao", "cards", "Flashcards"], ["questoes", "check", "Questões"], ["foco", "relogio", "Foco"], ["mundo", "planeta", "Meu mundo"], ["missoes", "bandeira", "Missões"], ["progresso", "grafico", "Progresso"]];
+const NO_MAIS = new Set(["foco", "mundo", "missoes", "progresso"]);
+$("#nav").innerHTML = VIEWS.map(([k, i, t]) => `${k === "mundo" ? '<span class="nav-div" aria-hidden="true"></span>' : ""}<button class="navbtn ${NO_MAIS.has(k) ? "nav-extra" : ""}" data-view="${k}" aria-label="${t}">${ic(i)}<span class="tip">${t}</span><span class="nav-rot">${t === "Flashcards" ? "Cards" : t}</span></button>`).join("")
+  + `<button class="navbtn nav-mais" id="navMais" aria-label="Mais" aria-haspopup="true" aria-expanded="false">${ic("grade")}<span class="nav-rot">Mais</span></button>`;
+document.body.insertAdjacentHTML("beforeend", `<div class="mais-veu" id="maisVeu" hidden><div class="mais-folha" role="dialog" aria-label="Mais seções">${VIEWS.filter(([k]) => NO_MAIS.has(k)).map(([k, i, t]) => `<button class="mais-it" data-mais="${k}">${ic(i)}<span>${t}</span></button>`).join("")}</div></div>`);
+function fechaMais() { $("#maisVeu").hidden = true; $("#navMais").setAttribute("aria-expanded", "false"); }
+$("#navMais").addEventListener("click", () => { const v = $("#maisVeu"); v.hidden = !v.hidden; $("#navMais").setAttribute("aria-expanded", String(!v.hidden)); if (!v.hidden) $(".mais-it", v)?.focus(); });
+$("#maisVeu").addEventListener("click", e => { const b = e.target.closest("[data-mais]"); if (b) show(b.dataset.mais); fechaMais(); });
+$("#maisVeu").addEventListener("keydown", e => { if (e.key === "Escape") { fechaMais(); $("#navMais").focus(); } });
 let atual = null, sub = LS.get("sub", { tela: "lista" }), editando = false;
 function show(v, opts = {}) {
   if (!VIEWS.some(x => x[0] === v)) v = "inicio";
@@ -650,6 +659,7 @@ function show(v, opts = {}) {
   atual = v; LS.set("view", v); document.body.classList.toggle("estudo", v === "materias"); if (v !== "materias") fechaArvore();
   VIEWS.forEach(([k]) => { $("#view-" + k).hidden = k !== v; });
   $$(".navbtn[data-view]").forEach(b => { const on = b.dataset.view === v; b.classList.toggle("active", on); if (on) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
+  $("#navMais")?.classList.toggle("active", NO_MAIS.has(v)); $$(".mais-it").forEach(b => b.classList.toggle("on", b.dataset.mais === v));
   layoutMundo(); render(); renderConsulta(); sincronizaHash();
   if (!opts.manterScroll) window.scrollTo(0, 0);
 }
@@ -722,7 +732,7 @@ temaMundo = () => mundo?.tema?.(temaAtivo());
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=61"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=62"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -772,6 +782,19 @@ function relatorioInicio() {
     <div class="rs-rodape"><p class="rs-legenda" title="Dias com foco, cards ou leituras">${r.ativos ? `${unidade}/dia · ${r.ativos} de 7 dias ativos` : "Seu gráfico cresce com seu estudo."}</p><button type="button" class="rs-mais" data-go="progresso" aria-label="Ver progresso completo">Ver mais</button></div>
   </section>`;
 }
+/* um próximo passo claro: onde parou, quanto falta e quantos cards esperam (com tempo estimado) */
+function cartaoContinuar(ult) {
+  const M = ult ? materia(S.ultimo.mat) : null;
+  const tot = M ? M.secoes.length : 0, li = M ? M.secoes.filter(x => S.lidas[`${M.id}--${x.id}`]).length : 0;
+  const pend = todosCards().filter(c => (S.cards[c.id]?.b || 0) < 3).length, rodadaN = Math.min(20, pend), min = Math.max(1, Math.round(rodadaN * 15 / 60));
+  return `<div class="vidro card continuar">
+    <p class="kicker">${ult ? "Continue de onde parou" : "Comece por aqui"}</p>
+    <h2 class="ct-tit">${ult ? esc(ult.titulo) : "Abra uma matéria"}</h2>
+    ${M ? `<p class="ct-sub">${esc(M.nome)} · ${li} de ${tot} seções lidas</p><div class="bar ct-bar"><i style="width:${tot ? li / tot * 100 : 0}%"></i></div>` : `<p class="ct-sub">Leia uma seção e ela aparece aqui.</p>`}
+    <div class="ct-acts"><button class="btn pri ct-pri" id="ctCont">${ic("livro", "s")}${ult ? "Continuar leitura" : "Ver matérias"}</button>
+    ${pend ? `<button class="btn" data-go="revisao">${ic("cards", "s")}Revisar ${rodadaN} cards · ~${min} min</button>` : ""}</div>
+  </div>`;
+}
 function renderInicio() {
   const h = diaObj(), D = diarias(), j = JORNADA[S.jornada], m = metricas();
   const ult = S.ultimo && materia(S.ultimo.mat) && materia(S.ultimo.mat).secoes.find(s => s.id === S.ultimo.sid);
@@ -794,6 +817,7 @@ function renderInicio() {
         </div>
       </div>
       <div class="dir">
+        ${cartaoContinuar(ult)}
         <div id="resumoInicio">${relatorioInicio()}</div>
         <div class="vidro card">
           <h2 class="h-sec">Missões de hoje<span class="grow"></span><span class="hs-meta">${D.bonus ? "completas" : "3 = criatura nova"}</span></h2>
@@ -806,6 +830,7 @@ function renderInicio() {
       </div>
     </div>`;
   $("#btCont")?.addEventListener("click", e => { e.preventDefault(); abreSecao(S.ultimo.mat, S.ultimo.sid); });
+  $("#ctCont")?.addEventListener("click", () => ult ? abreSecao(S.ultimo.mat, S.ultimo.sid) : show("materias"));
   $("#resumoInicio").addEventListener("click", e => {
     const b = e.target.closest("[data-rs]"); if (!b) return;
     metricaInicio = b.dataset.rs === "cards" ? "cards" : "min";
@@ -1106,11 +1131,13 @@ window.addEventListener("pointerup", dgFim);
 window.addEventListener("pointercancel", dgFim);
 function mostraBusca() {
   const box = $("#resBusca"); if (!box) return;
-  const q = buscaMat.trim().toLowerCase(); if (q.length < 2) { box.innerHTML = ""; return; }
+  /* lei de Postel: aceita a busca sem acento, com acento ou em maiúsculas */
+  const semAc = x => x.normalize("NFC").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const q = semAc(buscaMat.trim()); if (q.length < 2) { box.innerHTML = ""; return; }
   const res = [];
   for (const m of materias()) for (const s of m.secoes) {
-    const t = textoDe(htmlSecao(m.id, s.id)), i = t.toLowerCase().indexOf(q);
-    if (i >= 0 || s.titulo.toLowerCase().includes(q)) res.push({ m, s, trecho: i >= 0 ? "…" + t.slice(Math.max(0, i - 60), i + 90).replace(/\s+/g, " ") + "…" : "" });
+    const t = textoDe(htmlSecao(m.id, s.id)).normalize("NFC"), i = semAc(t).indexOf(q);
+    if (i >= 0 || semAc(s.titulo).includes(q)) res.push({ m, s, trecho: i >= 0 ? "…" + t.slice(Math.max(0, i - 60), i + 90).replace(/\s+/g, " ") + "…" : "" });
   }
   box.innerHTML = `<div class="vidro card" style="margin-bottom:22px"><div class="secs">${res.slice(0, 12).map((r, i) => `<div class="sec" data-r="${i}"><span class="t">${esc(r.s.titulo)}<br><small class="muted" style="font-weight:300">${esc(r.m.sigla || r.m.nome)} · ${esc(r.trecho)}</small></span></div>`).join("") || '<div class="empty">Nada encontrado.</div>'}</div></div>`;
   $$("[data-r]", box).forEach(b => b.addEventListener("click", () => { const r = res[+b.dataset.r]; destacar = buscaMat.trim(); abreSecao(r.m.id, r.s.id); }));
@@ -2022,7 +2049,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=61");
+      const mod = await import("./conta.js?v=62");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }
