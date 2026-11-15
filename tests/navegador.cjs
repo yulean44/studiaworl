@@ -44,15 +44,15 @@ assert.equal(await p.evaluate(()=>document.activeElement.id),'qFeedback');await 
 await p.locator('#qProx').click();assert.equal(await p.evaluate(()=>document.activeElement.id),'qEnunciado');console.log('PASS foco no resultado e na próxima questão');
 await p.screenshot({path:out+'/questoes-foco.png'});
 await p.locator('#arvore [data-arv-view="questoes"]').click();await p.locator('#qMateria').waitFor();
-assert.match(p.url(),/#questoes\//);assert.equal(await p.locator('#qMateria option').count(),6);
+assert.match(p.url(),/#questoes\//);assert.equal(await p.locator('#qMateria option').count(),7);
 assert.ok(await p.locator('#qSair').isVisible());await p.locator('#qSair').click();await p.getByRole('dialog').getByRole('button',{name:'Sair',exact:true}).click();
-for(const mat of ['mfc','imagem','antibioticos','psiquiatria','cirurgia','saude-mulher']){
+for(const mat of ['mfc','imagem','antibioticos','psiquiatria','cirurgia','saude-mulher','farmaco-clinica']){
  await p.locator('#qMateria').selectOption(mat);assert.ok(p.url().endsWith('#questoes/'+mat));assert.ok(await p.locator('#qTreino').isEnabled());
 }
 await p.locator('#qMateria').selectOption('mfc');await p.locator('#qTreino').click();await p.keyboard.press('1');assert.equal(await p.evaluate(()=>document.activeElement.id),'qFeedback');
 await p.keyboard.press('Enter');assert.equal(await p.evaluate(()=>document.activeElement.id),'qEnunciado');
 await p.goto(base+'/#questoes/imagem');await p.locator('#qMateria').waitFor();assert.equal(await p.locator('#qMateria').inputValue(),'imagem');
-console.log('PASS aba Questões: seis matérias, URL própria e respostas por teclado');
+console.log('PASS aba Questões: sete matérias, URL própria e respostas por teclado');
 for(const width of [320,390,768,1280]){
  await p.setViewportSize({width,height:900});
  for(const hash of ['#inicio','#materias','#materias/mfc/g1','#foco','#revisao','#questoes/mfc','#missoes','#progresso']){

@@ -1,13 +1,13 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=64";
-import { ic, ICONES_MATERIA } from "./icons.js?v=64";
-import { FIG } from "./figuras.js?v=64";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=64";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=64";
-import { semanaDeEstudos } from "./relatorio.js?v=64";
-import { carregaMaterias } from "./conteudo.js?v=64";
-import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=64";
-import { abrePacote } from "./pacote.js?v=64";
-import { criaDiaHora } from "./diahora.js?v=64";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=65";
+import { ic, ICONES_MATERIA } from "./icons.js?v=65";
+import { FIG } from "./figuras.js?v=65";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=65";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=65";
+import { semanaDeEstudos } from "./relatorio.js?v=65";
+import { carregaMaterias } from "./conteudo.js?v=65";
+import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=65";
+import { abrePacote } from "./pacote.js?v=65";
+import { criaDiaHora } from "./diahora.js?v=65";
 
 /* =========================================================
    utilidades
@@ -622,7 +622,7 @@ async function proximaFesta() {
       aoFechar: () => { pacoteAberto = false; if (!modalAberto) { main.inert = false; nav.inert = false; } setTimeout(proximaFesta, 60); } };
     /* 3D quando o aparelho permite; senão a versão em HTML */
     let abriu = false;
-    try { const p3 = await import("./pacote3d.js?v=64"); if (p3.podePacote3d()) abriu = p3.abrePacote3d(dados); } catch (e) { console.warn("pacote 3D indisponível", e); }
+    try { const p3 = await import("./pacote3d.js?v=65"); if (p3.podePacote3d()) abriu = p3.abrePacote3d(dados); } catch (e) { console.warn("pacote 3D indisponível", e); }
     if (!abriu) abrePacote(dados);
     return;
   }
@@ -732,7 +732,7 @@ temaMundo = () => mundo?.tema?.(temaAtivo());
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=64"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=65"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -1979,7 +1979,7 @@ document.querySelector(".marca").style.cursor = "default";
 /* =========================================================
    início do app
    ========================================================= */
-const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia"];   // um arquivo por matéria em content/<id>.json
+const CONTEUDOS = ["mfc", "imagem", "antibioticos", "saude-mulher", "psiquiatria", "cirurgia", "farmaco-clinica"];   // um arquivo por matéria em content/<id>.json
 async function carregaFabrica(ids = CONTEUDOS) {
   const r = await carregaMaterias(ids);
   FABRICA = CONTEUDOS.map(id => r.materias.find(m => m.id === id) || FABRICA.find(m => m.id === id)).filter(Boolean);
@@ -2049,7 +2049,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=64");
+      const mod = await import("./conta.js?v=65");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }

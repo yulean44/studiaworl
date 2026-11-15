@@ -1,0 +1,3094 @@
+{
+ "id": "farmaco-clinica",
+ "nome": "Farmacologia Clínica",
+ "sigla": "FCL",
+ "sub": "Antidepressivos, antipsicóticos, humor, enxaqueca, dor, sedação, bloqueio NM e anticonvulsivantes",
+ "cor": "#6a9f86",
+ "emoji": "",
+ "icone": "pilula",
+ "secoes": [
+  {
+   "id": "r0",
+   "grupo": "Resumo de referência",
+   "titulo": "Introdução",
+   "par": "g0",
+   "html": "<h3>Comece por aqui</h3><p><strong>Farmacologia Clínica.</strong> Capítulo de referência construído a partir do resumo da monitoria de Farmacologia Clínica do Prof. Dr. Murilo Queiroz (resumo de Anna Júllia Queiroz), com as anotações feitas em aula transformadas em texto. A parte de psicoestimulantes ficou de fora desta matéria.</p><p>Quase todo o conteúdo gira em torno de uma ideia: os fármacos do sistema nervoso atuam mudando a quantidade de um neurotransmissor na fenda sináptica ou a resposta do receptor a ele. Os antidepressivos aumentam serotonina e noradrenalina; os antipsicóticos bloqueiam a dopamina no receptor D<sub>2</sub>; os sedativos reforçam o GABA ou bloqueiam o glutamato; os opioides tornam o neurônio mais difícil de despolarizar; os anticonvulsivantes estabilizam a membrana. Quem entende o receptor consegue deduzir o efeito terapêutico e, quase sempre, o efeito adverso.</p><p>Um segundo eixo atravessa todos os capítulos: o efeito adverso decide a escolha. A primeira linha da depressão não é a droga mais eficaz, e sim a mais tolerada; a droga mais eficaz da esquizofrenia não é a primeira linha por causa da agranulocitose; o etomidato não se repete por causa da adrenal. Ao final, o leitor deve saber o mecanismo, a indicação principal, os efeitos adversos e as contraindicações de cada fármaco, além das escadas de tratamento (enxaqueca e crise convulsiva).</p><p class=\"tabtit\"><strong>Tabela 0.1</strong>Seções do capítulo</p><table><thead><tr><th>Seção</th><th>Conteúdo</th></tr></thead><tbody><tr><td>1</td><td>Antidepressivos: receptores e as sete classes</td></tr><tr><td>2</td><td>Antipsicóticos: vias dopaminérgicas, típicos e atípicos</td></tr><tr><td>3</td><td>Estabilizadores de humor: lítio e lamotrigina</td></tr><tr><td>4</td><td>Antienxaquecosos: escada abortiva e prevenção</td></tr><tr><td>5</td><td>Dor e opioides: as três barreiras e os efeitos adversos</td></tr><tr><td>6</td><td>Sedação: propofol, etomidato, benzodiazepínicos e cetamina</td></tr><tr><td>7</td><td>Bloqueio neuromuscular: succinilcolina, rocurônio e cisatracúrio</td></tr><tr><td>8</td><td>Anticonvulsivantes: mecanismos, fármacos e escada da crise</td></tr></tbody></table><p>As marcações <strong>Questão de prova</strong> reproduzem o que foi apontado em aula como cobrado. As marcações <strong>Atenção</strong> indicam pontos em que o resumo da monitoria diverge da literatura e que vale confirmar com o professor.</p>"
+  },
+  {
+   "id": "r1",
+   "grupo": "Resumo de referência",
+   "titulo": "1. Antidepressivos",
+   "par": "g1",
+   "html": "<h3>1.1 A base: neurotransmissores e receptores</h3><p>No modelo usado em aula, a depressão resulta de um desequilíbrio dos neurotransmissores, com diminuição da serotonina e da noradrenalina, responsáveis por prazer, desejo, motivação e atenção. O paciente costuma ter humor deprimido na maior parte do dia, anedonia, falta de energia ou cansaço excessivo e perda ou ganho de peso. A maioria dos antidepressivos tem um único objetivo: aumentar os neurotransmissores na fenda sináptica.</p><p>Os receptores explicam ao mesmo tempo o efeito e o efeito adverso. No neurônio pós-sináptico, o 5-HT1 ligado à serotonina aumenta prazer e motivação; o 5-HT2a ligado à serotonina diminui a libido; o 5-HT3a ligado à serotonina causa náusea e vômito. O 5-HT2a é extremamente parecido com três outros receptores, e por isso drogas que o bloqueiam costumam bloquear também os vizinhos: M-1 (muscarínico), H-1 (histamínico) e alfa-1 pós-sináptico.</p><p class=\"tabtit\"><strong>Tabela 1.1</strong>Receptores e o que acontece quando são inibidos</p><table><thead><tr><th>Receptor</th><th>Local</th><th>Papel ou efeito da inibição</th></tr></thead><tbody><tr><td>5-HT1</td><td>Pós-sináptico</td><td>Ligado à serotonina, aumenta prazer e motivação</td></tr><tr><td>5-HT2a</td><td>Pós-sináptico</td><td>Ligado à serotonina, diminui a libido</td></tr><tr><td>5-HT3a</td><td>Pós-sináptico</td><td>Ligado à serotonina, causa náusea e vômito</td></tr><tr><td>M-1</td><td>Pós-sináptico</td><td>Inibição causa xerostomia, retenção urinária e obstipação</td></tr><tr><td>H-1</td><td>Pós-sináptico</td><td>Inibição causa sonolência e predileção por carboidratos</td></tr><tr><td>Alfa-1</td><td>Pós-sináptico</td><td>Inibição causa hipotensão postural</td></tr><tr><td>SERT</td><td>Pré-sináptico</td><td>Bomba de recaptação de serotonina</td></tr><tr><td>5-HT1 pré</td><td>Pré-sináptico</td><td>Feedback negativo</td></tr><tr><td>Alfa-2</td><td>Pré-sináptico</td><td>Identifica excesso de serotonina na fenda e faz alça de feedback negativo</td></tr><tr><td>MAO</td><td>Pré-sináptico</td><td>Enzima que degrada serotonina</td></tr></tbody></table><p>O trio anticolinérgico (xerostomia, retenção urinária e obstipação), somado a sonolência, ganho de peso e hipotensão postural, aparece repetidamente nas classes menos seletivas. Ele não precisa ser decorado classe a classe: basta saber que a droga bloqueia M-1, H-1 e alfa-1.</p><h3>1.2 Inibidores seletivos da recaptação de serotonina (ISRS)</h3><p>Os ISRS inibem exclusivamente a SERT na fenda sináptica. São a primeira linha por possuírem menos efeitos colaterais, e não por eficácia. O efeito aparece em aproximadamente 2 semanas, com piora nos primeiros dias, o que precisa ser explicado ao paciente para evitar abandono. Os efeitos adversos da classe são disfunção sexual, náusea e insônia; a anotação da aula acrescenta a hiponatremia ao grupo.</p><p class=\"tabtit\"><strong>Tabela 1.2</strong>ISRS: o que diferencia cada um</p><table><thead><tr><th>Fármaco</th><th>Característica marcante</th></tr></thead><tbody><tr><td>Fluoxetina</td><td>Metabolizada pela P450; não recomendada em polifarmácia pela interação medicamentosa; um dos poucos antidepressivos que causa perda de peso</td></tr><tr><td>Paroxetina</td><td>Resulta em ganho de peso</td></tr><tr><td>Citalopram</td><td>Prolongamento do intervalo QT, com risco de torção das pontas</td></tr><tr><td>Escitalopram</td><td>Também prolonga o QT; usado em menor dose que o citalopram</td></tr><tr><td>Sertralina</td><td>Mais recomendada para grupos de risco, como grávidas e idosos</td></tr></tbody></table><h3>1.3 Duais (inibidores da recaptação de serotonina e noradrenalina)</h3><p>Inibem a SERT e a NET. Os representantes são a venlafaxina, a desvenlafaxina, também usada na enxaqueca, e a duloxetina, usada para dores crônicas. Os efeitos adversos são perda de libido, náusea e vômito, sonhos vívidos, síndrome de abstinência (tremores, náusea e vômito) e hipertensão arterial em altas doses. Venlafaxina e desvenlafaxina estão associadas à hiponatremia. O resumo cita também a profilaxia de crise de enxaqueca nessa lista, mas trata-se de um uso, não de um efeito adverso.</p><h3>1.4 Tetracíclicos</h3><p>A mirtazapina inibe o receptor alfa-2 pré-sináptico, desligando o freio da liberação de neurotransmissores, e inibe também 5-HT2a, M-1, H-1 e alfa-1. Por bloquear o 5-HT2a, não causa perda de libido e pode ser usada para tratar insônia e disfunção sexual. O preço é o conjunto de efeitos dos receptores vizinhos: xerostomia, retenção urinária, obstipação, ganho de peso, sonolência, hipotensão postural, náuseas e vômitos.</p><h3>1.5 Atípicos</h3><p>São chamados atípicos porque não possuem tanta influência na serotonina; agem aumentando a liberação de noradrenalina e dopamina e demoram cerca de 8 semanas para fazer efeito. A trazodona é usada para insônia e disfunção sexual, com isenção no ganho de peso. A bupropiona é hoje usada também no abandono do tabagismo e no tratamento da obesidade, e pode tratar disfunção sexual. A bupropiona é contraindicada em pacientes com epilepsia, porque reduz o limiar convulsivo (o resumo escreve \"aumentar limiar de crise\", mas o sentido é facilitar a crise).</p><h3>1.6 Antidepressivos tricíclicos (ADT)</h3><p>Amitriptilina e nortriptilina inibem a recaptação de serotonina e, por não serem seletivos, inibem também outros receptores, o que gera maior possibilidade de efeitos adversos: xerostomia, retenção urinária, obstipação, ganho de peso, sonolência, hipotensão postural, náuseas e vômitos. Em baixas doses podem ser usados para insônia, enxaqueca e dores crônicas.</p><h3>1.7 Inibidores da MAO (IMAO)</h3><p>Bloqueiam a MAO, a enzima que degrada a serotonina; o representante citado é a isocarboxazida. Os efeitos adversos repetem o padrão dos não seletivos, com redução da libido. Duas regras são obrigatórias: é contraindicado o uso concomitante com ISRS, pelo risco de síndrome serotoninérgica, e devem ser evitados alimentos ricos em tiramina, como bacon, carne enlatada e queijos envelhecidos.</p><blockquote><strong>Atenção:</strong> o resumo da monitoria escreve \"tiamina\". O correto é <strong>tiramina</strong>: sem a MAO para degradá-la, a tiramina da dieta provoca crise hipertensiva.</blockquote><h3>1.8 Multimodais</h3><p>A vortioxetina inibe a SERT, antagoniza o 5-HT1 pré-sináptico, inibe o 5-HT2a e a NET. Somando um pouco de cada mecanismo simultaneamente, reduz efeitos adversos, e comprovadamente aumenta o potencial cognitivo.</p><div class=\"quadro\"><p class=\"qtit\">Quadro 1.1 · Sempre bom lembrar</p><p>Bupropiona, trazodona e mirtazapina melhoram a libido. Fluoxetina e IMAO são os campeões de interação medicamentosa. Fluoxetina e bupropiona resultam em perda de peso. Mirtazapina e paroxetina resultam em ganho de peso.</p></div>"
+  },
+  {
+   "id": "r2",
+   "grupo": "Resumo de referência",
+   "titulo": "2. Antipsicóticos",
+   "par": "g2",
+   "html": "<h3>2.1 Esquizofrenia e as vias da dopamina</h3><p>A esquizofrenia é um distúrbio comportamental que causa incapacidade de compreender a realidade e pode cursar com sintomas positivos ou negativos. Os sintomas positivos (alucinações auditivas e visuais, mania de perseguição, agressividade) decorrem de hiperatividade dopaminérgica no trato mesolímbico. Os sintomas negativos (dessocialização, embotamento, isolamento, apatia) decorrem de hipoatividade dopaminérgica no trato mesocortical.</p><p>O tratamento precisa bloquear o receptor D<sub>2</sub> para que a dopamina não gere hiperatividade da via mesolímbica. O problema é que há receptores D<sub>2</sub> também nas vias mesocortical, nigroestriatal e tuberoinfundibular, e o bloqueio nelas cria sintomas novos. Todo tratamento para esquizofrenia inibirá receptores D<sub>2</sub> em algum grau.</p><p class=\"tabtit\"><strong>Tabela 2.1</strong>Vias dopaminérgicas e o efeito do bloqueio D<sub>2</sub></p><table><thead><tr><th>Via</th><th>O que o bloqueio causa</th></tr></thead><tbody><tr><td>Mesolímbica</td><td>Efeito terapêutico: melhora dos sintomas positivos</td></tr><tr><td>Mesocortical</td><td>Piora dos sintomas negativos</td></tr><tr><td>Nigroestriatal</td><td>Parkinsonismo: marcha alargada, roda denteada, acatisia, discinesia, sinal do cheirador e do contador de moedas</td></tr><tr><td>Tuberoinfundibular</td><td>Hiperprolactinemia</td></tr></tbody></table><p>A serotonina é a chave dos atípicos: a serotonina agindo no 5-HT2a inibe a secreção de dopamina. Bloquear o 5-HT2a, portanto, devolve dopamina às vias em que ela faz falta (mesocortical, nigroestriatal, tuberoinfundibular). Uma regra geral vale para a classe inteira: todos os antipsicóticos aumentam o intervalo QT.</p><h3>2.2 Típicos</h3><p>Os típicos bloqueiam os receptores D<sub>2</sub>. Melhoram os sintomas positivos e pioram os negativos, além de causar sintomas parkinsonianos, hiperprolactinemia, sonolência e ganho de peso. A clorpromazina também inibe H1, causando sedação. O haloperidol é o bloqueador D<sub>2</sub> potente usado por via intramuscular na agitação. O resumo afirma que os típicos não podem ser combinados entre si porque competem pelo mesmo sítio de atuação.</p><p>A dupla clássica é haloperidol (Haldol) com prometazina (Fenergan), um anti-histamínico H1, usada no surto psicótico.</p><blockquote><strong>Atenção:</strong> o resumo chama o haloperidol de \"ansiolítico\" e afirma que os típicos não se combinam, mas a anotação da última página diz que, no paciente hiperativo e agressivo, usa-se haloperidol com clorpromazina ou haloperidol com benzodiazepínico, por via intramuscular. As duas informações se contradizem; vale confirmar com o professor qual versão ele cobra.</blockquote><h3>2.3 Atípicos</h3><p>Os atípicos inibem mais fracamente o D<sub>2</sub>, com alvo maior no 5-HT2a. Melhoram os sintomas positivos sem tanto prejuízo em parkinsonismo e hiperprolactinemia.</p><p class=\"tabtit\"><strong>Tabela 2.2</strong>Antipsicóticos atípicos</p><table><thead><tr><th>Fármaco</th><th>O que marca</th><th>Efeitos adversos e cuidados</th></tr></thead><tbody><tr><td>Olanzapina</td><td>Droga com MAIOR ganho de peso; também usada no transtorno bipolar</td><td>Sonolência, ganho de peso, pode causar agranulocitose; aumenta o risco cardiovascular; contraindicada em hipertensos, diabéticos e obesos</td></tr><tr><td>Quetiapina</td><td>Mais usada para insônia e estabilização do humor (25 mg); para esquizofrenia a dose mínima é 100 mg</td><td>Ganho de peso e sonolência</td></tr><tr><td>Risperidona</td><td>Entre os atípicos, a que MAIS INIBE D<sub>2</sub>; melhora os sintomas negativos; insônia em baixas doses</td><td>Mais efeitos extrapiramidais (parkinsonismo, hiperprolactinemia), sonolência e ganho de peso</td></tr><tr><td>Clozapina</td><td>Esquizofrenia refratária; a droga mais eficaz; reduz o risco de suicídio</td><td>Agranulocitose não reversível (leucócitos &lt; 3.000 e neutrófilos &lt; 1.500)</td></tr><tr><td>Aripiprazol</td><td>Modulador de dopamina (D2, D4, 5-HT2a e outros); menor intensidade de inibição</td><td>Menos efeitos adversos; não é tão eficaz para sintomas positivos</td></tr></tbody></table><h3>2.4 Por que a clozapina não é primeira linha</h3><p>A clozapina resolve os sintomas positivos e tem impacto sobre os negativos sem muitos efeitos extrapiramidais, e ainda reduz o risco de suicídio. Não é primeira linha por conta dos efeitos adversos: pode causar agranulocitose não reversível. O ideal seria o acompanhamento semanal do paciente nas primeiras 16 semanas, o que geralmente não acontece.</p>"
+  },
+  {
+   "id": "r3",
+   "grupo": "Resumo de referência",
+   "titulo": "3. Estabilizadores de humor",
+   "par": "g3",
+   "html": "<h3>3.1 Transtorno bipolar</h3><p>No transtorno bipolar tipo I basta um único episódio de mania, com alteração de humor por euforia ou irritabilidade. No tipo II há alternância entre depressão e hipomania, sem mania franca.</p><blockquote><strong>Atenção:</strong> o resumo fala em mania com duração mínima de 4 dias. Pelo DSM-5, 4 dias é o critério da hipomania; a mania exige pelo menos 7 dias (ou qualquer duração, se houver internação).</blockquote><h3>3.2 Lítio</h3><p>O lítio é considerado padrão-ouro para o transtorno bipolar tipo I. Possui janela terapêutica estreita, com dose terapêutica próxima da dose tóxica, e por isso exige dosagem periódica da concentração plasmática (litemia, chamada no resumo de litocinemia). Não é metabolizado pelo fígado, e sim eliminado pelo rim.</p><p class=\"tabtit\"><strong>Tabela 3.1</strong>Lítio em uma tabela</p><table><thead><tr><th>Item</th><th>Conteúdo</th></tr></thead><tbody><tr><td>Efeitos adversos</td><td>Diabetes insipidus, polidipsia, tremores finos, insuficiência renal, hipotireoidismo</td></tr><tr><td>Contraindicações</td><td>Gestantes, insuficiência renal e hipotireoidismo</td></tr><tr><td>Intoxicação</td><td>Tremor, ataxia, mioclonia, crise convulsiva</td></tr><tr><td>Não associar (anotação)</td><td>AINEs, diuréticos e IECA/BRA</td></tr><tr><td>Monitorar</td><td>Função renal e tireoidiana (não hepática)</td></tr></tbody></table><blockquote><strong>Questão de prova:</strong> \"Paciente em uso de lítio deve ter função hepática e tireoidiana monitoradas\" é <strong>falso</strong>: o lítio é renal, então a função monitorada é a renal (e a tireoidiana).</blockquote><p>Na gestante deve ser usada a lamotrigina. Quetiapina e ácido valproico são alternativas ao lítio.</p><h3>3.3 Lamotrigina e outras opções</h3><p>A lamotrigina é considerada padrão-ouro para o transtorno bipolar tipo II. No transtorno bipolar também podem ser usados anticonvulsivantes, como lamotrigina, ácido valproico e carbamazepina, ou antipsicóticos atípicos, como quetiapina, risperidona e olanzapina.</p><blockquote><strong>Questão de prova:</strong> transtorno de humor (bipolar) tipo II: a droga é a lamotrigina.</blockquote>"
+  },
+  {
+   "id": "r4",
+   "grupo": "Resumo de referência",
+   "titulo": "4. Antienxaquecosos",
+   "par": "g4",
+   "html": "<h3>4.1 Fisiopatologia e quadro</h3><p>A enxaqueca é desencadeada por aumento da pressão intracraniana por vasodilatação dos vasos cerebrais. O raciocínio segue a doutrina de Monro-Kellie: parênquima, líquor e sangue estão encarcerados na calota craniana, e a pressão intracraniana sobe com o aumento de qualquer um desses três elementos. Os sintomas são cefaleia pulsátil associada a fotossensibilidade, náusea e vômitos. A aura é a premonição da enxaqueca: ao senti-la, o paciente deve tomar o medicamento.</p><p>O tratamento não medicamentoso consiste em eliminar fatores estressores, fazer exercício físico e evitar cafeína. Opioides pioram a enxaqueca; a anotação da aula fala em contraindicação absoluta. O tratamento medicamentoso é dividido em abortivo, usado na crise, e preventivo.</p><h3>4.2 Tratamento abortivo</h3><p>Existe uma escala analgésica, com uma ordem a ser seguida. Começa-se com dipirona associada a AINE (cetoprofeno, diclofenaco). Os triptanos são agonistas seletivos dos receptores serotoninérgicos 5-HT1b e 5-HT1d, causando vasoconstrição cerebral; são a classe com mais eficácia, e o efeito adverso anotado em aula é o abafamento cervical (sensação de aperto no pescoço). Depois vêm a dexametasona venosa e, por fim, o antipsicótico típico (haloperidol ou clorpromazina).</p><p class=\"tabtit\"><strong>Tabela 4.1</strong>Escada abortiva da enxaqueca</p><table><thead><tr><th>Degrau</th><th>Fármaco</th></tr></thead><tbody><tr><td>1</td><td>Dipirona + AINE (cetoprofeno, diclofenaco)</td></tr><tr><td>Depois</td><td>Triptano (agonista 5-HT1b e 5-HT1d)</td></tr><tr><td>Depois</td><td>Dexametasona venosa</td></tr><tr><td>Último</td><td>Antipsicótico típico (haloperidol ou clorpromazina)</td></tr></tbody></table><blockquote><strong>Anotação da aula:</strong> ao lado da lista, os degraus foram renumerados à mão: triptano como 3º, dexametasona como 4º e antipsicótico como 5º. O 2º degrau não foi anotado; confirmar com o professor o que entra entre a dipirona com AINE e o triptano.</blockquote><h3>4.3 Tratamento preventivo</h3><p class=\"tabtit\"><strong>Tabela 4.2</strong>Profilaxia da enxaqueca</p><table><thead><tr><th>Classe</th><th>Observação</th></tr></thead><tbody><tr><td>Betabloqueadores</td><td>Contraindicados em asma, DPOC e bradiarritmia</td></tr><tr><td>Topiramato (anticonvulsivante)</td><td>Muito eficaz; reduz o peso; causa amnésia, é muito teratogênico e corta a ação do anticoncepcional</td></tr><tr><td>Tricíclicos</td><td>Amitriptilina, nortriptilina</td></tr><tr><td>Duais</td><td>Desvenlafaxina</td></tr></tbody></table>"
+  },
+  {
+   "id": "r5",
+   "grupo": "Resumo de referência",
+   "titulo": "5. Dor e opioides",
+   "par": "g5",
+   "html": "<h3>5.1 Transmissão da dor</h3><p>Na aula, o neurônio periférico tem potencial de repouso de −120 mV. Se o estímulo doloroso atinge o limiar, abrem-se canais de Na<sup>+</sup>, o sódio entra, ocorre despolarização e, em seguida, o potencial de ação (−40 mV). O estímulo chega ao corno dorsal da medula, onde o potencial de ação abre canais de Ca<sup>2+</sup> no neurônio pré-sináptico. A entrada do cálcio libera vesículas de glutamato na fenda; o glutamato ativa receptores NMDA no neurônio pós-sináptico, que despolariza. O segundo neurônio conduz o estímulo pelo trato espinotalâmico até o tálamo, e daí ao córtex, onde a dor é percebida.</p><blockquote><strong>Atenção:</strong> os valores em mV são os usados em aula, de forma didática. Nos livros, o repouso neuronal fica em torno de −70 mV; para a prova, vale o raciocínio (o opioide deixa a membrana mais negativa e longe do limiar).</blockquote><h3>5.2 Como o opioide bloqueia a dor: as três barreiras</h3><p>O opioide age no receptor Mi (μ) em três pontos. Primeiro, no nociceptor periférico: o receptor ativado abre canais de K<sup>+</sup>, o potássio sai, a membrana fica mais eletronegativa (−180 mV na aula) e a despolarização fica difícil. Se ainda assim houver estímulo, o opioide age no neurônio pré-sináptico do corno dorsal fechando os canais de Ca<sup>2+</sup>, o que impede a liberação das vesículas de glutamato. Se ainda assim houver estímulo, no neurônio pós-sináptico o receptor Mi abre canais de K<sup>+</sup> e eleva o limiar de excitabilidade.</p><p class=\"tabtit\"><strong>Tabela 5.1</strong>As três barreiras do opioide</p><table><thead><tr><th>Barreira</th><th>Local</th><th>Canal</th></tr></thead><tbody><tr><td>1. Gênese</td><td>Nociceptor periférico</td><td>Abre K<sup>+</sup></td></tr><tr><td>2. Propagação</td><td>Pré-sináptico do corno dorsal</td><td>Fecha Ca<sup>2+</sup></td></tr><tr><td>3. Propagação</td><td>Pós-sináptico do corno dorsal</td><td>Abre K<sup>+</sup></td></tr></tbody></table><h3>5.3 Opioides: representantes e efeitos adversos</h3><p>Opioides são fármacos que reduzem a percepção e a transmissão da dor ao se ligarem a receptores opioides no sistema nervoso central e periférico. Os representantes citados são morfina, fentanil e tramadol. O fentanil é o opioide mais potente em uso hoje e deve sempre ser infundido lentamente, ou pode causar rigidez torácica; a anotação o descreve também como simpatolítico.</p><p class=\"tabtit\"><strong>Tabela 5.2</strong>Efeitos adversos dos opioides</p><table><thead><tr><th>Efeito</th><th>Explicação</th></tr></thead><tbody><tr><td>Depressão respiratória</td><td>Forte eletronegativação no bulbo</td></tr><tr><td>Inibição parassimpática</td><td>Evitar opioide em cirurgia de abdome alto, pois causa íleo paralítico</td></tr><tr><td>Potencial aditivo</td><td>Ação no sistema de recompensa</td></tr></tbody></table><p>O potencial aditivo se explica pela via da recompensa. A área tegmentar ventral libera dopamina no núcleo accumbens. Quando o opioide se liga ao receptor Mi do neurônio GABAérgico, bloqueia os canais de Ca<sup>2+</sup> e reduz a liberação de GABA; sem o freio do GABA, há maior liberação de dopamina e aumento da sensação de recompensa.</p><p>O antídoto citado em aula é naloxona ou naltrexona. Na intoxicação aguda, o antagonista usado é a naloxona; a naltrexona é usada por via oral na manutenção da dependência. Opioides são contraindicados na enxaqueca, que pioram.</p>"
+  },
+  {
+   "id": "r6",
+   "grupo": "Resumo de referência",
+   "titulo": "6. Sedação e indução",
+   "par": "g6",
+   "html": "<h3>6.1 GABA contra glutamato</h3><p>A sedação é a indução para o estado de calma e hipnose. Os neurônios pré-sinápticos excitatórios liberam glutamato e os inibitórios liberam GABA. No neurônio pós-sináptico, o glutamato ligado ao receptor NMDA abre canais de Na<sup>+</sup>, a membrana fica mais eletropositiva e há excitação. O GABA ligado ao receptor GABA-A abre canais de Cl<sup>−</sup>, o cloreto entra, a membrana fica mais eletronegativa e o potencial de ação fica difícil. A maioria dos sedativos age bloqueando o NMDA ou ativando o GABA-A.</p><h3>6.2 Propofol</h3><p>O propofol é agonista GABA por ligação direta e não possui efeito analgésico. Tem meia-vida de 5 minutos, início de ação em 1 minuto e pico em 2 minutos. É forte depressor respiratório, hipotensor severo, amnésico, tem alto poder anticonvulsivante e induz e mantém a sedação. Os efeitos colaterais são depressão respiratória, hipotensão, hipertrigliceridemia na infusão contínua (cada 1 mL fornece cerca de 1,1 kcal, por ser emulsão lipídica) e a síndrome da infusão contínua do propofol (PRIS): acidose metabólica, rabdomiólise e choque cardiogênico.</p><blockquote><strong>Anotação da aula:</strong> metade de propofol com metade de cetamina é a melhor combinação para intubação: a cetamina acrescenta analgesia e compensa a hipotensão.</blockquote><h3>6.3 Etomidato</h3><p>O etomidato é agonista GABA por modulação, mais intenso, e também não tem efeito analgésico. Tem meia-vida de 2 minutos, início de ação em 45 segundos e pico em 1 minuto. Somente induz, não mantém. Tem inércia hemodinâmica, ou seja, mexe pouco com pressão e frequência. Não pode ter a dose repetida porque inibe a enzima 11-beta-hidroxilase, que produz cortisol na adrenal, levando à falência adrenal; pelo mesmo motivo não deve ser usado no choque séptico. Os efeitos adversos são depressão respiratória e insuficiência adrenal.</p><h3>6.4 Benzodiazepínicos</h3><p>Midazolam, clonazepam e diazepam são moduladores do GABA-A, praticamente idênticos ao propofol no efeito. Na aula: meia-vida de 15 minutos, tempo de ação de 5 minutos e depuração de até 24 horas. Não são boa droga para indução, e sim para manutenção; podem ser usados como ansiolíticos; têm ampla faixa terapêutica e intoxicação difícil. O antídoto é o flumazenil.</p><h3>6.5 Cetamina</h3><p>A cetamina é antagonista NMDA. É sedativa e analgésica, diferentemente dos outros agentes do capítulo. Não faz depressão respiratória, é broncodilatadora, aumenta frequência cardíaca e pressão arterial por efeito adrenérgico, induz e mantém. É dissociativa, causa logorreia e pode causar alucinações. Tem meia-vida de cerca de 5 minutos e tempo de ação de 3 a 5 minutos. É usada no tratamento da depressão refratária, com redução da ideação suicida. Os efeitos adversos são taquicardia, hipertensão e alucinações.</p><blockquote><strong>Questão de prova:</strong> a cetamina é <strong>sedativa e analgésica</strong>.</blockquote><p class=\"tabtit\"><strong>Tabela 6.1</strong>Comparação dos sedativos</p><table><thead><tr><th>Droga</th><th>Mecanismo</th><th>Analgesia</th><th>Induz / mantém</th><th>Marca registrada</th></tr></thead><tbody><tr><td>Propofol</td><td>Agonista GABA direto</td><td>Não</td><td>Induz e mantém</td><td>Hipotensão severa; PRIS</td></tr><tr><td>Etomidato</td><td>Agonista GABA por modulação</td><td>Não</td><td>Só induz</td><td>Estável; inibe a 11-beta-hidroxilase</td></tr><tr><td>Benzodiazepínicos</td><td>Moduladores GABA-A</td><td>Não</td><td>Melhor para manter</td><td>Antídoto flumazenil</td></tr><tr><td>Cetamina</td><td>Antagonista NMDA</td><td>Sim</td><td>Induz e mantém</td><td>Sem depressão respiratória; sobe PA e FC</td></tr></tbody></table>"
+  },
+  {
+   "id": "r7",
+   "grupo": "Resumo de referência",
+   "titulo": "7. Bloqueio neuromuscular",
+   "par": "g7",
+   "html": "<h3>7.1 Conceito</h3><p>Os bloqueadores neuromusculares atuam na junção neuromuscular impedindo a ação da acetilcolina nos receptores nicotínicos da porção pós-sináptica. Clinicamente, o resultado é paralisia muscular flácida ou fraqueza muscular generalizada. O resumo os define como antagonistas competitivos da acetilcolina, o que descreve os não despolarizantes; a succinilcolina age de outro modo.</p><h3>7.2 Succinilcolina (despolarizante)</h3><p>A succinilcolina é agonista dos receptores colinérgicos nicotínicos: abre o canal, provoca despolarização celular, demonstrada por miofasciculações, e mantém a placa despolarizada e inexcitável. Não é degradada pela acetilcolinesterase, e sim pela colinesterase plasmática. A meia-vida anotada é de 10 a 15 minutos.</p><p class=\"tabtit\"><strong>Tabela 7.1</strong>Succinilcolina: efeitos adversos e restrições</p><table><thead><tr><th>Item</th><th>Conteúdo</th></tr></thead><tbody><tr><td>Hipercalemia</td><td>Não administrar em politraumatizados ou queimados (na anotação, também em insuficiência renal e crise convulsiva reentrante)</td></tr><tr><td>Hipertermia maligna</td><td>Antídoto: dantrolene</td></tr><tr><td>Intoxicações</td><td>Não usar na intoxicação por carbamato e por cocaína: são degradados pela mesma enzima</td></tr></tbody></table><blockquote><strong>Questão de prova:</strong> não usar succinilcolina na intoxicação por carbamato e cocaína, porque disputam a mesma enzima de degradação.</blockquote><h3>7.3 Não despolarizantes: rocurônio e cisatracúrio</h3><p>O rocurônio é bloqueador não despolarizante: não causa fasciculação, por isso não se sabe o momento exato do bloqueio. Não tem contraindicação, tem meia-vida de 40 minutos e o antídoto é o sugamadex. O cisatracúrio é usado em manutenção por infusão contínua em doenças com redução da complacência pulmonar; sofre hidrólise plasmática, independente de fígado e rim, com meia-vida de 20 minutos.</p><p class=\"tabtit\"><strong>Tabela 7.2</strong>Despolarizante e não despolarizantes</p><table><thead><tr><th>Droga</th><th>Tipo</th><th>Meia-vida (aula)</th><th>Detalhe</th></tr></thead><tbody><tr><td>Succinilcolina</td><td>Despolarizante</td><td>10 a 15 min</td><td>Fasciculações; hipercalemia; hipertermia maligna</td></tr><tr><td>Rocurônio</td><td>Não despolarizante</td><td>40 min</td><td>Sem contraindicação; antídoto sugamadex</td></tr><tr><td>Cisatracúrio</td><td>Não despolarizante</td><td>20 min</td><td>Hidrólise plasmática; infusão contínua</td></tr></tbody></table>"
+  },
+  {
+   "id": "r8",
+   "grupo": "Resumo de referência",
+   "titulo": "8. Anticonvulsivantes",
+   "par": "g8",
+   "html": "<h3>8.1 Definições</h3><p>Crise convulsiva é uma breve alteração cerebral causada por ativação desordenada, sincrônica e rítmica de determinados grupamentos de neurônios, com duração média de 1 a 4 minutos. Epilepsia é o distúrbio da função cerebral caracterizado pela ocorrência periódica e imprevisível de convulsões. As crises são parciais (focais), simples ou complexas, chamadas na anotação de perceptivas e disperceptivas, ou generalizadas, como a crise de ausência e a tônico-clônica, a mais clássica, com abalos musculares ritmados.</p><h3>8.2 Mecanismos</h3><p class=\"tabtit\"><strong>Tabela 8.1</strong>Anticonvulsivantes por mecanismo (anotação da aula)</p><table><thead><tr><th>Mecanismo</th><th>Fármacos</th></tr></thead><tbody><tr><td>Fechamento dos canais de Na<sup>+</sup></td><td>Fenitoína, carbamazepina, lamotrigina (titulação lenta, quase sem efeito adverso), pregabalina, gabapentina</td></tr><tr><td>Fechamento dos canais de Ca<sup>2+</sup></td><td>Ácido valproico; etossuximida (melhor para crise de ausência)</td></tr><tr><td>Modulação do GABA-A</td><td>Benzodiazepínicos; barbitúricos (Stevens-Johnson, aplasia medular, ataxia, sedação; evitar no etilismo)</td></tr><tr><td>Inibição da secreção de glutamato (SV-2A)</td><td>Levetiracetam: a melhor droga, boa para tudo</td></tr></tbody></table><blockquote><strong>Atenção:</strong> a anotação coloca pregabalina e gabapentina entre os bloqueadores de sódio. Na literatura, elas se ligam à subunidade alfa-2-delta dos canais de cálcio.</blockquote><h3>8.3 Fármacos</h3><p>Os benzodiazepínicos (diazepam IV, midazolam IM) devem ser usados para abortar a crise em vigência, não para prevenir novas crises.</p><p>A fenitoína modula canais de Na<sup>+</sup>, bloqueia a propagação do potencial de ação e estabiliza a membrana. É indicada principalmente na crise focal. Os efeitos adversos são reações dermatológicas, ataxia, nistagmo, má formação fetal e aumento das mioclonias. Tem de ser infundida a menos de 50 mg/min, ou pode causar parada cardíaca.</p><p>A carbamazepina é primeira linha nas crises focais e é usada também como estabilizadora do humor e na neuralgia do trigêmeo. É contraindicada nas crises de ausência, nas mioclonias, na gestação e na hiponatremia.</p><p>O ácido valproico bloqueia canais de Ca<sup>2+</sup>, reduzindo neurotransmissores e despolarização; também converte glutamato em GABA, pela glutamato descarboxilase, e inibe a GABA transaminase. É indicado nas crises tônico-clônicas generalizadas e nas crises de ausência. Os efeitos adversos são ganho de peso, síndrome metabólica e teratogenicidade.</p><p>A gabapentina é indicada na epilepsia com crises focais refratárias ao tratamento de primeira linha. O fenobarbital é modulador alostérico do receptor GABA, aumentando a hiperpolarização e o limiar convulsivo. Causa síndrome de Stevens-Johnson, ataxia, anemia aplásica e sedação; é indicado nas crises parciais ou tônico-clônicas e contraindicado em etilistas e em pacientes em uso de ácido valproico.</p><div class=\"quadro\"><p class=\"qtit\">Quadro 8.1 · Teratogênicos</p><p>Os três anticonvulsivantes marcados como teratogênicos são o ácido valproico, a fenitoína e a carbamazepina.</p></div><p class=\"tabtit\"><strong>Tabela 8.2</strong>Fármaco por tipo de crise</p><table><thead><tr><th>Crise</th><th>Escolha</th></tr></thead><tbody><tr><td>Focal</td><td>Carbamazepina (primeira linha); fenitoína; gabapentina se refratária</td></tr><tr><td>Ausência</td><td>Etossuximida ou ácido valproico; carbamazepina contraindicada</td></tr><tr><td>Tônico-clônica generalizada</td><td>Ácido valproico; fenobarbital</td></tr><tr><td>Crise em vigência</td><td>Benzodiazepínico</td></tr></tbody></table><h3>8.4 Escada da crise em vigência</h3><p>Primeiro, benzodiazepínico, em até 3 tentativas, para abortar a crise. Se não ceder, fenitoína, que evita nova crise, sempre em infusão lenta. Se persistir, intubação orotraqueal com propofol ou midazolam. O último degrau é o barbitúrico.</p><p class=\"tabtit\"><strong>Tabela 8.3</strong>Escada para crise convulsiva</p><table><thead><tr><th>Degrau</th><th>Conduta</th><th>Cuidado</th></tr></thead><tbody><tr><td>1</td><td>Benzodiazepínico (até 3 tentativas)</td><td>Aborta a crise</td></tr><tr><td>2</td><td>Fenitoína</td><td>Infusão &lt; 50 mg/min; acima disso causa parada cardiorrespiratória</td></tr><tr><td>3</td><td>IOT com propofol ou midazolam</td><td></td></tr><tr><td>4</td><td>Barbitúrico</td><td></td></tr></tbody></table>"
+  },
+  {
+   "id": "rp",
+   "grupo": "Resumo de referência",
+   "titulo": "Pontos-chave e referências",
+   "par": "g0",
+   "html": "<h3>Pontos-chave</h3><ol class=\"pontos\"><li>ISRS são primeira linha por tolerância, não por eficácia; o efeito aparece em cerca de 2 semanas, com piora inicial.</li><li>Fluoxetina: interação pelo P450 e perda de peso. Paroxetina: ganho de peso. Citalopram e escitalopram: QT longo. Sertralina: gestantes e idosos.</li><li>Bloquear M-1, H-1 e alfa-1 explica boca seca, retenção, obstipação, sono, ganho de peso e hipotensão postural.</li><li>Bupropiona, trazodona e mirtazapina poupam a libido; bupropiona é contraindicada na epilepsia.</li><li>IMAO nunca com ISRS (síndrome serotoninérgica) e sem alimentos com tiramina.</li><li>Todo antipsicótico bloqueia D<sub>2</sub> e alarga o QT; o bloqueio nigroestriatal dá parkinsonismo e o tuberoinfundibular, hiperprolactinemia.</li><li>Olanzapina engorda mais; risperidona é a atípica com mais efeito extrapiramidal; clozapina é a mais eficaz, mas causa agranulocitose.</li><li>Lítio: padrão-ouro no bipolar I, janela estreita, eliminação renal; não associar AINE, diurético ou IECA/BRA. Lamotrigina: bipolar II e gestante.</li><li>Enxaqueca: dipirona com AINE, triptano, dexametasona e antipsicótico típico; opioide piora.</li><li>Opioide: abre K<sup>+</sup>, fecha Ca<sup>2+</sup>, abre K<sup>+</sup>; deprime a respiração e causa íleo; fentanil rápido dá rigidez torácica.</li><li>Propofol induz e mantém, sem analgesia; etomidato só induz e bloqueia o cortisol; cetamina é sedativa e analgésica, sem depressão respiratória.</li><li>Succinilcolina: hipercalemia e hipertermia maligna (dantrolene); rocurônio é revertido por sugamadex.</li><li>Crise em vigência: benzo, fenitoína lenta, IOT, barbitúrico. Ausência: etossuximida ou valproato, nunca carbamazepina.</li></ol><h3>Referências</h3><ul class=\"refs\"><li>Queiroz AJ. Resumo da monitoria de Farmacologia Clínica, Prof. Dr. Murilo Queiroz, com anotações de aula.</li><li>Ramos M. Farmacologia Voltada para Prática Clínica. 1ª ed. Viseu; 2024. ISBN 978-65-254-7870-8.</li><li>American Psychiatric Association. DSM-5-TR. 2022 (critérios de mania e hipomania, usados nas notas de atenção).</li></ul>"
+  },
+  {
+   "id": "g0",
+   "grupo": "Guia prioritário",
+   "titulo": "Como usar (comece por aqui)",
+   "par": "r0",
+   "html": "<p>Esta é a <strong>parte prioritária</strong>: regras curtas, as anotações da aula e o que foi marcado como questão de prova. A explicação completa de cada parte está no <span class=\"xref\" data-sec=\"r0\">Resumo de referência</span> (use <strong>Lado a lado</strong>).</p><h3>Marcado como questão de prova</h3><ul><li>Cetamina é <strong>sedativa e analgésica</strong>.</li><li>Succinilcolina <strong>não</strong> na intoxicação por carbamato e cocaína (mesma enzima).</li><li>Bipolar tipo II: a droga é a <strong>lamotrigina</strong>.</li><li>Lítio monitora função <strong>renal</strong> e tireoidiana; \"hepática\" é falso.</li></ul><h3>Ordem sugerida</h3><ol><li>Leia o resumo de cada parte.</li><li>Volte aqui e fixe as regras.</li><li>Faça o quiz e as questões.</li><li>Termine com os casos clínicos.</li></ol><p><button type=\"button\" class=\"xref\" data-sec=\"gsiglas\">Consultar o guia de siglas</button></p>"
+  },
+  {
+   "id": "g1",
+   "grupo": "Guia prioritário",
+   "titulo": "Antidepressivos: regras de bolso",
+   "par": "r1",
+   "html": "<ul><li><strong>ISRS</strong> = primeira linha por <strong>menos efeitos</strong>, não por eficácia. Efeito em ~2 semanas, piora nos primeiros dias.</li><li>Efeitos dos ISRS: disfunção sexual, náusea, insônia e hiponatremia.</li><li><strong>Fluoxetina</strong>: P450, evitar na polifarmácia, <strong>perde peso</strong>. <strong>Paroxetina</strong>: ganha peso. <strong>Citalopram/escitalopram</strong>: QT longo, torção das pontas. <strong>Sertralina</strong>: grávidas e idosos.</li><li><strong>Duais</strong> (venlafaxina, desvenlafaxina, duloxetina): HAS em dose alta, abstinência, sonhos vívidos; desvenlafaxina na enxaqueca, duloxetina na dor crônica; venla e desvenla dão hiponatremia.</li><li><strong>Mirtazapina</strong>: bloqueia alfa-2; não tira a libido; trata insônia; engorda e dá sono.</li><li><strong>Trazodona</strong>: insônia, sem ganho de peso. <strong>Bupropiona</strong>: tabagismo e obesidade; <strong>contraindicada na epilepsia</strong>. Atípicos levam ~8 semanas.</li><li><strong>Tricíclicos</strong> (amitriptilina, nortriptilina): efeito anticolinérgico + sono + hipotensão; em dose baixa, insônia, enxaqueca e dor crônica.</li><li><strong>IMAO</strong> (isocarboxazida): nunca com ISRS; evitar <strong>tiramina</strong> (queijos envelhecidos, bacon, carne enlatada).</li><li><strong>Vortioxetina</strong> (multimodal): melhora a cognição.</li></ul><p class=\"tabtit\"><strong>Tabela 1.3</strong>Peso e libido</p><table><thead><tr><th>Efeito</th><th>Fármacos</th></tr></thead><tbody><tr><td>Perda de peso</td><td>Fluoxetina, bupropiona</td></tr><tr><td>Ganho de peso</td><td>Mirtazapina, paroxetina (e tricíclicos, IMAO)</td></tr><tr><td>Poupam ou melhoram a libido</td><td>Bupropiona, trazodona, mirtazapina</td></tr></tbody></table><blockquote><strong>Anotação da aula:</strong> ao lado dos ISRS, a chave escrita à mão é <strong>hiponatremia</strong>.</blockquote><blockquote><strong>Pegadinha:</strong> \"ISRS são primeira linha por serem os mais eficazes\" está errado: é pela tolerância.</blockquote>"
+  },
+  {
+   "id": "g2",
+   "grupo": "Guia prioritário",
+   "titulo": "Antipsicóticos: regras de bolso",
+   "par": "r2",
+   "html": "<ul><li>Positivos = <strong>excesso</strong> de dopamina mesolímbica. Negativos = <strong>falta</strong> de dopamina mesocortical.</li><li>Bloqueio D<sub>2</sub>: nigroestriatal → parkinsonismo; tuberoinfundibular → hiperprolactinemia; mesocortical → piora negativos.</li><li><strong>Todos</strong> os antipsicóticos alargam o QT.</li><li><strong>Típicos</strong>: melhoram positivos, pioram negativos. Clorpromazina também bloqueia H1 (seda).</li><li>Surto psicótico: <strong>haloperidol + prometazina</strong> (anti-H1).</li><li><strong>Olanzapina</strong>: maior ganho de peso, risco cardiovascular; evitar em HAS, DM, obesidade.</li><li><strong>Quetiapina</strong>: 25 mg para insônia e humor; ≥ 100 mg para esquizofrenia.</li><li><strong>Risperidona</strong>: a atípica que mais bloqueia D<sub>2</sub> → mais extrapiramidal; melhora negativos.</li><li><strong>Clozapina</strong>: refratária, a mais eficaz, reduz suicídio; agranulocitose (leuco &lt; 3.000, neutro &lt; 1.500) → controle semanal por 16 semanas.</li><li><strong>Aripiprazol</strong>: modulador de dopamina, menos efeitos, menos eficaz nos positivos.</li></ul><blockquote><strong>Anotação da aula:</strong> paciente hiperativo e agressivo: haloperidol + clorpromazina ou haloperidol + benzodiazepínico, intramuscular. Na quetiapina, escrito à mão: \"indicado p/ TA\".</blockquote><blockquote><strong>Pegadinha:</strong> o resumo diz que típicos não se combinam, mas a anotação combina haloperidol com clorpromazina. Confirme com o professor.</blockquote>"
+  },
+  {
+   "id": "g3",
+   "grupo": "Guia prioritário",
+   "titulo": "Estabilizadores de humor: o que cai",
+   "par": "r3",
+   "html": "<ul><li>Bipolar I: mania. Bipolar II: depressão alternando com hipomania.</li><li><strong>Lítio</strong> = padrão-ouro no bipolar I; janela estreita; dosar litemia; <strong>eliminação renal</strong>.</li><li>Efeitos do lítio: diabetes insipidus, polidipsia, tremor fino, insuficiência renal, hipotireoidismo.</li><li>Contraindicações: gestante, insuficiência renal, hipotireoidismo.</li><li>Intoxicação: tremor, ataxia, mioclonia, convulsão.</li><li>Não associar ao lítio: <strong>AINE, diurético, IECA/BRA</strong> (anotação).</li><li><strong>Lamotrigina</strong> = bipolar II e gestante. Alternativas ao lítio: quetiapina e ácido valproico.</li></ul><blockquote><strong>Questão de prova:</strong> \"Lítio exige monitorar função hepática\" → falso. Bipolar II → lamotrigina.</blockquote>"
+  },
+  {
+   "id": "g4",
+   "grupo": "Guia prioritário",
+   "titulo": "Enxaqueca: escada e prevenção",
+   "par": "r4",
+   "html": "<ul><li>Mecanismo da aula: vasodilatação → aumento da PIC (Monro-Kellie: parênquima, líquor e sangue).</li><li>Quadro: cefaleia pulsátil + fotossensibilidade + náusea e vômito. Aura = sinal para tomar o remédio.</li><li>Sem remédio: tirar estressores, exercício, evitar cafeína.</li><li><strong>Opioide piora a enxaqueca</strong> (anotado como contraindicação absoluta).</li></ul><p class=\"tabtit\"><strong>Tabela 4.3</strong>Crise: na ordem</p><table><thead><tr><th>Ordem</th><th>Fármaco</th><th>Detalhe</th></tr></thead><tbody><tr><td>1º</td><td>Dipirona + AINE</td><td>Cetoprofeno, diclofenaco</td></tr><tr><td>3º (anotação)</td><td>Triptano</td><td>Agonista 5-HT1b/1d; o mais eficaz; aperto cervical</td></tr><tr><td>4º</td><td>Dexametasona IV</td><td></td></tr><tr><td>5º</td><td>Haloperidol ou clorpromazina</td><td></td></tr></tbody></table><p class=\"tabtit\"><strong>Tabela 4.4</strong>Prevenção</p><table><thead><tr><th>Classe</th><th>Lembrar</th></tr></thead><tbody><tr><td>Betabloqueador</td><td>Não em asma, DPOC, bradiarritmia</td></tr><tr><td>Topiramato</td><td>Emagrece, amnésia, teratogênico, corta anticoncepcional</td></tr><tr><td>Tricíclico</td><td>Amitriptilina, nortriptilina</td></tr><tr><td>Dual</td><td>Desvenlafaxina</td></tr></tbody></table>"
+  },
+  {
+   "id": "g5",
+   "grupo": "Guia prioritário",
+   "titulo": "Opioides: o que não pode errar",
+   "par": "r5",
+   "html": "<ul><li>Dor: Na<sup>+</sup> entra → potencial de ação → Ca<sup>2+</sup> abre no corno dorsal → glutamato → NMDA → espinotalâmico → tálamo → córtex.</li><li>Opioide no receptor Mi: <strong>abre K<sup>+</sup></strong> (periferia) → <strong>fecha Ca<sup>2+</sup></strong> (pré) → <strong>abre K<sup>+</sup></strong> (pós).</li><li>Representantes: morfina, fentanil, tramadol.</li><li>Depressão respiratória (bulbo), íleo paralítico (evitar em abdome alto), vício (menos GABA → mais dopamina no accumbens).</li><li><strong>Fentanil</strong>: o mais potente; infundir devagar ou dá <strong>rigidez torácica</strong>.</li><li>Antídoto: naloxona (a aula cita também naltrexona).</li></ul><blockquote><strong>Pegadinha:</strong> opioide em enxaqueca: piora a crise.</blockquote>"
+  },
+  {
+   "id": "g6",
+   "grupo": "Guia prioritário",
+   "titulo": "Sedativos lado a lado",
+   "par": "r6",
+   "html": "<ul><li>NMDA + glutamato → Na<sup>+</sup> entra → excita. GABA-A + GABA → Cl<sup>−</sup> entra → inibe.</li><li><strong>Propofol</strong>: GABA direto; sem analgesia; ½ vida 5 min, início 1 min; hipotensão severa; anticonvulsivante; induz e mantém; triglicerídeos e PRIS (acidose, rabdomiólise, choque).</li><li><strong>Etomidato</strong>: início 45 s; <strong>só induz</strong>; estável; não repetir (11-beta-hidroxilase → insuficiência adrenal); não no choque séptico.</li><li><strong>Benzodiazepínicos</strong>: manutenção, ansiolíticos, difícil intoxicar; antídoto <strong>flumazenil</strong>.</li><li><strong>Cetamina</strong>: anti-NMDA; <strong>sedativa e analgésica</strong>; sem depressão respiratória; broncodilata; sobe PA e FC; dissociativa; depressão refratária.</li></ul><blockquote><strong>Anotação da aula:</strong> ½ propofol + ½ cetamina = melhor intubação. Propofol: 1 mL ≈ 1,1 kcal. Cetamina recebeu em aula o apelido de \"anjo da morte\" (o paciente não consegue mentir).</blockquote><blockquote><strong>Questão de prova:</strong> cetamina = sedativa e analgésica.</blockquote>"
+  },
+  {
+   "id": "g7",
+   "grupo": "Guia prioritário",
+   "titulo": "Bloqueadores neuromusculares",
+   "par": "r7",
+   "html": "<ul><li><strong>Succinilcolina</strong>: despolarizante, agonista nicotínico, fasciculações; não é degradada pela acetilcolinesterase.</li><li>Não usar em politrauma, queimado (hipercalemia); hipertermia maligna → <strong>dantrolene</strong>.</li><li><strong>Rocurônio</strong>: não despolarizante; sem contraindicação; não se vê o momento do bloqueio; antídoto <strong>sugamadex</strong>.</li><li><strong>Cisatracúrio</strong>: infusão contínua; hidrólise plasmática; ½ vida 20 min.</li></ul><blockquote><strong>Questão de prova:</strong> succinilcolina na intoxicação por carbamato ou cocaína: não usar (mesma enzima).</blockquote>"
+  },
+  {
+   "id": "g8",
+   "grupo": "Guia prioritário",
+   "titulo": "Anticonvulsivantes e escada da crise",
+   "par": "r8",
+   "html": "<ul><li>Benzodiazepínico <strong>aborta</strong> a crise, não previne.</li><li><strong>Fenitoína</strong>: canal de Na<sup>+</sup>; focal; pele, ataxia, nistagmo, malformação; infundir &lt; 50 mg/min.</li><li><strong>Carbamazepina</strong>: 1ª linha focal; humor e neuralgia do trigêmeo; <strong>não</strong> em ausência, mioclonia, gestação, hiponatremia.</li><li><strong>Ácido valproico</strong>: tônico-clônica e ausência; engorda, síndrome metabólica, teratogênico.</li><li><strong>Etossuximida</strong>: crise de ausência. <strong>Levetiracetam</strong> (SV-2A): bom para tudo.</li><li><strong>Lamotrigina</strong>: titulação lenta, quase sem efeito adverso.</li><li><strong>Fenobarbital</strong>: Stevens-Johnson, anemia aplásica, ataxia, sedação; não em etilista nem com valproato.</li><li>Teratogênicos: valproato, fenitoína, carbamazepina.</li></ul><p class=\"tabtit\"><strong>Tabela 8.4</strong>Escada da crise</p><table><thead><tr><th>Degrau</th><th>O quê</th></tr></thead><tbody><tr><td>1</td><td>Benzo, até 3 tentativas</td></tr><tr><td>2</td><td>Fenitoína lenta</td></tr><tr><td>3</td><td>IOT com propofol ou midazolam</td></tr><tr><td>4</td><td>Barbitúrico</td></tr></tbody></table>"
+  },
+  {
+   "id": "gsiglas",
+   "grupo": "Guia prioritário",
+   "titulo": "Guia de siglas",
+   "par": null,
+   "html": "<p>Siglas e abreviações usadas nesta matéria.</p><table class=\"siglas\"><thead><tr><th scope=\"col\">Sigla</th><th scope=\"col\">Significado</th></tr></thead><tbody><tr><th scope=\"row\">5-HT</th><td>Serotonina (5-hidroxitriptamina) e seus receptores</td></tr><tr><th scope=\"row\">ADT</th><td>Antidepressivo tricíclico</td></tr><tr><th scope=\"row\">AINE</th><td>Anti-inflamatório não esteroidal</td></tr><tr><th scope=\"row\">BRA</th><td>Bloqueador do receptor de angiotensina</td></tr><tr><th scope=\"row\">D2</th><td>Receptor de dopamina tipo 2</td></tr><tr><th scope=\"row\">DAT</th><td>Transportador de dopamina</td></tr><tr><th scope=\"row\">DPOC</th><td>Doença pulmonar obstrutiva crônica</td></tr><tr><th scope=\"row\">GABA</th><td>Ácido gama-aminobutírico</td></tr><tr><th scope=\"row\">H1</th><td>Receptor de histamina tipo 1</td></tr><tr><th scope=\"row\">IECA</th><td>Inibidor da enzima conversora de angiotensina</td></tr><tr><th scope=\"row\">IMAO</th><td>Inibidor da monoaminoxidase</td></tr><tr><th scope=\"row\">IOT</th><td>Intubação orotraqueal</td></tr><tr><th scope=\"row\">ISRS</th><td>Inibidor seletivo da recaptação de serotonina</td></tr><tr><th scope=\"row\">M-1</th><td>Receptor muscarínico tipo 1</td></tr><tr><th scope=\"row\">MAO</th><td>Monoaminoxidase</td></tr><tr><th scope=\"row\">NET</th><td>Transportador de noradrenalina</td></tr><tr><th scope=\"row\">NMDA</th><td>Receptor de glutamato N-metil-D-aspartato</td></tr><tr><th scope=\"row\">PIC</th><td>Pressão intracraniana</td></tr><tr><th scope=\"row\">PRIS</th><td>Síndrome da infusão do propofol</td></tr><tr><th scope=\"row\">SERT</th><td>Transportador (bomba de recaptação) de serotonina</td></tr><tr><th scope=\"row\">SV-2A</th><td>Proteína 2A da vesícula sináptica, alvo do levetiracetam</td></tr><tr><th scope=\"row\">TB I / TB II</th><td>Transtorno bipolar tipo I / tipo II</td></tr></tbody></table>"
+  }
+ ],
+ "cards": [
+  {
+   "id": "fcl00",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Por que os ISRS são primeira linha na depressão?",
+   "verso": "Por terem <b>menos efeitos colaterais</b>, não por serem mais eficazes."
+  },
+  {
+   "id": "fcl01",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Em quanto tempo o ISRS começa a fazer efeito?",
+   "verso": "Cerca de <b>2 semanas</b>, com piora nos primeiros dias."
+  },
+  {
+   "id": "fcl02",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Efeitos adversos da classe ISRS?",
+   "verso": "Disfunção sexual, náusea, insônia e <b>hiponatremia</b>."
+  },
+  {
+   "id": "fcl03",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "ISRS que causa perda de peso e é ruim na polifarmácia?",
+   "verso": "<b>Fluoxetina</b> (via P450, interação medicamentosa)."
+  },
+  {
+   "id": "fcl04",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "ISRS que engorda?",
+   "verso": "<b>Paroxetina</b>."
+  },
+  {
+   "id": "fcl05",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "ISRS que prolongam o QT?",
+   "verso": "<b>Citalopram e escitalopram</b> (risco de torção das pontas)."
+  },
+  {
+   "id": "fcl06",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "ISRS preferido em grávidas e idosos?",
+   "verso": "<b>Sertralina</b>."
+  },
+  {
+   "id": "fcl07",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Inibir M-1 causa o quê?",
+   "verso": "Xerostomia, retenção urinária e obstipação."
+  },
+  {
+   "id": "fcl08",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Inibir H-1 causa o quê?",
+   "verso": "Sonolência e predileção por carboidratos (ganho de peso)."
+  },
+  {
+   "id": "fcl09",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Inibir alfa-1 pós-sináptico causa o quê?",
+   "verso": "<b>Hipotensão postural</b>."
+  },
+  {
+   "id": "fcl10",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Quais são os duais e o uso extra de cada um?",
+   "verso": "Venlafaxina; <b>desvenlafaxina</b> (enxaqueca); <b>duloxetina</b> (dor crônica)."
+  },
+  {
+   "id": "fcl11",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Dual em dose alta pode causar?",
+   "verso": "<b>Hipertensão arterial</b>."
+  },
+  {
+   "id": "fcl12",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Mecanismo da mirtazapina?",
+   "verso": "Inibe o <b>alfa-2</b> (e também 5-HT2a, M-1, H-1 e alfa-1)."
+  },
+  {
+   "id": "fcl13",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Antidepressivo contraindicado na epilepsia?",
+   "verso": "<b>Bupropiona</b> (facilita a crise convulsiva)."
+  },
+  {
+   "id": "fcl14",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Usos extras da bupropiona?",
+   "verso": "Abandono do tabagismo e obesidade; disfunção sexual."
+  },
+  {
+   "id": "fcl15",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "IMAO + ISRS: qual o risco?",
+   "verso": "<b>Síndrome serotoninérgica</b>."
+  },
+  {
+   "id": "fcl16",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Qual dieta evitar com IMAO?",
+   "verso": "Alimentos com <b>tiramina</b>: queijos envelhecidos, bacon, carne enlatada."
+  },
+  {
+   "id": "fcl17",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Antidepressivo multimodal que melhora a cognição?",
+   "verso": "<b>Vortioxetina</b>."
+  },
+  {
+   "id": "fcl18",
+   "secao": "g1",
+   "tag": "Antidepressivos",
+   "frente": "Três antidepressivos que poupam a libido?",
+   "verso": "Bupropiona, trazodona e mirtazapina."
+  },
+  {
+   "id": "fcl19",
+   "secao": "g2",
+   "tag": "Antipsicóticos",
+   "frente": "Sintomas positivos vêm de quê?",
+   "verso": "<b>Hiperatividade</b> dopaminérgica na via <b>mesolímbica</b>."
+  },
+  {
+   "id": "fcl20",
+   "secao": "g2",
+   "tag": "Antipsicóticos",
+   "frente": "Sintomas negativos vêm de quê?",
+   "verso": "<b>Hipoatividade</b> dopaminérgica na via <b>mesocortical</b>."
+  },
+  {
+   "id": "fcl21",
+   "secao": "g2",
+   "tag": "Antipsicóticos",
+   "frente": "Bloqueio D2 na via nigroestriatal?",
+   "verso": "<b>Parkinsonismo</b>: roda denteada, acatisia, discinesia, contador de moedas."
+  },
+  {
+   "id": "fcl22",
+   "secao": "g2",
+   "tag": "Antipsicóticos",
+   "frente": "Bloqueio D2 na via tuberoinfundibular?",
+   "verso": "<b>Hiperprolactinemia</b>."
+  },
+  {
+   "id": "fcl23",
+   "secao": "g2",
+   "tag": "Antipsicóticos",
+   "frente": "Efeito no ECG comum a todos os antipsicóticos?",
+   "verso": "<b>Aumento do intervalo QT</b>."
+  },
+  {
+   "id": "fcl24",
+   "secao": "g2",
+   "tag": "Antipsicóticos",
+   "frente": "Dupla clássica do surto psicótico?",
+   "verso": "<b>Haloperidol + prometazina</b> (anti-H1)."
+  },
+  {
+   "id": "fcl25",
+   "secao": "g2",
+   "tag": "Antipsicóticos",
+   "frente": "Atípico com maior ganho de peso?",
+   "verso": "<b>Olanzapina</b> (evitar em HAS, DM e obesidade)."
+  },
+  {
+   "id": "fcl26",
+   "secao": "g2",
+   "tag": "Antipsicóticos",
+   "frente": "Atípico que mais bloqueia D2?",
+   "verso": "<b>Risperidona</b>: mais efeito extrapiramidal."
+  },
+  {
+   "id": "fcl27",
+   "secao": "g2",
+   "tag": "Antipsicóticos",
+   "frente": "Dose de quetiapina para insônia x esquizofrenia?",
+   "verso": "<b>25 mg</b> para insônia/humor; mínimo <b>100 mg</b> na esquizofrenia."
+  },
+  {
+   "id": "fcl28",
+   "secao": "g2",
+   "tag": "Antipsicóticos",
+   "frente": "Antipsicótico da esquizofrenia refratária?",
+   "verso": "<b>Clozapina</b>: a mais eficaz e reduz o risco de suicídio."
+  },
+  {
+   "id": "fcl29",
+   "secao": "g2",
+   "tag": "Antipsicóticos",
+   "frente": "Por que a clozapina não é primeira linha?",
+   "verso": "<b>Agranulocitose</b> irreversível (leuco &lt; 3.000, neutro &lt; 1.500); exige controle semanal por 16 semanas."
+  },
+  {
+   "id": "fcl30",
+   "secao": "g2",
+   "tag": "Antipsicóticos",
+   "frente": "O que é o aripiprazol?",
+   "verso": "<b>Modulador de dopamina</b>: menos efeitos, menos eficaz nos positivos."
+  },
+  {
+   "id": "fcl31",
+   "secao": "g3",
+   "tag": "Humor",
+   "frente": "Padrão-ouro no bipolar tipo I?",
+   "verso": "<b>Lítio</b>."
+  },
+  {
+   "id": "fcl32",
+   "secao": "g3",
+   "tag": "Humor",
+   "frente": "Padrão-ouro no bipolar tipo II?",
+   "verso": "<b>Lamotrigina</b> (questão de prova)."
+  },
+  {
+   "id": "fcl33",
+   "secao": "g3",
+   "tag": "Humor",
+   "frente": "Por onde o lítio é eliminado?",
+   "verso": "Pelo <b>rim</b> (não pelo fígado)."
+  },
+  {
+   "id": "fcl34",
+   "secao": "g3",
+   "tag": "Humor",
+   "frente": "Efeitos adversos do lítio?",
+   "verso": "Diabetes insipidus, polidipsia, tremor fino, insuficiência renal, hipotireoidismo."
+  },
+  {
+   "id": "fcl35",
+   "secao": "g3",
+   "tag": "Humor",
+   "frente": "Sinais de intoxicação por lítio?",
+   "verso": "Tremor, ataxia, mioclonia, crise convulsiva."
+  },
+  {
+   "id": "fcl36",
+   "secao": "g3",
+   "tag": "Humor",
+   "frente": "Medicamentos a evitar com lítio?",
+   "verso": "<b>AINE, diuréticos, IECA/BRA</b>."
+  },
+  {
+   "id": "fcl37",
+   "secao": "g3",
+   "tag": "Humor",
+   "frente": "Estabilizador na gestante?",
+   "verso": "<b>Lamotrigina</b>."
+  },
+  {
+   "id": "fcl38",
+   "secao": "g4",
+   "tag": "Enxaqueca",
+   "frente": "Agonismo dos triptanos?",
+   "verso": "<b>5-HT1b e 5-HT1d</b>: vasoconstrição cerebral."
+  },
+  {
+   "id": "fcl39",
+   "secao": "g4",
+   "tag": "Enxaqueca",
+   "frente": "Primeiro degrau na crise de enxaqueca?",
+   "verso": "<b>Dipirona + AINE</b> (cetoprofeno, diclofenaco)."
+  },
+  {
+   "id": "fcl40",
+   "secao": "g4",
+   "tag": "Enxaqueca",
+   "frente": "Último degrau da escada da enxaqueca?",
+   "verso": "Antipsicótico típico: <b>haloperidol ou clorpromazina</b>."
+  },
+  {
+   "id": "fcl41",
+   "secao": "g4",
+   "tag": "Enxaqueca",
+   "frente": "Classe que piora a enxaqueca?",
+   "verso": "<b>Opioides</b>."
+  },
+  {
+   "id": "fcl42",
+   "secao": "g4",
+   "tag": "Enxaqueca",
+   "frente": "Topiramato na profilaxia: o que lembrar?",
+   "verso": "Muito eficaz, emagrece; amnésia, teratogênico, <b>corta o anticoncepcional</b>."
+  },
+  {
+   "id": "fcl43",
+   "secao": "g4",
+   "tag": "Enxaqueca",
+   "frente": "Quando não usar betabloqueador na profilaxia?",
+   "verso": "Asma, DPOC, bradiarritmia."
+  },
+  {
+   "id": "fcl44",
+   "secao": "g5",
+   "tag": "Opioides",
+   "frente": "As três barreiras do opioide?",
+   "verso": "Abre K<sup>+</sup> (periferia) → fecha Ca<sup>2+</sup> (pré) → abre K<sup>+</sup> (pós)."
+  },
+  {
+   "id": "fcl45",
+   "secao": "g5",
+   "tag": "Opioides",
+   "frente": "Por que evitar opioide em cirurgia de abdome alto?",
+   "verso": "Inibição parassimpática → <b>íleo paralítico</b>."
+  },
+  {
+   "id": "fcl46",
+   "secao": "g5",
+   "tag": "Opioides",
+   "frente": "Como o opioide vicia?",
+   "verso": "Inibe o neurônio GABAérgico → <b>mais dopamina</b> no núcleo accumbens."
+  },
+  {
+   "id": "fcl47",
+   "secao": "g5",
+   "tag": "Opioides",
+   "frente": "Fentanil infundido rápido causa?",
+   "verso": "<b>Rigidez torácica</b>."
+  },
+  {
+   "id": "fcl48",
+   "secao": "g5",
+   "tag": "Opioides",
+   "frente": "Antídoto do opioide na intoxicação?",
+   "verso": "<b>Naloxona</b>."
+  },
+  {
+   "id": "fcl49",
+   "secao": "g6",
+   "tag": "Sedação",
+   "frente": "Propofol tem analgesia?",
+   "verso": "<b>Não</b>. Induz e mantém, mas sem analgesia."
+  },
+  {
+   "id": "fcl50",
+   "secao": "g6",
+   "tag": "Sedação",
+   "frente": "O que é a PRIS?",
+   "verso": "Síndrome da infusão do propofol: acidose metabólica, rabdomiólise, choque cardiogênico."
+  },
+  {
+   "id": "fcl51",
+   "secao": "g6",
+   "tag": "Sedação",
+   "frente": "Por que não repetir etomidato?",
+   "verso": "Inibe a <b>11-beta-hidroxilase</b> → insuficiência adrenal."
+  },
+  {
+   "id": "fcl52",
+   "secao": "g6",
+   "tag": "Sedação",
+   "frente": "Sedativo com inércia hemodinâmica que só induz?",
+   "verso": "<b>Etomidato</b>."
+  },
+  {
+   "id": "fcl53",
+   "secao": "g6",
+   "tag": "Sedação",
+   "frente": "Antídoto dos benzodiazepínicos?",
+   "verso": "<b>Flumazenil</b>."
+  },
+  {
+   "id": "fcl54",
+   "secao": "g6",
+   "tag": "Sedação",
+   "frente": "Mecanismo da cetamina?",
+   "verso": "<b>Antagonista NMDA</b>."
+  },
+  {
+   "id": "fcl55",
+   "secao": "g6",
+   "tag": "Sedação",
+   "frente": "Cetamina: sedativa, analgésica ou ambas?",
+   "verso": "<b>Ambas</b> (questão de prova)."
+  },
+  {
+   "id": "fcl56",
+   "secao": "g6",
+   "tag": "Sedação",
+   "frente": "Efeito da cetamina em PA, FC e respiração?",
+   "verso": "Sobe PA e FC; <b>não</b> deprime a respiração; broncodilata."
+  },
+  {
+   "id": "fcl57",
+   "secao": "g7",
+   "tag": "Bloqueio NM",
+   "frente": "Antídoto da hipertermia maligna?",
+   "verso": "<b>Dantrolene</b>."
+  },
+  {
+   "id": "fcl58",
+   "secao": "g7",
+   "tag": "Bloqueio NM",
+   "frente": "Succinilcolina: em quem não usar pela hipercalemia?",
+   "verso": "Politraumatizados e queimados."
+  },
+  {
+   "id": "fcl59",
+   "secao": "g7",
+   "tag": "Bloqueio NM",
+   "frente": "Antídoto do rocurônio?",
+   "verso": "<b>Sugamadex</b>."
+  },
+  {
+   "id": "fcl60",
+   "secao": "g7",
+   "tag": "Bloqueio NM",
+   "frente": "Bloqueador que sofre hidrólise plasmática?",
+   "verso": "<b>Cisatracúrio</b> (½ vida 20 min)."
+  },
+  {
+   "id": "fcl61",
+   "secao": "g8",
+   "tag": "Anticonvulsivantes",
+   "frente": "Benzodiazepínico na epilepsia serve para?",
+   "verso": "<b>Abortar</b> a crise em vigência, não prevenir."
+  },
+  {
+   "id": "fcl62",
+   "secao": "g8",
+   "tag": "Anticonvulsivantes",
+   "frente": "Velocidade máxima de infusão da fenitoína?",
+   "verso": "<b>&lt; 50 mg/min</b> (acima: parada cardíaca)."
+  },
+  {
+   "id": "fcl63",
+   "secao": "g8",
+   "tag": "Anticonvulsivantes",
+   "frente": "Carbamazepina é contraindicada em?",
+   "verso": "Crise de ausência, mioclonias, gestação, hiponatremia."
+  },
+  {
+   "id": "fcl64",
+   "secao": "g8",
+   "tag": "Anticonvulsivantes",
+   "frente": "Droga da crise de ausência?",
+   "verso": "<b>Etossuximida</b> (ou ácido valproico)."
+  },
+  {
+   "id": "fcl65",
+   "secao": "g8",
+   "tag": "Anticonvulsivantes",
+   "frente": "Mecanismo do levetiracetam?",
+   "verso": "Inibe a liberação de glutamato pela <b>SV-2A</b>."
+  },
+  {
+   "id": "fcl66",
+   "secao": "g8",
+   "tag": "Anticonvulsivantes",
+   "frente": "Três anticonvulsivantes teratogênicos?",
+   "verso": "Ácido valproico, fenitoína, carbamazepina."
+  },
+  {
+   "id": "fcl67",
+   "secao": "g8",
+   "tag": "Anticonvulsivantes",
+   "frente": "Escada da crise em vigência?",
+   "verso": "Benzo (3x) → fenitoína → IOT com propofol ou midazolam → barbitúrico."
+  },
+  {
+   "id": "fcl68",
+   "secao": "g8",
+   "tag": "Anticonvulsivantes",
+   "frente": "Fenobarbital é contraindicado em?",
+   "verso": "Etilistas e quem usa ácido valproico."
+  }
+ ],
+ "kahoot": [
+  {
+   "tipo": "q",
+   "n": 1,
+   "pergunta": "Por que os ISRS são a primeira linha na depressão?",
+   "opcoes": [
+    "São os mais eficazes",
+    "Agem em 3 dias",
+    "Não interagem com nada",
+    "Têm menos efeitos colaterais"
+   ],
+   "certa": 3,
+   "explica": "A escolha é pela tolerância, não pela eficácia.",
+   "tempo": 30,
+   "secoes": [
+    "r1",
+    "g1"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 2,
+   "pergunta": "Paciente com várias medicações. Qual ISRS evitar pela interação pelo P450?",
+   "opcoes": [
+    "Sertralina",
+    "Escitalopram",
+    "Fluoxetina",
+    "Paroxetina"
+   ],
+   "certa": 2,
+   "explica": "Fluoxetina é a campeã de interação entre os ISRS.",
+   "tempo": 30,
+   "secoes": [
+    "r1",
+    "g1"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 3,
+   "pergunta": "Gestante deprimida: ISRS mais recomendado?",
+   "opcoes": [
+    "Citalopram",
+    "Sertralina",
+    "Paroxetina",
+    "Fluoxetina"
+   ],
+   "certa": 1,
+   "explica": "Sertralina é a preferida em grávidas e idosos.",
+   "tempo": 30,
+   "secoes": [
+    "r1",
+    "g1"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 4,
+   "pergunta": "Mulher deprimida reclama de libido baixa com ISRS. Qual troca preserva a libido?",
+   "opcoes": [
+    "Bupropiona",
+    "Paroxetina",
+    "Venlafaxina",
+    "Isocarboxazida"
+   ],
+   "certa": 0,
+   "explica": "Bupropiona, trazodona e mirtazapina poupam a libido.",
+   "tempo": 30,
+   "secoes": [
+    "r1",
+    "g1"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 5,
+   "pergunta": "Paciente epiléptico quer parar de fumar. Qual droga NÃO usar?",
+   "opcoes": [
+    "Sertralina",
+    "Mirtazapina",
+    "Vortioxetina",
+    "Bupropiona"
+   ],
+   "certa": 3,
+   "explica": "Bupropiona facilita a crise convulsiva.",
+   "tempo": 30,
+   "secoes": [
+    "r1",
+    "g1"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 6,
+   "pergunta": "Paciente em IMAO deve evitar qual alimento?",
+   "opcoes": [
+    "Arroz",
+    "Frango cozido",
+    "Queijo envelhecido",
+    "Maçã"
+   ],
+   "certa": 2,
+   "explica": "Queijos envelhecidos têm tiramina: risco de crise hipertensiva.",
+   "tempo": 30,
+   "secoes": [
+    "r1",
+    "g1"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 7,
+   "pergunta": "Bloqueio D2 na via nigroestriatal causa:",
+   "opcoes": [
+    "Hiperprolactinemia",
+    "Parkinsonismo",
+    "Melhora dos negativos",
+    "Alucinação"
+   ],
+   "certa": 1,
+   "explica": "Nigroestriatal = movimento.",
+   "tempo": 30,
+   "secoes": [
+    "r2",
+    "g2"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 8,
+   "pergunta": "Galactorreia com antipsicótico vem do bloqueio D2 em qual via?",
+   "opcoes": [
+    "Tuberoinfundibular",
+    "Mesolímbica",
+    "Mesocortical",
+    "Nigroestriatal"
+   ],
+   "certa": 0,
+   "explica": "Tuberoinfundibular controla a prolactina.",
+   "tempo": 30,
+   "secoes": [
+    "r2",
+    "g2"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 9,
+   "pergunta": "Atípico com MAIOR ganho de peso?",
+   "opcoes": [
+    "Aripiprazol",
+    "Risperidona",
+    "Haloperidol",
+    "Olanzapina"
+   ],
+   "certa": 3,
+   "explica": "Olanzapina: evitar em obesos, diabéticos e hipertensos.",
+   "tempo": 30,
+   "secoes": [
+    "r2",
+    "g2"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 10,
+   "pergunta": "Esquizofrenia refratária com ideação suicida. Droga?",
+   "opcoes": [
+    "Quetiapina 25 mg",
+    "Haloperidol",
+    "Clozapina",
+    "Aripiprazol"
+   ],
+   "certa": 2,
+   "explica": "Clozapina é a mais eficaz e reduz suicídio; vigiar agranulocitose.",
+   "tempo": 45,
+   "secoes": [
+    "r2",
+    "g2"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 11,
+   "pergunta": "O que limita a clozapina como primeira linha?",
+   "opcoes": [
+    "QT curto",
+    "Agranulocitose",
+    "Hipotireoidismo",
+    "Rigidez torácica"
+   ],
+   "certa": 1,
+   "explica": "Agranulocitose irreversível; controle semanal por 16 semanas.",
+   "tempo": 30,
+   "secoes": [
+    "r2",
+    "g2"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 12,
+   "pergunta": "Lítio: qual função monitorar além da tireoide?",
+   "opcoes": [
+    "Renal",
+    "Hepática",
+    "Pancreática",
+    "Adrenal"
+   ],
+   "certa": 0,
+   "explica": "O lítio é eliminado pelo rim.",
+   "tempo": 30,
+   "secoes": [
+    "r3",
+    "g3"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 13,
+   "pergunta": "Paciente em lítio com dor no joelho. O que evitar?",
+   "opcoes": [
+    "Paracetamol",
+    "Gelo",
+    "Fisioterapia",
+    "Ibuprofeno"
+   ],
+   "certa": 3,
+   "explica": "AINEs aumentam a litemia (anotação: AINE, diurético, IECA/BRA).",
+   "tempo": 30,
+   "secoes": [
+    "r3",
+    "g3"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 14,
+   "pergunta": "Bipolar tipo II: droga padrão-ouro?",
+   "opcoes": [
+    "Lítio",
+    "Haloperidol",
+    "Lamotrigina",
+    "Fluoxetina"
+   ],
+   "certa": 2,
+   "explica": "Marcada como questão de prova.",
+   "tempo": 30,
+   "secoes": [
+    "r3",
+    "g3"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 15,
+   "pergunta": "Triptanos são agonistas de quais receptores?",
+   "opcoes": [
+    "5-HT2a",
+    "5-HT1b e 5-HT1d",
+    "5-HT3a",
+    "D2"
+   ],
+   "certa": 1,
+   "explica": "Causam vasoconstrição cerebral.",
+   "tempo": 30,
+   "secoes": [
+    "r4",
+    "g4"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 16,
+   "pergunta": "Na enxaqueca, qual classe piora a crise?",
+   "opcoes": [
+    "Opioide",
+    "AINE",
+    "Triptano",
+    "Dexametasona"
+   ],
+   "certa": 0,
+   "explica": "Opioide piora a enxaqueca.",
+   "tempo": 30,
+   "secoes": [
+    "r4",
+    "g4"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 17,
+   "pergunta": "No nociceptor periférico, o opioide:",
+   "opcoes": [
+    "Abre Na+",
+    "Abre Ca2+",
+    "Bloqueia NMDA",
+    "Abre K+"
+   ],
+   "certa": 3,
+   "explica": "K+ sai, membrana mais negativa.",
+   "tempo": 30,
+   "secoes": [
+    "r5",
+    "g5"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 18,
+   "pergunta": "Fentanil em bolus rápido pode causar:",
+   "opcoes": [
+    "Hipertermia maligna",
+    "Hipercalemia",
+    "Rigidez torácica",
+    "Agranulocitose"
+   ],
+   "certa": 2,
+   "explica": "Infundir sempre lentamente.",
+   "tempo": 30,
+   "secoes": [
+    "r5",
+    "g5"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 19,
+   "pergunta": "Sedativo que só induz e não pode ser repetido:",
+   "opcoes": [
+    "Propofol",
+    "Etomidato",
+    "Midazolam",
+    "Cetamina"
+   ],
+   "certa": 1,
+   "explica": "Inibe a 11-beta-hidroxilase → insuficiência adrenal.",
+   "tempo": 30,
+   "secoes": [
+    "r6",
+    "g6"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 20,
+   "pergunta": "Asmático em broncoespasmo precisa ser intubado. Indutor que broncodilata?",
+   "opcoes": [
+    "Cetamina",
+    "Propofol",
+    "Etomidato",
+    "Rocurônio"
+   ],
+   "certa": 0,
+   "explica": "Cetamina: broncodilatadora, sem depressão respiratória.",
+   "tempo": 45,
+   "secoes": [
+    "r6",
+    "g6"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 21,
+   "pergunta": "A cetamina é:",
+   "opcoes": [
+    "Só sedativa",
+    "Só analgésica",
+    "Bloqueador neuromuscular",
+    "Sedativa e analgésica"
+   ],
+   "certa": 3,
+   "explica": "Questão de prova.",
+   "tempo": 30,
+   "secoes": [
+    "r6",
+    "g6"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 22,
+   "pergunta": "Grande queimado vai ser intubado. Qual bloqueador evitar?",
+   "opcoes": [
+    "Rocurônio",
+    "Cisatracúrio",
+    "Succinilcolina",
+    "Nenhum"
+   ],
+   "certa": 2,
+   "explica": "Succinilcolina causa hipercalemia.",
+   "tempo": 30,
+   "secoes": [
+    "r7",
+    "g7"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 23,
+   "pergunta": "Antídoto da hipertermia maligna?",
+   "opcoes": [
+    "Sugamadex",
+    "Dantrolene",
+    "Flumazenil",
+    "Naloxona"
+   ],
+   "certa": 1,
+   "explica": "Dantrolene.",
+   "tempo": 30,
+   "secoes": [
+    "r7",
+    "g7"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 24,
+   "pergunta": "Crise de ausência: qual droga é contraindicada?",
+   "opcoes": [
+    "Carbamazepina",
+    "Etossuximida",
+    "Ácido valproico",
+    "Levetiracetam"
+   ],
+   "certa": 0,
+   "explica": "Carbamazepina piora ausência e mioclonia.",
+   "tempo": 30,
+   "secoes": [
+    "r8",
+    "g8"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 25,
+   "pergunta": "Crise que não cedeu após benzodiazepínico. Próximo passo?",
+   "opcoes": [
+    "Barbitúrico direto",
+    "Carbamazepina VO",
+    "Esperar 30 min",
+    "Fenitoína lenta"
+   ],
+   "certa": 3,
+   "explica": "Fenitoína em infusão < 50 mg/min.",
+   "tempo": 30,
+   "secoes": [
+    "r8",
+    "g8"
+   ]
+  }
+ ],
+ "kahootInfo": {
+  "titulo": "Quiz de revisão · Farmacologia Clínica",
+  "capa": "{n} perguntas de revisão feitas a partir do resumo da monitoria. Não é o Kahoot do professor.",
+  "botao": "Começar revisão",
+  "contextualizado": true
+ },
+ "casos": [
+  {
+   "id": "c1",
+   "nivel": "Médio",
+   "titulo": "Dona Marta e o antidepressivo certo",
+   "resumo": "Da escolha do ISRS aos efeitos que mudam a conduta.",
+   "tags": [
+    "Depressão",
+    "ISRS",
+    "Interações"
+   ],
+   "secoes": [
+    "g1",
+    "r1"
+   ],
+   "abertura": "<p><strong>Marta, 72 anos</strong>, hipertensa, usa losartana, AAS, sinvastatina, omeprazol e metformina. Há 3 meses com humor deprimido, anedonia e cansaço. Primeiro tratamento.</p>",
+   "etapas": [
+    {
+     "titulo": "Escolha",
+     "pergunta": "Qual antidepressivo iniciar?",
+     "opcoes": [
+      "Fluoxetina",
+      "Sertralina",
+      "Amitriptilina",
+      "Isocarboxazida"
+     ],
+     "certa": 1,
+     "explica": "Idosa em polifarmácia: sertralina. Fluoxetina interage pelo P450; tricíclico e IMAO têm muitos efeitos."
+    },
+    {
+     "titulo": "Retorno precoce",
+     "info": "<p>Volta em 5 dias dizendo que está pior e quer parar.</p>",
+     "pergunta": "Qual orientação?",
+     "opcoes": [
+      "Trocar já por outro ISRS",
+      "Manter: o efeito vem em ~2 semanas e piora no início é esperada",
+      "Dobrar a dose",
+      "Associar IMAO"
+     ],
+     "certa": 1,
+     "explica": "ISRS leva cerca de 2 semanas, com piora nos primeiros dias."
+    },
+    {
+     "titulo": "Laboratório",
+     "info": "<p>Com 3 semanas, está confusa. Sódio 124 mEq/L.</p>",
+     "pergunta": "Qual a relação mais provável?",
+     "opcoes": [
+      "Hiponatremia associada ao ISRS",
+      "Síndrome serotoninérgica",
+      "Intoxicação por lítio",
+      "Hipotireoidismo"
+     ],
+     "certa": 0,
+     "explica": "A anotação da aula liga os ISRS à hiponatremia; idosos são mais suscetíveis."
+    },
+    {
+     "titulo": "Troca",
+     "pergunta": "Ela também dorme mal e perdeu peso. Qual alternativa aproveita esses efeitos?",
+     "opcoes": [
+      "Mirtazapina",
+      "Bupropiona",
+      "Fluoxetina",
+      "Venlafaxina"
+     ],
+     "certa": 0,
+     "explica": "Mirtazapina dá sono e ganho de peso e não causa perda de libido. Venlafaxina também se associa à hiponatremia."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Sertralina em idosos e gestantes.</li><li>ISRS: 2 semanas, piora inicial.</li><li>ISRS e duais podem causar hiponatremia.</li></ul><h3>Pegadinhas</h3><ul><li>Fluoxetina \"emagrece\", mas interage demais na polifarmácia.</li></ul>"
+  },
+  {
+   "id": "c2",
+   "nivel": "Difícil",
+   "titulo": "Rafael e o primeiro surto",
+   "resumo": "Agitação, escolha do antipsicótico e o que vigiar.",
+   "tags": [
+    "Esquizofrenia",
+    "Antipsicóticos"
+   ],
+   "secoes": [
+    "g2",
+    "r2"
+   ],
+   "abertura": "<p><strong>Rafael, 22 anos</strong>, chega trazido pela família, ouvindo vozes, convencido de que está sendo perseguido e agressivo com a equipe.</p>",
+   "etapas": [
+    {
+     "titulo": "Agitação",
+     "pergunta": "Qual a dupla clássica para o surto psicótico agitado?",
+     "opcoes": [
+      "Haloperidol + prometazina IM",
+      "Clozapina VO",
+      "Lítio + fluoxetina",
+      "Etomidato"
+     ],
+     "certa": 0,
+     "explica": "Haldol + Fenergan; a prometazina acrescenta o bloqueio H1 (sedação)."
+    },
+    {
+     "titulo": "Fisiopatologia",
+     "pergunta": "Alucinações e perseguição vêm de quê?",
+     "opcoes": [
+      "Hipoatividade mesocortical",
+      "Hiperatividade dopaminérgica mesolímbica",
+      "Excesso de serotonina",
+      "Falta de GABA"
+     ],
+     "certa": 1,
+     "explica": "Sintomas positivos = excesso de dopamina na via mesolímbica."
+    },
+    {
+     "titulo": "Manutenção",
+     "info": "<p>Rafael é obeso e tem glicemia de jejum alterada.</p>",
+     "pergunta": "Qual atípico evitar?",
+     "opcoes": [
+      "Aripiprazol",
+      "Risperidona",
+      "Olanzapina",
+      "Quetiapina 100 mg"
+     ],
+     "certa": 2,
+     "explica": "Olanzapina: maior ganho de peso e risco cardiovascular."
+    },
+    {
+     "titulo": "Efeito adverso",
+     "info": "<p>Em risperidona, surge galactorreia e tremor com rigidez em roda denteada.</p>",
+     "pergunta": "Explicação?",
+     "opcoes": [
+      "Bloqueio D2 tuberoinfundibular e nigroestriatal",
+      "Bloqueio H1",
+      "Agranulocitose",
+      "Síndrome serotoninérgica"
+     ],
+     "certa": 0,
+     "explica": "Risperidona é a atípica que mais bloqueia D2: hiperprolactinemia e parkinsonismo."
+    },
+    {
+     "titulo": "Refratário",
+     "info": "<p>Dois antipsicóticos depois, sem resposta e com ideação suicida.</p>",
+     "pergunta": "Conduta?",
+     "opcoes": [
+      "Clozapina com hemograma semanal",
+      "Haloperidol em dose dobrada",
+      "Quetiapina 25 mg",
+      "Suspender tudo"
+     ],
+     "certa": 0,
+     "explica": "Clozapina: refratária, reduz suicídio; vigiar agranulocitose (leuco < 3.000, neutro < 1.500) nas primeiras 16 semanas."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Todo antipsicótico bloqueia D2 e alarga o QT.</li><li>Olanzapina engorda; risperidona dá mais extrapiramidal.</li><li>Clozapina exige hemograma.</li></ul>"
+  },
+  {
+   "id": "c3",
+   "nivel": "Médio",
+   "titulo": "Juliana, bipolar e grávida",
+   "resumo": "Lítio, interações e gestação.",
+   "tags": [
+    "Bipolar",
+    "Lítio",
+    "Gestação"
+   ],
+   "secoes": [
+    "g3",
+    "r3"
+   ],
+   "abertura": "<p><strong>Juliana, 29 anos</strong>, bipolar tipo I estável com lítio, procura o ambulatório com dor lombar e pergunta se pode tomar ibuprofeno.</p>",
+   "etapas": [
+    {
+     "titulo": "Analgesia",
+     "pergunta": "Resposta adequada?",
+     "opcoes": [
+      "Pode, sem problema",
+      "Evitar: AINE eleva o lítio",
+      "Pode, se for com diurético",
+      "Trocar lítio por fluoxetina"
+     ],
+     "certa": 1,
+     "explica": "Anotação: com lítio, evitar AINE, diuréticos e IECA/BRA."
+    },
+    {
+     "titulo": "Exames",
+     "pergunta": "Quais exames de rotina pedir para quem usa lítio?",
+     "opcoes": [
+      "Função hepática e tireoidiana",
+      "Litemia, função renal e tireoidiana",
+      "Só hemograma",
+      "Só ECG"
+     ],
+     "certa": 1,
+     "explica": "Janela estreita, eliminação renal, risco de hipotireoidismo. \"Hepática\" é a pegadinha da prova."
+    },
+    {
+     "titulo": "Intoxicação",
+     "info": "<p>Semanas depois, tremor grosseiro, ataxia e mioclonias.</p>",
+     "pergunta": "Hipótese?",
+     "opcoes": [
+      "Intoxicação por lítio",
+      "Síndrome serotoninérgica",
+      "Efeito extrapiramidal",
+      "Hipoglicemia"
+     ],
+     "certa": 0,
+     "explica": "Tremor, ataxia, mioclonia e convulsão = intoxicação por lítio."
+    },
+    {
+     "titulo": "Gestação",
+     "info": "<p>Recuperada, descobre que está grávida.</p>",
+     "pergunta": "Estabilizador indicado?",
+     "opcoes": [
+      "Manter lítio",
+      "Lamotrigina",
+      "Ácido valproico",
+      "Carbamazepina"
+     ],
+     "certa": 1,
+     "explica": "Lítio é contraindicado na gestante; valproato e carbamazepina são teratogênicos."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Lítio: rim, tireoide, litemia.</li><li>Gestante: lamotrigina.</li></ul>"
+  },
+  {
+   "id": "c4",
+   "nivel": "Difícil",
+   "titulo": "Sala vermelha: intubar o Sr. Paulo",
+   "resumo": "Indutor, bloqueador e o que cada um traz de risco.",
+   "tags": [
+    "Sedação",
+    "Bloqueio neuromuscular",
+    "IOT"
+   ],
+   "secoes": [
+    "g6",
+    "g7",
+    "r6",
+    "r7"
+   ],
+   "abertura": "<p><strong>Paulo, 54 anos</strong>, choque séptico de foco pulmonar, PA 78/40, rebaixado. Será intubado.</p>",
+   "etapas": [
+    {
+     "titulo": "Indutor",
+     "pergunta": "Qual indutor evitar neste paciente?",
+     "opcoes": [
+      "Cetamina",
+      "Etomidato",
+      "Midazolam em dose baixa",
+      "Fentanil lento"
+     ],
+     "certa": 1,
+     "explica": "Etomidato inibe a 11-beta-hidroxilase; não usar no choque séptico."
+    },
+    {
+     "titulo": "Hemodinâmica",
+     "pergunta": "Por que não usar propofol em dose plena aqui?",
+     "opcoes": [
+      "É hipotensor severo",
+      "Causa hipercalemia",
+      "Não seda",
+      "Aumenta a PA"
+     ],
+     "certa": 0,
+     "explica": "Propofol é hipotensor severo. A anotação sugere ½ propofol + ½ cetamina para intubar."
+    },
+    {
+     "titulo": "Analgesia",
+     "pergunta": "Qual indutor é sedativo E analgésico e mantém a PA?",
+     "opcoes": [
+      "Cetamina",
+      "Propofol",
+      "Etomidato",
+      "Midazolam"
+     ],
+     "certa": 0,
+     "explica": "Cetamina: anti-NMDA, sedativa e analgésica, sobe PA e FC."
+    },
+    {
+     "titulo": "Bloqueador",
+     "info": "<p>Potássio de 6,4 mEq/L e creatinina elevada.</p>",
+     "pergunta": "Qual bloqueador?",
+     "opcoes": [
+      "Succinilcolina",
+      "Rocurônio",
+      "Qualquer um",
+      "Nenhum, intubar acordado"
+     ],
+     "certa": 1,
+     "explica": "Succinilcolina piora a hipercalemia; rocurônio não tem contraindicação e é revertido por sugamadex."
+    },
+    {
+     "titulo": "UTI",
+     "info": "<p>Na UTI, evolui com SDRA e precisa de bloqueio contínuo.</p>",
+     "pergunta": "Bloqueador para infusão contínua com hidrólise plasmática?",
+     "opcoes": [
+      "Cisatracúrio",
+      "Succinilcolina",
+      "Etomidato",
+      "Dantrolene"
+     ],
+     "certa": 0,
+     "explica": "Cisatracúrio: infusão contínua em baixa complacência, hidrólise plasmática."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Etomidato: estável, mas bloqueia o cortisol.</li><li>Cetamina: a única sedativa e analgésica.</li><li>Hipercalemia contraindica succinilcolina.</li></ul>"
+  },
+  {
+   "id": "c5",
+   "nivel": "Difícil",
+   "titulo": "Lucas convulsionando na emergência",
+   "resumo": "Escada da crise e escolha da manutenção.",
+   "tags": [
+    "Epilepsia",
+    "Estado de mal"
+   ],
+   "secoes": [
+    "g8",
+    "r8"
+   ],
+   "abertura": "<p><strong>Lucas, 19 anos</strong>, epiléptico, chega em crise tônico-clônica há 6 minutos.</p>",
+   "etapas": [
+    {
+     "titulo": "Primeiro passo",
+     "pergunta": "Conduta inicial?",
+     "opcoes": [
+      "Benzodiazepínico",
+      "Fenitoína",
+      "Carbamazepina VO",
+      "Barbitúrico"
+     ],
+     "certa": 0,
+     "explica": "Benzo aborta a crise, até 3 tentativas."
+    },
+    {
+     "titulo": "Persistência",
+     "info": "<p>Após 3 doses de diazepam, segue convulsionando.</p>",
+     "pergunta": "Próximo degrau e o cuidado principal?",
+     "opcoes": [
+      "Fenitoína a < 50 mg/min",
+      "Fenitoína em bolus rápido",
+      "Propofol sem IOT",
+      "Etossuximida"
+     ],
+     "certa": 0,
+     "explica": "Fenitoína acima de 50 mg/min pode causar parada cardiorrespiratória."
+    },
+    {
+     "titulo": "Refratário",
+     "pergunta": "Se ainda persistir?",
+     "opcoes": [
+      "IOT com propofol ou midazolam",
+      "Esperar",
+      "Lítio",
+      "Haloperidol"
+     ],
+     "certa": 0,
+     "explica": "Depois vem o barbitúrico."
+    },
+    {
+     "titulo": "Manutenção",
+     "info": "<p>Recuperado, ele tem crises tônico-clônicas e também episódios de ausência.</p>",
+     "pergunta": "Droga que cobre tônico-clônica e ausência?",
+     "opcoes": [
+      "Ácido valproico",
+      "Carbamazepina",
+      "Fenitoína",
+      "Gabapentina"
+     ],
+     "certa": 0,
+     "explica": "Valproato cobre as duas; carbamazepina piora ausência."
+    },
+    {
+     "titulo": "Etilismo",
+     "info": "<p>Ele conta que bebe muito nos fins de semana.</p>",
+     "pergunta": "Qual anticonvulsivante fica contraindicado?",
+     "opcoes": [
+      "Fenobarbital",
+      "Levetiracetam",
+      "Lamotrigina",
+      "Etossuximida"
+     ],
+     "certa": 0,
+     "explica": "Fenobarbital: contraindicado em etilistas e em quem usa valproato."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Benzo → fenitoína lenta → IOT → barbitúrico.</li><li>Ausência: nunca carbamazepina.</li><li>Fenobarbital + valproato não.</li></ul>"
+  }
+ ],
+ "questoes": [
+  {
+   "id": "q-fcl-r1-01",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Por que os ISRS são a primeira linha no tratamento da depressão?",
+   "alternativas": [
+    {
+     "t": "Por possuírem menos efeitos colaterais",
+     "certa": true,
+     "porque": "É o critério dado pela aula."
+    },
+    {
+     "t": "Por serem os mais eficazes",
+     "certa": false,
+     "porque": "O material frisa que não é por eficácia."
+    },
+    {
+     "t": "Por agirem em menos de 3 dias",
+     "certa": false,
+     "porque": "Levam cerca de 2 semanas."
+    },
+    {
+     "t": "Por não terem interações",
+     "certa": false,
+     "porque": "A fluoxetina interage bastante."
+    }
+   ],
+   "explica": "A escolha é pela tolerância. A eficácia entre classes é semelhante.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "São a primeira linha por possuírem menos efeitos colaterais, e não por eficácia."
+   },
+   "pegadinha": "O \"NÃO por eficácia\" é a pegadinha clássica."
+  },
+  {
+   "id": "q-fcl-r1-02",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Um paciente com depressão inicia ISRS e, após 5 dias, refere piora. Qual interpretação é mais coerente com o material?",
+   "alternativas": [
+    {
+     "t": "Falha terapêutica: trocar de classe imediatamente",
+     "certa": false,
+     "porque": "Cedo demais para julgar falha."
+    },
+    {
+     "t": "Efeito esperado: o ISRS leva cerca de 2 semanas e pode piorar nos primeiros dias",
+     "certa": true,
+     "porque": "Exatamente o descrito."
+    },
+    {
+     "t": "Síndrome serotoninérgica obrigatória",
+     "certa": false,
+     "porque": "Não há sinais descritos."
+    },
+    {
+     "t": "Sinal de que a dose deve ser triplicada",
+     "certa": false,
+     "porque": "Não há base para isso."
+    }
+   ],
+   "explica": "Orientar o paciente sobre a latência evita abandono.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "O efeito aparece em aproximadamente 2 semanas, com piora nos primeiros dias"
+   }
+  },
+  {
+   "id": "q-fcl-r1-03",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Idosa em uso de oito medicamentos precisa de antidepressivo. Qual ISRS é o menos indicado pelo risco de interação?",
+   "alternativas": [
+    {
+     "t": "Sertralina",
+     "certa": false,
+     "porque": "É a recomendada para idosos."
+    },
+    {
+     "t": "Escitalopram",
+     "certa": false,
+     "porque": "Seu problema é o QT, em menor dose."
+    },
+    {
+     "t": "Fluoxetina",
+     "certa": true,
+     "porque": "Metabolizada pela P450; interação medicamentosa."
+    },
+    {
+     "t": "Paroxetina",
+     "certa": false,
+     "porque": "Seu problema marcado é o ganho de peso."
+    }
+   ],
+   "explica": "Fluoxetina é ruim na polifarmácia.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "não recomendada em polifarmácia pela interação medicamentosa"
+   }
+  },
+  {
+   "id": "q-fcl-r1-04",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual ISRS está associado ao prolongamento do intervalo QT, sendo usado em dose maior que o seu parente próximo?",
+   "alternativas": [
+    {
+     "t": "Sertralina",
+     "certa": false,
+     "porque": "Preferida em gestantes e idosos."
+    },
+    {
+     "t": "Fluoxetina",
+     "certa": false,
+     "porque": "Marca: P450 e perda de peso."
+    },
+    {
+     "t": "Paroxetina",
+     "certa": false,
+     "porque": "Marca: ganho de peso."
+    },
+    {
+     "t": "Citalopram",
+     "certa": true,
+     "porque": "Prolonga o QT; o escitalopram é usado em menor dose."
+    }
+   ],
+   "explica": "Citalopram e escitalopram prolongam o QT (torção das pontas).",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Também prolonga o QT; usado em menor dose que o citalopram"
+   }
+  },
+  {
+   "id": "q-fcl-r1-05",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Um antidepressivo bloqueia M-1, H-1 e alfa-1. Qual conjunto de efeitos é esperado?",
+   "alternativas": [
+    {
+     "t": "Boca seca, retenção urinária, obstipação, sonolência e hipotensão postural",
+     "certa": true,
+     "porque": "Soma dos três bloqueios."
+    },
+    {
+     "t": "Insônia, perda de peso e hipertensão",
+     "certa": false,
+     "porque": "É o oposto do bloqueio H1 e alfa-1."
+    },
+    {
+     "t": "Hiponatremia isolada",
+     "certa": false,
+     "porque": "Não decorre desses receptores."
+    },
+    {
+     "t": "Náusea por 5-HT3a apenas",
+     "certa": false,
+     "porque": "5-HT3a é outro receptor."
+    }
+   ],
+   "explica": "M-1 dá o trio anticolinérgico, H-1 dá sono e fome, alfa-1 dá hipotensão postural.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Inibição causa xerostomia, retenção urinária e obstipação"
+   }
+  },
+  {
+   "id": "q-fcl-r1-06",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Paciente com depressão e epilepsia deseja parar de fumar. Qual fármaco está contraindicado?",
+   "alternativas": [
+    {
+     "t": "Sertralina",
+     "certa": false,
+     "porque": "Sem essa contraindicação no material."
+    },
+    {
+     "t": "Bupropiona",
+     "certa": true,
+     "porque": "Contraindicada na epilepsia."
+    },
+    {
+     "t": "Mirtazapina",
+     "certa": false,
+     "porque": "Sem essa contraindicação no material."
+    },
+    {
+     "t": "Vortioxetina",
+     "certa": false,
+     "porque": "Sem essa contraindicação no material."
+    }
+   ],
+   "explica": "A bupropiona facilita crises convulsivas.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "A bupropiona é contraindicada em pacientes com epilepsia"
+   }
+  },
+  {
+   "id": "q-fcl-r1-07",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "dificil",
+   "enunciado": "Paciente em uso de isocarboxazida. Qual conduta é obrigatória?",
+   "alternativas": [
+    {
+     "t": "Associar fluoxetina para potencializar",
+     "certa": false,
+     "porque": "Risco de síndrome serotoninérgica."
+    },
+    {
+     "t": "Dosar litemia",
+     "certa": false,
+     "porque": "Isso é do lítio."
+    },
+    {
+     "t": "Não associar ISRS e evitar alimentos ricos em tiramina",
+     "certa": true,
+     "porque": "As duas regras do IMAO."
+    },
+    {
+     "t": "Evitar alimentos ricos em tiamina",
+     "certa": false,
+     "porque": "O correto é tiramina; o resumo tem erro de digitação."
+    }
+   ],
+   "explica": "Sem a MAO, a tiramina da dieta provoca crise hipertensiva.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "é contraindicado o uso concomitante com ISRS, pelo risco de síndrome serotoninérgica"
+   },
+   "pegadinha": "O resumo escreve \"tiamina\"; a substância certa é a tiramina.",
+   "fora": "Tiramina e crise hipertensiva com IMAO: Goodman & Gilman, As Bases Farmacológicas da Terapêutica, 13ª ed."
+  },
+  {
+   "id": "q-fcl-r1-08",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual antidepressivo inibe o receptor alfa-2 e não causa perda de libido?",
+   "alternativas": [
+    {
+     "t": "Paroxetina",
+     "certa": false,
+     "porque": "É ISRS."
+    },
+    {
+     "t": "Venlafaxina",
+     "certa": false,
+     "porque": "É dual e reduz a libido."
+    },
+    {
+     "t": "Amitriptilina",
+     "certa": false,
+     "porque": "É tricíclico."
+    },
+    {
+     "t": "Mirtazapina",
+     "certa": true,
+     "porque": "Tetracíclico que bloqueia alfa-2 e 5-HT2a."
+    }
+   ],
+   "explica": "Por bloquear o 5-HT2a, a mirtazapina poupa a libido.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "A mirtazapina inibe o receptor alfa-2 pré-sináptico"
+   }
+  },
+  {
+   "id": "q-fcl-r1-09",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual dual é usado também na dor crônica?",
+   "alternativas": [
+    {
+     "t": "Duloxetina",
+     "certa": true,
+     "porque": "Usada para dores crônicas."
+    },
+    {
+     "t": "Desvenlafaxina",
+     "certa": false,
+     "porque": "Usada também na enxaqueca."
+    },
+    {
+     "t": "Trazodona",
+     "certa": false,
+     "porque": "Atípico, usado na insônia."
+    },
+    {
+     "t": "Vortioxetina",
+     "certa": false,
+     "porque": "Multimodal."
+    }
+   ],
+   "explica": "Duloxetina: dor crônica. Desvenlafaxina: enxaqueca.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "a duloxetina, usada para dores crônicas"
+   }
+  },
+  {
+   "id": "q-fcl-r1-10",
+   "secao": "r1",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Quais dois antidepressivos resultam em perda de peso?",
+   "alternativas": [
+    {
+     "t": "Mirtazapina e paroxetina",
+     "certa": false,
+     "porque": "Esses engordam."
+    },
+    {
+     "t": "Fluoxetina e bupropiona",
+     "certa": true,
+     "porque": "Conforme o quadro final."
+    },
+    {
+     "t": "Amitriptilina e nortriptilina",
+     "certa": false,
+     "porque": "Tricíclicos engordam."
+    },
+    {
+     "t": "Isocarboxazida e trazodona",
+     "certa": false,
+     "porque": "IMAO engorda; trazodona é neutra."
+    }
+   ],
+   "explica": "Fluoxetina e bupropiona emagrecem; mirtazapina e paroxetina engordam.",
+   "fonte": {
+    "secao": "r1",
+    "trecho": "Fluoxetina e bupropiona resultam em perda de peso."
+   }
+  },
+  {
+   "id": "q-fcl-r2-01",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "A que se atribuem os sintomas positivos da esquizofrenia?",
+   "alternativas": [
+    {
+     "t": "Hipoatividade dopaminérgica mesocortical",
+     "certa": false,
+     "porque": "Explica os negativos."
+    },
+    {
+     "t": "Excesso de GABA",
+     "certa": false,
+     "porque": "Não é o modelo da aula."
+    },
+    {
+     "t": "Hiperatividade dopaminérgica no trato mesolímbico",
+     "certa": true,
+     "porque": "É a base do bloqueio D2."
+    },
+    {
+     "t": "Bloqueio D2 tuberoinfundibular",
+     "certa": false,
+     "porque": "Isso gera hiperprolactinemia."
+    }
+   ],
+   "explica": "Positivos = excesso mesolímbico; negativos = falta mesocortical.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "decorrem de hiperatividade dopaminérgica no trato mesolímbico"
+   }
+  },
+  {
+   "id": "q-fcl-r2-02",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Paciente em haloperidol desenvolve roda denteada e acatisia. Qual via teve o D2 bloqueado?",
+   "alternativas": [
+    {
+     "t": "Tuberoinfundibular",
+     "certa": false,
+     "porque": "Daria hiperprolactinemia."
+    },
+    {
+     "t": "Mesolímbica",
+     "certa": false,
+     "porque": "É a via do efeito terapêutico."
+    },
+    {
+     "t": "Mesocortical",
+     "certa": false,
+     "porque": "Pioraria os negativos."
+    },
+    {
+     "t": "Nigroestriatal",
+     "certa": true,
+     "porque": "Controla o movimento."
+    }
+   ],
+   "explica": "Parkinsonismo medicamentoso vem da via nigroestriatal.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Parkinsonismo: marcha alargada, roda denteada, acatisia, discinesia"
+   }
+  },
+  {
+   "id": "q-fcl-r2-03",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual efeito no ECG é comum a todos os antipsicóticos?",
+   "alternativas": [
+    {
+     "t": "Aumento do intervalo QT",
+     "certa": true,
+     "porque": "Regra geral da classe."
+    },
+    {
+     "t": "Encurtamento do PR",
+     "certa": false,
+     "porque": "Não citado."
+    },
+    {
+     "t": "Bloqueio de ramo esquerdo",
+     "certa": false,
+     "porque": "Não citado."
+    },
+    {
+     "t": "Supra de ST",
+     "certa": false,
+     "porque": "Não citado."
+    }
+   ],
+   "explica": "Todos os antipsicóticos aumentam o intervalo QT.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "todos os antipsicóticos aumentam o intervalo QT"
+   }
+  },
+  {
+   "id": "q-fcl-r2-04",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Homem obeso, diabético e hipertenso precisa de antipsicótico atípico. Qual evitar?",
+   "alternativas": [
+    {
+     "t": "Aripiprazol",
+     "certa": false,
+     "porque": "Menos efeitos adversos."
+    },
+    {
+     "t": "Olanzapina",
+     "certa": true,
+     "porque": "Maior ganho de peso; contraindicada nesses pacientes."
+    },
+    {
+     "t": "Risperidona",
+     "certa": false,
+     "porque": "O problema dela é extrapiramidal."
+    },
+    {
+     "t": "Clozapina",
+     "certa": false,
+     "porque": "Seu problema principal é agranulocitose."
+    }
+   ],
+   "explica": "Olanzapina aumenta o risco cardiovascular.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "contraindicada em hipertensos, diabéticos e obesos"
+   }
+  },
+  {
+   "id": "q-fcl-r2-05",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Entre os atípicos, qual causa mais efeitos extrapiramidais e por quê?",
+   "alternativas": [
+    {
+     "t": "Quetiapina, por bloquear H1",
+     "certa": false,
+     "porque": "H1 dá sono, não extrapiramidal."
+    },
+    {
+     "t": "Aripiprazol, por modular dopamina",
+     "certa": false,
+     "porque": "Tem menos efeitos."
+    },
+    {
+     "t": "Risperidona, porque é a que mais inibe D2",
+     "certa": true,
+     "porque": "Mais bloqueio D2 = mais extrapiramidal."
+    },
+    {
+     "t": "Olanzapina, pelo ganho de peso",
+     "certa": false,
+     "porque": "Peso não explica extrapiramidal."
+    }
+   ],
+   "explica": "Quanto mais o atípico se parece com um típico no D2, mais extrapiramidal.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "Entre os atípicos, a que MAIS INIBE D<sub>2</sub>"
+   }
+  },
+  {
+   "id": "q-fcl-r2-06",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "dificil",
+   "enunciado": "Esquizofrenia refratária com tentativa de suicídio prévia. Qual droga e qual vigilância?",
+   "alternativas": [
+    {
+     "t": "Haloperidol, com ECG semanal",
+     "certa": false,
+     "porque": "Não é a droga da refratária."
+    },
+    {
+     "t": "Quetiapina 25 mg, sem vigilância",
+     "certa": false,
+     "porque": "Dose de insônia."
+    },
+    {
+     "t": "Olanzapina, com litemia",
+     "certa": false,
+     "porque": "Litemia é do lítio."
+    },
+    {
+     "t": "Clozapina, com acompanhamento semanal nas primeiras 16 semanas",
+     "certa": true,
+     "porque": "Mais eficaz e reduz suicídio; risco de agranulocitose."
+    }
+   ],
+   "explica": "Clozapina: leucócitos < 3.000 e neutrófilos < 1.500 definem agranulocitose.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "O ideal seria o acompanhamento semanal do paciente nas primeiras 16 semanas"
+   }
+  },
+  {
+   "id": "q-fcl-r2-07",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual é a dose mínima de quetiapina para esquizofrenia?",
+   "alternativas": [
+    {
+     "t": "100 mg",
+     "certa": true,
+     "porque": "Dose mínima citada."
+    },
+    {
+     "t": "25 mg",
+     "certa": false,
+     "porque": "Dose para insônia e humor."
+    },
+    {
+     "t": "5 mg",
+     "certa": false,
+     "porque": "Não citada."
+    },
+    {
+     "t": "1.000 mg",
+     "certa": false,
+     "porque": "Não citada."
+    }
+   ],
+   "explica": "25 mg é dose de insônia; esquizofrenia pede ao menos 100 mg.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "para esquizofrenia a dose mínima é 100 mg"
+   }
+  },
+  {
+   "id": "q-fcl-r3-01",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual é o padrão-ouro no transtorno bipolar tipo I?",
+   "alternativas": [
+    {
+     "t": "Lamotrigina",
+     "certa": false,
+     "porque": "Padrão-ouro no tipo II."
+    },
+    {
+     "t": "Lítio",
+     "certa": true,
+     "porque": "Padrão-ouro no tipo I."
+    },
+    {
+     "t": "Fluoxetina",
+     "certa": false,
+     "porque": "Antidepressivo."
+    },
+    {
+     "t": "Haloperidol",
+     "certa": false,
+     "porque": "Antipsicótico típico."
+    }
+   ],
+   "explica": "Lítio no tipo I; lamotrigina no tipo II.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "O lítio é considerado padrão-ouro para o transtorno bipolar tipo I."
+   }
+  },
+  {
+   "id": "q-fcl-r3-02",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Sobre o paciente em uso de lítio, assinale a afirmativa <strong>FALSA</strong>.",
+   "alternativas": [
+    {
+     "t": "Tem janela terapêutica estreita",
+     "certa": false,
+     "porque": "Verdadeiro."
+    },
+    {
+     "t": "Pode causar hipotireoidismo",
+     "certa": false,
+     "porque": "Verdadeiro."
+    },
+    {
+     "t": "Deve ter a função hepática monitorada por ser metabolizado no fígado",
+     "certa": true,
+     "porque": "Falso: a eliminação é renal."
+    },
+    {
+     "t": "Exige dosagem periódica da litemia",
+     "certa": false,
+     "porque": "Verdadeiro."
+    }
+   ],
+   "explica": "Foi marcada como questão de prova: monitora-se função renal e tireoidiana.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Não é metabolizado pelo fígado, e sim eliminado pelo rim."
+   }
+  },
+  {
+   "id": "q-fcl-r3-03",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Paciente bipolar em lítio vai iniciar tratamento para hipertensão. Qual classe a anotação manda evitar?",
+   "alternativas": [
+    {
+     "t": "Bloqueador de canal de cálcio",
+     "certa": false,
+     "porque": "Não citado."
+    },
+    {
+     "t": "Nenhuma, o lítio não interage",
+     "certa": false,
+     "porque": "Interage."
+    },
+    {
+     "t": "Betabloqueador",
+     "certa": false,
+     "porque": "Não citado."
+    },
+    {
+     "t": "IECA/BRA",
+     "certa": true,
+     "porque": "Listado entre os que não se associam ao lítio."
+    }
+   ],
+   "explica": "AINE, diuréticos e IECA/BRA aumentam a litemia.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "AINEs, diuréticos e IECA/BRA"
+   }
+  },
+  {
+   "id": "q-fcl-r3-04",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "facil",
+   "enunciado": "Gestante com transtorno bipolar: qual estabilizador indicar?",
+   "alternativas": [
+    {
+     "t": "Lamotrigina",
+     "certa": true,
+     "porque": "Indicada na gestante."
+    },
+    {
+     "t": "Lítio",
+     "certa": false,
+     "porque": "Contraindicado em gestantes."
+    },
+    {
+     "t": "Ácido valproico",
+     "certa": false,
+     "porque": "Teratogênico."
+    },
+    {
+     "t": "Carbamazepina",
+     "certa": false,
+     "porque": "Teratogênica."
+    }
+   ],
+   "explica": "Na gestante, lamotrigina.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Na gestante deve ser usada a lamotrigina."
+   }
+  },
+  {
+   "id": "q-fcl-r3-05",
+   "secao": "r3",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Quais sinais indicam intoxicação por lítio?",
+   "alternativas": [
+    {
+     "t": "Rigidez torácica e apneia",
+     "certa": false,
+     "porque": "Fentanil."
+    },
+    {
+     "t": "Tremor, ataxia, mioclonia e crise convulsiva",
+     "certa": true,
+     "porque": "Lista da aula."
+    },
+    {
+     "t": "Hipertermia e rigidez muscular",
+     "certa": false,
+     "porque": "Hipertermia maligna."
+    },
+    {
+     "t": "Galactorreia e amenorreia",
+     "certa": false,
+     "porque": "Hiperprolactinemia."
+    }
+   ],
+   "explica": "Janela estreita: a intoxicação é neurológica.",
+   "fonte": {
+    "secao": "r3",
+    "trecho": "Tremor, ataxia, mioclonia, crise convulsiva"
+   }
+  },
+  {
+   "id": "q-fcl-r4-01",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Os triptanos são agonistas de quais receptores?",
+   "alternativas": [
+    {
+     "t": "5-HT2a",
+     "certa": false,
+     "porque": "Alvo dos atípicos e da mirtazapina."
+    },
+    {
+     "t": "D2",
+     "certa": false,
+     "porque": "Alvo dos antipsicóticos."
+    },
+    {
+     "t": "5-HT1b e 5-HT1d",
+     "certa": true,
+     "porque": "Causam vasoconstrição cerebral."
+    },
+    {
+     "t": "NMDA",
+     "certa": false,
+     "porque": "Alvo da cetamina."
+    }
+   ],
+   "explica": "Triptano é a classe abortiva mais eficaz.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "agonistas seletivos dos receptores serotoninérgicos 5-HT1b e 5-HT1d"
+   }
+  },
+  {
+   "id": "q-fcl-r4-02",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Paciente com crise de enxaqueca. Qual medicação NÃO deve ser usada?",
+   "alternativas": [
+    {
+     "t": "Dipirona com cetoprofeno",
+     "certa": false,
+     "porque": "Primeiro degrau."
+    },
+    {
+     "t": "Sumatriptano",
+     "certa": false,
+     "porque": "Triptano."
+    },
+    {
+     "t": "Dexametasona venosa",
+     "certa": false,
+     "porque": "Degrau da escada."
+    },
+    {
+     "t": "Morfina",
+     "certa": true,
+     "porque": "Opioides pioram a enxaqueca."
+    }
+   ],
+   "explica": "Opioide piora a crise.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Opioides pioram a enxaqueca"
+   }
+  },
+  {
+   "id": "q-fcl-r4-03",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Mulher com enxaqueca frequente e asma pede profilaxia. Qual opção é contraindicada?",
+   "alternativas": [
+    {
+     "t": "Betabloqueador",
+     "certa": true,
+     "porque": "Contraindicado em asma, DPOC e bradiarritmia."
+    },
+    {
+     "t": "Amitriptilina",
+     "certa": false,
+     "porque": "Opção preventiva."
+    },
+    {
+     "t": "Desvenlafaxina",
+     "certa": false,
+     "porque": "Opção preventiva."
+    },
+    {
+     "t": "Topiramato",
+     "certa": false,
+     "porque": "Opção, com outros cuidados."
+    }
+   ],
+   "explica": "Betabloqueador piora o broncoespasmo.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "Contraindicados em asma, DPOC e bradiarritmia"
+   }
+  },
+  {
+   "id": "q-fcl-r4-04",
+   "secao": "r4",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Qual cuidado é essencial ao prescrever topiramato a uma mulher jovem?",
+   "alternativas": [
+    {
+     "t": "Causa ganho de peso importante",
+     "certa": false,
+     "porque": "Reduz o peso."
+    },
+    {
+     "t": "É teratogênico e corta a ação do anticoncepcional",
+     "certa": true,
+     "porque": "Anotação da aula."
+    },
+    {
+     "t": "Exige litemia",
+     "certa": false,
+     "porque": "Isso é do lítio."
+    },
+    {
+     "t": "É contraindicado na asma",
+     "certa": false,
+     "porque": "Isso é do betabloqueador."
+    }
+   ],
+   "explica": "Risco duplo: gravidez não planejada e malformação.",
+   "fonte": {
+    "secao": "r4",
+    "trecho": "corta a ação do anticoncepcional"
+   }
+  },
+  {
+   "id": "q-fcl-r5-01",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "No nociceptor periférico, qual é a ação do opioide?",
+   "alternativas": [
+    {
+     "t": "Fecha canais de Ca<sup>2+</sup>",
+     "certa": false,
+     "porque": "Isso é no pré-sináptico."
+    },
+    {
+     "t": "Abre canais de Na<sup>+</sup>",
+     "certa": false,
+     "porque": "Isso despolarizaria."
+    },
+    {
+     "t": "Abre canais de K<sup>+</sup>, tornando a membrana mais eletronegativa",
+     "certa": true,
+     "porque": "Primeira barreira."
+    },
+    {
+     "t": "Bloqueia o NMDA",
+     "certa": false,
+     "porque": "É a cetamina."
+    }
+   ],
+   "explica": "Abre K+, fecha Ca2+, abre K+.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "o receptor ativado abre canais de K<sup>+</sup>, o potássio sai"
+   }
+  },
+  {
+   "id": "q-fcl-r5-02",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Por que evitar opioide no pós-operatório de cirurgia de abdome alto?",
+   "alternativas": [
+    {
+     "t": "Causa hiperprolactinemia",
+     "certa": false,
+     "porque": "Efeito de antipsicótico."
+    },
+    {
+     "t": "Causa hipercalemia",
+     "certa": false,
+     "porque": "Succinilcolina."
+    },
+    {
+     "t": "Causa hipertermia maligna",
+     "certa": false,
+     "porque": "Succinilcolina."
+    },
+    {
+     "t": "Causa íleo paralítico pela inibição parassimpática",
+     "certa": true,
+     "porque": "Efeito citado."
+    }
+   ],
+   "explica": "A inibição parassimpática para o intestino.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Evitar opioide em cirurgia de abdome alto, pois causa íleo paralítico"
+   }
+  },
+  {
+   "id": "q-fcl-r5-03",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Como o opioide aumenta a sensação de recompensa?",
+   "alternativas": [
+    {
+     "t": "Reduz a liberação de GABA, liberando mais dopamina no núcleo accumbens",
+     "certa": true,
+     "porque": "Mecanismo descrito."
+    },
+    {
+     "t": "Bloqueia a recaptação de serotonina",
+     "certa": false,
+     "porque": "Mecanismo do ISRS."
+    },
+    {
+     "t": "Aumenta o glutamato no tálamo",
+     "certa": false,
+     "porque": "Não descrito."
+    },
+    {
+     "t": "Bloqueia D2 mesolímbico",
+     "certa": false,
+     "porque": "Isso é antipsicótico."
+    }
+   ],
+   "explica": "Menos freio GABAérgico, mais dopamina.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "reduz a liberação de GABA; sem o freio do GABA, há maior liberação de dopamina"
+   }
+  },
+  {
+   "id": "q-fcl-r5-04",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Durante sedação, o fentanil é feito em bolus rápido e o paciente fica difícil de ventilar. Causa provável?",
+   "alternativas": [
+    {
+     "t": "Broncodilatação",
+     "certa": false,
+     "porque": "Efeito da cetamina."
+    },
+    {
+     "t": "Rigidez torácica",
+     "certa": true,
+     "porque": "Fentanil deve ser infundido lentamente."
+    },
+    {
+     "t": "Hipercalemia",
+     "certa": false,
+     "porque": "Succinilcolina."
+    },
+    {
+     "t": "Agranulocitose",
+     "certa": false,
+     "porque": "Clozapina."
+    }
+   ],
+   "explica": "Fentanil é o opioide mais potente; infusão sempre lenta.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "deve sempre ser infundido lentamente, ou pode causar rigidez torácica"
+   }
+  },
+  {
+   "id": "q-fcl-r6-01",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual sedativo é agonista GABA direto, induz e mantém, mas não tem efeito analgésico?",
+   "alternativas": [
+    {
+     "t": "Cetamina",
+     "certa": false,
+     "porque": "Tem analgesia."
+    },
+    {
+     "t": "Etomidato",
+     "certa": false,
+     "porque": "Só induz."
+    },
+    {
+     "t": "Propofol",
+     "certa": true,
+     "porque": "Descrição do propofol."
+    },
+    {
+     "t": "Fentanil",
+     "certa": false,
+     "porque": "É opioide."
+    }
+   ],
+   "explica": "Propofol: hipotensor severo, amnésico, anticonvulsivante.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "O propofol é agonista GABA por ligação direta e não possui efeito analgésico."
+   }
+  },
+  {
+   "id": "q-fcl-r6-02",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "dificil",
+   "enunciado": "Paciente em choque séptico será intubado. Por que evitar o etomidato?",
+   "alternativas": [
+    {
+     "t": "É hipotensor severo",
+     "certa": false,
+     "porque": "O etomidato tem inércia hemodinâmica."
+    },
+    {
+     "t": "Causa hipercalemia",
+     "certa": false,
+     "porque": "Succinilcolina."
+    },
+    {
+     "t": "É broncoconstritor",
+     "certa": false,
+     "porque": "Não descrito."
+    },
+    {
+     "t": "Inibe a 11-beta-hidroxilase e causa insuficiência adrenal",
+     "certa": true,
+     "porque": "Por isso não se usa no choque séptico."
+    }
+   ],
+   "explica": "Sem cortisol, o choque piora.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "não deve ser usado no choque séptico"
+   }
+  },
+  {
+   "id": "q-fcl-r6-03",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual é o antídoto dos benzodiazepínicos?",
+   "alternativas": [
+    {
+     "t": "Flumazenil",
+     "certa": true,
+     "porque": "Antidoto citado."
+    },
+    {
+     "t": "Naloxona",
+     "certa": false,
+     "porque": "Opioides."
+    },
+    {
+     "t": "Sugamadex",
+     "certa": false,
+     "porque": "Rocurônio."
+    },
+    {
+     "t": "Dantrolene",
+     "certa": false,
+     "porque": "Hipertermia maligna."
+    }
+   ],
+   "explica": "Benzo: flumazenil.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "O antídoto é o flumazenil."
+   }
+  },
+  {
+   "id": "q-fcl-r6-04",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Qual afirmativa sobre a cetamina está correta?",
+   "alternativas": [
+    {
+     "t": "É agonista GABA direto",
+     "certa": false,
+     "porque": "É antagonista NMDA."
+    },
+    {
+     "t": "É sedativa e analgésica e não faz depressão respiratória",
+     "certa": true,
+     "porque": "Questão de prova."
+    },
+    {
+     "t": "Reduz PA e FC",
+     "certa": false,
+     "porque": "Aumenta, por efeito adrenérgico."
+    },
+    {
+     "t": "Só induz, não mantém",
+     "certa": false,
+     "porque": "Induz e mantém."
+    }
+   ],
+   "explica": "Cetamina é a exceção analgésica entre os indutores.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "É sedativa e analgésica, diferentemente dos outros agentes do capítulo."
+   }
+  },
+  {
+   "id": "q-fcl-r6-05",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Paciente em propofol contínuo há dias evolui com acidose metabólica, rabdomiólise e choque. Hipótese?",
+   "alternativas": [
+    {
+     "t": "Hipertermia maligna",
+     "certa": false,
+     "porque": "Succinilcolina."
+    },
+    {
+     "t": "Síndrome serotoninérgica",
+     "certa": false,
+     "porque": "ISRS com IMAO."
+    },
+    {
+     "t": "Síndrome da infusão do propofol (PRIS)",
+     "certa": true,
+     "porque": "Tríade citada."
+    },
+    {
+     "t": "Insuficiência adrenal por etomidato",
+     "certa": false,
+     "porque": "Outro fármaco."
+    }
+   ],
+   "explica": "PRIS aparece na infusão contínua.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "a síndrome da infusão contínua do propofol (PRIS): acidose metabólica, rabdomiólise e choque cardiogênico"
+   }
+  },
+  {
+   "id": "q-fcl-r7-01",
+   "secao": "r7",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Grande queimado precisa de intubação. Qual bloqueador evitar?",
+   "alternativas": [
+    {
+     "t": "Rocurônio",
+     "certa": false,
+     "porque": "Sem contraindicação."
+    },
+    {
+     "t": "Cisatracúrio",
+     "certa": false,
+     "porque": "Sem essa restrição."
+    },
+    {
+     "t": "Nenhum tem restrição",
+     "certa": false,
+     "porque": "A succinilcolina tem."
+    },
+    {
+     "t": "Succinilcolina",
+     "certa": true,
+     "porque": "Risco de hipercalemia."
+    }
+   ],
+   "explica": "Politrauma e queimado: sem succinilcolina.",
+   "fonte": {
+    "secao": "r7",
+    "trecho": "Não administrar em politraumatizados ou queimados"
+   }
+  },
+  {
+   "id": "q-fcl-r7-02",
+   "secao": "r7",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual é o antídoto da hipertermia maligna?",
+   "alternativas": [
+    {
+     "t": "Dantrolene",
+     "certa": true,
+     "porque": "Citado na tabela."
+    },
+    {
+     "t": "Sugamadex",
+     "certa": false,
+     "porque": "Reverte rocurônio."
+    },
+    {
+     "t": "Flumazenil",
+     "certa": false,
+     "porque": "Reverte benzo."
+    },
+    {
+     "t": "Naloxona",
+     "certa": false,
+     "porque": "Reverte opioide."
+    }
+   ],
+   "explica": "Hipertermia maligna é complicação da succinilcolina.",
+   "fonte": {
+    "secao": "r7",
+    "trecho": "Antídoto: dantrolene"
+   }
+  },
+  {
+   "id": "q-fcl-r7-03",
+   "secao": "r7",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "dificil",
+   "enunciado": "Por que a succinilcolina não deve ser usada na intoxicação por carbamato ou cocaína?",
+   "alternativas": [
+    {
+     "t": "Porque causa broncoespasmo",
+     "certa": false,
+     "porque": "Não é o motivo."
+    },
+    {
+     "t": "Porque disputam a mesma enzima de degradação",
+     "certa": true,
+     "porque": "Questão de prova."
+    },
+    {
+     "t": "Porque é degradada pela acetilcolinesterase",
+     "certa": false,
+     "porque": "Não é degradada por ela."
+    },
+    {
+     "t": "Porque prolonga o QT",
+     "certa": false,
+     "porque": "Não é o motivo."
+    }
+   ],
+   "explica": "A colinesterase plasmática fica ocupada ou inibida, e o bloqueio se prolonga.",
+   "fonte": {
+    "secao": "r7",
+    "trecho": "são degradados pela mesma enzima"
+   }
+  },
+  {
+   "id": "q-fcl-r7-04",
+   "secao": "r7",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual é o antídoto do rocurônio?",
+   "alternativas": [
+    {
+     "t": "Dantrolene",
+     "certa": false,
+     "porque": "Hipertermia maligna."
+    },
+    {
+     "t": "Flumazenil",
+     "certa": false,
+     "porque": "Benzo."
+    },
+    {
+     "t": "Sugamadex",
+     "certa": true,
+     "porque": "Citado."
+    },
+    {
+     "t": "Atropina",
+     "certa": false,
+     "porque": "Não citada."
+    }
+   ],
+   "explica": "Rocurônio: não despolarizante, sem contraindicação.",
+   "fonte": {
+    "secao": "r7",
+    "trecho": "o antídoto é o sugamadex"
+   }
+  },
+  {
+   "id": "q-fcl-r8-01",
+   "secao": "r8",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Criança com crises de ausência. Qual droga está contraindicada?",
+   "alternativas": [
+    {
+     "t": "Etossuximida",
+     "certa": false,
+     "porque": "Melhor para ausência."
+    },
+    {
+     "t": "Ácido valproico",
+     "certa": false,
+     "porque": "Indicado na ausência."
+    },
+    {
+     "t": "Levetiracetam",
+     "certa": false,
+     "porque": "Bom para tudo."
+    },
+    {
+     "t": "Carbamazepina",
+     "certa": true,
+     "porque": "Contraindicada em ausência."
+    }
+   ],
+   "explica": "Carbamazepina piora ausência e mioclonia.",
+   "fonte": {
+    "secao": "r8",
+    "trecho": "É contraindicada nas crises de ausência, nas mioclonias, na gestação e na hiponatremia."
+   }
+  },
+  {
+   "id": "q-fcl-r8-02",
+   "secao": "r8",
+   "tags": [],
+   "tipo": "compreensao",
+   "nivel": "medio",
+   "enunciado": "Qual é o papel do benzodiazepínico na epilepsia?",
+   "alternativas": [
+    {
+     "t": "Abortar a crise em vigência",
+     "certa": true,
+     "porque": "Não previne novas crises."
+    },
+    {
+     "t": "Prevenir crises a longo prazo",
+     "certa": false,
+     "porque": "Não é esse o uso."
+    },
+    {
+     "t": "Substituir a carbamazepina",
+     "certa": false,
+     "porque": "Não."
+    },
+    {
+     "t": "Tratar crise de ausência crônica",
+     "certa": false,
+     "porque": "Não."
+    }
+   ],
+   "explica": "Benzo é o primeiro degrau da crise.",
+   "fonte": {
+    "secao": "r8",
+    "trecho": "devem ser usados para abortar a crise em vigência, não para prevenir novas crises"
+   }
+  },
+  {
+   "id": "q-fcl-r8-03",
+   "secao": "r8",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "dificil",
+   "enunciado": "Durante crise refratária a benzodiazepínico, a fenitoína é infundida rápido demais. Qual o risco?",
+   "alternativas": [
+    {
+     "t": "Hipertermia maligna",
+     "certa": false,
+     "porque": "Succinilcolina."
+    },
+    {
+     "t": "Parada cardíaca",
+     "certa": true,
+     "porque": "Acima de 50 mg/min."
+    },
+    {
+     "t": "Hiperprolactinemia",
+     "certa": false,
+     "porque": "Antipsicótico."
+    },
+    {
+     "t": "Síndrome serotoninérgica",
+     "certa": false,
+     "porque": "IMAO + ISRS."
+    }
+   ],
+   "explica": "Infundir a menos de 50 mg/min.",
+   "fonte": {
+    "secao": "r8",
+    "trecho": "Tem de ser infundida a menos de 50 mg/min, ou pode causar parada cardíaca."
+   }
+  },
+  {
+   "id": "q-fcl-r8-04",
+   "secao": "r8",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Paciente etilista e em uso de ácido valproico. Qual anticonvulsivante evitar?",
+   "alternativas": [
+    {
+     "t": "Levetiracetam",
+     "certa": false,
+     "porque": "Sem essa restrição."
+    },
+    {
+     "t": "Lamotrigina",
+     "certa": false,
+     "porque": "Sem essa restrição."
+    },
+    {
+     "t": "Fenobarbital",
+     "certa": true,
+     "porque": "Contraindicado nos dois casos."
+    },
+    {
+     "t": "Gabapentina",
+     "certa": false,
+     "porque": "Sem essa restrição."
+    }
+   ],
+   "explica": "Fenobarbital também causa Stevens-Johnson e anemia aplásica.",
+   "fonte": {
+    "secao": "r8",
+    "trecho": "contraindicado em etilistas e em pacientes em uso de ácido valproico"
+   }
+  },
+  {
+   "id": "q-fcl-r8-05",
+   "secao": "r8",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "dificil",
+   "enunciado": "Jovem em crise tônico-clônica há 10 minutos recebeu 3 doses de benzodiazepínico e fenitoína, sem resposta. Próximo passo?",
+   "alternativas": [
+    {
+     "t": "Mais uma dose de diazepam",
+     "certa": false,
+     "porque": "Já foram 3 tentativas."
+    },
+    {
+     "t": "Carbamazepina por sonda",
+     "certa": false,
+     "porque": "Não aborta crise."
+    },
+    {
+     "t": "Etossuximida",
+     "certa": false,
+     "porque": "É para ausência."
+    },
+    {
+     "t": "Intubação orotraqueal com propofol ou midazolam",
+     "certa": true,
+     "porque": "3º degrau."
+    }
+   ],
+   "explica": "Escada: benzo, fenitoína, IOT, barbitúrico.",
+   "fonte": {
+    "secao": "r8",
+    "trecho": "Se persistir, intubação orotraqueal com propofol ou midazolam."
+   }
+  },
+  {
+   "id": "q-fcl-r8-06",
+   "secao": "r8",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Quais anticonvulsivantes foram marcados como teratogênicos?",
+   "alternativas": [
+    {
+     "t": "Ácido valproico, fenitoína e carbamazepina",
+     "certa": true,
+     "porque": "Quadro da aula."
+    },
+    {
+     "t": "Levetiracetam, lamotrigina e gabapentina",
+     "certa": false,
+     "porque": "Não marcados."
+    },
+    {
+     "t": "Etossuximida e diazepam",
+     "certa": false,
+     "porque": "Não marcados."
+    },
+    {
+     "t": "Midazolam e propofol",
+     "certa": false,
+     "porque": "Não marcados."
+    }
+   ],
+   "explica": "Na gestante, evitar esses três.",
+   "fonte": {
+    "secao": "r8",
+    "trecho": "ácido valproico, a fenitoína e a carbamazepina"
+   }
+  },
+  {
+   "id": "q-fcl-r2-08",
+   "secao": "r2",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Homem de 30 anos em surto, agressivo, alucinando. Qual a dupla clássica citada?",
+   "alternativas": [
+    {
+     "t": "Fluoxetina + bupropiona",
+     "certa": false,
+     "porque": "Antidepressivos."
+    },
+    {
+     "t": "Haloperidol + prometazina",
+     "certa": true,
+     "porque": "Haldol + Fenergan."
+    },
+    {
+     "t": "Lítio + lamotrigina",
+     "certa": false,
+     "porque": "Estabilizadores."
+    },
+    {
+     "t": "Propofol + cetamina",
+     "certa": false,
+     "porque": "Para intubação."
+    }
+   ],
+   "explica": "A prometazina é anti-H1 e soma sedação.",
+   "fonte": {
+    "secao": "r2",
+    "trecho": "A dupla clássica é haloperidol (Haldol) com prometazina (Fenergan)"
+   }
+  }
+ ]
+}
