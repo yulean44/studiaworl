@@ -193,7 +193,8 @@ export function abrePacote3d({ titulo, nome, raridade, rar = "comum", numero, to
   const borda = new THREE.Mesh(new THREE.ExtrudeGeometry(forma, { depth: CT, bevelEnabled: false, curveSegments: 8 }), new THREE.MeshStandardMaterial({ color: "#f3efe7", roughness: .6 }));
   borda.position.z = -CT / 2;
   const carta = new THREE.Group(); carta.add(frente, verso, borda);
-  carta.scale.setScalar(.94); carta.position.set(0, -.1, 0); carta.rotation.y = Math.PI; raiz.add(carta);
+  /* a carta só existe depois do rasgo: antes ela atravessaria a embalagem quando o pacote balança */
+  carta.scale.set(.94, .94, .25); carta.position.set(0, .05, 0); carta.rotation.y = Math.PI; carta.visible = false; raiz.add(carta);
 
   /* aura atrás da carta (aparece na revelação; mais forte em raro e lendário) */
   const forteRar = rar === "lendario" ? 1 : rar === "raro" ? .75 : rar === "incomum" ? .5 : .35;
@@ -276,6 +277,7 @@ export function abrePacote3d({ titulo, nome, raridade, rar = "comum", numero, to
   }
   function soltaTira() {
     fase = "voa"; tFase = 0; navigator.vibrate?.(12);
+    pacote.rotation.set(0, 0, 0); pacote.position.set(0, 0, 0); carta.visible = true;
     tira.updateMatrixWorld(); tiraVel.set(.9, 2.6, 1.6); tiraRot.set(-2.2, .6, 2.8);
     [mF, mV].forEach(m => { m.transparent = true; });
   }
@@ -307,13 +309,16 @@ export function abrePacote3d({ titulo, nome, raridade, rar = "comum", numero, to
       pacote.position.y = (1 - e) * 1.4; pacote.rotation.z = (1 - e) * .18; pacote.rotation.x = (1 - e) * -.4;
       if (k >= 1) { fase = "espera"; tFase = 0; }
     }
-    if (fase === "espera" || fase === "volta" || fase === "rasga") {
+    if (fase === "espera" || fase === "volta") {
       const bob = Math.sin(tt * 1.6) * .018;
       const ciclo = (tt % 4.2) - 3.4, cutuca = fase === "espera" && !arrasto && p === 0 && ciclo > 0 ? Math.sin(ciclo * 14) * Math.exp(-ciclo * 5) * .07 : 0;
       pacote.position.y = bob; pacote.rotation.y = incl.ax * .32 + Math.sin(tt * .9) * .05; pacote.rotation.x = incl.ay * .18; pacote.rotation.z = cutuca;
     }
     if (fase === "volta") { p = Math.max(0, p - dt * 5 * Math.max(.2, p)); curvaTira(); if (p <= 0) fase = "espera"; }
-    if (fase === "rasga") { p = Math.min(1, p + dt * 5.5); curvaTira(); if (p >= 1) soltaTira(); }
+    if (fase === "rasga") {
+      const k = Math.min(1, dt * 14); pacote.rotation.x *= 1 - k; pacote.rotation.y *= 1 - k; pacote.rotation.z *= 1 - k; pacote.position.y *= 1 - k;
+      p = Math.min(1, p + dt * 5.5); curvaTira(); if (p >= 1) soltaTira();
+    }
     if (fase === "voa" || fase === "revela" || fase === "pronto") {
       if (tira.visible) {
         tira.position.x += tiraVel.x * dt; tira.position.y += tiraVel.y * dt; tira.position.z += tiraVel.z * dt; tiraVel.y -= 7 * dt;
@@ -324,14 +329,14 @@ export function abrePacote3d({ titulo, nome, raridade, rar = "comum", numero, to
     if (fase === "voa") {
       /* a carta sobe de dentro do pacote; o pacote desce e some */
       const k = clamp(tFase / .7, 0, 1), e = easeOut(k);
-      carta.position.y = -.1 + e * .85; carta.position.z = e * .02;
-      if (tFase > .32) { const q = easeOut(clamp((tFase - .32) / .6, 0, 1)); pacote.position.y = -q * 2.6; pacote.rotation.x = q * .55; mF.opacity = mV.opacity = 1 - q; sombra.material.opacity = 1 - q; }
+      carta.position.y = .05 + e * .7;
+      if (tFase > .32) { const q = easeOut(clamp((tFase - .32) / .6, 0, 1)); pacote.position.y = -q * 2.6; mF.opacity = mV.opacity = 1 - q; sombra.material.opacity = 1 - q; }
       if (k >= 1) { fase = "revela"; tFase = 0; }
     }
     if (fase === "revela") {
       /* vem para frente e vira, com um passo além no fim (mola) */
       const k = clamp(tFase / .95, 0, 1), e = easeBack(k), m = easeOut(clamp(tFase / .6, 0, 1));
-      carta.position.y = .75 - m * .83; carta.position.z = m * .35; carta.scale.setScalar(.94 + m * .1);
+      carta.position.y = .75 - m * .83; carta.position.z = m * .35; carta.scale.set(.94 + m * .1, .94 + m * .1, .25 + m * .75);
       carta.rotation.y = Math.PI * (1 - e) + incl.ax * .3 * k; carta.rotation.x = incl.ay * .2 * k;
       holo.uniforms.forca.value = sm(.45, 1, k);
       if (!revelouConf && k > .55) { revelouConf = true; explodeConfete(); }
