@@ -8,6 +8,9 @@ O ChatGPT (Codex ou o chat com o conector do GitHub) não carrega `.claude/skill
 2. O `SKILL.md` da etapa, em `.claude/skills/<nome>/SKILL.md`:
    - mudança no visual: `frontend-design` (direção estética) e `frontend-ui-engineering` (implementação)
    - conferir o visual antes de publicar: `web-design-guidelines` (regras em `regras.md` da mesma pasta)
+   - 3D (planeta, pacote de criatura): `threejs-fundamentals` e o `threejs-*` do assunto (shaders, materiais, animação, desempenho)
+   - polimento e auditoria visual: `impeccable`
+   - animação de interface: `animate` e `choreograph`
    - mudança pequena em código: `ponytail`
    - antes de publicar: `ponytail-review` e `code-review-and-quality`
    - matéria nova ou Kahoot: seção "Conteúdo novo de matéria" do `AGENTS.md`

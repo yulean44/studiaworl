@@ -51,8 +51,11 @@ O Claude Code carrega sozinho; outros agentes leiam o `SKILL.md` correspondente.
 - **Mudança enxuta:** `ponytail` (menor mudança que resolve; reaproveitar o que já existe).
 - **Visual:** `frontend-design` para direção estética (sem trocar a identidade abaixo) e `web-design-guidelines` para conferir antes de publicar.
 - **Animação:** `animate`, `choreograph`, `gestures` e `animation-performance` (Emil Kowalski) e `motion-design` (LottieFiles): curvas, durações, gestos e desempenho.
+- **3D (planeta, pacote):** família `threejs-*` (fundamentos, animação, shaders, materiais, luz, texturas, geometria, interação, desempenho, pós-processamento, loaders). Projeto em three.js puro: ignorar trechos de React Three Fiber.
+- **Polimento geral de interface:** `impeccable` (criticar, auditar, polir, animar). A identidade do site continua valendo.
+- **GSAP:** `gsap-core`, `gsap-timeline`, `gsap-performance` só servem se um dia a biblioteca GSAP for adotada; hoje as animações usam CSS, WAAPI e requestAnimationFrame.
 - **Antes de publicar:** `ponytail-review` ou `code-review-and-quality`, rodando todos os testes de `tests/`.
-- Fontes: addyosmani/agent-skills (MIT), DietrichGebert/ponytail (MIT), Graphify-Labs/graphify (Apache 2.0/MIT), anthropics/skills (Apache 2.0), vercel-labs/agent-skills e web-interface-guidelines (MIT), emilkowalski/skills (MIT), LottieFiles/motion-design-skill (MIT); licenças dentro de cada pasta.
+- Fontes: addyosmani/agent-skills (MIT), DietrichGebert/ponytail (MIT), Graphify-Labs/graphify (Apache 2.0/MIT), anthropics/skills (Apache 2.0), vercel-labs/agent-skills e web-interface-guidelines (MIT), emilkowalski/skills (MIT), LottieFiles/motion-design-skill (MIT), cloudai-x/threejs-skills (MIT), pbakaus/impeccable (Apache 2.0), greensock/gsap-skills (MIT); licenças dentro de cada pasta.
 
 ## Estilo (o dono é exigente com isso)
 
