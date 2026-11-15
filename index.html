@@ -14,9 +14,9 @@ document.querySelector('meta[name="theme-color"]').setAttribute("content",{claro
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=56">
-<link rel="icon" type="image/png" href="favicon.png?v=56">
-<link rel="manifest" href="manifest.webmanifest?v=56">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=57">
+<link rel="icon" type="image/png" href="favicon.png?v=57">
+<link rel="manifest" href="manifest.webmanifest?v=57">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1016,6 +1016,60 @@ html[data-tema="claro"]{background-color:#f5f8fb}html[data-tema="amanhecer"]{bac
   --fundo:radial-gradient(60% 50% at 30% 42%,#1f2e4b 0%,rgba(31,46,75,0) 70%),radial-gradient(38% 30% at 88% 8%,rgba(160,184,236,.13),transparent 70%),radial-gradient(70% 38% at 50% 112%,rgba(76,106,168,.22),transparent 70%),linear-gradient(180deg,#121a2d 0%,#0a0f1c 100%);
 }
 :root:not([data-tema]) .vidro{box-shadow:0 1px 0 rgba(0,0,0,.2),0 18px 44px rgba(0,0,0,.32),inset 0 1px 0 rgba(200,220,255,.07)}
+
+/* ================= estudo em estilo de documento (paleta neutra de caderno, inspirada no Notion) ================= */
+body.estudo{
+  --n-ink:#111111; --n-text:#37352f; --n-muted:#615d59; --n-faint:#757575;
+  --n-line:rgba(55,53,47,.09); --n-line2:rgba(55,53,47,.16); --n-hover:rgba(55,53,47,.055); --n-sel:rgba(55,53,47,.08);
+  --n-blue:#0075de; --n-blue-tint:#e6f3fe; --n-side:#f6f5f4; --n-page:#ffffff; --n-mark:rgba(255,177,16,.26);
+  --n-warm:#fbf3db; --n-warm-line:rgba(232,157,1,.35); --n-green-tint:rgba(63,154,106,.08);
+}
+:root[data-tema="dourado"] body.estudo{--n-side:#f6f2ea; --n-page:#fffdf8; --n-text:#3a362f}
+:root:not([data-tema]) body.estudo,:root[data-tema="meianoite"] body.estudo,:root[data-tema="cristal"] body.estudo,:root[data-tema="aurora"] body.estudo,:root[data-tema="floresta"] body.estudo{
+  --n-ink:#f4f6f9; --n-text:#d5dbe4; --n-muted:#9ba5b4; --n-faint:#6f7889;
+  --n-line:rgba(255,255,255,.08); --n-line2:rgba(255,255,255,.14); --n-hover:rgba(255,255,255,.05); --n-sel:rgba(255,255,255,.085);
+  --n-blue:#62aef0; --n-blue-tint:rgba(98,174,240,.14); --n-side:var(--papel); --n-page:var(--papel); --n-mark:rgba(232,157,1,.32);
+  --n-warm:rgba(232,157,1,.10); --n-warm-line:rgba(232,157,1,.4); --n-green-tint:rgba(159,224,176,.07);
+}
+body.estudo{--doc:var(--n-text);--forte:var(--n-ink);--muted:var(--n-muted);--faint:var(--n-faint);--line:var(--n-line);--line2:var(--n-line2);--acc2:var(--n-blue)}
+/* página */
+body.estudo .ws .doc{background:var(--n-page);border:1px solid var(--n-line);border-radius:10px;box-shadow:0 1px 2px rgba(15,15,15,.04),0 8px 28px rgba(15,15,15,.04)}
+body.estudo .doc p,body.estudo .doc li,body.estudo .doc ul,body.estudo .doc ol,body.estudo .doc th,body.estudo .doc td{font-weight:400}
+body.estudo .doc p,body.estudo .doc li{color:var(--n-text);line-height:1.72}
+body.estudo .doc h3{border-bottom:0;padding:0;margin:34px 0 8px;font-size:18px;font-weight:600;color:var(--n-ink);letter-spacing:-.005em}
+body.estudo .doc strong,body.estudo .doc b{font-weight:600;color:var(--n-ink)}
+body.estudo .doc a{color:var(--n-blue);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--n-blue) 35%,transparent);text-underline-offset:3px}
+body.estudo .doc a:hover{text-decoration-color:var(--n-blue)}
+/* citação e quadros como blocos de destaque */
+body.estudo .doc blockquote{border-left:3px solid var(--n-ink);background:none;border-radius:0;padding:2px 0 2px 16px}
+body.estudo .doc .quadro{border:0;border-radius:6px;background:var(--n-sel);padding:16px 18px}
+body.estudo .doc .correl{border:0;border-radius:6px;background:var(--n-green-tint);padding:16px 18px}
+body.estudo .doc .anotaula{border-left:0;border-radius:6px;background:var(--n-warm);padding:14px 16px}
+body.estudo .doc .quadro .qtit,body.estudo .doc .correl .qtit{color:var(--n-muted)}
+/* tabelas de linhas finas, cabeçalho em cinza de papel */
+body.estudo .doc table{border:1px solid var(--n-line2);border-radius:6px;border-collapse:separate;border-spacing:0;overflow:hidden}
+body.estudo .doc th{background:var(--n-side);color:var(--n-muted);border-bottom:1px solid var(--n-line2)}
+body.estudo .doc th,body.estudo .doc td{border-bottom:1px solid var(--n-line);border-right:1px solid var(--n-line)}
+body.estudo .doc th:last-child,body.estudo .doc td:last-child{border-right:0}
+body.estudo .doc tbody tr:hover td{background:var(--n-hover)}
+body.estudo .doc .tabtit strong{color:var(--n-muted)}
+body.estudo .doc figure.ref{border:0;background:none;padding:0}
+body.estudo .doc img{border-radius:6px}
+body.estudo mark.grifo{border-radius:2px}
+/* menu lateral como barra de páginas */
+body.estudo .arvore{background:var(--n-side);border-color:var(--n-line)}
+body.estudo .arv-it{border-radius:6px;min-height:30px}
+body.estudo .arv-it:hover,body.estudo .arv-tg:hover{background:var(--n-hover)}
+body.estudo .arv-it.on{background:var(--n-sel);color:var(--n-ink);font-weight:500}
+body.estudo .arv-it.on > svg{color:var(--n-ink)}
+body.estudo .arv-it.arv-m > svg,body.estudo .arv-it.pasta > svg:not(.chev){color:var(--n-muted)}
+body.estudo .arv-busca{background:var(--n-hover);border-color:transparent;border-radius:6px}
+body.estudo .arv-filhos{border-left-color:var(--n-line)}
+/* trilha e abas */
+body.estudo .trilha,body.estudo .leitura-topo{background:var(--n-page);border:1px solid var(--n-line);box-shadow:none;border-radius:10px}
+body.estudo .trilha .btn{border-radius:6px}
+body.estudo .atalhos-estudo button{border-radius:6px}
+body.estudo .atalhos-estudo button[aria-current=page]{background:var(--n-sel);color:var(--n-ink);font-weight:500}
 </style>
 </head>
 <body class="iniciando">
@@ -1039,6 +1093,6 @@ html[data-tema="claro"]{background-color:#f5f8fb}html[data-tema="amanhecer"]{bac
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=56"></script>
+<script type="module" src="app.js?v=57"></script>
 </body>
 </html>

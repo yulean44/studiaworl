@@ -58,7 +58,7 @@ O Claude Code carrega sozinho; outros agentes leiam o `SKILL.md` correspondente.
 - **Tema automático é o padrão** (`temaDaHora` em `app.js`): Amanhecer das 5h às 12h, Golden hour (`dourado`) das 12h às 18h, Noite estelar das 18h às 5h. Temas fixos continuam opcionais. Use sempre as variáveis CSS (`--ink`, `--muted`, `--faint`, `--acc`, `--acc2`, `--solid`, `--line`, `--glass2`, `--glass3`, `--forte`, `--doc`, `--modal-bg`, `--veu`), nunca cores fixas.
 - Vidro/transparência discreta, tons de verde suaves, nada saturado.
 - Ajustes finos de visual vão no bloco "refino leve" no fim do CSS de `index.html`, sem mudar fonte, cores dos temas nem ícones.
-- A área de Matérias segue o estilo de documentos: menu lateral fixo em pastas (matéria › grupo › seção), trilha "Matérias › … " no topo e a seção como página.
+- A área de Matérias usa a paleta de caderno (`--n-*`, bloco "estudo em estilo de documento" no fim do CSS: cinza de papel, texto #37352f, azul #0075de para links) e segue o estilo de documentos: menu lateral fixo em pastas (matéria › grupo › seção), trilha "Matérias › … " no topo e a seção como página.
 
 ## Celular, iPad e computador
 
