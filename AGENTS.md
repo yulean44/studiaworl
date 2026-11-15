@@ -21,7 +21,8 @@ Site estático, sem build: HTML + JS em módulos ES, three.js 0.160 via importma
 | `m/*.js` | Modelos 3D em base64 (o Pages não serve .glb do jeito certo) |
 | `kahoot.html` | Quiz estilo Kahoot por matéria |
 | `diahora.js` | Céu do dia no topo (sol e lua pela hora real; abre a aparência) |
-| `pacote.js` | Pacote de criatura: rasgar arrastando, carta holográfica e confete (abre nas festas de criatura nova) |
+| `pacote3d.js` | Pacote de criatura em 3D (three.js): embalagem metálica estufada, rasgo que curva, carta com shader holográfico, confete 3D |
+| `pacote.js` | Versão em HTML do pacote, usada sem WebGL ou com "reduzir movimento" |
 | `mapa-revisoes.js` | Mapa de revisões dos flashcards: blocos por estado, partículas ao mudar, contador "para dominar" |
 
 ## Regras obrigatórias

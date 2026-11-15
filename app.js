@@ -1,13 +1,13 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=58";
-import { ic, ICONES_MATERIA } from "./icons.js?v=58";
-import { FIG } from "./figuras.js?v=58";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=58";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=58";
-import { semanaDeEstudos } from "./relatorio.js?v=58";
-import { carregaMaterias } from "./conteudo.js?v=58";
-import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=58";
-import { abrePacote } from "./pacote.js?v=58";
-import { criaDiaHora } from "./diahora.js?v=58";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=59";
+import { ic, ICONES_MATERIA } from "./icons.js?v=59";
+import { FIG } from "./figuras.js?v=59";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=59";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=59";
+import { semanaDeEstudos } from "./relatorio.js?v=59";
+import { carregaMaterias } from "./conteudo.js?v=59";
+import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=59";
+import { abrePacote } from "./pacote.js?v=59";
+import { criaDiaHora } from "./diahora.js?v=59";
 
 /* =========================================================
    utilidades
@@ -617,9 +617,13 @@ async function proximaFesta() {
     pacoteAberto = true;
     const main = document.querySelector("main"), nav = $("#nav"); main.inert = true; nav.inert = true;
     const img = garanteMod().then(() => mundoMod?.miniatura(f.cria)).catch(() => null);
-    abrePacote({ titulo: esc(f.titulo), nome: c.nome, raridade: RARIDADE[c.r].nome, rar: c.r, numero: S.criaturas.length, total: todas.length, img,
+    const dados = { titulo: esc(f.titulo), nome: c.nome, raridade: RARIDADE[c.r].nome, rar: c.r, numero: S.criaturas.length, total: todas.length, img,
       aoVer: () => { show("mundo"); setTimeout(() => mundo?.foco(f.cria), 900); },
-      aoFechar: () => { pacoteAberto = false; if (!modalAberto) { main.inert = false; nav.inert = false; } setTimeout(proximaFesta, 60); } });
+      aoFechar: () => { pacoteAberto = false; if (!modalAberto) { main.inert = false; nav.inert = false; } setTimeout(proximaFesta, 60); } };
+    /* 3D quando o aparelho permite; senão a versão em HTML */
+    let abriu = false;
+    try { const p3 = await import("./pacote3d.js?v=59"); if (p3.podePacote3d()) abriu = p3.abrePacote3d(dados); } catch (e) { console.warn("pacote 3D indisponível", e); }
+    if (!abriu) abrePacote(dados);
     return;
   }
   const m = modal(`<div class="festa"><div class="im" id="fIm">${estiloIcone === "3d" && FIG[f.icone] ? `<img class="fig" src="${FIG[f.icone]}" alt="">` : ic(f.icone || "estrela")}</div><div class="kicker">${f.cria ? "Nova criatura" : "Recompensa"}</div><h3 style="margin-top:6px">${esc(f.titulo)}</h3><p class="muted" style="margin:6px 0 10px;font-weight:300">${esc(f.texto || "")}</p>
@@ -718,7 +722,7 @@ temaMundo = () => mundo?.tema?.(temaAtivo());
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=58"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=59"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -2018,7 +2022,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=58");
+      const mod = await import("./conta.js?v=59");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }
