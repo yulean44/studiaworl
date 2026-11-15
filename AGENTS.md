@@ -49,19 +49,20 @@ O Claude Code carrega sozinho; outros agentes leiam o `SKILL.md` correspondente.
 - **Comece pelo mapa:** `graphify-out/GRAPH_REPORT.md` mostra as funções centrais e os grupos do código. Depois de mexer no código, rode `graphify update .` (o `.graphifyignore` já deixa de fora modelos, figuras e conteúdo).
 - **Escolher a etapa:** `using-agent-skills` indica qual das skills do Agent Skills usar (planejar, implementar, testar, revisar, publicar).
 - **Mudança enxuta:** `ponytail` (menor mudança que resolve; reaproveitar o que já existe).
+- **Bom gosto (anti-genérico):** `design-taste-frontend` (Leonxlnx/taste-skill, MIT). Feita para sites de empresa: aqui valem as regras de tipografia, cor, botões, espaçamento e movimento; as de fotos, seções de uma tela e efeitos de landing page não se aplicam a um app de estudo. O gancho que rodava scripts automaticamente foi retirado da cópia do repositório.
 - **Visual:** `frontend-design` para direção estética (sem trocar a identidade abaixo) e `web-design-guidelines` para conferir antes de publicar.
 - **Animação:** `animate`, `choreograph`, `gestures` e `animation-performance` (Emil Kowalski) e `motion-design` (LottieFiles): curvas, durações, gestos e desempenho.
 - **3D (planeta, pacote):** família `threejs-*` (fundamentos, animação, shaders, materiais, luz, texturas, geometria, interação, desempenho, pós-processamento, loaders). Projeto em three.js puro: ignorar trechos de React Three Fiber.
 - **Polimento geral de interface:** `impeccable` (criticar, auditar, polir, animar). A identidade do site continua valendo.
 - **GSAP:** `gsap-core`, `gsap-timeline`, `gsap-performance` só servem se um dia a biblioteca GSAP for adotada; hoje as animações usam CSS, WAAPI e requestAnimationFrame.
 - **Antes de publicar:** `ponytail-review` ou `code-review-and-quality`, rodando todos os testes de `tests/`.
-- Fontes: addyosmani/agent-skills (MIT), DietrichGebert/ponytail (MIT), Graphify-Labs/graphify (Apache 2.0/MIT), anthropics/skills (Apache 2.0), vercel-labs/agent-skills e web-interface-guidelines (MIT), emilkowalski/skills (MIT), LottieFiles/motion-design-skill (MIT), cloudai-x/threejs-skills (MIT), pbakaus/impeccable (Apache 2.0), greensock/gsap-skills (MIT); licenças dentro de cada pasta.
+- Fontes: addyosmani/agent-skills (MIT), DietrichGebert/ponytail (MIT), Graphify-Labs/graphify (Apache 2.0/MIT), anthropics/skills (Apache 2.0), vercel-labs/agent-skills e web-interface-guidelines (MIT), emilkowalski/skills (MIT), LottieFiles/motion-design-skill (MIT), cloudai-x/threejs-skills (MIT), pbakaus/impeccable (Apache 2.0), greensock/gsap-skills (MIT), Leonxlnx/taste-skill (MIT); licenças dentro de cada pasta.
 
 ## Estilo (o dono é exigente com isso)
 
 - **Bom gosto, limpo, pouco texto.** Instruções curtas; nada de blocos explicativos longos, chips de "em poucas palavras" ou passo a passo enfeitado.
 - **Sem emojis** na interface. Ícones de traço fino de `icons.js`; os ícones 3D só quando o estilo 3D está ligado.
-- Fonte **Jost**. Rótulos pequenos em maiúsculas espaçadas; títulos de documento em caixa normal.
+- Fonte **Jost**. No computador, rótulos pequenos em maiúsculas espaçadas; **no celular (≤760px) tudo em caixa normal, nada abaixo de 13px, botões de 48px** (bloco "celular com bom gosto", skill `design-taste-frontend`). Títulos de documento em caixa normal.
 - **Tema automático é o padrão** (`temaDaHora` em `app.js`): Amanhecer das 5h às 12h, Golden hour (`dourado`) das 12h às 18h, Noite estelar das 18h às 5h. Temas fixos continuam opcionais. Use sempre as variáveis CSS (`--ink`, `--muted`, `--faint`, `--acc`, `--acc2`, `--solid`, `--line`, `--glass2`, `--glass3`, `--forte`, `--doc`, `--modal-bg`, `--veu`), nunca cores fixas.
 - Vidro/transparência discreta, tons de verde suaves, nada saturado.
 - Ajustes finos de visual vão no bloco "refino leve" no fim do CSS de `index.html`, sem mudar fonte, cores dos temas nem ícones.

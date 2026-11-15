@@ -14,9 +14,9 @@ document.querySelector('meta[name="theme-color"]').setAttribute("content",{claro
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Estudos">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=62">
-<link rel="icon" type="image/png" href="favicon.png?v=62">
-<link rel="manifest" href="manifest.webmanifest?v=62">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=63">
+<link rel="icon" type="image/png" href="favicon.png?v=63">
+<link rel="manifest" href="manifest.webmanifest?v=63">
 <title>Planeta de Estudos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1159,12 +1159,13 @@ body.estudo .atalhos-estudo button[aria-current=page]{background:var(--n-sel);co
 /* navegação: divisor entre estudo e planeta (proximidade / região comum); rótulos e "Mais" só no celular */
 .nav-div{display:block;width:22px;height:1px;margin:4px auto;background:var(--line2)}
 .nav-rot,.nav-mais{display:none}
-.mais-veu{position:fixed;inset:0;z-index:60;background:color-mix(in srgb,var(--veu) 70%,transparent)}
+.mais-veu{position:fixed;inset:0;z-index:60;background:color-mix(in srgb,var(--forte) 22%,transparent)}
 .mais-veu[hidden]{display:none}
 .mais-folha{position:absolute;left:10px;right:10px;bottom:calc(84px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:10px;border-radius:22px;background:var(--modal-bg);border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.18);animation:maisSobe .22s cubic-bezier(0.23,1,0.32,1)}
 @keyframes maisSobe{from{opacity:0;transform:translateY(8px)}}
 .mais-it{display:flex;align-items:center;gap:10px;min-height:56px;padding:0 16px;border:1px solid var(--line);border-radius:16px;background:var(--glass2);color:var(--ink);font:400 15px var(--font);cursor:pointer}
 .mais-it svg{width:20px;height:20px;color:var(--muted)}
+.mais-ajuda{grid-column:1/-1;justify-content:center;background:transparent}
 .mais-it.on{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}.mais-it.on svg{color:var(--on-ink)}
 @media (max-width:760px){
   .nav,.nav.nav{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;padding:6px 6px calc(6px + env(safe-area-inset-bottom) * .3)}
@@ -1195,6 +1196,53 @@ body.estudo .atalhos-estudo button[aria-current=page]{background:var(--n-sel);co
   .fc-nav [hidden]{display:none}
 }
 @media (pointer:coarse){.fc-hint{display:none}}
+
+/* ================= celular com bom gosto (design-taste-frontend, Leonxlnx) =================
+   Regras aplicadas: texto em caixa normal, sem maiúsculas espaçadas; nada abaixo de 13px; texto de leitura 16px;
+   um botão cheio por tela; botões de 48px e largura total; bordas iguais de 24px; espaçamento na escala 4/8/12/16/24/32;
+   interface quase toda neutra; destaque por contraste, não por cor. */
+@media (max-width:760px){
+  .main{padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+  .titulo,.titulo.p,.sub,.kicker,.h-sec,.btn,label.lb,.rs-numeros span,.stat span,.g-t,.durs button,.sec .n,.grupo,.backlink,.tabs button,.fc-tag,.fc-hint,.roundbar,table.tb th,.modal h3,.arv-tit,.qnum span,.qtags span,.ceu-l,.marca,.tema,.mat.add,.cria .rr,.lvtag,.dica-mundo,.nb-tit,.ex-cab,.manual h4{text-transform:none;letter-spacing:normal}
+  .relatorio-inicio .h-sec,.doc .quadro .qtit,.doc .correl .qtit,.lbl > strong:first-child,.arv-marca,.consulta .acomp,.navbtn .tip,.pk-kick,.pk-rar,.pk-marca{text-transform:none;letter-spacing:normal}
+  .marca{position:absolute;font-size:13px;font-weight:500;color:var(--muted)}
+  .titulo{font-weight:400;font-size:32px;letter-spacing:-.015em;line-height:1.1;color:var(--forte)}
+  .titulo.p{font-size:28px}
+  .sub{font-size:14px;font-weight:400;line-height:1.45}
+  .kicker{font-size:13px;font-weight:500}
+  .h-sec{font-size:16px;font-weight:500;color:var(--forte)}
+  .hs-meta{font-size:13px;letter-spacing:normal;text-transform:none}
+  label.lb{font-size:13px;font-weight:500}
+  .intro{font-size:15px}
+  .btn{font-size:15px;font-weight:500;min-height:48px;padding:0 20px;border-radius:14px}
+  .btn.sm{min-height:44px;font-size:14px}
+  .btn.pri{box-shadow:none}
+  .roundbar,.fc-tag,.stat span,.rs-numeros span{font-size:13px}
+  /* início: o próximo passo vem logo depois do planeta; sem passo a passo numerado nem linha de números */
+  #view-inicio .guia,#view-inicio .esq .some-ao-girar:last-child .sub{display:none}
+  .home{gap:12px}
+  .home .esq{min-height:46vh}
+  .home .dir{gap:12px}
+  .card{border-radius:20px}
+  .continuar{padding:20px}
+  .ct-tit{font-size:24px;letter-spacing:-.01em}
+  .ct-sub{font-size:14px}
+  .miss b{font-size:16px;font-weight:400}
+  .miss small{font-size:13px}
+  /* topo enxuto: nível, sequência e céu; a ajuda vai para o "Mais" */
+  .topo #btAjuda{display:none}
+  .chipi{min-height:40px;font-size:13px}
+  /* barra de abas: neutra, ativo por contraste (ícone e texto em tinta forte, fundo leve) */
+  .nav{border-radius:24px;padding:6px}
+  .navbtn{height:56px;color:var(--muted);background:transparent}
+  .navbtn.active{background:var(--glass3);color:var(--forte)}
+  .nav-rot{font-size:13px;font-weight:500;letter-spacing:-.005em}
+  .navbtn.active .nav-rot{color:var(--forte)}
+  .mais-it{font-size:16px;min-height:60px;border-radius:16px}
+  /* flashcards: menos ruído acima do cartão */
+  .fc-wrap .intro{display:none}
+}
+@media (max-width:380px){.nav-rot{font-size:12px}}
 </style>
 </head>
 <body class="iniciando">
@@ -1218,6 +1266,6 @@ body.estudo .atalhos-estudo button[aria-current=page]{background:var(--n-sel);co
 <div id="timerPill" class="timerpill chipi" hidden></div>
 <aside class="consulta vidro" id="consulta" aria-label="Consulta lateral"></aside>
 <div id="modalRoot"></div>
-<script type="module" src="app.js?v=62"></script>
+<script type="module" src="app.js?v=63"></script>
 </body>
 </html>

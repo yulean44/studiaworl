@@ -1,13 +1,13 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=62";
-import { ic, ICONES_MATERIA } from "./icons.js?v=62";
-import { FIG } from "./figuras.js?v=62";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=62";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=62";
-import { semanaDeEstudos } from "./relatorio.js?v=62";
-import { carregaMaterias } from "./conteudo.js?v=62";
-import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=62";
-import { abrePacote } from "./pacote.js?v=62";
-import { criaDiaHora } from "./diahora.js?v=62";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=63";
+import { ic, ICONES_MATERIA } from "./icons.js?v=63";
+import { FIG } from "./figuras.js?v=63";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=63";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=63";
+import { semanaDeEstudos } from "./relatorio.js?v=63";
+import { carregaMaterias } from "./conteudo.js?v=63";
+import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=63";
+import { abrePacote } from "./pacote.js?v=63";
+import { criaDiaHora } from "./diahora.js?v=63";
 
 /* =========================================================
    utilidades
@@ -622,7 +622,7 @@ async function proximaFesta() {
       aoFechar: () => { pacoteAberto = false; if (!modalAberto) { main.inert = false; nav.inert = false; } setTimeout(proximaFesta, 60); } };
     /* 3D quando o aparelho permite; senão a versão em HTML */
     let abriu = false;
-    try { const p3 = await import("./pacote3d.js?v=62"); if (p3.podePacote3d()) abriu = p3.abrePacote3d(dados); } catch (e) { console.warn("pacote 3D indisponível", e); }
+    try { const p3 = await import("./pacote3d.js?v=63"); if (p3.podePacote3d()) abriu = p3.abrePacote3d(dados); } catch (e) { console.warn("pacote 3D indisponível", e); }
     if (!abriu) abrePacote(dados);
     return;
   }
@@ -642,10 +642,10 @@ const VIEWS = [["inicio", "casa", "Início"], ["materias", "livro", "Matérias"]
 const NO_MAIS = new Set(["foco", "mundo", "missoes", "progresso"]);
 $("#nav").innerHTML = VIEWS.map(([k, i, t]) => `${k === "mundo" ? '<span class="nav-div" aria-hidden="true"></span>' : ""}<button class="navbtn ${NO_MAIS.has(k) ? "nav-extra" : ""}" data-view="${k}" aria-label="${t}">${ic(i)}<span class="tip">${t}</span><span class="nav-rot">${t === "Flashcards" ? "Cards" : t}</span></button>`).join("")
   + `<button class="navbtn nav-mais" id="navMais" aria-label="Mais" aria-haspopup="true" aria-expanded="false">${ic("grade")}<span class="nav-rot">Mais</span></button>`;
-document.body.insertAdjacentHTML("beforeend", `<div class="mais-veu" id="maisVeu" hidden><div class="mais-folha" role="dialog" aria-label="Mais seções">${VIEWS.filter(([k]) => NO_MAIS.has(k)).map(([k, i, t]) => `<button class="mais-it" data-mais="${k}">${ic(i)}<span>${t}</span></button>`).join("")}</div></div>`);
+document.body.insertAdjacentHTML("beforeend", `<div class="mais-veu" id="maisVeu" hidden><div class="mais-folha" role="dialog" aria-label="Mais seções">${VIEWS.filter(([k]) => NO_MAIS.has(k)).map(([k, i, t]) => `<button class="mais-it" data-mais="${k}">${ic(i)}<span>${t}</span></button>`).join("")}<button class="mais-it mais-ajuda" data-ajuda>${ic("info")}<span>Como usar</span></button></div></div>`);
 function fechaMais() { $("#maisVeu").hidden = true; $("#navMais").setAttribute("aria-expanded", "false"); }
-$("#navMais").addEventListener("click", () => { const v = $("#maisVeu"); v.hidden = !v.hidden; $("#navMais").setAttribute("aria-expanded", String(!v.hidden)); if (!v.hidden) $(".mais-it", v)?.focus(); });
-$("#maisVeu").addEventListener("click", e => { const b = e.target.closest("[data-mais]"); if (b) show(b.dataset.mais); fechaMais(); });
+$("#navMais").addEventListener("click", e => { const v = $("#maisVeu"); v.hidden = !v.hidden; $("#navMais").setAttribute("aria-expanded", String(!v.hidden)); if (!v.hidden && e.detail === 0) $(".mais-it", v)?.focus(); });
+$("#maisVeu").addEventListener("click", e => { const b = e.target.closest("[data-mais]"); if (b) show(b.dataset.mais); const aj = e.target.closest("[data-ajuda]"); fechaMais(); if (aj) { LS.set("viuManual", true); manual(); } });
 $("#maisVeu").addEventListener("keydown", e => { if (e.key === "Escape") { fechaMais(); $("#navMais").focus(); } });
 let atual = null, sub = LS.get("sub", { tela: "lista" }), editando = false;
 function show(v, opts = {}) {
@@ -732,7 +732,7 @@ temaMundo = () => mundo?.tema?.(temaAtivo());
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=62"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=63"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -2049,7 +2049,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=62");
+      const mod = await import("./conta.js?v=63");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }
