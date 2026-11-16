@@ -95,3 +95,25 @@ Toda questão sai do material da matéria; o que vier de fora vai em `fora`, com
 ## Commits
 
 Mensagens curtas em português, descrevendo a mudança para o usuário (ex.: "Grifos: borracha e desfazer").
+
+## Skills (`.agents/skills/`)
+
+As skills de alta relevância para este site ficam em `.agents/skills/` (pasta lida pelo Codex/ChatGPT). Leia o `SKILL.md` da skill antes de começar a tarefa que ela cobre e siga-o junto com as regras acima (as regras deste arquivo vencem em caso de conflito: sem bundler, sem framework, sem `package.json`).
+
+| Tarefa | Skill |
+|---|---|
+| Criar, redesenhar ou polir telas e visual | `impeccable` (principal); `frontend-design` como direção estética |
+| Construir ou alterar componentes, layout responsivo, acessibilidade | `frontend-ui-engineering` |
+| Revisar a UI antes de publicar | `web-design-guidelines` |
+| Adicionar movimento ou transição | `animate` |
+| Animação travando ou escolha CSS vs JS | `animation-performance` |
+| Planeta 3D: cena, câmera, renderer, resize | `threejs-fundamentals` |
+| Planeta 3D: formas, malhas, instancing | `threejs-geometry` |
+| Planeta 3D: materiais e visual toon | `threejs-materials` |
+| Criaturas e animações 3D (`m/*.js`) | `threejs-animation` |
+| Planeta lento ou pesado no celular | `threejs-performance` |
+| Carregamento lento, Core Web Vitals | `performance-optimization` |
+| Testar e depurar no navegador | `browser-testing-with-devtools` (precisa do MCP chrome-devtools) |
+| Site de empresa/landing page (fora deste app) | `design-taste-frontend` |
+
+Use uma só skill de design por tarefa para não misturar instruções. Os scripts de `impeccable/scripts/` só rodam se a tarefa pedir.
