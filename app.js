@@ -1,13 +1,13 @@
-import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=66";
-import { ic, ICONES_MATERIA } from "./icons.js?v=66";
-import { FIG } from "./figuras.js?v=66";
-import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=66";
-import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=66";
-import { semanaDeEstudos } from "./relatorio.js?v=66";
-import { carregaMaterias } from "./conteudo.js?v=66";
-import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=66";
-import { abrePacote } from "./pacote.js?v=66";
-import { criaDiaHora } from "./diahora.js?v=66";
+import { CRIATURAS, DECOS, EFEITOS, RARIDADE, JORNADA, CONQUISTAS, DIARIAS, nivelXP } from "./data.js?v=67";
+import { ic, ICONES_MATERIA } from "./icons.js?v=67";
+import { FIG } from "./figuras.js?v=67";
+import { assinatura, copiaSegura, minutosDaSessao } from "./progresso.js?v=67";
+import { tipoLeitura, destinosLeitura } from "./navegacao.js?v=67";
+import { semanaDeEstudos } from "./relatorio.js?v=67";
+import { carregaMaterias } from "./conteudo.js?v=67";
+import { criaMapaRevisoes, estadoCard } from "./mapa-revisoes.js?v=67";
+import { abrePacote } from "./pacote.js?v=67";
+import { criaDiaHora } from "./diahora.js?v=67";
 
 /* =========================================================
    utilidades
@@ -622,7 +622,7 @@ async function proximaFesta() {
       aoFechar: () => { pacoteAberto = false; if (!modalAberto) { main.inert = false; nav.inert = false; } setTimeout(proximaFesta, 60); } };
     /* 3D quando o aparelho permite; senão a versão em HTML */
     let abriu = false;
-    try { const p3 = await import("./pacote3d.js?v=66"); if (p3.podePacote3d()) abriu = p3.abrePacote3d(dados); } catch (e) { console.warn("pacote 3D indisponível", e); }
+    try { const p3 = await import("./pacote3d.js?v=67"); if (p3.podePacote3d()) abriu = p3.abrePacote3d(dados); } catch (e) { console.warn("pacote 3D indisponível", e); }
     if (!abriu) abrePacote(dados);
     return;
   }
@@ -732,7 +732,7 @@ temaMundo = () => mundo?.tema?.(temaAtivo());
 const estadoMundo = () => ({ verdor: verdor(), efeitos: S.efeitos, decos: S.decos, criaturas: S.criaturas });
 async function garanteMod() {
   if (mundoMod) return mundoMod;
-  try { mundoMod = await import("./world.js?v=66"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
+  try { mundoMod = await import("./world.js?v=67"); sorteioP = mundoMod.sorteiaPonto; } catch (e) { console.warn(e); }
   return mundoMod;
 }
 /* textos somem enquanto o planeta é girado/aproximado e sempre voltam depois */
@@ -1218,15 +1218,16 @@ function renderMateria(v) {
   });
 }
 function renderCardsMateria(corpo, m) {
-  const shared = cardsCompartilhados(m.id), meus = S.meus[m.id] || [];
+  const shared = cardsCompartilhados(m.id), meus = S.meus[m.id] || [], nErr = errados(todosCards(m.id)).length;
   const linha = (c, tipo) => `<div class="cardrow" data-id="${esc(c.id)}" data-tipo="${tipo}"><div class="ce" ${tipo === "ro" ? "" : 'contenteditable="true"'} data-f="frente">${c.frente}</div><div class="ce" ${tipo === "ro" ? "" : 'contenteditable="true"'} data-f="verso" style="color:var(--muted)">${c.verso}</div>${tipo === "ro" ? `<span class="n muted" style="font-size:11px;padding:8px;letter-spacing:.12em;text-transform:uppercase">${S.cards[c.id] ? (S.cards[c.id].b >= 3 ? "dominado" : S.cards[c.id].err ? "rever" : "") : ""}</span>` : `<button class="btn ic sm" data-rm title="Apagar">${ic("lixo", "s")}</button>`}</div>`;
   corpo.innerHTML = `
-    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px"><button class="btn pri" id="revMat">${ic("cards", "s")}Revisar esta matéria</button><button class="btn" id="addMeu">${ic("mais", "s")}Card meu</button>${souDono ? `<button class="btn" id="addShared">${ic("mais", "s")}Card para todos</button>` : ""}</div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px"><button class="btn pri" id="revMat">${ic("cards", "s")}Revisar esta matéria</button>${nErr ? `<button class="btn" id="revErr">${ic("x", "s")}Só os que errei · ${nErr}</button>` : ""}<button class="btn" id="addMeu">${ic("mais", "s")}Card meu</button>${souDono ? `<button class="btn" id="addShared">${ic("mais", "s")}Card para todos</button>` : ""}</div>
     ${meus.length ? `<div class="grupo">Meus cards · só você vê</div><div>${meus.map(c => linha(c, "meu")).join("")}</div>` : ""}
     <div class="grupo">Cards da matéria</div>
     <div>${shared.map(c => linha(c, souDono ? "dono" : "ro")).join("") || '<div class="empty">Nenhum card ainda.</div>'}</div>
     ${souDono ? `<p class="muted" style="font-size:12.5px;font-weight:300;margin:12px 0 0">Clique no texto para editar. Salva quando você sai do campo.</p>` : ""}`;
   $("#revMat").addEventListener("click", () => { revCfg = { mat: m.id, filtro: "rec" }; LS.set("revCfg", revCfg); rodada = null; show("revisao"); });
+  $("#revErr")?.addEventListener("click", () => { revCfg = { mat: m.id, filtro: "err" }; LS.set("revCfg", revCfg); rodada = null; show("revisao"); });
   $("#addMeu").addEventListener("click", async () => {
     const o = await formulario("Novo card (só seu)", [{ k: "frente", label: "Pergunta", tipo: "area", obrig: 1 }, { k: "verso", label: "Resposta", tipo: "area", obrig: 1 }], "Criar");
     if (!o) return; (S.meus[m.id] ||= []).push({ id: "u" + uid6(), frente: esc(o.frente), verso: esc(o.verso), tag: "Meu card" }); S.criados++; checaTudo(); salvar(); renderCardsMateria(corpo, m);
@@ -1388,13 +1389,14 @@ function renderLeitura(v) {
 let kSec = null;   // {mat, ids, nome} quando o quiz foi aberto a partir de uma seção
 function renderPratica(m, s) {
   const box = $("#pratica"); if (!box) return;
-  const ids = idsAssunto(m.id, s.id), nC = cardsDoAssunto(m.id, ids).length, nQ = questoesDoAssunto(m.id, ids).length, nB = bancoDoAssunto(m.id, ids).length;
+  const ids = idsAssunto(m.id, s.id), nC = cardsDoAssunto(m.id, ids).length, nE = errados(cardsDoAssunto(m.id, ids)).length, nQ = questoesDoAssunto(m.id, ids).length, nB = bancoDoAssunto(m.id, ids).length;
   if (!nC && !nQ && !nB) { box.innerHTML = ""; return; }
   box.innerHTML = `<div class="kicker">Praticar este assunto</div>
     <p class="muted dica">Só o que é sobre <b style="font-weight:400">${esc(s.titulo)}</b>.</p>
-    <div class="pratbt">${nC ? `<button class="btn pri" id="prCards">${ic("cards", "s")}Flashcards deste assunto · ${nC}</button>` : ""}${nB ? `<button class="btn" id="prBanco">${ic("check", "s")}Questões deste assunto · ${nB}</button>` : ""}${nQ ? `<button class="btn" id="prQuest">${ic("alvo", "s")}Kahoot deste assunto · ${nQ}</button>` : ""}</div>`;
+    <div class="pratbt">${nC ? `<button class="btn pri" id="prCards">${ic("cards", "s")}Flashcards deste assunto · ${nC}</button>` : ""}${nE ? `<button class="btn" id="prErr">${ic("x", "s")}Só os que errei · ${nE}</button>` : ""}${nB ? `<button class="btn" id="prBanco">${ic("check", "s")}Questões deste assunto · ${nB}</button>` : ""}${nQ ? `<button class="btn" id="prQuest">${ic("alvo", "s")}Kahoot deste assunto · ${nQ}</button>` : ""}</div>`;
   $("#prBanco")?.addEventListener("click", () => { const f = qFiltro(m); Object.assign(f, { secs: ids, secNome: s.titulo, tipos: [], niveis: [], so: "" }); LS.set("qCfg", qCfg); qSessao = null; abaMat = "questoes"; LS.set("abaMat", abaMat); sub = { tela: "mat", mat: m.id }; LS.set("sub", sub); show("materias"); });
   $("#prCards")?.addEventListener("click", () => { revCfg = { mat: m.id, filtro: "todos", secs: ids, secNome: s.titulo }; LS.set("revCfg", revCfg); rodada = null; show("revisao"); });
+  $("#prErr")?.addEventListener("click", () => { revCfg = { mat: m.id, filtro: "err", secs: ids, secNome: s.titulo }; LS.set("revCfg", revCfg); rodada = null; show("revisao"); });
   $("#prQuest")?.addEventListener("click", () => { kSec = { mat: m.id, ids, nome: s.titulo }; abaMat = "kahoot"; LS.set("abaMat", abaMat); sub = { tela: "mat", mat: m.id }; LS.set("sub", sub); show("materias"); });
 }
 /* ---------- grifos e mini notas ---------- */
@@ -1673,9 +1675,10 @@ function baralho() {
   else if (revCfg.filtro === "rec") l = l.filter(c => (st(c)?.b || 0) < 3);
   return l;
 }
+function errados(l) { return l.filter(c => { const t = S.cards[c.id]; return t && t.err > 0 && t.b < 3; }); }
 function novaRodada() {
   const l = baralho().map(c => ({ c, p: (S.cards[c.id]?.b || 0) * 10 - (S.cards[c.id]?.err || 0) * 3 + Math.random() * 8 })).sort((a, b) => a.p - b.p);
-  rodada = { sessao: sessaoConta, cards: l.slice(0, 20).map(x => x.c), i: 0, ok: 0, err: 0, virado: false, fim: false };
+  rodada = { sessao: sessaoConta, cards: l.slice(0, 20).map(x => x.c), i: 0, ok: 0, err: 0, errados: [], virado: false, fim: false };
 }
 let mapaRev = null;
 function renderRevisao() {
@@ -1686,7 +1689,7 @@ function renderRevisao() {
   if (R.fim || !c) {
     const n = R.ok + R.err, pct = n ? Math.round(R.ok / n * 100) : 0;
     corpo = n ? `<div class="vidro card" style="text-align:center;padding:40px 20px"><div class="ico ${pct >= 70 ? "ok" : ""}" style="margin:0 auto;width:64px;height:64px">${ic(pct >= 90 ? "trofeu" : pct >= 70 ? "estrela" : "broto")}</div><div class="tempo-big" style="font-size:72px;margin-top:14px">${pct}%</div><p class="sub">${R.ok} acertos · ${R.err} erros</p>
-      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px"><button class="btn pri" id="rNova">Nova rodada</button><button class="btn" data-go="mundo">Ver o planeta</button></div></div>`
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px">${R.errados && R.errados.length ? `<button class="btn pri" id="rRefaz">${ic("cards", "s")}Refazer os ${R.errados.length} que errei</button>` : ""}<button class="btn ${R.errados && R.errados.length ? "" : "pri"}" id="rNova">Nova rodada</button><button class="btn" data-go="mundo">Ver o planeta</button></div></div>`
       : `<div class="vidro card empty">Nenhum card neste filtro.</div>`;
   } else {
     const st = S.cards[c.id], M = materia(c.mat);
@@ -1716,6 +1719,7 @@ function renderRevisao() {
   $("#rMat").addEventListener("change", reCfg); $("#rFil").addEventListener("change", reCfg);
   $("#rSecX")?.addEventListener("click", () => { revCfg = { mat: revCfg.mat, filtro: revCfg.filtro }; LS.set("revCfg", revCfg); rodada = null; renderRevisao(); });
   $("#rNova")?.addEventListener("click", () => { rodada = null; renderRevisao(); });
+  $("#rRefaz")?.addEventListener("click", () => { const l = [...rodada.errados].sort(() => Math.random() - .5); rodada = { sessao: sessaoConta, cards: l, i: 0, ok: 0, err: 0, errados: [], virado: false, fim: false }; renderRevisao(); });
   $("#fcCard")?.addEventListener("click", vira); $("#rVira")?.addEventListener("click", vira);
   $("#rOk")?.addEventListener("click", () => responde(true)); $("#rErr")?.addEventListener("click", () => responde(false));
 }
@@ -1726,7 +1730,7 @@ function vira() {
 }
 function responde(ok) {
   const R = rodada; if (!R || R.sessao !== sessaoConta || !estadoPronto || R.fim || !R.virado) return;
-  registraCard(R.cards[R.i], ok); if (ok) R.ok++; else R.err++;
+  registraCard(R.cards[R.i], ok); if (ok) R.ok++; else { R.err++; (R.errados ||= []).push(R.cards[R.i]); }
   R.i++; R.virado = false;
   if (R.i >= R.cards.length) { R.fim = true; const n = R.ok + R.err; if (n >= 10 && R.ok / n >= .85) conquista("precisao"); salvar(); }
   renderTopo(); renderRevisao();
@@ -2049,7 +2053,7 @@ async function iniciaSistemaConta() {
   if (contaIniciando) return contaIniciando;
   contaIniciando = (async () => {
     try {
-      const mod = await import("./conta.js?v=66");
+      const mod = await import("./conta.js?v=67");
       contaMod = mod; await mod.iniciaConta(aoMudarConta); erroConta = false; return true;
     } catch (e) { erroConta = true; console.warn("contas indisponíveis", e); toast("Contas indisponíveis. Toque em Entrar para tentar novamente."); return false; }
     finally { contaIniciando = null; }

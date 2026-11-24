@@ -12,7 +12,7 @@
    "grupo": "Resumo de referência",
    "titulo": "Introdução",
    "par": "g0",
-   "html": "<p><strong>Práticas Médicas II · Cirurgia · 2ª unidade.</strong> Capítulo de referência das aulas 7 a 12 da ementa de Cirurgia (Turma 41).</p><h3>Introdução</h3><p>O resultado de uma operação depende tanto do que acontece antes e depois dela quanto do ato cirúrgico em si. A avaliação pré-operatória identifica e corrige riscos que, ignorados, transformam um procedimento simples numa complicação grave. O pós-operatório exige distinguir a resposta fisiológica esperada ao trauma das complicações que precisam de intervenção. A infecção do sítio cirúrgico é a complicação infecciosa mais frequente do paciente operado, e boa parte dela é evitável. O estado nutricional condiciona a cicatrização e a resposta imune. A segurança do paciente no centro cirúrgico depende de processos padronizados e de comunicação. E os dispositivos, como sondas, drenos, cateteres e cânulas, acompanham praticamente todo paciente cirúrgico.</p><p>Esses seis temas formam a segunda metade da ementa da disciplina e compõem um percurso único, do ambulatório pré-operatório à alta. Ao final do capítulo, o leitor deve saber estratificar o risco cirúrgico e preparar o paciente, reconhecer complicações pós-operatórias pelo tempo em que aparecem, classificar as feridas e indicar a antibioticoprofilaxia, escolher a via de suporte nutricional, aplicar o checklist de cirurgia segura e indicar e manejar os principais dispositivos.</p><p class=\"tabtit\"><strong>Tabela 0.1</strong>Seções do capítulo</p><table><thead><tr><th>Seção</th><th>Tema (aula)</th></tr></thead><tbody><tr><td>1</td><td>Pré-operatório e avaliação pré-anestésica (7)</td></tr><tr><td>2</td><td>Pós-operatório (8)</td></tr><tr><td>3</td><td>Infecção do sítio cirúrgico (9)</td></tr><tr><td>4</td><td>Nutrição em cirurgia (10)</td></tr><tr><td>5</td><td>Cirurgia segura (11)</td></tr><tr><td>6</td><td>Dispositivos cirúrgicos: sondas, drenos, cateteres e cânulas (12)</td></tr></tbody></table><p>O conteúdo segue os objetivos da ementa disponível no Drive da turma e o último material enviado (checklist, acessos e avaliação pré-anestésica). Os slides das aulas 7 a 10 ainda não estavam disponíveis; o texto apoia-se nas referências clássicas da área e deve ser conferido com o conteúdo de sala.</p>"
+   "html": "<p><strong>Práticas Médicas II · Cirurgia · 2ª unidade.</strong> Capítulo de referência das aulas 7 a 12 da ementa de Cirurgia (Turma 41).</p><h3>Introdução</h3><p>O resultado de uma operação depende tanto do que acontece antes e depois dela quanto do ato cirúrgico em si. A avaliação pré-operatória identifica e corrige riscos que, ignorados, transformam um procedimento simples numa complicação grave. O pós-operatório exige distinguir a resposta fisiológica esperada ao trauma das complicações que precisam de intervenção. A infecção do sítio cirúrgico é a complicação infecciosa mais frequente do paciente operado, e boa parte dela é evitável. O estado nutricional condiciona a cicatrização e a resposta imune. A segurança do paciente no centro cirúrgico depende de processos padronizados e de comunicação. E os dispositivos, como sondas, drenos, cateteres e cânulas, acompanham praticamente todo paciente cirúrgico.</p><p>Esses seis temas formam a segunda metade da ementa da disciplina e compõem um percurso único, do ambulatório pré-operatório à alta. Ao final do capítulo, o leitor deve saber estratificar o risco cirúrgico e preparar o paciente, reconhecer complicações pós-operatórias pelo tempo em que aparecem, classificar as feridas e indicar a antibioticoprofilaxia, escolher a via de suporte nutricional, aplicar o checklist de cirurgia segura e indicar e manejar os principais dispositivos.</p><p class=\"tabtit\"><strong>Tabela 0.1</strong>Seções do capítulo</p><table><thead><tr><th>Seção</th><th>Tema (aula)</th></tr></thead><tbody><tr><td>1</td><td>Pré-operatório e avaliação pré-anestésica (7)</td></tr><tr><td>2</td><td>Pós-operatório (8)</td></tr><tr><td>3</td><td>Infecção do sítio cirúrgico (9)</td></tr><tr><td>4</td><td>Nutrição em cirurgia (10)</td></tr><tr><td>5</td><td>Cirurgia segura (11)</td></tr><tr><td>6</td><td>Dispositivos cirúrgicos: sondas, drenos, cateteres e cânulas (12)</td></tr></tbody></table><p>O conteúdo segue os objetivos da ementa disponível no Drive da turma. A seção 6 (dispositivos) segue o slide \"Sondas - Geral\" da turma, e a seção 5 traz os itens do checklist como aparecem no slide. As aulas 7 a 10 continuam baseadas nas referências clássicas da área e devem ser conferidas com o conteúdo de sala.</p>"
   },
   {
    "id": "r1",
@@ -47,14 +47,14 @@
    "grupo": "Resumo de referência",
    "titulo": "5. Cirurgia segura (Aula 11)",
    "par": "g5",
-   "html": "<h3>5.1 Contexto histórico</h3><p>A preocupação sistemática com a segurança do paciente ganhou força após estudos que mostraram a frequência dos eventos adversos evitáveis na assistência. Em 2004, a Organização Mundial da Saúde criou a <strong>Aliança Mundial para a Segurança do Paciente</strong>, que lançou desafios globais. O <strong>primeiro desafio</strong>, em 2005, teve o lema \"uma assistência limpa é uma assistência mais segura\" e focou a higiene das mãos e as infecções relacionadas à assistência. O <strong>segundo desafio</strong>, de 2007 a 2008, \"cirurgias seguras salvam vidas\", produziu a <strong>Lista de Verificação de Segurança Cirúrgica</strong>. O estudo de validação, conduzido em oito países e publicado por Haynes e colaboradores em 2009, mostrou queda da mortalidade de cerca de 1,5% para 0,8% e das complicações de cerca de 11% para 7% após a implantação. O terceiro desafio, em 2017, tratou da medicação sem danos.</p><p>No Brasil, o <strong>Programa Nacional de Segurança do Paciente</strong> foi instituído pela Portaria MS 529/2013, e a RDC 36/2013 da ANVISA tornou obrigatória a criação de Núcleos de Segurança do Paciente nos serviços e a notificação de eventos adversos.</p><h3>5.2 A lista de verificação da OMS</h3><p>O checklist organiza-se em três momentos, cada um num ponto crítico do fluxo cirúrgico (Tabela 5.1). Um membro da equipe, geralmente o enfermeiro circulante, conduz a verificação em voz alta, e a equipe só prossegue quando cada item foi confirmado. A <strong>entrada</strong> (<em>sign in</em>) ocorre antes da indução anestésica e verifica condições do paciente e da anestesia. A <strong>pausa cirúrgica</strong> (<em>time out</em>) ocorre antes da incisão, com toda a equipe presente, e confirma a operação certa no paciente certo. A <strong>saída</strong> (<em>sign out</em>) ocorre antes de o paciente deixar a sala e garante o registro, a contagem do material e a identificação das peças.</p><p class=\"tabtit\"><strong>Tabela 5.1</strong>Os três momentos da Lista de Verificação de Segurança Cirúrgica</p><table><thead><tr><th>Momento</th><th>Quando</th><th>O que se confere</th></tr></thead><tbody><tr><td>Entrada (<em>sign in</em>)</td><td>Antes da indução anestésica</td><td>Identidade, sítio, procedimento e consentimento confirmados pelo paciente; sítio demarcado; equipamento e medicações anestésicas verificados; oxímetro funcionando; alergias; via aérea difícil ou risco de aspiração; risco de perda sanguínea acima de 500 mL (7 mL/kg em criança)</td></tr><tr><td>Pausa cirúrgica (<em>time out</em>)</td><td>Antes da incisão</td><td>Apresentação de todos por nome e função; confirmação verbal de paciente, sítio e procedimento; eventos críticos previstos por cirurgião, anestesista e enfermagem, incluindo esterilização; antibioticoprofilaxia nos últimos 60 minutos; exames de imagem disponíveis</td></tr><tr><td>Saída (<em>sign out</em>)</td><td>Antes de o paciente sair da sala</td><td>Registro do procedimento realizado; contagem de instrumentais, compressas e agulhas; identificação das peças e amostras; problemas com equipamentos; cuidados principais na recuperação</td></tr></tbody></table><h3>5.3 Metas internacionais e cultura de segurança</h3><p>As seis metas internacionais de segurança do paciente, adotadas pelo programa brasileiro, estão no Quadro 5.1. A cirurgia segura é uma delas, ao lado de outras que também se aplicam ao centro cirúrgico, como a identificação correta e a comunicação efetiva.</p><div class=\"quadro\"><p class=\"qtit\">Quadro 5.1 · Metas internacionais de segurança do paciente</p><ol><li>Identificar corretamente o paciente</li><li>Melhorar a comunicação entre profissionais</li><li>Melhorar a segurança na prescrição, no uso e na administração de medicamentos de alta vigilância</li><li>Assegurar cirurgia em local, procedimento e paciente corretos</li><li>Higienizar as mãos para evitar infecções</li><li>Reduzir o risco de quedas e lesões por pressão</li></ol></div><p>O <strong>modelo do queijo suíço</strong>, proposto por James Reason, explica que os acidentes raramente resultam de um único erro: cada barreira do sistema tem falhas, como os furos de uma fatia de queijo, e o dano ocorre quando os furos de várias barreiras se alinham. A solução, portanto, é fortalecer o sistema, e não apenas punir indivíduos. A <strong>cultura justa</strong> estimula a notificação de eventos adversos e quase-erros sem punição automática, para que se aprenda com eles. Alguns eventos, chamados <em>never events</em>, nunca deveriam ocorrer, como a cirurgia no lado, local ou paciente errado e a retenção de corpo estranho. Ferramentas de comunicação estruturada, como o SBAR (situação, breve histórico, avaliação e recomendação), e a confirmação de ordens verbais por repetição reduzem falhas de comunicação.</p><div class=\"correl\"><p class=\"qtit\">Correlação clínica</p><p>Para o instrumentador cirúrgico, a etapa de saída tem papel central: a contagem de instrumentais, compressas e agulhas no início e no fim do procedimento é a barreira contra a retenção de corpo estranho. Qualquer discrepância na contagem interrompe o fechamento até ser esclarecida, se necessário com radiografia na sala.</p></div>"
+   "html": "<h3>5.1 Contexto histórico</h3><p>A preocupação sistemática com a segurança do paciente ganhou força após estudos que mostraram a frequência dos eventos adversos evitáveis na assistência. Em 2004, a Organização Mundial da Saúde criou a <strong>Aliança Mundial para a Segurança do Paciente</strong>, que lançou desafios globais. O <strong>primeiro desafio</strong>, em 2005, teve o lema \"uma assistência limpa é uma assistência mais segura\" e focou a higiene das mãos e as infecções relacionadas à assistência. O <strong>segundo desafio</strong>, de 2007 a 2008, \"cirurgias seguras salvam vidas\", produziu a <strong>Lista de Verificação de Segurança Cirúrgica</strong>. O estudo de validação, conduzido em oito países e publicado por Haynes e colaboradores em 2009, mostrou queda da mortalidade de cerca de 1,5% para 0,8% e das complicações de cerca de 11% para 7% após a implantação. O terceiro desafio, em 2017, tratou da medicação sem danos.</p><p>No Brasil, o <strong>Programa Nacional de Segurança do Paciente</strong> foi instituído pela Portaria MS 529/2013, e a RDC 36/2013 da ANVISA tornou obrigatória a criação de Núcleos de Segurança do Paciente nos serviços e a notificação de eventos adversos.</p><h3>5.2 A lista de verificação da OMS</h3><p>O checklist organiza-se em três momentos, cada um num ponto crítico do fluxo cirúrgico (Tabela 5.1). Um membro da equipe, geralmente o enfermeiro circulante, conduz a verificação em voz alta, e a equipe só prossegue quando cada item foi confirmado. A <strong>entrada</strong> (<em>sign in</em>) ocorre antes da indução anestésica e verifica condições do paciente e da anestesia. A <strong>pausa cirúrgica</strong> (<em>time out</em>) ocorre antes da incisão, com toda a equipe presente, e confirma a operação certa no paciente certo. A <strong>saída</strong> (<em>sign out</em>) ocorre antes de o paciente deixar a sala e garante o registro, a contagem do material e a identificação das peças.</p><p class=\"tabtit\"><strong>Tabela 5.1</strong>Os três momentos da Lista de Verificação de Segurança Cirúrgica</p><table><thead><tr><th>Momento</th><th>Quando</th><th>O que se confere</th></tr></thead><tbody><tr><td>Entrada (<em>sign in</em>)</td><td>Antes da indução anestésica</td><td>Identidade, sítio, procedimento e consentimento confirmados pelo paciente; sítio demarcado; equipamento e medicações anestésicas verificados; oxímetro funcionando; alergias; via aérea difícil ou risco de aspiração; risco de perda sanguínea acima de 500 mL (7 mL/kg em criança)</td></tr><tr><td>Pausa cirúrgica (<em>time out</em>)</td><td>Antes da incisão</td><td>Apresentação de todos por nome e função; confirmação verbal de paciente, sítio e procedimento; eventos críticos previstos por cirurgião, anestesista e enfermagem, incluindo esterilização; antibioticoprofilaxia nos últimos 60 minutos; exames de imagem disponíveis</td></tr><tr><td>Saída (<em>sign out</em>)</td><td>Antes de o paciente sair da sala</td><td>Registro do procedimento realizado; contagem de instrumentais, compressas e agulhas; identificação das peças e amostras; problemas com equipamentos; cuidados principais na recuperação</td></tr></tbody></table><h3>5.3 Metas internacionais e cultura de segurança</h3><p>As seis metas internacionais de segurança do paciente, adotadas pelo programa brasileiro, estão no Quadro 5.1. A cirurgia segura é uma delas, ao lado de outras que também se aplicam ao centro cirúrgico, como a identificação correta e a comunicação efetiva.</p><div class=\"quadro\"><p class=\"qtit\">Quadro 5.1 · Metas internacionais de segurança do paciente</p><ol><li>Identificar corretamente o paciente</li><li>Melhorar a comunicação entre profissionais</li><li>Melhorar a segurança na prescrição, no uso e na administração de medicamentos de alta vigilância</li><li>Assegurar cirurgia em local, procedimento e paciente corretos</li><li>Higienizar as mãos para evitar infecções</li><li>Reduzir o risco de quedas e lesões por pressão</li></ol></div><p>O <strong>modelo do queijo suíço</strong>, proposto por James Reason, explica que os acidentes raramente resultam de um único erro: cada barreira do sistema tem falhas, como os furos de uma fatia de queijo, e o dano ocorre quando os furos de várias barreiras se alinham. A solução, portanto, é fortalecer o sistema, e não apenas punir indivíduos. A <strong>cultura justa</strong> estimula a notificação de eventos adversos e quase-erros sem punição automática, para que se aprenda com eles. Alguns eventos, chamados <em>never events</em>, nunca deveriam ocorrer, como a cirurgia no lado, local ou paciente errado e a retenção de corpo estranho. Ferramentas de comunicação estruturada, como o SBAR (situação, breve histórico, avaliação e recomendação), e a confirmação de ordens verbais por repetição reduzem falhas de comunicação.</p><div class=\"correl\"><p class=\"qtit\">Correlação clínica</p><p>Para o instrumentador cirúrgico, a etapa de saída tem papel central: a contagem de instrumentais, compressas e agulhas no início e no fim do procedimento é a barreira contra a retenção de corpo estranho. Qualquer discrepância na contagem interrompe o fechamento até ser esclarecida, se necessário com radiografia na sala.</p></div><h3>5.4 O checklist em detalhe (slide da aula)</h3><p>O slide da aula detalha os itens de cada fase. Eles complementam a Tabela 5.1.</p><p><strong>Entrada (sign in), antes da indução anestésica</strong></p><ul><li>Identidade, sítio, procedimento e consentimento confirmados.</li><li>Sítio demarcado.</li><li>Checagem do equipamento e da medicação anestésica.</li><li>Oxímetro de pulso funcionando.</li><li>Alergias.</li><li>Via aérea difícil e risco de broncoaspiração.</li><li>Risco de perda sanguínea maior que 500 mL (7 mL/kg em criança).</li></ul><p><strong>Pausa cirúrgica (time out), antes da incisão</strong></p><ul><li>Todos da equipe se apresentam com nome e função.</li><li>Confirmação de paciente, sítio e procedimento.</li><li>Eventos críticos previstos, ditos pelo cirurgião, pelo anestesista e pela enfermagem.</li><li>Antibioticoprofilaxia administrada nos últimos 60 minutos.</li><li>Imagens disponíveis.</li></ul><p><strong>Saída (sign out), antes de o paciente sair da sala</strong></p><ul><li>Nome do procedimento registrado.</li><li>Contagem de instrumentais, compressas e agulhas.</li><li>Identificação das amostras.</li><li>Problemas com equipamentos.</li><li>Cuidados na recuperação.</li></ul>"
   },
   {
    "id": "r6",
    "grupo": "Resumo de referência",
    "titulo": "6. Dispositivos: sondas, drenos, cateteres e cânulas (Aula 12)",
    "par": "g6",
-   "html": "<h3>6.1 Sondas</h3><p>A <strong>sonda nasogástrica</strong>, calibrosa (tipo Levine), é usada principalmente para descompressão e drenagem gástrica em obstrução intestinal, íleo e vômitos incoercíveis, para lavagem e, por pouco tempo, para alimentação. O comprimento a introduzir é estimado medindo da ponta do nariz ao lóbulo da orelha e daí ao apêndice xifoide. A posição deve ser confirmada antes do uso; a <strong>radiografia é o padrão-ouro</strong>, o pH do aspirado igual ou inferior a 5,5 é um indicador útil, e a ausculta do ar injetado no epigástrio não é confiável, porque o som pode ser produzido mesmo com a sonda no esôfago ou no pulmão. A <strong>sonda nasoenteral</strong>, fina e com fio-guia (tipo Dobbhoff), destina-se à alimentação por períodos mais longos, e sua posição deve ser confirmada por radiografia antes do início da dieta.</p><p>A via nasal é contraindicada na suspeita de <strong>fratura da base do crânio</strong>, reconhecida por equimose periorbitária bilateral (olhos de guaxinim), equimose retroauricular (sinal de Battle) e rinorreia ou otorreia liquórica, porque a sonda pode atravessar a lâmina crivosa e penetrar o crânio; nesses casos usa-se a <strong>sonda orogástrica</strong>, que também é a via preferida em recém-nascidos.</p><p>A <strong>sondagem vesical</strong> pode ser de alívio, intermitente, ou de demora, com sonda de Foley de duas vias, para diurese horária e retenção, ou de três vias, para irrigação. É feita com técnica asséptica, e o balão só é insuflado depois do retorno de urina, para não insuflá-lo na uretra. A sondagem é contraindicada na suspeita de <strong>lesão de uretra</strong>, sinalizada por sangue no meato uretral, hematoma perineal ou escrotal e próstata elevada ao toque retal; investiga-se com uretrocistografia retrógrada e, se for preciso drenar a bexiga, faz-se cistostomia. A sonda deve ser retirada assim que possível, porque cada dia aumenta o risco de infecção urinária.</p><figure class=\"ref\" data-figura=\"sonda-posicao\"><button type=\"button\" class=\"figure-zoom\" aria-label=\"Ampliar imagem: Radiografias com sonda gástrica correta e sonda Dobhoff desviada para o brônquio direito.\"><img src=\"content/img/guia/sonda-posicao.jpg\" width=\"788\" height=\"327\" loading=\"lazy\" decoding=\"async\" alt=\"Radiografias com sonda gástrica correta e sonda Dobhoff desviada para o brônquio direito.\"></button><figcaption>Sonda nasogástrica bem posicionada, com ponta e orifício lateral além da junção gastroesofágica (a); sonda Dobhoff malposicionada no brônquio principal direito (b).<span class=\"fonte\">Fonte: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6837827/#F0003\">Mathew et al. (2019)</a> · <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a>.</span></figcaption></figure><h3>6.2 Drenos</h3><p>Os drenos retiram coleções de sangue, pus, bile, linfa, ar ou secreções e permitem vigiar complicações como sangramento e fístula. Os <strong>drenos abertos ou passivos</strong>, como o de Penrose, uma lâmina de látex, drenam por capilaridade e gravidade e têm maior risco de infecção retrógrada. Os <strong>drenos fechados com aspiração</strong>, como o Portovac, o Jackson-Pratt e o Blake, funcionam com pressão negativa em sistema fechado e reduzem o risco de infecção. O aspecto e o volume do débito devem ser registrados: mudança para conteúdo bilioso, fecaloide ou purulento sugere fístula ou abscesso, e débito sanguinolento elevado sugere sangramento.</p><h3>6.3 Drenagem torácica</h3><p>A drenagem torácica é indicada em pneumotórax, especialmente o hipertensivo após a descompressão e o de pacientes em ventilação mecânica, em hemotórax, empiema e derrames volumosos. O dreno é inserido no <strong>quarto ou quinto espaço intercostal, entre as linhas axilares anterior e média</strong>, região chamada triângulo de segurança, rente à <strong>borda superior da costela inferior</strong>, porque o feixe vasculonervoso intercostal corre na borda inferior de cada costela. O sistema de <strong>selo d'água</strong> mantém a extremidade do tubo cerca de 2 cm submersa, o que permite a saída de ar e líquido e impede seu retorno. A <strong>oscilação</strong> da coluna líquida com a respiração indica que o dreno está pérvio, e o <strong>borbulhamento</strong> contínuo indica escape de ar, por fístula broncopleural ou vazamento no sistema. O frasco deve ficar sempre abaixo do nível do tórax, e o dreno não deve ser clampeado rotineiramente, pelo risco de pneumotórax hipertensivo. No hemotórax, drenagem inicial acima de 1.500 mL ou débito acima de 200 mL por hora durante duas a quatro horas indica toracotomia.</p><figure class=\"ref\" data-figura=\"triangulo-seguranca\"><button type=\"button\" class=\"figure-zoom\" aria-label=\"Ampliar imagem: Desenho anatômico do tórax com limites do triângulo de segurança para inserção do dreno.\"><img src=\"content/img/guia/triangulo-seguranca.jpg\" width=\"656\" height=\"674\" loading=\"lazy\" decoding=\"async\" alt=\"Desenho anatômico do tórax com limites do triângulo de segurança para inserção do dreno.\"></button><figcaption>Triângulo de segurança para drenagem torácica. O desenho também indica a fissura oblíqua (tracejado menor). Não substitui a avaliação anatômica e ultrassonográfica quando indicada.<span class=\"fonte\">Fonte: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8411187/#f2\">Managing complications of pleural procedures (2021)</a> · <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\">CC BY-NC-ND 4.0</a>.</span></figcaption></figure><figure class=\"ref\" data-figura=\"selo-agua\"><button type=\"button\" class=\"figure-zoom\" aria-label=\"Ampliar imagem: Esquemas e coletor de drenagem torácica com selo d’água de uma, duas e três câmaras.\"><img src=\"content/img/guia/selo-agua.jpg\" width=\"723\" height=\"478\" loading=\"lazy\" decoding=\"async\" alt=\"Esquemas e coletor de drenagem torácica com selo d’água de uma, duas e três câmaras.\"></button><figcaption>Sistemas de drenagem com selo d’água: uma (A), duas (B) e três câmaras (C), além de coletor moderno (D). O selo permite saída de ar e impede seu retorno.<span class=\"fonte\">Fonte: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11547156/#jcm-13-06331-f002\">Chest Tubes and Pleural Drainage: History and Current Status in Pleural Disease Management (2024)</a> · <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a>.</span></figcaption></figure><h3>6.4 Acessos vasculares</h3><p>O fluxo através de um cateter é diretamente proporcional à quarta potência do raio e inversamente proporcional ao comprimento, como descreve a lei de Poiseuille. Por isso, no trauma e no choque, <strong>dois acessos periféricos calibrosos</strong>, de 14 ou 16 gauge, infundem volume mais rapidamente que um cateter venoso central comum, que é mais longo e mais fino. Na escala gauge, <strong>quanto menor o número, maior o calibre</strong>: 14 > 16 > 18 > 20 > 22 > 24.</p><p>O <strong>cateter venoso central</strong> é indicado para drogas vasoativas, nutrição parenteral, quimioterapia, monitorização da pressão venosa central, hemodiálise e impossibilidade de acesso periférico. É inserido pela técnica de Seldinger, em que a agulha guia a passagem de um fio, sobre o qual se introduzem o dilatador e o cateter, preferencialmente guiada por ultrassonografia. A escolha do sítio pondera vantagens e riscos (Tabela 6.1). Após a punção jugular ou subclávia, a radiografia de tórax confirma a posição da ponta, na junção da veia cava superior com o átrio direito, e exclui pneumotórax. As complicações incluem pneumotórax, punção arterial, hematoma, arritmia pelo fio-guia, embolia gasosa, prevenida inserindo e retirando o cateter com o paciente em Trendelenburg e mantendo as vias ocluídas, infecção da corrente sanguínea e trombose. Outras opções são o cateter central de inserção periférica (PICC), os cateteres de longa permanência, totalmente implantados (Port-a-cath) ou tunelizados (Hickman), e o acesso intraósseo, usado na emergência quando o venoso falha.</p><p class=\"tabtit\"><strong>Tabela 6.1</strong>Sítios de cateter venoso central</p><table><thead><tr><th>Sítio</th><th>Vantagens</th><th>Desvantagens</th></tr></thead><tbody><tr><td>Jugular interna</td><td>Fácil guiar por ultrassom; compressível</td><td>Desconforto; risco intermediário</td></tr><tr><td>Subclávia</td><td>Menor taxa de infecção e trombose; mais confortável</td><td>Maior risco de pneumotórax; não compressível</td></tr><tr><td>Femoral</td><td>Rápida na emergência; sem risco de pneumotórax</td><td>Maior taxa de infecção e trombose</td></tr></tbody></table><figure class=\"ref\" data-figura=\"cvc-posicao\"><button type=\"button\" class=\"figure-zoom\" aria-label=\"Ampliar imagem: Radiografias de cateteres venosos: CVC na cava superior, PICC no átrio direito e cateter tunelizado.\"><img src=\"content/img/guia/cvc-posicao.jpg\" width=\"788\" height=\"245\" loading=\"lazy\" decoding=\"async\" alt=\"Radiografias de cateteres venosos: CVC na cava superior, PICC no átrio direito e cateter tunelizado.\"></button><figcaption>Cateter venoso central com ponta na veia cava superior (a); PICC com ponta no átrio direito (b); cateter tunelizado (c). Não confundir os painéis nem assumir que toda posição ilustrada é adequada.<span class=\"fonte\">Fonte: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6837827/#F0005\">Mathew et al. (2019)</a> · <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a>.</span></figcaption></figure><figure class=\"ref\" data-figura=\"cvc-malposicionado\"><button type=\"button\" class=\"figure-zoom\" aria-label=\"Ampliar imagem: Radiografia de CVC com ponta desviada para a veia braquiocefálica esquerda.\"><img src=\"content/img/guia/cvc-malposicionado.jpg\" width=\"670\" height=\"590\" loading=\"lazy\" decoding=\"async\" alt=\"Radiografia de CVC com ponta desviada para a veia braquiocefálica esquerda.\"></button><figcaption>CVC introduzido à direita com ponta malposicionada na veia braquiocefálica esquerda.<span class=\"fonte\">Fonte: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6837827/#F0006\">Mathew et al. (2019)</a> · <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a>.</span></figcaption></figure><h3>6.5 Cânulas e via aérea</h3><p>A <strong>cânula orofaríngea</strong> (Guedel) impede que a língua obstrua a faringe e só é tolerada pelo paciente inconsciente e sem reflexo de vômito, porque no paciente acordado provoca vômito e aspiração; o tamanho corresponde à distância entre a comissura labial e o ângulo da mandíbula. A <strong>cânula nasofaríngea</strong> é mais bem tolerada pelo paciente semiconsciente, mas é contraindicada na suspeita de fratura da base do crânio. O <strong>tubo orotraqueal</strong>, com balonete insuflado abaixo das cordas vocais, constitui a via aérea definitiva. A <strong>traqueostomia</strong> é indicada para via aérea prolongada e usa cânula com balonete e cânula interna removível para limpeza. A <strong>cricotireoidostomia</strong> é a via aérea cirúrgica de emergência quando não se consegue intubar nem ventilar; em crianças com menos de cerca de 12 anos, a forma cirúrgica é contraindicada pelo risco de lesão da cartilagem cricoide, único anel completo da via aérea infantil, e realiza-se a cricotireoidostomia por punção.</p><div class=\"correl\"><p class=\"qtit\">Correlação clínica</p><p>Um motociclista chega rebaixado, com equimose periorbitária bilateral, sangue no meato uretral e hemotórax à direita com hipotensão. A suspeita de fratura de base de crânio contraindica cânula nasofaríngea e sonda nasogástrica, e a descompressão gástrica é feita por via oral. O sangue no meato impede a sondagem vesical às cegas. Dois acessos periféricos calibrosos garantem a reposição, e o dreno torácico é passado no quinto espaço intercostal, rente à borda superior da costela; saída imediata de 1.700 mL de sangue indica toracotomia.</p></div>"
+   "html": "<h3>6.1 Sondas</h3>\n<p>Sonda é um tubo flexível introduzido em uma cavidade ou víscera para drenar, descomprimir, administrar substâncias ou monitorizar. Nesta seção seguem-se os dados do slide \"Sondas - Geral\" da turma: sondagem vesical, sonda nasogástrica (SNG), sonda nasoenteral (SNE) e sonda retal. A Tabela 6.3 compara as três principais.</p>\n<p><strong>Sondagem vesical.</strong> É a inserção de uma sonda na bexiga, pela uretra, para drenar urina. Pode ser <strong>intermitente</strong> (de alívio: a sonda é inserida e retirada logo após a drenagem, usa-se a sonda de <strong>Nelaton</strong>) ou <strong>contínua</strong> (de demora, com a sonda de <strong>Foley</strong>). A Tabela 6.1 resume a diferença. O slide cita três modelos: Nelaton, Foley de silicone e Foley de látex. A Foley pode ter <strong>duas vias</strong> (drenagem e balão) ou <strong>três vias</strong> (inclui a via de irrigação). O calibre habitual do adulto é <strong>16 a 18 Fr</strong>; na hematúria com coágulos usa-se calibre maior, <strong>20 a 24 Fr</strong>.</p>\n<p class=\"tabtit\"><strong>Tabela 6.1</strong>Sondagem vesical: Nelaton x Foley</p>\n<table><thead><tr><th>Característica</th><th>Nelaton</th><th>Foley</th></tr></thead><tbody><tr><td>Tipo de sondagem</td><td>Intermitente (de alívio)</td><td>Contínua (de demora)</td></tr><tr><td>Permanência</td><td>Inserida e retirada após drenar a bexiga</td><td>Fica na bexiga, presa ao sistema coletor fechado</td></tr><tr><td>Balão</td><td>Sem balão (complemento)</td><td>Balão insuflado com cerca de 10 mL de água destilada (ver o volume na sonda)</td></tr><tr><td>Vias</td><td>Via única (complemento)</td><td>2 vias (drenagem e balão) ou 3 vias (com irrigação)</td></tr><tr><td>Calibre no adulto</td><td>Conforme a sonda escolhida</td><td>16 a 18 Fr; 20 a 24 Fr na hematúria com coágulos</td></tr><tr><td>Exemplos de uso</td><td>Cateterismo intermitente na bexiga neurogênica; coleta de urina asséptica</td><td>Débito urinário horário, pós-operatório de cirurgia pélvica, retenção, hematúria com coágulos</td></tr></tbody></table>\n<p>As <strong>indicações clínicas</strong> são: obter urina asséptica para exame; monitorizar o débito urinário; tratar retenção urinária aguda ou crônica, com ou sem obstrução; paciente imobilizado (fratura pélvica, AVC); cateterismo intermitente na bexiga neurogênica; e conforto em cuidado paliativo. As <strong>indicações cirúrgicas</strong> são: monitorizar a volemia e evitar a distensão da bexiga durante a cirurgia; durante e após operações do trato geniturinário ou de órgãos adjacentes (urológicas, ginecológicas, colorretais); retenção; hematúria com coágulos; e feridas abertas sacrais ou perineais e pacientes incontinentes.</p>\n<p>A <strong>contraindicação absoluta</strong> é a suspeita de <strong>lesão uretral</strong>, sinalizada por sangue no meato uretral, hematúria e equimose perineal (hematoma escrotal e próstata elevada ao toque retal reforçam a suspeita, complemento). Nesse caso investiga-se com uretrocistografia retrógrada e, se for preciso drenar a bexiga, faz-se cistostomia (complemento). As <strong>contraindicações relativas</strong> estão na Tabela 6.2. A sonda deve ser retirada assim que possível, porque cada dia de uso aumenta o risco de infecção urinária (complemento).</p>\n<p class=\"tabtit\"><strong>Tabela 6.2</strong>Contraindicações da sondagem vesical e da SNG</p>\n<table><thead><tr><th>Sonda</th><th>Contraindicações absolutas</th><th>Contraindicações relativas</th></tr></thead><tbody><tr><td>Vesical</td><td>Lesão uretral: sangue no meato uretral, hematúria, equimose perineal</td><td>Estenose uretral; cirurgia recente de vias urinárias (uretra, bexiga); esfíncter artificial</td></tr><tr><td>Nasogástrica (SNG)</td><td>Fratura do terço médio da face ou da base do crânio (risco de a sonda entrar no crânio); fratura nasal recente; estenose esofágica (risco de perfuração)</td><td>Varizes esofágicas (sangramento); estenose esofágica; diátese hemorrágica; ingestão de substâncias alcalinas (pode ser passada se a lesão da mucosa não foi grave)</td></tr></tbody></table>\n<div class=\"quadro\"><p class=\"qtit\">Quadro 6.1 · Sondagem vesical: material e preparo (slide da aula)</p><ol><li>Material: bandeja, coletor universal estéril, luva estéril, agulha de aspiração, luvas de procedimento, sonda uretral estéril, 2 ampolas de água destilada de 10 mL, escova de clorexidina degermante, clorexidina aquosa, xilocaína gel, gaze, máscara, gorro e campo fenestrado. O slide cita sonda uretral nº 12 e 14, o que difere do calibre do adulto (16 a 18 Fr); conferir com o professor.</li><li>Reunir o material, garantir privacidade, higienizar as mãos e paramentar-se.</li><li>Posição: homem em decúbito dorsal; mulher em decúbito dorsal com os membros inferiores fletidos (posição ginecológica).</li><li>Degermação com clorexidina degermante, usando luva de procedimento.</li><li>Antissepsia com clorexidina aquosa, depois de calçar a luva estéril. Ordem: vulva ou pênis, região suprapúbica, face interna das coxas, bolsa escrotal e períneo.</li><li>Colocar o campo fenestrado e expor o meato uretral para a antissepsia.</li></ol></div>\n<p><strong>Técnica masculina.</strong> Testar o balonete com água destilada. Afastar o prepúcio e fazer a antissepsia do meato. Com o pênis verticalizado, injetar cerca de <strong>20 mL de xilocaína gel</strong> no meato, com seringa de bico. A sonda já deve estar presa ao sistema coletor fechado. Introduzi-la com o pênis verticalizado e, se houver dificuldade, horizontalizá-lo, até o fim da sonda, observando o retorno de urina. Só então insuflar o balão com cerca de <strong>10 mL de água destilada</strong> (ver o volume indicado na sonda) e aguardar o esvaziamento da bexiga. O balão só é insuflado depois do retorno de urina, para não ser insuflado dentro da uretra.</p>\n<p><strong>Técnica feminina.</strong> Testar o balonete e lubrificar <strong>5 cm</strong> da ponta da sonda com xilocaína. Afastar os grandes lábios até visualizar o meato e fazer a antissepsia. Introduzir lentamente até o fim, observar o retorno de urina, insuflar o balão com cerca de 10 mL de água destilada e aguardar o esvaziamento.</p>\n<p><strong>Sonda nasogástrica (SNG).</strong> A sonda tipo <strong>Levine</strong> é flexível, de lúmen único ou duplo, com calibre de <strong>16 a 18 Fr</strong> no adulto; na criança o tamanho varia. As indicações são: detectar sangramento digestivo (presença e volume); administrar medicamentos ou contraste a quem não deglute; descomprimir o estômago no íleo paralítico ou na obstrução intestinal, evitando vômitos; lavagem gástrica para retirar sangue e coágulos antes da endoscopia; aspirar o conteúdo após ingestão de tóxico; e nutrição enteral (por pouco tempo). As contraindicações estão na Tabela 6.2. Na suspeita de fratura da base do crânio, reconhecida por equimose periorbitária bilateral (olhos de guaxinim), equimose retroauricular (sinal de Battle) e rinorreia ou otorreia liquórica, não se passa nada pelo nariz: usa-se a <strong>sonda orogástrica</strong>, que também é a via preferida em recém-nascidos (complemento).</p>\n<div class=\"quadro\"><p class=\"qtit\">Quadro 6.2 · Técnica da SNG passo a passo (slide da aula)</p><ol><li>Higienizar as mãos e reunir o material: sonda, lubrificante hidrossolúvel, água, seringa, luvas, gaze e compressas.</li><li>Identificar o paciente e explicar o procedimento.</li><li>Posicionar em semi-Fowler, a 30 a 45 graus, e escolher a narina.</li><li>Medir da ponta do nariz ao lóbulo da orelha e daí ao processo xifoide, e marcar a sonda.</li><li>Lubrificar a ponta da sonda.</li><li>Pedir que o paciente flexione levemente a cabeça (queixo ao peito).</li><li>Inserir a sonda para trás e pedir que o paciente degluta, avançando até a marca.</li><li>Se houver dificuldade respiratória ou desconforto excessivo, retirar e tentar de novo.</li><li>Verificar a posição (parágrafo abaixo) e fixar com fita.</li></ol></div>\n<p><strong>Verificação da posição da SNG.</strong> O slide da aula lista três checagens à beira do leito: <strong>aspirado</strong> de conteúdo gástrico, <strong>ausculta do ar injetado</strong> (borbulhamento no estômago) e <strong>pH ácido</strong>; pH ≤ 5,5 sugere estômago. A <strong>radiografia</strong> é o exame que confirma quando há dúvida e é obrigatória antes de iniciar dieta por sonda enteral; a ausculta sozinha pode enganar, porque o som pode ser ouvido mesmo com a sonda no esôfago ou no pulmão (complemento).</p>\n<p><strong>Sonda nasoenteral (SNE).</strong> É mais flexível e mais fina que a SNG, com diâmetro de <strong>3,5 a 12 Fr</strong> e comprimento de <strong>15 a 170 cm</strong>, pesada ou não (tipo Dobbhoff, complemento). Destina-se à <strong>nutrição enteral pós-pilórica</strong> de longo prazo; não causa distensão gástrica importante e provoca menos vômito. As indicações são: desnutrição ou risco nutricional por ingestão insuficiente (trauma, queimaduras, anorexia, alcoolismo); impossibilidade de via oral (inconsciência, AVC); dor ou desconforto à alimentação (doença gastrointestinal grave, pancreatite, quimioterapia e radioterapia); e disfunção do trato gastrointestinal (fístulas, má absorção, intestino curto). A técnica é semelhante à da SNG, com luva estéril. Confirma-se pelo aspirado gástrico, pelo pH (o slide da SNE escreve pH &lt; 5,5 se estiver no estômago) e, <strong>na dúvida, por radiografia</strong>, que deve ser feita antes do início da dieta. Fixar sem tensionar a sonda.</p>\n<p class=\"tabtit\"><strong>Tabela 6.3</strong>Comparação entre SNG, SNE e sonda vesical</p>\n<table><thead><tr><th>Sonda</th><th>Calibre</th><th>Indicação principal</th><th>Confirmação da posição</th><th>Contraindicação</th></tr></thead><tbody><tr><td>SNG (Levine)</td><td>16 a 18 Fr no adulto</td><td>Descompressão e drenagem gástrica, lavagem, sangramento digestivo, medicamentos e nutrição por pouco tempo</td><td>Aspirado, ar injetado com ausculta e pH ≤ 5,5; RX na dúvida e antes de dieta</td><td>Absolutas: fratura do terço médio da face ou da base do crânio, fratura nasal recente, estenose esofágica</td></tr><tr><td>SNE</td><td>3,5 a 12 Fr; 15 a 170 cm</td><td>Nutrição enteral pós-pilórica de longo prazo</td><td>Aspirado e pH; RX na dúvida e antes de iniciar a dieta</td><td>O slide não lista; vale a restrição da via nasal na fratura de base do crânio (complemento)</td></tr><tr><td>Vesical (Foley)</td><td>16 a 18 Fr; 20 a 24 Fr na hematúria com coágulos</td><td>Débito urinário, retenção, pós-operatório, hematúria com coágulos</td><td>Retorno de urina antes de insuflar o balão (cerca de 10 mL de água destilada)</td><td>Absoluta: lesão uretral. Relativas: estenose uretral, cirurgia recente de vias urinárias, esfíncter artificial</td></tr></tbody></table>\n<p><strong>Sonda retal.</strong> É indicada para aliviar gases e líquidos no cólon, administrar medicamentos, em cirurgias anais, em diarreias graves e para retirar conteúdo fecal (obstipação por mais de 5 dias). O slide a associa, nas imagens, ao abdome agudo obstrutivo e ao pneumoperitônio.</p>\n<figure class=\"ref\" data-figura=\"sonda-posicao\"><button type=\"button\" class=\"figure-zoom\" aria-label=\"Ampliar imagem: Radiografias com sonda gástrica correta e sonda Dobhoff desviada para o brônquio direito.\"><img src=\"content/img/guia/sonda-posicao.jpg\" width=\"788\" height=\"327\" loading=\"lazy\" decoding=\"async\" alt=\"Radiografias com sonda gástrica correta e sonda Dobhoff desviada para o brônquio direito.\"></button><figcaption>Sonda nasogástrica bem posicionada, com ponta e orifício lateral além da junção gastroesofágica (a); sonda Dobhoff malposicionada no brônquio principal direito (b).<span class=\"fonte\">Fonte: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6837827/#F0003\">Mathew et al. (2019)</a> · <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a>.</span></figcaption></figure><h3>6.2 Drenos</h3><p>Os drenos retiram coleções de sangue, pus, bile, linfa, ar ou secreções e permitem vigiar complicações como sangramento e fístula. Os <strong>drenos abertos ou passivos</strong>, como o de Penrose, uma lâmina de látex, drenam por capilaridade e gravidade e têm maior risco de infecção retrógrada. Os <strong>drenos fechados com aspiração</strong>, como o Portovac, o Jackson-Pratt e o Blake, funcionam com pressão negativa em sistema fechado e reduzem o risco de infecção. O aspecto e o volume do débito devem ser registrados: mudança para conteúdo bilioso, fecaloide ou purulento sugere fístula ou abscesso, e débito sanguinolento elevado sugere sangramento.</p><h3>6.3 Drenagem torácica</h3><p>A drenagem torácica é indicada em pneumotórax, especialmente o hipertensivo após a descompressão e o de pacientes em ventilação mecânica, em hemotórax, empiema e derrames volumosos. O dreno é inserido no <strong>quarto ou quinto espaço intercostal, entre as linhas axilares anterior e média</strong>, região chamada triângulo de segurança, rente à <strong>borda superior da costela inferior</strong>, porque o feixe vasculonervoso intercostal corre na borda inferior de cada costela. O sistema de <strong>selo d'água</strong> mantém a extremidade do tubo cerca de 2 cm submersa, o que permite a saída de ar e líquido e impede seu retorno. A <strong>oscilação</strong> da coluna líquida com a respiração indica que o dreno está pérvio, e o <strong>borbulhamento</strong> contínuo indica escape de ar, por fístula broncopleural ou vazamento no sistema. O frasco deve ficar sempre abaixo do nível do tórax, e o dreno não deve ser clampeado rotineiramente, pelo risco de pneumotórax hipertensivo. No hemotórax, drenagem inicial acima de 1.500 mL ou débito acima de 200 mL por hora durante duas a quatro horas indica toracotomia.</p><figure class=\"ref\" data-figura=\"triangulo-seguranca\"><button type=\"button\" class=\"figure-zoom\" aria-label=\"Ampliar imagem: Desenho anatômico do tórax com limites do triângulo de segurança para inserção do dreno.\"><img src=\"content/img/guia/triangulo-seguranca.jpg\" width=\"656\" height=\"674\" loading=\"lazy\" decoding=\"async\" alt=\"Desenho anatômico do tórax com limites do triângulo de segurança para inserção do dreno.\"></button><figcaption>Triângulo de segurança para drenagem torácica. O desenho também indica a fissura oblíqua (tracejado menor). Não substitui a avaliação anatômica e ultrassonográfica quando indicada.<span class=\"fonte\">Fonte: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8411187/#f2\">Managing complications of pleural procedures (2021)</a> · <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\">CC BY-NC-ND 4.0</a>.</span></figcaption></figure><figure class=\"ref\" data-figura=\"selo-agua\"><button type=\"button\" class=\"figure-zoom\" aria-label=\"Ampliar imagem: Esquemas e coletor de drenagem torácica com selo d’água de uma, duas e três câmaras.\"><img src=\"content/img/guia/selo-agua.jpg\" width=\"723\" height=\"478\" loading=\"lazy\" decoding=\"async\" alt=\"Esquemas e coletor de drenagem torácica com selo d’água de uma, duas e três câmaras.\"></button><figcaption>Sistemas de drenagem com selo d’água: uma (A), duas (B) e três câmaras (C), além de coletor moderno (D). O selo permite saída de ar e impede seu retorno.<span class=\"fonte\">Fonte: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11547156/#jcm-13-06331-f002\">Chest Tubes and Pleural Drainage: History and Current Status in Pleural Disease Management (2024)</a> · <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a>.</span></figcaption></figure><h3>6.4 Acessos vasculares</h3><p>O fluxo através de um cateter é diretamente proporcional à quarta potência do raio e inversamente proporcional ao comprimento, como descreve a lei de Poiseuille. Por isso, no trauma e no choque, <strong>dois acessos periféricos calibrosos</strong>, de 14 ou 16 gauge, infundem volume mais rapidamente que um cateter venoso central comum, que é mais longo e mais fino. Na escala gauge, <strong>quanto menor o número, maior o calibre</strong>: 14 > 16 > 18 > 20 > 22 > 24.</p><p>O <strong>cateter venoso central</strong> é indicado para drogas vasoativas, nutrição parenteral, quimioterapia, monitorização da pressão venosa central, hemodiálise e impossibilidade de acesso periférico. É inserido pela técnica de Seldinger, em que a agulha guia a passagem de um fio, sobre o qual se introduzem o dilatador e o cateter, preferencialmente guiada por ultrassonografia. A escolha do sítio pondera vantagens e riscos (Tabela 6.4). Após a punção jugular ou subclávia, a radiografia de tórax confirma a posição da ponta, na junção da veia cava superior com o átrio direito, e exclui pneumotórax. As complicações incluem pneumotórax, punção arterial, hematoma, arritmia pelo fio-guia, embolia gasosa, prevenida inserindo e retirando o cateter com o paciente em Trendelenburg e mantendo as vias ocluídas, infecção da corrente sanguínea e trombose. Outras opções são o cateter central de inserção periférica (PICC), os cateteres de longa permanência, totalmente implantados (Port-a-cath) ou tunelizados (Hickman), e o acesso intraósseo, usado na emergência quando o venoso falha.</p><p class=\"tabtit\"><strong>Tabela 6.4</strong>Sítios de cateter venoso central</p><table><thead><tr><th>Sítio</th><th>Vantagens</th><th>Desvantagens</th></tr></thead><tbody><tr><td>Jugular interna</td><td>Fácil guiar por ultrassom; compressível</td><td>Desconforto; risco intermediário</td></tr><tr><td>Subclávia</td><td>Menor taxa de infecção e trombose; mais confortável</td><td>Maior risco de pneumotórax; não compressível</td></tr><tr><td>Femoral</td><td>Rápida na emergência; sem risco de pneumotórax</td><td>Maior taxa de infecção e trombose</td></tr></tbody></table><figure class=\"ref\" data-figura=\"cvc-posicao\"><button type=\"button\" class=\"figure-zoom\" aria-label=\"Ampliar imagem: Radiografias de cateteres venosos: CVC na cava superior, PICC no átrio direito e cateter tunelizado.\"><img src=\"content/img/guia/cvc-posicao.jpg\" width=\"788\" height=\"245\" loading=\"lazy\" decoding=\"async\" alt=\"Radiografias de cateteres venosos: CVC na cava superior, PICC no átrio direito e cateter tunelizado.\"></button><figcaption>Cateter venoso central com ponta na veia cava superior (a); PICC com ponta no átrio direito (b); cateter tunelizado (c). Não confundir os painéis nem assumir que toda posição ilustrada é adequada.<span class=\"fonte\">Fonte: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6837827/#F0005\">Mathew et al. (2019)</a> · <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a>.</span></figcaption></figure><figure class=\"ref\" data-figura=\"cvc-malposicionado\"><button type=\"button\" class=\"figure-zoom\" aria-label=\"Ampliar imagem: Radiografia de CVC com ponta desviada para a veia braquiocefálica esquerda.\"><img src=\"content/img/guia/cvc-malposicionado.jpg\" width=\"670\" height=\"590\" loading=\"lazy\" decoding=\"async\" alt=\"Radiografia de CVC com ponta desviada para a veia braquiocefálica esquerda.\"></button><figcaption>CVC introduzido à direita com ponta malposicionada na veia braquiocefálica esquerda.<span class=\"fonte\">Fonte: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6837827/#F0006\">Mathew et al. (2019)</a> · <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a>.</span></figcaption></figure><h3>6.5 Cânulas e via aérea</h3><p>A <strong>cânula orofaríngea</strong> (Guedel) impede que a língua obstrua a faringe e só é tolerada pelo paciente inconsciente e sem reflexo de vômito, porque no paciente acordado provoca vômito e aspiração; o tamanho corresponde à distância entre a comissura labial e o ângulo da mandíbula. A <strong>cânula nasofaríngea</strong> é mais bem tolerada pelo paciente semiconsciente, mas é contraindicada na suspeita de fratura da base do crânio. O <strong>tubo orotraqueal</strong>, com balonete insuflado abaixo das cordas vocais, constitui a via aérea definitiva. A <strong>traqueostomia</strong> é indicada para via aérea prolongada e usa cânula com balonete e cânula interna removível para limpeza. A <strong>cricotireoidostomia</strong> é a via aérea cirúrgica de emergência quando não se consegue intubar nem ventilar; em crianças com menos de cerca de 12 anos, a forma cirúrgica é contraindicada pelo risco de lesão da cartilagem cricoide, único anel completo da via aérea infantil, e realiza-se a cricotireoidostomia por punção.</p><div class=\"correl\"><p class=\"qtit\">Correlação clínica</p><p>Um motociclista chega rebaixado, com equimose periorbitária bilateral, sangue no meato uretral e hemotórax à direita com hipotensão. A suspeita de fratura de base de crânio contraindica cânula nasofaríngea e sonda nasogástrica, e a descompressão gástrica é feita por via oral. O sangue no meato impede a sondagem vesical às cegas. Dois acessos periféricos calibrosos garantem a reposição, e o dreno torácico é passado no quinto espaço intercostal, rente à borda superior da costela; saída imediata de 1.700 mL de sangue indica toracotomia.</p></div>"
   },
   {
    "id": "rp",
@@ -103,14 +103,14 @@
    "grupo": "Guia prioritário",
    "titulo": "Cirurgia segura: o checklist em uma tela",
    "par": "r5",
-   "html": "<ul><li>1º desafio OMS: <strong>higiene das mãos</strong> (\"assistência limpa\"). 2º: <strong>\"Cirurgias seguras salvam vidas\"</strong> → checklist.</li><li><strong>Sign in</strong> (antes da <strong>indução</strong>): identidade, sítio demarcado, consentimento, oxímetro, alergias, via aérea difícil, perda &gt; 500 mL.</li><li><strong>Time out</strong> (antes da <strong>incisão</strong>): apresentação da equipe, confirmação verbal, eventos críticos, <strong>ATB nos últimos 60 min</strong>, imagens disponíveis.</li><li><strong>Sign out</strong> (antes de <strong>sair da sala</strong>): procedimento registrado, <strong>contagem</strong> de instrumentais, compressas e agulhas, <strong>amostras identificadas</strong>, problemas de equipamento.</li><li>Brasil: PNSP (Portaria 529/2013) e RDC 36/2013.</li><li>6 metas: identificação, comunicação, medicamentos, cirurgia segura, mãos, quedas/LPP.</li><li>Queijo suíço (Reason); never events: lado errado, corpo estranho retido.</li></ul><blockquote><strong>Pegadinha:</strong> A antibioticoprofilaxia e a apresentação da equipe são conferidas no time out, não no sign in. A contagem de compressas é no sign out.</blockquote>"
+   "html": "<ul><li>1º desafio OMS: <strong>higiene das mãos</strong> (\"assistência limpa\"). 2º: <strong>\"Cirurgias seguras salvam vidas\"</strong> → checklist.</li><li><strong>Sign in</strong> (antes da <strong>indução</strong>): identidade, sítio demarcado, consentimento, oxímetro, alergias, via aérea difícil, perda &gt; 500 mL.</li><li><strong>Time out</strong> (antes da <strong>incisão</strong>): apresentação da equipe, confirmação verbal, eventos críticos, <strong>ATB nos últimos 60 min</strong>, imagens disponíveis.</li><li><strong>Sign out</strong> (antes de <strong>sair da sala</strong>): procedimento registrado, <strong>contagem</strong> de instrumentais, compressas e agulhas, <strong>amostras identificadas</strong>, problemas de equipamento.</li><li>Brasil: PNSP (Portaria 529/2013) e RDC 36/2013.</li><li>6 metas: identificação, comunicação, medicamentos, cirurgia segura, mãos, quedas/LPP.</li><li>Queijo suíço (Reason); never events: lado errado, corpo estranho retido.</li></ul><blockquote><strong>Pegadinha:</strong> A antibioticoprofilaxia e a apresentação da equipe são conferidas no time out, não no sign in. A contagem de compressas é no sign out.</blockquote><p><strong>O checklist em detalhe (slide da aula)</strong></p><ul><li><strong>Sign in</strong> (antes da indução): identidade, sítio, procedimento, consentimento, sítio demarcado, checagem do equipamento e da medicação anestésica, oxímetro, alergias, via aérea difícil e broncoaspiração, risco de perda &gt; 500 mL (7 mL/kg em criança).</li><li><strong>Time out</strong> (antes da incisão): equipe se apresenta com nome e função, confirmação de paciente, sítio e procedimento, eventos críticos previstos por cirurgião, anestesista e enfermagem, <strong>antibioticoprofilaxia nos últimos 60 min</strong>, imagens disponíveis.</li><li><strong>Sign out</strong> (antes de o paciente sair da sala): nome do procedimento registrado, <strong>contagem</strong> de instrumentais, compressas e agulhas, identificação das amostras, problemas com equipamentos, cuidados na recuperação.</li></ul>"
   },
   {
    "id": "g6",
    "grupo": "Guia prioritário",
    "titulo": "Dispositivos: medidas e contraindicações",
    "par": "r6",
-   "html": "<ul><li>SNG: <strong>nariz → lóbulo da orelha → xifoide</strong>; confirmar com <strong>RX</strong>.</li><li><strong>Fratura de base de crânio</strong> (guaxinim, Battle, liquorreia): nada pelo nariz → <strong>orogástrica</strong>; sem cânula nasofaríngea.</li><li>Nasoenteral: <strong>RX antes da dieta</strong>.</li><li>Sonda vesical contraindicada se <strong>sangue no meato</strong>, hematoma perineal ou próstata alta → uretrocistografia/cistostomia.</li><li><strong>Penrose</strong> = aberto, capilaridade. <strong>Portovac/Jackson-Pratt</strong> = fechado, aspiração.</li><li>Dreno de tórax: <strong>5º EIC, entre axilares anterior e média, borda superior da costela inferior</strong>.</li><li>Selo d'água: <strong>oscila</strong> = pérvio; <strong>borbulha</strong> = escape de ar; frasco abaixo do tórax.</li><li>Gauge: <strong>número menor = cateter mais calibroso</strong>; trauma: 2 acessos 14–16G.</li><li>Subclávia: menos infecção, mais pneumotórax. Femoral: mais infecção. RX após jugular/subclávia.</li><li>Guedel só no inconsciente sem reflexo; medida comissura → ângulo da mandíbula.</li><li>Cricotireoidostomia <strong>cirúrgica</strong> contraindicada em &lt; 12 anos → por punção.</li></ul><blockquote><strong>Pegadinha:</strong> Ausculta epigástrica do ar injetado não confirma posição da sonda; o padrão-ouro é o RX.</blockquote>"
+   "html": "<ul><li><strong>Foley</strong> = demora (2 ou 3 vias); <strong>Nelaton</strong> = alívio (intermitente). Adulto <strong>16 a 18 Fr</strong>; hematúria com coágulos <strong>20 a 24 Fr</strong>.</li><li>Balão da Foley: cerca de <strong>10 mL de água destilada</strong>, só depois do retorno de urina.</li><li>Xilocaína gel: cerca de <strong>20 mL no homem</strong> (pênis verticalizado); <strong>5 cm da ponta na mulher</strong>.</li><li>Vesical contraindicada (absoluta) na <strong>lesão uretral</strong>: sangue no meato, hematúria, equimose perineal. Relativas: estenose uretral, cirurgia recente de vias urinárias, esfíncter artificial.</li><li>SNG (Levine): <strong>16 a 18 Fr</strong>; semi-Fowler 30 a 45 graus; medir <strong>nariz → lóbulo da orelha → xifoide</strong>.</li><li>SNG contraindicada (absoluta): <strong>fratura do terço médio da face ou da base do crânio</strong>, fratura nasal recente, estenose esofágica. Sem via nasal: <strong>orogástrica</strong>; sem cânula nasofaríngea.</li><li>Checagens da SNG no slide: <strong>aspirado, ar injetado com ausculta, pH ácido (≤ 5,5)</strong>; <strong>RX</strong> na dúvida e obrigatório antes de dieta enteral.</li><li>SNE: <strong>3,5 a 12 Fr</strong>, <strong>15 a 170 cm</strong>, pós-pilórica, nutrição de longo prazo.</li><li>Sonda retal: gases e líquidos do cólon, obstipação &gt; 5 dias, diarreia grave, cirurgia anal.</li><li><strong>Penrose</strong> = aberto, capilaridade. <strong>Portovac/Jackson-Pratt</strong> = fechado, aspiração.</li><li>Dreno de tórax: <strong>5º EIC, entre axilares anterior e média, borda superior da costela inferior</strong>. Selo d'água: <strong>oscila</strong> = pérvio; <strong>borbulha</strong> = escape de ar; frasco abaixo do tórax.</li><li>Gauge: <strong>número menor = cateter mais calibroso</strong>; trauma: 2 acessos 14 a 16G. Subclávia: menos infecção, mais pneumotórax. Femoral: mais infecção.</li><li>Guedel só no inconsciente sem reflexo; cricotireoidostomia <strong>cirúrgica</strong> contraindicada em &lt; 12 anos (punção).</li></ul><blockquote><strong>Cai na prova:</strong> comparar Nelaton x Foley, citar o calibre (16 a 18 Fr; 20 a 24 Fr na hematúria com coágulos) e a contraindicação absoluta (lesão uretral; fratura de face ou base do crânio para a SNG).</blockquote><blockquote><strong>Pegadinha:</strong> A ausculta do ar injetado é uma das checagens do slide, mas sozinha não basta, porque pode enganar. Na dúvida, faz-se RX, que é obrigatório antes de iniciar dieta por sonda enteral.</blockquote>"
   },
   {
    "id": "gsiglas",
@@ -511,6 +511,104 @@
    "tag": "Dispositivos",
    "frente": "Via aérea cirúrgica em criança de 8 anos.",
    "verso": "Cricotireoidostomia <b>por punção</b> (a cirúrgica é contraindicada em &lt; 12 anos)."
+  },
+  {
+   "id": "cirs01",
+   "secao": "g6",
+   "tag": "Sondas",
+   "frente": "Sonda de alívio (intermitente) e sonda de demora: nomes.",
+   "verso": "<b>Nelaton</b> (alívio, retirada após drenar) e <b>Foley</b> (demora, balonete)."
+  },
+  {
+   "id": "cirs02",
+   "secao": "g6",
+   "tag": "Sondas",
+   "frente": "Foley de 2 vias × 3 vias.",
+   "verso": "2 vias: <b>drenagem + balão</b>. 3 vias: acrescenta a via de <b>irrigação</b> (hematúria com coágulos)."
+  },
+  {
+   "id": "cirs03",
+   "secao": "g6",
+   "tag": "Sondas",
+   "frente": "Calibre habitual da Foley no adulto.",
+   "verso": "<b>16 a 18 Fr</b>."
+  },
+  {
+   "id": "cirs04",
+   "secao": "g6",
+   "tag": "Sondas",
+   "frente": "Calibre da Foley na hematúria com coágulos.",
+   "verso": "<b>20 a 24 Fr</b> (maior lúmen evita obstrução)."
+  },
+  {
+   "id": "cirs05",
+   "secao": "g6",
+   "tag": "Sondas",
+   "frente": "Contraindicação ABSOLUTA do cateterismo vesical.",
+   "verso": "<b>Lesão uretral</b>: sangue no meato, hematúria, equimose perineal."
+  },
+  {
+   "id": "cirs06",
+   "secao": "g6",
+   "tag": "Sondas",
+   "frente": "Contraindicações RELATIVAS do cateterismo vesical.",
+   "verso": "<b>Estenose uretral</b>, cirurgia recente de vias urinárias, <b>esfíncter artificial</b>."
+  },
+  {
+   "id": "cirs07",
+   "secao": "g6",
+   "tag": "Sondas",
+   "frente": "Passos da antissepsia na sondagem vesical.",
+   "verso": "1) <b>degermação</b> (clorexidina degermante, luva de procedimento); 2) <b>antissepsia</b> (clorexidina aquosa, luva estéril); 3) campo fenestrado."
+  },
+  {
+   "id": "cirs08",
+   "secao": "g6",
+   "tag": "Sondas",
+   "frente": "Contraindicação ABSOLUTA da SNG (slide).",
+   "verso": "Fratura do <b>terço médio da face</b> ou da <b>base do crânio</b>, fratura nasal recente, estenose esofágica."
+  },
+  {
+   "id": "cirs09",
+   "secao": "g6",
+   "tag": "Sondas",
+   "frente": "Posição do paciente para passar a SNG.",
+   "verso": "<b>Semi-Fowler 30 a 45 graus</b>, cabeça levemente fletida e pedir para engolir."
+  },
+  {
+   "id": "cirs10",
+   "secao": "g6",
+   "tag": "Sondas",
+   "frente": "Como confirmar a posição da SNG (slide).",
+   "verso": "<b>Aspirado gástrico</b>, injeção de ar com ausculta e <b>pH ácido (≤ 5,5)</b>; RX na dúvida e antes de dieta por SNE."
+  },
+  {
+   "id": "cirs11",
+   "secao": "g6",
+   "tag": "Sondas",
+   "frente": "Sonda nasoenteral: calibre e vantagem.",
+   "verso": "<b>3,5 a 12 Fr</b>, mais flexível; nutrição <b>pós-pilórica</b>, menos vômito e distensão gástrica."
+  },
+  {
+   "id": "cirs28",
+   "secao": "g5",
+   "tag": "Checklist",
+   "frente": "Dado do sign in sobre perda sanguínea.",
+   "verso": "Risco de perda &gt; <b>500 mL</b> (ou <b>7 mL/kg</b> em criança)."
+  },
+  {
+   "id": "cirs29",
+   "secao": "g5",
+   "tag": "Checklist",
+   "frente": "Quem se apresenta no time out?",
+   "verso": "Toda a equipe, por <b>nome e função</b>."
+  },
+  {
+   "id": "cirs30",
+   "secao": "g5",
+   "tag": "Checklist",
+   "frente": "O que se registra e confere no sign out?",
+   "verso": "Procedimento registrado, <b>contagem</b>, amostras identificadas, problemas de equipamento, cuidados na <b>recuperação</b>."
   }
  ],
  "kahoot": [
@@ -1032,6 +1130,96 @@
     "r6",
     "g6"
    ]
+  },
+  {
+   "tipo": "q",
+   "n": 29,
+   "pergunta": "Paciente politraumatizado com sangue no meato uretral precisa de sondagem vesical. Qual a conduta?",
+   "opcoes": [
+    "Foley imediata 16 Fr",
+    "Evitar a sondagem às cegas; investigar a uretra e considerar cistostomia",
+    "Foley 24 Fr para forçar a passagem",
+    "Sonda de Nelaton repetida"
+   ],
+   "certa": 1,
+   "explica": "Lesão uretral é contraindicação absoluta ao cateterismo; a sondagem às cegas pode agravar a lesão.",
+   "tempo": 45,
+   "secoes": [
+    "r6",
+    "g6"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 30,
+   "pergunta": "Hematúria com coágulos em adulto. Qual sonda é mais adequada?",
+   "opcoes": [
+    "Foley 3 vias de 20 a 24 Fr",
+    "Foley 2 vias de 12 Fr",
+    "Nelaton 8 Fr",
+    "Sonda retal"
+   ],
+   "certa": 0,
+   "explica": "Lúmen calibroso (20 a 24 Fr) e via de irrigação evitam obstrução por coágulos.",
+   "tempo": 30,
+   "secoes": [
+    "r6",
+    "g6"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 31,
+   "pergunta": "Qual item NÃO pertence à contraindicação absoluta da SNG?",
+   "opcoes": [
+    "Fratura de base de crânio",
+    "Fratura do terço médio da face",
+    "Fratura nasal recente",
+    "Íleo paralítico"
+   ],
+   "certa": 3,
+   "explica": "Íleo paralítico é indicação (descompressão). As demais contraindicam a via nasal.",
+   "tempo": 30,
+   "secoes": [
+    "r6",
+    "g6"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 32,
+   "pergunta": "Em que momento do checklist se confirmam alergias e via aérea difícil?",
+   "opcoes": [
+    "Sign in",
+    "Time out",
+    "Sign out",
+    "Pós-operatório tardio"
+   ],
+   "certa": 0,
+   "explica": "O sign in ocorre antes da indução anestésica e inclui oxímetro, alergias, via aérea difícil e risco de perda sanguínea.",
+   "tempo": 30,
+   "secoes": [
+    "r5",
+    "g5"
+   ]
+  },
+  {
+   "tipo": "q",
+   "n": 33,
+   "pergunta": "Quando se confirma que a profilaxia antibiótica foi dada nos últimos 60 minutos?",
+   "opcoes": [
+    "Sign in",
+    "Time out",
+    "Sign out",
+    "Na recuperação"
+   ],
+   "certa": 1,
+   "explica": "O time out ocorre antes da incisão: equipe, paciente/sítio/procedimento, eventos críticos, ATB e imagens.",
+   "tempo": 30,
+   "secoes": [
+    "r5",
+    "g5"
+   ]
   }
  ],
  "kahootInfo": {
@@ -1324,6 +1512,74 @@
     }
    ],
    "fechamento": "<h3>Pontos-chave</h3><ul><li>Base de crânio: nada pelo nariz.</li><li>Fluxo: curto e calibroso.</li><li>Dreno: 5º EIC, borda superior.</li><li>Sangue no meato: não sondar às cegas.</li></ul>"
+  },
+  {
+   "id": "c-sondas",
+   "nivel": "Moderado",
+   "titulo": "Colisão de moto: sondas no politraumatizado",
+   "resumo": "Escolha da sonda gástrica e vesical, calibres e verificação.",
+   "tags": [
+    "Sondas",
+    "Trauma",
+    "SNG"
+   ],
+   "secoes": [
+    "r6",
+    "g6"
+   ],
+   "abertura": "<p><strong>Homem de 28 anos</strong>, colisão de moto, Glasgow 8, com equimose periorbitária bilateral, sinal de Battle e sangue no meato uretral. Há distensão gástrica e necessidade de monitorar diurese.</p>",
+   "etapas": [
+    {
+     "titulo": "Sonda gástrica",
+     "pergunta": "Qual a melhor via para descomprimir o estômago?",
+     "opcoes": [
+      "Sonda nasogástrica de 16 Fr",
+      "Sonda orogástrica",
+      "Sonda nasoenteral",
+      "Nenhuma sonda"
+     ],
+     "certa": 1,
+     "explica": "Sinais de fratura de base de crânio contraindicam a via nasal."
+    },
+    {
+     "titulo": "Sondagem vesical",
+     "pergunta": "Qual a conduta para a bexiga?",
+     "opcoes": [
+      "Foley 16 Fr de imediato",
+      "Foley 24 Fr de imediato",
+      "Evitar sondagem às cegas e investigar a uretra",
+      "Sonda de Nelaton repetida"
+     ],
+     "certa": 2,
+     "explica": "Sangue no meato indica possível lesão uretral, contraindicação absoluta ao cateterismo."
+    },
+    {
+     "titulo": "Calibres",
+     "info": "<p>Uretrografia normal; sem lesão uretral.</p>",
+     "pergunta": "Dias depois, já sem lesão uretral, ele evolui com hematúria e coágulos. Qual calibre de Foley?",
+     "opcoes": [
+      "8 a 10 Fr",
+      "12 Fr",
+      "16 a 18 Fr",
+      "20 a 24 Fr"
+     ],
+     "certa": 3,
+     "explica": "O calibre usual de adulto é 16 a 18 Fr; 20 a 24 Fr para coágulos."
+    },
+    {
+     "titulo": "Verificação",
+     "pergunta": "Numa SNG passada em paciente sem contraindicação, qual a verificação segundo o slide?",
+     "opcoes": [
+      "Só o gosto do paciente",
+      "Aspirado, injeção de ar com ausculta e pH ácido (≤ 5,5); RX na dúvida",
+      "Apenas medir o comprimento externo",
+      "Esperar vômito"
+     ],
+     "certa": 1,
+     "explica": "Aspirado e pH ácido apoiam posição gástrica; RX confirma na dúvida e antes de dieta por sonda enteral."
+    }
+   ],
+   "fechamento": "<h3>Pontos-chave</h3><ul><li>Base de crânio: nada pelo nariz; usar orogástrica.</li><li>Sangue no meato: não sondar às cegas.</li><li>Foley 16 a 18 Fr; 20 a 24 Fr na hematúria com coágulos.</li><li>SNG: aspirado, ar com ausculta, pH ≤ 5,5; RX na dúvida.</li></ul>"
   }
  ],
  "questoes": [
@@ -2735,7 +2991,7 @@
    "tags": [],
    "tipo": "compreensao",
    "nivel": "medio",
-   "enunciado": "Por que a ausculta do ar injetado não confirma a posição da sonda nasogástrica?",
+   "enunciado": "Por que a ausculta do ar injetado, sozinha, não basta para confirmar a posição da sonda nasogástrica?",
    "alternativas": [
     {
      "t": "O som pode ocorrer com a sonda no esôfago ou no pulmão",
@@ -2750,7 +3006,7 @@
     {
      "t": "Porque exige radiografia antes",
      "certa": false,
-     "porque": "A radiografia é o padrão-ouro, mas não é o motivo."
+     "porque": "A radiografia confirma na dúvida, mas não é o motivo."
     },
     {
      "t": "Porque o ar lesa o estômago",
@@ -2758,10 +3014,10 @@
      "porque": "Não é o motivo."
     }
    ],
-   "explica": "Radiografia é o padrão-ouro; pH ≤ 5,5 ajuda.",
+   "explica": "O slide lista aspirado, ausculta e pH ácido como checagens à beira do leito; na dúvida, e antes de dieta por sonda enteral, a radiografia confirma.",
    "fonte": {
     "secao": "r6",
-    "trecho": "a ausculta do ar injetado no epigástrio não é confiável"
+    "trecho": "a ausculta sozinha pode enganar, porque o som pode ser ouvido mesmo com a sonda no esôfago ou no pulmão"
    }
   },
   {
@@ -3077,6 +3333,321 @@
    "fonte": {
     "secao": "r6",
     "trecho": "único anel completo da via aérea infantil"
+   }
+  },
+  {
+   "id": "q-r6-s01",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Politraumatizado inconsciente, com equimose periorbitária bilateral e otorragia, precisa de descompressão gástrica. Qual a escolha?",
+   "alternativas": [
+    {
+     "t": "Não descomprimir",
+     "certa": false,
+     "porque": "A descompressão é indicada para reduzir risco de aspiração."
+    },
+    {
+     "t": "Sonda nasoenteral",
+     "certa": false,
+     "porque": "Também passa pelo nariz."
+    },
+    {
+     "t": "Sonda nasogástrica",
+     "certa": false,
+     "porque": "Risco de introdução intracraniana."
+    },
+    {
+     "t": "Sonda orogástrica",
+     "certa": true,
+     "porque": "Evita a via nasal na suspeita de fratura de base de crânio."
+    }
+   ],
+   "explica": "Fratura de base de crânio é contraindicação absoluta da via nasal.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "esfíncter artificial Nasogástrica (SNG) Fratura do terço médio da face ou da base do crânio (risco de a sonda entrar no crânio);"
+   }
+  },
+  {
+   "id": "q-r6-s02",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Sobre o cateterismo vesical, qual item é contraindicação ABSOLUTA?",
+   "alternativas": [
+    {
+     "t": "Estenose uretral",
+     "certa": false,
+     "porque": "Relativa."
+    },
+    {
+     "t": "Cirurgia recente de vias urinárias",
+     "certa": false,
+     "porque": "Relativa."
+    },
+    {
+     "t": "Esfíncter urinário artificial",
+     "certa": false,
+     "porque": "Relativa."
+    },
+    {
+     "t": "Lesão uretral com sangue no meato",
+     "certa": true,
+     "porque": "Risco de agravar a lesão."
+    }
+   ],
+   "explica": "Absoluta: lesão uretral. Relativas: estenose, cirurgia recente de vias urinárias e esfíncter artificial.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "A contraindicação absoluta é a suspeita de lesão uretral , sinalizada por sangue no meato uretral, hematúria e equimose perineal (hematoma escrotal e próstata elevada ao toque retal reforçam a suspeita, complemento)."
+   }
+  },
+  {
+   "id": "q-r6-s03",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Homem de 68 anos com hematúria e coágulos, retenção e dor suprapúbica, sem trauma. Qual sonda?",
+   "alternativas": [
+    {
+     "t": "Foley de 2 vias, 16 a 18 Fr",
+     "certa": false,
+     "porque": "Calibre habitual, risco de obstruir."
+    },
+    {
+     "t": "Nelaton 10 Fr de alívio",
+     "certa": false,
+     "porque": "Não permite irrigação contínua."
+    },
+    {
+     "t": "Foley de 3 vias, 20 a 24 Fr",
+     "certa": true,
+     "porque": "Maior calibre e irrigação para lavar coágulos."
+    },
+    {
+     "t": "Sonda nasoenteral",
+     "certa": false,
+     "porque": "Não é sonda vesical."
+    }
+   ],
+   "explica": "Hematúria com coágulos pede 20 a 24 Fr; adulto habitual usa 16 a 18 Fr.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "na hematúria com coágulos usa-se calibre maior, 20 a 24 Fr ."
+   }
+  },
+  {
+   "id": "q-r6-s04",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "medio",
+   "enunciado": "Qual conjunto compõe a verificação da SNG segundo a aula, e quando o RX confirma?",
+   "alternativas": [
+    {
+     "t": "Ausência de tosse por 1 minuto",
+     "certa": false,
+     "porque": "Não confirma posição."
+    },
+    {
+     "t": "Somente RX em todos os casos, sem aspirado",
+     "certa": false,
+     "porque": "Radiografia é reservada à dúvida e à sonda enteral."
+    },
+    {
+     "t": "Aspirado gástrico, ar com ausculta e pH ácido; RX na dúvida e antes de dieta por SNE",
+     "certa": true,
+     "porque": "Conjunto descrito no slide."
+    },
+    {
+     "t": "Apenas o gosto do paciente",
+     "certa": false,
+     "porque": "Não é verificação."
+    }
+   ],
+   "explica": "pH ácido ≤ 5,5 sugere posição gástrica.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "O slide da aula lista três checagens à beira do leito: aspirado de conteúdo gástrico, ausculta do ar injetado (borbulhamento no estômago) e pH ácido"
+   }
+  },
+  {
+   "id": "q-r6-s05",
+   "secao": "r6",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "Qual o calibre da SNG de adulto e a medida usada para introdução?",
+   "alternativas": [
+    {
+     "t": "16 a 18 Fr; ponta do nariz, lóbulo da orelha e xifoide",
+     "certa": true,
+     "porque": "Medida e calibre do slide."
+    },
+    {
+     "t": "24 Fr; boca até o púbis",
+     "certa": false,
+     "porque": "Calibre típico de Foley hematúria, não SNG."
+    },
+    {
+     "t": "12 Fr; lóbulo ao ombro",
+     "certa": false,
+     "porque": "Medida inadequada."
+    },
+    {
+     "t": "8 Fr; nariz até o umbigo",
+     "certa": false,
+     "porque": "Medida e calibre incorretos."
+    }
+   ],
+   "explica": "Posição semi-Fowler 30 a 45°, cabeça levemente fletida, pedir para engolir.",
+   "fonte": {
+    "secao": "r6",
+    "trecho": "Medir da ponta do nariz ao lóbulo da orelha e daí ao processo xifoide, e marcar a sonda."
+   }
+  },
+  {
+   "id": "q-r5-s01",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "Qual item é conferido no sign in, antes da indução anestésica?",
+   "alternativas": [
+    {
+     "t": "Contagem final de compressas",
+     "certa": false,
+     "porque": "Sign out."
+    },
+    {
+     "t": "Cuidados na recuperação",
+     "certa": false,
+     "porque": "Sign out."
+    },
+    {
+     "t": "Apresentação da equipe por nome e função",
+     "certa": false,
+     "porque": "Time out."
+    },
+    {
+     "t": "Alergias e via aérea difícil",
+     "certa": true,
+     "porque": "Fazem parte do sign in."
+    }
+   ],
+   "explica": "Sign in: identidade, sítio, procedimento, consentimento, demarcação, equipamento, oxímetro, alergias, via aérea e risco de perda.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "via aérea difícil ou risco de aspiração;"
+   }
+  },
+  {
+   "id": "q-r5-s02",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "recordacao",
+   "nivel": "facil",
+   "enunciado": "O que ocorre no time out, imediatamente antes da incisão?",
+   "alternativas": [
+    {
+     "t": "Identificação das amostras",
+     "certa": false,
+     "porque": "Sign out."
+    },
+    {
+     "t": "Verificação do oxímetro",
+     "certa": false,
+     "porque": "Sign in."
+    },
+    {
+     "t": "Contagem de instrumentais",
+     "certa": false,
+     "porque": "Sign out."
+    },
+    {
+     "t": "Equipe se apresenta, confirma paciente, sítio e procedimento e checa ATB e imagens",
+     "certa": true,
+     "porque": "Itens do time out."
+    }
+   ],
+   "explica": "O time out inclui eventos críticos e antibiótico nos últimos 60 minutos.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A pausa cirúrgica ( time out ) ocorre antes da incisão, com toda a equipe presente, e confirma a operação certa no paciente certo."
+   }
+  },
+  {
+   "id": "q-r5-s03",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "caso",
+   "nivel": "medio",
+   "enunciado": "Ao final da cirurgia, a equipe vai deixar a sala. Qual item pertence ao sign out?",
+   "alternativas": [
+    {
+     "t": "Confirmação do consentimento",
+     "certa": false,
+     "porque": "Sign in."
+    },
+    {
+     "t": "Contagem de instrumentais, compressas e agulhas e identificação das amostras",
+     "certa": true,
+     "porque": "Fase final do checklist."
+    },
+    {
+     "t": "Antibiótico em 60 minutos",
+     "certa": false,
+     "porque": "Time out."
+    },
+    {
+     "t": "Checagem do oxímetro",
+     "certa": false,
+     "porque": "Sign in."
+    }
+   ],
+   "explica": "Sign out também registra o procedimento, problemas de equipamento e cuidados na recuperação.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "A saída ( sign out ) ocorre antes de o paciente deixar a sala e garante o registro, a contagem do material e a identificação das peças."
+   }
+  },
+  {
+   "id": "q-r5-s04",
+   "secao": "r5",
+   "tags": [],
+   "tipo": "aplicacao",
+   "nivel": "medio",
+   "enunciado": "No sign in de uma criança de 20 kg, qual perda sanguínea prevista exige preparo de sangue?",
+   "alternativas": [
+    {
+     "t": "Maior que 1.400 mL",
+     "certa": false,
+     "porque": "Seria 70 mL/kg."
+    },
+    {
+     "t": "Maior que 140 mL (7 mL/kg)",
+     "certa": true,
+     "porque": "7 × 20 = 140 mL."
+    },
+    {
+     "t": "Maior que 500 mL",
+     "certa": false,
+     "porque": "Limite do adulto."
+    },
+    {
+     "t": "Maior que 70 mL",
+     "certa": false,
+     "porque": "Corresponde a 3,5 mL/kg."
+    }
+   ],
+   "explica": "Adulto: perda &gt; 500 mL; criança: &gt; 7 mL/kg.",
+   "fonte": {
+    "secao": "r5",
+    "trecho": "Risco de perda sanguínea maior que 500 mL (7 mL/kg em criança)."
    }
   }
  ]

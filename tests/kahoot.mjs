@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-const bancos = [['mfc',33],['antibioticos',24],['psiquiatria',25],['cirurgia',28],['saude-mulher',46],['farmaco-clinica',25]];
+const bancos = [['mfc',33],['antibioticos',24],['psiquiatria',25],['cirurgia',33],['saude-mulher',46],['farmaco-clinica',25]];
 test('DPI da professora permanece integralmente preservado',async()=>{
  // Protege tudo da matéria (Kahoot, cards, seções, casos) exceto o banco de questões,
  // que é separado e validado por tests/questoes.mjs.
